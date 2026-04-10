@@ -1,0 +1,564 @@
+{{ 'section-countdown-banner.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'countdown-banner.js' | asset_url }}" defer="defer"></script>
+
+{%- style -%}
+  #BFBanner-{{ section.id }} {
+    --bf-bg: {{ section.settings.bg_color }};
+    padding-top: {{ section.settings.padding_top }}px;
+    padding-bottom: {{ section.settings.padding_bottom }}px;
+  }
+  @media screen and (max-width: 749px) {
+    #BFBanner-{{ section.id }} {
+      padding-top: {{ section.settings.mobile_padding_top }}px;
+      padding-bottom: {{ section.settings.mobile_padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+<div
+  id="BFBanner-{{ section.id }}"
+  class="bf-banner bf-banner--{{ section.settings.banner_height }} bf-banner--content-{{ section.settings.content_side }} bf-banner--align-{{ section.settings.desktop_text_alignment }} bf-banner--mobile-align-{{ section.settings.mobile_text_alignment }}{% if section.settings.image_first_mobile %} bf-banner--img-first{% endif %}"
+>
+  <div class="bf-banner__inner page-width">
+
+    <div class="bf-banner__content">
+      {%- for block in section.blocks -%}
+        {%- case block.type -%}
+
+          {%- when 'badge' -%}
+            <div
+              class="bf-badge {{ block.settings.font_size }}"
+              style="color:{{ block.settings.badge_text_color }};background-color:{{ block.settings.badge_bg_color }};border-color:{{ block.settings.badge_border_color }};border-style:{{ block.settings.badge_border_style }};"
+              {{ block.shopify_attributes }}
+            >
+              {{- block.settings.badge_text | escape -}}
+            </div>
+
+          {%- when 'heading' -%}
+            <h2
+              class="bf-banner__heading {{ block.settings.heading_size }}"
+              style="color:{{ block.settings.heading_color }};"
+              {{ block.shopify_attributes }}
+            >
+              {{ block.settings.heading_text }}
+            </h2>
+
+          {%- when 'subtext' -%}
+            <div
+              class="bf-subtext font-size-16-18"
+              style="color:{{ block.settings.text_color }};"
+              {{ block.shopify_attributes }}
+            >
+              {%- if block.settings.before_text != blank -%}
+                <span class="bf-subtext__before">{{ block.settings.before_text | escape }}</span>
+              {%- endif -%}
+              {%- if block.settings.code_text != blank -%}
+                <span
+                  class="bf-code font-size-16-18"
+                  style="color:{{ block.settings.code_color }};border-color:{{ block.settings.code_border_color }};"
+                >{{ block.settings.code_text | escape }}</span>
+              {%- endif -%}
+              {%- if block.settings.terms_text != blank -%}
+                <a
+                  {% if block.settings.terms_url != blank %}
+                    href="{{ block.settings.terms_url }}"
+                  {% else %}
+                    role="link" aria-disabled="true"
+                  {% endif %}
+                  class="bf-terms font-size-14-16"
+                  style="color:{{ block.settings.terms_color }};"
+                >{{ block.settings.terms_text | escape }}</a>
+              {%- endif -%}
+            </div>
+
+          {%- when 'button' -%}
+            <a
+              {% if block.settings.button_link != blank %}
+                href="{{ block.settings.button_link }}"
+              {% else %}
+                role="link" aria-disabled="true"
+              {% endif %}
+              class="n-button-primary {{ block.settings.font_size }}{% if block.settings.button_full_width %} n-button-primary--full{% endif %}"
+              style="background-color:{{ block.settings.button_bg_color }};color:{{ block.settings.button_text_color }};"
+              {{ block.shopify_attributes }}
+            >
+              {{- block.settings.button_label | escape -}}
+            </a>
+
+          {%- when 'countdown' -%}
+            {%- assign end_datetime = block.settings.end_date | append: 'T' | append: block.settings.end_time | append: ':00' -%}
+            <countdown-banner
+              data-end-date="{{ end_datetime }}"
+              {{ block.shopify_attributes }}
+            >
+              <div
+                class="bf-countdown"
+                style="--timer-bg:{{ block.settings.timer_bg_color }};--timer-text:{{ block.settings.timer_text_color }};--timer-label:{{ block.settings.timer_label_color }};"
+              >
+                <div class="bf-countdown__seg">
+                  <span class="bf-countdown__num {{ block.settings.font_size }}" data-days>00</span>
+                  <span class="bf-countdown__lbl font-size-11-13">{{ block.settings.label_days | default: 'Days' }}</span>
+                </div>
+                <span class="bf-countdown__sep" aria-hidden="true">:</span>
+                <div class="bf-countdown__seg">
+                  <span class="bf-countdown__num {{ block.settings.font_size }}" data-hours>00</span>
+                  <span class="bf-countdown__lbl font-size-11-13">{{ block.settings.label_hours | default: 'Hrs' }}</span>
+                </div>
+                <span class="bf-countdown__sep" aria-hidden="true">:</span>
+                <div class="bf-countdown__seg">
+                  <span class="bf-countdown__num {{ block.settings.font_size }}" data-minutes>00</span>
+                  <span class="bf-countdown__lbl font-size-11-13">{{ block.settings.label_minutes | default: 'Min' }}</span>
+                </div>
+                <span class="bf-countdown__sep" aria-hidden="true">:</span>
+                <div class="bf-countdown__seg">
+                  <span class="bf-countdown__num {{ block.settings.font_size }}" data-seconds>00</span>
+                  <span class="bf-countdown__lbl font-size-11-13">{{ block.settings.label_seconds | default: 'Sec' }}</span>
+                </div>
+              </div>
+              {%- if block.settings.expired_message != blank -%}
+                <p class="bf-countdown__expired font-size-16-18" hidden>{{ block.settings.expired_message | escape }}</p>
+              {%- endif -%}
+            </countdown-banner>
+
+        {%- endcase -%}
+      {%- endfor -%}
+    </div>
+
+    <div class="bf-banner__media">
+      {%- if section.settings.product_image != blank -%}
+        {{
+          section.settings.product_image
+          | image_url: width: 1400
+          | image_tag:
+            class: 'bf-banner__img',
+            widths: '400, 600, 800, 1000, 1200, 1400',
+            sizes: '(min-width: 750px) 55vw, 100vw',
+            loading: 'eager'
+        }}
+      {%- else -%}
+        {{ 'product-1' | placeholder_svg_tag: 'placeholder-svg bf-banner__placeholder' }}
+      {%- endif -%}
+    </div>
+
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Countdown Banner",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "header",
+      "content": "Layout"
+    },
+    {
+      "type": "select",
+      "id": "content_side",
+      "label": "Content position",
+      "options": [
+        { "value": "left",  "label": "Left"  },
+        { "value": "right", "label": "Right" }
+      ],
+      "default": "left"
+    },
+    {
+      "type": "select",
+      "id": "banner_height",
+      "label": "Banner height",
+      "options": [
+        { "value": "auto",   "label": "Auto"   },
+        { "value": "small",  "label": "Small"  },
+        { "value": "medium", "label": "Medium" },
+        { "value": "large",  "label": "Large"  }
+      ],
+      "default": "medium"
+    },
+    {
+      "type": "header",
+      "content": "Text alignment"
+    },
+    {
+      "type": "select",
+      "id": "desktop_text_alignment",
+      "label": "Desktop alignment",
+      "options": [
+        { "value": "left",   "label": "Left"   },
+        { "value": "center", "label": "Center" },
+        { "value": "right",  "label": "Right"  }
+      ],
+      "default": "left"
+    },
+    {
+      "type": "select",
+      "id": "mobile_text_alignment",
+      "label": "Mobile alignment",
+      "options": [
+        { "value": "left",   "label": "Left"   },
+        { "value": "center", "label": "Center" },
+        { "value": "right",  "label": "Right"  }
+      ],
+      "default": "left"
+    },
+    {
+      "type": "header",
+      "content": "Spacing"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "label": "Desktop — padding top",
+      "min": 0, "max": 120, "step": 4, "unit": "px",
+      "default": 60
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "label": "Desktop — padding bottom",
+      "min": 0, "max": 120, "step": 4, "unit": "px",
+      "default": 60
+    },
+    {
+      "type": "range",
+      "id": "mobile_padding_top",
+      "label": "Mobile — padding top",
+      "min": 0, "max": 80, "step": 4, "unit": "px",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "mobile_padding_bottom",
+      "label": "Mobile — padding bottom",
+      "min": 0, "max": 80, "step": 4, "unit": "px",
+      "default": 40
+    },
+    {
+      "type": "header",
+      "content": "Colors"
+    },
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Background color",
+      "default": "#111827"
+    },
+    {
+      "type": "header",
+      "content": "Product image"
+    },
+    {
+      "type": "image_picker",
+      "id": "product_image",
+      "label": "Hero / product image"
+    },
+    {
+      "type": "header",
+      "content": "Mobile"
+    },
+    {
+      "type": "checkbox",
+      "id": "image_first_mobile",
+      "label": "Show image above content on mobile",
+      "default": false
+    }
+  ],
+  "blocks": [
+    {
+      "type": "badge",
+      "name": "Promotional badge",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "badge_text",
+          "label": "Badge text",
+          "default": "SAVE 20% SITEWIDE · ENDS NOV 30"
+        },
+        {
+          "type": "select",
+          "id": "font_size",
+          "label": "Font size",
+          "options": [
+            { "value": "font-size-11-13", "label": "Extra small" },
+            { "value": "font-size-13-15", "label": "Small"       },
+            { "value": "font-size-14-16", "label": "Medium"      }
+          ],
+          "default": "font-size-13-15"
+        },
+        {
+          "type": "color",
+          "id": "badge_text_color",
+          "label": "Text color",
+          "default": "#000000"
+        },
+        {
+          "type": "color",
+          "id": "badge_bg_color",
+          "label": "Background color",
+          "default": "#FFD000"
+        },
+        {
+          "type": "color",
+          "id": "badge_border_color",
+          "label": "Border color",
+          "default": "#FFD000"
+        },
+        {
+          "type": "select",
+          "id": "badge_border_style",
+          "label": "Border style",
+          "options": [
+            { "value": "solid",  "label": "Solid"  },
+            { "value": "dashed", "label": "Dashed" },
+            { "value": "dotted", "label": "Dotted" },
+            { "value": "none",   "label": "None"   }
+          ],
+          "default": "dashed"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "name": "Heading",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "inline_richtext",
+          "id": "heading_text",
+          "label": "Heading",
+          "default": "BLACK FRIDAY"
+        },
+        {
+          "type": "select",
+          "id": "heading_size",
+          "label": "Heading size",
+          "options": [
+            { "value": "h2",   "label": "Small"      },
+            { "value": "h1",   "label": "Medium"     },
+            { "value": "h0",   "label": "Large"      },
+            { "value": "hxl",  "label": "Extra large"},
+            { "value": "hxxl", "label": "XX large"   }
+          ],
+          "default": "hxxl"
+        },
+        {
+          "type": "color",
+          "id": "heading_color",
+          "label": "Heading color",
+          "default": "#FFFFFF"
+        }
+      ]
+    },
+    {
+      "type": "subtext",
+      "name": "Promo code text",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "before_text",
+          "label": "Text before code",
+          "default": "At checkout, use code:"
+        },
+        {
+          "type": "text",
+          "id": "code_text",
+          "label": "Discount code",
+          "default": "BLACKFRIDAY"
+        },
+        {
+          "type": "text",
+          "id": "terms_text",
+          "label": "Terms link text",
+          "default": "+ Terms Apply"
+        },
+        {
+          "type": "url",
+          "id": "terms_url",
+          "label": "Terms link URL"
+        },
+        {
+          "type": "color",
+          "id": "text_color",
+          "label": "Text color",
+          "default": "#FFFFFF"
+        },
+        {
+          "type": "color",
+          "id": "code_color",
+          "label": "Code text color",
+          "default": "#FFFFFF"
+        },
+        {
+          "type": "color",
+          "id": "code_border_color",
+          "label": "Code border color",
+          "default": "#FFFFFF"
+        },
+        {
+          "type": "color",
+          "id": "terms_color",
+          "label": "Terms link color",
+          "default": "#CCCCCC"
+        }
+      ]
+    },
+    {
+      "type": "button",
+      "name": "CTA button",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "button_label",
+          "label": "Button label",
+          "default": "Shop 20% Off Now"
+        },
+        {
+          "type": "url",
+          "id": "button_link",
+          "label": "Button link"
+        },
+        {
+          "type": "color",
+          "id": "button_bg_color",
+          "label": "Button background",
+          "default": "#FFD000"
+        },
+        {
+          "type": "color",
+          "id": "button_text_color",
+          "label": "Button text color",
+          "default": "#000000"
+        },
+        {
+          "type": "checkbox",
+          "id": "button_full_width",
+          "label": "Full width button",
+          "default": true
+        },
+        {
+          "type": "select",
+          "id": "font_size",
+          "label": "Font size",
+          "options": [
+            { "value": "font-size-16-18", "label": "Small"  },
+            { "value": "font-size-18-20", "label": "Medium" },
+            { "value": "font-size-20-24", "label": "Large"  }
+          ],
+          "default": "font-size-18-20"
+        }
+      ]
+    },
+    {
+      "type": "countdown",
+      "name": "Countdown timer",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "end_date",
+          "label": "End date",
+          "info": "Format: YYYY-MM-DD",
+          "default": "2025-11-30"
+        },
+        {
+          "type": "text",
+          "id": "end_time",
+          "label": "End time (24h)",
+          "info": "Format: HH:MM",
+          "default": "23:59"
+        },
+        {
+          "type": "header",
+          "content": "Timer labels"
+        },
+        {
+          "type": "text",
+          "id": "label_days",
+          "label": "Days label",
+          "default": "Days"
+        },
+        {
+          "type": "text",
+          "id": "label_hours",
+          "label": "Hours label",
+          "default": "Hrs"
+        },
+        {
+          "type": "text",
+          "id": "label_minutes",
+          "label": "Minutes label",
+          "default": "Min"
+        },
+        {
+          "type": "text",
+          "id": "label_seconds",
+          "label": "Seconds label",
+          "default": "Sec"
+        },
+        {
+          "type": "header",
+          "content": "Timer colors"
+        },
+        {
+          "type": "color",
+          "id": "timer_bg_color",
+          "label": "Segment background",
+          "default": "#1E2A3A"
+        },
+        {
+          "type": "color",
+          "id": "timer_text_color",
+          "label": "Number color",
+          "default": "#FFFFFF"
+        },
+        {
+          "type": "color",
+          "id": "timer_label_color",
+          "label": "Label color",
+          "default": "#AAAAAA"
+        },
+        {
+          "type": "select",
+          "id": "font_size",
+          "label": "Number font size",
+          "options": [
+            { "value": "font-size-24-28", "label": "Small"  },
+            { "value": "font-size-28-36", "label": "Medium" },
+            { "value": "font-size-36-48", "label": "Large"  }
+          ],
+          "default": "font-size-28-36"
+        },
+        {
+          "type": "header",
+          "content": "After expiry"
+        },
+        {
+          "type": "text",
+          "id": "expired_message",
+          "label": "Expired message",
+          "default": "This offer has ended.",
+          "info": "Shown after the countdown reaches zero."
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Countdown Banner",
+      "blocks": [
+        { "type": "badge"     },
+        { "type": "heading"   },
+        { "type": "subtext"   },
+        { "type": "button"    },
+        { "type": "countdown" }
+      ]
+    }
+  ]
+}
+{% endschema %}
