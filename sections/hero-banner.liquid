@@ -1,0 +1,514 @@
+{{ 'section-hero-banner.css' | asset_url | stylesheet_tag }}
+
+{%- liquid
+  assign pos_parts = section.settings.content_position | split: '-'
+  assign v_pos = pos_parts | first
+  assign h_pos = pos_parts | last
+
+  case v_pos
+    when 'top'
+      assign v_align = 'flex-start'
+    when 'bottom'
+      assign v_align = 'flex-end'
+    else
+      assign v_align = 'center'
+  endcase
+
+  case h_pos
+    when 'right'
+      assign h_align = 'flex-end'
+    when 'center'
+      assign h_align = 'center'
+    else
+      assign h_align = 'flex-start'
+  endcase
+
+  case section.settings.mobile_content_position
+    when 'top'
+      assign mob_v = 'flex-start'
+    when 'middle'
+      assign mob_v = 'center'
+    else
+      assign mob_v = 'flex-end'
+  endcase
+
+  case section.settings.text_alignment
+    when 'right'
+      assign mob_h = 'flex-end'
+    when 'center'
+      assign mob_h = 'center'
+    else
+      assign mob_h = 'flex-start'
+  endcase
+-%}
+
+{%- style -%}
+  #Banner-{{ section.id }} {
+    --bg-color:          {{ section.settings.bg_color }};
+    --heading-color:     {{ section.settings.heading_color }};
+    --text-color:        {{ section.settings.text_color }};
+    --overlay-opacity:   {{ section.settings.overlay_opacity | divided_by: 100.0 }};
+    --content-v-align:   {{ v_align }};
+    --content-h-align:   {{ h_align }};
+    --content-max-width: {{ section.settings.content_max_width }}px;
+    --banner-min-height: {{ section.settings.banner_height }}px;
+    --logo-w:            {{ section.settings.logo_width }}px;
+    --pt:                {{ section.settings.padding_top }}px;
+    --pb:                {{ section.settings.padding_bottom }}px;
+  }
+  @media screen and (max-width: 749px) {
+    #Banner-{{ section.id }} {
+      --content-v-align:   {{ mob_v }};
+      --content-h-align:   {{ mob_h }};
+      --banner-min-height: {{ section.settings.mobile_banner_height }}px;
+      --logo-w:            {{ section.settings.logo_width_mobile }}px;
+      --pt:                {{ section.settings.mobile_padding_top }}px;
+      --pb:                {{ section.settings.mobile_padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+<section
+  id="Banner-{{ section.id }}"
+  class="hero-banner"
+  aria-label="{{ section.settings.heading | strip_html | escape }}"
+>
+
+  <!-- Background -->
+  <div class="hero-banner__bg" aria-hidden="true">
+    <picture>
+      {%- if section.settings.mobile_image != blank -%}
+        <source
+          media="(max-width: 749px)"
+          srcset="
+            {{ section.settings.mobile_image | image_url: width: 400 }} 400w,
+            {{ section.settings.mobile_image | image_url: width: 600 }} 600w,
+            {{ section.settings.mobile_image | image_url: width: 750 }} 750w
+          "
+          sizes="100vw"
+        >
+      {%- endif -%}
+      {%- if section.settings.desktop_image != blank -%}
+        {{
+          section.settings.desktop_image
+          | image_url: width: 2000
+          | image_tag:
+            widths: '750, 1000, 1200, 1500, 2000',
+            sizes: '100vw',
+            loading: 'eager',
+            fetchpriority: 'high',
+            class: 'hero-banner__img'
+        }}
+      {%- else -%}
+        {{ 'lifestyle-1' | placeholder_svg_tag: 'placeholder-svg hero-banner__img' }}
+      {%- endif -%}
+    </picture>
+  </div>
+
+  <!-- Overlay -->
+  <div class="hero-banner__overlay" aria-hidden="true"></div>
+
+  <!-- Content -->
+  <div class="hero-banner__inner">
+    <div class="custom-page-width">
+      <div class="hero-banner__content hero-banner__content--{{ section.settings.text_alignment }}">
+
+        {%- if section.settings.logo != blank -%}
+          <div class="hero-banner__logo">
+            {{
+              section.settings.logo
+              | image_url: width: 400
+              | image_tag:
+                widths: '80, 120, 160, 200, 300, 400',
+                sizes: '(min-width: 750px) {{ section.settings.logo_width }}px, {{ section.settings.logo_width_mobile }}px',
+                loading: 'lazy',
+                alt: section.settings.logo.alt
+            }}
+          </div>
+        {%- elsif section.settings.logo_text != blank -%}
+          <p class="hero-banner__logo-text" style="color: var(--heading-color);">
+            {{ section.settings.logo_text | escape }}
+          </p>
+        {%- endif -%}
+
+        {%- if section.settings.eyebrow != blank -%}
+          <p class="hero-banner__eyebrow" style="color: var(--text-color);">
+            {{ section.settings.eyebrow | escape }}
+          </p>
+        {%- endif -%}
+
+        {%- if section.settings.heading != blank -%}
+          <div
+            class="hero-banner__heading {{ section.settings.heading_size }}"
+            style="color: var(--heading-color);"
+            role="heading"
+            aria-level="{{ section.settings.heading_level }}"
+          >
+            {{ section.settings.heading }}
+          </div>
+        {%- endif -%}
+
+        {%- if section.settings.description != blank -%}
+          <p class="hero-banner__desc {{ section.settings.desc_size }}" style="color: var(--text-color);">
+            {{ section.settings.description | escape }}
+          </p>
+        {%- endif -%}
+
+        {%- if section.settings.button_label != blank or section.settings.button2_label != blank -%}
+          <div class="hero-banner__btns">
+            {%- if section.settings.button_label != blank -%}
+              <a
+                href="{{ section.settings.button_url }}"
+                class="n-button-primary"
+                style="--sm-btn-bg: {{ section.settings.btn_bg_color }}; --sm-btn-text: {{ section.settings.btn_text_color }};"
+              >
+                {{ section.settings.button_label | escape }}
+              </a>
+            {%- endif -%}
+            {%- if section.settings.button2_label != blank -%}
+              <a
+                href="{{ section.settings.button2_url }}"
+                class="n-button-secondary"
+                style="--sm-btn2-bg: {{ section.settings.btn2_bg_color }}; --sm-btn2-text: {{ section.settings.btn2_text_color }};"
+              >
+                {{ section.settings.button2_label | escape }}
+              </a>
+            {%- endif -%}
+          </div>
+        {%- endif -%}
+
+      </div>
+    </div>
+  </div>
+
+</section>
+
+{% schema %}
+{
+  "name": "Hero Banner",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "header",
+      "content": "Background Images"
+    },
+    {
+      "type": "image_picker",
+      "id": "desktop_image",
+      "label": "Desktop background image"
+    },
+    {
+      "type": "image_picker",
+      "id": "mobile_image",
+      "label": "Mobile background image",
+      "info": "Leave blank to use the desktop image on mobile too"
+    },
+    {
+      "type": "header",
+      "content": "Logo"
+    },
+    {
+      "type": "image_picker",
+      "id": "logo",
+      "label": "Logo image"
+    },
+    {
+      "type": "text",
+      "id": "logo_text",
+      "label": "Logo text (used if no image)",
+      "default": "sakuraé"
+    },
+    {
+      "type": "range",
+      "id": "logo_width",
+      "label": "Logo width — desktop",
+      "min": 40,
+      "max": 320,
+      "step": 4,
+      "unit": "px",
+      "default": 120
+    },
+    {
+      "type": "range",
+      "id": "logo_width_mobile",
+      "label": "Logo width — mobile",
+      "min": 40,
+      "max": 200,
+      "step": 4,
+      "unit": "px",
+      "default": 80
+    },
+    {
+      "type": "header",
+      "content": "Content"
+    },
+    {
+      "type": "text",
+      "id": "eyebrow",
+      "label": "Eyebrow text",
+      "info": "Small label shown above the heading"
+    },
+    {
+      "type": "richtext",
+      "id": "heading",
+      "label": "Heading",
+      "default": "<p>Luminous Skin Has Always Been Within You. <em>Sakuraé Helps Reveal It.</em></p>"
+    },
+    {
+      "type": "select",
+      "id": "heading_size",
+      "label": "Heading size",
+      "options": [
+        { "value": "font-55-37", "label": "Large (55/37px)"  },
+        { "value": "font-44-34", "label": "Medium (44/34px)" },
+        { "value": "font-30-24", "label": "Small (30/24px)"  }
+      ],
+      "default": "font-44-34"
+    },
+    {
+      "type": "select",
+      "id": "heading_level",
+      "label": "Heading level (SEO)",
+      "options": [
+        { "value": "1", "label": "H1 — main page heading" },
+        { "value": "2", "label": "H2"                     },
+        { "value": "3", "label": "H3"                     }
+      ],
+      "default": "1"
+    },
+    {
+      "type": "textarea",
+      "id": "description",
+      "label": "Description",
+      "default": "A Japanese skincare ritual rooted in 20 years of pharmaceutical science — and the belief that radiance isn't applied. It's uncovered."
+    },
+    {
+      "type": "select",
+      "id": "desc_size",
+      "label": "Description size",
+      "options": [
+        { "value": "desc-large",  "label": "Large (22/18px)"  },
+        { "value": "desc-normal", "label": "Normal (18/16px)" },
+        { "value": "desc-small",  "label": "Small (16/14px)"  }
+      ],
+      "default": "desc-normal"
+    },
+    {
+      "type": "header",
+      "content": "Primary Button"
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "label": "Label"
+    },
+    {
+      "type": "url",
+      "id": "button_url",
+      "label": "URL"
+    },
+    {
+      "type": "color",
+      "id": "btn_bg_color",
+      "label": "Background color",
+      "default": "#111111"
+    },
+    {
+      "type": "color",
+      "id": "btn_text_color",
+      "label": "Text color",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "header",
+      "content": "Secondary Button"
+    },
+    {
+      "type": "text",
+      "id": "button2_label",
+      "label": "Label"
+    },
+    {
+      "type": "url",
+      "id": "button2_url",
+      "label": "URL"
+    },
+    {
+      "type": "color",
+      "id": "btn2_bg_color",
+      "label": "Background color",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "color",
+      "id": "btn2_text_color",
+      "label": "Text color",
+      "default": "#111111"
+    },
+    {
+      "type": "header",
+      "content": "Layout & Position"
+    },
+    {
+      "type": "select",
+      "id": "content_position",
+      "label": "Desktop content position",
+      "options": [
+        { "value": "top-left",      "label": "Top left"      },
+        { "value": "top-center",    "label": "Top center"    },
+        { "value": "top-right",     "label": "Top right"     },
+        { "value": "middle-left",   "label": "Middle left"   },
+        { "value": "middle-center", "label": "Middle center" },
+        { "value": "middle-right",  "label": "Middle right"  },
+        { "value": "bottom-left",   "label": "Bottom left"   },
+        { "value": "bottom-center", "label": "Bottom center" },
+        { "value": "bottom-right",  "label": "Bottom right"  }
+      ],
+      "default": "middle-left"
+    },
+    {
+      "type": "select",
+      "id": "mobile_content_position",
+      "label": "Mobile content position",
+      "options": [
+        { "value": "top",    "label": "Top"    },
+        { "value": "middle", "label": "Middle" },
+        { "value": "bottom", "label": "Bottom" }
+      ],
+      "default": "bottom"
+    },
+    {
+      "type": "select",
+      "id": "text_alignment",
+      "label": "Text alignment",
+      "options": [
+        { "value": "left",   "label": "Left"   },
+        { "value": "center", "label": "Center" },
+        { "value": "right",  "label": "Right"  }
+      ],
+      "default": "left"
+    },
+    {
+      "type": "range",
+      "id": "content_max_width",
+      "label": "Content max width",
+      "min": 200,
+      "max": 900,
+      "step": 20,
+      "unit": "px",
+      "default": 560
+    },
+    {
+      "type": "range",
+      "id": "banner_height",
+      "label": "Desktop min height",
+      "min": 200,
+      "max": 1000,
+      "step": 20,
+      "unit": "px",
+      "default": 560
+    },
+    {
+      "type": "range",
+      "id": "mobile_banner_height",
+      "label": "Mobile min height",
+      "min": 200,
+      "max": 800,
+      "step": 20,
+      "unit": "px",
+      "default": 500
+    },
+    {
+      "type": "header",
+      "content": "Overlay"
+    },
+    {
+      "type": "range",
+      "id": "overlay_opacity",
+      "label": "Overlay darkness",
+      "info": "0 = none, 90 = nearly black",
+      "min": 0,
+      "max": 90,
+      "step": 5,
+      "unit": "%",
+      "default": 0
+    },
+    {
+      "type": "header",
+      "content": "Spacing"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "label": "Desktop padding top",
+      "min": 0,
+      "max": 120,
+      "step": 4,
+      "unit": "px",
+      "default": 60
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "label": "Desktop padding bottom",
+      "min": 0,
+      "max": 120,
+      "step": 4,
+      "unit": "px",
+      "default": 60
+    },
+    {
+      "type": "range",
+      "id": "mobile_padding_top",
+      "label": "Mobile padding top",
+      "min": 0,
+      "max": 80,
+      "step": 4,
+      "unit": "px",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "mobile_padding_bottom",
+      "label": "Mobile padding bottom",
+      "min": 0,
+      "max": 80,
+      "step": 4,
+      "unit": "px",
+      "default": 40
+    },
+    {
+      "type": "header",
+      "content": "Colors"
+    },
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Background color",
+      "default": "#FFFFFF",
+      "info": "Visible when no image is set"
+    },
+    {
+      "type": "color",
+      "id": "heading_color",
+      "label": "Heading color",
+      "default": "#111111"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text color",
+      "default": "#444444"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Hero Banner"
+    }
+  ]
+}
+{% endschema %}
