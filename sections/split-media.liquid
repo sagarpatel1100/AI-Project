@@ -2,19 +2,17 @@
 
 {%- style -%}
   #SplitMedia-{{ section.id }} {
-    --sm-bg:                     {{ section.settings.bg_color }};
     --sm-height:                 {{ section.settings.section_height }};
     --sm-mobile-height:          {{ section.settings.mobile_height }};
     --sm-gap:                    {{ section.settings.column_gap }}px;
     --sm-mobile-gap:             {{ section.settings.mobile_column_gap }}px;
-    --sm-radius:                 {{ section.settings.border_radius }}px;
+    --sm-bg:                     {{ section.settings.bg_color }};
     --sm-padding-top:            {{ section.settings.padding_top }}px;
     --sm-padding-bottom:         {{ section.settings.padding_bottom }}px;
     --sm-mobile-padding-top:     {{ section.settings.mobile_padding_top }}px;
     --sm-mobile-padding-bottom:  {{ section.settings.mobile_padding_bottom }}px;
     --sm-content-padding:        {{ section.settings.content_padding }}px;
     --sm-content-padding-mobile: {{ section.settings.content_padding_mobile }}px;
-    --sm-outer-h-pad:            {{ section.settings.outer_horizontal_padding }}px;
   }
 {%- endstyle -%}
 
@@ -22,131 +20,111 @@
   id="SplitMedia-{{ section.id }}"
   class="sm-section{% if section.settings.mobile_reverse %} sm-section--mobile-reverse{% endif %}"
 >
-  <div class="sm-section__inner">
-    <div class="sm-grid">
+  <div class="sm-grid">
 
-      {%- for block in section.blocks -%}
-        {%- assign pos_parts = block.settings.content_position | split: '-' -%}
-        {%- assign v_pos = pos_parts[0] -%}
-        {%- assign h_pos = pos_parts[1] -%}
+    {%- for block in section.blocks -%}
+      {%- assign v_pos = block.settings.content_position | split: '-' | first -%}
+      {%- assign h_pos = block.settings.content_position | split: '-' | last  -%}
 
-        <div
-          class="sm-col"
-          {{ block.shopify_attributes }}
-        >
+      <div
+        class="sm-col"
+        {{ block.shopify_attributes }}
+      >
 
-          {%- comment -%} ── Media ── {%- endcomment -%}
-          <div class="sm-media">
-            {%- if block.settings.media_type == 'video' -%}
-              {%- if block.settings.video_url != blank -%}
-                {%- if block.settings.video_url.type == 'youtube' -%}
-                  <iframe
-                    src="https://www.youtube.com/embed/{{ block.settings.video_url.id }}?autoplay=1&mute=1&loop=1&playlist={{ block.settings.video_url.id }}&controls=0&rel=0&playsinline=1&modestbranding=1"
-                    allow="autoplay; encrypted-media"
-                    allowfullscreen
-                    loading="lazy"
-                    title="{{ block.settings.heading | default: 'Video' | escape }}"
-                  ></iframe>
-                {%- elsif block.settings.video_url.type == 'vimeo' -%}
-                  <iframe
-                    src="https://player.vimeo.com/video/{{ block.settings.video_url.id }}?autoplay=1&muted=1&loop=1&background=1&autopause=0"
-                    allow="autoplay; fullscreen; picture-in-picture"
-                    allowfullscreen
-                    loading="lazy"
-                    title="{{ block.settings.heading | default: 'Video' | escape }}"
-                  ></iframe>
-                {%- endif -%}
-              {%- else -%}
-                {{ 'hero-apparel-1' | placeholder_svg_tag: 'placeholder-svg' }}
+        {{- '<!-- Media layer -->' -}}
+        <div class="sm-media">
+          {%- if block.settings.media_type == 'video' -%}
+            {%- if block.settings.video_url != blank -%}
+              {%- if block.settings.video_url.type == 'youtube' -%}
+                <iframe
+                  src="https://www.youtube.com/embed/{{ block.settings.video_url.id }}?autoplay=1&mute=1&loop=1&playlist={{ block.settings.video_url.id }}&controls=0&rel=0&showinfo=0&playsinline=1&modestbranding=1"
+                  allow="autoplay; encrypted-media"
+                  allowfullscreen
+                  loading="lazy"
+                  title="{{ block.settings.heading | default: 'Video' | escape }}"
+                ></iframe>
+              {%- elsif block.settings.video_url.type == 'vimeo' -%}
+                <iframe
+                  src="https://player.vimeo.com/video/{{ block.settings.video_url.id }}?autoplay=1&muted=1&loop=1&background=1&autopause=0"
+                  allow="autoplay; fullscreen; picture-in-picture"
+                  allowfullscreen
+                  loading="lazy"
+                  title="{{ block.settings.heading | default: 'Video' | escape }}"
+                ></iframe>
               {%- endif -%}
             {%- else -%}
-              {%- if block.settings.image != blank -%}
-                {%- assign img_sizes = '(min-width: 750px) 50vw, 100vw' -%}
-                {{
-                  block.settings.image
-                  | image_url: width: 1400
-                  | image_tag:
-                    widths: '400, 600, 800, 1000, 1200, 1400',
-                    sizes: img_sizes,
-                    loading: 'lazy'
-                }}
-              {%- else -%}
-                {{ 'hero-apparel-1' | placeholder_svg_tag: 'placeholder-svg' }}
-              {%- endif -%}
+              {{ 'hero-apparel-1' | placeholder_svg_tag: 'placeholder-svg' }}
             {%- endif -%}
-          </div>
+          {%- else -%}
+            {%- if block.settings.image != blank -%}
+              {{
+                block.settings.image
+                | image_url: width: 1400
+                | image_tag:
+                  widths: '400, 600, 800, 1000, 1200, 1400',
+                  sizes: '(min-width: 750px) 50vw, 100vw',
+                  loading: 'lazy'
+              }}
+            {%- else -%}
+              {{ 'hero-apparel-1' | placeholder_svg_tag: 'placeholder-svg' }}
+            {%- endif -%}
+          {%- endif -%}
+        </div>
 
-          {%- comment -%} ── Scrim / overlay ── {%- endcomment -%}
-          <div
-            class="sm-scrim sm-scrim--{{ block.settings.overlay_style }}"
-            style="--scrim-opacity: {{ block.settings.overlay_opacity | divided_by: 100.0 }};"
-          ></div>
+        {{- '<!-- Dark scrim -->' -}}
+        <div
+          class="sm-scrim"
+          style="--scrim-opacity: {{ block.settings.overlay_opacity | divided_by: 100.0 }};"
+        ></div>
 
-          {%- comment -%} ── Corner badge (e.g. ENDS / 10/01) ── {%- endcomment -%}
-          {%- if block.settings.corner_badge_value != blank -%}
-            <div
-              class="sm-corner-badge"
-              style="--corner-badge-bg: {{ block.settings.corner_badge_bg }}; --corner-badge-color: {{ block.settings.corner_badge_color }};"
+        {{- '<!-- Text content -->' -}}
+        <div class="sm-content sm-content--{{ v_pos }} sm-content--{{ h_pos }}">
+
+          {%- if block.settings.subheading != blank -%}
+            <p
+              class="sm-subheading"
+              style="color: {{ block.settings.text_color }};"
             >
-              {%- if block.settings.corner_badge_label != blank -%}
-                <span class="sm-corner-badge__label">{{ block.settings.corner_badge_label | escape }}</span>
-              {%- endif -%}
-              <span class="sm-corner-badge__value">{{ block.settings.corner_badge_value | escape }}</span>
-            </div>
+              {{ block.settings.subheading | escape }}
+            </p>
           {%- endif -%}
 
-          {%- comment -%} ── Content overlay ── {%- endcomment -%}
-          <div class="sm-content sm-content--{{ v_pos }} sm-content--{{ h_pos }}">
+          {%- if block.settings.heading != blank -%}
+            <h2
+              class="sm-heading sm-heading--{{ block.settings.heading_size }}"
+              style="color: {{ block.settings.text_color }};"
+            >
+              {{ block.settings.heading }}
+            </h2>
+          {%- endif -%}
 
-            {%- if block.settings.inline_badge != blank -%}
-              <span
-                class="sm-inline-badge"
-                style="background-color: {{ block.settings.inline_badge_bg }}; color: {{ block.settings.inline_badge_color }};"
-              >
-                {{- block.settings.inline_badge | escape -}}
-              </span>
-            {%- endif -%}
+          {%- if block.settings.description != blank -%}
+            <p
+              class="sm-description"
+              style="color: {{ block.settings.text_color }};"
+            >
+              {{ block.settings.description | escape }}
+            </p>
+          {%- endif -%}
 
-            {%- if block.settings.heading != blank -%}
-              <h2
-                class="sm-heading sm-heading--{{ block.settings.heading_size }} {{ block.settings.heading_font_size }}"
-                style="color: {{ block.settings.text_color }};"
-              >
-                {{ block.settings.heading }}
-              </h2>
-            {%- endif -%}
-
-            {%- if block.settings.description != blank -%}
-              <div
-                class="sm-description rte {{ block.settings.desc_font_size }}"
-                style="color: {{ block.settings.text_color }};"
-              >
-                {{ block.settings.description }}
-              </div>
-            {%- endif -%}
-
-            {%- if block.settings.button_label != blank -%}
-              <div class="sm-btn-wrap">
-                <a
-                  {% if block.settings.button_link != blank %}
-                    href="{{ block.settings.button_link }}"
-                  {% else %}
-                    role="link" aria-disabled="true"
-                  {% endif %}
-                  class="{% if block.settings.button_style == 'secondary' %}n-button-secondary{% else %}n-button-primary{% endif %}"
-                  style="--sm-btn-bg: {{ block.settings.button_bg_color }}; --sm-btn-text: {{ block.settings.button_text_color }}; --sm-btn2-bg: {{ block.settings.button_secondary_bg_color }}; --sm-btn2-text: {{ block.settings.button_text_color }};"
-                >
-                  {{- block.settings.button_label | escape -}}
-                </a>
-              </div>
-            {%- endif -%}
-
-          </div>
+          {%- if block.settings.button_label != blank -%}
+            <a
+              {% if block.settings.button_link != blank %}
+                href="{{ block.settings.button_link }}"
+              {% else %}
+                role="link" aria-disabled="true"
+              {% endif %}
+              class="button{% if block.settings.button_style == 'secondary' %} button--secondary{% else %} button--primary{% endif %}"
+            >
+              {{- block.settings.button_label | escape -}}
+            </a>
+          {%- endif -%}
 
         </div>
-      {%- endfor -%}
 
-    </div>
+      </div>
+    {%- endfor -%}
+
   </div>
 </div>
 
@@ -167,28 +145,28 @@
     {
       "type": "select",
       "id": "section_height",
-      "label": "Desktop panel height",
+      "label": "Desktop height",
       "options": [
-        { "value": "36rem",  "label": "Small"       },
-        { "value": "48rem",  "label": "Medium"      },
-        { "value": "60rem",  "label": "Large"       },
-        { "value": "72rem",  "label": "Extra large" },
-        { "value": "100vh",  "label": "Full screen" }
+        { "value": "35vh",  "label": "Small"       },
+        { "value": "55vh",  "label": "Medium"      },
+        { "value": "70vh",  "label": "Large"       },
+        { "value": "85vh",  "label": "Extra large" },
+        { "value": "100vh", "label": "Full screen" }
       ],
-      "default": "48rem"
+      "default": "55vh"
     },
     {
       "type": "select",
       "id": "mobile_height",
-      "label": "Mobile panel height",
+      "label": "Mobile height (per panel)",
       "options": [
-        { "value": "30rem",  "label": "Small"       },
-        { "value": "40rem",  "label": "Medium"      },
-        { "value": "52rem",  "label": "Large"       },
-        { "value": "65rem",  "label": "Extra large" },
-        { "value": "100vh",  "label": "Full screen" }
+        { "value": "30vh", "label": "Small"       },
+        { "value": "45vh", "label": "Medium"      },
+        { "value": "60vh", "label": "Large"       },
+        { "value": "75vh", "label": "Extra large" },
+        { "value": "100vh","label": "Full screen" }
       ],
-      "default": "40rem"
+      "default": "45vh"
     },
     {
       "type": "header",
@@ -196,33 +174,23 @@
     },
     {
       "type": "range",
-      "id": "border_radius",
-      "label": "Panel corner radius",
-      "min": 0,
-      "max": 32,
-      "step": 2,
-      "unit": "px",
-      "default": 14
-    },
-    {
-      "type": "range",
       "id": "column_gap",
-      "label": "Gap between panels",
+      "label": "Desktop gap between panels",
       "min": 0,
       "max": 40,
       "step": 2,
       "unit": "px",
-      "default": 16
+      "default": 0
     },
     {
       "type": "range",
       "id": "mobile_column_gap",
       "label": "Mobile gap between panels",
       "min": 0,
-      "max": 32,
+      "max": 40,
       "step": 2,
       "unit": "px",
-      "default": 12
+      "default": 0
     },
     {
       "type": "checkbox",
@@ -243,7 +211,7 @@
       "max": 80,
       "step": 4,
       "unit": "px",
-      "default": 32
+      "default": 48
     },
     {
       "type": "range",
@@ -261,23 +229,13 @@
     },
     {
       "type": "range",
-      "id": "outer_horizontal_padding",
-      "label": "Outer horizontal padding",
-      "min": 0,
-      "max": 80,
-      "step": 4,
-      "unit": "px",
-      "default": 20
-    },
-    {
-      "type": "range",
       "id": "padding_top",
       "label": "Padding top",
       "min": 0,
       "max": 100,
       "step": 4,
       "unit": "px",
-      "default": 40
+      "default": 0
     },
     {
       "type": "range",
@@ -287,7 +245,7 @@
       "max": 100,
       "step": 4,
       "unit": "px",
-      "default": 40
+      "default": 0
     },
     {
       "type": "range",
@@ -297,7 +255,7 @@
       "max": 60,
       "step": 4,
       "unit": "px",
-      "default": 24
+      "default": 0
     },
     {
       "type": "range",
@@ -307,7 +265,7 @@
       "max": 60,
       "step": 4,
       "unit": "px",
-      "default": 24
+      "default": 0
     },
     {
       "type": "header",
@@ -317,7 +275,7 @@
       "type": "color",
       "id": "bg_color",
       "label": "Section background",
-      "default": "#F2F4F7"
+      "default": "#000000"
     }
   ],
   "blocks": [
@@ -334,8 +292,8 @@
           "id": "media_type",
           "label": "Media type",
           "options": [
-            { "value": "image", "label": "Image"                  },
-            { "value": "video", "label": "Video (YouTube / Vimeo)" }
+            { "value": "image", "label": "Image"                 },
+            { "value": "video", "label": "Video (YouTube/Vimeo)" }
           ],
           "default": "image"
         },
@@ -343,112 +301,41 @@
           "type": "image_picker",
           "id": "image",
           "label": "Image",
-          "info": "Used when Media type is Image"
+          "info": "Used when media type is set to Image"
         },
         {
           "type": "video_url",
           "id": "video_url",
           "label": "Video URL",
-          "info": "YouTube or Vimeo. Used when Media type is Video.",
+          "info": "YouTube or Vimeo URL. Used when media type is set to Video.",
           "accept": ["youtube", "vimeo"]
-        },
-        {
-          "type": "header",
-          "content": "Overlay"
-        },
-        {
-          "type": "select",
-          "id": "overlay_style",
-          "label": "Overlay style",
-          "options": [
-            { "value": "gradient", "label": "Gradient (dark at bottom)" },
-            { "value": "flat",     "label": "Flat (uniform)"            }
-          ],
-          "default": "gradient"
         },
         {
           "type": "range",
           "id": "overlay_opacity",
-          "label": "Overlay strength",
+          "label": "Dark overlay opacity",
+          "info": "Darkens media to improve text legibility",
           "min": 0,
-          "max": 95,
+          "max": 90,
           "step": 5,
           "unit": "%",
-          "default": 55
-        },
-        {
-          "type": "header",
-          "content": "Corner badge"
-        },
-        {
-          "type": "text",
-          "id": "corner_badge_label",
-          "label": "Label (small text)",
-          "info": "e.g. ENDS",
-          "default": "ENDS"
-        },
-        {
-          "type": "text",
-          "id": "corner_badge_value",
-          "label": "Value (large text)",
-          "info": "e.g. 10/01 — leave blank to hide badge"
-        },
-        {
-          "type": "color",
-          "id": "corner_badge_bg",
-          "label": "Badge background",
-          "default": "#0D3B6E"
-        },
-        {
-          "type": "color",
-          "id": "corner_badge_color",
-          "label": "Badge text color",
-          "default": "#FFFFFF"
+          "default": 35
         },
         {
           "type": "header",
           "content": "Content"
         },
         {
-          "type": "select",
-          "id": "content_position",
-          "label": "Content position",
-          "options": [
-            { "value": "top-left",      "label": "Top left"      },
-            { "value": "top-center",    "label": "Top center"    },
-            { "value": "top-right",     "label": "Top right"     },
-            { "value": "middle-left",   "label": "Middle left"   },
-            { "value": "middle-center", "label": "Middle center" },
-            { "value": "middle-right",  "label": "Middle right"  },
-            { "value": "bottom-left",   "label": "Bottom left"   },
-            { "value": "bottom-center", "label": "Bottom center" },
-            { "value": "bottom-right",  "label": "Bottom right"  }
-          ],
-          "default": "bottom-left"
-        },
-        {
           "type": "text",
-          "id": "inline_badge",
-          "label": "Inline badge text",
-          "info": "e.g. TODAY ONLY! — leave blank to hide"
-        },
-        {
-          "type": "color",
-          "id": "inline_badge_bg",
-          "label": "Inline badge background",
-          "default": "#F5C800"
-        },
-        {
-          "type": "color",
-          "id": "inline_badge_color",
-          "label": "Inline badge text color",
-          "default": "#000000"
+          "id": "subheading",
+          "label": "Subheading",
+          "info": "Small label above the heading"
         },
         {
           "type": "inline_richtext",
           "id": "heading",
           "label": "Heading",
-          "default": "Panel Heading"
+          "default": "Panel heading"
         },
         {
           "type": "select",
@@ -464,41 +351,9 @@
           "default": "lg"
         },
         {
-          "type": "select",
-          "id": "heading_font_size",
-          "label": "Heading font size (fine-tune)",
-          "options": [
-            { "value": "",              "label": "Default (from size)"  },
-            { "value": "font-size-18-20", "label": "18–20px"           },
-            { "value": "font-size-20-24", "label": "20–24px"           },
-            { "value": "font-size-24-30", "label": "24–30px"           },
-            { "value": "font-size-28-36", "label": "28–36px"           },
-            { "value": "font-size-36-48", "label": "36–48px"           }
-          ],
-          "default": ""
-        },
-        {
-          "type": "richtext",
+          "type": "textarea",
           "id": "description",
           "label": "Description"
-        },
-        {
-          "type": "select",
-          "id": "desc_font_size",
-          "label": "Description font size",
-          "options": [
-            { "value": "font-size-12-14", "label": "12–14px" },
-            { "value": "font-size-13-15", "label": "13–15px" },
-            { "value": "font-size-14-16", "label": "14–16px" },
-            { "value": "font-size-16-18", "label": "16–18px" }
-          ],
-          "default": "font-size-14-16"
-        },
-        {
-          "type": "color",
-          "id": "text_color",
-          "label": "Text color",
-          "default": "#FFFFFF"
         },
         {
           "type": "header",
@@ -519,29 +374,37 @@
           "id": "button_style",
           "label": "Button style",
           "options": [
-            { "value": "primary",   "label": "Primary (filled)"   },
+            { "value": "primary",   "label": "Primary (filled)"  },
             { "value": "secondary", "label": "Secondary (outline)" }
           ],
           "default": "primary"
         },
         {
-          "type": "color",
-          "id": "button_bg_color",
-          "label": "Primary button background",
-          "default": "#1565C0"
+          "type": "header",
+          "content": "Text style"
         },
         {
           "type": "color",
-          "id": "button_text_color",
-          "label": "Button text color",
+          "id": "text_color",
+          "label": "Text color",
           "default": "#FFFFFF"
         },
         {
-          "type": "color",
-          "id": "button_secondary_bg_color",
-          "label": "Secondary button background",
-          "info": "Applies to Secondary style only",
-          "default": "#FFFFFF"
+          "type": "select",
+          "id": "content_position",
+          "label": "Content position",
+          "options": [
+            { "value": "top-left",     "label": "Top left"      },
+            { "value": "top-center",   "label": "Top center"    },
+            { "value": "top-right",    "label": "Top right"     },
+            { "value": "middle-left",  "label": "Middle left"   },
+            { "value": "middle-center","label": "Middle center" },
+            { "value": "middle-right", "label": "Middle right"  },
+            { "value": "bottom-left",  "label": "Bottom left"   },
+            { "value": "bottom-center","label": "Bottom center" },
+            { "value": "bottom-right", "label": "Bottom right"  }
+          ],
+          "default": "bottom-left"
         }
       ]
     }
@@ -553,26 +416,15 @@
         {
           "type": "panel",
           "settings": {
-            "heading": "15% OFF For Senior's Day",
-            "inline_badge": "TODAY ONLY!",
-            "corner_badge_label": "ENDS",
-            "corner_badge_value": "10/01",
-            "description": "Free Shipping Included! Celebrate with 15% OFF sitewide.",
-            "button_label": "Shop Now",
-            "button_style": "primary",
-            "content_position": "bottom-left",
-            "overlay_style": "gradient"
+            "heading": "First Panel",
+            "content_position": "bottom-left"
           }
         },
         {
           "type": "panel",
           "settings": {
-            "heading": "Need Help Finding The Right Solution?",
-            "description": "Take the quiz and discover the product that's best suited to your unique needs.",
-            "button_label": "Take Pain Quiz",
-            "button_style": "secondary",
-            "content_position": "bottom-left",
-            "overlay_style": "flat"
+            "heading": "Second Panel",
+            "content_position": "bottom-left"
           }
         }
       ]

@@ -1,5 +1,86 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
+    "before_after_xKYRzK": {
+      "type": "before-after",
+      "name": "Before / After",
+      "settings": {
+        "heading": "before after",
+        "heading_size": "font-30-24",
+        "description": "",
+        "desc_size": "desc-normal",
+        "text_alignment": "center",
+        "before_image": "shopify://shop_images/Frame_1000003869_1.png",
+        "after_image": "shopify://shop_images/Frame_1000003869_1_098156ed-3c0c-4706-a8b6-c5f1044a0765.png",
+        "show_labels": true,
+        "before_label": "Before",
+        "after_label": "After",
+        "label_bg": "#000000",
+        "label_color": "#FFFFFF",
+        "initial_position": 50,
+        "handle_color": "#FFFFFF",
+        "aspect_ratio": "16-9",
+        "corner_radius": 12,
+        "padding_top": 60,
+        "padding_bottom": 60,
+        "mobile_padding_top": 40,
+        "mobile_padding_bottom": 40,
+        "bg_color": "#FFFFFF",
+        "heading_color": "#111111",
+        "text_color": "#444444"
+      }
+    },
+    "new_hero_banner_kMcBbX": {
+      "type": "new-hero-banner",
+      "name": "Hero Banner",
+      "settings": {
+        "desktop_image": "shopify://shop_images/Hero_V2.png",
+        "mobile_image": "shopify://shop_images/V2_68.png",
+        "logo": "shopify://shop_images/Mask_group.png",
+        "logo_text": "sakuraé",
+        "logo_width": 152,
+        "logo_width_mobile": 120,
+        "eyebrow": "",
+        "heading": "<p>Luminous Skin Has Always Been Within You. <em>Sakuraé Helps Reveal It.</em></p>",
+        "heading_size": "font-44-34",
+        "heading_weight": "400",
+        "heading_level": "1",
+        "description": "A Japanese skincare ritual rooted in 20 years of pharmaceutical science — and the belief that radiance isn't applied. It's uncovered.",
+        "desc_size": "desc-normal",
+        "desc_weight": "400",
+        "button_label": "",
+        "button_url": "",
+        "btn_bg_color": "#111111",
+        "btn_text_color": "#ffffff",
+        "button2_label": "",
+        "button2_url": "",
+        "btn2_bg_color": "#ffffff",
+        "btn2_text_color": "#111111",
+        "content_position": "bottom-left",
+        "mobile_content_position": "bottom",
+        "text_alignment": "left",
+        "mobile_text_alignment": "center",
+        "content_max_width": 560,
+        "banner_height": 560,
+        "mobile_banner_height": 500,
+        "overlay_opacity": 0,
+        "padding_top": 60,
+        "padding_bottom": 60,
+        "mobile_padding_top": 40,
+        "mobile_padding_bottom": 40,
+        "bg_color": "#ffffff",
+        "heading_color": "#000000",
+        "text_color": "#212121"
+      }
+    },
     "image_banner": {
       "type": "image-banner",
       "blocks": {
@@ -26,36 +107,37 @@
         "heading",
         "button"
       ],
+      "disabled": true,
       "settings": {
         "image_overlay_opacity": 40,
         "image_height": "large",
-        "desktop_content_position": "bottom-center",
-        "show_text_box": false,
         "image_behavior": "none",
+        "desktop_content_position": "bottom-center",
         "desktop_content_alignment": "center",
+        "show_text_box": false,
         "color_scheme": "scheme-3",
-        "mobile_content_alignment": "center",
         "stack_images_on_mobile": false,
+        "mobile_content_alignment": "center",
         "show_text_below": false
       }
     },
     "featured_collection": {
       "type": "featured-collection",
+      "disabled": true,
       "settings": {
+        "collection": "all",
+        "products_to_show": 8,
         "title": "Featured products",
         "heading_size": "h2",
         "description": "",
         "show_description": false,
         "description_style": "body",
-        "collection": "all",
-        "products_to_show": 8,
         "columns_desktop": 4,
-        "color_scheme": "scheme-1",
+        "enable_desktop_slider": false,
         "full_width": false,
         "show_view_all": true,
         "view_all_style": "solid",
-        "enable_desktop_slider": false,
-        "swipe_on_mobile": false,
+        "color_scheme": "scheme-1",
         "image_ratio": "adapt",
         "image_shape": "default",
         "show_secondary_image": true,
@@ -63,12 +145,15 @@
         "show_rating": false,
         "quick_add": "none",
         "columns_mobile": "2",
+        "swipe_on_mobile": false,
         "padding_top": 44,
         "padding_bottom": 36
       }
     }
   },
   "order": [
+    "before_after_xKYRzK",
+    "new_hero_banner_kMcBbX",
     "image_banner",
     "featured_collection"
   ]
