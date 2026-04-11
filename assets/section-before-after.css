@@ -1,0 +1,198 @@
+/* ============================================================
+   Before / After — section-before-after.css
+   Scoped to .ba-section — zero Dawn overrides
+   ============================================================ */
+
+/* ============================================================
+   Section wrapper
+   ============================================================ */
+.ba-section {
+  background-color: var(--ba-bg, #FFFFFF);
+  padding-top:    var(--pt, 60px);
+  padding-bottom: var(--pb, 60px);
+}
+
+/* ============================================================
+   Optional heading block
+   ============================================================ */
+.ba-section__header {
+  margin-bottom: 3.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.ba-section__header--left   { align-items: flex-start; text-align: left;   }
+.ba-section__header--center { align-items: center;     text-align: center; }
+.ba-section__header--right  { align-items: flex-end;   text-align: right;  }
+
+.ba-section__heading { margin: 0; }
+.ba-section__desc    { margin: 0; }
+
+/* ============================================================
+   Web component wrapper
+   ============================================================ */
+before-after-slider {
+  display: block;
+}
+
+/* ============================================================
+   Comparison container
+   ============================================================ */
+.ba-container {
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--ba-radius, 12px);
+  user-select: none;
+  -webkit-user-select: none;
+  cursor: col-resize;
+  touch-action: none; /* prevents browser scroll hijack during drag */
+}
+
+/* Aspect ratio variants */
+.ba-container--21-9 { aspect-ratio: 21 / 9; }
+.ba-container--16-9 { aspect-ratio: 16 / 9; }
+.ba-container--4-3  { aspect-ratio: 4  / 3; }
+.ba-container--3-2  { aspect-ratio: 3  / 2; }
+.ba-container--1-1  { aspect-ratio: 1  / 1; }
+.ba-container--3-4  { aspect-ratio: 3  / 4; }
+
+/* ============================================================
+   Image layers
+   ============================================================ */
+.ba-img {
+  position: absolute;
+  inset: 0;
+}
+
+.ba-img img,
+.ba-img .placeholder-svg {
+  /* position: absolute + inset: 0 guarantees both images reference
+     the same containing block (.ba-img) for a pixel-perfect overlap */
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  pointer-events: none;
+  -webkit-user-drag: none;
+}
+
+/* Before — base, always fully visible */
+.ba-img--before {
+  z-index: 1;
+}
+
+/* After — clipped to reveal from the left up to --ba-split */
+.ba-img--after {
+  z-index: 2;
+  clip-path: inset(0 calc(100% - var(--ba-split, 50%)) 0 0);
+}
+
+/* ============================================================
+   Labels
+   ============================================================ */
+.ba-label {
+  position: absolute;
+  bottom: 2rem;
+  padding: 0.4rem 1.2rem;
+  border-radius: 10rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  background-color: var(--ba-label-bg, #000000);
+  color: var(--ba-label-color, #FFFFFF);
+  pointer-events: none;
+  opacity: 0.85;
+}
+
+/* Before label sits on the right (where before is visible) */
+.ba-label--before {
+  right: 2rem;
+}
+
+/* After label sits on the left (within the revealed after region) */
+.ba-label--after {
+  left: 2rem;
+}
+
+/* ============================================================
+   Drag handle
+   ============================================================ */
+.ba-handle {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: var(--ba-split, 50%);
+  transform: translateX(-50%);
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 4.4rem;
+  touch-action: none;
+  cursor: col-resize;
+}
+
+.ba-handle:focus-visible {
+  outline: none;
+}
+
+.ba-handle:focus-visible .ba-handle__btn {
+  outline: 3px solid #005FCC;
+  outline-offset: 2px;
+}
+
+/* Vertical line above and below the button */
+.ba-handle__line {
+  flex: 1;
+  width: 2px;
+  background-color: var(--ba-handle-color, #FFFFFF);
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Circular button */
+.ba-handle__btn {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  background-color: var(--ba-handle-color, #FFFFFF);
+  color: #111111;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.25);
+  transition: transform 0.15s ease;
+}
+
+.ba-handle:active .ba-handle__btn,
+.ba-handle.is-dragging .ba-handle__btn {
+  transform: scale(1.1);
+}
+
+/* ============================================================
+   Mobile (≤ 749px)
+   ============================================================ */
+@media screen and (max-width: 749px) {
+  .ba-section__header {
+    margin-bottom: 2.4rem;
+  }
+
+  .ba-handle__btn {
+    width: 3.6rem;
+    height: 3.6rem;
+  }
+
+  .ba-label {
+    font-size: 1.1rem;
+    padding: 0.3rem 0.9rem;
+    bottom: 1.2rem;
+  }
+
+  .ba-label--before { right: 1.2rem; }
+  .ba-label--after  { left:  1.2rem; }
+}
