@@ -68,6 +68,7 @@
 }
 
 .hero-banner__inner .custom-page-width {
+  width:100%;
   flex: 1;
   display: flex;
   align-items: var(--content-v-align, center);
@@ -92,20 +93,33 @@
 .hero-banner__content--right  { text-align: right;  align-items: flex-end;   }
 
 /* ============================================================
-   Logo
+   Logo — absolutely positioned top-center
    ============================================================ */
-.hero-banner__logo img {
+.hero-banner__logo-wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 3;
+  display: flex;
+  justify-content: center;
+  padding-top: var(--pt, 60px);
+  pointer-events: none;
+}
+
+.hero-banner__logo-wrap img {
   display: block;
   width: var(--logo-w, 120px);
   height: auto;
   max-width: 100%;
+  pointer-events: auto;
 }
 
 .hero-banner__logo-text {
-  margin: 0;
   font-size: clamp(1.6rem, 2vw, 2rem);
   font-style: italic;
-  letter-spacing: 0.08em;
+ 
+  pointer-events: auto;
 }
 
 /* ============================================================
@@ -115,7 +129,7 @@
   margin: 0;
   font-size: clamp(1.1rem, 1.2vw, 1.3rem);
   font-weight: 600;
-  letter-spacing: 0.1em;
+  
   text-transform: uppercase;
 }
 
@@ -124,8 +138,7 @@
    ============================================================ */
 .hero-banner__heading {
   margin: 0;
-  line-height: 1.15;
-  letter-spacing: -0.02em;
+
 }
 
 /* Strip default <p> margins from richtext output */
@@ -138,8 +151,7 @@
    ============================================================ */
 .hero-banner__desc {
   margin: 0;
-  line-height: 1.65;
-  max-width: 50ch;
+ 
 }
 
 .hero-banner__content--center .hero-banner__desc,
@@ -173,8 +185,7 @@
   border-radius: 10rem;
   font-size: clamp(1.4rem, 1.5vw, 1.6rem);
   font-weight: 600;
-  line-height: 1.2;
-  letter-spacing: 0.01em;
+ 
   text-decoration: none;
   cursor: pointer;
   transition: opacity 0.2s ease, transform 0.15s ease;
@@ -207,6 +218,15 @@
   .hero-banner__content {
     max-width: 100%;
   }
+
+  /* Mobile text alignment overrides */
+  .hero-banner__content--mob-left   { text-align: left;   align-items: flex-start; }
+  .hero-banner__content--mob-center { text-align: center; align-items: center;     }
+  .hero-banner__content--mob-right  { text-align: right;  align-items: flex-end;   }
+
+  .hero-banner__content--mob-center .hero-banner__btns { justify-content: center;    }
+  .hero-banner__content--mob-left   .hero-banner__btns { justify-content: flex-start;}
+  .hero-banner__content--mob-right  .hero-banner__btns { justify-content: flex-end;  }
 
   .hero-banner__content--center .hero-banner__desc {
     max-width: 40ch;

@@ -46,7 +46,9 @@
   #Banner-{{ section.id }} {
     --bg-color:          {{ section.settings.bg_color }};
     --heading-color:     {{ section.settings.heading_color }};
+    --heading-weight:    {{ section.settings.heading_weight }};
     --text-color:        {{ section.settings.text_color }};
+    --desc-weight:       {{ section.settings.desc_weight }};
     --overlay-opacity:   {{ section.settings.overlay_opacity | divided_by: 100.0 }};
     --content-v-align:   {{ v_align }};
     --content-h-align:   {{ h_align }};
@@ -108,28 +110,32 @@
   <!-- Overlay -->
   <div class="hero-banner__overlay" aria-hidden="true"></div>
 
+  <!-- Logo — always top-center, independent of content position -->
+  {%- if section.settings.logo != blank or section.settings.logo_text != blank -%}
+    <div class="hero-banner__logo-wrap">
+      {%- if section.settings.logo != blank -%}
+        {%- assign logo_sizes = '(min-width: 750px) ' | append: section.settings.logo_width | append: 'px, ' | append: section.settings.logo_width_mobile | append: 'px' -%}
+        {{
+          section.settings.logo
+          | image_url: width: 400
+          | image_tag:
+            widths: '80, 120, 160, 200, 300, 400',
+            sizes: logo_sizes,
+            loading: 'lazy',
+            alt: section.settings.logo.alt
+        }}
+      {%- else -%}
+        <span class="hero-banner__logo-text" style="color: var(--heading-color);">
+          {{ section.settings.logo_text | escape }}
+        </span>
+      {%- endif -%}
+    </div>
+  {%- endif -%}
+
   <!-- Content -->
   <div class="hero-banner__inner">
     <div class="custom-page-width">
-      <div class="hero-banner__content hero-banner__content--{{ section.settings.text_alignment }}">
-
-        {%- if section.settings.logo != blank -%}
-          <div class="hero-banner__logo">
-            {{
-              section.settings.logo
-              | image_url: width: 400
-              | image_tag:
-                widths: '80, 120, 160, 200, 300, 400',
-                sizes: '(min-width: 750px) {{ section.settings.logo_width }}px, {{ section.settings.logo_width_mobile }}px',
-                loading: 'lazy',
-                alt: section.settings.logo.alt
-            }}
-          </div>
-        {%- elsif section.settings.logo_text != blank -%}
-          <p class="hero-banner__logo-text" style="color: var(--heading-color);">
-            {{ section.settings.logo_text | escape }}
-          </p>
-        {%- endif -%}
+      <div class="hero-banner__content hero-banner__content--{{ section.settings.text_alignment }} hero-banner__content--mob-{{ section.settings.mobile_text_alignment }}">
 
         {%- if section.settings.eyebrow != blank -%}
           <p class="hero-banner__eyebrow" style="color: var(--text-color);">
@@ -140,7 +146,7 @@
         {%- if section.settings.heading != blank -%}
           <div
             class="hero-banner__heading {{ section.settings.heading_size }}"
-            style="color: var(--heading-color);"
+            style="color: var(--heading-color); font-weight: var(--heading-weight);"
             role="heading"
             aria-level="{{ section.settings.heading_level }}"
           >
@@ -149,7 +155,7 @@
         {%- endif -%}
 
         {%- if section.settings.description != blank -%}
-          <p class="hero-banner__desc {{ section.settings.desc_size }}" style="color: var(--text-color);">
+          <p class="hero-banner__desc {{ section.settings.desc_size }}" style="color: var(--text-color); font-weight: var(--desc-weight);">
             {{ section.settings.description | escape }}
           </p>
         {%- endif -%}
@@ -271,6 +277,20 @@
     },
     {
       "type": "select",
+      "id": "heading_weight",
+      "label": "Heading font weight",
+      "options": [
+        { "value": "300", "label": "Light"      },
+        { "value": "400", "label": "Regular"    },
+        { "value": "500", "label": "Medium"     },
+        { "value": "600", "label": "Semi-bold"  },
+        { "value": "700", "label": "Bold"       },
+        { "value": "800", "label": "Extra bold" }
+      ],
+      "default": "400"
+    },
+    {
+      "type": "select",
       "id": "heading_level",
       "label": "Heading level (SEO)",
       "options": [
@@ -296,6 +316,19 @@
         { "value": "desc-small",  "label": "Small (16/14px)"  }
       ],
       "default": "desc-normal"
+    },
+    {
+      "type": "select",
+      "id": "desc_weight",
+      "label": "Description font weight",
+      "options": [
+        { "value": "300", "label": "Light"     },
+        { "value": "400", "label": "Regular"   },
+        { "value": "500", "label": "Medium"    },
+        { "value": "600", "label": "Semi-bold" },
+        { "value": "700", "label": "Bold"      }
+      ],
+      "default": "400"
     },
     {
       "type": "header",
@@ -384,13 +417,24 @@
     {
       "type": "select",
       "id": "text_alignment",
-      "label": "Text alignment",
+      "label": "Text alignment — desktop",
       "options": [
         { "value": "left",   "label": "Left"   },
         { "value": "center", "label": "Center" },
         { "value": "right",  "label": "Right"  }
       ],
       "default": "left"
+    },
+    {
+      "type": "select",
+      "id": "mobile_text_alignment",
+      "label": "Text alignment — mobile",
+      "options": [
+        { "value": "left",   "label": "Left"   },
+        { "value": "center", "label": "Center" },
+        { "value": "right",  "label": "Right"  }
+      ],
+      "default": "center"
     },
     {
       "type": "range",
