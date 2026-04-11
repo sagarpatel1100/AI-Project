@@ -9,25 +9,25 @@
  */
 {
   "sections": {
-    "before_after_xKYRzK": {
-      "type": "before-after",
-      "name": "Before / After",
+    "image_compare_F8LQt7": {
+      "type": "image-compare",
+      "name": "Image Compare",
       "settings": {
-        "heading": "before after",
-        "heading_size": "font-30-24",
+        "heading": "Real People Real Result",
+        "heading_size": "font-44-34",
         "description": "",
         "desc_size": "desc-normal",
         "text_alignment": "center",
         "before_image": "shopify://shop_images/Frame_1000003869_1.png",
         "after_image": "shopify://shop_images/Frame_1000003869_1_098156ed-3c0c-4706-a8b6-c5f1044a0765.png",
+        "slider_position": 50,
         "show_labels": true,
-        "before_label": "Before",
-        "after_label": "After",
+        "before_label_text": "Before",
+        "after_label_text": "After",
         "label_bg": "#000000",
         "label_color": "#FFFFFF",
-        "initial_position": 50,
         "handle_color": "#FFFFFF",
-        "aspect_ratio": "16-9",
+        "aspect_ratio": "21-9",
         "corner_radius": 12,
         "padding_top": 60,
         "padding_bottom": 60,
@@ -36,6 +36,19 @@
         "bg_color": "#FFFFFF",
         "heading_color": "#111111",
         "text_color": "#444444"
+      }
+    },
+    "before_after_xKYRzK": {
+      "type": "before-after",
+      "disabled": true,
+      "name": "Before / After",
+      "settings": {
+        "before_image": "shopify://shop_images/Frame_1000003869_1.png",
+        "after_image": "shopify://shop_images/Frame_1000003869_1_098156ed-3c0c-4706-a8b6-c5f1044a0765.png",
+        "slider_position": 50,
+        "show_labels": true,
+        "before_label_text": "Before",
+        "after_label_text": "After"
       }
     },
     "new_hero_banner_kMcBbX": {
@@ -152,6 +165,7 @@
     }
   },
   "order": [
+    "image_compare_F8LQt7",
     "before_after_xKYRzK",
     "new_hero_banner_kMcBbX",
     "image_banner",
