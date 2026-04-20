@@ -1,1 +1,1423 @@
-{"current":"Dawn","presets":{"Dawn":{"logo_width":90,"color_schemes":{"scheme-1":{"settings":{"background":"#FFFFFF","background_gradient":"","text":"#121212","button":"#121212","button_label":"#FFFFFF","secondary_button_label":"#121212","shadow":"#121212"}},"scheme-2":{"settings":{"background":"#F3F3F3","background_gradient":"","text":"#121212","button":"#121212","button_label":"#F3F3F3","secondary_button_label":"#121212","shadow":"#121212"}},"scheme-3":{"settings":{"background":"#242833","background_gradient":"","text":"#FFFFFF","button":"#FFFFFF","button_label":"#000000","secondary_button_label":"#FFFFFF","shadow":"#121212"}},"scheme-4":{"settings":{"background":"#121212","background_gradient":"","text":"#FFFFFF","button":"#FFFFFF","button_label":"#121212","secondary_button_label":"#FFFFFF","shadow":"#121212"}},"scheme-5":{"settings":{"background":"#334FB4","background_gradient":"","text":"#FFFFFF","button":"#FFFFFF","button_label":"#334FB4","secondary_button_label":"#FFFFFF","shadow":"#121212"}}},"type_header_font":"assistant_n4","heading_scale":100,"type_body_font":"assistant_n4","body_scale":100,"page_width":1200,"spacing_sections":0,"spacing_grid_horizontal":8,"spacing_grid_vertical":8,"animations_reveal_on_scroll":true,"animations_hover_elements":"none","buttons_border_thickness":1,"buttons_border_opacity":100,"buttons_radius":0,"buttons_shadow_opacity":0,"buttons_shadow_horizontal_offset":0,"buttons_shadow_vertical_offset":4,"buttons_shadow_blur":5,"variant_pills_border_thickness":1,"variant_pills_border_opacity":55,"variant_pills_radius":40,"variant_pills_shadow_opacity":0,"variant_pills_shadow_horizontal_offset":0,"variant_pills_shadow_vertical_offset":4,"variant_pills_shadow_blur":5,"inputs_border_thickness":1,"inputs_border_opacity":55,"inputs_radius":0,"inputs_shadow_opacity":0,"inputs_shadow_horizontal_offset":0,"inputs_shadow_vertical_offset":4,"inputs_shadow_blur":5,"card_style":"standard","card_image_padding":0,"card_text_alignment":"left","card_color_scheme":"scheme-2","card_border_thickness":0,"card_border_opacity":10,"card_corner_radius":0,"card_shadow_opacity":0,"card_shadow_horizontal_offset":0,"card_shadow_vertical_offset":4,"card_shadow_blur":5,"collection_card_style":"standard","collection_card_image_padding":0,"collection_card_text_alignment":"left","collection_card_color_scheme":"scheme-2","collection_card_border_thickness":0,"collection_card_border_opacity":10,"collection_card_corner_radius":0,"collection_card_shadow_opacity":0,"collection_card_shadow_horizontal_offset":0,"collection_card_shadow_vertical_offset":4,"collection_card_shadow_blur":5,"blog_card_style":"standard","blog_card_image_padding":0,"blog_card_text_alignment":"left","blog_card_color_scheme":"scheme-2","blog_card_border_thickness":0,"blog_card_border_opacity":10,"blog_card_corner_radius":0,"blog_card_shadow_opacity":0,"blog_card_shadow_horizontal_offset":0,"blog_card_shadow_vertical_offset":4,"blog_card_shadow_blur":5,"text_boxes_border_thickness":0,"text_boxes_border_opacity":10,"text_boxes_radius":0,"text_boxes_shadow_opacity":0,"text_boxes_shadow_horizontal_offset":0,"text_boxes_shadow_vertical_offset":4,"text_boxes_shadow_blur":5,"media_border_thickness":1,"media_border_opacity":5,"media_radius":0,"media_shadow_opacity":0,"media_shadow_horizontal_offset":0,"media_shadow_vertical_offset":4,"media_shadow_blur":5,"popup_border_thickness":1,"popup_border_opacity":10,"popup_corner_radius":0,"popup_shadow_opacity":5,"popup_shadow_horizontal_offset":0,"popup_shadow_vertical_offset":4,"popup_shadow_blur":5,"drawer_border_thickness":1,"drawer_border_opacity":10,"drawer_shadow_opacity":0,"drawer_shadow_horizontal_offset":0,"drawer_shadow_vertical_offset":4,"drawer_shadow_blur":5,"badge_position":"bottom left","badge_corner_radius":40,"sale_badge_color_scheme":"scheme-4","sold_out_badge_color_scheme":"scheme-3","brand_headline":"","brand_description":"<p><\/p>","brand_image_width":100,"social_twitter_link":"","social_facebook_link":"","social_pinterest_link":"","social_instagram_link":"","social_tiktok_link":"","social_tumblr_link":"","social_snapchat_link":"","social_youtube_link":"","social_vimeo_link":"","predictive_search_enabled":true,"predictive_search_show_vendor":false,"predictive_search_show_price":false,"currency_code_enabled":true,"cart_type":"notification","show_vendor":false,"show_cart_note":false,"cart_drawer_collection":"","cart_color_scheme":"scheme-1","sections":{"main-password-header":{"type":"main-password-header","settings":{"color_scheme":"scheme-1"}},"main-password-footer":{"type":"main-password-footer","settings":{"color_scheme":"scheme-1"}}}}}}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "current": {
+    "new-gift": true,
+    "promo-on": true,
+    "icon_stroke_width": 2,
+    "button_border_radius": 6,
+    "block_border_radius": "none",
+    "vertical_spacing": "small",
+    "icon_1": "shopify://shop_images/3_35fa32d6-9ea8-4d3e-a58e-e4347fe98115.png",
+    "icon_text_1": "<p>350,000+ CUSTOMERS NATIONWIDE!</p>",
+    "icon_2": "shopify://shop_images/1_e9a71822-007d-44ff-8d36-cd9d1d56a572.png",
+    "icon_text_2": "<p>LIFETIME WARRANTY AND MONEY-BACK GUARANTEE!</p>",
+    "icon_3": "shopify://shop_images/Diseno_sin_titulo-152.png",
+    "icon_text_3": "<p>20,000+ REVIEWS ACROSS THE INTERNET!</p>",
+    "heading_color": "#000000",
+    "text_color": "#000000",
+    "background": "#f9f9f9",
+    "secondary_background": "#f9f9f9",
+    "success_color": "#0023ff",
+    "error_color": "#de2a2a",
+    "header_background": "#000000",
+    "header_text_color": "#f9f9f9",
+    "footer_background": "#121212",
+    "footer_text_color": "#f9f9f9",
+    "primary_button_background": "#ffc200",
+    "primary_button_text_color": "#282828",
+    "secondary_button_background": "#f3ff34",
+    "secondary_button_text_color": "#000000",
+    "product_on_sale_accent": "#11a603",
+    "product_sold_out_accent": "#de2a2a",
+    "product_custom_label_background": "#405de6",
+    "product_custom_label_2_background": "#f3ff34",
+    "product_in_stock_text_color": "#2e9e7b",
+    "product_low_stock_text_color": "#de2a2a",
+    "heading_font": "poppins_n6",
+    "heading_font_size": "small",
+    "heading_text_transform": "uppercase",
+    "text_font": "poppins_n4",
+    "text_font_size": 16,
+    "currency_code_enabled": false,
+    "show_image_zoom": false,
+    "stagger_products_apparition": false,
+    "stagger_blog_posts_apparition": false,
+    "reveal_product_media": false,
+    "round_color_swatches": false,
+    "show_vendor": false,
+    "show_secondary_image": false,
+    "product_add_to_cart": false,
+    "show_product_rating": true,
+    "show_discount": false,
+    "discount_mode": "saving",
+    "product_color_display": "hide",
+    "product_image_size": "square",
+    "search_enable_pages": true,
+    "search_enable_collections": false,
+    "cart_type": "drawer",
+    "cart_show_free_shipping_threshold": false,
+    "social_facebook": "https://facebook.com/carbinoxco",
+    "social_twitter": "",
+    "social_instagram": "https://www.instagram.com/shopcarbinox",
+    "social_youtube": "https://www.youtube.com/channel/UCbktxQRRWB8udqIuZZzx5OQ",
+    "social_tiktok": "https://www.tiktok.com/@shopcarbinox",
+    "favicon": "shopify://shop_images/apple-touch-icon.png",
+    "checkout_logo_image": "shopify://shop_images/REWTRE.png",
+    "checkout_logo_position": "center",
+    "checkout_logo_size": "large",
+    "checkout_body_background_color": "#f9f9f9",
+    "checkout_sidebar_background_color": "#f9f9f9",
+    "checkout_accent_color": "#282828",
+    "checkout_button_color": "#0023ff",
+    "checkout_error_color": "#de2a2a",
+    "accent_color": "#405de6",
+    "sections": {
+      "announcement-bar": {
+        "type": "announcement-bar",
+        "blocks": {
+          "message_hWhAjd": {
+            "type": "message",
+            "disabled": true,
+            "settings": {
+              "text": "<h4><strong>GET 6 FREE LIMITED STRAPS ON ORDERS OVER $150 🎁 </strong></h4>",
+              "show_announcement_button": false,
+              "Announce_text_botton_text": "",
+              "Announce_text_botton_url": "",
+              "learn_more_text": "Learn more",
+              "title": "",
+              "content": "",
+              "button_text": "",
+              "button_link": ""
+            }
+          },
+          "message_tXmNKf": {
+            "type": "message",
+            "disabled": true,
+            "settings": {
+              "text": "<p><strong>🚨 ENDS THIS WEEK: GET $50, $100 AND $150 OFF ON OUR BUNDLE PACKS. NO CODE NEEDED!</strong></p><p></p>",
+              "show_announcement_button": false,
+              "Announce_text_botton_text": "",
+              "Announce_text_botton_url": "",
+              "learn_more_text": "",
+              "title": "",
+              "content": "",
+              "button_text": "",
+              "button_link": ""
+            }
+          },
+          "message_B8hRwU": {
+            "type": "message",
+            "disabled": true,
+            "settings": {
+              "text": "<p><strong>SUMMER SALE: UP TO $150 OFF ON WATCHES + EXTRA $15 OFF + FREE MYSTERY GIFT 🧨</strong></p>",
+              "show_announcement_button": false,
+              "Announce_text_botton_text": "",
+              "Announce_text_botton_url": "",
+              "learn_more_text": "Learn more",
+              "title": "",
+              "content": "",
+              "button_text": "",
+              "button_link": ""
+            }
+          },
+          "message_DEwXFq": {
+            "type": "message",
+            "disabled": true,
+            "settings": {
+              "text": "<p><strong>GET $50, $100 AND $150 OFF ON OUR BUNDLE PACKS</strong></p>",
+              "show_announcement_button": false,
+              "Announce_text_botton_text": "",
+              "Announce_text_botton_url": "",
+              "learn_more_text": "Learn more",
+              "title": "",
+              "content": "",
+              "button_text": "",
+              "button_link": ""
+            }
+          },
+          "message_Wbqmcj": {
+            "type": "message",
+            "name": "XMAS",
+            "disabled": true,
+            "settings": {
+              "text": "<p><strong>LAST DAY TO CLAIM 50% OFF ON OUR CHRISTMAS PACKS!</strong></p>",
+              "show_announcement_button": false,
+              "Announce_text_botton_text": "",
+              "Announce_text_botton_url": "",
+              "learn_more_text": "Learn more",
+              "title": "",
+              "content": "",
+              "button_text": "",
+              "button_link": ""
+            }
+          },
+          "message_i93eTU": {
+            "type": "message",
+            "name": "EVERGREEN",
+            "settings": {
+              "text": "<p><strong>GET $150 OFF + 3 FREE GIFTS + MYSTERY GIFT!</strong></p>",
+              "show_announcement_button": false,
+              "Announce_text_botton_text": "",
+              "Announce_text_botton_url": "",
+              "learn_more_text": "Learn more",
+              "title": "",
+              "content": "",
+              "button_text": "",
+              "button_link": ""
+            }
+          }
+        },
+        "block_order": [
+          "message_hWhAjd",
+          "message_tXmNKf",
+          "message_B8hRwU",
+          "message_DEwXFq",
+          "message_Wbqmcj",
+          "message_i93eTU"
+        ],
+        "custom_css": [
+          "p {font-weight: 700; margin-bottom: -20px; margin-top: 15px;}",
+          "strong {margin-top: 0px; padding: 1px 4px;}",
+          "@media (min-width: 768px) {div {padding: 5px 0px; }}",
+          ".announcement-bar__list {padding-left: 0px; padding-right: 0px;}"
+        ],
+        "settings": {
+          "announcement_bar_position": "non_sticky",
+          "announcement_text_size": "small",
+          "autoplay": false,
+          "cycle_speed": 3,
+          "background": "#ffc200",
+          "text_color": "#000000",
+          "button_background": "#f9f9f9",
+          "button_text_color": "#ffffff"
+        }
+      },
+      "header": {
+        "type": "header",
+        "blocks": {
+          "bfaf5502-bd60-41d4-a6be-692951abaa95": {
+            "type": "mega_menu",
+            "settings": {
+              "menu_item": "PRODUCTS",
+              "images_position": "right",
+              "image_1": "shopify://shop_images/Edge-menu.webp",
+              "image_1_heading": "CARBINOX EDGE",
+              "image_1_text": "<b>Most accurate, and toughest watch yet.<span class=\"badge-new-menu\">NEW</span></b>",
+              "image_1_link": "shopify://products/carbinox-edge",
+              "image_2": "shopify://shop_images/Diseno_sin_titulo_14_-min.jpg",
+              "image_2_heading": "CARBINOX BLAZE",
+              "image_2_text": "<b>Built tougher, made smarter.</b>",
+              "image_2_link": "shopify://products/carbinox-blaze",
+              "image_3": "shopify://shop_images/Diseno_sin_titulo-min_2bbef366-340d-4669-bf2e-e8810a4f7a4a.png",
+              "image_3_heading": "CARBINOX VORTEX",
+              "image_3_text": "<b>Durability and high-end technology.</b>",
+              "image_3_link": "shopify://products/carbinox-vortex",
+              "image_4": "shopify://shop_images/Diseno_sin_titulo_-_2025-03-11T164749.582-min.png",
+              "image_4_heading": "CARBINOX X-RANGER",
+              "image_4_text": "<b>Fully made of stainless steel, ready to survive.</b>",
+              "image_4_link": "shopify://products/carbinox-x-ranger",
+              "image_5": "shopify://shop_images/2-min_20.png",
+              "image_5_heading": "OUTDOOR ARTILLERY",
+              "image_5_text": "<b>Complete your gear for the ultimate experience.</b>",
+              "image_5_link": "https://shopcarbinox.com/collections/outdoor-gear",
+              "image_6": "shopify://shop_images/2_1bd0fa6a-bcd9-49ac-a6ff-cfc6070fd97d.jpg",
+              "image_6_heading": "TEMPERED GLASSES & CABLES",
+              "image_6_text": "<b>Things happen, protect your watch.</b>",
+              "image_6_link": "shopify://collections/other-accessories",
+              "image_7": "shopify://shop_images/3_0e83730a-5a9b-43d3-8fd2-28fdeb003b03.jpg",
+              "image_7_heading": "CARBINOX STRAPS",
+              "image_7_text": "<b>Limitless customizations for your new watch.</b>",
+              "image_7_link": "shopify://pages/carbinox-bands-collection-22mm"
+            }
+          }
+        },
+        "block_order": [
+          "bfaf5502-bd60-41d4-a6be-692951abaa95"
+        ],
+        "custom_css": [
+          "@media (max-width: 480px) {.container {margin-top: -5px; }}"
+        ],
+        "settings": {
+          "enable_sticky_header": false,
+          "logo": "shopify://shop_images/LOGO_PNG.png",
+          "logo_max_width": 255,
+          "mobile_logo_max_width": 115,
+          "navigation_menu": "main-menu",
+          "sidebar_navigation_menu": "",
+          "header_layout": "logo_left_navigation_inline",
+          "show_icons": true,
+          "reduce_desktop_padding": false,
+          "show_locale_selector": false,
+          "show_country_selector": false,
+          "enable_transparent_header": false,
+          "transparent_header_text_color": "#ffffff",
+          "search_menu": ""
+        }
+      },
+      "footer": {
+        "type": "footer",
+        "blocks": {
+          "text": {
+            "type": "text",
+            "settings": {
+              "title": "contact info",
+              "content": "<p><a href=\"https://form.typeform.com/to/iDBGTeWn \" title=\"https://form.typeform.com/to/iDBGTeWn \"><strong>GET AUTOMATED SUPPORT & ANSWERS IN MINUTES HERE 👉🏻</strong></a><strong><br/><br/>📧 Email Support: info@shopcarbinox.com<br/>📆 Monday through Friday<br/>🕐 9:00 AM - 6:00 PM (Eastern Time)<br/><br/>📍Address (THIS IS NOT A STORE):<br/>1729 NW 79th Ave<br/>Doral, Florida, 33126<br/>United States</strong></p>"
+            }
+          },
+          "aa20e4fa-126c-4662-b376-ff09202e09d9": {
+            "type": "links",
+            "settings": {
+              "menu": "sections-policies"
+            }
+          },
+          "29a9fdc5-b4f8-4edd-98bb-e5bda679824b": {
+            "type": "links",
+            "settings": {
+              "menu": "footer-pages-menue"
+            }
+          },
+          "a0fada94-497a-4fc6-9cdf-c70aaf2a3c8b": {
+            "type": "newsletter",
+            "settings": {
+              "title": "Newsletter",
+              "content": "<p>Promotions, new products and sales. Directly to your inbox. While you're at it, enjoy a mystery gift right after your subscription!</p>"
+            }
+          }
+        },
+        "block_order": [
+          "text",
+          "aa20e4fa-126c-4662-b376-ff09202e09d9",
+          "29a9fdc5-b4f8-4edd-98bb-e5bda679824b",
+          "a0fada94-497a-4fc6-9cdf-c70aaf2a3c8b"
+        ],
+        "settings": {
+          "show_payment_icons": false,
+          "show_country_selector": true,
+          "show_locale_selector": true,
+          "show_cookie_bar": false,
+          "cookie_bar_title": "",
+          "cookie_bar_content": ""
+        }
+      },
+      "popup": {
+        "type": "popup",
+        "settings": {
+          "enable": false,
+          "apparition_delay": 5,
+          "show_only_on_index": true,
+          "show_only_for_visitors": true,
+          "show_only_once": true,
+          "image_position": "left",
+          "title": "Get 10% off",
+          "content": "<p>Promotions, new products and sales. Directly to your inbox.</p>"
+        }
+      },
+      "mini-cart": {
+        "type": "mini-cart",
+        "blocks": {
+          "mini_recommendation_F7KY3a": {
+            "type": "mini_recommendation",
+            "disabled": true,
+            "settings": {
+              "custom_product": ""
+            }
+          },
+          "mini_recommendation_xkiiKg": {
+            "type": "mini_recommendation",
+            "disabled": true,
+            "settings": {
+              "custom_product": "the-blastbeam-by-carbinox"
+            }
+          },
+          "mini_recommendation_V9Bxr3": {
+            "type": "mini_recommendation",
+            "disabled": true,
+            "settings": {
+              "custom_product": "black-metal-band-for-vesta-x-ranger"
+            }
+          },
+          "mini_recommendation_A6yUeP": {
+            "type": "mini_recommendation",
+            "disabled": true,
+            "settings": {
+              "custom_product": "tempered-glass-for-carbinox-blaze-type-r-tri-pack"
+            }
+          },
+          "mini_recommendation_fDRDBU": {
+            "type": "mini_recommendation",
+            "disabled": true,
+            "settings": {
+              "custom_product": "tempered-glass-for-carbinox-blaze-type-s-tri-pack"
+            }
+          },
+          "mini_recommendation_yayUJa": {
+            "type": "mini_recommendation",
+            "disabled": true,
+            "settings": {
+              "custom_product": "usb-charger-for-carbinox-blaze-type-r-tri-pack"
+            }
+          },
+          "mini_recommendation_e44nwR": {
+            "type": "mini_recommendation",
+            "disabled": true,
+            "settings": {
+              "custom_product": "usb-charger-for-carbinox-blaze-type-s-tri-pack"
+            }
+          },
+          "mini_recommendation_eRYQ4R": {
+            "type": "mini_recommendation",
+            "disabled": true,
+            "settings": {
+              "custom_product": "carbinox-tactical-pen"
+            }
+          },
+          "mini_recommendation_caXyHf": {
+            "type": "mini_recommendation",
+            "disabled": true,
+            "settings": {
+              "custom_product": ""
+            }
+          },
+          "mini_recommendation_Q6ygHf": {
+            "type": "mini_recommendation",
+            "disabled": true,
+            "settings": {
+              "custom_product": "carbinox-flashlight-mini"
+            }
+          },
+          "mini_recommendation_VVBwHU": {
+            "type": "mini_recommendation",
+            "disabled": true,
+            "settings": {
+              "custom_product": "carbinox-tactical-backpack"
+            }
+          },
+          "mini_recommendation_LN7q3k": {
+            "type": "mini_recommendation",
+            "disabled": true,
+            "settings": {
+              "custom_product": "carbinox-limited-edition-straps-6-pack-22mm"
+            }
+          },
+          "mini_recommendation_KBKgQt": {
+            "type": "mini_recommendation",
+            "disabled": true,
+            "settings": {
+              "custom_product": "tempered-glass-for-carbinox-blaze-type-r-pack-of-2"
+            }
+          },
+          "mini_recommendation_bPazFN": {
+            "type": "mini_recommendation",
+            "disabled": true,
+            "settings": {
+              "custom_product": "tempered-glass-for-carbinox-blaze-type-s-pack-of-2"
+            }
+          },
+          "mini_recommendation_Tc8zVM": {
+            "type": "mini_recommendation",
+            "disabled": true,
+            "settings": {
+              "custom_product": "usb-charger-for-carbinox-blaze-type-r"
+            }
+          },
+          "mini_recommendation_FXTr8z": {
+            "type": "mini_recommendation",
+            "disabled": true,
+            "settings": {
+              "custom_product": "usb-charger-for-carbinox-blaze-type-s"
+            }
+          }
+        },
+        "block_order": [
+          "mini_recommendation_F7KY3a",
+          "mini_recommendation_xkiiKg",
+          "mini_recommendation_V9Bxr3",
+          "mini_recommendation_A6yUeP",
+          "mini_recommendation_fDRDBU",
+          "mini_recommendation_yayUJa",
+          "mini_recommendation_e44nwR",
+          "mini_recommendation_eRYQ4R",
+          "mini_recommendation_caXyHf",
+          "mini_recommendation_Q6ygHf",
+          "mini_recommendation_VVBwHU",
+          "mini_recommendation_LN7q3k",
+          "mini_recommendation_KBKgQt",
+          "mini_recommendation_bPazFN",
+          "mini_recommendation_Tc8zVM",
+          "mini_recommendation_FXTr8z"
+        ],
+        "settings": {
+          "taxe": "Taxes will be calculated during the checkout",
+          "show_order_note": false,
+          "show_social_proof": true,
+          "show_checkout_button": true,
+          "empty_button_link": "shopify://collections/all",
+          "show_recommendations": true,
+          "show_custom_recommendations": true,
+          "recommendations_title": "GET 25% OFF ON OUR NEW PRODUCTS & PACKS:",
+          "timer_first_text": "",
+          "timer_last_text": "MINUTES!",
+          "timer_count_down": 4,
+          "custom_recommended_products": true,
+          "columbus_day": true,
+          "xmas_day": false
+        }
+      },
+      "static-text-with-icons": {
+        "type": "static-text-with-icons",
+        "blocks": {
+          "static-text-with-icons-0": {
+            "type": "item",
+            "settings": {
+              "icon": "picto-box",
+              "custom_icon_width": 50,
+              "title": "Free shipping",
+              "content": "<p>Free worldwide shipping and returns - customs and duties taxes included</p>"
+            }
+          },
+          "static-text-with-icons-1": {
+            "type": "item",
+            "settings": {
+              "icon": "picto-phone",
+              "custom_icon_width": 50,
+              "title": "Customer service",
+              "content": "<p>We are available from monday to friday to answer your questions.</p>"
+            }
+          },
+          "static-text-with-icons-2": {
+            "type": "item",
+            "settings": {
+              "icon": "picto-lock",
+              "custom_icon_width": 50,
+              "title": "Secure payment",
+              "content": "<p>Your payment information is processed securely.</p>"
+            }
+          },
+          "static-text-with-icons-3": {
+            "type": "item",
+            "settings": {
+              "icon": "picto-email",
+              "custom_icon_width": 50,
+              "title": "Contact us",
+              "content": "<p>Need to contact us ? Just send us an e-mail at info@yourstore.com</p>"
+            }
+          }
+        },
+        "block_order": [
+          "static-text-with-icons-0",
+          "static-text-with-icons-1",
+          "static-text-with-icons-2",
+          "static-text-with-icons-3"
+        ],
+        "settings": {
+          "show_section": false,
+          "background": "rgba(0,0,0,0)",
+          "text_color": "rgba(0,0,0,0)"
+        }
+      },
+      "static-newsletter": {
+        "type": "static-newsletter",
+        "settings": {
+          "show_section": false,
+          "reveal_on_scroll": true,
+          "image": "shopify://shop_images/newsletter_1.png",
+          "subheading": "subscribe to our newsletter",
+          "content": "<p>Promotions, new products and sales. Directly to your inbox. While you’re at it, enjoy a mistery gift right after your subscription!</p>",
+          "text_position": "right",
+          "text_alignment": "left",
+          "text_background": "rgba(0,0,0,0)",
+          "text_color": "rgba(0,0,0,0)",
+          "button_background": "#ffc200",
+          "button_text_color": "#2c3036"
+        }
+      },
+      "image-with-banner-section": {
+        "type": "image-with-banner-section",
+        "settings": {
+          "ridge-rating-para1": "",
+          "ridge-rating-heading1": "WE HAVE SO MANY OFFERS NOW YOU'LL THINK OUR WEBSITE IS BROKEN.",
+          "ridge-rating-para2": "",
+          "ridge-rating-bottonlink": "#",
+          "ridge-rating-buttontext": "LEARN HOW",
+          "ridge-rating-image": "shopify://shop_images/Sin_titulo_1000_x_1100_px_-min.png"
+        }
+      },
+      "risk-free": {
+        "type": "risk-free",
+        "blocks": {
+          "list_item_aWgL8J": {
+            "type": "List-item",
+            "settings": {
+              "ridge-risk-free-item-image1": "shopify://shop_images/risk-free-day_500d262b-3eb3-4910-8793-3ebbb6247df6.svg",
+              "ridge-risk-free-item-heading1": "LIFETIME WARRANTY"
+            }
+          },
+          "list_item_jqGwmH": {
+            "type": "List-item",
+            "settings": {
+              "ridge-risk-free-item-image1": "shopify://shop_images/risk-free-lifetime.svg",
+              "ridge-risk-free-item-heading1": "LIFETIME WARRANTY"
+            }
+          },
+          "list_item_RWjpwA": {
+            "type": "List-item",
+            "settings": {
+              "ridge-risk-free-item-image1": "shopify://shop_images/risk-free-reviews.svg",
+              "ridge-risk-free-item-heading1": "5 STAR REVIEWS"
+            }
+          }
+        },
+        "block_order": [
+          "list_item_aWgL8J",
+          "list_item_jqGwmH",
+          "list_item_RWjpwA"
+        ],
+        "settings": {}
+      },
+      "product-item": {
+        "type": "product-item",
+        "blocks": {
+          "product_items_cUgUrx": {
+            "type": "Product-items",
+            "settings": {
+              "image1": "shopify://shop_images/product-step-img1.png",
+              "heading": "YOUR WALLET, SMARTER (FOR FREE)",
+              "para": "<p>For a limited time - get a free AirTag attachment with your purchase and never misplace your wallet again.</p>"
+            }
+          },
+          "product_items_CJCcCf": {
+            "type": "Product-items",
+            "settings": {
+              "image1": "shopify://shop_images/product-step-img2_b20640b9-c816-463d-b18c-900f708a2862.png",
+              "heading": "30+ COLORS & STYLES",
+              "para": "<p>From discrete Gunmetal Aluminum to bolder options like Forged Ember and Burnt Damascus, there is a style for every taste and preference.</p>"
+            }
+          },
+          "product_items_Y4eQt7": {
+            "type": "Product-items",
+            "settings": {
+              "image1": "shopify://shop_images/product-step-img3_176aab72-e642-41a1-bf3c-e1bd04f0fdf5.png",
+              "heading": "RIDGE IS GUARANTEED FOR LIFE",
+              "para": "<p>We use premium metals that are durable, guaranteed for life, and backed by our 99-day risk free trial.</p>"
+            }
+          },
+          "product_items_byiTtf": {
+            "type": "Product-items",
+            "settings": {
+              "image1": "shopify://shop_images/product-step-img4_e53a2ef3-0d4f-49c4-9863-f185afa7910a.png",
+              "heading": "HIGH-QUALITY, PREMIUM MATERIALS",
+              "para": "<p>Custom icons and designs are sure to make the perfect personalized gift that will last a lifetime.</p>"
+            }
+          },
+          "product_items_FQC6GB": {
+            "type": "Product-items",
+            "settings": {
+              "image1": "shopify://shop_images/product-step-img5_bcc0510e-6d5f-4295-985b-de13c1250d8a.png",
+              "heading": "100,000+ 5-STAR REVIEWS & RISK-FREE TRIAL",
+              "para": "<p>5 million customers, 100,000+ 5-star reviews, and a 99 day risk-free trial means they'll love it or send it back for a full refund.</p>"
+            }
+          }
+        },
+        "block_order": [
+          "product_items_cUgUrx",
+          "product_items_CJCcCf",
+          "product_items_Y4eQt7",
+          "product_items_byiTtf",
+          "product_items_FQC6GB"
+        ],
+        "settings": {}
+      },
+      "image-with-text-section": {
+        "type": "image-with-text-section",
+        "blocks": {
+          "imagewithtext_FYzN4p": {
+            "type": "Imagewithtext",
+            "settings": {
+              "image1": "shopify://shop_images/check-img.svg",
+              "text3": "<p>Fits 1-12 cards in less than half the size</p>"
+            }
+          },
+          "imagewithtext_aQYH4e": {
+            "type": "Imagewithtext",
+            "settings": {
+              "image1": "shopify://shop_images/check-img_05ca1b7d-9278-4823-b12e-401bc61707a2.svg",
+              "text3": "<p>Premium metals, that are 100x more durable</p>"
+            }
+          },
+          "imagewithtext_H9xmmj": {
+            "type": "Imagewithtext",
+            "settings": {
+              "image1": "shopify://shop_images/check-img_05ca1b7d-9278-4823-b12e-401bc61707a2.svg",
+              "text3": "<p>Comfortable in your front pocket</p>"
+            }
+          }
+        },
+        "block_order": [
+          "imagewithtext_FYzN4p",
+          "imagewithtext_aQYH4e",
+          "imagewithtext_H9xmmj"
+        ],
+        "settings": {
+          "text2": "SLIMMER & SMARTER",
+          "text4": "*BOTH WALLETS CONTAIN THE SAME CARDS AND CASH*",
+          "image2": "shopify://shop_images/slimmer-img.png"
+        }
+      },
+      "Claim-section": {
+        "type": "Claim-section",
+        "blocks": {
+          "claimsection_VHPnDY": {
+            "type": "Claimsection",
+            "settings": {
+              "para2": "<p>Click 'Claim Yours'</p>"
+            }
+          },
+          "claimsection_wB6REm": {
+            "type": "Claimsection",
+            "settings": {
+              "para2": "<p>The Carbon Case for AirTag adds to your cart</p>"
+            }
+          },
+          "claimsection_erhhNa": {
+            "type": "Claimsection",
+            "settings": {
+              "para2": "<p>Choose Your Ridge Wallet & Checkout</p>"
+            }
+          },
+          "listitem_8aLMLJ": {
+            "type": "Listitem",
+            "settings": {
+              "item-img": "shopify://shop_images/claim-lifetime-img.svg",
+              "item-para": "<p>Lifetime Warranty</p>"
+            }
+          },
+          "listitem_meDEMW": {
+            "type": "Listitem",
+            "settings": {
+              "item-img": "shopify://shop_images/claim-day-img_ddd45f7a-dd50-407d-8bbf-4559ad872c27.svg",
+              "item-para": "<p>99-Day Free Trial</p>"
+            }
+          },
+          "listitem_8gA3Kd": {
+            "type": "Listitem",
+            "settings": {
+              "item-img": "shopify://shop_images/claim-shipping-img.svg",
+              "item-para": "<p>Lifetime Warranty</p>"
+            }
+          }
+        },
+        "block_order": [
+          "claimsection_VHPnDY",
+          "claimsection_wB6REm",
+          "claimsection_erhhNa",
+          "listitem_8aLMLJ",
+          "listitem_meDEMW",
+          "listitem_8gA3Kd"
+        ],
+        "settings": {
+          "text1": "CLAIM YOURS NOW",
+          "image1": "shopify://shop_images/carbon-case_f9981767-0ec9-47bf-bc35-3d04958601d0.png",
+          "text2": "CARBON CASE FOR AIRTAG IS FREE WITH PURCHASE",
+          "para1": "<p>Take advantage of this limited time offer to upgrade for FREE with the Carbon Case for AirTag - our best-selling AirTag attachment. Here's how:</p>",
+          "buttontext": "CLAIM YOURS",
+          "buttonlink": "#"
+        }
+      },
+      "trustworthy-product": {
+        "type": "trustworthy-product",
+        "blocks": {
+          "trustworthy_product_bz6qR6": {
+            "type": "TrustworthyProduct",
+            "settings": {
+              "listitem": "LIFETIME WARRANTY",
+              "listitempara": "<p>Our premium materials allow us to guarantee your wallet will function for life.</p>"
+            }
+          },
+          "trustworthy_product_i9tCKi": {
+            "type": "TrustworthyProduct",
+            "settings": {
+              "listitem": "99 DAY FREE TRIAL",
+              "listitempara": "<p>If you don't absolutely love it, send it back. No questions asked.</p>"
+            }
+          },
+          "trustworthy_product_UBrprA": {
+            "type": "TrustworthyProduct",
+            "settings": {
+              "listitem": "100,000 5-STAR REVIEWS",
+              "listitempara": "<p>Over 5 million customers rely on the Ridge every day.</p>"
+            }
+          }
+        },
+        "block_order": [
+          "trustworthy_product_bz6qR6",
+          "trustworthy_product_i9tCKi",
+          "trustworthy_product_UBrprA"
+        ],
+        "settings": {
+          "text1": "TRY THE LAST WALLET YOU’LL EVER NEED."
+        }
+      },
+      "customer-reviews": {
+        "type": "customer-reviews",
+        "blocks": {
+          "customer_review_desktop_wntHTg": {
+            "type": "customerReviewDesktop",
+            "settings": {
+              "itemimage": "shopify://shop_images/customers1.png",
+              "listitemtext": "GREAT EVERYDAY CARRY",
+              "listitempara": "<p>“All in all, great products. \"I don’t carry much cash on me but the little that I do carry is held perfectly with the money strap.\"</p>",
+              "litext1": "<p>- Charles</p>",
+              "liimg": "shopify://shop_images/verified-img.svg",
+              "litext2": "<p>Verified Review</p>"
+            }
+          },
+          "customer_review_desktop_JcfLhr": {
+            "type": "customerReviewDesktop",
+            "settings": {
+              "itemimage": "shopify://shop_images/customers2.png",
+              "listitemtext": "LOVE THE COLOR!",
+              "listitempara": "<p>“I absolutely love my wallet and it looks as good as the day I received it. The color is exactly as you see on the website.\"</p>",
+              "litext1": "<p>- Miles</p>",
+              "liimg": "shopify://shop_images/verified-img_1b10bfdf-de4f-4183-acb9-48ae282b7da8.svg",
+              "litext2": "<p>Verified Review</p>"
+            }
+          },
+          "customer_review_desktop_a8fDen": {
+            "type": "customerReviewDesktop",
+            "settings": {
+              "itemimage": "shopify://shop_images/customers3.png",
+              "listitemtext": "BOYFRIEND LOVES IT!",
+              "listitempara": "<p>“Sleek and compact, yet spacious enough to hold essentials. Durable and high-quality materials.\"</p>",
+              "litext1": "<p>- Mica</p>",
+              "liimg": "shopify://shop_images/verified-img_4d15c9c7-3072-44da-9939-7905be9545d5.svg",
+              "litext2": "<p>Verified Review</p>"
+            }
+          },
+          "customer_review_moblie_kYUYjN": {
+            "type": "customerReviewMoblie",
+            "settings": {
+              "itemimage1": "shopify://shop_images/customers1_df768686-2afa-4fa1-aeae-582760001e71.png",
+              "listitemtext1": "GREAT EVERYDAY CARRY",
+              "listitempara1": "<p>“All in all, great products. \"I don’t carry much cash on me but the little that I do carry is held perfectly with the money strap.\"</p>",
+              "litext11": "<p>- Charles</p>",
+              "liimg1": "shopify://shop_images/verified-img_1abdfbf9-0253-4aef-8aa3-7ee58e3f5fa4.svg",
+              "litext21": "<p>Verified Review</p>"
+            }
+          },
+          "customer_review_moblie_k4bgXB": {
+            "type": "customerReviewMoblie",
+            "settings": {
+              "itemimage1": "shopify://shop_images/customers2_cc61fe06-694f-4b02-9b34-a5066ef71086.png",
+              "listitemtext1": "LOVE THE COLOR!",
+              "listitempara1": "<p>“I absolutely love my wallet and it looks as good as the day I received it. The color is exactly as you see on the website.\"</p>",
+              "litext11": "<p>- Miles</p>",
+              "liimg1": "shopify://shop_images/verified-img_ff099637-c2a1-45d7-865b-0b1fa166fc09.svg",
+              "litext21": "<p>Verified Review</p>"
+            }
+          },
+          "customer_review_moblie_wEUfh7": {
+            "type": "customerReviewMoblie",
+            "settings": {
+              "itemimage1": "shopify://shop_images/customers3_a14d4f52-7eb4-49b8-9003-efc43b1225bd.png",
+              "listitemtext1": "BOYFRIEND LOVES IT!",
+              "listitempara1": "<p>“Sleek and compact, yet spacious enough to hold essentials. Durable and high-quality materials.\"</p>",
+              "litext11": "<p>- Mica</p>",
+              "liimg1": "shopify://shop_images/verified-img_8fc02416-44f8-4e56-abda-50ac004e3dd9.svg",
+              "litext21": "<p>Verified Review</p>"
+            }
+          }
+        },
+        "block_order": [
+          "customer_review_desktop_wntHTg",
+          "customer_review_desktop_JcfLhr",
+          "customer_review_desktop_a8fDen",
+          "customer_review_moblie_kYUYjN",
+          "customer_review_moblie_k4bgXB",
+          "customer_review_moblie_wEUfh7"
+        ],
+        "settings": {
+          "text1": "SEE WHAT MILLIONS OF CUSTOMERS ARE SAYING",
+          "reviewrating": "<p>5.0 100,000+</p>"
+        }
+      },
+      "instant-YgKvIlxHh11oq4pu": {
+        "type": "instant-YgKvIlxHh11oq4pu",
+        "settings": {
+          "text_XRkjPNJsQ2IfTBXf": "<p>Shop</p>",
+          "text_N9gUw7fyX3TV1u7P": "<p>We&apos;re the best alternative, here&apos;s why</p>",
+          "url_N9gUw7fyX3TV1u7P": "",
+          "text_HeaigcTT7QSe3vlT": "<p>Elite Private Club</p>",
+          "url_HeaigcTT7QSe3vlT": "",
+          "text_zJXXaYPjGP4CCNDp": "<p>Reviews</p>",
+          "url_zJXXaYPjGP4CCNDp": "",
+          "text_yja4p0ZnAjz34Ry6": "<p>About</p>",
+          "url_yja4p0ZnAjz34Ry6": "",
+          "text_9SzyZ2NYx0NgUhBh": "<p>Contact</p>",
+          "url_9SzyZ2NYx0NgUhBh": "",
+          "text_RwkRhVU25l0mYE9z": "<p>AI Troubleshooting Chat</p>",
+          "url_RwkRhVU25l0mYE9z": "",
+          "text_AallOFvsMM9gjPZF": "<p>Shop</p>",
+          "text_PG1phSAHPv5D3UqP": "<p>Smartwatches</p>",
+          "product_JzhYllTBxn3CRLEN": "",
+          "text_9t8tMwLt2LwuT8ex": "<p>NEW</p>",
+          "text_iLCxNCvwo4tf5vlB": "<p>Edge</p>",
+          "text_MEUgIsX6Y8IdgX0f": "<p>For the people who need the absolute best on their wrist: Built for extreme conditions. Our most advanced, most accurate, and toughest watch yet.</p>",
+          "text_iYWwykPuwfIcqXcj": "<p>Stainless Steel Made</p>",
+          "text_BBBtLRU4K7fx0Vwe": "<p>Most Durable</p>",
+          "text_Lv4LqtLFJVX1cSBL": "<p>15-Day Battery</p>",
+          "product_1YRhSkODVx8M8xT5": "",
+          "text_XhKP3i4lYVbisTI4": "<p>BEST SELLER</p>",
+          "text_UWuJy1E2A0PUwUej": "<p>Blaze</p>",
+          "text_EhAA5mbZW4Dg4aAO": "<p>For the people who want smart and tough, no compromise: Built for busy days and any terrain, with altimeter, barometer, and compass. Our most popular model for a reason.</p>",
+          "text_KqkN07C0IbxkXSQY": "<p>AI Voice Assistant</p>",
+          "text_Qy9Jpsb1B65P3bWa": "<p>Round or Square</p>",
+          "product_4Vg8DVYCkirCNKrk": "",
+          "text_cthmCX1JoKegXyoB": "<p>Vortex</p>",
+          "text_MkBIIdCqX3HhwlJ5": "<p>For the people who charge it and forget it, built for long shifts and back-to-back days: Military-certified and keeps going when everything else dies.</p>",
+          "text_AQ6fmRfyqZK9zgU1": "<p>Military Certified</p>",
+          "text_xc8VzLjnUk2C83c9": "<p>Full Zinc Alloy</p>",
+          "text_X4bOFHSLxHf24Aw4": "<p>Up to 60-Day Standby</p>",
+          "product_uEEieVGO8KrbPjEx": "",
+          "text_R36bRNc8UbvXMkXD": "<p>X-Ranger</p>",
+          "text_eniAJZtzcWgu11dv": "<p>For the people who are tired of breaking watches: Done wasting money on fragile tech. Tough, reliable, and built to last without the $300+ price.</p>",
+          "text_BIaJ7LuQDCnzsXoj": "<p>Most Affordable</p>",
+          "text_Rf5IW9uo0woBZ8x0": "<p>Full Metal Body</p>",
+          "text_il4yGaXLguRX1o3N": "<p>10-Day Battery</p>",
+          "text_WWK1Papt0MPovrFm": "<p>Outdoor Artillery</p>",
+          "text_pch2AaUYkNplzLJx": "<p>Carbinox Tactical Backpack</p>",
+          "url_x8wqjlxpAuZ9BU0K": "",
+          "text_ao37X4aHapzoQYfj": "<p>Carbinox Speaker</p>",
+          "url_KD92uAYTyHQ9eUrA": "",
+          "text_d0sX6g1SQnlpsUjg": "<p>Carbinox Wallet Pro</p>",
+          "url_ptSc5tLtpVK0WyNw": "",
+          "text_T3E2pl2IqUZGMY6Z": "<p>The Blastbeam</p>",
+          "text_sHQB460giZM7KJdW": "<p>Bundle &amp; Save</p>",
+          "text_7f5mN0uQgMDEdFrR": "<p>Carbinox Tactical Pen</p>",
+          "url_uFk5STOrwx90kVrB": "",
+          "text_A0eX4s3EhXJmpyOl": "<p>Carbinox Sunglasses</p>",
+          "url_frL7RkGsseWDCziF": "",
+          "text_mnOaMGzbjrJTGL1V": "<p>The Blastbeam</p>",
+          "text_1LhnxIu5odIWB5xv": "<p>Tempered Glasses &amp; cables</p>",
+          "url_qpKoFRQMH8wQHaGE": "",
+          "text_94yM8FPJjBaj3uh7": "<p>Tempered Glass for Carbinox Blaze Type R</p>",
+          "text_Wy0f1iTRtotAaIQS": "<p>Pack of 2</p>",
+          "url_q3NPRgdU08cs3ghp": "",
+          "text_f9DX8YB3zMMqfd9C": "<p>Tempered Glass for Carbinox Blaze Type S</p>",
+          "text_bnyVM5imuBkXM7yA": "<p>Pack of 2</p>",
+          "url_VrXnxPJ8pzQAZHXy": "",
+          "text_VtCrMZzU1iYbwSXa": "<p>Tempered Glass for Carbinox Vortex</p>",
+          "text_tlpwBRpbxpgcH3oY": "<p>Pack of 2</p>",
+          "url_m1h1WyoXNIXmwm28": "",
+          "text_ovw9H1SJz2hbG5Ee": "<p>Tempered Glass for Carbinox X-Ranger</p>",
+          "text_gZh5ezOGCTJ9Jz9I": "<p>Pack of 2</p>",
+          "url_7UrSxqOfARIVuO2p": "",
+          "text_u2DRzoFH22KoZPiG": "<p>Tempered Glass for Carbinox Vesta</p>",
+          "text_j2CfbmL50ICkhk76": "<p>Pack of 2</p>",
+          "url_FxlyVuxQLo5aNfuU": "",
+          "text_VQ28peHcHqbQeiXk": "<p>Tempered Glass for Carbinox Titan Pro</p>",
+          "text_M57Foh3yiRiZHUPG": "<p>Pack of 2</p>",
+          "url_wQORCrQumP1VlAe9": "",
+          "text_yjXtITnjbxb165y9": "<p>Tempered Glass for Carbinox Edge</p>",
+          "text_0mPOlwt6778T1GJv": "<p>Pack of 2</p>",
+          "url_kKBGadB0sgjvhGxj": "",
+          "text_Ar7o5Xv2wdMVMGAg": "<p>USB Charger for Carbinox Blaze Type R</p>",
+          "url_89wstmWt8L27NY0T": "",
+          "text_q9LviYZ5hpqljkW7": "<p>USB Charger for Carbinox Blaze Type S</p>",
+          "url_m7ZsavFQKhhZjazg": "",
+          "text_oRn2QCXjadAhtxrl": "<p>USB Charger for Carbinox Vortex</p>",
+          "url_0XaeLZ5KjNx92TA7": "",
+          "text_Bwz0bXe1ZAgRu2ZA": "<p>QI Charger for Carbinox X-Ranger</p>",
+          "url_fBd9ACokcv8uzNj5": "",
+          "text_WImYpI9Iktx1fTJq": "<p>USB Charger for Cable for Carbinox Ivy</p>",
+          "url_wMMJSmKgQSZvWVQy": "",
+          "text_jK7PRlz3AFhGPH7z": "<p>USB Charger for Carbinox Edge</p>",
+          "text_gDDdbYBJ7CTJbe1u": "<p>Carbinox Straps</p>",
+          "url_y8QPDLXxiGvlFNB9": "",
+          "text_U7sxlukD9gTpwgS9": "<p>Carbinox Limited Bands 6-Pack</p>",
+          "text_4n52hc3qAAwMjNtd": "<p>22mm</p>",
+          "url_sSLjo7TMO1u7dWc7": "",
+          "text_8BeimsuRE3Qx3kPz": "<p>Red Apex Band #23</p>",
+          "text_RJbvB3tqTAMEdCux": "<p>22mm</p>",
+          "url_bGsCknqDS6AThECy": "",
+          "text_5GPxgqR7rivywBpM": "<p>Camo Orange Flex Band #19</p>",
+          "text_k9muCwrmN43AsMpr": "<p>22mm</p>",
+          "url_pEK8q0ivq65bCrbg": "",
+          "text_iu5V1xazRayf2Gpe": "<p>White/Brown Ironside Band #24</p>",
+          "text_PrazESurzmlxAUyt": "<p>22mm</p>",
+          "url_PV6Gh2sbjm3vs547": "",
+          "text_izMmGy20HfxrTBlG": "<p>Red/Green Ironside Band #9</p>",
+          "text_a2OX7AXvlcLznCUH": "<p>22mm</p>",
+          "url_nHpl4rH97hUsbRXI": "",
+          "text_LfbJpIKpFs74avzO": "<p>Black Carbon Fiber Band #25</p>",
+          "text_50BNTP4wI74mMrvN": "<p>22mm</p>",
+          "url_36U9M0Pew5j4wOsn": "",
+          "text_h7FAM2FcudztNq0H": "<p>Black Metal Band Pro V2 &amp; ToolKit</p>",
+          "text_lFVXWdmucq5QE2up": "<p>22mm</p>",
+          "url_LaCmg7qLeEWuSMZu": "",
+          "text_JhhSNLlSgpnwlcit": "<p>shop ALL ➔</p>",
+          "text_MbIGrUTOM5g0UWQT": "<p>We&apos;re the best alternative, here&apos;s why</p>",
+          "url_MbIGrUTOM5g0UWQT": "",
+          "text_EAe8X1Ql3ejtuJsd": "<p>Elite Private Club</p>",
+          "url_EAe8X1Ql3ejtuJsd": "",
+          "text_2rZ1URPrpWW7aODi": "<p>About</p>",
+          "url_2rZ1URPrpWW7aODi": "",
+          "text_4rIMIGNFLrcD11xt": "<p>Contact</p>",
+          "url_4rIMIGNFLrcD11xt": "",
+          "text_dLtSc86baSWpHWOf": "<p>AI Troubleshooting Chat</p>",
+          "url_dLtSc86baSWpHWOf": "",
+          "padding_top": 0,
+          "padding_bottom": 0
+        }
+      }
+    },
+    "content_for_index": [],
+    "blocks": {
+      "1877152918344802950": {
+        "type": "shopify://apps/intelligems-a-b-testing/blocks/intelligems-script/fa83b64c-0c77-4c0c-b4b2-b94b42f5ef19",
+        "disabled": false,
+        "settings": {}
+      }
+    }
+  },
+  "presets": {
+    "Carbon": {
+      "button_border_radius": 0,
+      "block_border_radius": "none",
+      "heading_color": "#282828",
+      "text_color": "#282828",
+      "secondary_background": "#f5f5f5",
+      "success_color": "#2e9e7b",
+      "error_color": "#de2a2a",
+      "header_background": "#282828",
+      "footer_background": "#282828",
+      "footer_text_color": "#ffffff",
+      "primary_button_background": "#405de6",
+      "secondary_button_background": "#f3ff34",
+      "secondary_button_text_color": "#282828",
+      "product_on_sale_accent": "#de2a2a",
+      "product_custom_label_background": "#405de6",
+      "product_custom_label_2_background": "#f3ff34",
+      "product_in_stock_text_color": "#2e9e7b",
+      "product_low_stock_text_color": "#de2a2a",
+      "heading_font": "zurich_extended_n8",
+      "heading_font_size": "medium",
+      "heading_text_transform": "uppercase",
+      "text_font": "zurich_n4",
+      "text_font_size": 15,
+      "currency_code_enabled": false,
+      "stagger_products_apparition": true,
+      "round_color_swatches": false,
+      "show_vendor": false,
+      "show_secondary_image": true,
+      "product_color_display": "count",
+      "product_image_size": "natural",
+      "show_product_rating": false,
+      "cart_type": "message",
+      "cart_show_free_shipping_threshold": true,
+      "accent_color": "#405de6",
+      "checkout_sidebar_background_color": "#f5f5f5",
+      "checkout_accent_color": "#282828",
+      "checkout_button_color": "#405de6",
+      "checkout_error_color": "#de2a2a",
+      "sections": {
+        "announcement-bar": {
+          "type": "announcement-bar",
+          "blocks": {
+            "message-1": {
+              "type": "message",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "message-1"
+          ],
+          "settings": {
+            "announcement_bar_position": "non_sticky",
+            "announcement_text_size": "normal",
+            "autoplay": true,
+            "cycle_speed": 5,
+            "background": "#f3ff34",
+            "text_color": "#282828",
+            "button_background": "#282828",
+            "button_text_color": "#ffffff"
+          }
+        },
+        "header": {
+          "type": "header",
+          "settings": {
+            "enable_sticky_header": true,
+            "navigation_menu": "main-menu",
+            "header_layout": "logo_left_navigation_center",
+            "show_icons": false,
+            "reduce_desktop_padding": false,
+            "enable_transparent_header": false,
+            "transparent_header_text_color": "#ffffff"
+          }
+        },
+        "footer": {
+          "type": "footer",
+          "blocks": {
+            "text": {
+              "type": "text",
+              "settings": {}
+            },
+            "links": {
+              "type": "links",
+              "settings": {
+                "menu": "footer"
+              }
+            },
+            "newsletter": {
+              "type": "newsletter",
+              "settings": {}
+            },
+            "social_media": {
+              "type": "social_media",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "text",
+            "links",
+            "newsletter",
+            "social_media"
+          ],
+          "settings": {}
+        }
+      }
+    },
+    "Ivory": {
+      "button_border_radius": 4,
+      "block_border_radius": "small",
+      "heading_color": "#1a1a1a",
+      "text_color": "#1a1a1a",
+      "secondary_background": "#f5f1ec",
+      "success_color": "#2e9e7b",
+      "error_color": "#de2a2a",
+      "header_background": "#56112a",
+      "header_text_color": "#ffffff",
+      "footer_background": "#56112a",
+      "footer_text_color": "#ffffff",
+      "primary_button_background": "#56112a",
+      "primary_button_text_color": "#ffffff",
+      "secondary_button_background": "#f7aea6",
+      "secondary_button_text_color": "#56112a",
+      "product_on_sale_accent": "#913b59",
+      "product_custom_label_background": "#405de6",
+      "product_custom_label_2_background": "#f3e5b6",
+      "product_in_stock_text_color": "#2e9e7b",
+      "product_low_stock_text_color": "#de2a2a",
+      "heading_font": "itc_caslon_no_224_n5",
+      "heading_font_size": "medium",
+      "heading_text_transform": "normal",
+      "text_font": "avenir_next_n4",
+      "text_font_size": 15,
+      "stagger_products_apparition": true,
+      "round_color_swatches": true,
+      "show_vendor": false,
+      "show_secondary_image": true,
+      "product_color_display": "count",
+      "product_image_size": "natural",
+      "cart_type": "page",
+      "accent_color": "#405de6",
+      "checkout_sidebar_background_color": "#f6f3ed",
+      "checkout_accent_color": "#353535",
+      "checkout_button_color": "#353535",
+      "checkout_error_color": "#de2a2a",
+      "sections": {
+        "announcement-bar": {
+          "type": "announcement-bar",
+          "blocks": {
+            "message-1": {
+              "type": "message",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "message-1"
+          ],
+          "settings": {
+            "announcement_bar_position": "non_sticky",
+            "announcement_text_size": "small",
+            "autoplay": true,
+            "cycle_speed": 5,
+            "background": "#f7aea6",
+            "text_color": "#56112a",
+            "button_background": "#56112a",
+            "button_text_color": "#ffffff"
+          }
+        },
+        "header": {
+          "type": "header",
+          "settings": {
+            "enable_sticky_header": true,
+            "navigation_menu": "main-menu",
+            "header_layout": "logo_center_navigation_inline",
+            "show_icons": false,
+            "reduce_desktop_padding": false,
+            "enable_transparent_header": false,
+            "transparent_header_text_color": "#ffffff"
+          }
+        },
+        "footer": {
+          "type": "footer",
+          "blocks": {
+            "text": {
+              "type": "text",
+              "settings": {}
+            },
+            "links": {
+              "type": "links",
+              "settings": {
+                "menu": "footer"
+              }
+            },
+            "newsletter": {
+              "type": "newsletter",
+              "settings": {}
+            },
+            "social_media": {
+              "type": "social_media",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "text",
+            "links",
+            "newsletter",
+            "social_media"
+          ],
+          "settings": {}
+        }
+      }
+    },
+    "Quartz": {
+      "icon_stroke_width": 1.3,
+      "button_border_radius": 0,
+      "block_border_radius": "none",
+      "vertical_spacing": "medium",
+      "heading_color": "#0d0d0d",
+      "text_color": "#2e2e2e",
+      "background": "#ffffff",
+      "secondary_background": "#f5f5f5",
+      "success_color": "#3c6e71",
+      "error_color": "#de2a2a",
+      "header_background": "#ffffff",
+      "header_text_color": "#2e2e2e",
+      "footer_background": "#ffffff",
+      "footer_text_color": "#2e2e2e",
+      "primary_button_background": "#051e38",
+      "primary_button_text_color": "#ffffff",
+      "secondary_button_background": "#dfdfdf",
+      "secondary_button_text_color": "#2e2e2e",
+      "product_on_sale_accent": "#de2b2b",
+      "product_sold_out_accent": "#5b5b5b",
+      "product_custom_label_background": "#051e38",
+      "product_custom_label_2_background": "#2e9e7b",
+      "product_in_stock_text_color": "#2e9e7b",
+      "product_low_stock_text_color": "#de2b2b",
+      "heading_font": "futura_n3",
+      "heading_font_size": "medium",
+      "heading_text_transform": "uppercase",
+      "text_font": "din_next_n4",
+      "text_font_size": 15,
+      "stagger_products_apparition": true,
+      "round_color_swatches": false,
+      "show_vendor": false,
+      "show_secondary_image": true,
+      "product_color_display": "hide",
+      "product_image_size": "natural",
+      "cart_type": "page",
+      "cart_icon": "tote_bag",
+      "checkout_sidebar_background_color": "#f5f5f5",
+      "checkout_accent_color": "#051e38",
+      "checkout_button_color": "#051e38",
+      "checkout_error_color": "#de2a2a",
+      "accent_color": "#405de6",
+      "sections": {
+        "announcement-bar": {
+          "type": "announcement-bar",
+          "blocks": {
+            "message-1": {
+              "type": "message",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "message-1"
+          ],
+          "settings": {
+            "announcement_bar_position": "non_sticky",
+            "announcement_text_size": "small",
+            "autoplay": true,
+            "cycle_speed": 5,
+            "background": "#051e38",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#051e38"
+          }
+        },
+        "header": {
+          "type": "header",
+          "settings": {
+            "enable_sticky_header": true,
+            "navigation_menu": "main-menu",
+            "header_layout": "logo_center_navigation_inline",
+            "show_icons": true,
+            "reduce_desktop_padding": false,
+            "enable_transparent_header": true,
+            "transparent_header_text_color": "#ffffff"
+          }
+        },
+        "footer": {
+          "type": "footer",
+          "blocks": {
+            "text": {
+              "type": "text",
+              "settings": {}
+            },
+            "links": {
+              "type": "links",
+              "settings": {
+                "menu": "footer"
+              }
+            },
+            "newsletter": {
+              "type": "newsletter",
+              "settings": {}
+            },
+            "social_media": {
+              "type": "social_media",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "text",
+            "links",
+            "newsletter",
+            "social_media"
+          ],
+          "settings": {}
+        }
+      }
+    },
+    "Sapphire": {
+      "icon_stroke_width": 1.2,
+      "button_border_radius": 0,
+      "block_border_radius": "none",
+      "heading_color": "#0c1b54",
+      "text_color": "#0c1b54",
+      "background": "#ffffff",
+      "secondary_background": "#f7f7f7",
+      "success_color": "#708a7d",
+      "error_color": "#d2545a",
+      "header_background": "#0c1b54",
+      "footer_background": "#0c1b54",
+      "footer_text_color": "#ffffff",
+      "primary_button_background": "#0c1b54",
+      "secondary_button_background": "#f7f7f7",
+      "secondary_button_text_color": "#0c1b54",
+      "product_rating_color": "#a48156",
+      "product_on_sale_accent": "#d2545a",
+      "product_custom_label_background": "#405de6",
+      "product_custom_label_2_background": "#f3ff34",
+      "product_in_stock_text_color": "#2e9e7b",
+      "product_low_stock_text_color": "#d2545a",
+      "heading_font": "chong_modern_n4",
+      "heading_font_size": "large",
+      "heading_text_transform": "normal",
+      "text_font": "trade_gothic_n4",
+      "text_font_size": 15,
+      "stagger_products_apparition": true,
+      "round_color_swatches": true,
+      "show_vendor": true,
+      "show_secondary_image": true,
+      "show_product_rating": true,
+      "product_color_display": "hide",
+      "product_image_size": "natural",
+      "cart_type": "message",
+      "checkout_sidebar_background_color": "#f5f5f5",
+      "checkout_accent_color": "#282828",
+      "checkout_button_color": "#405de6",
+      "checkout_error_color": "#de2a2a",
+      "accent_color": "#405de6",
+      "sections": {
+        "announcement-bar": {
+          "type": "announcement-bar",
+          "blocks": {
+            "message-1": {
+              "type": "message",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "message-1"
+          ],
+          "settings": {
+            "announcement_bar_position": "non_sticky",
+            "announcement_text_size": "small",
+            "autoplay": true,
+            "cycle_speed": 5,
+            "background": "#ffe5db",
+            "text_color": "#0c1b54",
+            "button_background": "#0c1b54",
+            "button_text_color": "#ffffff"
+          }
+        },
+        "header": {
+          "type": "header",
+          "settings": {
+            "enable_sticky_header": true,
+            "navigation_menu": "main-menu",
+            "header_layout": "logo_center_navigation_inline",
+            "show_icons": true,
+            "reduce_desktop_padding": false,
+            "enable_transparent_header": true,
+            "transparent_header_text_color": "#ffffff"
+          }
+        },
+        "footer": {
+          "type": "footer",
+          "blocks": {
+            "text": {
+              "type": "text",
+              "settings": {}
+            },
+            "links": {
+              "type": "links",
+              "settings": {
+                "menu": "footer"
+              }
+            },
+            "newsletter": {
+              "type": "newsletter",
+              "settings": {}
+            },
+            "social_media": {
+              "type": "social_media",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "text",
+            "links",
+            "newsletter",
+            "social_media"
+          ],
+          "settings": {}
+        }
+      }
+    }
+  },
+  "platform_customizations": {
+    "custom_css": []
+  }
+}

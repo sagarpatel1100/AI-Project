@@ -1,0 +1,296 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "show_title": true,
+        "page_width": "medium"
+      }
+    },
+    "d3145a6a-daa2-4956-b9a0-abcbfab5230d": {
+      "type": "rich-text",
+      "settings": {
+        "section_id": "",
+        "subheading": "UNDERSTAND HOW YOUR CARBINOX SMARTWATCH WORKS.",
+        "title": "CARBINOX TROUBLESHOOTING GUIDE.",
+        "content": "<p><strong>All Carbinox products are made with the highest quality standards to provide a positive experience to all our customers across the nation.</strong></p><p><strong>We’ve created this troubleshooting guide to provide solutions to anything you may be facing with your new smartwatch.</strong></p><p><strong>It’s imperative to understand how your new product works to get the most out of it.</strong></p>",
+        "button_text": "",
+        "button_link": "",
+        "background_type": "full_width",
+        "text_width": "medium",
+        "text_position": "center",
+        "text_alignment": "center",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "c1252d77-c4b4-47d6-806b-2fbde5bcf822": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--14757829345383__c1252d77-c4b4-47d6-806b-2fbde5bcf822-item-1": {
+          "type": "item",
+          "settings": {
+            "show_video": false,
+            "video_link": "",
+            "image": "shopify://shop_images/1-min-11.png",
+            "tab_label": "Item",
+            "subheading": "",
+            "title": "*IF YOUR ISSUE DOES NOT APPEAR IN THIS GUIDE, PLEASE REACH OUR CUSTOMER SUPPORT TEAM AT INFO@SHOPCARBINOX.COM AND WE’LL BE WITH YOU IN LESS THAN 24 HOURS.",
+            "content": "",
+            "button_text": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--14757829345383__c1252d77-c4b4-47d6-806b-2fbde5bcf822-item-1"
+      ],
+      "custom_css": [
+        "h3 {font-size: 20px;}"
+      ],
+      "settings": {
+        "section_id": "",
+        "reveal_on_scroll": true,
+        "background_type": "full_width",
+        "background_overlap": "image",
+        "image_position": "left",
+        "text_alignment": "center",
+        "cycle_speed": 8,
+        "accent_background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)",
+        "enable_custom_margin": false,
+        "margin_bottom": 0
+      }
+    },
+    "b70f61ac-9e09-42de-8408-c499f3008bc6": {
+      "type": "rich-text",
+      "custom_css": [
+        "h3 {font-size: 20px;}"
+      ],
+      "settings": {
+        "section_id": "",
+        "subheading": "Before we get started...",
+        "title": "it’s very important for you to understand certain details about our smartwatches.",
+        "content": "<p><strong>👉🏼 Our smartwatches are designed to withstand extreme conditions and situations where other smartwatches wouldn’t last. However, they’re not indestructible. Please, do not submit your smartwatch to abuse tests trying to break it just for fun. Unfortunately, we won’t be able to replace your product in case this happens.<br/></strong></p><p><strong>👉🏼 You can read SMS or social media notifications on your smartwatch, but you cannot reply to it. The reason behind this is that this particular feature is extremely expensive and it could dramatically increase the costs of our products. There’s no smartwatch in the market that you can reply to messages and cost less than $500. Please keep in mind this.<br/></strong></p><p><strong>👉🏼 All Carbinox smartwatches come with built-in apps that make your experience the best one. However, you will not be able to install external apps on the watch. As explained above, there are certain features that make the product cost five times more, and we’re always looking to provide a better solution for the lowest cost possible.</strong></p><p><strong>👉🏼 This applies to all smartwatches and activity trackers available in the market, not only Carbinox. You may experience a slight tendency of getting inaccurate stats, which is around 5-10% of error margin. This is because we're always on the move and smartwatches are not completely tight on the wrist. Please keep it in mind.</strong></p>",
+        "button_text": "",
+        "button_link": "",
+        "background_type": "full_width",
+        "text_width": "medium",
+        "text_position": "left",
+        "text_alignment": "left",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "3ee88f80-dfcc-407f-97b3-3d7a8acef28d": {
+      "type": "image-with-text",
+      "blocks": {
+        "77cc0c8e-6c42-43a6-a177-67e202c30ec3": {
+          "type": "item",
+          "settings": {
+            "show_video": false,
+            "video_link": "",
+            "image": "shopify://shop_images/Diseno_sin_titulo-164-min.png",
+            "tab_label": "Item",
+            "subheading": "",
+            "title": "PLEASE NOTE: MOST OF THE PROBLEMS YOU MAY EXPERIENCE WITH YOUR SMARTWATCH CAN BE EASILY SOLVE BY VERIFYING THE FOLLOWING:",
+            "content": "<p><strong>👉🏼 Make sure you have the latest version of our Carbinox App. To verify this, just open the App Store on your smartphone, look for our app on the list and press the button “UPDATE”.</strong></p><p><strong>👉🏼 Please verify you’ve granted all permissions for our app to be completely paired with your smartphone. Just go to your phone settings, then look for our app, and verify you’re allowing our app all accesses.</strong></p><p><strong>👉🏼 Please verify if you’re allowing our app to get full access to your Location through your smartphone. This will help the app perform at its highest.<br/><br/>👉🏼 Please make sure your bluetooth is paired with your smartphone. You can also verify this by opening the app and making sure the connection is successful.</strong></p><p><strong>👉🏼 Make sure all the settings on the Carbinox App are turned on and successfully working on your smartwatch.</strong></p><p><strong>👉🏼 Please reset your smartwatch to factory settings.</strong></p><p><strong>👉🏼 Please reinstall the Carbinox App and install it again, then connect your smartwatch. </strong></p>",
+            "button_text": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "77cc0c8e-6c42-43a6-a177-67e202c30ec3"
+      ],
+      "custom_css": [
+        "h3 {font-size: 22px;}"
+      ],
+      "settings": {
+        "section_id": "",
+        "reveal_on_scroll": true,
+        "background_type": "full_width",
+        "background_overlap": "both",
+        "image_position": "left",
+        "text_alignment": "left",
+        "cycle_speed": 8,
+        "accent_background": "#000000",
+        "text_color": "#ffffff",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)",
+        "enable_custom_margin": false,
+        "margin_bottom": 0
+      }
+    },
+    "05ef37d0-8dd8-4dbe-9913-398fc11a6349": {
+      "type": "rich-text",
+      "settings": {
+        "section_id": "",
+        "subheading": "",
+        "title": "about connection:",
+        "content": "<p><strong>What to do if your watch keeps disconnecting?<br/><br/></strong>👉🏼 IF YOU’RE MORE THAN 10 METERS AWAY FROM YOUR SMARTPHONE, IT WILL DISCONNECT FROM YOUR PHONE AND YOU’LL HAVE TO PAIR IT AGAIN.</p><p>👉🏼 IF YOU’RE HAVING NETWORK ISSUES ON YOUR LOCATION, THE SMARTWATCH MAY DISCONNECT FROM THE PHONE.</p><p>👉🏼 IF YOU CONNECT YOUR PHONE TO ANOTHER DEVICE VIA BLUETOOTH, YOU MAY HAVE TO CONNECT THE SMARTWATCH AGAIN TO THE APP.</p><p>👉🏼 IF YOUR SMARTPHONE RUNS OUT OF BATTERY, YOU MAY HAVE TO CONNECT YOUR SMARTWATCH AGAIN TO THE APP.</p><p>IF YOU DON’T KEEP YOUR CARBINOX APP RUNNING IN BACKGROUND, THE DEVICE COULD DISCONNECT AND YOU’LL HAVE TO CONNECT IT AGAIN.</p>",
+        "button_text": "",
+        "button_link": "",
+        "background_type": "full_width",
+        "text_width": "medium",
+        "text_position": "center",
+        "text_alignment": "left",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "rich_text_KRJDeT": {
+      "type": "rich-text",
+      "settings": {
+        "section_id": "",
+        "subheading": "",
+        "title": "ABOUT TEXT MESSAGES:",
+        "content": "<p><strong>What to do if notifications from WhatsApp or SMS are not being delivered on the watch?</strong></p><ul><li>Please make sure your phone IS NOT in silent mode.</li><li>Please make sure your watch IS NOT in silent mode.</li><li>Please make sure that \"Notifications\" on WhatsApp are turned on to receive them. This is through your phone settings.</li><li>Please make sure you included WhatsApp on the notification settings on the app Carbinox Pro.</li><li>Please make sure you don't have WhatsApp open in the computer.</li><li>Please make sure you have the \"Do not disturb\" feature turned on on your smartwatch.</li></ul>",
+        "button_text": "",
+        "button_link": "",
+        "background_type": "full_width",
+        "text_width": "medium",
+        "text_position": "center",
+        "text_alignment": "left",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "2f607819-cec8-412d-8e04-6609a7cb291d": {
+      "type": "faq",
+      "blocks": {
+        "template--14757829345383__2f607819-cec8-412d-8e04-6609a7cb291d-question-1": {
+          "type": "question",
+          "settings": {
+            "title": "My smartwatch is not turning on, what should I do?",
+            "answer": "<p>Please connect your smartwatch to the usb charging cable and wait around 30-60 minutes to turn it on. If the problem persists, please try different charging docks and locations to ensure it’s a voltage issue or not.</p>"
+          }
+        },
+        "template--14757829345383__2f607819-cec8-412d-8e04-6609a7cb291d-question-2": {
+          "type": "question",
+          "settings": {
+            "title": "My smartwatch is not receiving SMS or notifications, what should I do?",
+            "answer": "<p>Please verify if the smartwatch is fully connected to the app.</p><p><strong>NOTE: IF YOUR SMARTPHONE HAS THE “DON’T DISTURB” FEATURE ACTIVATED, SNOOZE MODE OR SILENT MODE, YOU MAY NOT RECEIVE ANY NOTIFICATIONS ON YOUR SMARTWATCH.</strong></p><p><strong>NOTE: If you close the app on background, you may not receive any notifications on your smartwatch.</strong></p><p><strong>NOTE: If you’re not allowing all permissions to use the app on your smartphone, you may not receive any notifications.</strong></p>"
+          }
+        },
+        "template--14757829345383__2f607819-cec8-412d-8e04-6609a7cb291d-question-3": {
+          "type": "question",
+          "settings": {
+            "title": "How can I find more watch faces?",
+            "answer": "<p>Press and hold the main screen of your smartwatch for 3-5 seconds, then start swiping to the right to select another watch face. If you want more, please go to the app and then press “Watch Faces” or “Discover more dials”  so you can see all the ones we have available.</p>"
+          }
+        },
+        "69dd1581-e137-4155-9fe5-a8d374a25650": {
+          "type": "question",
+          "settings": {
+            "title": "I’m not receiving accurate tracking, what should I do?",
+            "answer": "<p>Please make sure you completed your profile on the app, meaning exact weight, age, height, or any other information needed.</p><p>If the problem still persists, please reset your smartwatch to factory settings and try again.</p><p><strong>NOTE: TRACKING COULD HAVE 10% OR 15% OF INACCURACY DUE TO ENVIRONMENTS, MOTION, WRIST MOVEMENT, AND ALGORITHM CHANGES.</strong></p>"
+          }
+        },
+        "1b29af93-99ea-46af-acd4-73d3a3b4befa": {
+          "type": "question",
+          "settings": {
+            "title": "My smartwatch is not showing my heart rate, blood pressure, or any other tracking feature.",
+            "answer": "<p>First of all, make sure your smartwatch is adjusted to your wrist properly to ensure the proper tracking. </p><p>If you’re an Apple user, you can also connect your smartwatch to the Health App to get een more accurate information.</p><p><strong>NOTE: TRACKING COULD HAVE 10% OR 15% OF INACCURACY DUE TO ENVIRONMENTS, MOTION, WRIST MOVEMENT, AND ALGORITHM CHANGES.</strong></p>"
+          }
+        },
+        "d3174f5b-1eca-4a67-a949-d465f1022458": {
+          "type": "question",
+          "settings": {
+            "title": "I’m seeing the temperature in Celsius instead of Fahrenheit.",
+            "answer": "<p>Please go to your Carbinox App and then go to the Weather settings. You can easily change from Celsius to Fahrenheit and viceversa.</p>"
+          }
+        },
+        "78dc08bc-ab5c-40ee-a987-86d2bf74078e": {
+          "type": "question",
+          "settings": {
+            "title": "Weather is not showing on my smartwatch.",
+            "answer": "<p>Please go to the Carbinox App and make sure you’ve registered the city you live in, so the system can show you the exact weather conditions.</p>"
+          }
+        },
+        "1a207bf5-ab7f-45b2-9005-726b56a61e40": {
+          "type": "question",
+          "settings": {
+            "title": "My battery doesn’t last more than 7 days, what should I do?",
+            "answer": "<p>Please reduce the screen brightness on your smartwatch to preserve battery, as well as turning unnecessary notifications off, that will increase your battery life.</p><p>Also, the smartwatch comes with a battery saving feature. Please turn it on when needed.<br/><br/><strong>NOTE: PLEASE KEEP IN MIND THAT THE BLUETOOTH CALLING FEATURE COULD REDUCE THE BATTERY IF IT’S USED A LOT.</strong></p>"
+          }
+        },
+        "6800f6c6-ce25-478a-9d67-773f69df8fde": {
+          "type": "question",
+          "settings": {
+            "title": "My smartwatch is showing the time in 12-hour format or measuring in meters.",
+            "answer": "<p>Both options can be changed on the Carbinox App by checking the settings on it. </p><p><strong>NOTE: IF YOUR SMARTPHONE EXPERIENCES NETWORK ISSUES OR IT’S DISCONNECTED FROM BLUETOOTH, THIS FEATURE MAY RESET.</strong></p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--14757829345383__2f607819-cec8-412d-8e04-6609a7cb291d-question-1",
+        "template--14757829345383__2f607819-cec8-412d-8e04-6609a7cb291d-question-2",
+        "template--14757829345383__2f607819-cec8-412d-8e04-6609a7cb291d-question-3",
+        "69dd1581-e137-4155-9fe5-a8d374a25650",
+        "1b29af93-99ea-46af-acd4-73d3a3b4befa",
+        "d3174f5b-1eca-4a67-a949-d465f1022458",
+        "78dc08bc-ab5c-40ee-a987-86d2bf74078e",
+        "1a207bf5-ab7f-45b2-9005-726b56a61e40",
+        "6800f6c6-ce25-478a-9d67-773f69df8fde"
+      ],
+      "settings": {
+        "show_navigation": false,
+        "title": "STILL FACING ISSUES? MOVE TO THIS SECTION.",
+        "content": "",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "e496dcfa-1af0-431c-9bb5-c7a43ada02b6": {
+      "type": "rich-text",
+      "settings": {
+        "section_id": "",
+        "subheading": "",
+        "title": "If you’re experiencing one of the following issues:",
+        "content": "<ul><li><strong>Smartwatch screen blacks out.</strong></li><li><strong>Smartwatch doesn’t turn on.</strong></li><li><strong>The screen got frozen.</strong></li><li><strong>Touch screen is not working.<br/></strong></li></ul><p><strong>Please contact us at </strong><a href=\"mailto:info@shopcarbinox.com\"><span style=\"text-decoration:underline\"><strong>info@shopcarbinox.com</strong></span></a><strong> within the first 45 days of your purchase to receive a replacement free of cost.</strong></p>",
+        "button_text": "",
+        "button_link": "",
+        "background_type": "full_width",
+        "text_width": "medium",
+        "text_position": "left",
+        "text_alignment": "left",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "d3145a6a-daa2-4956-b9a0-abcbfab5230d",
+    "c1252d77-c4b4-47d6-806b-2fbde5bcf822",
+    "b70f61ac-9e09-42de-8408-c499f3008bc6",
+    "3ee88f80-dfcc-407f-97b3-3d7a8acef28d",
+    "05ef37d0-8dd8-4dbe-9913-398fc11a6349",
+    "rich_text_KRJDeT",
+    "2f607819-cec8-412d-8e04-6609a7cb291d",
+    "e496dcfa-1af0-431c-9bb5-c7a43ada02b6"
+  ]
+}

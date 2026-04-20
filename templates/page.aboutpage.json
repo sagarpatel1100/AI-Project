@@ -1,0 +1,248 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "show_title": true,
+        "page_width": "medium"
+      }
+    },
+    "166004981640c35c76": {
+      "type": "image-with-text",
+      "blocks": {
+        "1660049816c8749e49-0": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/aboutus1_1.png",
+            "tab_label": "Item",
+            "subheading": "",
+            "title": "about us.",
+            "content": "<p>We are a company established in Miami, Florida since 2021. Our mission is to provide the best shopping experience to those who want to take their experiences to the next level through high end creations.<br/>At Carbinox, we design our products based on the highest quality requirements and functionalities to guarantee satisfaction to our customers.</p>",
+            "button_text": "",
+            "button_link": ""
+          }
+        },
+        "54382c6d-248e-4ee8-9679-0482de9a0a71": {
+          "type": "item",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/image_2_68d72994-13b4-4200-b977-25875a473e48.png",
+            "tab_label": "Item",
+            "subheading": "Subheading",
+            "title": "Image with text",
+            "content": "<p>Use image with text to give your customers insight into your brand. Select imagery and text that relates to your style and story.</p>",
+            "button_text": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "1660049816c8749e49-0",
+        "54382c6d-248e-4ee8-9679-0482de9a0a71"
+      ],
+      "settings": {
+        "reveal_on_scroll": true,
+        "background_type": "full_width",
+        "background_overlap": "image",
+        "image_position": "left",
+        "text_alignment": "left",
+        "cycle_speed": 8,
+        "accent_background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)",
+        "enable_custom_margin": true,
+        "margin_bottom": 0
+      }
+    },
+    "16600525527255f826": {
+      "type": "image-with-text",
+      "blocks": {
+        "166005255288fcf15b-0": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/image_1_1.png",
+            "tab_label": "Item",
+            "subheading": "",
+            "title": "WE'RE HERE TO PROVIDE AN EXPERIENCE BEYOND AVERAGE.",
+            "content": "<p>Our smartwatches are meticulously engineered to support extreme work environments and hard tasks where others won't. With Carbinox, you'll stay connected, no matter what.</p>",
+            "button_text": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "166005255288fcf15b-0"
+      ],
+      "settings": {
+        "reveal_on_scroll": true,
+        "background_type": "full_width",
+        "background_overlap": "image",
+        "image_position": "right",
+        "text_alignment": "left",
+        "cycle_speed": 8,
+        "accent_background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)",
+        "enable_custom_margin": true,
+        "margin_bottom": 0
+      }
+    },
+    "166005821040c44341": {
+      "type": "image-with-text",
+      "blocks": {
+        "1660058209130ffcc6-0": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/image_2_68d72994-13b4-4200-b977-25875a473e48.png",
+            "tab_label": "Item",
+            "subheading": "",
+            "title": "OTHER SMARTWATCHES ARE EASY-BREAKING, AND WE KNOW IT.",
+            "content": "<p>Our concept is inspired on one word: Durability. Carbinox products are created based on solutions for the most common issues with smartwatches. Say hello to a redefined way to stay connected.</p>",
+            "button_text": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "1660058209130ffcc6-0"
+      ],
+      "settings": {
+        "reveal_on_scroll": true,
+        "background_type": "full_width",
+        "background_overlap": "image",
+        "image_position": "left",
+        "text_alignment": "left",
+        "cycle_speed": 7,
+        "accent_background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)",
+        "enable_custom_margin": true,
+        "margin_bottom": 0
+      }
+    },
+    "1660058217e4b88492": {
+      "type": "image-with-text",
+      "blocks": {
+        "1660058217e9b521d1-0": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/image_3.png",
+            "tab_label": "",
+            "subheading": "",
+            "title": "LIVE THE CARBINOX EXPERIENCE TODAY!",
+            "content": "<p>From humble beginnings, Carbinox has become a reference in the technology and outdoors space. We guarantee top-quality products, life-time support, and many surprises for those who make the switch to our collection. Join Carbinox family and represent our brand.</p>",
+            "button_text": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "1660058217e9b521d1-0"
+      ],
+      "settings": {
+        "reveal_on_scroll": true,
+        "background_type": "boxed",
+        "background_overlap": "image",
+        "image_position": "right",
+        "text_alignment": "left",
+        "cycle_speed": 8,
+        "accent_background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)",
+        "enable_custom_margin": true,
+        "margin_bottom": 0
+      }
+    },
+    "1662476927ffd32877": {
+      "type": "social-media-gallery",
+      "disabled": true,
+      "blocks": {
+        "16624769276e5901b4-0": {
+          "type": "image",
+          "settings": {
+            "logo": "shopify://shop_images/hiw1.png",
+            "link": ""
+          }
+        },
+        "16624769276e5901b4-1": {
+          "type": "image",
+          "settings": {
+            "logo": "shopify://shop_images/hiw4.png",
+            "link": ""
+          }
+        },
+        "16624769276e5901b4-2": {
+          "type": "image",
+          "settings": {
+            "logo": "shopify://shop_images/hiw3.png",
+            "link": ""
+          }
+        },
+        "16624769276e5901b4-3": {
+          "type": "image",
+          "settings": {
+            "logo": "shopify://shop_images/hiw3.png",
+            "link": ""
+          }
+        },
+        "16624769276e5901b4-4": {
+          "type": "image",
+          "settings": {
+            "logo": "shopify://shop_images/hiw4.png",
+            "link": ""
+          }
+        },
+        "16624769276e5901b4-5": {
+          "type": "image",
+          "settings": {
+            "logo": "shopify://shop_images/hiw1.png",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "16624769276e5901b4-0",
+        "16624769276e5901b4-1",
+        "16624769276e5901b4-2",
+        "16624769276e5901b4-3",
+        "16624769276e5901b4-4",
+        "16624769276e5901b4-5"
+      ],
+      "settings": {
+        "reveal_on_scroll": true,
+        "subheading": "follow us",
+        "title": "join our social media",
+        "button_text": "",
+        "button_link": "",
+        "stack_logos": true,
+        "background": "#2c3036",
+        "text_color": "#f9f9f9",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)",
+        "logo_background": "rgba(0,0,0,0)"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "166004981640c35c76",
+    "16600525527255f826",
+    "166005821040c44341",
+    "1660058217e4b88492",
+    "1662476927ffd32877"
+  ]
+}

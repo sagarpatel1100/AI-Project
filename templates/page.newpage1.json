@@ -1,0 +1,383 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "custom_html_VKNgLb": {
+      "type": "custom-html",
+      "custom_css": [
+        "div {margin: -5px;}"
+      ],
+      "settings": {
+        "subheading": "",
+        "title": "",
+        "html": "<img src='https://cdn.shopify.com/s/files/1/0049/0533/6935/files/THESMARTWATCHEXPERT_7.png?v=1721246449\"'>",
+        "add_vertical_spacing": false,
+        "background_type": "full_width",
+        "background": "#000000",
+        "text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "rich_text_YeWdQf": {
+      "type": "rich-text",
+      "custom_css": [
+        "h2 {color: #ffc200;}",
+        "h3 {font-size: 24px;}"
+      ],
+      "settings": {
+        "section_id": "",
+        "subheading": "🇺🇸 BACKED BY THOUSANDS OF ATHLETES NATIONWIDE!",
+        "title": "five reasons why the carbinox vortex is the next generation fitness smartwatch",
+        "content": "<p>We've built the perfect companion for your high-intensity workouts. Track your stats and stay connected with the toughest smartwatch ever made.</p>",
+        "button_text": "",
+        "button_link": "",
+        "background_type": "full_width",
+        "text_width": "large",
+        "text_position": "left",
+        "text_alignment": "left",
+        "background": "#000000",
+        "text_color": "#ffffff",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "image_with_text_rNRN66": {
+      "type": "image-with-text",
+      "blocks": {
+        "item_jdEipD": {
+          "type": "item",
+          "settings": {
+            "show_video": false,
+            "video_link": "",
+            "image": "shopify://shop_images/Diseno_sin_titulo_59_-min.png",
+            "tab_label": "Item",
+            "subheading": "",
+            "title": "THE MOST DURABLE AND RUGGED SMARTWATCH, FOR JUST 1/3 OF THE PRICE OF OTHERS",
+            "content": "",
+            "button_text": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "item_jdEipD"
+      ],
+      "custom_css": [
+        "h3 {font-size: 24px; color: #ffc200;}"
+      ],
+      "settings": {
+        "section_id": "",
+        "reveal_on_scroll": false,
+        "background_type": "full_width",
+        "background_overlap": "text",
+        "image_position": "left",
+        "text_alignment": "center",
+        "cycle_speed": 8,
+        "accent_background": "#000000",
+        "text_color": "#ffffff",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)",
+        "enable_custom_margin": false,
+        "margin_bottom": 0
+      }
+    },
+    "custom_html_dTHMcj": {
+      "type": "custom-html",
+      "custom_css": [
+        "div {margin-top: -15px; margin-bottom: -8px;}"
+      ],
+      "settings": {
+        "subheading": "",
+        "title": "",
+        "html": "<img src=\"https://cdn.shopify.com/s/files/1/0049/0533/6935/files/Anadir_un_titulo_13_-min.png?v=1721833414\">",
+        "add_vertical_spacing": false,
+        "background_type": "full_width",
+        "background": "#000000",
+        "text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "product-item": {
+      "type": "product-item",
+      "blocks": {
+        "product_items_44GRcV": {
+          "type": "Product-items",
+          "settings": {
+            "image1": "shopify://shop_images/1-min_5.png",
+            "heading": "BUILT TOUGH, LASTS A LIFETIME.",
+            "para": "<p>The Carbinox Vortex is the ultimate smartwatch to take your workouts to the next level stress-free. </p>"
+          }
+        },
+        "product_items_JhbJjz": {
+          "type": "Product-items",
+          "settings": {
+            "image1": "shopify://shop_images/4-min_4.png",
+            "heading": "THERE'S NOTHING THAT CAN STOP IT.",
+            "para": "<p>Hit it, throw it, smash it with a dumbbell. This watch meets the U.S MIL 810-H Standards, meaning it's ready to withstand all conditions.</p>"
+          }
+        },
+        "product_items_nwGNPa": {
+          "type": "Product-items",
+          "settings": {
+            "image1": "shopify://shop_images/5-min_4.png",
+            "heading": "7 DAYS OF BATTERY, NO RECHARGING.",
+            "para": "<p>The Carbinox Vortex lasts for days with only 90 minutes of charging.</p>"
+          }
+        },
+        "product_items_DQCfwN": {
+          "type": "Product-items",
+          "settings": {
+            "image1": "shopify://shop_images/3-min_4.png",
+            "heading": "LIMITLESS BAND CHOICES, GUARANTEED.",
+            "para": "<p>Customize your watch with 24+ straps, making it suitable for all occasions.</p>"
+          }
+        },
+        "product_items_3T36CU": {
+          "type": "Product-items",
+          "settings": {
+            "image1": "shopify://shop_images/2-min_4.png",
+            "heading": "TRACK YOUR STATS ON YOUR WRIST.",
+            "para": "<p>Health tracking, 100+ sports modes with smart recognition, and more features are waiting for you.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "product_items_44GRcV",
+        "product_items_JhbJjz",
+        "product_items_nwGNPa",
+        "product_items_DQCfwN",
+        "product_items_3T36CU"
+      ],
+      "settings": {}
+    },
+    "image-with-text-section": {
+      "type": "image-with-text-section",
+      "blocks": {
+        "imagewithtext_KxbpGC": {
+          "type": "Imagewithtext",
+          "settings": {
+            "image1": "shopify://shop_images/check-img_18f1de92-b914-4afb-9e37-9680930a0927.svg",
+            "text3": "<h5><strong>AMERICA'S TOP RATED SMARTWATCH FOR BLUE COLLAR WORKERS, TRUCK DRIVERS, MANAGERS, OPERATORS AND MECHANICS.</strong></h5>"
+          }
+        },
+        "imagewithtext_C3k7Aq": {
+          "type": "Imagewithtext",
+          "settings": {
+            "image1": "shopify://shop_images/check-img_00b81431-9327-4b3a-b426-7e902c12bd8d.svg",
+            "text3": "<h5><strong>U.S MIL-STD </strong>CERTIFIED & IP69K WATERPROOF. FULLY RESISTANT AGAINST <strong>HARD IMPACTS, SCRATCHES, DENTS, AND OTHER ROUGH TESTS OR ENVIRONMENTS!</strong></h5>"
+          }
+        },
+        "imagewithtext_eFrKRw": {
+          "type": "Imagewithtext",
+          "settings": {
+            "image1": "shopify://shop_images/check-img_eee405fc-99c0-4308-bd08-94ae65492cd4.svg",
+            "text3": "<h5><strong>🔋 14-DAY BATTERY LIFE ON A SINGLE 90-MINUTE CHARGE, PLUS BLUETOOTH CALLING TECHNOLOGY.</strong></h5>"
+          }
+        }
+      },
+      "block_order": [
+        "imagewithtext_KxbpGC",
+        "imagewithtext_C3k7Aq",
+        "imagewithtext_eFrKRw"
+      ],
+      "settings": {
+        "text2": "SLIMMER & SMARTER",
+        "text4": "$500 SHOULDN'T LOOK LIKE THIS WHERE YOU CAN GET THE MOST DURABLE WATCH FOR 1/3 OF THAT!",
+        "image2": "shopify://shop_images/Diseno_sin_titulo_60_-min.png"
+      }
+    },
+    "image_with_text_CRPHgw": {
+      "type": "image-with-text",
+      "blocks": {
+        "item_QtCJwr": {
+          "type": "item",
+          "settings": {
+            "show_video": false,
+            "video_link": "",
+            "image": "shopify://shop_images/Anadir_un_titulo_16_-min.png",
+            "tab_label": "Item",
+            "subheading": "",
+            "title": "GET A $30 MYSTERY GIFT WITH YOUR ORDER TODAY!",
+            "content": "",
+            "button_text": "UNLOCK TODAY'S OFFER ➔",
+            "button_link": "shopify://products/carbinox-vortex-1"
+          }
+        }
+      },
+      "block_order": [
+        "item_QtCJwr"
+      ],
+      "settings": {
+        "section_id": "",
+        "reveal_on_scroll": false,
+        "background_type": "full_width",
+        "background_overlap": "text",
+        "image_position": "left",
+        "text_alignment": "center",
+        "cycle_speed": 8,
+        "accent_background": "#f9f9f9",
+        "text_color": "#000000",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)",
+        "enable_custom_margin": false,
+        "margin_bottom": 0
+      }
+    },
+    "custom_html_fdgQ9X": {
+      "type": "custom-html",
+      "disabled": true,
+      "custom_css": [
+        "div {margin-top: -15px; margin-bottom: 10px;}"
+      ],
+      "settings": {
+        "subheading": "",
+        "title": "",
+        "html": "<img src=\"https://cdn.shopify.com/s/files/1/0049/0533/6935/files/Excellent.jpg?v=1721333173\">",
+        "add_vertical_spacing": false,
+        "background_type": "full_width",
+        "background": "#f9f9f9",
+        "text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "trustworthy-product": {
+      "type": "trustworthy-product",
+      "blocks": {
+        "trustworthy_product_Uc8CLP": {
+          "type": "TrustworthyProduct",
+          "settings": {
+            "listitem": "45-DAY RISK FREE TRIAL",
+            "listitempara": "<p>If you don't love it within 45 days, just send it back for a full refund, no questions asked.</p>"
+          }
+        },
+        "trustworthy_product_fQnE4q": {
+          "type": "TrustworthyProduct",
+          "settings": {
+            "listitem": "LIFETIME WARRANTY",
+            "listitempara": "<p>Unlock access to unlimited FREE REPLACEMENTS if needed. You'll be totally covered.</p>"
+          }
+        },
+        "trustworthy_product_TqnCyq": {
+          "type": "TrustworthyProduct",
+          "settings": {
+            "listitem": "+18,000 REVIEWS",
+            "listitempara": "<p>Look for us anywhere, we have been providing positive experiences to our customers since 2021.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "trustworthy_product_Uc8CLP",
+        "trustworthy_product_fQnE4q",
+        "trustworthy_product_TqnCyq"
+      ],
+      "settings": {
+        "text1": "THE BEST BANG FOR YOUR BUCK, GUARANTEED."
+      }
+    },
+    "customer-reviews": {
+      "type": "customer-reviews",
+      "blocks": {
+        "customer_review_desktop_jdRcDp": {
+          "type": "customerReviewDesktop",
+          "settings": {
+            "itemimage": "shopify://shop_images/customers1_8c05bea6-5ec0-43cd-a8ed-9d4ccb708bf9.png",
+            "listitemtext": "GREAT EVERYDAY CARRY",
+            "listitempara": "<p>“All in all, great products. \"I don’t carry much cash on me but the little that I do carry is held perfectly with the money strap.\"</p>",
+            "litext1": "<p>- Charles</p>",
+            "liimg": "shopify://shop_images/verified-img_3d3718ec-95cd-4a43-b5e0-6bda2b276089.svg",
+            "litext2": "<p>VERIFIED REVIEW</p>"
+          }
+        },
+        "customer_review_desktop_7h4eUe": {
+          "type": "customerReviewDesktop",
+          "settings": {
+            "itemimage": "shopify://shop_images/customers2_98f5e16d-7f77-4455-a941-2bd6a44087b4.png",
+            "listitemtext": "LOVE THE COLOR!",
+            "listitempara": "<p>“I absolutely love my wallet and it looks as good as the day I received it. The color is exactly as you see on the website.\"</p>",
+            "litext1": "<p>- Miles</p>",
+            "liimg": "shopify://shop_images/verified-img_3d3718ec-95cd-4a43-b5e0-6bda2b276089.svg",
+            "litext2": "<p>VERIFIED REVIEW</p>"
+          }
+        },
+        "customer_review_desktop_HWVKpe": {
+          "type": "customerReviewDesktop",
+          "settings": {
+            "itemimage": "shopify://shop_images/customers3_c3303357-fd99-424c-a245-e23ba95c89ce.png",
+            "listitemtext": "BOYFRIEND LOVES IT!",
+            "listitempara": "<p>“Sleek and compact, yet spacious enough to hold essentials. Durable and high-quality materials.\"</p>",
+            "litext1": "<p>- Mica</p>",
+            "liimg": "shopify://shop_images/verified-img_28692bef-143d-4e3a-8479-de00b460c810.svg",
+            "litext2": "<p>VERIFIED REVIEW</p>"
+          }
+        },
+        "customer_review_moblie_AfQp3d": {
+          "type": "customerReviewMoblie",
+          "settings": {
+            "itemimage1": "shopify://shop_images/customers1_bdc1b16b-0acc-4f04-a399-b1f97913eef9.png",
+            "listitemtext1": "GREAT EVERYDAY CARR",
+            "listitempara1": "<p>“All in all, great products. \"I don’t carry much cash on me but the little that I do carry is held perfectly with the money strap.\"</p>",
+            "litext11": "<p>- Charles</p>",
+            "liimg1": "shopify://shop_images/verified-img_ea5beff4-24f9-4325-9b28-4a9a0078d8e0.svg",
+            "litext21": "<p>VERIFIED REVIEW</p>"
+          }
+        },
+        "customer_review_moblie_zFNtyb": {
+          "type": "customerReviewMoblie",
+          "settings": {
+            "itemimage1": "shopify://shop_images/customers2_733be280-c754-4af3-8094-2eb67522e6c0.png",
+            "listitemtext1": "LOVE THE COLOR!",
+            "listitempara1": "<p>“I absolutely love my wallet and it looks as good as the day I received it. The color is exactly as you see on the website.\"</p>",
+            "litext11": "<p>- Miles</p>",
+            "liimg1": "shopify://shop_images/verified-img_52c496f3-ed47-42de-9df8-58a60128a696.svg",
+            "litext21": "<p>VERIFIED REVIEW</p>"
+          }
+        },
+        "customer_review_moblie_8ptPVQ": {
+          "type": "customerReviewMoblie",
+          "settings": {
+            "itemimage1": "shopify://shop_images/customers3_e546631e-1c6f-493f-b684-c6ef83a615bb.png",
+            "listitemtext1": "BOYFRIEND LOVES IT!",
+            "listitempara1": "<p>“Sleek and compact, yet spacious enough to hold essentials. Durable and high-quality materials.</p>",
+            "litext11": "<p>- Mica</p>",
+            "liimg1": "shopify://shop_images/verified-img_23cad130-612a-4c5f-bd91-799aa3588819.svg",
+            "litext21": "<p>VERIFIED REVIEW</p>"
+          }
+        }
+      },
+      "block_order": [
+        "customer_review_desktop_jdRcDp",
+        "customer_review_desktop_7h4eUe",
+        "customer_review_desktop_HWVKpe",
+        "customer_review_moblie_AfQp3d",
+        "customer_review_moblie_zFNtyb",
+        "customer_review_moblie_8ptPVQ"
+      ],
+      "disabled": true,
+      "settings": {
+        "text1": "SEE WHAT MILLIONS OF CUSTOMERS ARE SAYING",
+        "reviewrating": "<p>5.0 100,000+</p>"
+      }
+    },
+    "custom-css": {
+      "type": "custom-css",
+      "settings": {}
+    }
+  },
+  "order": [
+    "custom_html_VKNgLb",
+    "rich_text_YeWdQf",
+    "image_with_text_rNRN66",
+    "custom_html_dTHMcj",
+    "product-item",
+    "image-with-text-section",
+    "image_with_text_CRPHgw",
+    "custom_html_fdgQ9X",
+    "trustworthy-product",
+    "customer-reviews",
+    "custom-css"
+  ]
+}

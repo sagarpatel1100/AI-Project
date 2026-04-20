@@ -1,0 +1,288 @@
+{% style %}
+
+.tradein-section-{{ section.id }}{
+  padding: 40px 30px 60px;
+  display:flex;
+  justify-content:center;
+  background:#000;
+}
+
+.trade-button-text {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.tradein-container{
+  max-width:1200px;
+  width:100%;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:20px;
+  align-items:center;
+}
+
+.tradein-title-group{
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+}
+
+.tradein-title{
+  font-family:Poppins;
+  font-weight:800;
+  font-size:36px;
+  line-height:100%;
+  letter-spacing:-3%;
+  text-transform:uppercase;
+  text-align: start;
+  max-width: 332px;
+}
+
+.tradein-title-white{
+  color:#fff;
+}
+
+.tradein-title-yellow{
+  color:#FFC200;
+}
+
+.tradein-text{
+  font-family:Poppins;
+  font-weight:400;
+  font-size:16px;
+  line-height:20px;
+  letter-spacing:-1%;
+  color:rgba(255,255,255,0.8);
+  text-align: start;
+  max-width: 332px;
+}
+
+.tradein-right{
+  display:flex;
+  flex-direction:column;
+  gap:20px;
+}
+
+.tradein-bullets{
+  display:flex;
+  flex-direction:column;
+  gap:15px;
+}
+
+.tradein-bullet{
+  display:flex;
+  align-items:center;
+  gap:20px;
+}
+
+.tradein-bullet img{
+  width:24px;
+  height:24px;
+}
+
+.tradein-bullet-text{
+  font-family:Poppins;
+  font-weight:400;
+  font-size:16px;
+  line-height:20px;
+  letter-spacing:-1%;
+  color:rgba(255,255,255,0.8);
+}
+
+.tradein-button{
+  display:inline-flex;
+  justify-content:center;
+  align-items:center;
+  padding:20px 30px;
+  background:#FFC200;
+  color:#000;
+  text-decoration:none;
+  border-radius: 3px;
+  font-family:Poppins;
+  font-weight:600;
+  font-size:17px;
+  letter-spacing:1.2px;
+  text-transform:uppercase;
+}
+
+.tradein-small-text{
+  margin: 0;
+  font-family:Poppins;
+  font-weight:400;
+  font-size:12px;
+  line-height:16px;
+  color:rgba(255,255,255,0.8);
+  text-align: center;
+}
+
+@media screen and (max-width:768px){
+
+.tradein-section-{{ section.id }}{
+  padding:30px 40px;
+}
+
+.tradein-container{
+  grid-template-columns:1fr;
+  padding: 0px;
+}
+
+.tradein-title{
+  font-size:30px;
+}
+
+.tradein-button{
+  padding:15px 30px;
+}
+
+
+}
+
+{% endstyle %}
+
+<section class="tradein-section-{{ section.id }}">
+
+<div class="tradein-container">
+
+<div class="tradein-left">
+
+<div class="tradein-title-group">
+
+<h2 class="tradein-title">
+<span class="tradein-title-white">{{ section.settings.title_white }}</span>
+<span class="tradein-title-yellow">{{ section.settings.title_yellow }}</span>
+</h2>
+
+<p class="tradein-text">
+{{ section.settings.subtitle }}
+</p>
+
+</div>
+
+</div>
+
+<div class="tradein-right">
+
+<div class="tradein-bullets">
+
+{% for block in section.blocks %}
+
+<div class="tradein-bullet">
+
+<img src="{{ block.settings.icon | image_url }}" alt="">
+
+<span class="tradein-bullet-text">
+{{ block.settings.text }}
+</span>
+
+</div>
+
+{% endfor %}
+
+</div>
+
+<div class="trade-button-text">
+<a href="{{ section.settings.button_url }}" class="tradein-button">
+{{ section.settings.button_text }}
+</a>
+
+<p class="tradein-small-text">
+{{ section.settings.small_text }}
+</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+{% schema %}
+{
+"name": "Trade In Banner",
+"settings": [
+
+{
+"type":"text",
+"id":"title_white",
+"label":"Title White",
+"default":"DON'T LET YOUR OLD WATCH"
+},
+
+{
+"type":"text",
+"id":"title_yellow",
+"label":"Title Yellow",
+"default":"COLLECT DUST."
+},
+
+{
+"type":"textarea",
+"id":"subtitle",
+"label":"Subtitle",
+"default":"Trade it in. Upgrade to our newest model. Get up to $100 back."
+},
+
+{
+"type":"text",
+"id":"button_text",
+"label":"Button text",
+"default":"START MY TRADE-IN"
+},
+
+{
+"type":"url",
+"id":"button_url",
+"label":"Button link"
+},
+
+{
+"type":"text",
+"id":"small_text",
+"label":"Text below button",
+"default":"Takes 2 minutes. No commitment until checkout."
+}
+
+],
+
+"blocks":[
+
+{
+"type":"bullet",
+"name":"Bullet",
+"settings":[
+
+{
+"type":"image_picker",
+"id":"icon",
+"label":"Icon"
+},
+
+{
+"type":"text",
+"id":"text",
+"label":"Bullet text",
+"default":"Up to $100 in credit"
+}
+
+]
+}
+
+],
+
+"max_blocks":6,
+
+"presets":[
+{
+"name":"Trade In Bannertext",
+"blocks":[
+{"type":"bullet"},
+{"type":"bullet"},
+{"type":"bullet"},
+{"type":"bullet"},
+{"type":"bullet"}
+]
+}
+]
+}
+{% endschema %}

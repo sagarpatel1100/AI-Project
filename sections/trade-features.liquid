@@ -1,0 +1,111 @@
+{% style %}
+.features-icons-container{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  padding:60px 30px;
+  gap:126px;
+  background:#000;
+}
+
+.feature-item{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:5px;
+  text-align:center;
+}
+
+.feature-icon{
+  width:40px;
+  height:40px;
+  object-fit:contain;
+}
+
+.feature-text{
+  font-family:Poppins, sans-serif;
+  font-weight:400;
+  font-size:16px;
+  line-height:18px;
+  color:rgba(255,255,255,0.6);
+  margin: 0;
+}
+
+/* MOBILE */
+
+@media (max-width:768px){
+
+  .features-icons-container{
+    flex-wrap:wrap;
+    padding:30px 20px;
+    gap:20px;
+  }
+
+  .feature-item{
+    width:calc(50% - 35px);
+  }
+
+  .feature-text{
+    font-size:14px;
+  }
+
+}
+{% endstyle %}
+
+<section class="features-icons-{{ section.id }}">
+  <div class="features-icons-container">
+
+    {% for block in section.blocks %}
+      <div class="feature-item">
+        
+        {% if block.settings.icon != blank %}
+          <img
+            src="{{ block.settings.icon | image_url }}"
+            alt="{{ block.settings.text }}"
+            width="40"
+            height="40"
+            class="feature-icon"
+          >
+        {% endif %}
+
+        <p class="feature-text">
+          {{ block.settings.text }}
+        </p>
+
+      </div>
+    {% endfor %}
+
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Features Icons",
+  "settings": [],
+  "blocks": [
+    {
+      "type": "feature",
+      "name": "Feature",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "icon",
+          "label": "Icon"
+        },
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Text",
+          "default": "Feature text"
+        }
+      ]
+    }
+  ],
+  "max_blocks": 4,
+  "presets": [
+    {
+      "name": "Trade Features"
+    }
+  ]
+}
+{% endschema %}

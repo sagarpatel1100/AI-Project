@@ -1,0 +1,501 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "product_item_CxXD6r": {
+      "type": "product-item",
+      "blocks": {
+        "product_items_wG6mxU": {
+          "type": "Product-items",
+          "settings": {
+            "image1": "shopify://shop_images/THESMARTWATCHEXPERT-2.png",
+            "heading": "",
+            "para": ""
+          }
+        }
+      },
+      "block_order": [
+        "product_items_wG6mxU"
+      ],
+      "custom_css": [
+        "div {padding: 1px; background-color: black;}"
+      ],
+      "settings": {}
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "show_title": true,
+        "page_width": "medium"
+      }
+    },
+    "slideshow_ME9kCP": {
+      "type": "slideshow",
+      "blocks": {
+        "image_iBXaAt": {
+          "type": "image",
+          "settings": {
+            "text_position": "top_center",
+            "subheading": "",
+            "title": "FIVE DIFFERENT STORIES THAT WILL SHOW WHY THIS \"INDESTRUCTIBLE WATCH\" IS SELLING THOUSANDS OF UNITS A DAY!",
+            "button_1_text": "",
+            "button_1_link": "",
+            "button_2_text": "",
+            "button_2_link": "",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 100
+          }
+        }
+      },
+      "block_order": [
+        "image_iBXaAt"
+      ],
+      "custom_css": [
+        "div {text-align: left;}",
+        "h3 {font-size: 24px;}",
+        "h2 {color: #ffc200;}"
+      ],
+      "settings": {
+        "section_height": "auto",
+        "transition_type": "fade",
+        "autoplay": false,
+        "cycle_speed": 5,
+        "background": "rgba(0,0,0,0)"
+      }
+    },
+    "image_with_text_XKa3yp": {
+      "type": "image-with-text",
+      "blocks": {
+        "item_6bYd9K": {
+          "type": "item",
+          "settings": {
+            "show_video": false,
+            "video_link": "",
+            "image": "shopify://shop_images/Sin_titulo_1000_x_1100_px_-min.png",
+            "tab_label": "Item",
+            "subheading": "",
+            "title": "this is the reason why THESE 5 GUYS, AND 300,000+ OTHERS now trust on this smartwatch for their rough work DUTIES.",
+            "content": "",
+            "button_text": "CHECK AVAILABILITY ➔",
+            "button_link": "shopify://products/carbinox-vortex-1"
+          }
+        }
+      },
+      "block_order": [
+        "item_6bYd9K"
+      ],
+      "custom_css": [
+        "h3 {font-size: 22px;}"
+      ],
+      "settings": {
+        "section_id": "",
+        "reveal_on_scroll": false,
+        "background_type": "full_width",
+        "background_overlap": "both",
+        "image_position": "left",
+        "text_alignment": "center",
+        "cycle_speed": 8,
+        "accent_background": "#000000",
+        "text_color": "#ffffff",
+        "button_background": "#0023ff",
+        "button_text_color": "#ffffff",
+        "enable_custom_margin": false,
+        "margin_bottom": 0
+      }
+    },
+    "image_with_text_LAnezN": {
+      "type": "image-with-text",
+      "blocks": {
+        "item_zCAGKi": {
+          "type": "item",
+          "settings": {
+            "show_video": false,
+            "video_link": "\\",
+            "image": "shopify://shop_images/2_df796f7e-5860-41f1-b779-ea616ddcf1ba.png",
+            "tab_label": "Item",
+            "subheading": "🇺🇸 SAM K. FROM AUSTIN, TEXAS",
+            "title": "1. \"The Watch That Took a Bullet\"",
+            "content": "<p><strong>\"I spend my weekends at the shooting range, and I had a close call that I’ll never forget. I was cleaning my gun when it accidentally went off. The bullet hit my Carbinox Vortex. If it weren't for the tough build of this watch, I might've lost my wrist\". <br/><br/>\"This watch literally saved my life. It's built to take a beating, and it's got all the features I need, like notifications and a long-lasting battery. Plus, it doesn't cost an arm and a leg\".</strong></p>",
+            "button_text": "CHECK AVAILABILITY ➔",
+            "button_link": "shopify://products/carbinox-vortex-1"
+          }
+        }
+      },
+      "block_order": [
+        "item_zCAGKi"
+      ],
+      "custom_css": [
+        "h3 {font-size: 22px;}"
+      ],
+      "settings": {
+        "section_id": "",
+        "reveal_on_scroll": false,
+        "background_type": "full_width",
+        "background_overlap": "text",
+        "image_position": "left",
+        "text_alignment": "left",
+        "cycle_speed": 8,
+        "accent_background": "#f9f9f9",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "#0023ff",
+        "button_text_color": "#ffffff",
+        "enable_custom_margin": false,
+        "margin_bottom": 0
+      }
+    },
+    "image_with_text_AhUFxc": {
+      "type": "image-with-text",
+      "blocks": {
+        "item_trknga": {
+          "type": "item",
+          "settings": {
+            "show_video": false,
+            "video_link": "",
+            "image": "shopify://shop_images/3-min_3.jpg",
+            "tab_label": "Item",
+            "subheading": "🇺🇸 mark from cleveland, ohio",
+            "title": "2. \"Staying Connected Without Breaking the Bank\"",
+            "content": "<p><strong>\"Times have been tough, and I couldn't afford one of those high-priced smartwatches. But I needed to stay connected with my family while working on the job site. Then I found the Carbinox Vortex. It’s affordable, and it lets me get all my messages and calls right on my wrist\".</strong></p><p><strong>\"The battery lasts forever, and I don't have to worry about charging it every day. It's been a real lifesaver for me and my family, keeping us connected without breaking the bank\".</strong></p>",
+            "button_text": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "item_trknga"
+      ],
+      "custom_css": [
+        "h3 {font-size: 22px;}"
+      ],
+      "settings": {
+        "section_id": "",
+        "reveal_on_scroll": false,
+        "background_type": "full_width",
+        "background_overlap": "text",
+        "image_position": "left",
+        "text_alignment": "left",
+        "cycle_speed": 8,
+        "accent_background": "#f9f9f9",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)",
+        "enable_custom_margin": false,
+        "margin_bottom": 0
+      }
+    },
+    "image_with_text_p6pTCt": {
+      "type": "image-with-text",
+      "blocks": {
+        "item_TCxFTG": {
+          "type": "item",
+          "settings": {
+            "show_video": false,
+            "video_link": "",
+            "image": "shopify://shop_images/3_3db2c48d-5fbf-463a-82f0-12f556a8d4b4.png",
+            "tab_label": "Item",
+            "subheading": "🇺🇸 JOHN S. FROM PORT ST. LUCIE, FLORIDA",
+            "title": "3. \"From Frustration to Reliability\"",
+            "content": "<p><strong>\"A while back, I saved up $500 to buy a big-name smartwatch. It broke within weeks, and the battery life was terrible. I was fed up until Carbinox heard about my story and sent me a Vortex. This watch has been incredible – it’s tough as nails and lasts for weeks on a single charge\".<br/><br/>\"It's got all the features I need, and it's made my work a lot easier. Carbinox really stands behind their products, and I’m never going back to those overpriced brands again\".</strong></p>",
+            "button_text": "CHECK AVAILABILITY ➔",
+            "button_link": "shopify://products/carbinox-vortex-1"
+          }
+        }
+      },
+      "block_order": [
+        "item_TCxFTG"
+      ],
+      "custom_css": [
+        "h3 {font-size: 22px;}"
+      ],
+      "settings": {
+        "section_id": "",
+        "reveal_on_scroll": false,
+        "background_type": "full_width",
+        "background_overlap": "text",
+        "image_position": "left",
+        "text_alignment": "left",
+        "cycle_speed": 8,
+        "accent_background": "#f9f9f9",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "#0023ff",
+        "button_text_color": "#ffffff",
+        "enable_custom_margin": false,
+        "margin_bottom": 0
+      }
+    },
+    "image_with_text_LGBk3x": {
+      "type": "image-with-text",
+      "blocks": {
+        "item_7bDiLy": {
+          "type": "item",
+          "settings": {
+            "show_video": false,
+            "video_link": "https://cdn.shopify.com/videos/c/o/v/faa3751e0d8742a4b3e9e9689b4f22ae.mp4",
+            "image": "shopify://shop_images/1-carbinox-web-trustpilot-min.png",
+            "tab_label": "Item",
+            "subheading": "WE'RE CONFIDENT ON OUR CRAFT: LIFETIME WARRANTY, RISK-FREE TRIAL AND 300,000+ SOLD!",
+            "title": "CARBINOX VORTEX",
+            "content": "<h5><strong>🥇AMERICA'S TOP RATED SMARTWATCH FOR BLUE COLLAR WORKERS, TRUCK DRIVERS, MANAGERS, OPERATORS AND MECHANICS.<br/><br/>🇺🇸 U.S MIL-STD </strong>CERTIFIED & IP69K WATERPROOF. FULLY RESISTANT AGAINST <strong>HARD IMPACTS, SCRATCHES, DENTS, AND OTHER ROUGH TESTS OR ENVIRONMENTS!<br/><br/>🔋 14-DAY BATTERY LIFE ON A SINGLE 90-MINUTE CHARGE, PLUS BLUETOOTH CALLING TECHNOLOGY.</strong></h5>",
+            "button_text": "UNLOCK TODAY'S DISCOUNTS ➔",
+            "button_link": "shopify://products/carbinox-vortex-1"
+          }
+        }
+      },
+      "block_order": [
+        "item_7bDiLy"
+      ],
+      "settings": {
+        "section_id": "",
+        "reveal_on_scroll": false,
+        "background_type": "full_width",
+        "background_overlap": "both",
+        "image_position": "left",
+        "text_alignment": "left",
+        "cycle_speed": 8,
+        "accent_background": "#000000",
+        "text_color": "#ffffff",
+        "button_background": "#0023ff",
+        "button_text_color": "#ffffff",
+        "enable_custom_margin": false,
+        "margin_bottom": 0
+      }
+    },
+    "image_with_text_MjpNBq": {
+      "type": "image-with-text",
+      "blocks": {
+        "item_CgQifc": {
+          "type": "item",
+          "settings": {
+            "show_video": false,
+            "video_link": "",
+            "image": "shopify://shop_images/4_4f5b71f5-ce3a-4b59-9849-5a16710b602c.png",
+            "tab_label": "Item",
+            "subheading": "🇺🇸 CHESTER M. FROM MC ALLEN, TEXAS",
+            "title": "4. \"Calling for Help from My Wrist\"",
+            "content": "<p><strong>\"I'm a truck driver, and being on the road means I can't always have my phone handy. The Carbinox Vortex changed all that for me. One night, I was hauling a load across the state when my truck broke down. I needed to call for help, but my phone was dead. Thankfully, I was able to make the call straight from my watch\". <br/><br/>\"The battery on this thing lasts forever, and it's got Bluetooth calling, so I was never out of touch. It's rugged enough to handle the bumps and bangs of my job, and it didn't break the bank. This watch is the best thing I've ever bought for work\".</strong></p>",
+            "button_text": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "item_CgQifc"
+      ],
+      "custom_css": [
+        "h3 {font-size: 22px;}"
+      ],
+      "settings": {
+        "section_id": "",
+        "reveal_on_scroll": false,
+        "background_type": "full_width",
+        "background_overlap": "text",
+        "image_position": "left",
+        "text_alignment": "left",
+        "cycle_speed": 8,
+        "accent_background": "#f9f9f9",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)",
+        "enable_custom_margin": false,
+        "margin_bottom": 0
+      }
+    },
+    "image_with_text_Tc6iUh": {
+      "type": "image-with-text",
+      "blocks": {
+        "item_eDryX7": {
+          "type": "item",
+          "settings": {
+            "show_video": false,
+            "video_link": "",
+            "image": "shopify://shop_images/1_5af1b535-99e2-4f63-81ae-132b07a83ba3.png",
+            "tab_label": "Item",
+            "subheading": "🇺🇸 andrew t. from columbus, ohio",
+            "title": "5. \"A Spark-Proof Solution\"",
+            "content": "<p><strong>\"My work involves high heat and heavy equipment, and I've melted through a few watches in my time. That is until I got the Carbinox Vortex. One day, while welding a particularly tricky piece, a spark landed on my wrist. I was sure my watch was done for, but it didn't even leave a mark. This watch is made to withstand the toughest conditions, and it's waterproof too\". <br/><br/>\"I don't have to worry about it getting damaged by water or heat. The price is unbeatable, and the battery life is out of this world. I can go for weeks without needing to charge it. This watch is a game-changer for anyone in my line of work\".</strong></p>",
+            "button_text": "CHECK AVAILABILITY ➔",
+            "button_link": "shopify://products/carbinox-vortex-1"
+          }
+        }
+      },
+      "block_order": [
+        "item_eDryX7"
+      ],
+      "custom_css": [
+        "h3 {font-size: 22px;}"
+      ],
+      "settings": {
+        "section_id": "",
+        "reveal_on_scroll": false,
+        "background_type": "full_width",
+        "background_overlap": "text",
+        "image_position": "left",
+        "text_alignment": "left",
+        "cycle_speed": 8,
+        "accent_background": "#f9f9f9",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "#0023ff",
+        "button_text_color": "#ffffff",
+        "enable_custom_margin": false,
+        "margin_bottom": 0
+      }
+    },
+    "rich_text_xLgDde": {
+      "type": "rich-text",
+      "custom_css": [
+        "h3 {font-size: 23px; color: #ffc200;}"
+      ],
+      "settings": {
+        "section_id": "",
+        "subheading": "",
+        "title": "NOW, ARE YOU GONNA KEEP SAYING THE PERFECT SMARTWATCH FOR HARD WORKERS DOESN'T EXIST?",
+        "content": "",
+        "button_text": "",
+        "button_link": "",
+        "background_type": "full_width",
+        "text_width": "fill",
+        "text_position": "center",
+        "text_alignment": "center",
+        "background": "#000000",
+        "text_color": "#ffffff",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "image_with_text_gQqLT4": {
+      "type": "image-with-text",
+      "blocks": {
+        "item_dEDaRa": {
+          "type": "item",
+          "settings": {
+            "show_video": false,
+            "video_link": "https://cdn.shopify.com/videos/c/o/v/faa3751e0d8742a4b3e9e9689b4f22ae.mp4",
+            "image": "shopify://shop_images/1-carbinox-web-trustpilot-min.png",
+            "tab_label": "Item",
+            "subheading": "WE'RE CONFIDENT ON OUR CRAFT: LIFETIME WARRANTY, RISK-FREE TRIAL AND 300,000+ SOLD!",
+            "title": "CARBINOX VORTEX",
+            "content": "<h5><strong>🥇AMERICA'S TOP RATED SMARTWATCH FOR BLUE COLLAR WORKERS, TRUCK DRIVERS, MANAGERS, OPERATORS AND MECHANICS.<br/><br/>🇺🇸 U.S MIL-STD </strong>CERTIFIED & IP69K WATERPROOF. FULLY RESISTANT AGAINST <strong>HARD IMPACTS, SCRATCHES, DENTS, AND OTHER ROUGH TESTS OR ENVIRONMENTS!<br/><br/>🔋 14-DAY BATTERY LIFE ON A SINGLE 90-MINUTE CHARGE, PLUS BLUETOOTH CALLING TECHNOLOGY.</strong></h5>",
+            "button_text": "UNLOCK TODAY'S DISCOUNTS ➔",
+            "button_link": "shopify://products/carbinox-vortex-1"
+          }
+        }
+      },
+      "block_order": [
+        "item_dEDaRa"
+      ],
+      "settings": {
+        "section_id": "",
+        "reveal_on_scroll": false,
+        "background_type": "full_width",
+        "background_overlap": "both",
+        "image_position": "left",
+        "text_alignment": "left",
+        "cycle_speed": 8,
+        "accent_background": "#000000",
+        "text_color": "#ffffff",
+        "button_background": "#0023ff",
+        "button_text_color": "#ffffff",
+        "enable_custom_margin": false,
+        "margin_bottom": 0
+      }
+    },
+    "gallery_ixft4e": {
+      "type": "gallery",
+      "blocks": {
+        "image_NgLhUC": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/6-min_2.jpg",
+            "caption": ""
+          }
+        },
+        "image_QBTR6z": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/1_32bfc3c0-057f-45ed-9fe8-be6f1181bde8.png",
+            "caption": ""
+          }
+        },
+        "image_NWxnXp": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Diseno_sin_titulo_51_-min.png",
+            "caption": ""
+          }
+        },
+        "image_HtqW7c": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/4-min_3.jpg",
+            "caption": ""
+          }
+        },
+        "image_7tnMYH": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/5-min_2.jpg",
+            "caption": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_NgLhUC",
+        "image_QBTR6z",
+        "image_NWxnXp",
+        "image_HtqW7c",
+        "image_7tnMYH"
+      ],
+      "settings": {
+        "subheading": "THE BEST BANG FOR YOUR BUCK, GUARANTEED!",
+        "title": "🇺🇸 BACKED BY 300,000+ FRONTLINE ESSENTIAL WORKERS ACROSS AMERICA!",
+        "show_arrows": true,
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "1720824131160d5531": {
+      "type": "apps",
+      "settings": {
+        "include_horizontal_margins": true,
+        "include_vertical_margins": true
+      }
+    },
+    "product_sticky_form_Bprrj7": {
+      "type": "product-sticky-form",
+      "settings": {
+        "product": "carbinox-vortex-1",
+        "btn_label": "UNLOCK TODAY'S DISCOUNTS ➔",
+        "btn_bg_color": "#0023ff",
+        "btn_label_color": "#ffffff"
+      }
+    }
+  },
+  "order": [
+    "product_item_CxXD6r",
+    "main",
+    "slideshow_ME9kCP",
+    "image_with_text_XKa3yp",
+    "image_with_text_LAnezN",
+    "image_with_text_AhUFxc",
+    "image_with_text_p6pTCt",
+    "image_with_text_LGBk3x",
+    "image_with_text_MjpNBq",
+    "image_with_text_Tc6iUh",
+    "rich_text_xLgDde",
+    "image_with_text_gQqLT4",
+    "gallery_ixft4e",
+    "1720824131160d5531",
+    "product_sticky_form_Bprrj7"
+  ]
+}

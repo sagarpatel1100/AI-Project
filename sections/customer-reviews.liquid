@@ -1,0 +1,176 @@
+<!-- customers -->
+	<section class="ridge-customers">
+		<div class="ridge-container">
+			<div class="ridge-customers-heading">
+				<h2>{{ section.settings.text1 }}</h2>
+				<div class="ridge-rating">
+					 <ul>
+					 	<li><i class="fa-solid fa-star"></i></li>
+					 	<li><i class="fa-solid fa-star"></i></li>
+					 	<li><i class="fa-solid fa-star"></i></li>
+					 	<li><i class="fa-solid fa-star"></i></li>
+					 	<li><i class="fa-solid fa-star"></i></li>
+					 </ul>
+					 {{ section.settings.reviewrating }}
+				</div>
+			</div>
+			
+
+   <div class="ridge-customers-main ridge-customers-main2">
+            {% for block in section.blocks %}
+                         {% if block.type == 'customerReviewDesktop' %}
+                           
+				<div class="ridge-customers-item">
+				{{ block.settings.itemimage | img_url: 'master' | img_tag }}
+					<h3>{{ block.settings.listitemtext }}</h3>
+					{{ block.settings.listitempara }}
+					<ul>
+						<li>{{ block.settings.litext1 }}</li>
+						<li class="ridge-customers-verified">{{ block.settings.liimg | img_url: 'master' | img_tag }}{{ block.settings.litext2 }}</li>
+					</ul>
+				</div>
+                             {% endif %}
+          {% endfor %}
+				
+			</div>
+
+
+
+      <div class="ridge-customers-main ridge-customers-main1">
+            {% for block in section.blocks %}
+                         {% if block.type == 'customerReviewMoblie' %}
+                           
+				<div class="ridge-customers-item">
+				{{ block.settings.itemimage1 | img_url: 'master' | img_tag }}
+					<h3>{{ block.settings.listitemtext1 }}</h3>
+					{{ block.settings.listitempara1 }}
+					<ul>
+						<li>{{ block.settings.litext11 }}</li>
+						<li class="ridge-customers-verified">{{ block.settings.liimg1 | img_url: 'master' | img_tag }}{{ block.settings.litext21 }}</li>
+					</ul>
+				</div>
+                             {% endif %}
+          {% endfor %}
+				
+			</div>
+
+          
+		</div>
+	</section>
+ 
+
+
+{% schema %}
+  {
+    "name": "Customer Reviews",
+    "settings": [
+      {
+      "type": "text",
+      "id": "text1",
+      "label": "Heading"
+    },
+                 {
+      "type": "richtext",
+      "id": "reviewrating",
+      "label": "Reviews Rating"
+    }
+    ],
+    "blocks": [
+     {
+       "type": "customerReviewDesktop",
+       "name": "Customer Reviews Desktop",
+       "settings": [
+         {
+            "type": "image_picker",
+           "id": "itemimage",
+           "label": "Customer Review Image"
+  },
+         {
+      "type": "text",
+      "id": "listitemtext",
+      "label": "Title"
+    },
+           {
+      "type": "richtext",
+      "id": "listitempara",
+      "label": "Description"
+    },
+               {
+        "type": "richtext",
+        "id": "litext1",
+        "label": "Customer Name"
+      },
+               {
+        "type": "image_picker",
+        "id": "liimg",
+        "label": "Verified Image"
+      },
+              {
+        "type": "richtext",
+        "id": "litext2",
+        "label": "Verified Review"
+      },
+       ]
+         },
+         {
+    "type": "customerReviewMoblie",
+    "name": "Customer Reviews Mobile",
+    "settings": [
+         {
+            "type": "image_picker",
+           "id": "itemimage1",
+           "label": "Customer Review Image"
+  },
+         {
+      "type": "text",
+      "id": "listitemtext1",
+      "label": "Title"
+    },
+           {
+      "type": "richtext",
+      "id": "listitempara1",
+      "label": "Description"
+    },
+               {
+        "type": "richtext",
+        "id": "litext11",
+        "label": "Customer Name"
+      },
+               {
+        "type": "image_picker",
+        "id": "liimg1",
+        "label": "Verified Image"
+      },
+              {
+        "type": "richtext",
+        "id": "litext21",
+        "label": "Review Status"
+      }
+    ]
+  }
+    ]  }
+      
+{% endschema %}
+
+
+
+<!-- mobile menu -->
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+<!-- slick -->
+<script>
+  $('.ridge-customers-main1').slick({
+  infinite: true,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  dots: true
+});
+</script>
+

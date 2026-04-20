@@ -1,0 +1,917 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "sl_timer_bar_1_1_BHWMrU": {
+      "type": "sl-timer-bar-1-1",
+      "disabled": true,
+      "custom_css": [],
+      "settings": {
+        "devices": "all",
+        "sticky_on_scroll": true,
+        "headline_text": "IT'S OVER! WE'RE REMOVING THE 32% OFF CODE \"BLACK32\" IN:",
+        "strikethrough_text": "",
+        "message_link": "",
+        "link_style": "arrow",
+        "use_caps": true,
+        "message_icon": "icon-name",
+        "offer_countdown_date": "2024-11-30",
+        "offer_countdown_time": "11:59 PM -04:00",
+        "pattern_select": "110d5020-2c4a-47b6-94c8-74c9b3d3b8d9",
+        "bar_height": "medium",
+        "text_size": "medium",
+        "font_style": "title",
+        "timer_size": "large",
+        "timer_font_style": "heading",
+        "label_font_style": "heading",
+        "border_type": "brand_style",
+        "mobile_bar_height": "match_desktop",
+        "mobile_text_size": "match_desktop",
+        "background_color": "#de2a2a",
+        "text_color": "#ffffff",
+        "border_color": "rgba(0,0,0,0)",
+        "custom_timer_color": "#ffffff"
+      }
+    },
+    "rich_text_3d3TnK": {
+      "type": "rich-text",
+      "disabled": true,
+      "custom_css": [
+        "h3 {font-size: 19px;}",
+        "div {margin-block: -6px;}"
+      ],
+      "settings": {
+        "section_id": "",
+        "subheading": "",
+        "title": "NEW LAUNCH & LIMITED TO 500 PIECES! 🚀",
+        "content": "",
+        "button_text": "",
+        "button_link": "",
+        "background_type": "full_width",
+        "text_width": "fill",
+        "text_position": "center",
+        "text_alignment": "center",
+        "background": "#f9f9f9",
+        "text_color": "#000000",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "94157900-ca99-4d79-b443-7f058350974e": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Designed for hardworking individuals and outdoor enthusiasts who need durable, high-performance eyewear that protects their eyes in extreme environments. Whether on the job site, trail, or water, these sunglasses provide ultimate resilience, superior UV protection, and adaptable style for any situation.</strong></p>"
+          }
+        },
+        "77b0126f-d176-4e47-b6f3-d2424b9b32ea": {
+          "type": "variant_picker",
+          "settings": {
+            "hide_sold_out_variants": false,
+            "selector_mode": "block",
+            "color_mode": "block",
+            "size_chart_page": ""
+          }
+        },
+        "54d2e274-c4e9-4efe-b6da-5bfe93a94d13": {
+          "type": "social_share_icons",
+          "disabled": true,
+          "settings": {
+            "icon_1": "shopify://shop_images/Diseno_sin_titulo_-_2024-11-07T181009.445.png",
+            "icon_text_1": "<p>U.S MIL-STD 810H CERTIFIED</p>",
+            "icon_2": "shopify://shop_images/2_e3698ff8-966b-493e-aa75-0881daa5f95e.png",
+            "icon_text_2": "<p>DESIGNED AND BUILT FOR AMERICA</p>",
+            "icon_3": "shopify://shop_images/3_fd5dc79c-8064-4d08-9c53-a1102be5bd8f.png",
+            "icon_text_3": "<p>IP69K WATERPROOF RATING</p>"
+          }
+        },
+        "quantity_selector_EkNkCm": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "aa8adaeb-d404-4d2d-9f7b-7c87d4a68e8f": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_payment_button": false,
+            "atc_button_background": "#ffc200",
+            "atc_button_text_color": "#000000",
+            "buy_now_button_background": "rgba(0,0,0,0)",
+            "buy_now_button_text_color": "rgba(0,0,0,0)"
+          }
+        },
+        "text_qdtDdk": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<h5><strong>🟢 DELIVERS BEFORE CHRISTMAS IF YOU ORDER NOW!</strong></h5>"
+          }
+        },
+        "4ac75f75-351e-49cb-9367-33b5cfe6a9bd": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/file-z9ooXSBSSC.png",
+            "image_alignment": "center",
+            "image_width": 440
+          }
+        }
+      },
+      "block_order": [
+        "94157900-ca99-4d79-b443-7f058350974e",
+        "77b0126f-d176-4e47-b6f3-d2424b9b32ea",
+        "54d2e274-c4e9-4efe-b6da-5bfe93a94d13",
+        "quantity_selector_EkNkCm",
+        "aa8adaeb-d404-4d2d-9f7b-7c87d4a68e8f",
+        "text_qdtDdk",
+        "4ac75f75-351e-49cb-9367-33b5cfe6a9bd"
+      ],
+      "custom_css": [
+        "button {padding: 4px; font-size: 16px;}",
+        "h5 {font-size: 13px; color: #11a603; text-align: center;}",
+        "div {font-size: 14px;}",
+        "h4 {font-size: 12px; letter-spacing: -0.3px; text-align: center;}",
+        ".price--highlight {font-size: 20px;}",
+        ".label--highlight {font-size: 13px;}"
+      ],
+      "settings": {
+        "delivery_time": "",
+        "show_vendor": false,
+        "show_sku": false,
+        "show_taxes_included": false,
+        "show_product_rating": false,
+        "show_sticky_add_to_cart": true,
+        "show_payment_methods": false,
+        "show_share_buttons": false,
+        "help_page": "",
+        "enable_video_autoplay": false,
+        "enable_video_looping": false,
+        "enable_image_zoom": false,
+        "show_thumbnails_on_mobile": true,
+        "desktop_thumbnails_position": "bottom",
+        "transition_effect": "slide"
+      }
+    },
+    "product-content": {
+      "type": "product-content",
+      "blocks": {
+        "c6ed9da0-bdf5-43a3-8685-71d9c9d6fcf6": {
+          "type": "content",
+          "settings": {
+            "title": "FEATURES ➔",
+            "content": "<p><strong>Changeable Lenses</strong>: Includes a quick-swap magnetic system with five interchangeable lenses to suit any environment.</p><p><strong>100% UV Protection</strong>: Polarized lenses block all UVA and UVB rays, keeping your eyes safe from harmful sunlight.</p><p><strong>Adjustable Fit</strong>: Features customizable nose pads and flexible temples for a secure, personalized fit.</p><p><strong>Polycarbonate Frame</strong>: Built with military-grade polycarbonate for extreme durability and impact resistance.</p><p><strong>Dust Protection</strong>: Tight frame design shields your eyes from dust and debris in tough job sites or outdoor conditions.</p>",
+            "page": ""
+          }
+        },
+        "3429e515-9812-4e6e-8dcb-71d5cf1a780b": {
+          "type": "content",
+          "settings": {
+            "title": "PACKAGE INCLUDES ➔",
+            "content": "<p><strong>1x Carbinox Sunglasses<br/>1x Waterproof Hard Zippered Case<br/>1x Cleaning Cloth<br/>1x Travel Leather Pouch<br/>1x Temples Replacement<br/>5x Changeable Shields</strong></p>",
+            "page": ""
+          }
+        },
+        "content_cnXCm4": {
+          "type": "content",
+          "settings": {
+            "title": "guarantees ➔",
+            "content": "<p>Try Carbinox Sunglasses worry-free with our <strong>90-day trial</strong>—love them or get your money back. Plus, enjoy peace of mind with our <strong>lifetime warranty</strong>, guaranteeing repairs or replacements for life. Built to last, backed forever.</p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "c6ed9da0-bdf5-43a3-8685-71d9c9d6fcf6",
+        "3429e515-9812-4e6e-8dcb-71d5cf1a780b",
+        "content_cnXCm4"
+      ],
+      "custom_css": [],
+      "settings": {}
+    },
+    "video_bgJ6Er": {
+      "type": "video",
+      "custom_css": [
+        "div {margin-bottom: 25px;}"
+      ],
+      "settings": {
+        "subheading": "",
+        "title": "",
+        "video_url": "https://youtu.be/oJhndIv-Vhw",
+        "image": "shopify://shop_images/Diseno_sin_titulo_18_-min_1.jpg",
+        "background_type": "full_width",
+        "video_size": "auto",
+        "autoplay": false,
+        "background": "#000000",
+        "text_color": "#ffc200"
+      }
+    },
+    "c4d5d849-903b-4f94-a366-9dd19f7a438e": {
+      "type": "image-with-text",
+      "blocks": {
+        "35be12bc-6d06-4cc0-94ac-25211273e8e5": {
+          "type": "item",
+          "settings": {
+            "show_video": false,
+            "video_link": "",
+            "image": "shopify://shop_images/Diseno_sin_titulo_-_2024-12-09T164035.092-min.png",
+            "tab_label": "Item",
+            "subheading": "",
+            "title": "BUILT TO ENDURE, DESIGNED TO PROTECT.",
+            "content": "<p><strong>The combination of unmatched durability with a rugged, no-nonsense style that works as hard as you do have brought the ultimate sunglasses for your day. <br/><br/>Whether you're on the job site or exploring the great outdoors, these are the ultimate eyewear for resilience and performance.</strong></p>",
+            "button_text": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "35be12bc-6d06-4cc0-94ac-25211273e8e5"
+      ],
+      "custom_css": [
+        "h2 {font-size: 12px;}",
+        "h3 {font-size: 22px;}",
+        "h5 {font-size: 16px; letter-spacing: -0.7px; line-height: 20px;}"
+      ],
+      "settings": {
+        "section_id": "",
+        "reveal_on_scroll": false,
+        "background_type": "full_width",
+        "background_overlap": "both",
+        "image_position": "right",
+        "text_alignment": "center",
+        "cycle_speed": 8,
+        "accent_background": "#000000",
+        "text_color": "#ffffff",
+        "button_background": "#292323",
+        "button_text_color": "#5a5353",
+        "enable_custom_margin": false,
+        "margin_bottom": 0
+      }
+    },
+    "7093bb3e-6e7a-4e7c-b3dd-09080160deb5": {
+      "type": "rich-text",
+      "disabled": true,
+      "custom_css": [
+        "h2 {color: #ffc200; font-size: 24px;}",
+        "h3 {font-size: 16px;"
+      ],
+      "settings": {
+        "section_id": "",
+        "subheading": "★★★★★",
+        "title": "\"I’ve put this Blaze through hell and back, and it’s still ticking. It’s the toughest watch I’ve ever owned.\"",
+        "content": "<p><strong>John D., Welder, Texas</strong></p>",
+        "button_text": "",
+        "button_link": "",
+        "background_type": "full_width",
+        "text_width": "fill",
+        "text_position": "center",
+        "text_alignment": "center",
+        "background": "#eeeeee",
+        "text_color": "#000000",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "3afaf0dd-bef3-46c5-9f9d-42e70684a19b": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--14658305654887__3afaf0dd-bef3-46c5-9f9d-42e70684a19b-item-1": {
+          "type": "item",
+          "settings": {
+            "show_video": false,
+            "video_link": "https://cdn.shopify.com/videos/c/o/v/019df4d5563e41988c6aec9ef668123d.mp4",
+            "image": "shopify://shop_images/3-min_18.png",
+            "tab_label": "Item",
+            "subheading": "",
+            "title": "EYEWEAR THAT TRULY LASTS ANYTHING, ANYTIME.",
+            "content": "<p><strong>Crafted with a military-grade polycarbonate frame, these sunglasses are engineered to withstand the harshest impacts. The interchangeable lens system lets you adapt your look to every environment—go from high-glare conditions to low light with ease, while keeping your vision sharp and your style bold.</strong></p>",
+            "button_text": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--14658305654887__3afaf0dd-bef3-46c5-9f9d-42e70684a19b-item-1"
+      ],
+      "custom_css": [
+        "div {background-color: #000000;}",
+        "h3 {color: #ffc200; font-size: 22px; letter-spacing: -1px;}",
+        "h5 {font-size: 20px; letter-spacing: -1px; color: #ffc200; line-height: 25px;}"
+      ],
+      "settings": {
+        "section_id": "",
+        "reveal_on_scroll": false,
+        "background_type": "full_width",
+        "background_overlap": "text",
+        "image_position": "right",
+        "text_alignment": "center",
+        "cycle_speed": 8,
+        "accent_background": "#454545",
+        "text_color": "#ffffff",
+        "button_background": "#292323",
+        "button_text_color": "#5a5353",
+        "enable_custom_margin": false,
+        "margin_bottom": 0
+      }
+    },
+    "3a5567fb-8e7e-4cb3-bb8e-f2c156493a67": {
+      "type": "image-with-text",
+      "blocks": {
+        "7f6a9c5e-0fe0-4000-bbab-c0217fa108eb": {
+          "type": "item",
+          "settings": {
+            "show_video": false,
+            "video_link": "",
+            "image": "shopify://shop_images/2-min_18.png",
+            "tab_label": "Item",
+            "subheading": "",
+            "title": "Superior Eye Protection.",
+            "content": "<p><strong>The polarized lenses block 100% of UVA and UVB rays, reducing glare and keeping your vision crystal-clear under the harshest sunlight. Your eyes stay protected, so you can focus on the task at hand.</strong></p>",
+            "button_text": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "7f6a9c5e-0fe0-4000-bbab-c0217fa108eb"
+      ],
+      "custom_css": [
+        "h3 {font-size: 22px; color: #ffc200;}",
+        "H4 {font-size: 18px; text-align: left; letter-spacing: -0.7px; margin-top: -20px;}"
+      ],
+      "settings": {
+        "section_id": "",
+        "reveal_on_scroll": false,
+        "background_type": "full_width",
+        "background_overlap": "both",
+        "image_position": "right",
+        "text_alignment": "center",
+        "cycle_speed": 8,
+        "accent_background": "#000000",
+        "text_color": "#ffffff",
+        "button_background": "#292323",
+        "button_text_color": "#5a5353",
+        "enable_custom_margin": false,
+        "margin_bottom": 0
+      }
+    },
+    "ff560379-7d10-4627-a4dc-278938136553": {
+      "type": "image-with-text",
+      "blocks": {
+        "1ae59a29-eaeb-4fc2-8215-438e69660792": {
+          "type": "item",
+          "settings": {
+            "show_video": false,
+            "video_link": "",
+            "image": "shopify://shop_images/Diseno_sin_titulo_-_2024-12-09T164814.892-min.png",
+            "tab_label": "Item",
+            "subheading": "",
+            "title": "THIS IS WHAT'S INCLUDED:",
+            "content": "<p><strong>1. WATERPROOF HARD ZIPPERED CASE<br/>2. TRAVEL LEATHER POUCH<br/>3. CLEANING CLOTH<br/>4. UV TESTING CARD<br/>5. TEMPLES REPLACEMENT<br/>6. CONSTRUCTION SHIELDS<br/>7. ORANGE SHIELDS<br/>8. BLACK UV SHIELDS<br/>9. MIRROR SHIELDS<br/>10. CLEAR SHIELDS<br/>11. VIEW EXTENSOR<br/><br/></strong></p>",
+            "button_text": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "1ae59a29-eaeb-4fc2-8215-438e69660792"
+      ],
+      "custom_css": [
+        "h3 {font-size: 22px;}",
+        "H4 {font-size: 18px; text-align: left; letter-spacing: -0.7px; margin-top: -20px;}"
+      ],
+      "settings": {
+        "section_id": "",
+        "reveal_on_scroll": false,
+        "background_type": "full_width",
+        "background_overlap": "both",
+        "image_position": "left",
+        "text_alignment": "left",
+        "cycle_speed": 8,
+        "accent_background": "#f9f9f9",
+        "text_color": "#000000",
+        "button_background": "#292323",
+        "button_text_color": "#5a5353",
+        "enable_custom_margin": false,
+        "margin_bottom": 0
+      }
+    },
+    "84dd6a94-028e-44de-a5af-eed905356deb": {
+      "type": "image-with-text",
+      "blocks": {
+        "2666836f-fdb5-4031-a67a-23cba73c2c91": {
+          "type": "item",
+          "settings": {
+            "show_video": false,
+            "video_link": "",
+            "image": "shopify://shop_images/Please_send_a_text_message_to_John_saying_See_you_later_at_the_ranch_1_-min.png",
+            "tab_label": "Item",
+            "subheading": "",
+            "title": "AI Voice Assistant at Your Command, ready to reply and send messages.",
+            "content": "<p><strong>The Carbinox Blaze takes convenience to the next level with its built-in AI voice assistant. Seamlessly paired with your smartphone, you can send and reply to SMS messages using simple voice commands—no need to stop what you’re doing. Whether you're on the job or on the go, the AI assistant keeps you connected, hands-free.</strong></p>",
+            "button_text": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "2666836f-fdb5-4031-a67a-23cba73c2c91"
+      ],
+      "disabled": true,
+      "custom_css": [
+        "h3 {font-size: 22px; color: #ffc200;}",
+        "H4 {font-size: 18px; text-align: left; letter-spacing: -0.7px; margin-top: -20px;}"
+      ],
+      "settings": {
+        "section_id": "",
+        "reveal_on_scroll": false,
+        "background_type": "full_width",
+        "background_overlap": "both",
+        "image_position": "right",
+        "text_alignment": "center",
+        "cycle_speed": 8,
+        "accent_background": "#000000",
+        "text_color": "#ffffff",
+        "button_background": "#292323",
+        "button_text_color": "#5a5353",
+        "enable_custom_margin": false,
+        "margin_bottom": 0
+      }
+    },
+    "image_with_text_GYT8DM": {
+      "type": "image-with-text",
+      "blocks": {
+        "item_pXydhJ": {
+          "type": "item",
+          "settings": {
+            "show_video": false,
+            "video_link": "",
+            "image": "shopify://shop_images/1-min_8.png",
+            "tab_label": "Item",
+            "subheading": "",
+            "title": "Navigate Your World: Introducing GPS with Unmatched Precision 📍",
+            "content": "<p><strong>The Carbinox Blaze is our first smartwatch equipped with state-of-the-art GPS technology. Whether you’re navigating a job site or exploring off the beaten path, it will keep you on track with reliable, accurate positioning.<br/><br/>This feature can be easily enjoyed by selecting any of the sports modes on your smartwatch.</strong></p>",
+            "button_text": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "item_pXydhJ"
+      ],
+      "disabled": true,
+      "settings": {
+        "section_id": "",
+        "reveal_on_scroll": false,
+        "background_type": "full_width",
+        "background_overlap": "both",
+        "image_position": "right",
+        "text_alignment": "center",
+        "cycle_speed": 8,
+        "accent_background": "#000000",
+        "text_color": "#ffffff",
+        "button_background": "#292323",
+        "button_text_color": "#5a5353",
+        "enable_custom_margin": false,
+        "margin_bottom": 0
+      }
+    },
+    "cfffb33b-6a18-484b-af56-b40301e1f632": {
+      "type": "image-with-text",
+      "blocks": {
+        "242aee7e-1d8a-4b2f-8680-f43ccf662d4d": {
+          "type": "item",
+          "settings": {
+            "show_video": false,
+            "video_link": "",
+            "image": "shopify://shop_images/2-min_6.png",
+            "tab_label": "Item",
+            "subheading": "every situation. is now within your control.",
+            "title": "Be Ready for Anything: Altimeter, Barometer, and compass.",
+            "content": "",
+            "button_text": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "242aee7e-1d8a-4b2f-8680-f43ccf662d4d"
+      ],
+      "disabled": true,
+      "custom_css": [
+        "h3 {font-size: 20px; color: #ffc200;}",
+        "H4 {font-size: 18px; text-align: left; letter-spacing: -0.7px; margin-top: -20px;}"
+      ],
+      "settings": {
+        "section_id": "",
+        "reveal_on_scroll": false,
+        "background_type": "full_width",
+        "background_overlap": "both",
+        "image_position": "left",
+        "text_alignment": "center",
+        "cycle_speed": 8,
+        "accent_background": "#000000",
+        "text_color": "#ffffff",
+        "button_background": "#292323",
+        "button_text_color": "#5a5353",
+        "enable_custom_margin": false,
+        "margin_bottom": 0
+      }
+    },
+    "b97def7a-4167-4995-aeed-ca9dcdcf40b5": {
+      "type": "image-with-text",
+      "blocks": {
+        "46276caf-7bec-4dc3-babb-e90e3753b5ab": {
+          "type": "item",
+          "settings": {
+            "show_video": false,
+            "video_link": "",
+            "image": "shopify://shop_images/3-min_6_381e6dbc-2788-4cb0-a5b5-604cca6fdba4.png",
+            "tab_label": "Item",
+            "subheading": "The data you need to stay on top of your game.",
+            "title": "Superior Accuracy WITH Smarter Sensors.",
+            "content": "",
+            "button_text": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "46276caf-7bec-4dc3-babb-e90e3753b5ab"
+      ],
+      "disabled": true,
+      "custom_css": [
+        "h3 {font-size: 20px; color: #ffc200;}",
+        "H4 {font-size: 18px; text-align: left; letter-spacing: -0.7px; margin-top: -20px;}"
+      ],
+      "settings": {
+        "section_id": "",
+        "reveal_on_scroll": false,
+        "background_type": "full_width",
+        "background_overlap": "both",
+        "image_position": "right",
+        "text_alignment": "center",
+        "cycle_speed": 8,
+        "accent_background": "#000000",
+        "text_color": "#ffffff",
+        "button_background": "#292323",
+        "button_text_color": "#5a5353",
+        "enable_custom_margin": false,
+        "margin_bottom": 0
+      }
+    },
+    "8512ccfe-ca7f-4b2f-a0e2-70f92c988a05": {
+      "type": "image-with-text",
+      "blocks": {
+        "5c633d77-bb3b-4ca1-a3f8-7faae8f6d9a3": {
+          "type": "item",
+          "settings": {
+            "show_video": false,
+            "video_link": "",
+            "image": "shopify://shop_images/7-min_2_daf3d103-3915-4c8e-9a2a-0248dc9a6ef0.png",
+            "tab_label": "Item",
+            "subheading": "is not just a tool, it's an extension of your personality.",
+            "title": "More Modes, More You: 170+ Sports Modes and New Watch Faces INTEGRATED.",
+            "content": "",
+            "button_text": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "5c633d77-bb3b-4ca1-a3f8-7faae8f6d9a3"
+      ],
+      "disabled": true,
+      "custom_css": [
+        "h3 {font-size: 20px; color: #ffc200;}",
+        "H4 {font-size: 18px; text-align: left; letter-spacing: -0.7px; margin-top: -20px;}",
+        "div {}"
+      ],
+      "settings": {
+        "section_id": "",
+        "reveal_on_scroll": false,
+        "background_type": "full_width",
+        "background_overlap": "both",
+        "image_position": "left",
+        "text_alignment": "center",
+        "cycle_speed": 8,
+        "accent_background": "#000000",
+        "text_color": "#ffffff",
+        "button_background": "#292323",
+        "button_text_color": "#5a5353",
+        "enable_custom_margin": false,
+        "margin_bottom": 0
+      }
+    },
+    "8677f37a-5180-4ed3-8ef5-57b6acaae572": {
+      "type": "image-with-text",
+      "blocks": {
+        "91e8bfbe-7016-4d65-ab32-face8d5ba002": {
+          "type": "item",
+          "settings": {
+            "show_video": false,
+            "video_link": "",
+            "image": "shopify://shop_images/CARBINOX_PRO-min_cf4030d8-79a9-49e2-9609-486f401bbac3.png",
+            "tab_label": "Item",
+            "subheading": "",
+            "title": "",
+            "content": "",
+            "button_text": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "91e8bfbe-7016-4d65-ab32-face8d5ba002"
+      ],
+      "disabled": true,
+      "custom_css": [
+        "h3 {font-size: 18px; text-align: center;}"
+      ],
+      "settings": {
+        "section_id": "",
+        "reveal_on_scroll": false,
+        "background_type": "full_width",
+        "background_overlap": "both",
+        "image_position": "left",
+        "text_alignment": "center",
+        "cycle_speed": 8,
+        "accent_background": "#000000",
+        "text_color": "#ffffff",
+        "button_background": "#292323",
+        "button_text_color": "#5a5353",
+        "enable_custom_margin": false,
+        "margin_bottom": 0
+      }
+    },
+    "image_with_text_zbdBqG": {
+      "type": "image-with-text",
+      "blocks": {
+        "item_7UgUPD": {
+          "type": "item",
+          "settings": {
+            "show_video": false,
+            "video_link": "",
+            "image": "shopify://shop_images/VOICE_CONTROL-min.png",
+            "tab_label": "Item",
+            "subheading": "",
+            "title": "⬆ SMART FEATURES ⬆",
+            "content": "",
+            "button_text": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "item_7UgUPD"
+      ],
+      "disabled": true,
+      "settings": {
+        "section_id": "",
+        "reveal_on_scroll": false,
+        "background_type": "full_width",
+        "background_overlap": "both",
+        "image_position": "left",
+        "text_alignment": "center",
+        "cycle_speed": 8,
+        "accent_background": "#000000",
+        "text_color": "#ffc200",
+        "button_background": "#292323",
+        "button_text_color": "#5a5353",
+        "enable_custom_margin": false,
+        "margin_bottom": 0
+      }
+    },
+    "a82c5f6c-8f61-455c-8e88-fefb5e155ec4": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--14658305654887__a82c5f6c-8f61-455c-8e88-fefb5e155ec4-item-1": {
+          "type": "item",
+          "settings": {
+            "show_video": false,
+            "video_link": "",
+            "image": "shopify://shop_images/1_286_800_x_1200_px_-min.png",
+            "tab_label": "",
+            "subheading": "",
+            "title": "🎖️ ABOUT OUR LIFETIME WARRANTY:",
+            "content": "<p><strong>We are a company that stands behind their products. We're so confident your smartwatch will provide durability to your life, that you're covered for life. If anything happens, we'll replace it for free. No questions asked.</strong></p>",
+            "button_text": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--14658305654887__a82c5f6c-8f61-455c-8e88-fefb5e155ec4-item-1"
+      ],
+      "disabled": true,
+      "custom_css": [
+        "h3 {font-size: 22px;}",
+        "h5 {color: #ffc200;}",
+        "h2 {font-size: 13px;}"
+      ],
+      "settings": {
+        "section_id": "",
+        "reveal_on_scroll": false,
+        "background_type": "full_width",
+        "background_overlap": "both",
+        "image_position": "left",
+        "text_alignment": "center",
+        "cycle_speed": 8,
+        "accent_background": "#000000",
+        "text_color": "#ffffff",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)",
+        "enable_custom_margin": false,
+        "margin_bottom": 0
+      }
+    },
+    "af3b67a6-d614-4707-afda-9d7b66d3addc": {
+      "type": "image-with-text",
+      "blocks": {
+        "b9ba9caa-760c-4a47-a67d-b350595291be": {
+          "type": "item",
+          "settings": {
+            "show_video": false,
+            "video_link": "",
+            "image": "shopify://shop_images/4-min_5.png",
+            "tab_label": "TYPE R",
+            "subheading": "",
+            "title": "CARBINOX BLAZE [TYPE R]",
+            "content": "<p><strong>Dimensions and Measurement.</strong></p>",
+            "button_text": "",
+            "button_link": ""
+          }
+        },
+        "item_pkRNfL": {
+          "type": "item",
+          "settings": {
+            "show_video": false,
+            "video_link": "",
+            "image": "shopify://shop_images/5-min_5.png",
+            "tab_label": "TYPE S",
+            "subheading": "",
+            "title": "CARBINOX BLAZE [TYPE S]",
+            "content": "<p><strong>Dimensions and Measurement.</strong></p>",
+            "button_text": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "b9ba9caa-760c-4a47-a67d-b350595291be",
+        "item_pkRNfL"
+      ],
+      "disabled": true,
+      "custom_css": [
+        "div {margin-block: -1px;}"
+      ],
+      "settings": {
+        "section_id": "",
+        "reveal_on_scroll": false,
+        "background_type": "full_width",
+        "background_overlap": "both",
+        "image_position": "left",
+        "text_alignment": "center",
+        "cycle_speed": 20,
+        "accent_background": "#000000",
+        "text_color": "#ffffff",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)",
+        "enable_custom_margin": false,
+        "margin_bottom": 0
+      }
+    },
+    "59ab30f9-1c7c-4bf9-8217-9f0f095a6238": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--14658305654887__59ab30f9-1c7c-4bf9-8217-9f0f095a6238-item-1": {
+          "type": "item",
+          "settings": {
+            "show_video": false,
+            "video_link": "",
+            "image": "shopify://shop_images/8-min_1.png",
+            "tab_label": "Item",
+            "subheading": "",
+            "title": "PAIR YOUR SMARTWATCH WITH YOUR PHONE THROUGH THE CARBINOX PRO APP.",
+            "content": "",
+            "button_text": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--14658305654887__59ab30f9-1c7c-4bf9-8217-9f0f095a6238-item-1"
+      ],
+      "disabled": true,
+      "custom_css": [
+        "h3 {font-size: 22px;}"
+      ],
+      "settings": {
+        "section_id": "",
+        "reveal_on_scroll": false,
+        "background_type": "full_width",
+        "background_overlap": "both",
+        "image_position": "right",
+        "text_alignment": "center",
+        "cycle_speed": 8,
+        "accent_background": "#000000",
+        "text_color": "#ffffff",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)",
+        "enable_custom_margin": false,
+        "margin_bottom": 0
+      }
+    },
+    "166007646669623aaa": {
+      "type": "faq",
+      "blocks": {
+        "1660076465f1e811f4-2": {
+          "type": "question",
+          "settings": {
+            "title": "Are the lenses truly shatterproof?",
+            "answer": "<p>Yes, the lenses are impact-resistant and built to withstand drops and heavy use.</p>"
+          }
+        },
+        "7c26ebf9-9f0f-4f89-a025-4868a8e8855f": {
+          "type": "question",
+          "settings": {
+            "title": "How do I change the lenses?",
+            "answer": "<p>Just pull up the frame from the shields to remove them and change it for the one of your preference.</p>"
+          }
+        },
+        "9e45f6ba-ce45-4182-ab2f-4f8bcd8f6681": {
+          "type": "question",
+          "settings": {
+            "title": "Are the lenses polarized?",
+            "answer": "<p>Yes, all lenses provide polarized protection for glare reduction and clearer vision.</p>"
+          }
+        },
+        "1660076465f1e811f4-4": {
+          "type": "question",
+          "settings": {
+            "title": "Do they block UV rays?",
+            "answer": "<p>Yes, they offer 100% UVA and UVB protection.</p>"
+          }
+        },
+        "b94b4ba9-d47e-4003-8a27-597acb9b7952": {
+          "type": "question",
+          "settings": {
+            "title": "How much do they weigh?",
+            "answer": "<p>They weigh just 90 grams, making them lightweight for all-day comfort.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "1660076465f1e811f4-2",
+        "7c26ebf9-9f0f-4f89-a025-4868a8e8855f",
+        "9e45f6ba-ce45-4182-ab2f-4f8bcd8f6681",
+        "1660076465f1e811f4-4",
+        "b94b4ba9-d47e-4003-8a27-597acb9b7952"
+      ],
+      "settings": {
+        "show_navigation": false,
+        "title": "CONVINCE ME QUESTIONS:",
+        "content": "",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "17297101183d2e6360": {
+      "type": "apps",
+      "settings": {
+        "include_horizontal_margins": true,
+        "include_vertical_margins": true
+      }
+    }
+  },
+  "order": [
+    "sl_timer_bar_1_1_BHWMrU",
+    "rich_text_3d3TnK",
+    "main",
+    "product-content",
+    "video_bgJ6Er",
+    "c4d5d849-903b-4f94-a366-9dd19f7a438e",
+    "7093bb3e-6e7a-4e7c-b3dd-09080160deb5",
+    "3afaf0dd-bef3-46c5-9f9d-42e70684a19b",
+    "3a5567fb-8e7e-4cb3-bb8e-f2c156493a67",
+    "ff560379-7d10-4627-a4dc-278938136553",
+    "84dd6a94-028e-44de-a5af-eed905356deb",
+    "image_with_text_GYT8DM",
+    "cfffb33b-6a18-484b-af56-b40301e1f632",
+    "b97def7a-4167-4995-aeed-ca9dcdcf40b5",
+    "8512ccfe-ca7f-4b2f-a0e2-70f92c988a05",
+    "8677f37a-5180-4ed3-8ef5-57b6acaae572",
+    "image_with_text_zbdBqG",
+    "a82c5f6c-8f61-455c-8e88-fefb5e155ec4",
+    "af3b67a6-d614-4707-afda-9d7b66d3addc",
+    "59ab30f9-1c7c-4bf9-8217-9f0f095a6238",
+    "166007646669623aaa",
+    "17297101183d2e6360"
+  ]
+}

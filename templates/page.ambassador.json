@@ -1,0 +1,470 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "show_title": true,
+        "page_width": "medium"
+      }
+    },
+    "1660065340cfc13a5f": {
+      "type": "slideshow",
+      "blocks": {
+        "1660065340a8ae3cb7-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/ambassador_banner.png",
+            "mobile_image": "shopify://shop_images/Diseno_sin_titulo-142-min.png",
+            "text_position": "top_center",
+            "subheading": "start earning HUGE COMMISSIONS by working with the #1 smartwatch brand in the nation!",
+            "title": "JOIN CARBINOX TIKTOK CREATOR PROGRAM!",
+            "button_1_text": "apply now",
+            "button_1_link": "https://form.typeform.com/to/MyPwUdBu?utm_source=xxxxx",
+            "button_2_text": "",
+            "button_2_link": "",
+            "text_color": "#ffffff",
+            "button_background": "#ffc200",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "1660065340a8ae3cb7-0"
+      ],
+      "custom_css": [
+        "h3 {font-size: 24px;}"
+      ],
+      "settings": {
+        "section_height": "auto",
+        "transition_type": "sweep",
+        "autoplay": true,
+        "cycle_speed": 5,
+        "background": "rgba(0,0,0,0)"
+      }
+    },
+    "18af3076-5410-4c4f-93e6-af3dd33cf640": {
+      "type": "rich-text",
+      "custom_css": [
+        "h3 {font-size: 24px;}"
+      ],
+      "settings": {
+        "section_id": "",
+        "subheading": "",
+        "title": "🇺🇸 HUNDREDS OF CREATORS ARE EARNING HUGE COMMISSIONS!",
+        "content": "<p><strong>It's time to monetize your purchase! </strong>Now you can create content and go LIVE to promote our products and earn <span style=\"text-decoration:underline\"><strong>HUGE COMMISSIONS</strong></span> from it!</p>",
+        "button_text": "",
+        "button_link": "",
+        "background_type": "full_width",
+        "text_width": "fill",
+        "text_position": "center",
+        "text_alignment": "center",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "16600654468980e97a": {
+      "type": "image-with-text",
+      "blocks": {
+        "1660065446f47a99c6-0": {
+          "type": "item",
+          "settings": {
+            "show_video": false,
+            "video_link": "",
+            "image": "shopify://shop_images/Diseno_sin_titulo_6_-min.jpg",
+            "tab_label": "Item",
+            "subheading": "",
+            "title": "DO YOU KNOW WHAT TIKTOK SHOP IS?",
+            "content": "<p><strong>If you have presence on TikTok, it's your time to become a creator and earn UP TO $50 from every watch you sold! </strong></p>",
+            "button_text": "APPLY FOR CREATOR NOW!",
+            "button_link": "https://form.typeform.com/to/MyPwUdBu?utm_source=xxxxx"
+          }
+        }
+      },
+      "block_order": [
+        "1660065446f47a99c6-0"
+      ],
+      "settings": {
+        "section_id": "",
+        "reveal_on_scroll": true,
+        "background_type": "full_width",
+        "background_overlap": "image",
+        "image_position": "right",
+        "text_alignment": "center",
+        "cycle_speed": 8,
+        "accent_background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)",
+        "enable_custom_margin": true,
+        "margin_bottom": 0
+      }
+    },
+    "febb0b42-a196-4feb-ace2-fecaeceb7714": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--14587937620071__febb0b42-a196-4feb-ace2-fecaeceb7714-1677368513ce492dfd-0": {
+          "type": "item",
+          "settings": {
+            "show_video": false,
+            "video_link": "",
+            "image": "shopify://shop_images/Diseno_sin_titulo-31.jpg",
+            "tab_label": "Item",
+            "subheading": "YOUTUBE, TIKTOK, INSTAGRAM? THEY WORK FOR US!",
+            "title": "IF YOU HAVE PRESENCE ON SOCIAL MEDIA, THIS IS FOR YOU!",
+            "content": "<p><strong>Get access to Free Products, guidelines, special collaborations, and resources to make your Carbinox videos the best ones out there, giving you more opportunities.</strong></p>",
+            "button_text": "apply now",
+            "button_link": "https://form.typeform.com/to/MyPwUdBu?utm_source=xxxxx"
+          }
+        }
+      },
+      "block_order": [
+        "template--14587937620071__febb0b42-a196-4feb-ace2-fecaeceb7714-1677368513ce492dfd-0"
+      ],
+      "settings": {
+        "section_id": "",
+        "reveal_on_scroll": true,
+        "background_type": "full_width",
+        "background_overlap": "image",
+        "image_position": "left",
+        "text_alignment": "center",
+        "cycle_speed": 8,
+        "accent_background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)",
+        "enable_custom_margin": false,
+        "margin_bottom": 0
+      }
+    },
+    "e9697471-2b35-4fa8-b498-81a580eea7ed": {
+      "type": "slideshow",
+      "blocks": {
+        "template--14587937620071__e9697471-2b35-4fa8-b498-81a580eea7ed-1677266467b76235ed-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Diseno_sin_titulo_7_4dfdf106-01fb-41a6-847d-8e68eb45e280.jpg",
+            "mobile_image": "shopify://shop_images/rf3.png",
+            "text_position": "middle_center",
+            "subheading": "three simple steps to start working with us:",
+            "title": "APPLY TODAY, GET APPROVED, START TO EARN. SIMPLE AS THAT.",
+            "button_1_text": "",
+            "button_1_link": "",
+            "button_2_text": "",
+            "button_2_link": "",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "template--14587937620071__e9697471-2b35-4fa8-b498-81a580eea7ed-1677266467b76235ed-0"
+      ],
+      "settings": {
+        "section_height": "auto",
+        "transition_type": "sweep",
+        "autoplay": true,
+        "cycle_speed": 5,
+        "background": "rgba(0,0,0,0)"
+      }
+    },
+    "1662662824c988a4f9": {
+      "type": "multi-column",
+      "blocks": {
+        "1662662824ecfbcc4e-0": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/1_43ac4a05-5af0-4cf7-b9fb-a54020aaf15b.jpg",
+            "image_width": 70,
+            "image_border": "rgba(0,0,0,0)",
+            "title": "GOLD AMBASSADOR PROGRAM",
+            "content": "<p><strong>This is the beginning of your journey as an ambassador! You'll get 10% commissions for every order you refer!</strong></p>",
+            "link_text": "",
+            "link_url": "",
+            "link_style": "link",
+            "text_alignment": "center",
+            "vertical_alignment": "start"
+          }
+        },
+        "1662662824ecfbcc4e-1": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/2_df277c55-8fc3-4f85-b1d7-ba1924623979.jpg",
+            "image_width": 70,
+            "image_border": "rgba(0,0,0,0)",
+            "title": "PLATINUM AMBASSADOR PROGRAM",
+            "content": "<p><strong>Better program, better perks. Enjoy 15% commissions for every referral, plus secret benefits! 👀</strong></p>",
+            "link_text": "",
+            "link_url": "",
+            "link_style": "link",
+            "text_alignment": "center",
+            "vertical_alignment": "start"
+          }
+        },
+        "1662662824ecfbcc4e-2": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/3_ce6cd22a-85a6-4795-af18-b33baf3ff9f8.jpg",
+            "image_width": 70,
+            "image_border": "rgba(0,0,0,0)",
+            "title": "ELITE AMBASSADOR PROGRAM",
+            "content": "<p><strong>THE HIGHEST TIER, ONLY FOR THE TOP AMBASSADORS.</strong></p><p><strong>In this tier, you will make 20% commissions for every sale you bring with your link.</strong></p><p><strong>Our current Elite ambassadors are doing $1.500/month. How does that sound? 🚀</strong></p>",
+            "link_text": "",
+            "link_url": "",
+            "link_style": "link",
+            "text_alignment": "center",
+            "vertical_alignment": "start"
+          }
+        }
+      },
+      "block_order": [
+        "1662662824ecfbcc4e-0",
+        "1662662824ecfbcc4e-1",
+        "1662662824ecfbcc4e-2"
+      ],
+      "disabled": true,
+      "settings": {
+        "reveal_on_scroll": false,
+        "stack_items": true,
+        "subheading": "THREE TIERS, UNLIMITED BENEFITS!",
+        "title": "UNLIMITED BENEFITS!",
+        "content": "",
+        "column_alignment": "center",
+        "mobile_item_size": "large",
+        "desktop_item_size": "large",
+        "spacing": "tight",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "2b7781f7-6fc8-41a8-95f1-7411261f22ba": {
+      "type": "rich-text",
+      "settings": {
+        "section_id": "",
+        "subheading": "",
+        "title": "",
+        "content": "",
+        "button_text": "APPLY NOW",
+        "button_link": "https://form.typeform.com/to/MyPwUdBu?utm_source=xxxxx",
+        "background_type": "full_width",
+        "text_width": "medium",
+        "text_position": "center",
+        "text_alignment": "center",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "166006657561cb8857": {
+      "type": "timeline",
+      "blocks": {
+        "1660066575ab33d5a9-0": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/hiw1.png",
+            "label": "1. RECEIVED LINK!",
+            "title": "",
+            "content": "<p><strong>Brian got into the</strong> <strong>Carbinox Ambassador program, he received his custom link and started to promote it on his Instagram, TikTok, and YouTube Channel.</strong></p>",
+            "button_text": "",
+            "button_link": ""
+          }
+        },
+        "1660066575ab33d5a9-1": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/hiw2.png",
+            "label": "2. REFERRAL!",
+            "title": "",
+            "content": "<p><strong>Daniel saw Brian's promotion and decided to use Brian's link to shop at Carbinox. He bought a smartwatch and some accessories. His total order was $100,00 worth of products.</strong></p>",
+            "button_text": "",
+            "button_link": ""
+          }
+        },
+        "1660066575ab33d5a9-2": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/hiw3.png",
+            "label": "3. money in!",
+            "title": "",
+            "content": "<p><strong>Since Daniel made a purchase through Brian's link for $100,00, Brian (who is in the gold program, which means 10%) just earned $10.00 out of that sale, and it was automatically deposited into his account!</strong></p>",
+            "button_text": "",
+            "button_link": ""
+          }
+        },
+        "18cc1613-8632-485a-a280-00dbc75fd77e": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/hiw4.png",
+            "label": "4. earn even more!",
+            "title": "",
+            "content": "<p><strong>When Brian gets into the Elite Program, he will earn $20.00 on each $100.00 sale he refers.</strong></p><p><strong>If he refers at least one person every single day, he will make $600.00 per month!</strong></p>",
+            "button_text": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "1660066575ab33d5a9-0",
+        "1660066575ab33d5a9-1",
+        "1660066575ab33d5a9-2",
+        "18cc1613-8632-485a-a280-00dbc75fd77e"
+      ],
+      "disabled": true,
+      "settings": {
+        "subheading": "",
+        "title": "as easy as 1, 2, 3!",
+        "text_position": "middle",
+        "background": "#ffc200",
+        "text_color": "#000000",
+        "item_background": "#f9f9f9",
+        "item_text_color": "#000000"
+      }
+    },
+    "1660066961cc24e755": {
+      "type": "faq",
+      "blocks": {
+        "16600669617f77349e-4": {
+          "type": "question",
+          "settings": {
+            "title": "What do I need to do?",
+            "answer": "<p><strong>If you're approved, we'll ask you to create content for our brand based on specific guidelines we'll provide.</strong></p>"
+          }
+        },
+        "16600669617f77349e-1": {
+          "type": "question",
+          "settings": {
+            "title": "I have a lot of followers on social media, can I apply to be an ambassador?",
+            "answer": "<p><strong>YES! It doesn't matter where your online presence is, we're always looking for talented people to join our ambassador crew.</strong></p>"
+          }
+        },
+        "16600669617f77349e-2": {
+          "type": "question",
+          "settings": {
+            "title": "Do you pay per collab? What do I get in exchange?",
+            "answer": "<p><strong>Yes, all our collaborations are paid. Besides that, you also get free products, and access to future partnerships.</strong></p>"
+          }
+        },
+        "118d4f31-d05b-4cac-a3dd-076015b162e5": {
+          "type": "question",
+          "disabled": true,
+          "settings": {
+            "title": "How can I promote my link?",
+            "answer": "<p><strong>There are many strategies you can implement to promote your link:</strong></p><p><strong>If your family and friends want to get our products, ask them to use your custom link.</strong></p><p><strong>Share posts and stories of Carbinox on your social media (Facebook, Instagram, TikTok) and use your customers link so your followers can shop and you will get the commission.</strong></p><p><strong>Blog posts: If you're on any community, speak about Carbinox and share the link with all members.</strong></p><p><strong>YouTube: Make a review of our smartwatches and leave the link in the description and speak about it on your video.</strong></p>"
+          }
+        }
+      },
+      "block_order": [
+        "16600669617f77349e-4",
+        "16600669617f77349e-1",
+        "16600669617f77349e-2",
+        "118d4f31-d05b-4cac-a3dd-076015b162e5"
+      ],
+      "settings": {
+        "show_navigation": false,
+        "title": "FAQS",
+        "content": "",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "166247687082806c50": {
+      "type": "social-media-gallery",
+      "blocks": {
+        "1662476870539b23e8-0": {
+          "type": "image",
+          "settings": {
+            "logo": "shopify://shop_images/1-min.png",
+            "link": ""
+          }
+        },
+        "1662476870539b23e8-1": {
+          "type": "image",
+          "settings": {
+            "logo": "shopify://shop_images/5-min.png",
+            "link": ""
+          }
+        },
+        "1662476870539b23e8-2": {
+          "type": "image",
+          "settings": {
+            "logo": "shopify://shop_images/2-min.png",
+            "link": ""
+          }
+        },
+        "1662476870539b23e8-3": {
+          "type": "image",
+          "settings": {
+            "logo": "shopify://shop_images/3-min.png",
+            "link": ""
+          }
+        },
+        "1662476870539b23e8-4": {
+          "type": "image",
+          "settings": {
+            "logo": "shopify://shop_images/4-min.png",
+            "link": ""
+          }
+        },
+        "1662476870539b23e8-5": {
+          "type": "image",
+          "settings": {
+            "logo": "shopify://shop_images/6-min.png",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "1662476870539b23e8-0",
+        "1662476870539b23e8-1",
+        "1662476870539b23e8-2",
+        "1662476870539b23e8-3",
+        "1662476870539b23e8-4",
+        "1662476870539b23e8-5"
+      ],
+      "disabled": true,
+      "settings": {
+        "reveal_on_scroll": true,
+        "subheading": "follow us",
+        "title": "join our social media",
+        "button_text": "",
+        "button_link": "",
+        "stack_logos": true,
+        "background": "#2c3036",
+        "text_color": "#f9f9f9",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)",
+        "logo_background": "rgba(0,0,0,0)"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1660065340cfc13a5f",
+    "18af3076-5410-4c4f-93e6-af3dd33cf640",
+    "16600654468980e97a",
+    "febb0b42-a196-4feb-ace2-fecaeceb7714",
+    "e9697471-2b35-4fa8-b498-81a580eea7ed",
+    "1662662824c988a4f9",
+    "2b7781f7-6fc8-41a8-95f1-7411261f22ba",
+    "166006657561cb8857",
+    "1660066961cc24e755",
+    "166247687082806c50"
+  ]
+}

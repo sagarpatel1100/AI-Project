@@ -1,0 +1,130 @@
+{{ 'https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap' | stylesheet_tag }}
+
+<style>
+  .wp-wrap{font-family:'Poppins',sans-serif;background:#fff;border:1px solid rgba(0,0,0,.08);border-radius:10px;padding:25px;display:flex;flex-direction:column;gap:22px;max-width:100%; margin-top: 22px;}
+  .wp-title{font-size:16px;font-weight:700;color:#000;margin:0}
+  .wp-items{display:flex;flex-direction:column; gap: 18px;}
+  .wp-item{display:flex;align-items:center;gap:10px;}
+  .wp-check{flex-shrink:0;width:18px;height:18px;display:flex;align-items:center;justify-content:center}
+  .wp-check svg{width:20px;height:20px}
+  .wp-name{flex:1;font-size:15px;font-weight:500;color:#000;margin:0}
+  .wp-price{font-size:15px;font-weight:500;color:#000;margin:0;white-space:nowrap}
+  .wp-total{display:flex;align-items:center;gap:10px}
+  .wp-dot{flex-shrink:0;width:18px;height:18px;display:flex;align-items:center;justify-content:center}
+  .wp-dot-inner{width:10px;height:10px;border-radius:999px;background: #06892A; box-shadow: 0 0 0 4px #B4DCBF;}
+  .wp-total-text{font-size:14px;font-weight:500;color:#000;margin:0}
+  .wp-pay{font-weight:700;color:#2DB83D}
+  .wp-congrats{width: 100%; background: #F3FFE8;border:1px solid #95C122;border-radius:5px;padding:8px 15px;display:flex;align-items:center;justify-content:center;gap:7px;flex-wrap:wrap}
+  .wp-party{font-size:16px;line-height:1}
+  .wp-congrats-text{font-size:14px;font-weight:600;color:#000;margin:0}
+  .wp-badge{background: #06892A;color:#fff;font-size:14px;font-weight:700;padding:3px 4px;border-radius:3px;margin: 0px 2px; text-align: center;}
+  .wp-footer {display: flex; flex-direction: column; gap: 12px; align-items: center;}
+  @media(max-width:480px){
+    .wp-wrap{padding:15px}
+    .wp-name,.wp-price{font-size:14px}
+    .wp-total-text,.wp-congrats-text,.wp-badge{font-size:13px}
+    .wp-congrats{padding: 5px;}
+  }
+</style>
+
+{% assign variant = product.selected_or_first_available_variant %}
+{% assign product_price_cents = variant.price %}
+
+{% comment %} Ítems fijos en centavos {% endcomment %}
+{% assign static_total_cents = 14970 | plus: 2970 | plus: 2970 | plus: 2985 %}
+{% assign total_value_cents = static_total_cents | plus: product_price_cents %}
+{% assign saving_cents = total_value_cents | minus: product_price_cents %}
+
+<div
+  class="wp-wrap"
+  data-wp-block
+  data-static-total="{{ static_total_cents }}"
+>
+  <p class="wp-title">What's in the 2-Pack</p>
+  <div class="wp-items">
+
+    <div class="wp-item">
+      <span class="wp-check">{% render 'icon-check-circle' %}</span>
+      <p class="wp-name">2x Blaze S smartwatches</p>
+      <p class="wp-price" data-wp-product-price>{{ product_price_cents | money }}</p>
+    </div>
+
+    <div class="wp-item">
+      <span class="wp-check">{% render 'icon-check-circle' %}</span>
+      <p class="wp-name">6-pack 22mm bands</p>
+      <p class="wp-price">$149.70</p>
+    </div>
+
+    <div class="wp-item">
+      <span class="wp-check">{% render 'icon-check-circle' %}</span>
+      <p class="wp-name">6x tempered glass protectors</p>
+      <p class="wp-price">$29.70</p>
+    </div>
+
+    <div class="wp-item">
+      <span class="wp-check">{% render 'icon-check-circle' %}</span>
+      <p class="wp-name">6x charging cables</p>
+      <p class="wp-price">$29.70</p>
+    </div>
+
+    <div class="wp-item">
+      <span class="wp-check">{% render 'icon-check-circle' %}</span>
+      <p class="wp-name">2x mystery gifts + free shipping</p>
+      <p class="wp-price">$29.85</p>
+    </div>
+
+  </div>
+
+  <div class="wp-footer">
+    <div class="wp-total">
+      <span class="wp-dot"><span class="wp-dot-inner"></span></span>
+      <p class="wp-total-text">
+        <span data-wp-total-value>{{ total_value_cents | money }}</span> TOTAL VALUE
+        | <span class="wp-pay">YOU PAY <span data-wp-you-pay>{{ product_price_cents | money }}</span></span>
+      </p>
+    </div>
+    <div class="wp-congrats">
+      <span class="wp-party">
+        <!-- tu SVG del emoji aquí -->
+      </span>
+      <p class="wp-congrats-text">
+        Congrats! You're saving <span class="wp-badge" data-wp-saving>{{ saving_cents | money }}</span> TODAY!
+      </p>
+    </div>
+  </div>
+</div>
+
+<script>
+(function () {
+  const block = document.querySelector('[data-wp-block]');
+  if (!block) return;
+
+  const staticTotalCents = parseInt(block.dataset.staticTotal, 10);
+
+  function formatMoney(cents) {
+    return '$' + (cents / 100).toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+  }
+
+  function updatePrices(priceCents) {
+    const totalValue  = staticTotalCents + priceCents;
+    const saving      = totalValue - priceCents; // = staticTotal siempre
+
+    block.querySelector('[data-wp-product-price]').textContent = formatMoney(priceCents);
+    block.querySelector('[data-wp-you-pay]').textContent        = formatMoney(priceCents);
+    block.querySelector('[data-wp-total-value]').textContent    = formatMoney(totalValue);
+    block.querySelector('[data-wp-saving]').textContent         = formatMoney(saving);
+  }
+
+  // Evento estándar de Shopify cuando cambia la variante
+  document.addEventListener('variant:changed', function (e) {
+    const variant = e.detail?.variant;
+    if (variant?.price) updatePrices(variant.price);
+  });
+
+  // Compatibilidad con temas que usan este evento alternativo
+  document.addEventListener('theme:variant:change', function (e) {
+    const variant = e.detail?.variant;
+    if (variant?.price) updatePrices(variant.price);
+  });
+})();
+</script>

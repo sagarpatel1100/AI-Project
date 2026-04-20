@@ -1,0 +1,193 @@
+{% liquid
+  assign copyright_text = section.settings.copyright_text
+
+  assign background_color = section.settings.background_color
+  assign text_color = section.settings.text_color
+
+  assign desktop_font_size = section.settings.desktop_font_size
+  assign mobile_font_size = section.settings.mobile_font_size
+
+  assign padding_top = section.settings.padding_top
+  assign padding_bottom = section.settings.padding_bottom
+  assign padding_horizontal = section.settings.padding_horizontal
+
+  assign padding_top_mobile = section.settings.padding_top_mobile
+  assign padding_bottom_mobile = section.settings.padding_bottom_mobile
+  assign padding_horizontal_mobile = section.settings.padding_horizontal_mobile
+%}
+
+{{ 'section-trade-in-footer-note.css' | asset_url | stylesheet_tag }}
+
+{% if copyright_text != blank %}
+
+<section
+  id="trade-in-footer-note-{{ section.id }}"
+  class="trade-in-footer-note"
+  style="
+    --trade-in-footer-note-bg: {{ background_color }};
+    --trade-in-footer-note-text: {{ text_color }};
+
+    --trade-in-footer-note-font-size-desktop: {{ desktop_font_size }}px;
+    --trade-in-footer-note-font-size-mobile: {{ mobile_font_size }}px;
+
+    --trade-in-footer-note-padding-top: {{ padding_top }}px;
+    --trade-in-footer-note-padding-bottom: {{ padding_bottom }}px;
+    --trade-in-footer-note-padding-horizontal: {{ padding_horizontal }}px;
+
+    --trade-in-footer-note-padding-top-mobile: {{ padding_top_mobile }}px;
+    --trade-in-footer-note-padding-bottom-mobile: {{ padding_bottom_mobile }}px;
+    --trade-in-footer-note-padding-horizontal-mobile: {{ padding_horizontal_mobile }}px;
+  "
+>
+  <div class="trade-in-footer-note__inner">
+
+    <div class="trade-in-footer-note__container">
+
+      <div class="trade-in-footer-note__text">
+        {{ copyright_text }}
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+{% endif %}
+
+{% schema %}
+{
+  "name": "Trade In Footer Note",
+  "tag": "section",
+  "class": "section-trade-in-footer-note",
+  "settings": [
+
+    {
+      "type": "text",
+      "id": "copyright_text",
+      "label": "Copyright text",
+      "default": "© Carbinox Co. All rights reserved."
+    },
+
+    {
+      "type": "header",
+      "content": "Colors"
+    },
+
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background color (#000000)",
+      "default": "#000000"
+    },
+
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text color (#FFFFFF)",
+      "default": "#FFFFFF"
+    },
+
+    {
+      "type": "header",
+      "content": "Layout"
+    },
+
+    {
+      "type": "range",
+      "id": "padding_top",
+      "label": "Desktop top padding (15px)",
+      "min": 0,
+      "max": 80,
+      "step": 1,
+      "default": 15
+    },
+
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "label": "Desktop bottom padding (15px)",
+      "min": 0,
+      "max": 80,
+      "step": 1,
+      "default": 15
+    },
+
+    {
+      "type": "range",
+      "id": "padding_horizontal",
+      "label": "Desktop horizontal padding (20px)",
+      "min": 0,
+      "max": 80,
+      "step": 1,
+      "default": 20
+    },
+
+    {
+      "type": "header",
+      "content": "Mobile spacing"
+    },
+
+    {
+      "type": "range",
+      "id": "padding_top_mobile",
+      "label": "Mobile top padding (15px)",
+      "min": 0,
+      "max": 80,
+      "step": 1,
+      "default": 15
+    },
+
+    {
+      "type": "range",
+      "id": "padding_bottom_mobile",
+      "label": "Mobile bottom padding (15px)",
+      "min": 0,
+      "max": 80,
+      "step": 1,
+      "default": 15
+    },
+
+    {
+      "type": "range",
+      "id": "padding_horizontal_mobile",
+      "label": "Mobile horizontal padding (20px)",
+      "min": 0,
+      "max": 60,
+      "step": 1,
+      "default": 20
+    },
+
+    {
+      "type": "header",
+      "content": "Typography"
+    },
+
+    {
+      "type": "range",
+      "id": "desktop_font_size",
+      "label": "Desktop font size (12px)",
+      "min": 10,
+      "max": 20,
+      "step": 1,
+      "default": 12
+    },
+
+    {
+      "type": "range",
+      "id": "mobile_font_size",
+      "label": "Mobile font size (12px)",
+      "min": 10,
+      "max": 20,
+      "step": 1,
+      "default": 12
+    }
+
+  ],
+
+  "presets": [
+    {
+      "name": "Trade In Footer Note"
+    }
+  ]
+}
+{% endschema %}

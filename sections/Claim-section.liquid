@@ -1,0 +1,133 @@
+
+	<!-- carbon case -->
+	<section class="ridge-carbon-case">
+		<div class="ridge-container">
+			<div class="ridge-carbon-case-main">
+				<div class="ridge-carbon-case-img">
+					<h3>{{ section.settings.text1 }}</h3>
+					{{ section.settings.image1 | img_url: 'master' | img_tag }}
+				</div>
+				<div class="ridge-carbon-case-text">
+					<h2>{{ section.settings.text2 }}</h2>
+					{{ section.settings.para1 }}
+					
+                  <div class="carbon-case-list">
+						<ul>
+                          {% for block in section.blocks %}
+                            {% if block.type == 'Claimsection' %}
+						  <li>{{ block.settings.para2 }}</li>
+						  
+                              {% endif %}
+          {% endfor %}
+					  </ul>
+					</div>
+					<div class="carbon-case-color">
+						<p>Colors:</p>
+						<ul>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li>+19 more</li>
+						</ul>
+					</div>
+					<div class="carbon-case-button">
+						<a class="ridge-button" href="{{ section.settings.buttonlink }}">{{ section.settings.buttontext }}</a>
+						<ul>
+                          {% for block in section.blocks %}
+                            {% if block.type == 'Listitem' %}
+							<li>
+							{{ block.settings.item-img | img_url: 'master' | img_tag }}
+							 {{ block.settings.item-para }}
+						  </li>
+						  
+                                {% endif %}
+          {% endfor %}
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+{% schema %}
+  {
+    "name": "Claim Section",
+    "settings": [
+      {
+      "type": "text",
+      "id": "text1",
+      "label": "Heading"
+    },
+      {
+           "type": "image_picker",
+           "id": "image1",
+           "label": "Image"
+         },
+      {
+      "type": "text",
+      "id": "text2",
+      "label": "Sub Heading"
+    },
+       {
+      "type": "richtext",
+      "id": "para1",
+      "label": "Description"
+    },
+       {
+      "type": "text",
+      "id": "buttontext",
+      "label": "Button Text"
+    },
+       {
+      "type": "url",
+      "id": "buttonlink",
+      "label": "Button Link"
+    }
+      
+      
+],
+    	"blocks": [
+     {
+       "name": "List Item",
+       "type": "Claimsection",
+       "settings": [
+         {
+           
+      "type": "richtext",
+      "id": "para2",
+      "label": "Text"
+    }
+       ]
+},
+          {
+    "type": "Listitem",
+    "name": "Image With Text",
+    "settings": [
+      {
+         "type": "image_picker",
+           "id": "item-img",
+           "label": "Item Image"
+      },
+        {
+           
+      "type": "richtext",
+      "id": "item-para",
+      "label": "Text"
+    }
+    ]
+  },
+        ],
+    "presets" : [
+{
+  "name" : "Claim section",
+  "category" : "Claim section",
+
+  }
+]
+  }
+{% endschema %}

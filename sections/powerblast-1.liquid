@@ -1,0 +1,215 @@
+{% schema %}
+{
+  "name": "Powerblast 1",
+  "presets": [
+    {
+      "name": "Powerblast 1",
+      "category": "Custom"
+    }
+  ]
+}
+{% endschema %}
+<section class="pro-section">
+  <div class="pro-section__container">
+
+  <!-- ICON STRIP (una sola imagen, cambia en mobile/desktop) -->
+  <div class="pro-icons">
+    <h4 style="color: #FFC200;">TRUSTED BY 350,000+ PROFESSIONALS</h4>
+    <img 
+      src="https://cdn.shopify.com/s/files/1/0049/0533/6935/files/TrustedBy350kDesk.webp?v=1767987285"
+      alt="Trusted by professionals"
+      class="pro-icons-img desktop"
+    >
+    <img 
+      src="https://cdn.shopify.com/s/files/1/0049/0533/6935/files/TrustedBy350kMobile.webp?v=1767987284"
+      alt="Trusted by professionals"
+      class="pro-icons-img mobile"
+    >
+      
+  </div>
+
+  <div class="second-container">
+  <!-- TITLE -->
+  <div>
+
+  <div class="pro-title">
+    <h2>FROM GARAGE BAY TO JOBSITE TO TRUCK CAB.</h2>
+    <p class="pro-subtitle">
+        YOU’RE NOT SITTING AT A DESK ALL DAY—AND THIS BLOWER ISN’T BUILT FOR THAT.
+    </p>
+  </div>
+
+  <!-- TEXT BLOCK -->
+    <div class="pro-text">
+Whether you're under a truck, in a hot welding shed, or detailing your work rig, Powerblast Pro handles the filthiest jobs.<br>
+We didn’t build this for light dusting. We built it to move air like a shop vac in reverse. It clears debris from intakes, blasts wood shavings off your boots, and wipes out dried mud in seconds.
+<span style="font-style: italic; text-align: center; font-weight: 400; font-size; 16px;" class="desktop">
+    <br/> <br/>
+    From the workshop to the open road—this tool works as hard as you do.
+    </span>
+    </div>
+  </div>
+    
+    <!-- MAIN PRODUCT IMAGE -->
+    <div class="pro-main-img">
+      <img src="https://cdn.shopify.com/s/files/1/0049/0533/6935/files/powerblast2.webp?v=1771103625" alt="Product image" />
+    </div>
+  </div>
+  <span style="font-style: italic; text-align: center; font-weight: 400; font-size; 16px; line-height: 140%;" class="mobile">
+    From the workshop to the open road—this tool works as hard as you do.
+    </span>
+
+</div>
+</section>
+
+<style>
+    .pro-section {
+  background: #000;
+  color: #fff;
+}
+.pro-section__container {
+    padding: 60px 20px;
+  max-width: 1240px;
+  margin: 0 auto;
+}
+/* ICON STRIP IMAGE */
+.pro-icons h4{
+  font-weight: 800;
+  font-size: 34px;
+  margin: 0px;
+  line-height: 120%;
+  margin-bottom: 10px;
+}
+
+.pro-icons p{
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 120%;
+  margin: 0px;
+  margin-bottom: 20px;
+}
+.pro-icons span{
+  color: #FFC200;
+}
+.pro-icons {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.pro-icons-img {
+  width: 100%;
+  height: auto;
+}
+
+/* TITLE */
+.pro-title h2 {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 120%;
+  max-width: 608px;
+  margin-bottom: 10px;
+}
+
+.pro-title h2 span {
+  color: #FFC200; 
+  margin: 0px;
+}
+
+p.pro-subtitle {
+  margin: 0px;
+  margin-bottom: 10px !important;
+  color: #fff;
+  line-height: 120%;
+  font-weight: 700;
+  text-align: center;
+  color: #FFC200;
+  font-size: 24px;
+}
+
+/* TEXT */
+.pro-text {
+  max-width: 540px;
+  margin: auto;
+  line-height: 120%;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.pro-text p {
+  margin-bottom: 18px;
+}
+
+/* PRODUCT IMAGE */
+.pro-main-img {
+  margin: 40px 0;
+}
+
+.pro-main-img img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* GALLERY */
+.pro-gallery {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  width: 100%;
+  margin-top: 40px;
+}
+  .mobile {
+    display: none;
+  }
+  .second-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+/* MOBILE */
+@media (max-width: 768px) {
+  .pro-section__container {
+    padding: 30px 20px;
+  }
+  .pro-section__container h2 {
+    font-size: 20px !important;
+  }
+  .pro-section__container .pro-subtitle, .pro-section__container .pro-text {
+    font-size: 16px !important;
+  }
+
+  .second-container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .desktop {
+  display: none;
+  }
+  .mobile {
+    display: block;
+  }
+  .pro-icons h4{
+    font-size: 24px;
+  }
+  .pro-icons p{
+    font-size: 14px;
+  }
+  p.pro-subtitle {
+    font-size: 20px;
+  }
+  .pro-title h2 {
+    font-size: 30px;
+  }
+
+.pro-main-img {
+  margin: 20px 0px;
+}
+
+  .pro-text {
+    max-width: 100%;
+  }
+}
+</style>

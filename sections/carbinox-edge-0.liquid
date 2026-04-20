@@ -1,0 +1,111 @@
+{% schema %}
+{
+  "name": "Carbinox Edge 0",
+  "presets": [
+    {
+      "name": "Carbinox Edge 0",
+      "category": "Custom"
+    }
+  ]
+}
+{% endschema %}
+<section class="pro-section carbinox-edge-0">
+
+<div class="carbinox-edge-0-container second-container">
+  <!-- TITLE -->
+  <div>
+
+  <div class="pro-title" style="text-transform: uppercase;">
+    <h2>The Smartwatch That Beats the Hell Out of Other Smartwatches.</h2>
+    <p class="pro-subtitle" style="text-transform: uppercase;">
+        Built from Stainless Steel. Wears like armor. Works like a tool.
+    </p>
+  </div>
+
+  <!-- TEXT BLOCK -->
+    <div class="pro-text" style="font-weight: 400;">
+        This ain’t built for cubicles or coffee shops. The Carbinox Edge is built for the men who don’t quit: welders, firefighters, construction workers, mechanics, and anyone else who walks through fire and calls it a Monday. 
+        <span class="desktop">
+        <br/> <br/>
+        Concrete, sparks, grit, grease, whatever else your shift throws at it, this thing doesn’t flinch. Ever. Forged in stainless steel, powered by a pure cobalt battery, and armored with Gorilla Glass — this isn’t a watch, it’s a damn survival kit for your wrist.
+        </span>
+    </div>
+  </div>
+    
+    <!-- MAIN PRODUCT IMAGE -->
+    <div class="pro-main-img video" style="cursor: pointer;">
+
+        <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" class="lazyload" data-src="https://cdn.shopify.com/s/files/1/0049/0533/6935/files/Diseno_sin_titulo_40_-min_700x.webp?v=1764287737" alt="Product image">
+
+        {% comment %}
+        <video controls style="border-radius: 5px;" poster="https://cdn.shopify.com/s/files/1/0049/0533/6935/files/Diseno_sin_titulo_40_-min_700x.webp?v=1764287737">
+        <source src="https://cdn.shopify.com/s/files/1/0049/0533/6935/files/Diseno_sin_titulo_40_-min_700x.webp?v=1764287737" type="video/mp4">
+            Tu navegador no soporta la etiqueta de video.
+        </video>
+        {% endcomment %}
+
+    </div>
+        <div class="pro-text" style="font-weight: 400;">
+        <span class="mobile">
+        Concrete, sparks, grit, grease, whatever else your shift throws at it, this thing doesn’t flinch. Ever. Forged in stainless steel, powered by a pure cobalt battery, and armored with Gorilla Glass — this isn’t a watch, it’s a damn survival kit for your wrist.
+        </span>
+    </div>
+  </div>
+
+  </section>
+
+{% comment %}
+  <script>
+  const video = document.querySelector('.pro-main-img.video video');
+
+  // Ocultar controles al cargar la página
+  video.controls = false;
+
+  // Al hacer click en el video (poster)
+  video.addEventListener('click', () => {
+    if (video.paused) {
+      video.play();
+      video.controls = true; // mostrar controles al reproducirse
+    } else {
+      video.pause();
+    }
+  });
+document.addEventListener("DOMContentLoaded", () => {
+  const video = document.querySelector("video");
+
+  if (!video) return;
+
+  video.setAttribute("controlsList", "nodownload noplaybackrate");
+
+  video.addEventListener("contextmenu", e => e.preventDefault());
+});
+  // Opcional: cuando termine el video, ocultar controles otra vez
+  video.addEventListener('ended', () => {
+    video.controls = false;
+  });
+</script>
+{% endcomment %}
+
+<style>
+    .pro-section.carbinox-edge-0 {
+        padding: 60px 20px;
+    }
+    .carbinox-edge-0-container {
+        max-width: 1240px;
+        margin: auto;
+    }
+    @media (max-width: 768px) {
+        .pro-section.carbinox-edge-0 {
+            padding: 30px 15px 15px;
+        }
+         .carbinox-edge-0-container h2 {
+            font-size: 20px !important;
+        }
+        .carbinox-edge-0-container .pro-text, .carbinox-edge-0-container .pro-subtitle{
+            font-size: 14px;
+        }
+        .carbinox-edge-0-container {
+        gap: 20px !important;
+    }
+    }
+</style>

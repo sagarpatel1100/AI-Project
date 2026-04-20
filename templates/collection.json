@@ -1,36 +1,264 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
-    "banner": {
-      "type": "main-collection-banner",
+    "4e74e8f0-1a2f-4d51-9c82-d183445758f8": {
+      "type": "rich-text",
+      "custom_css": [
+        "h3 {font-size: 18px;}",
+        "div {padding-block: 4px; background: #000000;}"
+      ],
       "settings": {
-        "show_collection_description": true,
-        "show_collection_image": false,
-        "color_scheme": "scheme-1"
+        "section_id": "",
+        "subheading": "",
+        "title": "WELCOME TO CARBINOX! WE'RE HAPPY TO HAVE YOU HERE!",
+        "content": "",
+        "button_text": "",
+        "button_link": "",
+        "background_type": "full_width",
+        "text_width": "medium",
+        "text_position": "center",
+        "text_alignment": "center",
+        "background": "#000000",
+        "text_color": "#ffffff",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
       }
     },
-    "product-grid": {
-      "type": "main-collection-product-grid",
+    "23a0d13d-7e3e-4e3d-97e2-7879a23dd3e3": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--14617439010919__23a0d13d-7e3e-4e3d-97e2-7879a23dd3e3-item-1": {
+          "type": "item",
+          "settings": {
+            "show_video": false,
+            "video_link": "",
+            "image": "shopify://shop_images/3-min-16.png",
+            "tab_label": "Item",
+            "subheading": "we're proud to be in 300,000+ wrists across the United States! 🇺🇸",
+            "title": "",
+            "content": "",
+            "button_text": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--14617439010919__23a0d13d-7e3e-4e3d-97e2-7879a23dd3e3-item-1"
+      ],
+      "custom_css": [
+        "h2 {font-size: 14px; letter-spacing: -0.3px;}",
+        "H3 {font-size: 18px;}"
+      ],
       "settings": {
-        "products_per_page": 16,
-        "columns_desktop": 4,
-        "color_scheme": "scheme-1",
-        "image_ratio": "adapt",
-        "image_shape": "default",
-        "show_secondary_image": false,
-        "show_vendor": false,
-        "show_rating": false,
-        "quick_add": "none",
-        "enable_filtering": true,
-        "filter_type": "horizontal",
-        "enable_sorting": true,
-        "columns_mobile": "2",
-        "padding_top": 36,
-        "padding_bottom": 36
+        "section_id": "",
+        "reveal_on_scroll": false,
+        "background_type": "full_width",
+        "background_overlap": "image",
+        "image_position": "left",
+        "text_alignment": "center",
+        "cycle_speed": 8,
+        "accent_background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)",
+        "enable_custom_margin": false,
+        "margin_bottom": 0
+      }
+    },
+    "featured_collections_eazEbL": {
+      "type": "featured-collections",
+      "blocks": {
+        "collection_gKDntG": {
+          "type": "collection",
+          "settings": {
+            "collection": "carbinox-products",
+            "label": "",
+            "button_text": "",
+            "button_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "collection_gKDntG"
+      ],
+      "settings": {
+        "subheading": "",
+        "title": "outdoor artillery:",
+        "heading_alignment": "left",
+        "content": "",
+        "products_count": 8,
+        "products_per_row": 4,
+        "stack_products": true,
+        "show_cta": false,
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "collection-banner": {
+      "type": "collection-banner",
+      "disabled": true,
+      "settings": {
+        "show_collection_image": false,
+        "show_collection_title": false,
+        "show_collection_description": false,
+        "section_height": "small",
+        "text_width": "medium",
+        "image_text_color": "#ffffff",
+        "image_overlay_color": "#000000",
+        "image_overlay_opacity": 30,
+        "quick_links": ""
+      }
+    },
+    "featured_collections_Px9aNg": {
+      "type": "featured-collections",
+      "blocks": {
+        "collection_DxE6Ry": {
+          "type": "collection",
+          "settings": {
+            "collection": "watches",
+            "label": "",
+            "button_text": "",
+            "button_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "collection_DxE6Ry"
+      ],
+      "settings": {
+        "subheading": "",
+        "title": "SMARTWATCHES:",
+        "heading_alignment": "left",
+        "content": "",
+        "products_count": 8,
+        "products_per_row": 4,
+        "stack_products": true,
+        "show_cta": false,
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "featured_collections_RJMBTk": {
+      "type": "featured-collections",
+      "blocks": {
+        "collection_Ak64Ee": {
+          "type": "collection",
+          "settings": {
+            "collection": "carbinox-bands-22mm",
+            "label": "",
+            "button_text": "",
+            "button_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "collection_Ak64Ee"
+      ],
+      "settings": {
+        "subheading": "",
+        "title": "BANDS & STRAPS:",
+        "heading_alignment": "left",
+        "content": "",
+        "products_count": 8,
+        "products_per_row": 4,
+        "stack_products": true,
+        "show_cta": false,
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "featured_collections_8Y8kAz": {
+      "type": "featured-collections",
+      "blocks": {
+        "collection_3bfmEY": {
+          "type": "collection",
+          "settings": {
+            "collection": "other-accessories",
+            "label": "",
+            "button_text": "",
+            "button_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "collection_3bfmEY"
+      ],
+      "settings": {
+        "subheading": "",
+        "title": "ACCESSORIES FOR YOUR WATCH:",
+        "heading_alignment": "left",
+        "content": "",
+        "products_count": 8,
+        "products_per_row": 4,
+        "stack_products": true,
+        "show_cta": false,
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "main": {
+      "type": "main-collection",
+      "disabled": true,
+      "settings": {
+        "show_sort_by": true,
+        "products_per_page": 36,
+        "mobile_products_per_row": "2",
+        "desktop_products_per_row": 5,
+        "show_filters": true,
+        "show_filter_group_name": false,
+        "show_color_swatch": true,
+        "open_first_filter_group": true,
+        "filter_position": "drawer",
+        "promotion_position": "top",
+        "promotion_height": "small"
+      }
+    },
+    "448629b1-2730-4098-b2fc-ea497006a562": {
+      "type": "image-with-text-block",
+      "disabled": true,
+      "settings": {
+        "reveal_on_scroll": true,
+        "subheading": "Subheading",
+        "title": "Image with text block",
+        "content": "<p>Use block text to give your customers insight into your brand. Select impactful text that relates to your brand and story.</p>",
+        "button_text": "",
+        "button_link": "",
+        "enble_scroll": false,
+        "background_type": "full_width",
+        "text_position": "left",
+        "text_alignment": "center",
+        "text_background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
       }
     }
   },
   "order": [
-    "banner",
-    "product-grid"
+    "4e74e8f0-1a2f-4d51-9c82-d183445758f8",
+    "23a0d13d-7e3e-4e3d-97e2-7879a23dd3e3",
+    "featured_collections_eazEbL",
+    "collection-banner",
+    "featured_collections_Px9aNg",
+    "featured_collections_RJMBTk",
+    "featured_collections_8Y8kAz",
+    "main",
+    "448629b1-2730-4098-b2fc-ea497006a562"
   ]
 }

@@ -1,0 +1,755 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "16688317432956c2c7": {
+      "type": "apps",
+      "disabled": true,
+      "settings": {
+        "include_horizontal_margins": false,
+        "include_vertical_margins": false
+      }
+    },
+    "16618980090b824100": {
+      "type": "background-video",
+      "disabled": true,
+      "settings": {
+        "title": "WE MAKE SMARTWATCHES, BUT STRONGER.",
+        "video_url": "https://cdn.shopify.com/videos/c/o/v/f209d5b445b241b9a68a0fc4f844e5c4.mp4",
+        "btn_text": "Shop Now",
+        "btn_link": "shopify://pages/featured-collection"
+      }
+    },
+    "slideshow_wPcwNa": {
+      "type": "slideshow",
+      "blocks": {
+        "image_aerBxW": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/Diseno_sin_titulo-188-min.png",
+            "mobile_image": "shopify://shop_images/Diseno_sin_titulo_61_-min.png",
+            "text_position": "top_center",
+            "subheading": "🇺🇸 TOP-RATED SMARTWATCH BRAND IN AMERICA WITH OVER 300,000+ WATCHES SOLD!",
+            "title": "DURABILITY AND RELIABILITY, BEYOND REALITY.",
+            "button_1_text": "",
+            "button_1_link": "",
+            "button_2_text": "shop now ➔",
+            "button_2_link": "shopify://pages/our-collection-carbinox-1",
+            "text_color": "#ffffff",
+            "button_background": "#0023ff",
+            "button_text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "image_9aWnQU": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Diseno_sin_titulo-188-min.png",
+            "mobile_image": "shopify://shop_images/BLAZE-min.png",
+            "text_position": "top_center",
+            "subheading": "📆 save the date: September 27th, 2024",
+            "title": "WE'RE ABOUT TO REVOLUTIONIZE THE SMARTWATCH INDUSTRY, ONCE AGAIN.",
+            "button_1_text": "",
+            "button_1_link": "",
+            "button_2_text": "LEARN MORE & SUBSCRIBE ➔",
+            "button_2_link": "shopify://products/carbinox-blaze-5",
+            "text_color": "#ffffff",
+            "button_background": "#ffc200",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 31
+          }
+        }
+      },
+      "block_order": [
+        "image_aerBxW",
+        "image_9aWnQU"
+      ],
+      "settings": {
+        "section_height": "auto",
+        "transition_type": "fade",
+        "autoplay": false,
+        "cycle_speed": 5,
+        "background": "rgba(0,0,0,0)"
+      }
+    },
+    "text-with-icons": {
+      "type": "text-with-icons",
+      "blocks": {
+        "item-1": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-address-pin",
+            "custom_icon": "shopify://shop_images/1_e9b75977-1b63-467d-91e3-0254d9966870.png",
+            "custom_icon_width": 65,
+            "title": "",
+            "content": "<h4>LIFETIME WARRANTY IN ALL OUR PRODUCTS</h4>"
+          }
+        },
+        "item-2": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-donation",
+            "custom_icon": "shopify://shop_images/3_4d809fec-1c51-44d6-ba1b-4ec73bee6a8c.png",
+            "custom_icon_width": 80,
+            "title": "",
+            "content": "<p><strong>300,000+ SUCCESSFUL DELIVERIES</strong></p>"
+          }
+        },
+        "item-4": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-store-pickup",
+            "custom_icon": "shopify://shop_images/4_c70e8542-93a9-4e2d-8bff-14c19da0b7cc.png",
+            "custom_icon_width": 75,
+            "title": "",
+            "content": "<p><strong>45-DAY MONEY BACK GUARANTEE</strong></p>"
+          }
+        }
+      },
+      "block_order": [
+        "item-1",
+        "item-2",
+        "item-4"
+      ],
+      "settings": {
+        "background": "#121212",
+        "text_color": "#ffffff"
+      }
+    },
+    "product_item_UDEYMp": {
+      "type": "product-item",
+      "blocks": {
+        "product_items_gTmhfL": {
+          "type": "Product-items",
+          "settings": {
+            "image1": "shopify://shop_images/Sin_titulo_1000_x_500_px_-min.png",
+            "heading": "",
+            "para": ""
+          }
+        }
+      },
+      "block_order": [
+        "product_items_gTmhfL"
+      ],
+      "settings": {}
+    },
+    "image_with_text_V9UzKR": {
+      "type": "image-with-text",
+      "blocks": {
+        "item_TJG9zQ": {
+          "type": "item",
+          "settings": {
+            "show_video": false,
+            "video_link": "",
+            "image": "shopify://shop_images/3-min-16_eb752c1b-a3c5-49b3-b259-3b7b0d741c43.png",
+            "tab_label": "Item",
+            "subheading": "",
+            "title": "DURABLE SMARTWATCHES AND OUTDOOR GEAR THAT WON'T BREAK THE BANK.",
+            "content": "<p><strong>Our mission is to provide an effective but affordable solution for those who want to stay connected, even on the most extreme conditions.</strong></p><p><strong>Feel confident to perform your most challenging tasks, </strong><span style=\"text-decoration:underline\"><strong>we'll take care of the rest.</strong></span></p>",
+            "button_text": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "item_TJG9zQ"
+      ],
+      "settings": {
+        "section_id": "",
+        "reveal_on_scroll": false,
+        "background_type": "full_width",
+        "background_overlap": "text",
+        "image_position": "left",
+        "text_alignment": "center",
+        "cycle_speed": 8,
+        "accent_background": "#000000",
+        "text_color": "#ffffff",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)",
+        "enable_custom_margin": false,
+        "margin_bottom": 0
+      }
+    },
+    "image_with_text_rWik9P": {
+      "type": "image-with-text",
+      "blocks": {
+        "item_nt7pBQ": {
+          "type": "item",
+          "settings": {
+            "show_video": false,
+            "video_link": "",
+            "image": "shopify://shop_images/Diseno_sin_titulo_36_-min.png",
+            "tab_label": "Item",
+            "subheading": "INTRODUCING THE CARBINOX VORTEX.",
+            "title": "THE SMARTWATCH YOU WON'T BE AFRAID OF BREAKING, BECAUSE IT WON'T.",
+            "content": "",
+            "button_text": "EXPLORE CARBINOX VORTEX ➔",
+            "button_link": "shopify://products/carbinox-vortex-1"
+          }
+        }
+      },
+      "block_order": [
+        "item_nt7pBQ"
+      ],
+      "settings": {
+        "section_id": "",
+        "reveal_on_scroll": false,
+        "background_type": "full_width",
+        "background_overlap": "both",
+        "image_position": "left",
+        "text_alignment": "center",
+        "cycle_speed": 8,
+        "accent_background": "#000000",
+        "text_color": "#ffffff",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)",
+        "enable_custom_margin": false,
+        "margin_bottom": 0
+      }
+    },
+    "featured-collections": {
+      "type": "featured-collections",
+      "blocks": {
+        "collection-1": {
+          "type": "collection",
+          "settings": {
+            "collection": "watches",
+            "label": "",
+            "button_text": "LEARN MORE ➔",
+            "button_url": "shopify://pages/our-collection-carbinox-1"
+          }
+        }
+      },
+      "block_order": [
+        "collection-1"
+      ],
+      "disabled": true,
+      "settings": {
+        "subheading": "⚙️ BUILT WITH DURABLE MATERIALS, ENGINEERED WITH TOP-NOTCH TECHNOLOGY, PACKED WITH UNLIMITED FEATURES.",
+        "title": "SMARTWATCHES:",
+        "heading_alignment": "left",
+        "content": "",
+        "products_count": 6,
+        "products_per_row": 6,
+        "stack_products": true,
+        "show_cta": false,
+        "background": "#f9f9f9",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "#ffc200",
+        "button_text_color": "#000000"
+      }
+    },
+    "rich_text_by4U9p": {
+      "type": "rich-text",
+      "settings": {
+        "section_id": "",
+        "subheading": "★★★★★",
+        "title": "\"If I wanted all the toughness AND  functions available in this smartwatch, I’d have to wear five from other brands at the same time.",
+        "content": "<p><strong>Robert K from Houston, Texas.</strong></p>",
+        "button_text": "",
+        "button_link": "",
+        "background_type": "full_width",
+        "text_width": "medium",
+        "text_position": "center",
+        "text_alignment": "center",
+        "background": "#000000",
+        "text_color": "#ffffff",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "5204670a-d881-4eac-910e-56681c3dd1ec": {
+      "type": "image-with-text-overlay",
+      "settings": {
+        "reveal_on_scroll": false,
+        "section_height": "medium",
+        "image": "shopify://shop_images/5-min_2.jpg",
+        "subheading": "🇺🇸 TOP-RATED CHOICE FOR ROUGH WORK CONDITIONS AND ENVIRONMENTS.",
+        "title": "pROUD TO BACK THE FRONTLINE ESSENTIAL AMERICAN WORKERS.",
+        "content": "",
+        "button_text": "CHECK OUR REVIEWS ➔",
+        "button_link": "shopify://pages/reviews-1",
+        "link_style": "button",
+        "background_type": "full_width",
+        "text_width": "large",
+        "text_position": "middle_center",
+        "text_color": "#ffffff",
+        "button_background": "#ffc200",
+        "button_text_color": "#000000",
+        "overlay_color": "#000000",
+        "overlay_opacity": 64
+      }
+    },
+    "image_with_text_jQFUw3": {
+      "type": "image-with-text",
+      "blocks": {
+        "item_czETLz": {
+          "type": "item",
+          "settings": {
+            "show_video": false,
+            "video_link": "",
+            "image": "shopify://shop_images/Anadir_un_titulo_15_-min.png",
+            "tab_label": "Item",
+            "subheading": "customize your new lifetime smartwatch and more!",
+            "title": "check our collections:",
+            "content": "",
+            "button_text": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "item_czETLz"
+      ],
+      "settings": {
+        "section_id": "",
+        "reveal_on_scroll": false,
+        "background_type": "full_width",
+        "background_overlap": "text",
+        "image_position": "left",
+        "text_alignment": "center",
+        "cycle_speed": 8,
+        "accent_background": "#000000",
+        "text_color": "#ffffff",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)",
+        "enable_custom_margin": false,
+        "margin_bottom": 0
+      }
+    },
+    "image_with_text_overlay_YbtXUC": {
+      "type": "image-with-text-overlay",
+      "settings": {
+        "reveal_on_scroll": false,
+        "section_height": "small",
+        "image": "shopify://shop_images/Diseno_sin_titulo_39_-min.png",
+        "subheading": "",
+        "title": "BANDS & STRAPS",
+        "content": "<p><strong>25+ DIFFERENT BANDS, SUITABLE FOR ALL OCCASSIONS.</strong></p>",
+        "button_text": "SHOP NOW ➔",
+        "button_link": "shopify://collections/carbinox-bands-22mm",
+        "link_style": "button",
+        "background_type": "full_width",
+        "text_width": "medium",
+        "text_position": "middle_center",
+        "text_color": "#ffffff",
+        "button_background": "#ffc200",
+        "button_text_color": "#000000",
+        "overlay_color": "#000000",
+        "overlay_opacity": 50
+      }
+    },
+    "image_with_text_overlay_fNyAXp": {
+      "type": "image-with-text-overlay",
+      "settings": {
+        "reveal_on_scroll": false,
+        "section_height": "small",
+        "image": "shopify://shop_images/Anadir_un_titulo-10-min.png",
+        "subheading": "",
+        "title": "ACCESSORIES & ESSENTIALS",
+        "content": "<p><strong>KEEP YOUR SMARTWATCH UPDATED, CHARGED AND PROTECTED.</strong></p>",
+        "button_text": "SHOP NOW ➔",
+        "button_link": "shopify://collections/other-accessories",
+        "link_style": "button",
+        "background_type": "full_width",
+        "text_width": "medium",
+        "text_position": "middle_center",
+        "text_color": "#ffffff",
+        "button_background": "#ffc200",
+        "button_text_color": "#000000",
+        "overlay_color": "#000000",
+        "overlay_opacity": 50
+      }
+    },
+    "image_with_text_overlay_KdwbXY": {
+      "type": "image-with-text-overlay",
+      "settings": {
+        "reveal_on_scroll": false,
+        "section_height": "small",
+        "image": "shopify://shop_images/3-min-3.jpg",
+        "subheading": "",
+        "title": "OUTDOOR GEAR",
+        "content": "<p><strong>DESIGNED TO PROVIDE AN EXPERIENCE BEYOND AVERAGE.</strong></p>",
+        "button_text": "SHOP NOW ➔",
+        "button_link": "shopify://collections/carbinox-products",
+        "link_style": "button",
+        "background_type": "full_width",
+        "text_width": "medium",
+        "text_position": "middle_center",
+        "text_color": "#ffffff",
+        "button_background": "#ffc200",
+        "button_text_color": "#000000",
+        "overlay_color": "#000000",
+        "overlay_opacity": 50
+      }
+    },
+    "ddedbc00-f10c-44f8-9826-88837e7d828a": {
+      "type": "featured-collections",
+      "blocks": {
+        "23c29632-25e7-42b9-8b97-cffc35e8bbe9": {
+          "type": "collection",
+          "settings": {
+            "collection": "carbinox-products",
+            "label": "",
+            "button_text": "",
+            "button_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "23c29632-25e7-42b9-8b97-cffc35e8bbe9"
+      ],
+      "disabled": true,
+      "settings": {
+        "subheading": "",
+        "title": "OUTDOOR ARTILLERY THAT LASTS A LIFETIME.",
+        "heading_alignment": "center",
+        "content": "",
+        "products_count": 8,
+        "products_per_row": 6,
+        "stack_products": true,
+        "show_cta": false,
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "#ffc200",
+        "button_text_color": "#ffc200"
+      }
+    },
+    "image-with-text-block": {
+      "type": "image-with-text-block",
+      "disabled": true,
+      "settings": {
+        "reveal_on_scroll": false,
+        "image": "shopify://shop_images/DSC09583.jpg",
+        "mobile_image": "shopify://shop_images/U.S._MIL-STD-810H_MILITARY_CERTIFIED_MEETING_ALL_STANDARDS_FOR_EXTREME_CONDITIONS.-min.png",
+        "subheading": "WHAT'S THE CHOICE TO MAKE YOUR WRIST STAND OUT?",
+        "title": "CUSTOMIZE YOUR CARBINOX WITH OUR ACCESSORIES!",
+        "content": "",
+        "button_text": "shop accessories ➔",
+        "button_link": "shopify://pages/carbinox-bands-collection-22mm",
+        "enble_scroll": false,
+        "background_type": "full_width",
+        "text_position": "left",
+        "text_alignment": "center",
+        "text_background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "#ffc200",
+        "button_text_color": "#2c3036"
+      }
+    },
+    "image-with-text": {
+      "type": "image-with-text",
+      "blocks": {
+        "item-1": {
+          "type": "item",
+          "settings": {
+            "show_video": false,
+            "video_link": "",
+            "image": "shopify://shop_images/3-min-3.png",
+            "tab_label": "BACKPACK",
+            "subheading": "all your essentials, in one place.",
+            "title": "FUNCTIONALITY MEETS DURABILITY.",
+            "content": "<p>We've built the most rugged and durable Backpack you'll ever have. Say hello to the Carbinox Backpack.</p>",
+            "button_text": "shop now",
+            "button_link": "shopify://products/carbinox-tactical-backpack"
+          }
+        },
+        "item-2": {
+          "type": "item",
+          "settings": {
+            "show_video": false,
+            "video_link": "",
+            "image": "shopify://shop_images/flashlight_1.png",
+            "tab_label": "the flashlight",
+            "subheading": "built for brighter adventures.",
+            "title": "a flashlight you can rely on.",
+            "content": "<p>For those who want to live to their highest and stay secured, we’ve created the most powerful flashlight in the industry. Say hello to an ultra bright lifesaver.</p>",
+            "button_text": "shop now",
+            "button_link": "shopify://products/carbinox-flashlight"
+          }
+        }
+      },
+      "block_order": [
+        "item-1",
+        "item-2"
+      ],
+      "disabled": true,
+      "settings": {
+        "section_id": "",
+        "reveal_on_scroll": false,
+        "background_type": "full_width",
+        "background_overlap": "image",
+        "image_position": "left",
+        "text_alignment": "center",
+        "cycle_speed": 7,
+        "accent_background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "#ffc200",
+        "button_text_color": "#2c3036",
+        "enable_custom_margin": false,
+        "margin_bottom": 9
+      }
+    },
+    "a6f2a5ab-9cd9-49e5-aea1-563289a9bf2f": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--14617439469671__a6f2a5ab-9cd9-49e5-aea1-563289a9bf2f-item-1": {
+          "type": "item",
+          "settings": {
+            "show_video": false,
+            "video_link": "",
+            "image": "shopify://shop_images/FOR_LESS_THAN_TWO_CUPS_OF_COFFEE_PER_MONTH_1_-min.png",
+            "tab_label": "Item",
+            "subheading": "INTRODUCING CARBINOX ELITE PRIVATE CLUB.",
+            "title": "GET ACCESS TO A WORLD OF EXCLUSIVE BENEFITS FOR YOU AND YOUR SMARTWATCH.",
+            "content": "",
+            "button_text": "JOIN MEMBERSHIP ➔",
+            "button_link": "shopify://pages/epc-1"
+          }
+        }
+      },
+      "block_order": [
+        "template--14617439469671__a6f2a5ab-9cd9-49e5-aea1-563289a9bf2f-item-1"
+      ],
+      "settings": {
+        "section_id": "",
+        "reveal_on_scroll": false,
+        "background_type": "full_width",
+        "background_overlap": "text",
+        "image_position": "left",
+        "text_alignment": "center",
+        "cycle_speed": 8,
+        "accent_background": "#000000",
+        "text_color": "#ffffff",
+        "button_background": "#ffc200",
+        "button_text_color": "#000000",
+        "enable_custom_margin": false,
+        "margin_bottom": 0
+      }
+    },
+    "image_with_text_HFT6nz": {
+      "type": "image-with-text",
+      "blocks": {
+        "item_jJBAMp": {
+          "type": "item",
+          "settings": {
+            "show_video": false,
+            "video_link": "",
+            "image": "shopify://shop_images/CLEARANCE_1_-min.png",
+            "tab_label": "Item",
+            "subheading": "YOUR FAVORITE PRODUCTS, WITH THE LOWEST PRICE EVER!",
+            "title": "clearance sale, everything up to 50% off!",
+            "content": "",
+            "button_text": "SHOP CLEARANCE NOW!",
+            "button_link": "shopify://pages/carbinox-special-packs"
+          }
+        }
+      },
+      "block_order": [
+        "item_jJBAMp"
+      ],
+      "disabled": true,
+      "settings": {
+        "section_id": "",
+        "reveal_on_scroll": true,
+        "background_type": "full_width",
+        "background_overlap": "image",
+        "image_position": "left",
+        "text_alignment": "center",
+        "cycle_speed": 8,
+        "accent_background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)",
+        "enable_custom_margin": true,
+        "margin_bottom": 0
+      }
+    },
+    "timeline": {
+      "type": "timeline",
+      "blocks": {
+        "item-1": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/Diseno_sin_titulo-2-min.png",
+            "label": "experience",
+            "title": "We’re here to provide an experience beyond average.",
+            "content": "<p>Our smartwatches are meticulously engineered to support extreme work environments and hard tasks where others won't. With Carbinox, you'll stay connected, no matter what.</p>",
+            "button_text": "",
+            "button_link": ""
+          }
+        },
+        "item-2": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/Diseno_sin_titulo_55_-min.png",
+            "label": "RELIABILITY",
+            "title": "no matter what or where, Carbinox will keep you connected.",
+            "content": "<p>Our identity is defined in one word: <strong>Durability. </strong>All our products are made to last a life-time without breaking the bank.</p>",
+            "button_text": "",
+            "button_link": ""
+          }
+        },
+        "item-3": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/Diseno_sin_titulo-138-min.png",
+            "label": "COMMUNITY",
+            "title": "300,000+ reasons to keep working hard.",
+            "content": "<p>From humble beginnings, Carbinox has become a reference in the technology and outdoors space. We guarantee top-quality products, life-time support, because you deserve it. Join Carbinox family and represent thousands of hard workers.</p>",
+            "button_text": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "item-1",
+        "item-2",
+        "item-3"
+      ],
+      "settings": {
+        "subheading": "",
+        "title": "representing the American hard worker since 2021.",
+        "text_position": "middle",
+        "background": "#121212",
+        "text_color": "#ffffff",
+        "item_background": "#121212",
+        "item_text_color": "#ffffff"
+      }
+    },
+    "16624662526ed828d0": {
+      "type": "social-media-gallery",
+      "blocks": {
+        "1662466251fd6914eb-0": {
+          "type": "image",
+          "settings": {
+            "logo": "shopify://shop_images/1.webp",
+            "link": ""
+          }
+        },
+        "1662466251fd6914eb-1": {
+          "type": "image",
+          "settings": {
+            "logo": "shopify://shop_images/2.webp",
+            "link": ""
+          }
+        },
+        "1662466251fd6914eb-2": {
+          "type": "image",
+          "settings": {
+            "logo": "shopify://shop_images/3.webp",
+            "link": ""
+          }
+        },
+        "1662466251fd6914eb-3": {
+          "type": "image",
+          "settings": {
+            "logo": "shopify://shop_images/4.webp",
+            "link": ""
+          }
+        },
+        "1662466251fd6914eb-4": {
+          "type": "image",
+          "settings": {
+            "logo": "shopify://shop_images/5.webp",
+            "link": ""
+          }
+        },
+        "1662466251fd6914eb-5": {
+          "type": "image",
+          "settings": {
+            "logo": "shopify://shop_images/6.webp",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "1662466251fd6914eb-0",
+        "1662466251fd6914eb-1",
+        "1662466251fd6914eb-2",
+        "1662466251fd6914eb-3",
+        "1662466251fd6914eb-4",
+        "1662466251fd6914eb-5"
+      ],
+      "settings": {
+        "reveal_on_scroll": false,
+        "subheading": "Follow us on social media!",
+        "title": "JOIN OUR COMMUNITY:",
+        "button_text": "",
+        "button_link": "",
+        "stack_logos": false,
+        "background": "#121212",
+        "text_color": "#f9f9f9",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)",
+        "logo_background": "rgba(0,0,0,0)"
+      }
+    },
+    "sbnAry78m7qUbtjPcT8fod": {
+      "type": "sl-benefit-bar",
+      "blocks": {
+        "0859508e-8894-4a16-ae91-94a1e52c8acb-1": {
+          "type": "benefit_linktext",
+          "settings": {
+            "text": "Free shipping",
+            "message_icon": "truck"
+          }
+        },
+        "0859508e-8894-4a16-ae91-94a1e52c8acb-2": {
+          "type": "benefit_linktext",
+          "settings": {
+            "text": "24/7 support",
+            "message_icon": "phone"
+          }
+        },
+        "0859508e-8894-4a16-ae91-94a1e52c8acb-3": {
+          "type": "benefit_linktext",
+          "settings": {
+            "text": "Easy returns",
+            "message_icon": "usd-circle"
+          }
+        }
+      },
+      "block_order": [
+        "0859508e-8894-4a16-ae91-94a1e52c8acb-1",
+        "0859508e-8894-4a16-ae91-94a1e52c8acb-2",
+        "0859508e-8894-4a16-ae91-94a1e52c8acb-3"
+      ],
+      "settings": {}
+    }
+  },
+  "order": [
+    "sbnAry78m7qUbtjPcT8fod",
+    "16688317432956c2c7",
+    "16618980090b824100",
+    "slideshow_wPcwNa",
+    "text-with-icons",
+    "product_item_UDEYMp",
+    "image_with_text_V9UzKR",
+    "image_with_text_rWik9P",
+    "featured-collections",
+    "rich_text_by4U9p",
+    "5204670a-d881-4eac-910e-56681c3dd1ec",
+    "image_with_text_jQFUw3",
+    "image_with_text_overlay_YbtXUC",
+    "image_with_text_overlay_fNyAXp",
+    "image_with_text_overlay_KdwbXY",
+    "ddedbc00-f10c-44f8-9826-88837e7d828a",
+    "image-with-text-block",
+    "image-with-text",
+    "a6f2a5ab-9cd9-49e5-aea1-563289a9bf2f",
+    "image_with_text_HFT6nz",
+    "timeline",
+    "16624662526ed828d0"
+  ]
+}

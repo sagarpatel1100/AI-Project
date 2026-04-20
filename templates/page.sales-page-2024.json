@@ -1,0 +1,584 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "f803550a-05b0-4390-a008-7d6a083c62fb": {
+      "type": "slideshow",
+      "blocks": {
+        "template--14627732291687__f803550a-05b0-4390-a008-7d6a083c62fb-image-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Diseno_sin_titulo_1_-min.jpg",
+            "mobile_image": "shopify://shop_images/2024_CLEARANCE_SALE-2-min.png",
+            "text_position": "top_center",
+            "subheading": "🚀 BUNDLE YOUR FAVORITE CARBINOX PRODUCTS AND SAVE ON THE GO!",
+            "title": "PREMIUM PACKS DESIGNED TO MAKE YOUR WALLET EVEN HAPPIER!",
+            "button_1_text": "",
+            "button_1_link": "",
+            "button_2_text": "",
+            "button_2_link": "",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "template--14627732291687__f803550a-05b0-4390-a008-7d6a083c62fb-image-1"
+      ],
+      "custom_css": [
+        "h3 {font-size: 20px;}",
+        "h2 {font-size: 14px;}",
+        "div {margin-bottom: 15px;}"
+      ],
+      "settings": {
+        "section_height": "auto",
+        "transition_type": "fade",
+        "autoplay": false,
+        "cycle_speed": 5,
+        "background": "rgba(0,0,0,0)"
+      }
+    },
+    "9a14506e-30b4-49fa-bce3-795d77169222": {
+      "type": "image-with-text",
+      "blocks": {
+        "1f14d31a-3ce8-48fa-be31-a975874e8b72": {
+          "type": "item",
+          "settings": {
+            "show_video": false,
+            "video_link": "",
+            "image": "shopify://shop_images/LIFETIME_WARRANTY-4-min.png",
+            "tab_label": "Item",
+            "subheading": "",
+            "title": "WE PUT OUR PROMISES WHERE OUR MOUTH IS.",
+            "content": "<h5><strong>🛡️ ALL BUNDLE PACKS ARE COVERED BY 45-DAY MONEY BACK GUARANTEE & LIFETIME WARRANTY!</strong></h5>",
+            "button_text": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "1f14d31a-3ce8-48fa-be31-a975874e8b72"
+      ],
+      "settings": {
+        "section_id": "",
+        "reveal_on_scroll": false,
+        "background_type": "full_width",
+        "background_overlap": "text",
+        "image_position": "left",
+        "text_alignment": "center",
+        "cycle_speed": 8,
+        "accent_background": "#f4f4f4",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)",
+        "enable_custom_margin": false,
+        "margin_bottom": 0
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "show_title": true,
+        "page_width": "medium"
+      }
+    },
+    "461fad80-ce1f-482b-b2ea-b49e47297438": {
+      "type": "featured-product",
+      "blocks": {
+        "c72774ac-6944-41c3-8be3-2b447b3609fa": {
+          "type": "text",
+          "settings": {
+            "text": "<h4><strong>Includes Carbinox Ivy Rose Gold & Carbinox Ivy Black.</strong></h4>"
+          }
+        },
+        "d221dfab-0c2f-4117-a0e2-16852d6cbc3e": {
+          "type": "variant_picker",
+          "settings": {
+            "hide_sold_out_variants": false,
+            "selector_mode": "block",
+            "color_mode": "block",
+            "size_chart_page": ""
+          }
+        },
+        "8a639fdf-92f6-4eff-bcc6-b162190a2b4f": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/Diseno_sin_titulo_5.png",
+            "image_alignment": "center",
+            "image_width": 260
+          }
+        },
+        "05f5338e-ed7b-456b-ae78-cf3d11dd7fe7": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_payment_button": false,
+            "atc_button_background": "#009f1f",
+            "atc_button_text_color": "#ffffff",
+            "buy_now_button_background": "rgba(0,0,0,0)",
+            "buy_now_button_text_color": "rgba(0,0,0,0)"
+          }
+        },
+        "d803b84e-9a54-4445-92d2-a8c745e11095": {
+          "type": "social_share_icons",
+          "settings": {
+            "icon_1": "shopify://shop_images/1_e9a71822-007d-44ff-8d36-cd9d1d56a572.png",
+            "icon_text_1": "<p>45 DAY RISK-FREE GUARANTEE!</p>",
+            "icon_2": "shopify://shop_images/2_488612df-9e8b-4df8-ad46-4984a06f6a06.png",
+            "icon_text_2": "<p>FREE $30 GIFT WITH YOUR ORDER!</p>",
+            "icon_3": "shopify://shop_images/3_35fa32d6-9ea8-4d3e-a58e-e4347fe98115.png",
+            "icon_text_3": "<p>RECEIVE IT IN LESS THAN 7 DAYS!</p>"
+          }
+        },
+        "bba3bde4-ae17-40a2-be3a-33070ce59a81": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/SHOP_NOW_PAY_LATER_WITH-3.png",
+            "image_alignment": "center",
+            "image_width": 500
+          }
+        }
+      },
+      "block_order": [
+        "c72774ac-6944-41c3-8be3-2b447b3609fa",
+        "d221dfab-0c2f-4117-a0e2-16852d6cbc3e",
+        "8a639fdf-92f6-4eff-bcc6-b162190a2b4f",
+        "05f5338e-ed7b-456b-ae78-cf3d11dd7fe7",
+        "d803b84e-9a54-4445-92d2-a8c745e11095",
+        "bba3bde4-ae17-40a2-be3a-33070ce59a81"
+      ],
+      "custom_css": [
+        "h3 {font-size: 22px;}",
+        "div {padding: ;}",
+        "button {padding: 5px; font-size: 15px"
+      ],
+      "settings": {
+        "product": "carbinox-ivy-couples-pack-2",
+        "subheading": "",
+        "title": "CARBINOX WATCHES FOR ONLY $55 EACH? COUNT ME IN!",
+        "show_vendor": false,
+        "show_sku": false,
+        "show_taxes_included": false,
+        "show_product_rating": true,
+        "show_share_buttons": false,
+        "help_page": "",
+        "enable_video_autoplay": false,
+        "enable_video_looping": false,
+        "enable_image_zoom": false,
+        "show_thumbnails_on_mobile": false,
+        "desktop_thumbnails_position": "bottom",
+        "transition_effect": "slide",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "section_id": ""
+      }
+    },
+    "featured_product_NzQpV7": {
+      "type": "featured-product",
+      "blocks": {
+        "text_RNAVKM": {
+          "type": "text",
+          "settings": {
+            "text": "<h5>✅ <strong>#1 SMARTWATCH FOR CONSTRUCTION WORKERS, MECHANICS, HVAC ENGINEERS, TRUCK DRIVERS, AND MORE!<br/></strong>✅ 10X STRONGER AND RESISTANT THAN OTHERS IN THE INDUSTRY!<br/>✅ MAKE AND RECEIVE CALLS, TRACK YOUR STATS, AND ENJOY LIMITLESS FEATURES ON YOUR WRIST.</h5>"
+          }
+        },
+        "variant_picker_WzxeWC": {
+          "type": "variant_picker",
+          "settings": {
+            "hide_sold_out_variants": false,
+            "selector_mode": "block",
+            "color_mode": "block",
+            "size_chart_page": ""
+          }
+        },
+        "social_share_icons_Kh9EFe": {
+          "type": "social_share_icons",
+          "settings": {
+            "icon_1": "shopify://shop_images/1_e9a71822-007d-44ff-8d36-cd9d1d56a572.png",
+            "icon_text_1": "<p>45 DAY RISK-FREE GUARANTEE!</p>",
+            "icon_2": "shopify://shop_images/2_488612df-9e8b-4df8-ad46-4984a06f6a06.png",
+            "icon_text_2": "<p>FREE $30 GIFT WITH YOUR ORDER!</p>",
+            "icon_3": "shopify://shop_images/3_35fa32d6-9ea8-4d3e-a58e-e4347fe98115.png",
+            "icon_text_3": "<p>RECEIVE IT IN LESS THAN 7 DAYS!</p>"
+          }
+        },
+        "image_kDpP69": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/Diseno_sin_titulo_5.png",
+            "image_alignment": "center",
+            "image_width": 260
+          }
+        },
+        "buy_buttons_9WJjkR": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_payment_button": false,
+            "atc_button_background": "#009f1f",
+            "atc_button_text_color": "#ffffff",
+            "buy_now_button_background": "rgba(0,0,0,0)",
+            "buy_now_button_text_color": "rgba(0,0,0,0)"
+          }
+        },
+        "image_hLUndt": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/SHOP_NOW_PAY_LATER_WITH-3.png",
+            "image_alignment": "center",
+            "image_width": 500
+          }
+        }
+      },
+      "block_order": [
+        "text_RNAVKM",
+        "variant_picker_WzxeWC",
+        "social_share_icons_Kh9EFe",
+        "image_kDpP69",
+        "buy_buttons_9WJjkR",
+        "image_hLUndt"
+      ],
+      "disabled": true,
+      "custom_css": [
+        "h3 {font-size: 22px;}",
+        "div {padding: ;}",
+        "button {padding: 5px; font-size: 15px"
+      ],
+      "settings": {
+        "product": "carbinox-titan-pro",
+        "subheading": "",
+        "title": "GET 30% OFF ON THE CARBINOX TITAN PRO WITH CODE \"TITAN30\" NOW!",
+        "show_vendor": false,
+        "show_sku": false,
+        "show_taxes_included": false,
+        "show_product_rating": true,
+        "show_share_buttons": false,
+        "help_page": "",
+        "enable_video_autoplay": false,
+        "enable_video_looping": false,
+        "enable_image_zoom": false,
+        "show_thumbnails_on_mobile": false,
+        "desktop_thumbnails_position": "bottom",
+        "transition_effect": "slide",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "section_id": ""
+      }
+    },
+    "featured_product_HLP6Ub": {
+      "type": "featured-product",
+      "blocks": {
+        "text_AUYxYP": {
+          "type": "text",
+          "settings": {
+            "text": "<h5>🏋🏻‍♀️ #1 MOST DURABLE AND AFFORDABLE SMARTWATCH FOR INTENSE WORKOUTS AND OUTDOOR ACTIVITIES.<br/>🪨 FULL RESISTANCE AGAINST SCRATCHES, DROPS, IMPACTS, AND MORE!<br/>🔋 14 DAYS OF BATTERY PER CHARGING CYCLE, GUARANTEED.</h5>"
+          }
+        },
+        "variant_picker_i8Ezmh": {
+          "type": "variant_picker",
+          "settings": {
+            "hide_sold_out_variants": false,
+            "selector_mode": "block",
+            "color_mode": "block",
+            "size_chart_page": ""
+          }
+        },
+        "social_share_icons_6Xrf4a": {
+          "type": "social_share_icons",
+          "settings": {
+            "icon_1": "shopify://shop_images/1_e9a71822-007d-44ff-8d36-cd9d1d56a572.png",
+            "icon_text_1": "<p>45 DAY RISK-FREE GUARANTEE!</p>",
+            "icon_2": "shopify://shop_images/2_488612df-9e8b-4df8-ad46-4984a06f6a06.png",
+            "icon_text_2": "<p>FREE $30 GIFT WITH YOUR ORDER!</p>",
+            "icon_3": "shopify://shop_images/3_35fa32d6-9ea8-4d3e-a58e-e4347fe98115.png",
+            "icon_text_3": "<p>RECEIVE IT IN LESS THAN 7 DAYS!</p>"
+          }
+        },
+        "image_NBgaeH": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/Diseno_sin_titulo_5.png",
+            "image_alignment": "center",
+            "image_width": 260
+          }
+        },
+        "buy_buttons_MkkmRh": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_payment_button": false,
+            "atc_button_background": "#009f1f",
+            "atc_button_text_color": "#ffffff",
+            "buy_now_button_background": "rgba(0,0,0,0)",
+            "buy_now_button_text_color": "rgba(0,0,0,0)"
+          }
+        },
+        "image_iVrhyP": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/SHOP_NOW_PAY_LATER_WITH-3.png",
+            "image_alignment": "center",
+            "image_width": 500
+          }
+        }
+      },
+      "block_order": [
+        "text_AUYxYP",
+        "variant_picker_i8Ezmh",
+        "social_share_icons_6Xrf4a",
+        "image_NBgaeH",
+        "buy_buttons_MkkmRh",
+        "image_iVrhyP"
+      ],
+      "custom_css": [
+        "h3 {font-size: 22px;}",
+        "div {padding: ;}",
+        "button {padding: 5px; font-size: 15px"
+      ],
+      "settings": {
+        "product": "carbinox-ivy",
+        "subheading": "",
+        "title": "GET 30% OFF ON ANY CARBINOX IVY WITH WITH CODE \"IVY30\" NOW!",
+        "show_vendor": false,
+        "show_sku": false,
+        "show_taxes_included": false,
+        "show_product_rating": true,
+        "show_share_buttons": false,
+        "help_page": "",
+        "enable_video_autoplay": false,
+        "enable_video_looping": false,
+        "enable_image_zoom": false,
+        "show_thumbnails_on_mobile": false,
+        "desktop_thumbnails_position": "bottom",
+        "transition_effect": "slide",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "section_id": ""
+      }
+    },
+    "featured_product_bR7p3K": {
+      "type": "featured-product",
+      "blocks": {
+        "text_gwPVG4": {
+          "type": "text",
+          "settings": {
+            "text": "<h5>✅ <strong>#1 SMARTWATCH FOR CONSTRUCTION WORKERS, MECHANICS, HVAC ENGINEERS, TRUCK DRIVERS, AND MORE!<br/></strong>✅ 10X STRONGER AND RESISTANT THAN OTHERS IN THE INDUSTRY!<br/>✅ MAKE AND RECEIVE CALLS, TRACK YOUR STATS, AND ENJOY LIMITLESS FEATURES ON YOUR WRIST.</h5>"
+          }
+        },
+        "variant_picker_EnxzPk": {
+          "type": "variant_picker",
+          "settings": {
+            "hide_sold_out_variants": false,
+            "selector_mode": "block",
+            "color_mode": "block",
+            "size_chart_page": ""
+          }
+        },
+        "social_share_icons_UPn886": {
+          "type": "social_share_icons",
+          "settings": {
+            "icon_1": "shopify://shop_images/1_e9a71822-007d-44ff-8d36-cd9d1d56a572.png",
+            "icon_text_1": "<p>45 DAY RISK-FREE GUARANTEE!</p>",
+            "icon_2": "shopify://shop_images/2_488612df-9e8b-4df8-ad46-4984a06f6a06.png",
+            "icon_text_2": "<p>FREE $30 GIFT WITH YOUR ORDER!</p>",
+            "icon_3": "shopify://shop_images/3_35fa32d6-9ea8-4d3e-a58e-e4347fe98115.png",
+            "icon_text_3": "<p>RECEIVE IT IN LESS THAN 7 DAYS!</p>"
+          }
+        },
+        "image_aN6icy": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/Diseno_sin_titulo_5.png",
+            "image_alignment": "center",
+            "image_width": 260
+          }
+        },
+        "buy_buttons_86fY87": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_payment_button": false,
+            "atc_button_background": "#009f1f",
+            "atc_button_text_color": "#ffffff",
+            "buy_now_button_background": "rgba(0,0,0,0)",
+            "buy_now_button_text_color": "rgba(0,0,0,0)"
+          }
+        },
+        "image_KH76Gc": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/SHOP_NOW_PAY_LATER_WITH-3.png",
+            "image_alignment": "center",
+            "image_width": 500
+          }
+        }
+      },
+      "block_order": [
+        "text_gwPVG4",
+        "variant_picker_EnxzPk",
+        "social_share_icons_UPn886",
+        "image_aN6icy",
+        "buy_buttons_86fY87",
+        "image_KH76Gc"
+      ],
+      "custom_css": [
+        "h3 {font-size: 22px;}",
+        "div {padding: ;}",
+        "button {padding: 5px; font-size: 15px"
+      ],
+      "settings": {
+        "product": "carbinox-vesta",
+        "subheading": "",
+        "title": "GET 25% OFF ON ANY VESTA YELLOW BUNDLE PACK WITH CODE \"VESTA25\" NOW!",
+        "show_vendor": false,
+        "show_sku": false,
+        "show_taxes_included": false,
+        "show_product_rating": true,
+        "show_share_buttons": false,
+        "help_page": "",
+        "enable_video_autoplay": false,
+        "enable_video_looping": false,
+        "enable_image_zoom": false,
+        "show_thumbnails_on_mobile": false,
+        "desktop_thumbnails_position": "bottom",
+        "transition_effect": "slide",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "section_id": ""
+      }
+    },
+    "featured_product_qQ4z7N": {
+      "type": "featured-product",
+      "blocks": {
+        "text_CPeWBn": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>- Built with 600D polyester that supports and resists more.<br/>- Capacity of up to 77L.<br/>- 12 different compartments.</strong></p>"
+          }
+        },
+        "variant_picker_MaeCpQ": {
+          "type": "variant_picker",
+          "settings": {
+            "hide_sold_out_variants": false,
+            "selector_mode": "block",
+            "color_mode": "block",
+            "size_chart_page": ""
+          }
+        },
+        "social_share_icons_ifDjpX": {
+          "type": "social_share_icons",
+          "settings": {
+            "icon_1": "shopify://shop_images/1_e9a71822-007d-44ff-8d36-cd9d1d56a572.png",
+            "icon_text_1": "<p>45 DAY RISK-FREE GUARANTEE!</p>",
+            "icon_2": "shopify://shop_images/2_488612df-9e8b-4df8-ad46-4984a06f6a06.png",
+            "icon_text_2": "<p>FREE $30 GIFT WITH YOUR ORDER!</p>",
+            "icon_3": "shopify://shop_images/3_35fa32d6-9ea8-4d3e-a58e-e4347fe98115.png",
+            "icon_text_3": "<p>RECEIVE IT IN LESS THAN 7 DAYS!</p>"
+          }
+        },
+        "image_p7AUdw": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/Diseno_sin_titulo_5.png",
+            "image_alignment": "center",
+            "image_width": 260
+          }
+        },
+        "buy_buttons_R7WkaW": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_payment_button": false,
+            "atc_button_background": "#009f1f",
+            "atc_button_text_color": "#ffffff",
+            "buy_now_button_background": "rgba(0,0,0,0)",
+            "buy_now_button_text_color": "rgba(0,0,0,0)"
+          }
+        },
+        "image_4qTPfb": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/SHOP_NOW_PAY_LATER_WITH-3.png",
+            "image_alignment": "center",
+            "image_width": 500
+          }
+        }
+      },
+      "block_order": [
+        "text_CPeWBn",
+        "variant_picker_MaeCpQ",
+        "social_share_icons_ifDjpX",
+        "image_p7AUdw",
+        "buy_buttons_R7WkaW",
+        "image_4qTPfb"
+      ],
+      "custom_css": [
+        "h3 {font-size: 22px;}",
+        "div {padding: ;}",
+        "button {padding: 5px; font-size: 15px"
+      ],
+      "settings": {
+        "product": "carbinox-tactical-backpack",
+        "subheading": "",
+        "title": "GET YOUR CARBINOX BACKPACK FOR ONLY $82.46 with code \"backpack25\" now!",
+        "show_vendor": false,
+        "show_sku": false,
+        "show_taxes_included": false,
+        "show_product_rating": true,
+        "show_share_buttons": false,
+        "help_page": "",
+        "enable_video_autoplay": false,
+        "enable_video_looping": false,
+        "enable_image_zoom": false,
+        "show_thumbnails_on_mobile": false,
+        "desktop_thumbnails_position": "bottom",
+        "transition_effect": "slide",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "section_id": ""
+      }
+    },
+    "b3c6e7db-a467-4d5c-a5ac-f47fbc99fa97": {
+      "type": "rich-text",
+      "settings": {
+        "section_id": "",
+        "subheading": "",
+        "title": "🤨 COULDN'T FIND WHAT YOU WERE LOOKING FOR?",
+        "content": "<p><strong>NO WORRIES, XMAS IS AVAILABLE ON OUR ENTIRE WEBSITE!</strong></p>",
+        "button_text": "GO TO HOME PAGE",
+        "button_link": "https://shopcarbinox.com",
+        "background_type": "full_width",
+        "text_width": "medium",
+        "text_position": "center",
+        "text_alignment": "center",
+        "background": "#000000",
+        "text_color": "#ffffff",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    }
+  },
+  "order": [
+    "f803550a-05b0-4390-a008-7d6a083c62fb",
+    "9a14506e-30b4-49fa-bce3-795d77169222",
+    "main",
+    "461fad80-ce1f-482b-b2ea-b49e47297438",
+    "featured_product_NzQpV7",
+    "featured_product_HLP6Ub",
+    "featured_product_bR7p3K",
+    "featured_product_qQ4z7N",
+    "b3c6e7db-a467-4d5c-a5ac-f47fbc99fa97"
+  ]
+}

@@ -1,0 +1,62 @@
+
+
+	<!-- last wallet -->
+	<section class="ridge-last-wallet">
+		<div class="ridge-container">
+			<div class="ridge-last-wallet-heading">
+				<h2>{{ section.settings.text1 }}</h2>
+			</div>
+			<div class="ridge-last-wallet-main">
+              {% for block in section.blocks %}
+				<div class="ridge-last-wallet-item">
+					<h3>{{ block.settings.listitem }}</h3>
+					{{ block.settings.listitempara }}
+				</div>
+                {% endfor %}
+				
+			</div>
+		</div>
+	</section>
+
+
+
+
+{% schema %}
+  {
+    "name": "Trustworthy Product",
+    "settings": [
+      {
+      "type": "text",
+      "id": "text1",
+      "label": "Heading"
+    }
+    ],
+    "blocks": [
+     {
+       "name": "Product Warranty",
+       "type": "TrustworthyProduct",
+       "settings": [
+         
+            {
+      "type": "text",
+      "id": "listitem",
+      "label": "Title"
+    },
+           {
+      "type": "richtext",
+      "id": "listitempara",
+      "label": "description"
+    }
+       ]
+     }
+    ],
+    "presets" : [
+{
+  "name" : "Trustworthy Product",
+  "category" : "TrustworthyProduct",
+
+  }
+]
+  }
+  
+{% endschema %}

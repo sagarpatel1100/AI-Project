@@ -1,0 +1,415 @@
+{% liquid
+  assign heading = section.settings.heading
+  assign description = section.settings.description
+
+  assign section_bg_color = section.settings.section_bg_color
+  assign heading_color = section.settings.heading_color
+  assign description_color = section.settings.description_color
+  assign stat_value_color = section.settings.stat_value_color
+  assign stat_label_color = section.settings.stat_label_color
+
+  assign content_max_width = section.settings.content_max_width
+  assign section_padding_top = section.settings.section_padding_top
+  assign section_padding_bottom = section.settings.section_padding_bottom
+  assign section_padding_horizontal = section.settings.section_padding_horizontal
+
+  assign section_padding_top_mobile = section.settings.section_padding_top_mobile
+  assign section_padding_bottom_mobile = section.settings.section_padding_bottom_mobile
+  assign section_padding_horizontal_mobile = section.settings.section_padding_horizontal_mobile
+
+  assign stats_gap_desktop = section.settings.stats_gap_desktop
+  assign stats_gap_mobile = section.settings.stats_gap_mobile
+
+  assign heading_font_size_desktop = section.settings.heading_font_size_desktop
+  assign heading_font_size_mobile = section.settings.heading_font_size_mobile
+  assign description_font_size_desktop = section.settings.description_font_size_desktop
+  assign description_font_size_mobile = section.settings.description_font_size_mobile
+  assign stat_value_font_size_desktop = section.settings.stat_value_font_size_desktop
+  assign stat_value_font_size_mobile = section.settings.stat_value_font_size_mobile
+  assign stat_label_font_size_desktop = section.settings.stat_label_font_size_desktop
+  assign stat_label_font_size_mobile = section.settings.stat_label_font_size_mobile
+
+  
+
+  assign heading_margin_bottom = section.settings.heading_margin_bottom
+  assign description_margin_bottom = section.settings.description_margin_bottom
+
+  assign has_intro = false
+  if heading != blank or description != blank
+    assign has_intro = true
+  endif
+%}
+
+{{ 'section-trade-in-stats-band.css' | asset_url | stylesheet_tag }}
+
+<section
+  id="trade-in-stats-band-{{ section.id }}"
+  class="trade-in-stats-band"
+  style="
+    --trade-in-stats-band-bg: {{ section_bg_color }};
+    --trade-in-stats-band-heading-color: {{ heading_color }};
+    --trade-in-stats-band-description-color: {{ description_color }};
+    --trade-in-stats-band-stat-value-color: {{ stat_value_color }};
+    --trade-in-stats-band-stat-label-color: {{ stat_label_color }};
+    --trade-in-stats-band-content-max-width: {{ content_max_width }}px;
+    --trade-in-stats-band-padding-top: {{ section_padding_top }}px;
+    --trade-in-stats-band-padding-bottom: {{ section_padding_bottom }}px;
+    --trade-in-stats-band-padding-horizontal: {{ section_padding_horizontal }}px;
+    --trade-in-stats-band-padding-top-mobile: {{ section_padding_top_mobile }}px;
+    --trade-in-stats-band-padding-bottom-mobile: {{ section_padding_bottom_mobile }}px;
+    --trade-in-stats-band-padding-horizontal-mobile: {{ section_padding_horizontal_mobile }}px;
+    --trade-in-stats-band-stats-gap-desktop: {{ stats_gap_desktop }}px;
+    --trade-in-stats-band-stats-gap-mobile: {{ stats_gap_mobile }}px;
+    --trade-in-stats-band-heading-size-desktop: {{ heading_font_size_desktop }}px;
+    --trade-in-stats-band-heading-size-mobile: {{ heading_font_size_mobile }}px;
+    --trade-in-stats-band-description-size-desktop: {{ description_font_size_desktop }}px;
+    --trade-in-stats-band-description-size-mobile: {{ description_font_size_mobile }}px;
+    --trade-in-stats-band-stat-value-size-desktop: {{ stat_value_font_size_desktop }}px;
+    --trade-in-stats-band-stat-value-size-mobile: {{ stat_value_font_size_mobile }}px;
+    --trade-in-stats-band-stat-label-size-desktop: {{ stat_label_font_size_desktop }}px;
+    --trade-in-stats-band-stat-label-size-mobile: {{ stat_label_font_size_mobile }}px;
+    --trade-in-stats-band-heading-margin-bottom: {{ heading_margin_bottom }}px;
+    --trade-in-stats-band-description-margin-bottom: {{ description_margin_bottom }}px;
+  "
+>
+  <div class="trade-in-stats-band__inner">
+    <div class="trade-in-stats-band__container">
+      {% if has_intro %}
+        <div class="trade-in-stats-band__intro">
+          {% if heading != blank %}
+            <h2 class="trade-in-stats-band__heading">
+              {{ heading }}
+            </h2>
+          {% endif %}
+
+          {% if description != blank %}
+            <div class="trade-in-stats-band__description rte">
+              {{ description }}
+            </div>
+          {% endif %}
+        </div>
+      {% endif %}
+
+      {% if section.blocks.size > 0 %}
+        <div class="trade-in-stats-band__stats" role="list">
+          {% for block in section.blocks %}
+            {% liquid
+              assign stat_value = block.settings.stat_value
+              assign stat_label = block.settings.stat_label
+            %}
+
+            {% if stat_value != blank or stat_label != blank %}
+              <div class="trade-in-stats-band__stat" role="listitem" {{ block.shopify_attributes }}>
+                {% if stat_value != blank %}
+                  <div class="trade-in-stats-band__stat-value">
+                    {{ stat_value }}
+                  </div>
+                {% endif %}
+
+                {% if stat_label != blank %}
+                  <div class="trade-in-stats-band__stat-label">
+                    {{ stat_label }}
+                  </div>
+                {% endif %}
+              </div>
+            {% endif %}
+          {% endfor %}
+        </div>
+      {% endif %}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Trade In Stats Band",
+  "tag": "section",
+  "class": "section-trade-in-stats-band",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading (30px desktop)",
+      "default": "THE NUMBERS SPEAK FOR THEMSELVES"
+    },
+    {
+      "type": "richtext",
+      "id": "description",
+      "label": "Description (optional)"
+    },
+
+    {
+      "type": "header",
+      "content": "Colors"
+    },
+    {
+      "type": "color",
+      "id": "section_bg_color",
+      "label": "Section background color (#111111)",
+      "default": "#111111"
+    },
+    {
+      "type": "color",
+      "id": "heading_color",
+      "label": "Heading color (#FFFFFF)",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "color",
+      "id": "description_color",
+      "label": "Description color (#FFFFFF)",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "color",
+      "id": "stat_value_color",
+      "label": "Stat value color (#FFC200)",
+      "default": "#FFC200"
+    },
+    {
+      "type": "color",
+      "id": "stat_label_color",
+      "label": "Stat label color (#FFFFFF)",
+      "default": "#FFFFFF"
+    },
+
+    {
+      "type": "header",
+      "content": "Layout"
+    },
+    {
+      "type": "range",
+      "id": "content_max_width",
+      "label": "Content max width (1140px)",
+      "min": 800,
+      "max": 1400,
+      "step": 20,
+      "default": 1140
+    },
+    {
+      "type": "range",
+      "id": "section_padding_top",
+      "label": "Desktop top padding (60px)",
+      "min": 0,
+      "max": 160,
+      "step": 2,
+      "default": 60
+    },
+    {
+      "type": "range",
+      "id": "section_padding_bottom",
+      "label": "Desktop bottom padding (60px)",
+      "min": 0,
+      "max": 160,
+      "step": 2,
+      "default": 60
+    },
+    {
+      "type": "range",
+      "id": "section_padding_horizontal",
+      "label": "Desktop horizontal padding (24px)",
+      "min": 16,
+      "max": 200,
+      "step": 2,
+      "default": 24
+    },
+
+    {
+      "type": "header",
+      "content": "Mobile spacing"
+    },
+    {
+      "type": "range",
+      "id": "section_padding_top_mobile",
+      "label": "Mobile top padding (40px)",
+      "min": 0,
+      "max": 120,
+      "step": 2,
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "section_padding_bottom_mobile",
+      "label": "Mobile bottom padding (40px)",
+      "min": 0,
+      "max": 120,
+      "step": 2,
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "section_padding_horizontal_mobile",
+      "label": "Mobile horizontal padding (20px)",
+      "min": 0,
+      "max": 60,
+      "step": 2,
+      "default": 20
+    },
+
+    {
+      "type": "range",
+      "id": "stats_gap_desktop",
+      "label": "Stats gap desktop (50px)",
+      "min": 0,
+      "max": 120,
+      "step": 2,
+      "default": 50
+    },
+    {
+      "type": "range",
+      "id": "stats_gap_mobile",
+      "label": "Stats gap mobile (24px)",
+      "min": 0,
+      "max": 60,
+      "step": 2,
+      "default": 24
+    },
+
+    {
+      "type": "range",
+      "id": "heading_margin_bottom",
+      "label": "Heading bottom spacing (30px)",
+      "min": 0,
+      "max": 80,
+      "step": 2,
+      "default": 30
+    },
+    {
+      "type": "range",
+      "id": "description_margin_bottom",
+      "label": "Description bottom spacing (30px)",
+      "min": 0,
+      "max": 80,
+      "step": 2,
+      "default": 30
+    },
+
+    {
+      "type": "header",
+      "content": "Typography"
+    },
+    {
+      "type": "range",
+      "id": "heading_font_size_desktop",
+      "label": "Heading font size desktop (30px)",
+      "min": 18,
+      "max": 50,
+      "step": 1,
+      "default": 30
+    },
+    {
+      "type": "range",
+      "id": "heading_font_size_mobile",
+      "label": "Heading font size mobile (16px)",
+      "min": 14,
+      "max": 32,
+      "step": 1,
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "description_font_size_desktop",
+      "label": "Description font size desktop (18px)",
+      "min": 12,
+      "max": 28,
+      "step": 1,
+      "default": 18
+    },
+    {
+      "type": "range",
+      "id": "description_font_size_mobile",
+      "label": "Description font size mobile (16px)",
+      "min": 12,
+      "max": 24,
+      "step": 1,
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "stat_value_font_size_desktop",
+      "label": "Stat value font size desktop (36px)",
+      "min": 20,
+      "max": 56,
+      "step": 1,
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "stat_value_font_size_mobile",
+      "label": "Stat value font size mobile (30px)",
+      "min": 18,
+      "max": 44,
+      "step": 1,
+      "default": 30
+    },
+    {
+      "type": "range",
+      "id": "stat_label_font_size_desktop",
+      "label": "Stat label font size desktop (18px)",
+      "min": 12,
+      "max": 28,
+      "step": 1,
+      "default": 18
+    },
+    {
+      "type": "range",
+      "id": "stat_label_font_size_mobile",
+      "label": "Stat label font size mobile (16px)",
+      "min": 12,
+      "max": 24,
+      "step": 1,
+      "default": 16
+    }
+  ],
+
+  "blocks": [
+    {
+      "type": "stat",
+      "name": "Stat item",
+      "settings": [
+        {
+          "type": "text",
+          "id": "stat_value",
+          "label": "Stat value",
+          "default": "350K+"
+        },
+        {
+          "type": "text",
+          "id": "stat_label",
+          "label": "Stat label",
+          "default": "WATCHES SOLD"
+        }
+      ]
+    }
+  ],
+
+  "presets": [
+    {
+      "name": "Trade In Stats Band",
+      "blocks": [
+        {
+          "type": "stat",
+          "settings": {
+            "stat_value": "350K+",
+            "stat_label": "WATCHES SOLD"
+          }
+        },
+        {
+          "type": "stat",
+          "settings": {
+            "stat_value": "$100",
+            "stat_label": "MAX TRADE-IN CREDIT"
+          }
+        },
+        {
+          "type": "stat",
+          "settings": {
+            "stat_value": "7",
+            "stat_label": "DAY EASY PROCESS"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

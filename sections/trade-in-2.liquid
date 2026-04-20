@@ -1,0 +1,112 @@
+<section class="tradein-header-{{ section.id }}">
+  <div class="tradein-container">
+
+    {% if section.settings.heading != blank %}
+      <h2 class="tradein-heading">
+        {{ section.settings.heading }}
+      </h2>
+    {% endif %}
+
+    {% if section.settings.subheading != blank %}
+      <p class="tradein-subheading">
+        {{ section.settings.subheading }}
+      </p>
+    {% endif %}
+
+    {% if section.settings.image != blank %}
+      <div class="tradein-image">
+        <img 
+          src="{{ section.settings.image | image_url: width: 2000 }}" 
+          alt="{{ section.settings.image.alt | escape }}"
+          loading="lazy"
+        >
+      </div>
+    {% endif %}
+
+  </div>
+</section>
+
+<style>
+
+.tradein-header-{{ section.id }}{
+  background:#000000;
+  padding:60px 20px;
+}
+
+.tradein-header-{{ section.id }} .tradein-container{
+  max-width:1100px;
+  margin:auto;
+  text-align:center;
+}
+
+.tradein-header-{{ section.id }} .tradein-heading{
+  font-size:36px;
+  font-weight:900;
+  letter-spacing:-0.03em;
+  margin-bottom:20px;
+}
+
+.tradein-header-{{ section.id }} .tradein-heading strong{
+  color:#FFC200;
+}
+
+.tradein-header-{{ section.id }} .tradein-subheading{
+  color:rgba(255,255,255,0.8);
+  font-size:16px;
+  max-width:800px;
+  margin:0 auto 40px;
+}
+
+.tradein-header-{{ section.id }} .tradein-image img{
+  width:100%;
+  height:auto;
+  display:block;
+}
+
+@media(max-width:768px){
+
+.tradein-header-{{ section.id }}{
+  padding:30px 20px;
+}
+
+.tradein-header-{{ section.id }} .tradein-heading{
+  font-size:30px;
+}
+
+.tradein-header-{{ section.id }} .tradein-subheading{
+  font-size:16px;
+}
+
+}
+
+</style>
+
+{% schema %}
+{
+  "name": "Trade In 2",
+  "settings": [
+    {
+      "type": "html",
+      "id": "heading",
+      "label": "Heading",
+      "default": "YOUR CARBINOX SERVED YOU WELL.<br><strong>NOW UPGRADE FOR LESS.</strong>"
+    },
+    {
+      "type": "textarea",
+      "id": "subheading",
+      "label": "Subheading",
+      "default": "You beat the hell out of your watch — and it kept going. But our newest models are tougher, faster, and packed with features your old one doesn't have."
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Cards Image"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Trade In 2"
+    }
+  ]
+}
+{% endschema %}

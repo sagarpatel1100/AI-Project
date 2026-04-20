@@ -1,0 +1,587 @@
+{% liquid
+  assign desktop_image = section.settings.desktop_image
+  assign mobile_image = section.settings.mobile_image
+
+  assign badge_text = section.settings.badge_text
+  assign badge_icon = section.settings.badge_icon
+
+  assign heading_line_1 = section.settings.heading_line_1
+  assign heading_highlight = section.settings.heading_highlight
+  assign description = section.settings.description
+
+  assign button_label = section.settings.button_label
+  assign button_link = section.settings.button_link
+
+  assign disclaimer = section.settings.disclaimer
+
+  assign section_bg_color = section.settings.section_bg_color
+  assign content_bg_color = section.settings.content_bg_color
+  assign badge_text_color = section.settings.badge_text_color
+  assign badge_border_color = section.settings.badge_border_color
+  assign heading_color = section.settings.heading_color
+  assign highlight_color = section.settings.highlight_color
+  assign description_color = section.settings.description_color
+  assign button_bg_color = section.settings.button_bg_color
+  assign button_text_color = section.settings.button_text_color
+  assign disclaimer_color = section.settings.disclaimer_color
+
+  assign overlay_start_color = section.settings.overlay_start_color
+  assign overlay_middle_color = section.settings.overlay_middle_color
+  assign overlay_end_color = section.settings.overlay_end_color
+
+  assign desktop_height = section.settings.desktop_height
+  assign mobile_image_height = section.settings.mobile_image_height
+
+  assign desktop_content_max_width = section.settings.desktop_content_max_width
+  assign mobile_content_max_width = section.settings.mobile_content_max_width
+
+  assign desktop_content_padding_right = section.settings.desktop_content_padding_right
+  assign desktop_content_padding_left = section.settings.desktop_content_padding_left
+
+  assign mobile_content_padding_top = section.settings.mobile_content_padding_top
+  assign mobile_content_padding_right = section.settings.mobile_content_padding_right
+  assign mobile_content_padding_bottom = section.settings.mobile_content_padding_bottom
+  assign mobile_content_padding_left = section.settings.mobile_content_padding_left
+
+  assign desktop_heading_size = section.settings.desktop_heading_size
+  assign mobile_heading_size = section.settings.mobile_heading_size
+
+  assign desktop_description_size = section.settings.desktop_description_size
+  assign mobile_description_size = section.settings.mobile_description_size
+
+  assign badge_font_size = section.settings.badge_font_size
+  assign button_font_size = section.settings.button_font_size
+  assign disclaimer_font_size = section.settings.disclaimer_font_size
+
+  assign section_margin_top = section.settings.section_margin_top
+  assign section_margin_bottom = section.settings.section_margin_bottom
+
+  assign desktop_background_image = ''
+  if desktop_image != blank
+    assign desktop_background_image = desktop_image | image_url: width: 2400
+  endif
+
+  assign mobile_background_image = ''
+  if mobile_image != blank
+    assign mobile_background_image = mobile_image | image_url: width: 1200
+  elsif desktop_image != blank
+    assign mobile_background_image = desktop_image | image_url: width: 1200
+  endif
+
+  assign has_content = false
+  if badge_text != blank or heading_line_1 != blank or heading_highlight != blank or description != blank or button_label != blank or disclaimer != blank
+    assign has_content = true
+  endif
+%}
+
+{{ 'section-trade-in-hero.css' | asset_url | stylesheet_tag }}
+
+<section
+  id="trade-in-hero-{{ section.id }}"
+  class="trade-in-hero"
+  style="
+    --trade-in-hero-section-bg: {{ section_bg_color }};
+    --trade-in-hero-content-bg: {{ content_bg_color }};
+    --trade-in-hero-badge-text: {{ badge_text_color }};
+    --trade-in-hero-badge-border: {{ badge_border_color }};
+    --trade-in-hero-heading: {{ heading_color }};
+    --trade-in-hero-highlight: {{ highlight_color }};
+    --trade-in-hero-description: {{ description_color }};
+    --trade-in-hero-button-bg: {{ button_bg_color }};
+    --trade-in-hero-button-text: {{ button_text_color }};
+    --trade-in-hero-disclaimer: {{ disclaimer_color }};
+    --trade-in-hero-overlay-start: {{ overlay_start_color }};
+    --trade-in-hero-overlay-middle: {{ overlay_middle_color }};
+    --trade-in-hero-overlay-end: {{ overlay_end_color }};
+    --trade-in-hero-desktop-height: {{ desktop_height }}px;
+    --trade-in-hero-mobile-image-height: {{ mobile_image_height }}px;
+    --trade-in-hero-desktop-content-max-width: {{ desktop_content_max_width }}px;
+    --trade-in-hero-mobile-content-max-width: {{ mobile_content_max_width }}px;
+    --trade-in-hero-desktop-padding-right: {{ desktop_content_padding_right }}px;
+    --trade-in-hero-desktop-padding-left: {{ desktop_content_padding_left }}px;
+    --trade-in-hero-mobile-padding-top: {{ mobile_content_padding_top }}px;
+    --trade-in-hero-mobile-padding-right: {{ mobile_content_padding_right }}px;
+    --trade-in-hero-mobile-padding-bottom: {{ mobile_content_padding_bottom }}px;
+    --trade-in-hero-mobile-padding-left: {{ mobile_content_padding_left }}px;
+    --trade-in-hero-desktop-heading-size: {{ desktop_heading_size }}px;
+    --trade-in-hero-mobile-heading-size: {{ mobile_heading_size }}px;
+    --trade-in-hero-desktop-description-size: {{ desktop_description_size }}px;
+    --trade-in-hero-mobile-description-size: {{ mobile_description_size }}px;
+    --trade-in-hero-badge-font-size: {{ badge_font_size }}px;
+    --trade-in-hero-button-font-size: {{ button_font_size }}px;
+    --trade-in-hero-disclaimer-font-size: {{ disclaimer_font_size }}px;
+    --trade-in-hero-margin-top: {{ section_margin_top }}px;
+    --trade-in-hero-margin-bottom: {{ section_margin_bottom }}px;
+    {% if desktop_background_image != blank %}
+      --trade-in-hero-desktop-bg-image: url('{{ desktop_background_image }}');
+    {% endif %}
+    {% if mobile_background_image != blank %}
+      --trade-in-hero-mobile-bg-image: url('{{ mobile_background_image }}');
+    {% endif %}
+  "
+>
+  <div class="trade-in-hero__desktop">
+    <div class="trade-in-hero__desktop-overlay"></div>
+
+    {% if has_content %}
+      <div class="trade-in-hero__desktop-inner">
+        <div class="trade-in-hero__content">
+          {% if badge_text != blank %}
+    <div class="trade-in-hero__badge">
+                {% if badge_icon != blank %}
+                <span class="trade-in-hero__badge-icon">
+                    {{ badge_icon | image_url: width: 40 | image_tag: loading: 'lazy', widths: '20,40', class: 'trade-in-hero__badge-icon-image', alt: badge_text }}
+                </span>
+                {% else %}
+                <span class="trade-in-hero__badge-icon" aria-hidden="true">
+                    <svg viewBox="0 0 20 20" fill="none" role="presentation">
+                    <path d="M10 2.5C13.995 2.5 17.25 5.755 17.25 9.75C17.25 13.745 13.995 17 10 17C6.005 17 2.75 13.745 2.75 9.75" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                    <path d="M5.25 3V6.75H9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M9.25 7.25V10.2L11.75 11.7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </span>
+                {% endif %}
+
+                <span class="trade-in-hero__badge-text">{{ badge_text }}</span>
+            </div>
+            {% endif %}
+
+          {% if heading_line_1 != blank or heading_highlight != blank %}
+            <h2 class="trade-in-hero__heading">
+              {% if heading_line_1 != blank %}
+                <span class="trade-in-hero__heading-line">{{ heading_line_1 }}</span>
+              {% endif %}
+              {% if heading_highlight != blank %}
+                <span class="trade-in-hero__heading-line trade-in-hero__heading-line--highlight">{{ heading_highlight }}</span>
+              {% endif %}
+            </h2>
+          {% endif %}
+
+          {% if description != blank %}
+            <div class="trade-in-hero__description rte">
+              {{ description }}
+            </div>
+          {% endif %}
+
+          {% if button_label != blank %}
+            {% if button_link != blank %}
+              <a href="{{ button_link }}" class="trade-in-hero__button">
+                {{ button_label }}
+              </a>
+            {% else %}
+              <span class="trade-in-hero__button trade-in-hero__button--static">
+                {{ button_label }}
+              </span>
+            {% endif %}
+          {% endif %}
+
+          {% if disclaimer != blank %}
+            <div class="trade-in-hero__disclaimer">
+              {{ disclaimer }}
+            </div>
+          {% endif %}
+        </div>
+      </div>
+    {% endif %}
+  </div>
+
+  <div class="trade-in-hero__mobile">
+  <div class="trade-in-hero__mobile-media"></div>
+
+  {% if has_content %}
+    <div class="trade-in-hero__mobile-content-wrap">
+      <div class="trade-in-hero__content">
+        {% if badge_text != blank %}
+          <div class="trade-in-hero__badge">
+            {% if badge_icon != blank %}
+              <span class="trade-in-hero__badge-icon">
+                {{ badge_icon | image_url: width: 40 | image_tag: loading: 'lazy', widths: '20,40', class: 'trade-in-hero__badge-icon-image', alt: badge_text }}
+              </span>
+            {% else %}
+              <span class="trade-in-hero__badge-icon" aria-hidden="true">
+                <svg viewBox="0 0 20 20" fill="none" role="presentation">
+                  <path d="M10 2.5C13.995 2.5 17.25 5.755 17.25 9.75C17.25 13.745 13.995 17 10 17C6.005 17 2.75 13.745 2.75 9.75" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                  <path d="M5.25 3V6.75H9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M9.25 7.25V10.2L11.75 11.7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </span>
+            {% endif %}
+            <span class="trade-in-hero__badge-text">{{ badge_text }}</span>
+          </div>
+        {% endif %}
+
+        {% if heading_line_1 != blank or heading_highlight != blank %}
+          <h2 class="trade-in-hero__heading">
+            {% if heading_line_1 != blank %}
+              <span class="trade-in-hero__heading-line">{{ heading_line_1 }}</span>
+            {% endif %}
+            {% if heading_highlight != blank %}
+              <span class="trade-in-hero__heading-line trade-in-hero__heading-line--highlight">{{ heading_highlight }}</span>
+            {% endif %}
+          </h2>
+        {% endif %}
+
+        {% if description != blank %}
+          <div class="trade-in-hero__description rte">
+            {{ description }}
+          </div>
+        {% endif %}
+
+        {% if button_label != blank %}
+          {% if button_link != blank %}
+            <a href="{{ button_link }}" class="trade-in-hero__button">
+              {{ button_label }}
+            </a>
+          {% else %}
+            <span class="trade-in-hero__button trade-in-hero__button--static">
+              {{ button_label }}
+            </span>
+          {% endif %}
+        {% endif %}
+
+        {% if disclaimer != blank %}
+          <div class="trade-in-hero__disclaimer">
+            {{ disclaimer }}
+          </div>
+        {% endif %}
+      </div>
+    </div>
+  {% endif %}
+</div>
+</section>
+
+{% schema %}
+{
+  "name": "Trade In Hero",
+  "tag": "section",
+  "class": "section-trade-in-hero",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "desktop_image",
+      "label": "Desktop background image"
+    },
+    {
+      "type": "image_picker",
+      "id": "mobile_image",
+      "label": "Mobile background image"
+    },
+    {
+    "type": "image_picker",
+    "id": "badge_icon",
+    "label": "Badge icon"
+    },
+    {
+      "type": "text",
+      "id": "badge_text",
+      "label": "Badge text",
+      "default": "CARBINOX TRADE-IN PROGRAM"
+    },
+    {
+      "type": "text",
+      "id": "heading_line_1",
+      "label": "Heading line 1",
+      "default": "YOUR OLD WATCH"
+    },
+    {
+      "type": "text",
+      "id": "heading_highlight",
+      "label": "Heading highlight line",
+      "default": "STILL HAS VALUE."
+    },
+    {
+      "type": "richtext",
+      "id": "description",
+      "label": "Description",
+      "default": "<p>Trade in any Carbinox watch — working or not — and get up to $100 in credit toward our newest models</p>"
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "label": "Button label",
+      "default": "START MY TRADE-IN →"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button link"
+    },
+    {
+      "type": "text",
+      "id": "disclaimer",
+      "label": "Disclaimer",
+      "default": "Free prepaid return label included. No risk."
+    },
+    {
+      "type": "header",
+      "content": "Colors"
+    },
+    {
+      "type": "color",
+      "id": "section_bg_color",
+      "label": "Section background color",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "content_bg_color",
+      "label": "Mobile content background color",
+      "default": "#191919"
+    },
+    {
+      "type": "color",
+      "id": "badge_text_color",
+      "label": "Badge text color",
+      "default": "#FFC200"
+    },
+    {
+      "type": "color",
+      "id": "badge_border_color",
+      "label": "Badge border color",
+      "default": "#FFC200"
+    },
+    {
+      "type": "color",
+      "id": "heading_color",
+      "label": "Heading color",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "color",
+      "id": "highlight_color",
+      "label": "Heading highlight color",
+      "default": "#FFC200"
+    },
+    {
+    "type": "color",
+    "id": "description_color",
+    "label": "Description color",
+    "default": "#FFFFFF"
+    },
+    {
+      "type": "color",
+      "id": "button_bg_color",
+      "label": "Button background color",
+      "default": "#FFC200"
+    },
+    {
+      "type": "color",
+      "id": "button_text_color",
+      "label": "Button text color",
+      "default": "#000000"
+    },
+    {
+    "type": "color",
+    "id": "disclaimer_color",
+    "label": "Disclaimer color",
+    "default": "#FFFFFF"
+    },
+    {
+      "type": "header",
+      "content": "Desktop overlay"
+    },
+    {
+      "type": "color",
+      "id": "overlay_start_color",
+      "label": "Overlay start color",
+      "default": "#19191900"
+    },
+    {
+      "type": "color",
+      "id": "overlay_middle_color",
+      "label": "Overlay middle color",
+      "default": "#191919CC"
+    },
+    {
+      "type": "color",
+      "id": "overlay_end_color",
+      "label": "Overlay end color",
+      "default": "#191919"
+    },
+    {
+      "type": "header",
+      "content": "Layout"
+    },
+    {
+      "type": "range",
+      "id": "desktop_height",
+      "label": "Desktop hero height",
+      "min": 320,
+      "max": 700,
+      "step": 4,
+      "default": 448
+    },
+    {
+    "type": "range",
+    "id": "mobile_image_height",
+    "label": "Mobile image height",
+    "min": 180,
+    "max": 500,
+    "step": 4,
+    "default": 336
+    },
+    {
+    "type": "range",
+    "id": "desktop_content_max_width",
+    "label": "Desktop content max width",
+    "min": 320,
+    "max": 704,
+    "step": 8,
+    "default": 464
+    },
+    {
+      "type": "range",
+      "id": "mobile_content_max_width",
+      "label": "Mobile content max width",
+      "min": 260,
+      "max": 500,
+      "step": 4,
+      "default": 388
+    },
+    {
+      "type": "range",
+      "id": "desktop_content_padding_right",
+      "label": "Desktop content right padding",
+      "min": 0,
+      "max": 300,
+      "step": 4,
+      "default": 148
+    },
+    {
+      "type": "range",
+      "id": "desktop_content_padding_left",
+      "label": "Desktop content left padding",
+      "min": 0,
+      "max": 300,
+      "step": 4,
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "mobile_content_padding_top",
+      "label": "Mobile content top padding",
+      "min": 0,
+      "max": 60,
+      "step": 2,
+      "default": 10
+    },
+    {
+      "type": "range",
+      "id": "mobile_content_padding_right",
+      "label": "Mobile content right padding",
+      "min": 0,
+      "max": 60,
+      "step": 2,
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "mobile_content_padding_bottom",
+      "label": "Mobile content bottom padding",
+      "min": 0,
+      "max": 60,
+      "step": 2,
+      "default": 10
+    },
+    {
+      "type": "range",
+      "id": "mobile_content_padding_left",
+      "label": "Mobile content left padding",
+      "min": 0,
+      "max": 60,
+      "step": 2,
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "section_margin_top",
+      "label": "Section top spacing",
+      "min": 0,
+      "max": 80,
+      "step": 2,
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "section_margin_bottom",
+      "label": "Section bottom spacing",
+      "min": 0,
+      "max": 80,
+      "step": 2,
+      "default": 0
+    },
+    {
+      "type": "header",
+      "content": "Typography"
+    },
+    {
+      "type": "range",
+      "id": "badge_font_size",
+      "label": "Badge font size",
+      "min": 10,
+      "max": 20,
+      "step": 1,
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "desktop_heading_size",
+      "label": "Desktop heading size",
+      "min": 24,
+      "max": 72,
+      "step": 2,
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "mobile_heading_size",
+      "label": "Mobile heading size",
+      "min": 20,
+      "max": 52,
+      "step": 2,
+      "default": 34
+    },
+    {
+      "type": "range",
+      "id": "desktop_description_size",
+      "label": "Desktop description size",
+      "min": 12,
+      "max": 28,
+      "step": 1,
+      "default": 18
+    },
+    {
+      "type": "range",
+      "id": "mobile_description_size",
+      "label": "Mobile description size",
+      "min": 12,
+      "max": 24,
+      "step": 1,
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "button_font_size",
+      "label": "Button font size",
+      "min": 12,
+      "max": 24,
+      "step": 1,
+      "default": 17
+    },
+    {
+      "type": "range",
+      "id": "disclaimer_font_size",
+      "label": "Disclaimer font size",
+      "min": 10,
+      "max": 18,
+      "step": 1,
+      "default": 12
+    }
+  ],
+  "presets": [
+    {
+      "name": "Trade In Hero"
+    }
+  ]
+}
+{% endschema %}

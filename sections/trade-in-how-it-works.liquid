@@ -1,0 +1,574 @@
+{% liquid
+  assign heading_line_1 = section.settings.heading_line_1
+  assign heading_highlight = section.settings.heading_highlight
+
+  assign section_bg_color = section.settings.section_bg_color
+  assign heading_color = section.settings.heading_color
+  assign highlight_color = section.settings.highlight_color
+  assign timeline_color = section.settings.timeline_color
+  assign step_circle_bg = section.settings.step_circle_bg
+  assign step_circle_text = section.settings.step_circle_text
+  assign step_title_color = section.settings.step_title_color
+  assign step_description_color = section.settings.step_description_color
+
+  assign content_max_width = section.settings.content_max_width
+
+
+  assign section_padding_top = section.settings.section_padding_top
+  assign section_padding_bottom = section.settings.section_padding_bottom
+  assign section_padding_horizontal = section.settings.section_padding_horizontal
+
+  assign section_padding_top_mobile = section.settings.section_padding_top_mobile
+  assign section_padding_bottom_mobile = section.settings.section_padding_bottom_mobile
+  assign section_padding_horizontal_mobile = section.settings.section_padding_horizontal_mobile
+
+  assign heading_size_desktop = section.settings.heading_size_desktop
+  assign heading_size_mobile = section.settings.heading_size_mobile
+  assign heading_gap_desktop = section.settings.heading_gap_desktop
+  assign heading_gap_mobile = section.settings.heading_gap_mobile
+
+  assign steps_max_width_desktop = section.settings.steps_max_width_desktop
+  assign steps_gap_desktop = section.settings.steps_gap_desktop
+  assign steps_gap_mobile = section.settings.steps_gap_mobile
+
+  assign rail_width_desktop = section.settings.rail_width_desktop
+  assign rail_width_mobile = section.settings.rail_width_mobile
+  assign circle_size_desktop = section.settings.circle_size_desktop
+  assign circle_size_mobile = section.settings.circle_size_mobile
+  assign line_width = section.settings.line_width
+
+  assign step_title_size_desktop = section.settings.step_title_size_desktop
+  assign step_title_size_mobile = section.settings.step_title_size_mobile
+  assign step_description_size_desktop = section.settings.step_description_size_desktop
+  assign step_description_size_mobile = section.settings.step_description_size_mobile
+
+  assign step_gap_desktop = section.settings.step_gap_desktop
+  assign step_gap_mobile = section.settings.step_gap_mobile
+  assign rail_content_gap_desktop = section.settings.rail_content_gap_desktop
+  assign rail_content_gap_mobile = section.settings.rail_content_gap_mobile
+
+  assign has_heading = false
+  if heading_line_1 != blank or heading_highlight != blank
+    assign has_heading = true
+  endif
+%}
+
+{{ 'section-trade-in-how-it-works.css' | asset_url | stylesheet_tag }}
+
+<section
+  id="trade-in-how-it-works-{{ section.id }}"
+  class="trade-in-how-it-works"
+  style="
+    --trade-in-how-it-works-bg: {{ section_bg_color }};
+    --trade-in-how-it-works-heading-color: {{ heading_color }};
+    --trade-in-how-it-works-highlight-color: {{ highlight_color }};
+    --trade-in-how-it-works-timeline-color: {{ timeline_color }};
+    --trade-in-how-it-works-step-circle-bg: {{ step_circle_bg }};
+    --trade-in-how-it-works-step-circle-text: {{ step_circle_text }};
+    --trade-in-how-it-works-step-title-color: {{ step_title_color }};
+    --trade-in-how-it-works-step-description-color: {{ step_description_color }};
+
+    --trade-in-how-it-works-content-max-width: {{ content_max_width }}px;
+
+    --trade-in-how-it-works-padding-top: {{ section_padding_top }}px;
+    --trade-in-how-it-works-padding-bottom: {{ section_padding_bottom }}px;
+    --trade-in-how-it-works-padding-horizontal: {{ section_padding_horizontal }}px;
+
+    --trade-in-how-it-works-padding-top-mobile: {{ section_padding_top_mobile }}px;
+    --trade-in-how-it-works-padding-bottom-mobile: {{ section_padding_bottom_mobile }}px;
+    --trade-in-how-it-works-padding-horizontal-mobile: {{ section_padding_horizontal_mobile }}px;
+
+    --trade-in-how-it-works-heading-size-desktop: {{ heading_size_desktop }}px;
+    --trade-in-how-it-works-heading-size-mobile: {{ heading_size_mobile }}px;
+    --trade-in-how-it-works-heading-gap-desktop: {{ heading_gap_desktop }}px;
+    --trade-in-how-it-works-heading-gap-mobile: {{ heading_gap_mobile }}px;
+
+    --trade-in-how-it-works-steps-max-width-desktop: {{ steps_max_width_desktop }}px;
+    --trade-in-how-it-works-steps-gap-desktop: {{ steps_gap_desktop }}px;
+    --trade-in-how-it-works-steps-gap-mobile: {{ steps_gap_mobile }}px;
+
+    --trade-in-how-it-works-rail-width-desktop: {{ rail_width_desktop }}px;
+    --trade-in-how-it-works-rail-width-mobile: {{ rail_width_mobile }}px;
+    --trade-in-how-it-works-circle-size-desktop: {{ circle_size_desktop }}px;
+    --trade-in-how-it-works-circle-size-mobile: {{ circle_size_mobile }}px;
+    --trade-in-how-it-works-line-width: {{ line_width }}px;
+
+    --trade-in-how-it-works-step-title-size-desktop: {{ step_title_size_desktop }}px;
+    --trade-in-how-it-works-step-title-size-mobile: {{ step_title_size_mobile }}px;
+    --trade-in-how-it-works-step-description-size-desktop: {{ step_description_size_desktop }}px;
+    --trade-in-how-it-works-step-description-size-mobile: {{ step_description_size_mobile }}px;
+
+    --trade-in-how-it-works-step-gap-desktop: {{ step_gap_desktop }}px;
+    --trade-in-how-it-works-step-gap-mobile: {{ step_gap_mobile }}px;
+    --trade-in-how-it-works-rail-content-gap-desktop: {{ rail_content_gap_desktop }}px;
+    --trade-in-how-it-works-rail-content-gap-mobile: {{ rail_content_gap_mobile }}px;
+  "
+>
+  <div class="trade-in-how-it-works__inner">
+    <div class="trade-in-how-it-works__container">
+      {% if has_heading %}
+        <div class="trade-in-how-it-works__intro">
+          <h2 class="trade-in-how-it-works__heading">
+            {% if heading_line_1 != blank %}
+              <span class="trade-in-how-it-works__heading-text">{{ heading_line_1 }}</span>
+            {% endif %}
+            {% if heading_highlight != blank %}
+              <span class="trade-in-how-it-works__heading-text trade-in-how-it-works__heading-text--highlight">{{ heading_highlight }}</span>
+            {% endif %}
+          </h2>
+        </div>
+      {% endif %}
+
+      {% if section.blocks.size > 0 %}
+        <div class="trade-in-how-it-works__steps">
+          <div class="trade-in-how-it-works__steps-rail" aria-hidden="true"></div>
+
+          {% for block in section.blocks %}
+            {% liquid
+              assign step_number = block.settings.step_number
+              assign step_title = block.settings.step_title
+              assign step_description = block.settings.step_description
+            %}
+
+            {% if step_title != blank or step_description != blank %}
+              <article class="trade-in-how-it-works__step" {{ block.shopify_attributes }}>
+                <div class="trade-in-how-it-works__step-rail">
+                  {% if step_number != blank %}
+                    <div class="trade-in-how-it-works__step-circle">
+                      {{ step_number }}
+                    </div>
+                  {% endif %}
+                </div>
+
+                <div class="trade-in-how-it-works__step-content">
+                  {% if step_title != blank %}
+                    <h3 class="trade-in-how-it-works__step-title">
+                      {{ step_title }}
+                    </h3>
+                  {% endif %}
+
+                  {% if step_description != blank %}
+                    <div class="trade-in-how-it-works__step-description rte">
+                      {{ step_description }}
+                    </div>
+                  {% endif %}
+                </div>
+              </article>
+            {% endif %}
+          {% endfor %}
+        </div>
+      {% endif %}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Trade In How It Works",
+  "tag": "section",
+  "class": "section-trade-in-how-it-works",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading_line_1",
+      "label": "Heading line 1 (36px desktop / 30px mobile)",
+      "default": "HOW IT"
+    },
+    {
+      "type": "text",
+      "id": "heading_highlight",
+      "label": "Heading highlight (36px desktop / 30px mobile)",
+      "default": "WORKS?"
+    },
+
+    {
+      "type": "header",
+      "content": "Colors"
+    },
+    {
+      "type": "color",
+      "id": "section_bg_color",
+      "label": "Section background color (#000000)",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "heading_color",
+      "label": "Heading color (#FFFFFF)",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "color",
+      "id": "highlight_color",
+      "label": "Heading highlight color (#FFC200)",
+      "default": "#FFC200"
+    },
+    {
+      "type": "color",
+      "id": "timeline_color",
+      "label": "Timeline line color (#FFC200)",
+      "default": "#FFC200"
+    },
+    {
+      "type": "color",
+      "id": "step_circle_bg",
+      "label": "Step circle background (#FFC200)",
+      "default": "#FFC200"
+    },
+    {
+      "type": "color",
+      "id": "step_circle_text",
+      "label": "Step circle text (#000000)",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "step_title_color",
+      "label": "Step title color (#FFFFFF)",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "color",
+      "id": "step_description_color",
+      "label": "Step description color (#FFFFFF 60%)",
+      "default": "#FFFFFF"
+    },
+
+    {
+      "type": "header",
+      "content": "Desktop layout"
+    },
+    {
+      "type": "range",
+      "id": "content_max_width",
+      "label": "Section content max width (1440px)",
+      "min": 900,
+      "max": 1600,
+      "step": 20,
+      "default": 1440
+    },
+    {
+      "type": "range",
+      "id": "steps_max_width_desktop",
+      "label": "Steps max width desktop (1040px)",
+      "min": 700,
+      "max": 1400,
+      "step": 20,
+      "default": 1040
+    },
+    {
+      "type": "range",
+      "id": "section_padding_top",
+      "label": "Top padding desktop (60px)",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "default": 60
+    },
+    {
+      "type": "range",
+      "id": "section_padding_bottom",
+      "label": "Bottom padding desktop (60px)",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "default": 60
+    },
+    {
+      "type": "range",
+      "id": "section_padding_horizontal",
+      "label": "Horizontal padding desktop (100px)",
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "default": 100
+    },
+    {
+      "type": "range",
+      "id": "heading_gap_desktop",
+      "label": "Heading bottom spacing desktop (30px)",
+      "min": 0,
+      "max": 80,
+      "step": 2,
+      "default": 30
+    },
+    {
+      "type": "range",
+      "id": "steps_gap_desktop",
+      "label": "Steps gap desktop (40px)",
+      "min": 0,
+      "max": 80,
+      "step": 2,
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "rail_content_gap_desktop",
+      "label": "Rail to content gap desktop (20px)",
+      "min": 0,
+      "max": 60,
+      "step": 2,
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "step_gap_desktop",
+      "label": "Space between title and text desktop (10px)",
+      "min": 0,
+      "max": 30,
+      "step": 2,
+      "default": 10
+    },
+
+    {
+      "type": "header",
+      "content": "Mobile layout"
+    },
+    {
+      "type": "range",
+      "id": "section_padding_top_mobile",
+      "label": "Top padding mobile (30px)",
+      "min": 0,
+      "max": 120,
+      "step": 2,
+      "default": 30
+    },
+    {
+      "type": "range",
+      "id": "section_padding_bottom_mobile",
+      "label": "Bottom padding mobile (30px)",
+      "min": 0,
+      "max": 120,
+      "step": 2,
+      "default": 30
+    },
+    {
+      "type": "range",
+      "id": "section_padding_horizontal_mobile",
+      "label": "Horizontal padding mobile (26px)",
+      "min": 0,
+      "max": 60,
+      "step": 2,
+      "default": 26
+    },
+    {
+      "type": "range",
+      "id": "heading_gap_mobile",
+      "label": "Heading bottom spacing mobile (20px)",
+      "min": 0,
+      "max": 60,
+      "step": 2,
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "steps_gap_mobile",
+      "label": "Steps gap mobile (30px)",
+      "min": 0,
+      "max": 60,
+      "step": 2,
+      "default": 30
+    },
+    {
+      "type": "range",
+      "id": "rail_content_gap_mobile",
+      "label": "Rail to content gap mobile (14px)",
+      "min": 0,
+      "max": 40,
+      "step": 2,
+      "default": 14
+    },
+    {
+      "type": "range",
+      "id": "step_gap_mobile",
+      "label": "Space between title and text mobile (8px)",
+      "min": 0,
+      "max": 24,
+      "step": 2,
+      "default": 8
+    },
+
+    {
+      "type": "header",
+      "content": "Timeline"
+    },
+    {
+      "type": "range",
+      "id": "rail_width_desktop",
+      "label": "Rail width desktop (34px)",
+      "min": 24,
+      "max": 60,
+      "step": 2,
+      "default": 34
+    },
+    {
+      "type": "range",
+      "id": "rail_width_mobile",
+      "label": "Rail width mobile (28px)",
+      "min": 20,
+      "max": 50,
+      "step": 2,
+      "default": 28
+    },
+    {
+      "type": "range",
+      "id": "circle_size_desktop",
+      "label": "Circle size desktop (34px)",
+      "min": 24,
+      "max": 50,
+      "step": 2,
+      "default": 34
+    },
+    {
+      "type": "range",
+      "id": "circle_size_mobile",
+      "label": "Circle size mobile (30px)",
+      "min": 20,
+      "max": 44,
+      "step": 2,
+      "default": 30
+    },
+    {
+      "type": "range",
+      "id": "line_width",
+      "label": "Timeline line width (1px)",
+      "min": 1,
+      "max": 4,
+      "step": 1,
+      "default": 1
+    },
+
+    {
+      "type": "header",
+      "content": "Typography"
+    },
+    {
+      "type": "range",
+      "id": "heading_size_desktop",
+      "label": "Heading font size desktop (36px)",
+      "min": 20,
+      "max": 60,
+      "step": 1,
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "heading_size_mobile",
+      "label": "Heading font size mobile (30px)",
+      "min": 18,
+      "max": 48,
+      "step": 1,
+      "default": 30
+    },
+    {
+      "type": "range",
+      "id": "step_title_size_desktop",
+      "label": "Step title font size desktop (18px)",
+      "min": 12,
+      "max": 30,
+      "step": 1,
+      "default": 18
+    },
+    {
+      "type": "range",
+      "id": "step_title_size_mobile",
+      "label": "Step title font size mobile (16px)",
+      "min": 12,
+      "max": 26,
+      "step": 1,
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "step_description_size_desktop",
+      "label": "Step description font size desktop (16px)",
+      "min": 12,
+      "max": 26,
+      "step": 1,
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "step_description_size_mobile",
+      "label": "Step description font size mobile (14px)",
+      "min": 10,
+      "max": 24,
+      "step": 1,
+      "default": 14
+    }
+  ],
+  "blocks": [
+    {
+      "type": "step",
+      "name": "Step",
+      "settings": [
+        {
+          "type": "text",
+          "id": "step_number",
+          "label": "Step number",
+          "default": "1"
+        },
+        {
+          "type": "text",
+          "id": "step_title",
+          "label": "Step title",
+          "default": "START YOUR TRADE-IN"
+        },
+        {
+          "type": "richtext",
+          "id": "step_description",
+          "label": "Step description",
+          "default": "<p>Fill out the quick trade-in form. Tell us which watch you have and pick the new model you want.</p>"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Trade In How It Works",
+      "blocks": [
+        {
+          "type": "step",
+          "settings": {
+            "step_number": "1",
+            "step_title": "START YOUR TRADE-IN",
+            "step_description": "<p>Fill out the quick trade-in form. Tell us which watch you have and pick the new model you want.</p>"
+          }
+        },
+        {
+          "type": "step",
+          "settings": {
+            "step_number": "2",
+            "step_title": "GET YOUR DISCOUNT",
+            "step_description": "<p>You’ll receive a checkout link with your new watch and a $50 discount code already applied. Complete your purchase.</p>"
+          }
+        },
+        {
+          "type": "step",
+          "settings": {
+            "step_number": "3",
+            "step_title": "RECEIVE YOUR NEW WATCH",
+            "step_description": "<p>We ship your new Carbinox with free accessories, a prepaid return label, and a purple return package for your old watch.</p>"
+          }
+        },
+        {
+          "type": "step",
+          "settings": {
+            "step_number": "4",
+            "step_title": "SHIP YOUR OLD WATCH BACK",
+            "step_description": "<p>Reset your old watch, pack it in the purple package with your order number, attach the label, and drop it at USPS. You have 7 days.</p>"
+          }
+        },
+        {
+          "type": "step",
+          "settings": {
+            "step_number": "5",
+            "step_title": "GET YOUR CREDIT",
+            "step_description": "<p>Once we receive and inspect your old watch, we issue your credit — up to $100 depending on condition. Partial refund or store credit, your call.</p>"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

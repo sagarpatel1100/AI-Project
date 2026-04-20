@@ -1,0 +1,114 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "show_title": true,
+        "page_width": "medium"
+      }
+    },
+    "1660014188b0bd482b": {
+      "type": "rich-text",
+      "settings": {
+        "section_id": "",
+        "subheading": "",
+        "title": "Payment policy",
+        "content": "<p> <strong>We accept the following credit cards:</strong></p><ul><li>American Express</li><li>Discover</li><li>Mastercard</li><li>Visa</li><li>Diners Club</li><li>Apple Pay</li><li>Google Pay</li><li>Facebook Pay</li><li>Shop Pay</li><li>JCB</li><li>Elo</li></ul><p>Once you select checkout, you will be transferred to our secure payment gateway; where you will be able to American Express, Mastercard, Visa, Discover, Diners Club, Apple Pay, Google Pay, Facebook Pay, Shop Pay, JCB, Elo.</p><p><strong>PayPal is not accepted at this moment.</strong></p><p>You can also place your order and pay later with our free-interest installments via ShopPay by Affirm. <br/><br/>Rates from 0%-36% APR. Payment options through Shop Pay Installments, are subject to an eligibility check and are provided by these lending partners: <a href=\"http://affirm.com/lenders\" title=\"http://affirm.com/lenders\">affirm.com/lenders</a>. Options depend on your purchase amount, and a down payment may be required. State notices to consumers <a href=\"https://www.affirm.com/licenses\" title=\"https://www.affirm.com/licenses\">https://www.affirm.com/licenses</a>.\"<br/></p><p><strong>Questions:</strong></p><p>Email: info@shopcarbinox.com</p><p>Monday – Friday: 9:00 AM- 6:00 PM (EST)<br/></p>",
+        "button_text": "",
+        "button_link": "",
+        "background_type": "full_width",
+        "text_width": "medium",
+        "text_position": "center",
+        "text_alignment": "left",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "1662476707accbfeee": {
+      "type": "social-media-gallery",
+      "blocks": {
+        "166247670718aab94d-0": {
+          "type": "image",
+          "settings": {
+            "logo": "shopify://shop_images/hiw4.png",
+            "link": ""
+          }
+        },
+        "166247670718aab94d-1": {
+          "type": "image",
+          "settings": {
+            "logo": "shopify://shop_images/hiw3.png",
+            "link": ""
+          }
+        },
+        "166247670718aab94d-2": {
+          "type": "image",
+          "settings": {
+            "logo": "shopify://shop_images/hiw1.png",
+            "link": ""
+          }
+        },
+        "166247670718aab94d-3": {
+          "type": "image",
+          "settings": {
+            "logo": "shopify://shop_images/hiw4.png",
+            "link": ""
+          }
+        },
+        "166247670718aab94d-4": {
+          "type": "image",
+          "settings": {
+            "logo": "shopify://shop_images/hiw3.png",
+            "link": ""
+          }
+        },
+        "166247670718aab94d-5": {
+          "type": "image",
+          "settings": {
+            "logo": "shopify://shop_images/hiw1.png",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "166247670718aab94d-0",
+        "166247670718aab94d-1",
+        "166247670718aab94d-2",
+        "166247670718aab94d-3",
+        "166247670718aab94d-4",
+        "166247670718aab94d-5"
+      ],
+      "disabled": true,
+      "settings": {
+        "reveal_on_scroll": true,
+        "subheading": "follow us",
+        "title": "join our social media",
+        "button_text": "",
+        "button_link": "",
+        "stack_logos": true,
+        "background": "#2c3036",
+        "text_color": "#f9f9f9",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)",
+        "logo_background": "rgba(0,0,0,0)"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1660014188b0bd482b",
+    "1662476707accbfeee"
+  ]
+}

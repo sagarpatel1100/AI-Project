@@ -1,0 +1,115 @@
+<div class="reward-banner">
+  <div class="reward-header">
+    Reward Unlocked! <strong>Free Shipping + Mystery Gift 🎁</strong>
+    <span class="close-btn">&times;</span>
+  </div>
+
+  <div class="deal-badge">
+    <span class="emoji">⏳</span>
+    Deal Ends in <span id="minutes">10</span>:<span id="seconds">00</span>
+  </div>
+
+  <div class="reward-content">
+    <div class="text">
+      Complete checkout and get <strong>The BlastBeam Flashlight Free!</strong>
+    </div>
+    <img src="https://cdn.shopify.com/s/files/1/0049/0533/6935/files/flashlight-cart.png?v=1755272862" alt="BlastBeam Flashlight">
+  </div>
+</div>
+
+<style>
+    .reward-banner {
+  background-color: #FFFAE8;
+  padding: 16px;
+  width: 100%;
+  display: none;
+}
+
+.reward-header {
+  font-size: 16px;
+  font-weight: normal;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.reward-header strong {
+  font-weight: bold;
+}
+
+.close-btn {
+  cursor: pointer;
+  font-size: 20px;
+  line-height: 1;
+}
+
+.deal-badge {
+  background-color: #FFC200;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 6px 10px;
+  display: inline-block;
+  margin-top: 8px;
+  border-radius: 4px;
+}
+
+.reward-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #FFC200;
+  padding: 12px;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.reward-content img {
+  width: 138px;
+  height: auto;
+}
+</style>
+
+
+<script>
+let timerInterval;
+
+function initCountdown() {
+  const banner = document.querySelector('.reward-banner');
+  const minutesEl = document.getElementById('minutes');
+  const secondsEl = document.getElementById('seconds');
+
+  const duration = 10 * 60; // 10 minutos
+  let endTime = localStorage.getItem('rewardCountdownEnd');
+
+  if (!endTime) {
+    endTime = Date.now() + duration * 1000;
+    localStorage.setItem('rewardCountdownEnd', endTime);
+  } else {
+    endTime = parseInt(endTime, 10);
+  }
+
+  function updateTimer() {
+    let totalSeconds = Math.floor((endTime - Date.now()) / 1000);
+
+    if (totalSeconds <= 0) {
+      clearInterval(timerInterval);
+      minutesEl.textContent = "00";
+      secondsEl.textContent = "00";
+      banner.style.opacity = "0.4";
+      banner.style.background = "#c2c2c2";
+      return;
+    }
+
+    const minutes = Math.floor(totalSeconds / 60);
+    const seconds = totalSeconds % 60;
+
+    minutesEl.textContent = String(minutes).padStart(2, '0');
+    secondsEl.textContent = String(seconds).padStart(2, '0');
+  }
+
+  updateTimer();
+  timerInterval = setInterval(updateTimer, 1000);
+}
+
+document.addEventListener('DOMContentLoaded', initCountdown);
+</script>

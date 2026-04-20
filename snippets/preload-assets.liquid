@@ -1,0 +1,33 @@
+<link rel="preload" href="https://shopcarbinox.com/cdn/shop/files/LOGO_PNG_255x.png?v=1661816292" as="image">
+
+{% if template contains "index" %}
+<link rel="preload" href="https://cdn.instant.so/sites/wl7SR8wlT1PS4Ej3/assets/s9FaNTsKHqWLxSbm/herodesktop-edge.webp?width=1280" as="image" media="(min-width: 1000px)">  
+<link rel="preload" href="https://cdn.instant.so/sites/wl7SR8wlT1PS4Ej3/assets/MDU6IPCwO9k7bwft/heromobile-edge.webp?width=600" as="image" media="(max-width: 1000px)">
+{% endif %}
+
+{% if template contains 'product' %}
+<link rel="preload" as="image" href="https:{{ product.media[0] | img_url: '800x' }}" media="(min-width: 1000px)">
+<link rel="preload" as="image" href="https:{{ product.media[0] | img_url: '500x' }}" media="(max-width: 1000px)">
+{% endif %}
+
+{% if request.path contains "/products/fusionbangle" %}
+<link rel="preload" href="https://shopcarbinox.com/cdn/shop/t/85/assets/instant-fQsl5vIIZqojLZ9F.css?v=70302872838628465821764088196" as="style" onload="this.rel='stylesheet'">
+{% endif %}
+
+{% comment %}
+{% if request.path contains "/products/carbinox-blaze" %}
+<link rel="preload" href="https://cdn.shopify.com/s/files/1/0049/0533/6935/files/new-banner-blaze.png?v=1757534573" as="image" media="(min-width: 1000px)">  
+<link rel="preload" href="https://cdn.shopify.com/s/files/1/0049/0533/6935/files/mobile-banner_offer_4.webp?v=1757534958" as="image" media="(max-width: 1000px)">
+{% endif %}
+{% endcomment %}
+
+<link rel="preload" href="{{ request.origin }}/cdn/shopifycloud/portable-wallets/latest/accelerated-checkout-backwards-compat.css" as="style" onload="this.rel='stylesheet'" crossorigin="anonymous">
+
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" as="style" onload="this.rel='stylesheet'">
+<link rel="preload" nohref="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" as="style" onload="this.rel='stylesheet'">
+<link rel="preload" nohref="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=Inter:wght@400&display=swap" as="style" onload="this.rel='stylesheet'">
+
+<link rel="preload" as="script" href="{{ 'libs.min.js' | asset_url }}">
+
+<link rel="preload" as="script" href="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js">
+<link rel="preload" as="script" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js">

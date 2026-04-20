@@ -1,0 +1,56 @@
+{% if section.settings.product != blank %}
+  <section class="section-{{ section.id }}">
+    {% assign product = section.settings.product %}
+    {%- render 'product-sticky-form-page', product: product -%}
+  </section>
+{% endif %}
+
+{% style %}
+  .section-{{ section.id }} .product-form__add-button{
+    background: {{ section.settings.btn_bg_color | default: '#0023ff' }};
+    color: {{ section.settings.btn_label_color | default: '#ffffff' }};
+  }
+{% endstyle %}
+
+{% schema %}
+  {
+    "name": "Product Sticky Form",
+    "class": "product-sticky--form",
+    "settings": [
+      {
+        "type": "product",
+        "id": "product",
+        "label": "Product"
+      },
+      {
+        "type": "text",
+        "id": "btn_label",
+        "label": "Button Label",
+        "default": "Add to cart + unlock gift"
+      },
+      {
+        "type": "color",
+        "id": "btn_bg_color",
+        "label": "Button BG color",
+        "default": "#0023ff"
+      },
+      {
+        "type": "color",
+        "id": "btn_label_color",
+        "label": "Button Label color",
+        "default": "#ffffff"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Product Sticky Form"
+      }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

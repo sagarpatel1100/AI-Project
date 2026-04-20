@@ -1,0 +1,217 @@
+{% if product.metafields.custom.reviews.value != blank %}
+<style>
+	.product__info .product-meta {
+		margin-top: 0 !important;
+	}
+
+	.custom-reviews-wrapper {
+		position: relative;
+		width: calc(100% + 24px);
+		max-width: 1200px;
+		margin: 6px auto 0;
+	}
+
+	.cr-slider-container {
+		width: 100%;
+		overflow: hidden;
+	}
+
+	.cr-slider-track {
+		display: flex;
+		gap: 10px;
+		overflow-x: auto;
+		scroll-snap-type: x mandatory;
+		scroll-behavior: smooth;
+		scrollbar-width: none; 
+		-ms-overflow-style: none; 
+		padding-bottom: 5px; 
+		align-items: center;
+		padding-right: 24px;
+	}
+
+	.cr-slider-track::-webkit-scrollbar {
+		display: none; 
+	}
+
+	/* Tarjetas siempre al 90% */
+	.cr-review-card {
+		flex: 0 0 95%; 
+		scroll-snap-align: center; 
+		background: #F0F0F0;
+		border-radius: 5px;
+		padding: 8px;
+		display: flex;
+		flex-direction: column;
+		box-sizing: border-box;
+		justify-content: center;
+	}
+
+	.cr-stars {
+		margin-bottom: 5px;
+		display: flex;
+	}
+
+	.cr-text {
+		font-size: 9px !important;
+		line-height: 1.4;
+		color: #232323;
+		margin-bottom: 5px;
+		flex-grow: 1; 
+	}
+
+	.cr-author {
+		display: flex;
+		align-items: center;
+		gap: 4px;
+	}
+
+	.cr-avatar {
+		width: 16px;
+		height: 16px;
+		border-radius: 50%;
+		object-fit: cover;
+	}
+
+	.cr-name {
+		font-weight: 700;
+		font-size: 9px !important;
+		color: #000;
+	}
+
+	.cr-verified {
+		display: flex;
+		align-items: center;
+	}
+
+	/* Flechas con posición absoluta */
+	.cr-arrow {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		background: #ffffff; /* Fondo para que destaque sobre la tarjeta gris */
+		border: none;
+		border-radius: 50%;
+		cursor: pointer;
+		padding: 2px !important;
+		z-index: 10;
+		color: #333;
+		display: none !important; /* Ocultas en mobile por defecto */
+		align-items: center;
+		justify-content: center;
+		box-shadow: 0 2px 6px rgba(0,0,0,0.15); /* Sombra para darle profundidad */
+	}
+
+	.cr-arrow:hover {
+		color: #000;
+		background: #f9f9f9;
+	}
+
+	.cr-prev {
+		left: -20px; 
+	}
+
+	.cr-next {
+		right: -20px; 
+	}
+
+	/* Mostrar flechas solo en Desktop */
+	@media (min-width: 768px) {
+		.cr-arrow {
+			display: flex !important;
+		}
+		.cr-text {
+			font-size: 11px !important;
+		}
+		.custom-reviews-wrapper {
+			width: 100%;
+			margin-top: 0;
+		}
+		.cr-slider-track {
+			padding-right: 0;
+		}
+		.cr-review-card {
+			flex: 0 0 70%; 
+		}
+	}
+</style>
+
+<div class="custom-reviews-wrapper">
+  <button class="cr-arrow cr-prev" aria-label="Anterior">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+  </button>
+
+  <div class="cr-slider-container">
+    <div class="cr-slider-track" id="cr-slider-track">
+      
+      {% for review in product.metafields.custom.reviews.value %}
+        <div class="cr-review-card">
+          <div class="cr-stars">
+            <svg xmlns="http://www.w3.org/2000/svg" width="47" height="10" viewBox="0 0 47 10" fill="none">
+				<path d="M4.57522 0L5.71311 3.06513L8.92779 3.21982L6.41634 5.26885L7.26527 8.42962L4.57522 6.63086L1.88519 8.42962L2.73409 5.26885L0.222656 3.21982L3.43734 3.06513L4.57522 0Z" fill="#FFC200"/>
+				<path d="M13.7276 0L14.8655 3.06513L18.0802 3.21982L15.5687 5.26887L16.4176 8.4296L13.7276 6.63084L11.0376 8.4296L11.8865 5.26887L9.375 3.21982L12.5897 3.06513L13.7276 0Z" fill="#FFC200"/>
+				<path d="M22.8839 0L24.0217 3.06513L27.2364 3.21982L24.725 5.26887L25.5739 8.4296L22.8839 6.63084L20.1938 8.4296L21.0427 5.26887L18.5312 3.21982L21.7459 3.06513L22.8839 0Z" fill="#FFC200"/>
+				<path d="M32.0362 0L33.174 3.06513L36.3887 3.21982L33.8773 5.26887L34.7262 8.4296L32.0362 6.63084L29.3462 8.4296L30.1951 5.26887L27.6836 3.21982L30.8983 3.06513L32.0362 0Z" fill="#FFC200"/>
+				<path d="M41.1885 0L42.3264 3.06513L45.5411 3.21982L43.0296 5.26887L43.8785 8.4296L41.1885 6.63084L38.4985 8.4296L39.3474 5.26887L36.8359 3.21982L40.0506 3.06513L41.1885 0Z" fill="#FFC200"/>
+			</svg>
+          </div>
+          
+          <div class="cr-text">
+            {{ review.text | metafield_tag | default: review.Text }}
+          </div>
+          
+          <div class="cr-author">
+            {% if review.image != blank or review.Image != blank %}
+              {% assign img_obj = review.image | default: review.Image %}
+              {{ img_obj | image_url: width: 48 | image_tag: class: 'cr-avatar', alt: review.name, loading: 'lazy' }}
+            {% endif %}
+            
+            <span class="cr-name">{{ review.name | default: review.Name }}</span>
+            
+            <span class="cr-verified">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="15" viewBox="0 0 14 15" fill="none">
+                <path d="M8.42013 0.924805L6.64228 2.06593L4.86202 0.924805L3.8917 2.80289L1.77945 2.70425L1.87809 4.8157L0 5.78682L1.14113 7.56708L0 9.34493L1.87809 10.316L1.77945 12.4275L3.8909 12.3288L4.86122 14.2069L6.64068 13.0658L8.42013 14.2085L9.39125 12.3304L11.5027 12.4291L11.4049 10.3176L13.2838 9.34493L12.1434 7.56708L13.2846 5.78763L11.4065 4.81731L11.5043 2.70586L9.39286 2.80369L8.42013 0.924805Z" fill="#FFC200"/>
+                <path d="M5.56978 9.79865L3.60028 7.83075C3.54357 7.77392 3.51172 7.69692 3.51172 7.61663C3.51172 7.53635 3.54357 7.45935 3.60028 7.40252L4.0285 6.9743C4.08533 6.91759 4.16233 6.88574 4.24261 6.88574C4.32289 6.88574 4.3999 6.91759 4.45672 6.9743L5.7839 8.30067L8.62589 5.45868C8.68272 5.40197 8.75972 5.37012 8.84 5.37012C8.92028 5.37012 8.99729 5.40197 9.05411 5.45868L9.48234 5.8869C9.53905 5.94373 9.57089 6.02073 9.57089 6.10101C9.57089 6.18129 9.53905 6.25829 9.48234 6.31512L5.99721 9.79865C5.94041 9.85511 5.86358 9.88681 5.7835 9.88681C5.70341 9.88681 5.62658 9.85511 5.56978 9.79865Z" fill="black"/>
+              </svg>
+            </span>
+          </div>
+        </div>
+      {% endfor %}
+      
+    </div>
+  </div>
+
+  <button class="cr-arrow cr-next" aria-label="Siguiente">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+  </button>
+</div>
+
+<script>
+	document.addEventListener('DOMContentLoaded', () => {
+		const track = document.getElementById('cr-slider-track');
+		const btnPrev = document.querySelector('.cr-prev');
+		const btnNext = document.querySelector('.cr-next');
+
+		if (!track || !btnPrev || !btnNext) return;
+
+		const scrollAmount = () => {
+			// Calculamos el ancho de la tarjeta + el gap de 8px
+			const card = track.querySelector('.cr-review-card');
+			return card ? card.offsetWidth + 8 : 0; 
+		};
+
+		btnNext.addEventListener('click', () => {
+			track.scrollBy({
+				left: scrollAmount(),
+				behavior: 'smooth'
+			});
+		});
+
+		btnPrev.addEventListener('click', () => {
+			track.scrollBy({
+				left: -scrollAmount(),
+				behavior: 'smooth'
+			});
+		});
+	});
+</script>
+{% endif %}

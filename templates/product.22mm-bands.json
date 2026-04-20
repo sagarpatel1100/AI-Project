@@ -1,0 +1,156 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "b9e72b96-fe22-4a5b-a33d-6295718711b7": {
+          "type": "text",
+          "settings": {
+            "text": "<h4><strong>*</strong><span style=\"text-decoration:underline\"><strong>THESE BANDS ARE COMPATIBLE WITH THE FOLLOWING MODELS:<br/></strong></span><strong><br/>⌚️CARBINOX VESTA<br/>⌚️CARBINOX X-RANGER<br/>⌚️CARBINOX VORTEX<br/>⌚️ CARBINOX BLAZE TYPE R<br/>⌚️ CARBINOX BLAZE TYPE S<br/>⌚️ CARBINOX EDGE</strong></h4>"
+          }
+        },
+        "aa8adaeb-d404-4d2d-9f7b-7c87d4a68e8f": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_payment_button": true,
+            "atc_button_background": "#0023ff",
+            "atc_button_text_color": "#f9f9f9",
+            "buy_now_button_background": "rgba(0,0,0,0)",
+            "buy_now_button_text_color": "rgba(0,0,0,0)"
+          }
+        },
+        "54d2e274-c4e9-4efe-b6da-5bfe93a94d13": {
+          "type": "social_share_icons",
+          "disabled": true,
+          "settings": {
+            "icon_1": "shopify://shop_images/1_e9a71822-007d-44ff-8d36-cd9d1d56a572.png",
+            "icon_text_1": "<p><strong>TRY IT OUT FOR 45 DAYS RISK-FREE. EASY RETURNS!</strong></p>",
+            "icon_2": "shopify://shop_images/2_488612df-9e8b-4df8-ad46-4984a06f6a06.png",
+            "icon_text_2": "<p><strong>SPEND +$50 AND GET A FREE GIFT!</strong></p>",
+            "icon_3": "shopify://shop_images/3_35fa32d6-9ea8-4d3e-a58e-e4347fe98115.png",
+            "icon_text_3": "<p><strong>+200K SECURED AND SUCCESSFUL DELIVERIES!</strong></p>"
+          }
+        },
+        "4405410f-d098-41a4-9d3e-7f9d8e5edf7d": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/SHOP_NOW_PAY_LATER_WITH-3.png",
+            "image_alignment": "center",
+            "image_width": 460
+          }
+        }
+      },
+      "block_order": [
+        "b9e72b96-fe22-4a5b-a33d-6295718711b7",
+        "aa8adaeb-d404-4d2d-9f7b-7c87d4a68e8f",
+        "54d2e274-c4e9-4efe-b6da-5bfe93a94d13",
+        "4405410f-d098-41a4-9d3e-7f9d8e5edf7d"
+      ],
+      "custom_css": [
+        "}button {margin-top: -20px;}"
+      ],
+      "settings": {
+        "delivery_time": "",
+        "show_vendor": false,
+        "show_sku": false,
+        "show_taxes_included": false,
+        "show_product_rating": true,
+        "show_sticky_add_to_cart": true,
+        "show_payment_methods": false,
+        "show_share_buttons": false,
+        "help_page": "",
+        "enable_video_autoplay": true,
+        "enable_video_looping": false,
+        "enable_image_zoom": false,
+        "show_thumbnails_on_mobile": false,
+        "desktop_thumbnails_position": "bottom",
+        "transition_effect": "slide"
+      }
+    },
+    "3ae1b34f-6363-4ef9-932a-ff1c5140152c": {
+      "type": "featured-collections",
+      "blocks": {
+        "template--14852029349991__3ae1b34f-6363-4ef9-932a-ff1c5140152c-collection-1": {
+          "type": "collection",
+          "settings": {
+            "collection": "carbinox-bands-22mm",
+            "label": "",
+            "button_text": "",
+            "button_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--14852029349991__3ae1b34f-6363-4ef9-932a-ff1c5140152c-collection-1"
+      ],
+      "custom_css": [
+        "H2 {font-size: 18px; letter-spacing: -0.5px;}",
+        "h3 {font-size: 24px;}"
+      ],
+      "settings": {
+        "subheading": "one isn't enough?",
+        "title": "CHECK ALL THE ONES WE HAVE FOR YOUR CARBINOX WATCH:",
+        "heading_alignment": "center",
+        "content": "",
+        "products_count": 50,
+        "products_per_row": 4,
+        "stack_products": true,
+        "show_cta": true,
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "1660763234e5fce699": {
+      "type": "scroll-bar",
+      "disabled": true,
+      "settings": {
+        "scroll-show": true,
+        "scro1": "$29.99 TACTICAL PEN INCLUDED ON YOUR PACKAGE AT NO COST!"
+      }
+    },
+    "product-content": {
+      "type": "product-content",
+      "disabled": true,
+      "settings": {}
+    },
+    "bd6b6952-806f-42b1-988d-6344239a7046": {
+      "type": "custom-liquid",
+      "settings": {
+        "subheading": "",
+        "title": "",
+        "liquid": "<script type=\"text/javascript\">\nvar _learnq = _learnq || [];\n  var classname = document.getElementsByClassName(\"product-form__add-button button button--secondary button--full\");\nvar addToCart = function() {\n_learnq.push(['track', 'Added to Cart', item]);\n}; for (var i = 0; i < classname.length; i++) {\nclassname[i].addEventListener('click', addToCart, false);\n}\n</script>",
+        "add_vertical_spacing": false,
+        "background_type": "full_width",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "1703875286011c6220": {
+      "type": "apps",
+      "settings": {
+        "include_horizontal_margins": true,
+        "include_vertical_margins": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "3ae1b34f-6363-4ef9-932a-ff1c5140152c",
+    "1660763234e5fce699",
+    "product-content",
+    "bd6b6952-806f-42b1-988d-6344239a7046",
+    "1703875286011c6220"
+  ]
+}

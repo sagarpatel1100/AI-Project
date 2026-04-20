@@ -1,0 +1,220 @@
+.trade-in-how-it-works {
+  background-color: var(--trade-in-how-it-works-bg);
+}
+
+.trade-in-how-it-works__inner {
+  padding-top: var(--trade-in-how-it-works-padding-top);
+  padding-right: var(--trade-in-how-it-works-padding-horizontal);
+  padding-bottom: var(--trade-in-how-it-works-padding-bottom);
+  padding-left: var(--trade-in-how-it-works-padding-horizontal);
+}
+
+.trade-in-how-it-works__container {
+  width: 100%;
+  max-width: var(--trade-in-how-it-works-content-max-width);
+  margin: 0 auto;
+}
+
+.trade-in-how-it-works__intro {
+  max-width: var(--trade-in-how-it-works-steps-max-width-desktop);
+  margin: 0 auto var(--trade-in-how-it-works-heading-gap-desktop);
+}
+
+.trade-in-how-it-works__heading {
+  margin: 0;
+  color: var(--trade-in-how-it-works-heading-color);
+  font-size: var(--trade-in-how-it-works-heading-size-desktop);
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  padding-left: 60px;
+}
+
+.trade-in-how-it-works__heading-text--highlight {
+  color: var(--trade-in-how-it-works-highlight-color);
+  font-style: italic;
+}
+
+.trade-in-how-it-works__steps {
+  position: relative;
+  max-width: var(--trade-in-how-it-works-steps-max-width-desktop);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: var(--trade-in-how-it-works-steps-gap-desktop);
+}
+
+.trade-in-how-it-works__steps::before {
+  content: "";
+  position: absolute;
+  left: 14px;
+  top: 17px;
+  bottom: 17px;
+  width: 1px;
+  background: #ffc200;
+}
+
+.trade-in-how-it-works__steps-rail {
+  display: none;
+  position: absolute;
+  top: calc(
+    var(--trade-in-how-it-works-heading-size-desktop) +
+      var(--trade-in-how-it-works-heading-gap-desktop) + 6px
+  );
+  bottom: calc(var(--trade-in-how-it-works-circle-size-desktop) / 2);
+  left: calc(
+    (var(--trade-in-how-it-works-rail-width-desktop) / 2) -
+      (var(--trade-in-how-it-works-line-width) / 2)
+  );
+  width: var(--trade-in-how-it-works-line-width);
+  background-color: var(--trade-in-how-it-works-timeline-color);
+  pointer-events: none;
+}
+
+.trade-in-how-it-works__step {
+  display: grid;
+  grid-template-columns: var(--trade-in-how-it-works-rail-width-desktop) minmax(
+      0,
+      1fr
+    );
+  column-gap: var(--trade-in-how-it-works-rail-content-gap-desktop);
+  align-items: start;
+}
+
+.trade-in-how-it-works__step-number {
+  position: relative;
+  z-index: 1;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.trade-in-how-it-works__step-rail {
+  display: flex;
+  justify-content: center;
+}
+
+.trade-in-how-it-works__step-circle {
+  position: relative;
+  z-index: 1;
+  width: var(--trade-in-how-it-works-circle-size-desktop);
+  height: var(--trade-in-how-it-works-circle-size-desktop);
+  border-radius: 999px;
+  background-color: var(--trade-in-how-it-works-step-circle-bg);
+  color: var(--trade-in-how-it-works-step-circle-text);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.trade-in-how-it-works__step-content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--trade-in-how-it-works-step-gap-desktop);
+  min-width: 0;
+}
+
+.trade-in-how-it-works__step-title {
+  margin: 0;
+  color: var(--trade-in-how-it-works-step-title-color);
+  font-size: var(--trade-in-how-it-works-step-title-size-desktop);
+  font-weight: 600;
+  line-height: 1.1;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+}
+
+.trade-in-how-it-works__step-description {
+  margin: 0;
+  color: var(--trade-in-how-it-works-step-description-color);
+  opacity: 0.6;
+  font-size: var(--trade-in-how-it-works-step-description-size-desktop);
+  font-weight: 400;
+  line-height: 1.125;
+  letter-spacing: -0.01em;
+}
+
+.trade-in-how-it-works__step-description p {
+  margin: 0;
+}
+
+@media screen and (max-width: 767px) {
+  .trade-in-how-it-works__inner {
+    padding-top: var(--trade-in-how-it-works-padding-top-mobile);
+    padding-right: var(--trade-in-how-it-works-padding-horizontal-mobile);
+    padding-bottom: var(--trade-in-how-it-works-padding-bottom-mobile);
+    padding-left: var(--trade-in-how-it-works-padding-horizontal-mobile);
+  }
+
+  .trade-in-how-it-works__container {
+    max-width: 390px;
+  }
+
+  .trade-in-how-it-works__intro {
+    max-width: var(--trade-in-how-it-works-steps-max-width-mobile);
+    margin-bottom: var(--trade-in-how-it-works-heading-gap-mobile);
+  }
+
+  .trade-in-how-it-works__heading {
+    font-size: var(--trade-in-how-it-works-heading-size-mobile);
+    line-height: 1;
+    text-align: center;
+    padding-left: 0px;
+  }
+
+  .trade-in-how-it-works__steps {
+    max-width: 390px;
+    gap: var(--trade-in-how-it-works-steps-gap-mobile);
+  }
+
+  .trade-in-how-it-works__steps::before {
+    left: 15px;
+    top: 17px;
+    bottom: 17px;
+  }
+
+  .trade-in-how-it-works__steps-rail {
+    top: calc(var(--trade-in-how-it-works-heading-size-mobile) * 2 + 12px);
+    bottom: calc(var(--trade-in-how-it-works-circle-size-mobile) / 2);
+    left: calc(
+      (var(--trade-in-how-it-works-rail-width-mobile) / 2) -
+        (var(--trade-in-how-it-works-line-width) / 2)
+    );
+    display: none;
+  }
+
+  .trade-in-how-it-works__step {
+    grid-template-columns:
+      var(--trade-in-how-it-works-rail-width-mobile)
+      minmax(0, 1fr);
+    column-gap: var(--trade-in-how-it-works-rail-content-gap-mobile);
+  }
+
+  .trade-in-how-it-works__step-circle {
+    width: var(--trade-in-how-it-works-circle-size-mobile);
+    height: var(--trade-in-how-it-works-circle-size-mobile);
+    font-size: 16px;
+  }
+
+  .trade-in-how-it-works__step-content {
+    gap: var(--trade-in-how-it-works-step-gap-mobile);
+  }
+
+  .trade-in-how-it-works__step-title {
+    font-size: var(--trade-in-how-it-works-step-title-size-mobile);
+    line-height: 1.1;
+  }
+
+  .trade-in-how-it-works__step-description {
+    font-size: var(--trade-in-how-it-works-step-description-size-mobile);
+    line-height: 1.25;
+  }
+}

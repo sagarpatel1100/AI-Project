@@ -1,0 +1,106 @@
+{%- liquid
+  assign footer_bg = section.settings.footer_bg
+  assign logo = section.settings.logo
+  assign links = section.blocks
+  assign copyright = section.settings.copyright
+-%}
+
+{{ 'footer-adventorial.css' | asset_url | stylesheet_tag }}
+
+<div id="footer-adventorial-{{ section.id }}" class="footer-adventorial" style="background-color: {{ footer_bg }}">
+
+  <div class="footer-adventorial__container">
+
+    {%- if logo != blank -%}
+      <div class="footer-adventorial__logo-wrapper">
+        <img src="{{ logo | image_url }}" alt="Footer Logo" class="footer-adventorial__logo" loading="lazy">
+      </div>
+    {%- endif -%}
+
+    {%- if section.blocks.size > 0 -%}
+      <div class="footer-adventorial__links">
+        {%- for block in section.blocks -%}
+          {%- if block.settings.link_label != blank and block.settings.link_url != blank -%}
+            <a href="{{ block.settings.link_url }}" class="footer-adventorial__link">
+              {{ block.settings.link_label }}
+            </a>
+          {%- endif -%}
+        {%- endfor -%}
+      </div>
+    {%- endif -%}
+
+    {%- if copyright != blank -%}
+      <div class="footer-adventorial__copyright">
+        {{ copyright }}
+      </div>
+    {%- endif -%}
+
+  </div>
+
+</div>
+
+<style>
+  #footer-adventorial-{{ section.id }} {
+    padding: 40px 0;
+    color: #FFFFFF;
+    text-align: center;
+  }
+
+  @media (max-width: 768px) {
+    #footer-adventorial-{{ section.id }} {
+      padding: 30px 0;
+    }
+  }
+</style>
+
+{% schema %}
+{
+  "name": "Footer Adventorial",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "color",
+      "id": "footer_bg",
+      "label": "Footer background color",
+      "default": "#395B36"
+    },
+    {
+      "type": "image_picker",
+      "id": "logo",
+      "label": "Footer logo"
+    },
+    {
+      "type": "text",
+      "id": "copyright",
+      "label": "Copyright text",
+      "default": "©2025 CARBINOX – All Rights Reserved."
+    }
+  ],
+  "blocks": [
+    {
+      "type": "link",
+      "name": "Footer link",
+      "settings": [
+        {
+          "type": "text",
+          "id": "link_label",
+          "label": "Link label",
+          "default": "Privacy Policy"
+        },
+        {
+          "type": "url",
+          "id": "link_url",
+          "label": "Link URL"
+        }
+      ]
+    }
+  ],
+  "max_blocks": 3,
+  "presets": [
+    {
+      "name": "Footer Adventorial",
+      "category": "Footer"
+    }
+  ]
+}
+{% endschema %}

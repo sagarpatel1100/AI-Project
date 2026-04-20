@@ -1,0 +1,52 @@
+
+<!-- risk free -->
+	<section class="ridge-risk-free">
+		<div class="ridge-container">
+			<div class="ridge-risk-free-main">
+              {% for block in section.blocks %}
+				<div class="ridge-risk-free-item">
+					{{ block.settings.ridge-risk-free-item-image1 | img_url: 'master' | img_tag }}
+					<h3>{{ block.settings.ridge-risk-free-item-heading1 }}</h3>
+				</div>
+              {% endfor %}
+				
+			</div>
+		</div>
+	</section>
+
+
+
+{% schema %}
+  {
+   "name":"Risk Free",
+     "blocks": [
+     {
+       "name": "List Items",
+       "type": "List-item",
+    "settings": [
+      	
+      
+      	{
+           "type": "image_picker",
+           "id": "ridge-risk-free-item-image1",
+           "label": "Item Image"
+         },
+      {
+      "type": "text",
+      "id": "ridge-risk-free-item-heading1",
+      "label": "Heading"
+    }
+    ],
+       
+   
+  }
+     ],
+     "presets" : [
+{
+  "name" : "List-item",
+  "category" : "List-item",
+
+  }
+]
+  }
+{% endschema %}

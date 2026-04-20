@@ -1,0 +1,103 @@
+{% liquid
+    assign s = section.settings
+    assign title = s.title
+    assign text = s.text
+    assign review_text = s.review_text
+    assign name = s.name
+%}
+
+<div class="image-text">
+    <div class="container">
+        <div class="image-text-wrap">
+            <div class="image-text-contents">
+                <h3 class="image-text-title">{{title}}</h3>
+                <div class="image-text-content desk">
+                    {{text}}
+                </div>
+            </div>
+            <div class="image-text-media">
+                <div class="image-text-images">
+                    {% for block in section.blocks %}
+                    <div class="image-text-image" id="image-text_{{ forloop.index }}">
+                        <img src="{{block.settings.img | img_url: 'master'}}" class="image-text-img" alt="img">
+                    </div>
+                    {% endfor %}
+                </div>
+                <div class="image-text-content mobile">
+                    {{text}}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="single-review">
+    <div class="container">
+        <div class="single-review-content">
+            <img src="{{'star.svg' | asset_url }}" class="review-star" alt="img" width="94" height="14">
+            <p class="single-review-text">
+                {{review_text}}
+            </p>
+            <div class="single-review-meta">
+                <h5 class="single-review-name">{{name}}</h5>
+                <div class="single-review-verified">
+                    <img src="{{'verified.svg' | asset_url}}" class="verifeid" width="14" height="14">
+                    <span class="verified-text">Verified Purchase</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% schema %}
+    {
+        "name" : "Image & Text", 
+        "tag" : "section",
+        "class" : "image-text-area",
+        "settings" : [
+            {
+                "type": "textarea",
+                "id": "title",
+                "label": "Title",
+                "default": "WE TESTED OUR WATCHES IN EXTREME CONDITIONS AND HOW DID WE FARE?"
+            },
+            {
+                "type": "richtext",
+                "id": "text",
+                "label": "Text",
+                "default": "<p>After months of rigorous testing against different conditions, we have built the perfect watch that can withstand a 10,000 lbs of weight (equivalent to the weight of a fully grown adult elephant), take blows from tools and can withstand temperatures ranging from -22 F to 150 F. The tough, shock-resistant body and scratch-resistant screen protects your watch from bumps, drops, and scratches, ensuring it lasts for years to come. We stress tested our watches multiple times to bring you the strongest smartwatch in the market.</p>"
+            },
+            {
+                "type": "header",
+                "content": "Review"
+            },
+            {
+                "type": "textarea",
+                "id": "review_text",
+                "label": "Text",
+                "default": "“Carbinox watches are very Durable and really dependable, my line of work persists of maintaining heavy equipment in the HAVC field, I’m very pleased !! I’ve been through so many watches of different brands. I’m very satisfied with Carbinox”"
+            },
+            {
+                "type": "text",
+                "id": "name",
+                "label": "Name",
+                "default": "-John Chris Locklear"
+            }
+        ],
+        "blocks": [
+            {
+                "name": "Media",
+                "type": "media",
+                "settings": [
+                    {
+                        "type": "image_picker",
+                        "id": "img",
+                        "label": "Image"
+                    }
+                ]
+            }
+        ],
+        "presets": [
+            {"name" : "Image & Text"}
+        ]
+    }
+{% endschema %}

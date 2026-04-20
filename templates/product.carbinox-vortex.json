@@ -1,0 +1,1022 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "rich_text_RPLp7f": {
+      "type": "rich-text",
+      "disabled": true,
+      "custom_css": [
+        "h3 {font-size: 21px;}",
+        "div {margin-block: -6px;}"
+      ],
+      "settings": {
+        "section_id": "",
+        "subheading": "available for the next 24 hours only ⏰",
+        "title": "PAY ONLY $122.36 IF YOU USE THE CODE “NEWYEAR” TO CLAIM 32% OFF today! ",
+        "content": "",
+        "button_text": "",
+        "button_link": "",
+        "background_type": "full_width",
+        "text_width": "fill",
+        "text_position": "center",
+        "text_alignment": "center",
+        "background": "#f9f9f9",
+        "text_color": "#000000",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "94157900-ca99-4d79-b443-7f058350974e": {
+          "type": "text",
+          "settings": {
+            "text": "<h4>🥇AMERICA'S TOP RATED SMARTWATCH FOR BLUE COLLAR WORKERS, TRUCK DRIVERS, MANAGERS, OPERATORS AND MECHANICS.<br/><br/>🇺🇸 U.S MIL-STD CERTIFIED & IP69K WATERPROOF. FULLY RESISTANT AGAINST HARD IMPACTS.<br/><br/>🔋 14-DAY BATTERY LIFE ON  A SINGLE 90-MINUTE CHARGE, PLUS BLUETOOTH CALLING TECHNOLOGY.<strong><br/></strong></h4>"
+          }
+        },
+        "54d2e274-c4e9-4efe-b6da-5bfe93a94d13": {
+          "type": "social_share_icons",
+          "settings": {
+            "icon_1": "shopify://shop_images/Diseno_sin_titulo_-_2024-11-07T181009.445.png",
+            "icon_text_1": "<p><strong>U.S MIL-STD 810H CERTIFIED</strong></p>",
+            "icon_2": "shopify://shop_images/2_e3698ff8-966b-493e-aa75-0881daa5f95e.png",
+            "icon_text_2": "<p>DESIGNED AND BUILT FOR AMERICA</p>",
+            "icon_3": "shopify://shop_images/3_fd5dc79c-8064-4d08-9c53-a1102be5bd8f.png",
+            "icon_text_3": "<p><strong>IP69K WATERPROOF RATING</strong></p>"
+          }
+        },
+        "77b0126f-d176-4e47-b6f3-d2424b9b32ea": {
+          "type": "variant_picker",
+          "disabled": true,
+          "settings": {
+            "hide_sold_out_variants": false,
+            "selector_mode": "block",
+            "color_mode": "block",
+            "size_chart_page": ""
+          }
+        },
+        "aa8adaeb-d404-4d2d-9f7b-7c87d4a68e8f": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_payment_button": false,
+            "atc_button_background": "#ffc200",
+            "atc_button_text_color": "#000000",
+            "buy_now_button_background": "rgba(0,0,0,0)",
+            "buy_now_button_text_color": "rgba(0,0,0,0)"
+          }
+        },
+        "button_P3FFgz": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "link": "https://www.amazon.com/s?k=carbinox&crid=2OABJAQ0WQM0X&sprefix=carbinox%2Caps%2C109&ref=nb_sb_noss_1",
+            "text": "BUY ON AMAZON ➔",
+            "stretch": true,
+            "background": "#ffc200",
+            "text_color": "#000000"
+          }
+        },
+        "text_MJw8Hk": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<h5><strong>🟢 SHIPS FROM MIAMI, FL IN LESS THAN 24 HOURS!</strong></h5>"
+          }
+        },
+        "4ac75f75-351e-49cb-9367-33b5cfe6a9bd": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/3-min_2.png",
+            "image_alignment": "center",
+            "image_width": 440
+          }
+        },
+        "guarantee_banner_7jQLtN": {
+          "type": "guarantee_banner",
+          "settings": {
+            "badge": "shopify://shop_images/3-min_2_440x_png.png",
+            "title_start": "NO B.S. LIFETIME WARRANTY:",
+            "title_highlight": "BREAK IT. WE'LL REPLACE IT.",
+            "description": "<b>If your watch ever fails, we'll send you a new one FOR FREE. No questions asked.</b>"
+          }
+        },
+        "new_guarantee_banner_GrAAGX": {
+          "type": "new-guarantee_banner",
+          "disabled": true,
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "94157900-ca99-4d79-b443-7f058350974e",
+        "54d2e274-c4e9-4efe-b6da-5bfe93a94d13",
+        "77b0126f-d176-4e47-b6f3-d2424b9b32ea",
+        "aa8adaeb-d404-4d2d-9f7b-7c87d4a68e8f",
+        "button_P3FFgz",
+        "text_MJw8Hk",
+        "4ac75f75-351e-49cb-9367-33b5cfe6a9bd",
+        "guarantee_banner_7jQLtN",
+        "new_guarantee_banner_GrAAGX"
+      ],
+      "custom_css": [
+        "button {padding: 4px; font-size: 16px;}",
+        "h5 {font-size: 13px; color: #11a603; text-align: center;}",
+        "div {font-size: 14px;}",
+        "h4 {font-size: 12px; letter-spacing: -0.3px; text-align: left;}",
+        ".price--highlight {font-size: 20px;}",
+        ".label--highlight {font-size: 13px;}"
+      ],
+      "settings": {
+        "delivery_time": "",
+        "show_vendor": false,
+        "show_sku": false,
+        "show_taxes_included": false,
+        "show_product_rating": true,
+        "show_sticky_add_to_cart": true,
+        "show_payment_methods": false,
+        "show_share_buttons": false,
+        "help_page": "",
+        "enable_video_autoplay": false,
+        "enable_video_looping": false,
+        "enable_image_zoom": false,
+        "show_thumbnails_on_mobile": true,
+        "desktop_thumbnails_position": "bottom",
+        "transition_effect": "slide"
+      }
+    },
+    "e9dc35e4-0664-46cf-ad4f-0d4aa37441e3": {
+      "type": "rich-text",
+      "disabled": true,
+      "custom_css": [
+        "h3 {font-size: 24px;}",
+        "p {font-size: 17px; letter-spacing: -0.5px;}"
+      ],
+      "settings": {
+        "section_id": "",
+        "subheading": "",
+        "title": "ABOUT ULTIMATE PACK:",
+        "content": "<p>Includes one Carbinox Vortex, Tempered Glass Pack, USB Charging Cord and Black Metal Band + 6 Limited Edition Straps.</p>",
+        "button_text": "",
+        "button_link": "",
+        "background_type": "full_width",
+        "text_width": "fill",
+        "text_position": "center",
+        "text_alignment": "center",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "rich_text_yrrWDG": {
+      "type": "rich-text",
+      "custom_css": [
+        "h2 {color: #ffc200; font-size: 22px;}",
+        "h3 {font-size: 14px;}",
+        "div {margin-block: -5px;}"
+      ],
+      "settings": {
+        "section_id": "",
+        "subheading": "★★★★★",
+        "title": "\"IT'S THE BEST GIFT I'VE EVER RECEIVED. I'D NEED TO WEAR FIVE DIFFERENT WATCHES AT THE SAME TIME TO GET THE SAME FEATURES THIS ONE HAS\".",
+        "content": "<h5><strong>Michael S., Construction Worker.</strong></h5>",
+        "button_text": "",
+        "button_link": "",
+        "background_type": "full_width",
+        "text_width": "fill",
+        "text_position": "center",
+        "text_alignment": "center",
+        "background": "#eeeeee",
+        "text_color": "#000000",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "gallery_NiMUyk": {
+      "type": "gallery",
+      "blocks": {
+        "image_ngA89L": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/5-min_2.jpg",
+            "caption": ""
+          }
+        },
+        "image_7MxmUU": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/3-min_3.jpg",
+            "caption": ""
+          }
+        },
+        "image_a4VjY7": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/4-min_3.jpg",
+            "caption": ""
+          }
+        },
+        "image_4t94DC": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/1-min_2.jpg",
+            "caption": ""
+          }
+        },
+        "image_UmtNAK": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/2-min_2.jpg",
+            "caption": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_ngA89L",
+        "image_7MxmUU",
+        "image_a4VjY7",
+        "image_4t94DC",
+        "image_UmtNAK"
+      ],
+      "custom_css": [
+        "h2 {font-size: 13px;}",
+        "h3 {font-size: 22px;}"
+      ],
+      "settings": {
+        "subheading": "",
+        "title": "🇺🇸 BACKED BY 350,000+ FRONTLINE ESSENTIAL WORKERS across america!",
+        "show_arrows": true,
+        "background": "#000000",
+        "text_color": "#ffffff"
+      }
+    },
+    "product-content": {
+      "type": "product-content",
+      "blocks": {
+        "description": {
+          "type": "description",
+          "disabled": true,
+          "settings": {}
+        },
+        "bc751217-69a0-4865-b75f-a3750a2b9c28": {
+          "type": "content",
+          "disabled": true,
+          "settings": {
+            "title": "x-ranger SPECIFICATIONS:",
+            "content": "<h6><strong>- Full Metal Bezel and Body<br/>- Waterproof Technology<br/>- 70 SPORTS MODES<br/>- 410mAh of battery<br/>- 14 days of battery within one charge<br/>- 1.43’’ AMOLED Display<br/>- Heart Rate Sensor: VP60<br/>- Pedometer Sensor: STK8325<br/>- OXYGEN TRACKING<br/>- STEPS COUNTER<br/>- SLEEP MODE<br/>- Scratch-proof tempered glass<br/>- Microphone & Speaker INTEGRATED<br/>- social media notifications<br/>- alarm<br/>- Calendar<br/>- Weather tracking<br/>- CARBINOX APP<br/>- COMPATIBLE WITH ANDROID AND IOS<br/>- Diameter: 44mm<br/>- Weight: 100 gR</strong></h6>",
+            "page": ""
+          }
+        },
+        "c6ed9da0-bdf5-43a3-8685-71d9c9d6fcf6": {
+          "type": "content",
+          "settings": {
+            "title": "Package includes:",
+            "content": "<h6>1x carbinox x-ranger<br/>1x usb charging cable<br/>1x Instructions Manual<br/>1x Free Gift 🎁</h6>",
+            "page": ""
+          }
+        },
+        "3429e515-9812-4e6e-8dcb-71d5cf1a780b": {
+          "type": "content",
+          "settings": {
+            "title": "GUARANTEES:",
+            "content": "<h6>THE CARBINOX X-RANGER COMES WITH A 45-DAY RISK FREE GUARANTEE. FAST RETURNS OR REPLACEMENTS AT NO COST. WE'VE GOT YOU COVERED.</h6>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "description",
+        "bc751217-69a0-4865-b75f-a3750a2b9c28",
+        "c6ed9da0-bdf5-43a3-8685-71d9c9d6fcf6",
+        "3429e515-9812-4e6e-8dcb-71d5cf1a780b"
+      ],
+      "disabled": true,
+      "custom_css": [],
+      "settings": {}
+    },
+    "3afaf0dd-bef3-46c5-9f9d-42e70684a19b": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--14658305654887__3afaf0dd-bef3-46c5-9f9d-42e70684a19b-item-1": {
+          "type": "item",
+          "settings": {
+            "show_video": true,
+            "video_link": "https://cdn.shopify.com/videos/c/o/v/94bdcd1da4304b60a3bf147d4be5efb8.mp4",
+            "tab_label": "Item",
+            "subheading": "",
+            "title": "THE MOST DURABLE and rUGGED SMARTWATCH FOR just 1/3 OF THE PRICE OF OTHERS.",
+            "content": "<p><strong>After hundreds of hours of craftsmanship, meticulous assembling, and rigorous engineering, we have not only met our expectations, but have far exceeded them.</strong></p><p><strong>Experience the perfect blend of durability and high-end technology, where your key stats will be accurately tracked and updated, no matter the challenges and conditions life throws at you.</strong></p>",
+            "button_text": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--14658305654887__3afaf0dd-bef3-46c5-9f9d-42e70684a19b-item-1"
+      ],
+      "custom_css": [
+        "div {background-color: #000000;}",
+        "h3 {color: #ffc200; font-size: 22px; letter-spacing: -1px;}",
+        "h5 {font-size: 20px; letter-spacing: -1px; color: #ffc200; line-height: 25px;}"
+      ],
+      "settings": {
+        "section_id": "",
+        "reveal_on_scroll": false,
+        "background_type": "full_width",
+        "background_overlap": "text",
+        "image_position": "left",
+        "text_alignment": "center",
+        "cycle_speed": 8,
+        "accent_background": "#454545",
+        "text_color": "#ffffff",
+        "button_background": "#292323",
+        "button_text_color": "#5a5353",
+        "enable_custom_margin": false,
+        "margin_bottom": 0
+      }
+    },
+    "3a5567fb-8e7e-4cb3-bb8e-f2c156493a67": {
+      "type": "image-with-text",
+      "blocks": {
+        "7f6a9c5e-0fe0-4000-bbab-c0217fa108eb": {
+          "type": "item",
+          "settings": {
+            "show_video": false,
+            "video_link": "",
+            "image": "shopify://shop_images/vortex-6-min.png",
+            "tab_label": "Item",
+            "subheading": "",
+            "title": "UP TO 60 days of full power within just 90 minutes of charging!",
+            "content": "<p><strong>Stay connected anywhere, anytime with the Carbinox Vortex and its 480mAh built-in battery that will last through your work duties, ensuring it stands by you as a reliable companion, unlike other devices.<br/><br/>ALWAYS ON-DISPLAY: Up to 7 days.<br/>REGULAR DAILY USE: 7-14 days.<br/>STAND BY MODE: 14-60 days.</strong></p>",
+            "button_text": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "7f6a9c5e-0fe0-4000-bbab-c0217fa108eb"
+      ],
+      "custom_css": [
+        "h3 {font-size: 22px; color: #ffc200;}",
+        "H4 {font-size: 18px; text-align: left; letter-spacing: -0.7px; margin-top: -20px;}"
+      ],
+      "settings": {
+        "section_id": "",
+        "reveal_on_scroll": false,
+        "background_type": "full_width",
+        "background_overlap": "text",
+        "image_position": "left",
+        "text_alignment": "center",
+        "cycle_speed": 8,
+        "accent_background": "#000000",
+        "text_color": "#ffffff",
+        "button_background": "#292323",
+        "button_text_color": "#5a5353",
+        "enable_custom_margin": false,
+        "margin_bottom": 0
+      }
+    },
+    "ff560379-7d10-4627-a4dc-278938136553": {
+      "type": "image-with-text",
+      "blocks": {
+        "1ae59a29-eaeb-4fc2-8215-438e69660792": {
+          "type": "item",
+          "settings": {
+            "show_video": false,
+            "video_link": "",
+            "image": "shopify://shop_images/1-min-14.png",
+            "tab_label": "Item",
+            "subheading": "",
+            "title": "Introducing the First Smartwatch fully Made of Zinc Alloy.",
+            "content": "<p><strong>We've set a new standard in rugged technology and durability with the Carbinox Vortex. The materials selected for this smartwatch provide </strong><span style=\"text-decoration:underline\"><strong>extreme resistance to impacts without breaking or deforming</strong></span><strong> under any conditions you might encounter.</strong></p><p><strong>Scratches? Drops? Dirt? That's a problem for fragile smartwatches, not for this one. Focus on what's important in your daily duties, </strong><span style=\"text-decoration:underline\"><strong>we've solved everything else.</strong></span></p>",
+            "button_text": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "1ae59a29-eaeb-4fc2-8215-438e69660792"
+      ],
+      "custom_css": [
+        "h3 {font-size: 22px; color: #ffc200;}",
+        "H4 {font-size: 18px; text-align: left; letter-spacing: -0.7px; margin-top: -20px;}"
+      ],
+      "settings": {
+        "section_id": "",
+        "reveal_on_scroll": false,
+        "background_type": "full_width",
+        "background_overlap": "text",
+        "image_position": "left",
+        "text_alignment": "center",
+        "cycle_speed": 8,
+        "accent_background": "#000000",
+        "text_color": "#ffffff",
+        "button_background": "#292323",
+        "button_text_color": "#5a5353",
+        "enable_custom_margin": false,
+        "margin_bottom": 0
+      }
+    },
+    "84dd6a94-028e-44de-a5af-eed905356deb": {
+      "type": "image-with-text",
+      "blocks": {
+        "2666836f-fdb5-4031-a67a-23cba73c2c91": {
+          "type": "item",
+          "settings": {
+            "show_video": false,
+            "video_link": "",
+            "image": "shopify://shop_images/3-min-16.png",
+            "tab_label": "Item",
+            "subheading": "",
+            "title": "YES, YOU CAN USE IT AT WORK AND NO, YOU DON'T NEED TO BE AFRAID OF BREAKING IT.",
+            "content": "<p><strong>We represent the thousands of workers in America who have </strong><span style=\"text-decoration:underline\"><strong>spent hundreds of dollars on watches that scratched or broke easily</strong></span><strong>, by bringing them the solution to focus of what actually matters: Serving our country! THAT'S WHY WE'RE THE #1 CHOICE FOR:</strong></p><h4><strong><br/></strong>👨🏼‍🔧MANAGERS & OPERATORS<br/>🚛 TRUCK DRIVERS<br/>👷🏻‍♂️CONSTRUCTION WORKERS<br/>⚙️MECHANICS & TECHNICIANS<br/>👨🏻‍🏭 PLUMBERS & ELECTRICIANS<br/>💨 HVAC & MAINTENANCE ENGINEERS<br/>🪖VETERANS & RETIRED<br/>🚔 LAW ENFORCEMENT<br/>⛑️ FIRST RESPONDERS</h4>",
+            "button_text": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "2666836f-fdb5-4031-a67a-23cba73c2c91"
+      ],
+      "custom_css": [
+        "h3 {font-size: 22px; color: #ffc200;}",
+        "H4 {font-size: 14px; text-align: left; letter-spacing: -0.7px; margin-top: -20px;}"
+      ],
+      "settings": {
+        "section_id": "",
+        "reveal_on_scroll": false,
+        "background_type": "full_width",
+        "background_overlap": "text",
+        "image_position": "right",
+        "text_alignment": "center",
+        "cycle_speed": 8,
+        "accent_background": "#000000",
+        "text_color": "#ffffff",
+        "button_background": "#292323",
+        "button_text_color": "#5a5353",
+        "enable_custom_margin": false,
+        "margin_bottom": 0
+      }
+    },
+    "cfffb33b-6a18-484b-af56-b40301e1f632": {
+      "type": "image-with-text",
+      "blocks": {
+        "242aee7e-1d8a-4b2f-8680-f43ccf662d4d": {
+          "type": "item",
+          "settings": {
+            "show_video": false,
+            "video_link": "",
+            "image": "shopify://shop_images/Diseno_sin_titulo-208-min.png",
+            "tab_label": "Item",
+            "subheading": "",
+            "title": "IMMERSE YOURSELF ON A NEW VISUAL EXPERIENCE WITH A 1.96'' AMOLED SCREEN, PLUS HIGH DEFINITION TECHNOLOGY.",
+            "content": "",
+            "button_text": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "242aee7e-1d8a-4b2f-8680-f43ccf662d4d"
+      ],
+      "custom_css": [
+        "h3 {font-size: 16px; color: #ffc200;}",
+        "H4 {font-size: 18px; text-align: left; letter-spacing: -0.7px; margin-top: -20px;}"
+      ],
+      "settings": {
+        "section_id": "",
+        "reveal_on_scroll": false,
+        "background_type": "full_width",
+        "background_overlap": "text",
+        "image_position": "left",
+        "text_alignment": "center",
+        "cycle_speed": 8,
+        "accent_background": "#000000",
+        "text_color": "#ffffff",
+        "button_background": "#292323",
+        "button_text_color": "#5a5353",
+        "enable_custom_margin": false,
+        "margin_bottom": 0
+      }
+    },
+    "b97def7a-4167-4995-aeed-ca9dcdcf40b5": {
+      "type": "image-with-text",
+      "blocks": {
+        "46276caf-7bec-4dc3-babb-e90e3753b5ab": {
+          "type": "item",
+          "settings": {
+            "show_video": false,
+            "video_link": "",
+            "image": "shopify://shop_images/Diseno_sin_titulo-186-min.png",
+            "tab_label": "Item",
+            "subheading": "",
+            "title": "100+ CUSTOMIZABLE WATCH face TO CHOOSE FROM, including TWO SPECIAL ALWAYS-ON DISPLAY options.",
+            "content": "",
+            "button_text": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "46276caf-7bec-4dc3-babb-e90e3753b5ab"
+      ],
+      "custom_css": [
+        "h3 {font-size: 16px; color: #ffc200;}",
+        "H4 {font-size: 18px; text-align: left; letter-spacing: -0.7px; margin-top: -20px;}"
+      ],
+      "settings": {
+        "section_id": "",
+        "reveal_on_scroll": false,
+        "background_type": "full_width",
+        "background_overlap": "text",
+        "image_position": "left",
+        "text_alignment": "center",
+        "cycle_speed": 8,
+        "accent_background": "#000000",
+        "text_color": "#ffffff",
+        "button_background": "#292323",
+        "button_text_color": "#5a5353",
+        "enable_custom_margin": false,
+        "margin_bottom": 0
+      }
+    },
+    "8512ccfe-ca7f-4b2f-a0e2-70f92c988a05": {
+      "type": "image-with-text",
+      "blocks": {
+        "5c633d77-bb3b-4ca1-a3f8-7faae8f6d9a3": {
+          "type": "item",
+          "settings": {
+            "show_video": true,
+            "video_link": "https://cdn.shopify.com/videos/c/o/v/ab76cd10fcbd4c6f9f2e8ef1e3dbcf77.mp4",
+            "tab_label": "Item",
+            "subheading": "",
+            "title": "100+ SPORTS AND WORKOUT modes, PLUS smart recognition TECHNOLOGY.",
+            "content": "",
+            "button_text": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "5c633d77-bb3b-4ca1-a3f8-7faae8f6d9a3"
+      ],
+      "custom_css": [
+        "h3 {font-size: 16px; color: #ffc200;}",
+        "H4 {font-size: 18px; text-align: left; letter-spacing: -0.7px; margin-top: -20px;}",
+        "div {}"
+      ],
+      "settings": {
+        "section_id": "",
+        "reveal_on_scroll": false,
+        "background_type": "full_width",
+        "background_overlap": "both",
+        "image_position": "left",
+        "text_alignment": "center",
+        "cycle_speed": 8,
+        "accent_background": "#000000",
+        "text_color": "#ffffff",
+        "button_background": "#292323",
+        "button_text_color": "#5a5353",
+        "enable_custom_margin": false,
+        "margin_bottom": 0
+      }
+    },
+    "c4d5d849-903b-4f94-a366-9dd19f7a438e": {
+      "type": "image-with-text",
+      "blocks": {
+        "35be12bc-6d06-4cc0-94ac-25211273e8e5": {
+          "type": "item",
+          "settings": {
+            "show_video": false,
+            "video_link": "",
+            "image": "shopify://shop_images/7-min-7.png",
+            "tab_label": "Item",
+            "subheading": "",
+            "title": "30+ DURABILITY TESTS THAT RESULTED IN THE MOST RELIABLE SMARTWATCH IN THE INDUSTRY.",
+            "content": "<h5>U.S. MIL-STD-810H MILITARY CERTIFIED, MEETING ALL STANDARDS FOR EXTREME CONDITIONS.<br/><br/>MICROSHIELD NANO TECHNOLOGY: RESISTANT TO DUST, DIRT, SAND, AND MUD PARTICLES.<br/><br/>IP69K WATERPROOF TECHNOLOGY: UNMATCHED WATER RESISTANCE FOR COMPLETE PEACE OF MIND.<br/><br/>SHOCKPROOF & DUSTPROOF: DROP IT, BANG IT, RUN IT OVER, THIS LITTLE NUMBER WILL JUST KEEP ON TICKIN'!<br/><br/>CORNING GORILLA GLASS SCREEN: SCRATCH RESISTANT PROTECTION.<br/></h5>",
+            "button_text": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "35be12bc-6d06-4cc0-94ac-25211273e8e5"
+      ],
+      "custom_css": [
+        "h3 {font-size: 18px; color: #ffc200;}",
+        "h5 {font-size: 16px; letter-spacing: -0.7px; line-height: 20px;}"
+      ],
+      "settings": {
+        "section_id": "",
+        "reveal_on_scroll": false,
+        "background_type": "full_width",
+        "background_overlap": "text",
+        "image_position": "left",
+        "text_alignment": "center",
+        "cycle_speed": 8,
+        "accent_background": "#000000",
+        "text_color": "#ffffff",
+        "button_background": "#292323",
+        "button_text_color": "#5a5353",
+        "enable_custom_margin": false,
+        "margin_bottom": 0
+      }
+    },
+    "8677f37a-5180-4ed3-8ef5-57b6acaae572": {
+      "type": "image-with-text",
+      "blocks": {
+        "91e8bfbe-7016-4d65-ab32-face8d5ba002": {
+          "type": "item",
+          "settings": {
+            "show_video": false,
+            "video_link": "",
+            "image": "shopify://shop_images/VOICE_CONTROL-min.png",
+            "tab_label": "Item",
+            "subheading": "",
+            "title": "",
+            "content": "",
+            "button_text": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "91e8bfbe-7016-4d65-ab32-face8d5ba002"
+      ],
+      "custom_css": [
+        "h3 {font-size: 24px; text-align: center;}"
+      ],
+      "settings": {
+        "section_id": "",
+        "reveal_on_scroll": false,
+        "background_type": "full_width",
+        "background_overlap": "text",
+        "image_position": "right",
+        "text_alignment": "left",
+        "cycle_speed": 8,
+        "accent_background": "#000000",
+        "text_color": "#ffffff",
+        "button_background": "#292323",
+        "button_text_color": "#5a5353",
+        "enable_custom_margin": false,
+        "margin_bottom": 0
+      }
+    },
+    "d51359e5-b85d-4eb2-908e-a2f797b33ad5": {
+      "type": "image-with-text",
+      "blocks": {
+        "42abea4b-af17-46cb-8b58-6d60c5088dd0": {
+          "type": "item",
+          "settings": {
+            "show_video": false,
+            "video_link": "",
+            "image": "shopify://shop_images/6-min-7.png",
+            "tab_label": "Item",
+            "subheading": "★★★★★",
+            "title": "\"This smartwatch is an excellent choice for blue-collar workers who need a strict, reliable watch that can withstand extreme conditions\".",
+            "content": "<h4><strong>TECHBULLION.COM</strong></h4>",
+            "button_text": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "42abea4b-af17-46cb-8b58-6d60c5088dd0"
+      ],
+      "custom_css": [
+        "h2 {color: #ffc200; font-size: 24px;}",
+        "h3 {font-size: 16px;"
+      ],
+      "settings": {
+        "section_id": "",
+        "reveal_on_scroll": false,
+        "background_type": "full_width",
+        "background_overlap": "both",
+        "image_position": "left",
+        "text_alignment": "left",
+        "cycle_speed": 8,
+        "accent_background": "#121212",
+        "text_color": "#ffffff",
+        "button_background": "#292323",
+        "button_text_color": "#5a5353",
+        "enable_custom_margin": false,
+        "margin_bottom": 0
+      }
+    },
+    "7093bb3e-6e7a-4e7c-b3dd-09080160deb5": {
+      "type": "rich-text",
+      "disabled": true,
+      "custom_css": [
+        "h2 {color: #ffc200; font-size: 24px;}",
+        "h3 {font-size: 16px;"
+      ],
+      "settings": {
+        "section_id": "",
+        "subheading": "★★★★★",
+        "title": "\"Thanks to its innovative design and user-friendly interface, Carbinox is well-positioned to continue disrupting the smartwatch industry in the years to come\".",
+        "content": "<h4><strong>ACCESSWIRE.COM</strong></h4>",
+        "button_text": "",
+        "button_link": "",
+        "background_type": "full_width",
+        "text_width": "fill",
+        "text_position": "center",
+        "text_alignment": "right",
+        "background": "#000000",
+        "text_color": "#ffffff",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "2b1cb403-5565-464f-97a6-c15e724dad1a": {
+      "type": "rich-text",
+      "disabled": true,
+      "custom_css": [
+        "h2 {color: #ffc200; font-size: 24px;}",
+        "h3 {font-size: 16px;"
+      ],
+      "settings": {
+        "section_id": "",
+        "subheading": "★★★★★",
+        "title": "\"ThIS watch is affordable, with different styles to fit different needs, making it an excellent option for workers on a budget\".",
+        "content": "<h4><strong>FINANCE.YAHOO.COM</strong></h4>",
+        "button_text": "",
+        "button_link": "",
+        "background_type": "full_width",
+        "text_width": "fill",
+        "text_position": "center",
+        "text_alignment": "left",
+        "background": "#121212",
+        "text_color": "#ffffff",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "a82c5f6c-8f61-455c-8e88-fefb5e155ec4": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--14658305654887__a82c5f6c-8f61-455c-8e88-fefb5e155ec4-item-1": {
+          "type": "item",
+          "settings": {
+            "show_video": false,
+            "video_link": "",
+            "image": "shopify://shop_images/Diseno_sin_titulo-210-min.png",
+            "tab_label": "",
+            "subheading": "",
+            "title": "YOU ALREADY KNOW THIS, BUT WE'LL TELL YOU WITH CARBINOX OVER OTHERS:",
+            "content": "<p>🪨<strong> BUILT TO LAST:</strong> <br/>Our smartwatches are engineered to truly withstand the toughest conditions. <strong>Where others fail, ours keep going.</strong></p><p>💸<strong> BEST BANG FOR YOUR BUCK:</strong> <br/>Get the same durability and advanced features <strong>at a fraction of the cost of others.</strong><br/><br/>🏆<strong> LIFETIME WARRANTY:</strong> <br/>We stand by our products with confidence. <strong>Get FREE replacements whenever you need them.</strong><br/><br/>🛩️<strong> FREE AND SECURED SHIPPING: <br/></strong>With over 300,000+ packages successfully delivered, <strong>we ensure your order arrives safely at no extra cost.</strong><br/><br/>♻️<strong> 45-DAY MONEY BACK GUARANTEE:</strong> <br/>If you’re not completely satisfied, return it within 45 days for a full refund, <strong>no questions asked.</strong></p>",
+            "button_text": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--14658305654887__a82c5f6c-8f61-455c-8e88-fefb5e155ec4-item-1"
+      ],
+      "disabled": true,
+      "custom_css": [
+        "h3 {font-size: 22px;}",
+        "h5 {color: #ffc200;}",
+        "h2 {font-size: 14px;}"
+      ],
+      "settings": {
+        "section_id": "",
+        "reveal_on_scroll": false,
+        "background_type": "full_width",
+        "background_overlap": "both",
+        "image_position": "left",
+        "text_alignment": "left",
+        "cycle_speed": 8,
+        "accent_background": "#000000",
+        "text_color": "#ffffff",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)",
+        "enable_custom_margin": false,
+        "margin_bottom": 0
+      }
+    },
+    "bd6b6952-806f-42b1-988d-6344239a7046": {
+      "type": "custom-liquid",
+      "disabled": true,
+      "settings": {
+        "subheading": "",
+        "title": "",
+        "liquid": "<script type=\"text/javascript\">\nvar _learnq = _learnq || [];\n  var classname = document.getElementsByClassName(\"product-form__add-button button button--secondary button--full\");\nvar addToCart = function() {\n_learnq.push(['track', 'Added to Cart', item]);\n}; for (var i = 0; i < classname.length; i++) {\nclassname[i].addEventListener('click', addToCart, false);\n}\n</script>",
+        "add_vertical_spacing": false,
+        "background_type": "full_width",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "af3b67a6-d614-4707-afda-9d7b66d3addc": {
+      "type": "image-with-text",
+      "blocks": {
+        "b9ba9caa-760c-4a47-a67d-b350595291be": {
+          "type": "item",
+          "settings": {
+            "show_video": false,
+            "video_link": "",
+            "image": "shopify://shop_images/1_4fff85ec-8ba2-4d70-87e2-ffa3f801e0c9.png",
+            "tab_label": "Item",
+            "subheading": "",
+            "title": "CARBINOX VORTEX DIMENSIONS",
+            "content": "",
+            "button_text": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "b9ba9caa-760c-4a47-a67d-b350595291be"
+      ],
+      "custom_css": [
+        "div {padding-top: 5px;"
+      ],
+      "settings": {
+        "section_id": "",
+        "reveal_on_scroll": false,
+        "background_type": "full_width",
+        "background_overlap": "image",
+        "image_position": "left",
+        "text_alignment": "center",
+        "cycle_speed": 8,
+        "accent_background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)",
+        "enable_custom_margin": false,
+        "margin_bottom": 0
+      }
+    },
+    "59ab30f9-1c7c-4bf9-8217-9f0f095a6238": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--14658305654887__59ab30f9-1c7c-4bf9-8217-9f0f095a6238-item-1": {
+          "type": "item",
+          "settings": {
+            "show_video": false,
+            "video_link": "",
+            "image": "shopify://shop_images/DOWNLOAD_THE_APP_GLORYFIT_PRO_TO_PAIR_YOUR_VORTEX_WITH_YOUR_PHONE._1_-min.png",
+            "tab_label": "Item",
+            "subheading": "",
+            "title": "",
+            "content": "",
+            "button_text": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--14658305654887__59ab30f9-1c7c-4bf9-8217-9f0f095a6238-item-1"
+      ],
+      "settings": {
+        "section_id": "",
+        "reveal_on_scroll": false,
+        "background_type": "full_width",
+        "background_overlap": "image",
+        "image_position": "left",
+        "text_alignment": "center",
+        "cycle_speed": 8,
+        "accent_background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)",
+        "enable_custom_margin": true,
+        "margin_bottom": 0
+      }
+    },
+    "166007646669623aaa": {
+      "type": "faq",
+      "blocks": {
+        "1660076465f1e811f4-0": {
+          "type": "category",
+          "disabled": true,
+          "settings": {
+            "title": "Shipping"
+          }
+        },
+        "1660076465f1e811f4-1": {
+          "type": "question",
+          "disabled": true,
+          "settings": {
+            "title": "Are these smartwatches indestructible?",
+            "answer": "<p>We guarantee you'll receive the stronger smartwatch you've ever had. However,don't submit it to abuse tests such as as throwing it from a 30th floor or test it with a saw to see if it holds up (This is a true story 🥴)</p>"
+          }
+        },
+        "1660076465f1e811f4-2": {
+          "type": "question",
+          "settings": {
+            "title": "CAN I ANSWER AND MAKE CALLS WITH THE CARBINOX VORTEX?",
+            "answer": "<p>Yes, you can answer and dial calls with your Carbinox Vortex. Just pair it with your phone and make sure Bluetooth is on.</p>"
+          }
+        },
+        "9e45f6ba-ce45-4182-ab2f-4f8bcd8f6681": {
+          "type": "question",
+          "settings": {
+            "title": "CAN YOU VIEW AND REPLY TO TEXT MESSAGES WITH THE CARBINOX VORTEX?",
+            "answer": "<p>You view read SMS or social media notifications on your Carbinox Vortex. However, you cannot reply. This high-cost feature could dramatically affect the costs of our products.</p>"
+          }
+        },
+        "1660076465f1e811f4-4": {
+          "type": "question",
+          "settings": {
+            "title": "IS THE CARBINOX VORTEX WATERPROOF?",
+            "answer": "<p>Yes, the Carbinox Vortex is fully Waterproof with IP69K and 5ATM technology.</p>"
+          }
+        },
+        "b94b4ba9-d47e-4003-8a27-597acb9b7952": {
+          "type": "question",
+          "settings": {
+            "title": "IS MY SMARTPHONE COMPATIBLE WITH THE CARBINOX VORTEX?",
+            "answer": "<p>Yes. The Carbinox Vortex works with any Apple or Android device through the GLORYFIT PRO APP.</p>"
+          }
+        },
+        "91345035-5b96-4951-8a1e-d62883b97573": {
+          "type": "question",
+          "settings": {
+            "title": "WILL THE CARBINOX VORTEX FIT MY WRIST?",
+            "answer": "<p>Yes, all of our smartwatches come with adjustable bands that can fit any wrist.</p>"
+          }
+        },
+        "b1b69a37-56f7-497e-b973-6abbf1bb8a51": {
+          "type": "question",
+          "settings": {
+            "title": "DO YOU OFFER GUARANTEES?",
+            "answer": "<p>Of course! All of our smartwatches are covered with 45-Day Risk Free Trial, and Lifetime Warranty in case they don't fit your needs or if you face any software or internal issues. If this happens, we'll provide you a replacement at no cost.</p>"
+          }
+        },
+        "08cad6de-133a-438f-9a28-8990559de84f": {
+          "type": "question",
+          "settings": {
+            "title": "HOW LONG DOES THE VORTEX TAKE TO FULLY CHARGE?",
+            "answer": "<p>The Carbinox Vortex will be fully charged after approximately 90 minutes and lasts up to 14 days within a single cycle.</p>"
+          }
+        },
+        "7c26ebf9-9f0f-4f89-a025-4868a8e8855f": {
+          "type": "question",
+          "disabled": true,
+          "settings": {
+            "title": "How can I contact Carbinox?",
+            "answer": "<p>If you have any questions or doubts, please don't hesitate to send us an e-mail to <strong>info@shopcarbinox.com</strong> or through our social media channels such as Facebook or Instagram.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "1660076465f1e811f4-0",
+        "1660076465f1e811f4-1",
+        "1660076465f1e811f4-2",
+        "9e45f6ba-ce45-4182-ab2f-4f8bcd8f6681",
+        "1660076465f1e811f4-4",
+        "b94b4ba9-d47e-4003-8a27-597acb9b7952",
+        "91345035-5b96-4951-8a1e-d62883b97573",
+        "b1b69a37-56f7-497e-b973-6abbf1bb8a51",
+        "08cad6de-133a-438f-9a28-8990559de84f",
+        "7c26ebf9-9f0f-4f89-a025-4868a8e8855f"
+      ],
+      "settings": {
+        "show_navigation": false,
+        "title": "Frequently asked questions",
+        "content": "",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "d0e939a6-ef01-41b2-a26c-43be8b1503b8": {
+      "type": "product-reviews",
+      "settings": {}
+    }
+  },
+  "order": [
+    "rich_text_RPLp7f",
+    "main",
+    "e9dc35e4-0664-46cf-ad4f-0d4aa37441e3",
+    "rich_text_yrrWDG",
+    "gallery_NiMUyk",
+    "product-content",
+    "3afaf0dd-bef3-46c5-9f9d-42e70684a19b",
+    "3a5567fb-8e7e-4cb3-bb8e-f2c156493a67",
+    "ff560379-7d10-4627-a4dc-278938136553",
+    "84dd6a94-028e-44de-a5af-eed905356deb",
+    "cfffb33b-6a18-484b-af56-b40301e1f632",
+    "b97def7a-4167-4995-aeed-ca9dcdcf40b5",
+    "8512ccfe-ca7f-4b2f-a0e2-70f92c988a05",
+    "c4d5d849-903b-4f94-a366-9dd19f7a438e",
+    "8677f37a-5180-4ed3-8ef5-57b6acaae572",
+    "d51359e5-b85d-4eb2-908e-a2f797b33ad5",
+    "7093bb3e-6e7a-4e7c-b3dd-09080160deb5",
+    "2b1cb403-5565-464f-97a6-c15e724dad1a",
+    "a82c5f6c-8f61-455c-8e88-fefb5e155ec4",
+    "bd6b6952-806f-42b1-988d-6344239a7046",
+    "af3b67a6-d614-4707-afda-9d7b66d3addc",
+    "59ab30f9-1c7c-4bf9-8217-9f0f095a6238",
+    "166007646669623aaa",
+    "d0e939a6-ef01-41b2-a26c-43be8b1503b8"
+  ]
+}

@@ -1,0 +1,152 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-cart",
+      "blocks": {
+        "totals": {
+          "type": "totals",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "totals"
+      ],
+      "settings": {
+        "show_payment_methods": false,
+        "show_shipping_estimator": false,
+        "shipping_estimator_default_country": "United States",
+        "empty_button_link": "shopify:\/\/collections\/all",
+        "cart_trust_badge": "shopify:\/\/shop_images\/Diseno_sin_titulo-12_68385dad-ca95-4b21-896d-8ab2aa4dc802.png",
+        "timer_first_text": "",
+        "timer_last_text": "",
+        "timer_count_down": 1
+      }
+    },
+    "cart-recommendations": {
+      "type": "cart-recommendations",
+      "blocks": {
+        "7ceb3642-344d-4211-bbdb-b9a834ae44ca": {
+          "type": "custom_recommendation",
+          "disabled": true,
+          "settings": {
+            "custom_product": "carbinox-lux-black-army-edition-bundle-pack"
+          }
+        },
+        "451421fc-831b-444d-86c5-933393e6404b": {
+          "type": "custom_recommendation",
+          "disabled": true,
+          "settings": {
+            "custom_product": "carbinox-tempered-glass-2x-pack"
+          }
+        },
+        "d37a5a80-b1b3-4c15-baa8-9cc6aabba571": {
+          "type": "custom_recommendation",
+          "disabled": true,
+          "settings": {
+            "custom_product": "carbinox-titan-84"
+          }
+        },
+        "2dac69d7-5fef-431f-800d-558663bfe20f": {
+          "type": "custom_recommendation",
+          "disabled": true,
+          "settings": {
+            "custom_product": "carbinox-titan-army-edition-full-pack"
+          }
+        }
+      },
+      "block_order": [
+        "7ceb3642-344d-4211-bbdb-b9a834ae44ca",
+        "451421fc-831b-444d-86c5-933393e6404b",
+        "d37a5a80-b1b3-4c15-baa8-9cc6aabba571",
+        "2dac69d7-5fef-431f-800d-558663bfe20f"
+      ],
+      "settings": {
+        "title": "You may also like",
+        "show_custom_recommendations": true
+      }
+    },
+    "16624774839c878887": {
+      "type": "social-media-gallery",
+      "blocks": {
+        "16624774830922ed1e-0": {
+          "type": "image",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/hiw1.png",
+            "link": ""
+          }
+        },
+        "16624774830922ed1e-1": {
+          "type": "image",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/hiw4.png",
+            "link": ""
+          }
+        },
+        "16624774830922ed1e-2": {
+          "type": "image",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/hiw3.png",
+            "link": ""
+          }
+        },
+        "16624774830922ed1e-3": {
+          "type": "image",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/hiw2.png",
+            "link": ""
+          }
+        },
+        "16624774830922ed1e-4": {
+          "type": "image",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/ambassador1.png",
+            "link": ""
+          }
+        },
+        "16624774830922ed1e-5": {
+          "type": "image",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/eliteambassador.png",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "16624774830922ed1e-0",
+        "16624774830922ed1e-1",
+        "16624774830922ed1e-2",
+        "16624774830922ed1e-3",
+        "16624774830922ed1e-4",
+        "16624774830922ed1e-5"
+      ],
+      "disabled": true,
+      "settings": {
+        "reveal_on_scroll": true,
+        "subheading": "follow us",
+        "title": "join our social media",
+        "button_text": "",
+        "button_link": "",
+        "stack_logos": true,
+        "background": "#2c3036",
+        "text_color": "#f9f9f9",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)",
+        "logo_background": "rgba(0,0,0,0)"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "cart-recommendations",
+    "16624774839c878887"
+  ]
+}

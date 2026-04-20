@@ -1,0 +1,174 @@
+  <style>
+   .testimonial-card {
+    padding: 24px 20px;
+    border: 1px solid #EAEAEA;
+    border-radius: 3px;
+    background: white;
+    max-width: 240px;
+    margin: auto;
+    text-align: left;
+    font-family: 'Poppins', sans-serif;
+  }
+.testimonial-slider{
+  max-width: 360px !important;
+  width: 100%;
+}
+  .stars {
+    color: #ffc107;
+    font-size: 16px;
+    margin: 0;
+  }
+
+  .quote {
+    font-size: 13.67px;
+    margin-bottom: 15px;
+    margin-top: 4px;
+    color: #0A3011;
+    
+  }
+
+  .user-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .avatar {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+  }
+
+  .user-info strong {
+    font-size: 11px;
+    font-weight: 600;
+  }
+
+  .user-info div {
+    font-size: 11px;
+    color: #0A3011;
+  }
+
+  .verified {
+    background-color: #f4c542;
+    color: #000;
+    font-size: 10px;
+    padding: 2px 8px;
+    border-radius: 12px;
+    display: inline-block;
+    margin-top: 5px;
+    font-weight: 400;
+  }
+  
+  /* Flechas Swiper */
+.swiper-button-prev,
+.swiper-button-next {
+  background-color: black;
+  
+  border-radius: 4px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.custom-arrow{
+  width: 25px !important;
+  height: 25px !important;
+  border-radius: 0px !important;
+}
+.custom-arrow svg{
+  width: 15px !important;
+  height: 12px !important;
+}
+.swiper-button-prev {
+  left: 0 !important; /* ajusta según tu diseño */
+}
+
+.swiper-button-next {
+  right: 0 !important;
+}
+.swiper-button-prev::before,
+.swiper-button-next::before {
+  content: "";
+  }
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  display: none;
+}</style>
+
+
+   <div class="swiper testimonial-slider">
+     
+  <div class="swiper-wrapper">
+    <!-- Testimonio 1 -->
+    <div class="swiper-slide">
+      <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <p class="quote">My last watch cracked after a week on the job site. This one’s been slammed into steel beams and still looks brand new.</p>
+        <div class="user-info">
+          <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Chuck R" class="avatar" />
+          <div>
+            <strong>Chuck R</strong> – Construction Foreman<br />
+            <span class="verified">Verified Customer</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Testimonio 2 -->
+    <div class="swiper-slide">
+      <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <p class="quote">I’ve taken this watch hiking, swimming, and even dropped it off a cliff. Still works perfectly!</p>
+        <div class="user-info">
+          <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Lara M" class="avatar" />
+          <div>
+            <strong>Lara M</strong> – Outdoor Guide<br />
+            <span class="verified">Verified Customer</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Testimonio 3 -->
+    <div class="swiper-slide">
+      <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <p class="quote">I’ve been in the army for 10 years and this is by far the toughest piece of gear I’ve owned.</p>
+        <div class="user-info">
+          <img src="https://randomuser.me/api/portraits/men/55.jpg" alt="James T" class="avatar" />
+          <div>
+            <strong>James T</strong> – Army Veteran<br />
+            <span class="verified">Verified Customer</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Flechas -->
+  <!-- Flechas personalizadas -->
+<div class="swiper-button-prev custom-arrow">
+  <svg width="17" height="15" viewBox="0 0 17 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M17 7.3606L2 7.36059M2 7.36059L8 13.3606M2 7.36059L8 1.36059" stroke="#F9F9F9" stroke-width="2"/>
+  </svg>
+</div>
+<div class="swiper-button-next custom-arrow">
+  <svg style="transform: scaleX(-1);" width="15" height="15" viewBox="0 0 17 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M17 7.3606L2 7.36059M2 7.36059L8 13.3606M2 7.36059L8 1.36059" stroke="#F9F9F9" stroke-width="2"/>
+  </svg>
+</div>
+</div>
+
+
+      <script>
+  window.onload = function () {
+    const swiper = new Swiper('.testimonial-slider', {
+      loop: true,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  };
+</script>

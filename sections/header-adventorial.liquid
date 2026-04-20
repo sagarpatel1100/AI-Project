@@ -1,0 +1,163 @@
+{%- liquid
+  assign show_topbar = section.settings.show_topbar
+  assign topbar_text = section.settings.topbar_text
+  assign topbar_bg = section.settings.topbar_bg
+  assign topbar_color = section.settings.topbar_color
+  assign logo = section.settings.logo
+  assign show_breadcrumbs = section.settings.show_breadcrumbs
+  assign text_breadcrumbs = section.settings.breadcrumb_home_label
+-%}
+
+{{ 'header-adventorial.css' | asset_url | stylesheet_tag }}
+
+<style>
+ #header-adventorial-{{ section.id }} {
+    width: 100%;
+  }
+</style>
+
+<div id="header-adventorial-{{ section.id }}" class="header-adventorial">
+
+  {%- if show_topbar and topbar_text != blank -%}
+    <div
+      class="header-adventorial__topbar"
+      style="
+        background-color: {{ topbar_bg }};
+        color: {{ topbar_color }};
+      "
+    >
+      <div class="header-adventorial__container">
+        <p class="header-adventorial__topbar-text">{{ topbar_text }}</p>
+      </div>
+    </div>
+  {%- endif -%}
+
+  <div class="header-adventorial__logo-wrapper">
+    <div class="header-adventorial__container header-adventorial__logo-container">
+      {% if logo != blank %}
+        <img
+          src="{{ logo | image_url }}"
+          class="header-adventorial__logo"
+          alt="logo"
+          loading="lazy"
+        >
+      {% endif %}
+    </div>
+  </div>
+
+  {%- if show_breadcrumbs -%}
+  <div class="header-adventorial__breadcrumbs-wrapper">
+    <div class="header-adventorial__container">
+
+      <nav class="header-adventorial__breadcrumbs">
+
+        <a class="header-adventorial__breadcrumb-item">
+            {{ text_breadcrumbs }}
+        </a>
+
+        {%- if template.name == 'product' -%}
+
+          <span class="header-adventorial__breadcrumb-separator">›</span>
+          <a href="{{ product.url }}" class="header-adventorial__breadcrumb-item">
+            {{ product.title }}
+          </a>
+
+        {%- elsif template.name == 'collection' -%}
+
+          <span class="header-adventorial__breadcrumb-separator">›</span>
+          <a href="{{ collection.url }}" class="header-adventorial__breadcrumb-item">
+            {{ collection.title }}
+          </a>
+
+        {%- elsif template.name == 'blog' -%}
+
+          <span class="header-adventorial__breadcrumb-separator">›</span>
+          <a href="{{ blog.url }}" class="header-adventorial__breadcrumb-item">
+            {{ blog.title }}
+          </a>
+
+        {%- elsif template.name == 'article' -%}
+
+          <span class="header-adventorial__breadcrumb-separator">›</span>
+          <a href="{{ blog.url }}" class="header-adventorial__breadcrumb-item">
+            {{ blog.title }}
+          </a>
+
+          <span class="header-adventorial__breadcrumb-separator">›</span>
+          <a href="{{ article.url }}" class="header-adventorial__breadcrumb-item">
+            {{ article.title }}
+          </a>
+
+        {%- elsif template.name == 'page' -%}
+
+          <span class="header-adventorial__breadcrumb-separator">›</span>
+          <a class="header-adventorial__breadcrumb-item">
+            {{ page.title }}
+          </a>
+
+        {%- endif -%}
+
+      </nav>
+
+    </div>
+  </div>
+{%- endif -%}
+</div>
+
+{% schema %}
+{
+  "name": "Header Adventorial",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "show_topbar",
+      "label": "Show top bar",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "topbar_text",
+      "label": "Top bar text",
+      "default": "#1 US Tech Gift 2025 – Order Now"
+    },
+    {
+      "type": "color",
+      "id": "topbar_bg",
+      "label": "Top bar background color",
+      "default": "#395B36"
+    },
+    {
+      "type": "color",
+      "id": "topbar_color",
+      "label": "Top bar text color",
+      "default": "#FFFFFF"
+    },
+
+    {
+      "type": "image_picker",
+      "id": "logo",
+      "label": "Logo image"
+    },
+
+    {
+      "type": "checkbox",
+      "id": "show_breadcrumbs",
+      "label": "Show breadcrumbs",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "breadcrumb_home_label",
+      "label": "Breadcrumb home label",
+      "default": "Home",
+      "info": "Customize the text displayed for the first breadcrumb item. Only affects the visual label."
+    }
+  ],
+  "presets": [
+    {
+      "name": "Header Adventorial"
+    }
+  ]
+}
+{% endschema %}

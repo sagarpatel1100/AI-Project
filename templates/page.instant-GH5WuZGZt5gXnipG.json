@@ -1,0 +1,26 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "instant-GH5WuZGZt5gXnipG": {
+      "type": "instant-GH5WuZGZt5gXnipG",
+      "settings": {}
+    },
+    "bundle_creator_AGqmnc": {
+      "type": "bundle-creator",
+      "name": "Bundle Maker",
+      "settings": {}
+    }
+  },
+  "order": [
+    "instant-GH5WuZGZt5gXnipG",
+    "bundle_creator_AGqmnc"
+  ]
+}

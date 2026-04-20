@@ -1,0 +1,414 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "show_title": true,
+        "page_width": "medium"
+      }
+    },
+    "new_header_advertorial_dCMJwc": {
+      "type": "new-header-advertorial",
+      "custom_css": [],
+      "name": "Header Adventorial",
+      "settings": {
+        "header_bg": "#0f0f0f",
+        "show_topbar": false,
+        "topbar_text": "#1 US Tech Gift 2025 – Order Now",
+        "topbar_bg": "#395b36",
+        "topbar_color": "#0f0f0f",
+        "logo": "shopify://shop_images/logo.webp",
+        "logo_alignment": "center",
+        "logo_size_desktop": 190,
+        "logo_size_mobile": 120
+      }
+    },
+    "breadcrumb_advertorial_LDQzjW": {
+      "type": "breadcrumb-advertorial",
+      "blocks": {
+        "crumb_nBUbyq": {
+          "type": "crumb",
+          "settings": {
+            "label": "Our Blogs",
+            "link": "",
+            "bold": false
+          }
+        },
+        "crumb_abMVgC": {
+          "type": "crumb",
+          "settings": {
+            "label": "Is The Carbinox Blaze Worth It? My Honest Review After 6 Months Of Sawdust, Sweat...",
+            "link": "",
+            "bold": true
+          }
+        }
+      },
+      "block_order": [
+        "crumb_nBUbyq",
+        "crumb_abMVgC"
+      ],
+      "custom_css": [],
+      "name": "Breadcrumb Adventorial",
+      "settings": {
+        "home_label": "Home",
+        "home_enable_link": false,
+        "home_link": "/",
+        "home_bold": false,
+        "separator": "›",
+        "text_color": "#595959",
+        "bg_color": "#ffffff",
+        "hide_mobile": true
+      }
+    },
+    "adv_main_title_APMhVF": {
+      "type": "adv-main-title",
+      "name": "Advertorial Article Title",
+      "settings": {
+        "title": "Is The Carbinox Blaze Worth It? My Honest Review After 6 Months Of Sawdust, Sweat & Saltwater",
+        "show_author": true,
+        "author_image": "shopify://shop_images/Ellipse_2.png",
+        "author_text": "I’m a woodworker who rides, hikes, hunts, surfs, and hits the gym.\nHere’s how this “work watch” actually held up."
+      }
+    },
+    "adventorial_article_7fKJMB": {
+      "type": "adventorial-article",
+      "custom_css": [],
+      "name": "Adventorial Article",
+      "settings": {
+        "button_bg": "#000000",
+        "button_text_color": "#ffffff",
+        "button_radius": 6,
+        "button_font": "inherit",
+        "button_font_size": 16,
+        "button_font_size_mobile": 16,
+        "title": "",
+        "subtitle": "",
+        "image": "shopify://shop_images/3-66_1.webp",
+        "mobile_image": "shopify://shop_images/srmobile.webp",
+        "content": "<p>I’m rough on gear. If it lives in my world—boots, tools, bikes, phones—it’s eventually getting scratched, dropped, or buried in sawdust.<br/><br/>I’ve had an Apple Watch for a while and I genuinely like it. The problem is I’m a full-time woodworker. My “office” is a shop where everything has a sharp edge, a hard corner, or dust floating in the air. Add in weekends spent riding, hiking, hunting, and trying to pretend I still surf, and that tiny glass screen started feeling like a bad idea.<br/><br/>Every time I walked into the shop with my Apple Watch on, I was half-worried I’d smack it into a clamp or a table saw fence and watch $800 explode on my wrist.<br/><br/>That’s what pushed me to try the <a href=\"/products/carbinox-blaze\" title=\"Carbinox Blaze – Heavy Duty Smartwatch\"><span style=\"text-decoration:underline\"><strong>Carbinox Blaze</strong></span></a>—not to replace my Apple Watch, but to give it a tougher friend that could take the beating for it. I’ve been wearing the <a href=\"/products/carbinox-blaze\" title=\"Carbinox Blaze – Heavy Duty Smartwatch\"><span style=\"text-decoration:underline\"><strong>Blaze</strong></span> </a>for six months straight in my workshop and on every “dirty” day since.<br/><br/>Here’s the honest rundown.</p>",
+        "show_button": false,
+        "button_label": "CLICK HERE TO CHECK AVAILABILITY",
+        "button_url": "",
+        "button_new_tab": false,
+        "show_divider": true
+      }
+    },
+    "advertorial_article_structured_NnF7YX": {
+      "type": "advertorial-article-structured",
+      "blocks": {
+        "subtitle_6wkAUN": {
+          "type": "subtitle",
+          "settings": {
+            "subtitle": "What I Like"
+          }
+        },
+        "text_FAwiw3": {
+          "type": "text",
+          "settings": {
+            "text": "<ul><li>I stop thinking about the watch once I put it on — it just takes abuse </li></ul><p></p><ul><li>Battery easily lasts through long work days and weekend trips on a single charge </li></ul><p></p><ul><li>Still gives me the smart stuff I actually use (calls, texts, notifications, heart rate, steps, sleep) </li></ul><p></p><ul><li>Switching between Apple Watch off-duty and <a href=\"/products/carbinox-blaze\" title=\"Carbinox Blaze – Heavy Duty Smartwatch\"><span style=\"text-decoration:underline\"><strong>Blaze</strong></span></a> on-duty feels natural, not like a downgrade </li></ul><p></p><ul><li>The lifetime replacement warranty and 45-day trial made it an easy “why not” decision</li></ul>"
+          }
+        },
+        "subtitle_eWUdm8": {
+          "type": "subtitle",
+          "settings": {
+            "subtitle": "What I Don’t Like"
+          }
+        },
+        "text_KqW3DE": {
+          "type": "text",
+          "settings": {
+            "text": "<ul><li>The screen and body are a bit chunkier than my Apple Watch (makes sense for a work watch, but worth noting) </li></ul><p></p><ul><li>Menus aren’t as “buttery” or polished as Apple’s — they’re more functional than fancy </li></ul><p></p><ul><li>You’ll probably end up liking it so much you feel guilty about how little you wear your Apple Watch to work</li></ul>"
+          }
+        }
+      },
+      "block_order": [
+        "subtitle_6wkAUN",
+        "text_FAwiw3",
+        "subtitle_eWUdm8",
+        "text_KqW3DE"
+      ],
+      "name": "Advertorial Article Structured",
+      "settings": {
+        "title": "The Gist After 6 Months",
+        "image": "shopify://shop_images/4_63_11zon.jpg",
+        "font_family": "Inter",
+        "title_size": 24,
+        "subtitle_size": 18,
+        "text_size": 16,
+        "title_size_mobile": 24,
+        "subtitle_size_mobile": 18,
+        "text_size_mobile": 16
+      }
+    },
+    "adventorial_article_hNyRjX": {
+      "type": "adventorial-article",
+      "custom_css": [],
+      "name": "Adventorial Article",
+      "settings": {
+        "button_bg": "#000000",
+        "button_text_color": "#ffffff",
+        "button_radius": 6,
+        "button_font": "inherit",
+        "button_font_size": 16,
+        "button_font_size_mobile": 16,
+        "title": "",
+        "subtitle": "Why I Needed A Work Watch In The First Place",
+        "image": "shopify://shop_images/4-63_1__11zon.webp",
+        "content": "<p>By day, I build furniture and cabinets in a small shop that never stays clean for more than 10 minutes. There’s always something happening: sanding, cutting, clamping, glue-ups, finishing. My hands are either covered in dust, sweat, or both.<br/>On top of that, I ride bikes after work, hike and hunt on the weekends, and whenever I can sneak away, I’m in the ocean pretending I still remember how to surf. None of those things are friendly to electronics.</p><p><br/>When I first got my Apple Watch, I wore it everywhere… for about a week. Then the anxiety kicked in. I’d be reaching over a project and think, “If I catch this edge wrong, that’s the screen gone.” Or I’d be rinsing off saltwater and wonder if this was the wave that killed it.<br/><br/>I wanted something I could put on and forget about. A watch I didn’t have to baby. That’s why I started looking at Carbinox. The <a href=\"/products/carbinox-blaze\" title=\"Carbinox Blaze – Heavy Duty Smartwatch\"><span style=\"text-decoration:underline\"><strong>Blaze</strong></span> </a>became the experiment: could I have a <a href=\"/products/carbinox-blaze\" title=\"Carbinox Blaze – Heavy Duty Smartwatch\"><span style=\"text-decoration:underline\"><strong>work partner</strong></span></a> on my wrist so my “nice” watch could stay out of danger?</p>",
+        "show_button": false,
+        "button_label": "CLICK HERE TO CHECK AVAILABILITY",
+        "button_url": "",
+        "button_new_tab": false,
+        "show_divider": true
+      }
+    },
+    "adventorial_article_YcMXiF": {
+      "type": "adventorial-article",
+      "name": "Adventorial Article",
+      "settings": {
+        "button_bg": "#000000",
+        "button_text_color": "#ffffff",
+        "button_radius": 6,
+        "button_font": "inherit",
+        "button_font_size": 16,
+        "button_font_size_mobile": 16,
+        "title": "",
+        "subtitle": "First Impressions: Built Like A Tool, Not A Toy",
+        "image": "shopify://shop_images/2zon.webp",
+        "content": "<p>When the <a href=\"/products/carbinox-blaze\" title=\"Carbinox Blaze – Heavy Duty Smartwatch\"><span style=\"text-decoration:underline\"><strong>Blaze</strong></span> </a>showed up, my first thought was: “Okay, this thing is a tank.”<br/><br/>It’s definitely beefier than the Apple Watch, but in a way that makes sense. The casing feels like it’s meant to hit things and survive. The screen doesn’t look flimsy. The buttons feel solid, not like they’re waiting to snap off.<br/><br/>I’m not a packaging guy, but I will say this: the watch didn’t feel cheap. A lot of “rugged” gear looks tough but feels hollow. The <a href=\"/products/carbinox-blaze\" title=\"Carbinox Blaze – Heavy Duty Smartwatch\"><span style=\"text-decoration:underline\"><strong>Blaze</strong></span> </a>felt like something I could actually trust to live in my shop.<br/><br/>Pairing it to my phone was straightforward. Once it was on and set up, the real test began.</p>",
+        "show_button": false,
+        "button_label": "CLICK HERE TO CHECK AVAILABILITY",
+        "button_url": "",
+        "button_new_tab": false,
+        "show_divider": true
+      }
+    },
+    "adventorial_article_Dg7Dgn": {
+      "type": "adventorial-article",
+      "name": "Adventorial Article",
+      "settings": {
+        "button_bg": "#000000",
+        "button_text_color": "#ffffff",
+        "button_radius": 6,
+        "button_font": "inherit",
+        "button_font_size": 16,
+        "button_font_size_mobile": 16,
+        "title": "",
+        "subtitle": "Sawdust, Clamps & Shop Abuse",
+        "image": "shopify://shop_images/3zon.webp",
+        "content": "<p>If there’s one place I expected this thing to die, it was the shop.<br/><br/>In six months, the <a href=\"/products/carbinox-blaze\" title=\"Carbinox Blaze – Heavy Duty Smartwatch\"><span style=\"text-decoration:underline\"><strong>Blaze</strong></span> </a>has:<br/></p><ul><li>Been slammed into clamps and metal vises when I’m rushing</li></ul><p></p><ul><li>Dragged across the corners of workbenches more times than I can count</li></ul><p></p><ul><li>Sat through hours of sanding with fine dust hanging in the air</li></ul><p></p><ul><li>Gotten glue on it that I scraped off later with a fingernail </li></ul><p></p><ul><li>Been worn during finishes and wipe-downs when my hands are a mess </li></ul><p>My old “nice” watches didn’t last long in here. The Apple Watch made me nervous. The <a href=\"/products/carbinox-blaze\" title=\"Carbinox Blaze – Heavy Duty Smartwatch\"><span style=\"text-decoration:underline\"><strong>Blaze</strong></span></a>? I just don’t think about it. It gets hit, it keeps going. I’ll look down at the end of the day and it still looks way better than something that’s lived in that environment should.<br/><br/>That’s the biggest compliment I can give it: in the place where everything gets destroyed eventually, this watch is still very much alive.</p>",
+        "show_button": false,
+        "button_label": "CLICK HERE TO CHECK AVAILABILITY",
+        "button_url": "",
+        "button_new_tab": false,
+        "show_divider": true
+      }
+    },
+    "adventorial_article_tFNtTi": {
+      "type": "adventorial-article",
+      "name": "Adventorial Article",
+      "settings": {
+        "button_bg": "#000000",
+        "button_text_color": "#ffffff",
+        "button_radius": 6,
+        "button_font": "inherit",
+        "button_font_size": 16,
+        "button_font_size_mobile": 16,
+        "title": "",
+        "subtitle": "Trails, Hunts, Surf & The Gym",
+        "image": "shopify://shop_images/6zon.webp",
+        "content": "<p>Outside the shop, my weekends and nights aren’t exactly gentle either.<br/><br/>I’ve worn the <a href=\"/products/carbinox-blaze\" title=\"Carbinox Blaze – Heavy Duty Smartwatch\"><span style=\"text-decoration:underline\"><strong>Blaze</strong></span></a>:<br/></p><ul><li>On bike rides where I’ve clipped bars on trees and caught myself on rocks </li></ul><p></p><ul><li>On long hikes where it’s scraped against branches, pack straps, and rocks </li></ul><p></p><ul><li>On early morning hunts in the cold, crawling through brush and mud </li></ul><p></p><ul><li>In the gym, where it gets soaked in sweat and banged on barbells </li></ul><p></p><ul><li>In the water on a couple of spur-of-the-moment surf sessions when I forgot to take it off </li></ul><p>It’s taken all of that without complaining. No weird moisture issues. No random fog under the screen. No dead pixels. No “oh, it just stopped turning on one day” moment.<br/><br/>I realized pretty quickly: if there’s a day I expect to get dirty, scratched, or soaked, I put on the <a href=\"/products/carbinox-blaze\" title=\"Carbinox Blaze – Heavy Duty Smartwatch\"><span style=\"text-decoration:underline\"><strong>Blaze</strong></span></a> without thinking twice. That’s the whole point.</p>",
+        "show_button": false,
+        "button_label": "CLICK HERE TO CHECK AVAILABILITY",
+        "button_url": "",
+        "button_new_tab": false,
+        "show_divider": true
+      }
+    },
+    "adventorial_article_E9reFw": {
+      "type": "adventorial-article",
+      "name": "Adventorial Article",
+      "settings": {
+        "button_bg": "#000000",
+        "button_text_color": "#ffffff",
+        "button_radius": 6,
+        "button_font": "inherit",
+        "button_font_size": 16,
+        "button_font_size_mobile": 16,
+        "title": "",
+        "subtitle": "Battery Life: The Part That Actually Shocked Me",
+        "image": "shopify://shop_images/7zon.webp",
+        "content": "<p>Let’s talk battery, because this is where I noticed the biggest difference in day-to-day life.<br/>With my Apple Watch, charging is basically part of the routine. You expect to drop it on a charger at night and sometimes baby it through long days.<br/><br/>With the Blaze, I realized I was forgetting about charging. In a good way.<br/><br/>I can go through multiple long work days, ride after work, hit the gym, and spend a weekend outside before I even think about plugging it in. It became one less thing I had to manage.<br/><br/>For someone who already juggles tools, projects, bikes, hunts, and whatever else life throws at me, not having to babysit another battery is huge. The Blaze lasts. That matters more to me than any fancy UI animation ever will.</p>",
+        "show_button": false,
+        "button_label": "CLICK HERE TO CHECK AVAILABILITY",
+        "button_url": "",
+        "button_new_tab": false,
+        "show_divider": true
+      }
+    },
+    "adventorial_article_dPJU76": {
+      "type": "adventorial-article",
+      "name": "Adventorial Article",
+      "settings": {
+        "button_bg": "#000000",
+        "button_text_color": "#ffffff",
+        "button_radius": 6,
+        "button_font": "inherit",
+        "button_font_size": 16,
+        "button_font_size_mobile": 16,
+        "title": "",
+        "subtitle": "Smart Features That Actually Matter",
+        "image": "shopify://shop_images/8_7252d040-f817-4162-93d8-78888084fa70.png",
+        "content": "<p>I don’t need my watch to replace my phone. I just need it to handle the basics.<br/><br/>On the <a href=\"/products/carbinox-blaze\" title=\"Carbinox Blaze – Heavy Duty Smartwatch\"><span style=\"text-decoration:underline\"><strong>Blaze</strong></span></a>, I still get:<br/></p><ul><li>Receive and answer calls and texts </li><li>App notifications</li><li>Heart rate monitoring</li><li>Step count and distance</li><li>Sleep tracking</li><li>And much more </li></ul><p>That’s it. That’s all I actually care about when I’m working or outside.<br/><br/>I can see if that vibration on my wrist is something I need to stop for, or if it can wait. I can check how many steps I’ve taken on a long shop day or hike. I can see how well (or badly) I slept after a brutal week.<br/><br/>Everything syncs up with my phone, and the experience is “good enough” in the best way possible: it works, it’s quick, and I’m not standing there poking at my wrist like a tech reviewer.</p>",
+        "show_button": false,
+        "button_label": "CLICK HERE TO CHECK AVAILABILITY",
+        "button_url": "",
+        "button_new_tab": false,
+        "show_divider": true
+      }
+    },
+    "adventorial_article_3fxJNB": {
+      "type": "adventorial-article",
+      "name": "Adventorial Article",
+      "settings": {
+        "button_bg": "#000000",
+        "button_text_color": "#ffffff",
+        "button_radius": 6,
+        "button_font": "inherit",
+        "button_font_size": 16,
+        "button_font_size_mobile": 16,
+        "title": "",
+        "subtitle": "Living With Blaze And Apple Watch Together",
+        "image": "shopify://shop_images/9zon.jpg",
+        "content": "<p>Here’s the part I really didn’t expect: using both watches doesn’t feel weird.<br/><br/>The Apple Watch is still my “clean” watch. If I’m going out to dinner, hanging with friends, or doing something where I know I’m not going to be covered in dust or dripping in sweat, I’ll throw it on.<br/><br/>But when the boots go on and I know I’m heading into the shop, the woods, the trail, or the gym, the <a href=\"/products/carbinox-blaze\" title=\"Carbinox Blaze – Heavy Duty Smartwatch\"><span style=\"text-decoration:underline\"><strong>Blaze</strong></span> </a>is the automatic choice.<br/><br/>Swapping between them doesn’t feel like going from “premium” to “cheap.” It feels like going from “dress boots” to “work boots.” Both have a place. You just don’t wear dress boots to pour concrete.<br/><br/>The best part is that wearing <a href=\"/products/carbinox-blaze\" title=\"Carbinox Blaze – Heavy Duty Smartwatch\"><span style=\"text-decoration:underline\"><strong>Blaze</strong></span> </a>at work doesn’t make me feel like I’ve lost anything vital from the Apple Watch. I still get the important stuff on my wrist without risking an $800 piece of glass in a very unforgiving environment.</p>",
+        "show_button": false,
+        "button_label": "CLICK HERE TO CHECK AVAILABILITY",
+        "button_url": "",
+        "button_new_tab": false,
+        "show_divider": true
+      }
+    },
+    "adventorial_article_xKM9JU": {
+      "type": "adventorial-article",
+      "name": "Adventorial Article",
+      "settings": {
+        "button_bg": "#000000",
+        "button_text_color": "#ffffff",
+        "button_radius": 6,
+        "button_font": "inherit",
+        "button_font_size": 16,
+        "button_font_size_mobile": 16,
+        "title": "",
+        "subtitle": "The Warranty & Trial: What Pushed Me Over The Edge",
+        "image": "shopify://shop_images/10zon.webp",
+        "content": "<p>I’ll be honest: I probably wouldn’t have tried the <a href=\"/products/carbinox-blaze\" title=\"Carbinox Blaze – Heavy Duty Smartwatch\"><span style=\"text-decoration:underline\"><strong>Blaze</strong></span> </a>without two things:<br/></p><ul><li>The <strong>45-day risk-free trial</strong></li><li>The <strong>Lifetime Replacement Warranty</strong> </li></ul><p>The trial meant I could bring it into my actual life—shop, trails, hunts, gym, and all—and if it didn’t hold up or just felt wrong, I could send it back. No harm done.<br/><br/>The lifetime replacement part made it feel like a brand that understands who they’re selling to. If it fails under normal use, they’ll replace it. Normal use for me includes banging it on things and getting it filthy. That’s kind of the whole point.<br/>Knowing I was covered made it easy to stop babying it and just… use it. Six months later, I haven’t had to test that warranty, but it’s nice knowing it’s there.</p>",
+        "show_button": false,
+        "button_label": "CLICK HERE TO CHECK AVAILABILITY",
+        "button_url": "",
+        "button_new_tab": false,
+        "show_divider": true
+      }
+    },
+    "adventorial_article_9KaJBp": {
+      "type": "adventorial-article",
+      "name": "Adventorial Article",
+      "settings": {
+        "button_bg": "#37b41f",
+        "button_text_color": "#ffffff",
+        "button_radius": 6,
+        "button_font": "inherit",
+        "button_font_size": 20,
+        "button_font_size_mobile": 17,
+        "title": "",
+        "subtitle": "Final Verdict: Who The Carbinox Blaze Is For",
+        "image": "shopify://shop_images/11zon.webp",
+        "content": "<p>If you:<br/></p><ul><li>Work with your hands</li><li>Live in a shop, on a site, in a truck, or outside</li><li>Already own an Apple Watch but hate gambling with it</li><li>Or want a tough smartwatch without dropping $800 on something fragile</li></ul><p>…the <a href=\"/products/carbinox-blaze\" title=\"Carbinox Blaze – Heavy Duty Smartwatch\"><span style=\"text-decoration:underline\"><strong>Carbinox Blaze</strong></span></a> is honestly worth a shot.<br/><br/>It’s not a jewelry piece. It’s not trying to be sleek for boardrooms. It’s a work watch. A beat-it-up, don’t-think-about-it, gets-the-job-done watch.<br/><br/>My Apple Watch didn’t get replaced. It just got backup. Blaze is the partner I send into the mess so the “nice watch” doesn’t have to see it.<br/><br/>If you’re tired of babysitting your wrist every time things get dirty, this thing is exactly what you think it is: a tough, smart enough, long-lasting watch that lives in the same world you do.</p>",
+        "show_button": true,
+        "button_label": "SHOP CARBINOX BLAZE HERE",
+        "button_url": "shopify://products/carbinox-blaze",
+        "button_icon": "shopify://shop_images/arrow-up-right.png",
+        "button_new_tab": true,
+        "show_divider": false
+      }
+    },
+    "footer_adventorial_nkyjy6": {
+      "type": "footer-adventorial",
+      "blocks": {
+        "link_CKRdtz": {
+          "type": "link",
+          "settings": {
+            "link_label": "Privacy Policy",
+            "link_url": "shopify://policies/privacy-policy"
+          }
+        },
+        "link_EbkPRq": {
+          "type": "link",
+          "settings": {
+            "link_label": "Terms Of Service",
+            "link_url": "shopify://policies/terms-of-service"
+          }
+        },
+        "link_X9b873": {
+          "type": "link",
+          "settings": {
+            "link_label": "Refund Policy",
+            "link_url": "shopify://policies/refund-policy"
+          }
+        }
+      },
+      "block_order": [
+        "link_CKRdtz",
+        "link_EbkPRq",
+        "link_X9b873"
+      ],
+      "name": "Footer Adventorial",
+      "settings": {
+        "footer_bg": "#0f0f0f",
+        "copyright": "©2025 Warrior Tech – All Rights Reserved."
+      }
+    },
+    "custom_liquid_jPideC": {
+      "type": "custom-liquid",
+      "disabled": true,
+      "name": "Hide header",
+      "settings": {
+        "subheading": "",
+        "title": "",
+        "liquid": "<style>\n.test-header.new-header {\ndisplay: none !important;\n}\n</style>",
+        "add_vertical_spacing": true,
+        "background_type": "full_width",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "new_header_advertorial_dCMJwc",
+    "breadcrumb_advertorial_LDQzjW",
+    "adv_main_title_APMhVF",
+    "adventorial_article_7fKJMB",
+    "advertorial_article_structured_NnF7YX",
+    "adventorial_article_hNyRjX",
+    "adventorial_article_YcMXiF",
+    "adventorial_article_Dg7Dgn",
+    "adventorial_article_tFNtTi",
+    "adventorial_article_E9reFw",
+    "adventorial_article_dPJU76",
+    "adventorial_article_3fxJNB",
+    "adventorial_article_xKM9JU",
+    "adventorial_article_9KaJBp",
+    "footer_adventorial_nkyjy6",
+    "custom_liquid_jPideC"
+  ]
+}

@@ -1,0 +1,624 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "1764698591f451ce32": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_0ac9daa_aXaFVF": {
+          "type": "ai_gen_block_0ac9daa",
+          "settings": {
+            "logo": "shopify://shop_images/2jl-business_card.pdf_2_2ea47014-d968-4047-ba6f-8a17e496d336.png",
+            "logo_width": 120,
+            "section_height": 100,
+            "background_color": "#000000"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_0ac9daa_aXaFVF"
+      ],
+      "settings": {}
+    },
+    "slideshow_cYYwAy": {
+      "type": "slideshow",
+      "blocks": {
+        "image_6ARXkn": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Diseno_sin_titulo-50-min.jpg",
+            "mobile_image": "shopify://shop_images/Diseno_sin_titulo_42_-min.png",
+            "text_position": "middle_center",
+            "subheading": "CONGRATULATIONS, YOUR LIFETIME SMARTWATCH JUST ARRIVED. GET READY TO EXPERIENCE NEXT LEVEL TECHNOLOGY AND DURABILITY.",
+            "title": "FOLLOW THIS STEP-BY-STEP TO CONFIGURE YOUR NEW CARBINOX SMARTWATCH.",
+            "button_1_text": "",
+            "button_1_link": "",
+            "button_2_text": "",
+            "button_2_link": "",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        }
+      },
+      "block_order": [
+        "image_6ARXkn"
+      ],
+      "custom_css": [
+        "h3 {font-size: 24px; color: #ffc200;}"
+      ],
+      "settings": {
+        "section_height": "auto",
+        "transition_type": "fade",
+        "autoplay": false,
+        "cycle_speed": 5,
+        "background": "rgba(0,0,0,0)"
+      }
+    },
+    "rich_text_B7XKEw": {
+      "type": "rich-text",
+      "custom_css": [
+        "H3 {font-size: 20px;}"
+      ],
+      "settings": {
+        "section_id": "",
+        "subheading": "",
+        "title": "GOT 60 SECONDS TO COMPLETE A FORM IN EXCHANGE OF A GIFT? 🎁",
+        "content": "<p><strong>LEAVE YOUR THOUGHTS ABOUT YOUR NEW WATCH, AND SOMETHING WILL BE WAITING FOR YOU AT THE END OF THE FORM! 😉</strong></p>",
+        "button_text": "FILL 60-sec FORM NOW ➔",
+        "button_link": "https://form.typeform.com/to/STN0YxyD",
+        "background_type": "full_width",
+        "text_width": "fill",
+        "text_position": "center",
+        "text_alignment": "center",
+        "background": "#0b7201",
+        "text_color": "#ffffff",
+        "button_background": "#000000",
+        "button_text_color": "#ffffff"
+      }
+    },
+    "rich_text_7LGyM4": {
+      "type": "rich-text",
+      "custom_css": [
+        "h3 {font-size: 24px; color: #ffc200;}"
+      ],
+      "settings": {
+        "section_id": "",
+        "subheading": "",
+        "title": "1. LET'S DOWNLOAD THE CARBINOX APP ON YOUR PHONE.",
+        "content": "<p><strong>PLEASE NOTE:</strong> Carbinox has different apps on the App Store. Please download the one that is compatible with your smartwatch.</p>",
+        "button_text": "",
+        "button_link": "",
+        "background_type": "full_width",
+        "text_width": "medium",
+        "text_position": "center",
+        "text_alignment": "center",
+        "background": "#000000",
+        "text_color": "#ffffff",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "1764694906778854d7": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_e5c6b69_tfddKm": {
+          "type": "ai_gen_block_e5c6b69",
+          "settings": {
+            "desktop_image": "shopify://shop_images/2-min_11.png",
+            "mobile_image": "shopify://shop_images/2-min_11.png",
+            "headline": "FOR CARBINOX EDGE, download the carbinox max app.",
+            "headline_position_top": 5,
+            "headline_font_size": 32,
+            "headline_font_weight": "700",
+            "headline_text_transform": "uppercase",
+            "headline_text_color": "#ffffff",
+            "headline_text_shadow": true,
+            "headline_padding_vertical": 15,
+            "headline_padding_horizontal": 20,
+            "headline_background_enabled": false,
+            "headline_background_color": "#000000",
+            "headline_bg_padding_vertical": 15,
+            "headline_bg_padding_horizontal": 30,
+            "headline_border_radius": 0,
+            "buttons_area_background": "#000000",
+            "buttons_area_padding_vertical": 30,
+            "buttons_area_padding_horizontal": 20,
+            "buttons_margin_top": 0,
+            "button_1_text": "DOWNLOAD FOR IPHONE ➔",
+            "button_1_url": "https://apps.apple.com/en/app/id6751258013",
+            "button_1_bg_color": "#ffc200",
+            "button_1_text_color": "#282828",
+            "button_1_hover_bg_color": "#e6ae00",
+            "button_1_hover_text_color": "#282828",
+            "button_2_text": "DOWNLOAD FOR ANDROID ➔",
+            "button_2_url": "https://play.google.com/store/apps/details?id=com.carbinox.app.max",
+            "button_2_bg_color": "#ffc200",
+            "button_2_text_color": "#000000",
+            "button_2_hover_bg_color": "#282828",
+            "button_2_hover_text_color": "#ffffff",
+            "button_alignment": "center",
+            "button_spacing": 15,
+            "button_font_size": 16,
+            "button_padding_vertical": 12,
+            "button_padding_horizontal": 30,
+            "button_border_radius": 6
+          },
+          "blocks": {}
+        },
+        "ai_gen_block_e5c6b69_E69kxL": {
+          "type": "ai_gen_block_e5c6b69",
+          "settings": {
+            "desktop_image": "shopify://shop_images/1-min_9.png",
+            "mobile_image": "shopify://shop_images/1-min_9.png",
+            "headline": "FOR CARBINOX BLAZE TYPE R AND TYPE S, download the CARBINOX PRO APP.",
+            "headline_position_top": 5,
+            "headline_font_size": 30,
+            "headline_font_weight": "700",
+            "headline_text_transform": "uppercase",
+            "headline_text_color": "#ffffff",
+            "headline_text_shadow": true,
+            "headline_padding_vertical": 15,
+            "headline_padding_horizontal": 20,
+            "headline_background_enabled": false,
+            "headline_background_color": "#000000",
+            "headline_bg_padding_vertical": 15,
+            "headline_bg_padding_horizontal": 30,
+            "headline_border_radius": 0,
+            "buttons_area_background": "#000000",
+            "buttons_area_padding_vertical": 30,
+            "buttons_area_padding_horizontal": 20,
+            "buttons_margin_top": 0,
+            "button_1_text": "DOWNLOAD FOR IPHONE ➔",
+            "button_1_url": "https://apps.apple.com/us/app/carbinox/id6448656715",
+            "button_1_bg_color": "#ffc200",
+            "button_1_text_color": "#282828",
+            "button_1_hover_bg_color": "#e6ae00",
+            "button_1_hover_text_color": "#282828",
+            "button_2_text": "DOWNLOAD FOR ANDROID ➔",
+            "button_2_url": "https://play.google.com/store/apps/details?id=com.yc.carbinoxpro&hl=en_SG",
+            "button_2_bg_color": "#ffc200",
+            "button_2_text_color": "#000000",
+            "button_2_hover_bg_color": "#282828",
+            "button_2_hover_text_color": "#ffffff",
+            "button_alignment": "center",
+            "button_spacing": 15,
+            "button_font_size": 16,
+            "button_padding_vertical": 12,
+            "button_padding_horizontal": 30,
+            "button_border_radius": 6
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_e5c6b69_tfddKm",
+        "ai_gen_block_e5c6b69_E69kxL"
+      ],
+      "settings": {}
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "show_title": true,
+        "page_width": "medium"
+      }
+    },
+    "rich_text_ptfrya": {
+      "type": "rich-text",
+      "disabled": true,
+      "custom_css": [
+        "h3 {color: #ffc200; font-size: 22px;}"
+      ],
+      "settings": {
+        "section_id": "",
+        "subheading": "LEARNING HOW TO PROPERLY USE YOUR NEW SMARTWATCH IS KEY TO ENSURE AN EXPERIENCE BEYOND AVERAGE.",
+        "title": "PLEASE, READ CAREFULLY EVERY SINGLE SECTION OF THIS PAGE TO UNDERSTAND YOUR NEW SMARTWATCH.",
+        "content": "",
+        "button_text": "",
+        "button_link": "",
+        "background_type": "full_width",
+        "text_width": "medium",
+        "text_position": "center",
+        "text_alignment": "center",
+        "background": "#000000",
+        "text_color": "#ffffff",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "image_with_text_RJpttn": {
+      "type": "image-with-text",
+      "blocks": {
+        "item_Edm9Ft": {
+          "type": "item",
+          "settings": {
+            "show_video": false,
+            "video_link": "",
+            "image": "shopify://shop_images/DOWNLOAD_THE_APP_GLORYFIT_PRO_TO_PAIR_YOUR_VORTEX_WITH_YOUR_PHONE.-min_281c648b-95ca-4885-83ea-473196dc11c8.png",
+            "tab_label": "Item",
+            "subheading": "",
+            "title": "2. CHECK THE INSTRUCTIONS MANUAL INSIDE YOUR PACKAGE.",
+            "content": "<p>Setting up your new smartwatch is easier than you think. Please check the instructions manual inside your package and follow the instructions to finish the configuration for your new Carbinox.</p><p><strong>IF YOU WANT TO DOWNLOAD THE DIGITAL VERSION, JUST CLICK BELOW! 👇🏼</strong></p>",
+            "button_text": "OPEN INSTRUCTIONS MANUAL ➔",
+            "button_link": "https://drive.google.com/drive/folders/1ACc4ctHhp5DGWQc2PaCtm7TjiILkNHpg?usp=sharing"
+          }
+        }
+      },
+      "block_order": [
+        "item_Edm9Ft"
+      ],
+      "custom_css": [
+        "h3 {font-size: 24px; color: #ffc200;}"
+      ],
+      "settings": {
+        "section_id": "",
+        "reveal_on_scroll": false,
+        "background_type": "full_width",
+        "background_overlap": "text",
+        "image_position": "left",
+        "text_alignment": "center",
+        "cycle_speed": 8,
+        "accent_background": "#000000",
+        "text_color": "#ffffff",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)",
+        "enable_custom_margin": false,
+        "margin_bottom": 0
+      }
+    },
+    "image_with_text_zqNBd3": {
+      "type": "image-with-text",
+      "blocks": {
+        "item_WCmDFJ": {
+          "type": "item",
+          "settings": {
+            "show_video": false,
+            "video_link": "",
+            "image": "shopify://shop_images/Diseno_sin_titulo_40_-min.webp",
+            "tab_label": "Item",
+            "subheading": "",
+            "title": "STEP #3: WHENEVER YOU FACE AN ISSUE WITH YOUR WATCH, THIS WILL BE YOUR BIBLE.",
+            "content": "<p>Learning to use a smartwatch can be challenging, so we've created a comprehensive AI Troubleshooting Tool guide that covers every potential \"issue\" you might face with your smartwatch, along with quick and easy solutions to keep you moving forward.</p>",
+            "button_text": "AI TROUBLESHOOTING GUIDE ➔",
+            "button_link": "https://chatgpt.com/g/g-67e2eeef4ed481918e7f83244ee22c3a-carbinox-ai-troubleshooting"
+          }
+        }
+      },
+      "block_order": [
+        "item_WCmDFJ"
+      ],
+      "custom_css": [
+        "h3 {font-size: 24px; color: #ffc200;}"
+      ],
+      "settings": {
+        "section_id": "",
+        "reveal_on_scroll": false,
+        "background_type": "full_width",
+        "background_overlap": "text",
+        "image_position": "left",
+        "text_alignment": "center",
+        "cycle_speed": 8,
+        "accent_background": "#000000",
+        "text_color": "#ffffff",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)",
+        "enable_custom_margin": false,
+        "margin_bottom": 0
+      }
+    },
+    "rich_text_MiHPqi": {
+      "type": "rich-text",
+      "custom_css": [
+        "H3 {font-size: 20px;}"
+      ],
+      "settings": {
+        "section_id": "",
+        "subheading": "",
+        "title": "GOT 60 SECONDS TO COMPLETE A FORM IN EXCHANGE OF A GIFT? 🎁",
+        "content": "<p><strong>LEAVE YOUR THOUGHTS ABOUT YOUR NEW WATCH, AND SOMETHING WILL BE WAITING FOR YOU AT THE END OF THE FORM! 😉</strong></p>",
+        "button_text": "FILL 60-sec FORM NOW ➔",
+        "button_link": "https://form.typeform.com/to/STN0YxyD",
+        "background_type": "full_width",
+        "text_width": "fill",
+        "text_position": "center",
+        "text_alignment": "center",
+        "background": "#0b7201",
+        "text_color": "#ffffff",
+        "button_background": "#000000",
+        "button_text_color": "#ffffff"
+      }
+    },
+    "image_with_text_QQ7k4F": {
+      "type": "image-with-text",
+      "blocks": {
+        "item_LyAUcq": {
+          "type": "item",
+          "settings": {
+            "show_video": false,
+            "video_link": "",
+            "image": "shopify://shop_images/Diseno_sin_titulo_43_-min_2ecdf14d-39bf-4dbd-9a1c-673b7948e6a0.png",
+            "tab_label": "Item",
+            "subheading": "",
+            "title": "step 4: activate your lifetime warranty.",
+            "content": "<p>Your watch is built to take a beating — your wallet shouldn’t have to.<br/><br/>Activate your Carbinox Lifetime Warranty now and if it ever gets cracked, smashed, or beat to hell, we replace it. No hassle, no fine print. Just gear that’s backed for life.</p>",
+            "button_text": "ACTIVATE LIFETIME WARRANTY ➔",
+            "button_link": "shopify://pages/edge-welcome"
+          }
+        }
+      },
+      "block_order": [
+        "item_LyAUcq"
+      ],
+      "custom_css": [
+        "h3 {color: #ffc200; font-size: 24px;}"
+      ],
+      "settings": {
+        "section_id": "",
+        "reveal_on_scroll": false,
+        "background_type": "full_width",
+        "background_overlap": "text",
+        "image_position": "left",
+        "text_alignment": "center",
+        "cycle_speed": 8,
+        "accent_background": "#000000",
+        "text_color": "#ffffff",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)",
+        "enable_custom_margin": false,
+        "margin_bottom": 0
+      }
+    },
+    "image_with_text_iRLkGB": {
+      "type": "image-with-text",
+      "blocks": {
+        "item_pEbhXg": {
+          "type": "item",
+          "settings": {
+            "show_video": false,
+            "video_link": "",
+            "image": "shopify://shop_images/image-desktop-2.webp",
+            "tab_label": "Item",
+            "subheading": "",
+            "title": "PLEASE, READ THIS EXTREMELY IMPORTANT INFORMATION:",
+            "content": "<p><strong>🎙️ AI VOICE ASSISTANT:<br/></strong>Simply navigate to the voice assistant feature on your Carbinox smartwatch by selecting it from the main menu.<br/><br/>After activating the assistant, you can send a text message by saying the command, for example, “<strong>Send a text message to [name] saying [message].</strong>”<br/><br/>While the AI voice assistant is highly responsive, it is also very sensitive. This means that in some cases, the message<strong>may not be delivered exactly as you intended.</strong>Always double-check your command to ensure it’s understood correctly.</p><p><strong>📍 DUAL GPS SYSTEM:</strong><br/>When you select any sport mode on your smartwatch, the device relies on your smartphone’s GPS for precise location data. This allows the smartwatch to accurately track your movements, speed, and distance during outdoor activities.<br/><br/><strong>🧭 COMPASS, ALTIMETER, BAROMETER:<br/></strong>These three features are now available on your new watch. Just press the \"SEL\" button (Top right) to open the menu, then locate the one you want to use.</p>",
+            "button_text": "",
+            "button_link": "shopify://pages/epc-1"
+          }
+        }
+      },
+      "block_order": [
+        "item_pEbhXg"
+      ],
+      "custom_css": [
+        "h3 {color: #ffc200; font-size: 24px;}"
+      ],
+      "settings": {
+        "section_id": "",
+        "reveal_on_scroll": false,
+        "background_type": "full_width",
+        "background_overlap": "text",
+        "image_position": "left",
+        "text_alignment": "center",
+        "cycle_speed": 8,
+        "accent_background": "#000000",
+        "text_color": "#ffffff",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)",
+        "enable_custom_margin": false,
+        "margin_bottom": 0
+      }
+    },
+    "image_with_text_qpFDxh": {
+      "type": "image-with-text",
+      "blocks": {
+        "item_PWaMKq": {
+          "type": "item",
+          "settings": {
+            "show_video": false,
+            "video_link": "",
+            "image": "shopify://shop_images/Diseno_sin_titulo_64_-min.png",
+            "tab_label": "Item",
+            "subheading": "",
+            "title": "NOW... JOIN CARBINOX ELITE PRIVATE CLUB!",
+            "content": "<p><strong>FREE PRODUCTS, LIFETIME REPLACEMENTS, DISCOUNTS AND MORE ARE WAITING FOR YOU IF YOU JOIN TODAY! YOU WON'T REGRET IT! 👀</strong></p>",
+            "button_text": "JOIN MEMBERSHIP ➔",
+            "button_link": "shopify://pages/epc-1"
+          }
+        }
+      },
+      "block_order": [
+        "item_PWaMKq"
+      ],
+      "custom_css": [
+        "h3 {color: #ffc200; font-size: 24px;}"
+      ],
+      "settings": {
+        "section_id": "",
+        "reveal_on_scroll": false,
+        "background_type": "full_width",
+        "background_overlap": "text",
+        "image_position": "left",
+        "text_alignment": "center",
+        "cycle_speed": 8,
+        "accent_background": "#000000",
+        "text_color": "#ffffff",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)",
+        "enable_custom_margin": false,
+        "margin_bottom": 0
+      }
+    },
+    "video_RjBfER": {
+      "type": "video",
+      "disabled": true,
+      "settings": {
+        "subheading": "",
+        "title": "",
+        "video_url": "https://www.youtube.com/watch?v=ASSc0KXAkkA",
+        "image": "shopify://shop_images/Diseno_sin_titulo-49-min.jpg",
+        "background_type": "full_width",
+        "video_size": "auto",
+        "autoplay": false,
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "rich_text_YVMWVt": {
+      "type": "rich-text",
+      "custom_css": [
+        "H3 {font-size: 20px;}"
+      ],
+      "settings": {
+        "section_id": "",
+        "subheading": "",
+        "title": "GOT 60 SECONDS TO COMPLETE A FORM IN EXCHANGE OF A GIFT? 🎁",
+        "content": "<p><strong>LEAVE YOUR THOUGHTS ABOUT YOUR NEW WATCH, AND SOMETHING WILL BE WAITING FOR YOU AT THE END OF THE FORM! 😉</strong></p>",
+        "button_text": "FILL 60-sec FORM NOW ➔",
+        "button_link": "https://form.typeform.com/to/STN0YxyD",
+        "background_type": "full_width",
+        "text_width": "fill",
+        "text_position": "center",
+        "text_alignment": "center",
+        "background": "#0b7201",
+        "text_color": "#ffffff",
+        "button_background": "#000000",
+        "button_text_color": "#ffffff"
+      }
+    },
+    "rich_text_tgRiFE": {
+      "type": "rich-text",
+      "disabled": true,
+      "custom_css": [
+        "H3 {font-size: 20px;}"
+      ],
+      "settings": {
+        "section_id": "",
+        "subheading": "",
+        "title": "FILL THIS 1-MINUTE FORM AND WE'LL BECOME THE BEST SMARTWATCHES BRAND.",
+        "content": "<p><strong>Your feedback is highly valued. Please let us know what you think about your new watch, as well as what would you like to see in the future on Carbinox. It only takes one minute to fill!</strong></p>",
+        "button_text": "👉🏼 FILL 1-MINUTE FORM NOW!",
+        "button_link": "https://form.typeform.com/to/STN0YxyD",
+        "background_type": "full_width",
+        "text_width": "fill",
+        "text_position": "center",
+        "text_alignment": "center",
+        "background": "#0e9e01",
+        "text_color": "#ffffff",
+        "button_background": "#000000",
+        "button_text_color": "#ffffff"
+      }
+    },
+    "video_Krry7Y": {
+      "type": "video",
+      "disabled": true,
+      "settings": {
+        "subheading": "",
+        "title": "",
+        "video_url": "https://www.youtube.com/watch?v=ASSc0KXAkkA",
+        "image": "shopify://shop_images/Diseno_sin_titulo_12_-min.jpg",
+        "background_type": "full_width",
+        "video_size": "auto",
+        "autoplay": false,
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "rich_text_H3rhVL": {
+      "type": "rich-text",
+      "disabled": true,
+      "custom_css": [
+        "H3 {font-size: 20px;}"
+      ],
+      "settings": {
+        "section_id": "",
+        "subheading": "",
+        "title": "FILL THIS 1-MINUTE FORM AND WE'LL BECOME THE BEST SMARTWATCHES BRAND.",
+        "content": "<p><strong>Your feedback is highly valued. Please let us know what you think about your new watch, as well as what would you like to see in the future on Carbinox. It only takes one minute to fill!</strong></p>",
+        "button_text": "👉🏼 FILL 1-MINUTE FORM NOW!",
+        "button_link": "https://form.typeform.com/to/STN0YxyD",
+        "background_type": "full_width",
+        "text_width": "fill",
+        "text_position": "center",
+        "text_alignment": "center",
+        "background": "#0e9e01",
+        "text_color": "#ffffff",
+        "button_background": "#000000",
+        "button_text_color": "#ffffff"
+      }
+    },
+    "image_with_text_WN6Cbw": {
+      "type": "image-with-text",
+      "blocks": {
+        "item_AGaMKB": {
+          "type": "item",
+          "settings": {
+            "show_video": false,
+            "video_link": "",
+            "image": "shopify://shop_images/Anadir_un_titulo-10-min.png",
+            "tab_label": "Item",
+            "subheading": "",
+            "title": "check our troubleshooting guide!",
+            "content": "<p><strong>All Carbinox products are made with the highest quality standards to provide a positive experience to all our customers across the nation.</strong></p><p><strong>We’ve created this troubleshooting guide to provide solutions to anything you may be facing with your new smartwatch.</strong></p>",
+            "button_text": "GO TO TROUBLESHOOTING GUIDE",
+            "button_link": "https://shopcarbinox.com/pages/carbinox-troubleshooting-guide"
+          }
+        }
+      },
+      "block_order": [
+        "item_AGaMKB"
+      ],
+      "disabled": true,
+      "custom_css": [
+        "h3 {color: #ffc200; font-size: 24px;}"
+      ],
+      "settings": {
+        "section_id": "",
+        "reveal_on_scroll": false,
+        "background_type": "full_width",
+        "background_overlap": "text",
+        "image_position": "left",
+        "text_alignment": "center",
+        "cycle_speed": 8,
+        "accent_background": "#000000",
+        "text_color": "#ffffff",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)",
+        "enable_custom_margin": false,
+        "margin_bottom": 0
+      }
+    }
+  },
+  "order": [
+    "1764698591f451ce32",
+    "slideshow_cYYwAy",
+    "rich_text_B7XKEw",
+    "rich_text_7LGyM4",
+    "1764694906778854d7",
+    "main",
+    "rich_text_ptfrya",
+    "image_with_text_RJpttn",
+    "image_with_text_zqNBd3",
+    "rich_text_MiHPqi",
+    "image_with_text_QQ7k4F",
+    "image_with_text_iRLkGB",
+    "image_with_text_qpFDxh",
+    "video_RjBfER",
+    "rich_text_YVMWVt",
+    "rich_text_tgRiFE",
+    "video_Krry7Y",
+    "rich_text_H3rhVL",
+    "image_with_text_WN6Cbw"
+  ]
+}

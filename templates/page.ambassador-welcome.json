@@ -1,0 +1,213 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "show_title": true,
+        "page_width": "medium"
+      }
+    },
+    "29fff6e1-c1ae-43ab-9c2e-9aa61b09aa83": {
+      "type": "slideshow",
+      "blocks": {
+        "template--14607516631143__29fff6e1-c1ae-43ab-9c2e-9aa61b09aa83-1680705700af6bb1c4-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Screen_Shot_2023-04-05_at_2.41.49_PM.png",
+            "mobile_image": "shopify://shop_images/Diseno_sin_titulo-106-min.png",
+            "text_position": "middle_center",
+            "subheading": "WE'RE HAPPY TO HAVE YOU HERE!",
+            "title": "💸 get ready to make a lot of money with us!",
+            "button_1_text": "",
+            "button_1_link": "",
+            "button_2_text": "",
+            "button_2_link": "",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 50
+          }
+        }
+      },
+      "block_order": [
+        "template--14607516631143__29fff6e1-c1ae-43ab-9c2e-9aa61b09aa83-1680705700af6bb1c4-0"
+      ],
+      "settings": {
+        "section_height": "auto",
+        "transition_type": "sweep",
+        "autoplay": true,
+        "cycle_speed": 5,
+        "background": "rgba(0,0,0,0)"
+      }
+    },
+    "f33cea4c-01de-41e5-a4fc-6c9b4641b8ff": {
+      "type": "rich-text",
+      "settings": {
+        "section_id": "",
+        "subheading": "",
+        "title": "THE GUIDE YOU NEED TO BE THE PERFECT AMBASSADOR.",
+        "content": "<p>Since you've already subscribed to the <strong>Carbinox Ambassador Program, </strong>we've made this page to provide you helpful resources <strong>MADE BY OUR MARKETING EXPERTS AND CONTENT CREATORS</strong> to get more referrals, meaning <strong>MORE COMMISSIONS!</strong></p>",
+        "button_text": "",
+        "button_link": "",
+        "background_type": "full_width",
+        "text_width": "medium",
+        "text_position": "center",
+        "text_alignment": "center",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "cab399d1-fc8b-4e26-b9db-da42e6106821": {
+      "type": "rich-text",
+      "disabled": true,
+      "settings": {
+        "section_id": "",
+        "subheading": "THIS IS VERY IMPORTANT:",
+        "title": "ALONG WITH YOUR CUSTOM LINK, SHARE THIS CODE \"AMBASSADOR20\" TO YOUR FOLLOWERS TO GET 20% OFF AT CARBINOX!",
+        "content": "<p><strong>This will help you getting a lot of referrals since you're providing them savings!</strong></p>",
+        "button_text": "",
+        "button_link": "",
+        "background_type": "full_width",
+        "text_width": "medium",
+        "text_position": "center",
+        "text_alignment": "center",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "#2aa601",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "10fef05e-95e7-445a-97cd-d9e05d9176c7": {
+      "type": "rich-text",
+      "settings": {
+        "section_id": "",
+        "subheading": "",
+        "title": "1. see this video and learn how to do amazing content!",
+        "content": "",
+        "button_text": "",
+        "button_link": "",
+        "background_type": "full_width",
+        "text_width": "medium",
+        "text_position": "center",
+        "text_alignment": "center",
+        "background": "#000000",
+        "text_color": "#ffffff",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "50f0a6e7-c670-4bf1-accf-a1e9171ab08d": {
+      "type": "video",
+      "settings": {
+        "subheading": "",
+        "title": "",
+        "video_url": "https://www.youtube.com/watch?v=ZF9Ts7U-uIM",
+        "image": "shopify://shop_images/Screen_Shot_2023-04-05_at_2.41.49_PM.png",
+        "background_type": "full_width",
+        "video_size": "auto",
+        "autoplay": false,
+        "background": "#ff0000",
+        "text_color": "#f59200"
+      }
+    },
+    "f3ec4b83-aef0-4727-bdb9-6a2b302effd2": {
+      "type": "rich-text",
+      "settings": {
+        "section_id": "",
+        "subheading": "",
+        "title": "2. LEARN THE STRATEGIES WE USE TO MAKE MONEY!",
+        "content": "<p><strong>THE EASIEST AND MOST EFFECTIVE WAYS TO PROMOTE AND GET LIMITLESS REFERRALS!</strong></p>",
+        "button_text": "Download strategies",
+        "button_link": "https://drive.google.com/file/d/1ZnZ0dpQ8CkqnGeqPo4TuuJeA4-9ADjPJ/view?usp=sharing",
+        "background_type": "full_width",
+        "text_width": "medium",
+        "text_position": "center",
+        "text_alignment": "center",
+        "background": "#000000",
+        "text_color": "#ffffff",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "85dee865-4762-4c8a-9227-abe1ea4a0db5": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--14607516631143__85dee865-4762-4c8a-9227-abe1ea4a0db5-16807974150cea8d80-0": {
+          "type": "item",
+          "settings": {
+            "show_video": false,
+            "video_link": "",
+            "image": "shopify://shop_images/Screenshot_2023-04-06_at_12.09.56_PM.png",
+            "tab_label": "Item",
+            "subheading": "",
+            "title": "3. POST OUR VIDEOS ON SOCIAL MEDIA AND DOWNLOAD USEFUL FILES!",
+            "content": "<p><strong>WE'VE CREATED A SPECIAL FOLDER WITH TONS OF VIDEOS, LOGO FILES, AND<br/>MORE SO YOU CAN CUSTOMIZE YOUR OWN CONTENT!</strong></p>",
+            "button_text": "get access to carbinox folder",
+            "button_link": "https://drive.google.com/drive/folders/1SC0eMzocUkhvfaEX6MiM4cRmIVbQTFRf?usp=share_link"
+          }
+        }
+      },
+      "block_order": [
+        "template--14607516631143__85dee865-4762-4c8a-9227-abe1ea4a0db5-16807974150cea8d80-0"
+      ],
+      "settings": {
+        "section_id": "",
+        "reveal_on_scroll": true,
+        "background_type": "full_width",
+        "background_overlap": "text",
+        "image_position": "left",
+        "text_alignment": "center",
+        "cycle_speed": 8,
+        "accent_background": "#000000",
+        "text_color": "#ffffff",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)",
+        "enable_custom_margin": true,
+        "margin_bottom": 0
+      }
+    },
+    "376b1c93-d83e-4520-a810-3c9c5f9f5d61": {
+      "type": "rich-text",
+      "settings": {
+        "section_id": "",
+        "subheading": "",
+        "title": "IMPLEMENT THESE STRATEGIES AND YOUR SUCCESS IS GUARANTEED 🎉",
+        "content": "<p><strong>If you have any questions, please contact Paulina at paulina@shopcarbinox.com 😁</strong></p>",
+        "button_text": "",
+        "button_link": "",
+        "background_type": "full_width",
+        "text_width": "medium",
+        "text_position": "center",
+        "text_alignment": "center",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "29fff6e1-c1ae-43ab-9c2e-9aa61b09aa83",
+    "f33cea4c-01de-41e5-a4fc-6c9b4641b8ff",
+    "cab399d1-fc8b-4e26-b9db-da42e6106821",
+    "10fef05e-95e7-445a-97cd-d9e05d9176c7",
+    "50f0a6e7-c670-4bf1-accf-a1e9171ab08d",
+    "f3ec4b83-aef0-4727-bdb9-6a2b302effd2",
+    "85dee865-4762-4c8a-9227-abe1ea4a0db5",
+    "376b1c93-d83e-4520-a810-3c9c5f9f5d61"
+  ]
+}

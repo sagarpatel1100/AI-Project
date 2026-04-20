@@ -1,0 +1,710 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "68862341-fc8e-44dd-bc9e-31095377dc26": {
+      "type": "slideshow",
+      "blocks": {
+        "template--14617440354407__68862341-fc8e-44dd-bc9e-31095377dc26-image-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/LIFETIME_REPLACEMENTS_1600_x_900_px_-min.png",
+            "mobile_image": "shopify://shop_images/Diseno_sin_titulo-223-min.png",
+            "text_position": "top_center",
+            "subheading": "🎉 WELCOME AND THANKS FOR SHOPPING AT CARBINOX, WE'RE HAPPY TO HAVE YOU HERE!",
+            "title": "👀 WE HAVE IMPORTANT INFORMATION FOR YOU!",
+            "button_1_text": "",
+            "button_1_link": "",
+            "button_2_text": "",
+            "button_2_link": "",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "template--14617440354407__68862341-fc8e-44dd-bc9e-31095377dc26-image-1"
+      ],
+      "custom_css": [
+        "H3 {font-size: 28px;}",
+        "h2 {font-size: 13px;}"
+      ],
+      "settings": {
+        "section_height": "auto",
+        "transition_type": "fade",
+        "autoplay": true,
+        "cycle_speed": 5,
+        "background": "rgba(0,0,0,0)"
+      }
+    },
+    "2c6154c4-a2fa-4f89-addf-4e3eb38d8318": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--14533966594151__2c6154c4-a2fa-4f89-addf-4e3eb38d8318-1672873415bccd825b-0": {
+          "type": "item",
+          "settings": {
+            "show_video": false,
+            "video_link": "",
+            "image": "shopify://shop_images/Diseno_sin_titulo-11.jpg",
+            "tab_label": "Item",
+            "subheading": "🎉 WE WERE WAITING FOR YOU!",
+            "title": "WELCOME TO CARBINOX, YOU'LL LIKE IT HERE.",
+            "content": "<p><strong>Congratulations! </strong>Your journey with us is about to begin. Please<strong> check everything</strong> this <strong>customer-only </strong>special page has to offer!</p>",
+            "button_text": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--14533966594151__2c6154c4-a2fa-4f89-addf-4e3eb38d8318-1672873415bccd825b-0"
+      ],
+      "disabled": true,
+      "settings": {
+        "section_id": "",
+        "reveal_on_scroll": true,
+        "background_type": "full_width",
+        "background_overlap": "both",
+        "image_position": "left",
+        "text_alignment": "center",
+        "cycle_speed": 8,
+        "accent_background": "#000000",
+        "text_color": "#ffffff",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)",
+        "enable_custom_margin": false,
+        "margin_bottom": 0
+      }
+    },
+    "1663790710de9cea3c": {
+      "type": "rich-text",
+      "custom_css": [
+        "h3 {font-size: 22px;}"
+      ],
+      "settings": {
+        "section_id": "",
+        "subheading": "",
+        "title": "PLEASE READ EVERY SINGLE SECTION CAREFULLY TO GET THE BEST OUT OF YOUR NEW WATCH, AS WELL AS SOME GIFTS AT THE BOTTOM OF IT!",
+        "content": "<h5><span style=\"text-decoration:underline\"><strong>OUR ADVICE:</strong></span><strong> IT IS RECOMMENDED TO COPY AND PASTE EVERY LINK ON YOUR NOTES IN CASE YOU NEED THEM!</strong></h5>",
+        "button_text": "",
+        "button_link": "",
+        "background_type": "full_width",
+        "text_width": "medium",
+        "text_position": "center",
+        "text_alignment": "center",
+        "background": "#000000",
+        "text_color": "#ffc200",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "show_title": true,
+        "page_width": "medium"
+      }
+    },
+    "1663790672d9417fa9": {
+      "type": "image-with-text-overlay",
+      "disabled": true,
+      "settings": {
+        "reveal_on_scroll": true,
+        "section_height": "auto",
+        "image": "shopify://shop_images/removeplastic.webp",
+        "subheading": "",
+        "title": "",
+        "content": "",
+        "button_text": "",
+        "button_link": "",
+        "link_style": "link",
+        "background_type": "full_width",
+        "text_width": "medium",
+        "text_position": "middle_center",
+        "text_color": "#ffffff",
+        "button_background": "#ffffff",
+        "button_text_color": "#000000",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0
+      }
+    },
+    "1663791055f411539b": {
+      "type": "multi-column",
+      "blocks": {
+        "166379105586290da9-0": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/goldambassador.png",
+            "image_width": 100,
+            "image_border": "rgba(0,0,0,0)",
+            "title": "gold ambassador program",
+            "content": "<p>This is the beginning of your ambassador journey!<br/>Earn 10% of comissions per each sale you refer from your friends, family, and followers.<br/>Make $100,00 in total comissions and you'll be upgraded to our next tier.</p>",
+            "link_text": "",
+            "link_url": "",
+            "link_style": "link",
+            "text_alignment": "center",
+            "vertical_alignment": "start"
+          }
+        },
+        "166379105586290da9-1": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/platinumambassador.png",
+            "image_width": 100,
+            "image_border": "rgba(0,0,0,0)",
+            "title": "platinum ambassador program",
+            "content": "<p>The best of the best, welcome to this tier.<br/>Earn 15% of comissions per each sale you refer from your friends, family, and followers.<strong><br/>PLUS: </strong>Early access to new products, <strong>20% OFF LIFE-TIME</strong> discont, and more!<br/>Make $250,00 in total commissions and you'll be upgraded to our next tier.</p>",
+            "link_text": "",
+            "link_url": "",
+            "link_style": "link",
+            "text_alignment": "center",
+            "vertical_alignment": "start"
+          }
+        },
+        "166379105586290da9-2": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/eliteambassador.png",
+            "image_width": 100,
+            "image_border": "rgba(0,0,0,0)",
+            "title": "elite ambassador program",
+            "content": "<p>The best of the best, welcome to this tier.<br/>Earn 15% of comissions per each sale you refer from your friends, family, and followers.<strong><br/>PLUS: </strong>Early access to new products, <strong>20% OFF LIFE-TIME</strong> discont, and more!<br/>Make $250,00 in total commissions and you'll be upgraded to our next tier.</p>",
+            "link_text": "",
+            "link_url": "",
+            "link_style": "link",
+            "text_alignment": "center",
+            "vertical_alignment": "start"
+          }
+        }
+      },
+      "block_order": [
+        "166379105586290da9-0",
+        "166379105586290da9-1",
+        "166379105586290da9-2"
+      ],
+      "disabled": true,
+      "settings": {
+        "reveal_on_scroll": true,
+        "stack_items": false,
+        "subheading": "carbinox",
+        "title": "ambassador program",
+        "content": "<p>Make up to <strong>25% of comissions</strong> just by sharing your custom link <strong>to family and friends</strong>.</p>",
+        "column_alignment": "center",
+        "mobile_item_size": "medium",
+        "desktop_item_size": "large",
+        "spacing": "tight",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "afb61531-b656-4a8e-9bb6-8a8384791df1": {
+      "type": "image-with-text",
+      "blocks": {
+        "81b72486-f909-4fcd-bdc2-c7d6065d08e4": {
+          "type": "item",
+          "settings": {
+            "show_video": false,
+            "video_link": "",
+            "image": "shopify://shop_images/LEAVE_US_A_POSITIVE_REVIEW_AND_WE_LL_GIVE_YOU_CASH_BACK-min.png",
+            "tab_label": "Item",
+            "subheading": "",
+            "title": "COMING FROM AMAZON? WE HAVE SOMETHING FOR YOU!",
+            "content": "<p><strong>1. LOOK FOR THE CARBINOX SMARTWATCH MODEL YOU GOT ON AMAZON.</strong></p><p><strong>2. GO TO THE PAGE BOTTOM AND CLICK ON \"WRITE A CUSTOMER REVIEW\".</strong></p><p><strong>3. LEAVE YOUR POSITIVE FEEDBACK 🤩</strong></p><p><strong>4. SEND US A SCREENSHOT WITH YOUR POSITIVE REVIEW TO PAULINA@SHOPCARBINOX.COM</strong></p><p><strong>5. WE'LL BE SENDING YOU A FREE GIFT IN 48-72 HOURS! </strong></p><p></p><p><strong>Note: Review must be made on the exact product you bought on Amazon.</strong></p>",
+            "button_text": "go to amazon",
+            "button_link": "https://www.amazon.com/s?k=CARBINOX"
+          }
+        }
+      },
+      "block_order": [
+        "81b72486-f909-4fcd-bdc2-c7d6065d08e4"
+      ],
+      "disabled": true,
+      "settings": {
+        "section_id": "",
+        "reveal_on_scroll": true,
+        "background_type": "full_width",
+        "background_overlap": "image",
+        "image_position": "left",
+        "text_alignment": "center",
+        "cycle_speed": 8,
+        "accent_background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)",
+        "enable_custom_margin": false,
+        "margin_bottom": 0
+      }
+    },
+    "rich_text_aCkUyn": {
+      "type": "rich-text",
+      "disabled": true,
+      "custom_css": [
+        "h3 {font-size: 20px;}"
+      ],
+      "settings": {
+        "section_id": "",
+        "subheading": "",
+        "title": "SOMETHING SPECIAL IS WAITING FOR YOU IF YOU FILL THIS 60-SECOND FORM! 👀🎁",
+        "content": "<p><strong>LEAVE YOUR THOUGHTS ABOUT YOUR NEW WATCH, AND SOMETHING WILL BE WAITING FOR YOU AT THE END OF THE FORM! </strong>😉</p>",
+        "button_text": "FILL 60-sec FORM NOW ➔",
+        "button_link": "https://form.typeform.com/to/STN0YxyD",
+        "background_type": "full_width",
+        "text_width": "fill",
+        "text_position": "center",
+        "text_alignment": "center",
+        "background": "#0e9e01",
+        "text_color": "#f9f9f9",
+        "button_background": "#000000",
+        "button_text_color": "#ffffff"
+      }
+    },
+    "166379159769d7d947": {
+      "type": "image-with-text",
+      "blocks": {
+        "16637915971e2d88e6-0": {
+          "type": "item",
+          "settings": {
+            "show_video": false,
+            "video_link": "",
+            "image": "shopify://shop_images/ELITE_PRIVATE_CLUB_8_-min-min.png",
+            "tab_label": "Item",
+            "subheading": "",
+            "title": "jOIN CARBINOX ELITE PRIVATE CLUB",
+            "content": "<p><strong>FREE PRODUCTS, LIFETIME REPLACEMENTS, DISCOUNTS AND MORE ARE WAITING FOR YOU IF YOU JOIN TODAY! YOU WON'T REGRET IT! 👀</strong></p>",
+            "button_text": "JOIN MEMBERSHIP ➔",
+            "button_link": "shopify://pages/epc-1"
+          }
+        }
+      },
+      "block_order": [
+        "16637915971e2d88e6-0"
+      ],
+      "custom_css": [
+        "h3 {color: #ffc200;}",
+        "h2 {font-size: 14px;}"
+      ],
+      "settings": {
+        "section_id": "",
+        "reveal_on_scroll": false,
+        "background_type": "full_width",
+        "background_overlap": "both",
+        "image_position": "left",
+        "text_alignment": "center",
+        "cycle_speed": 8,
+        "accent_background": "#000000",
+        "text_color": "#ffffff",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)",
+        "enable_custom_margin": false,
+        "margin_bottom": 0
+      }
+    },
+    "image_with_text_VTTpHf": {
+      "type": "image-with-text",
+      "blocks": {
+        "item_cdKyXL": {
+          "type": "item",
+          "settings": {
+            "show_video": false,
+            "video_link": "",
+            "image": "shopify://shop_images/Diseno_sin_titulo_43_-min.png",
+            "tab_label": "Item",
+            "subheading": "because it's better to have it on your smartphone 📱",
+            "title": "DOWNLOAD YOUR INSTRUCTIONS MANUAL!",
+            "content": "<p><strong>Each Carbinox smartwatch comes with an instructions manual where you can find all the information needed to set it up. However, if you want to download it, just click the button below.</strong></p>",
+            "button_text": "DOWNLOAD MANUALS",
+            "button_link": "https://drive.google.com/drive/folders/1ACc4ctHhp5DGWQc2PaCtm7TjiILkNHpg?usp=sharing"
+          }
+        }
+      },
+      "block_order": [
+        "item_cdKyXL"
+      ],
+      "settings": {
+        "section_id": "",
+        "reveal_on_scroll": false,
+        "background_type": "full_width",
+        "background_overlap": "image",
+        "image_position": "left",
+        "text_alignment": "center",
+        "cycle_speed": 8,
+        "accent_background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)",
+        "enable_custom_margin": true,
+        "margin_bottom": 0
+      }
+    },
+    "image_with_text_Yca3Dr": {
+      "type": "image-with-text",
+      "blocks": {
+        "item_nGVMaF": {
+          "type": "item",
+          "settings": {
+            "show_video": false,
+            "video_link": "",
+            "image": "shopify://shop_images/4-min_1.jpg",
+            "tab_label": "Item",
+            "subheading": "QUESTIONS ABOUT YOUR WATCH? DON'T NEED TO REACH SUPPORT EVER AGain!",
+            "title": "CHECK OUR TROUBLESHOOTING GUIDE!",
+            "content": "<p><strong>FIND ALL THE INFORMATION YOU NEED ABOUT HOW TO USE YOUR NEW SMARTWATCH, AS WELL AS SOLVING THE MOST COMMON THINGS WITH IT IN AN EASY WAY!</strong></p>",
+            "button_text": "GO TO THE GUIDE",
+            "button_link": "shopify://pages/carbinox-troubleshooting-guide"
+          }
+        }
+      },
+      "block_order": [
+        "item_nGVMaF"
+      ],
+      "custom_css": [
+        "h3 {color: #ffc200;}",
+        "h2 {font-size: 14px;}"
+      ],
+      "settings": {
+        "section_id": "",
+        "reveal_on_scroll": false,
+        "background_type": "full_width",
+        "background_overlap": "text",
+        "image_position": "left",
+        "text_alignment": "center",
+        "cycle_speed": 8,
+        "accent_background": "#000000",
+        "text_color": "#ffffff",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)",
+        "enable_custom_margin": false,
+        "margin_bottom": 0
+      }
+    },
+    "rich_text_ErkXwP": {
+      "type": "rich-text",
+      "disabled": true,
+      "custom_css": [
+        "h3 {font-size: 20px;}"
+      ],
+      "settings": {
+        "section_id": "",
+        "subheading": "",
+        "title": "SOMETHING SPECIAL IS WAITING FOR YOU IF YOU FILL THIS 60-SECOND FORM! 👀🎁",
+        "content": "<p><strong>LEAVE YOUR THOUGHTS ABOUT YOUR NEW WATCH, AND SOMETHING WILL BE WAITING FOR YOU AT THE END OF THE FORM! </strong>😉</p>",
+        "button_text": "FILL 60-sec FORM NOW ➔",
+        "button_link": "https://form.typeform.com/to/STN0YxyD",
+        "background_type": "full_width",
+        "text_width": "fill",
+        "text_position": "center",
+        "text_alignment": "center",
+        "background": "#0e9e01",
+        "text_color": "#f9f9f9",
+        "button_background": "#000000",
+        "button_text_color": "#ffffff"
+      }
+    },
+    "image_with_text_Gr9mJt": {
+      "type": "image-with-text",
+      "blocks": {
+        "item_enec8y": {
+          "type": "item",
+          "settings": {
+            "show_video": false,
+            "video_link": "",
+            "image": "shopify://shop_images/7-min-7_197a914a-f995-448f-baae-ea9ea7c1e15d.png",
+            "tab_label": "Item",
+            "subheading": "WE TOOK CUSTOMER SUPPORT TO A NEW LEVEL THANKS TO AI!",
+            "title": "contacting us is way easier than before!",
+            "content": "<p><strong>We know customer support could be a headache, that's why we've built an automated system to help you on ANYTHING YOU NEED. Just press the button below and fill the form in less than 5 minutes!</strong></p>",
+            "button_text": "GET INSTANT SUPPORT NOW!",
+            "button_link": "https://form.typeform.com/to/Kuba3FEC"
+          }
+        }
+      },
+      "block_order": [
+        "item_enec8y"
+      ],
+      "custom_css": [
+        "h3 {color: #ffc200;}",
+        "h2 {font-size: 14px;}"
+      ],
+      "settings": {
+        "section_id": "",
+        "reveal_on_scroll": false,
+        "background_type": "full_width",
+        "background_overlap": "text",
+        "image_position": "left",
+        "text_alignment": "center",
+        "cycle_speed": 8,
+        "accent_background": "#000000",
+        "text_color": "#ffffff",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)",
+        "enable_custom_margin": false,
+        "margin_bottom": 0
+      }
+    },
+    "749facbc-49dd-4132-8572-c99836718e7c": {
+      "type": "image-with-text",
+      "blocks": {
+        "9cd9c219-2037-479e-9fb6-3b78b192f3e0": {
+          "type": "item",
+          "settings": {
+            "show_video": false,
+            "video_link": "",
+            "image": "shopify://shop_images/U.S._MIL-STD-810H_MILITARY_CERTIFIED_MEETING_ALL_STANDARDS_FOR_EXTREME_CONDITIONS.-min.png",
+            "tab_label": "Item",
+            "subheading": "✅ 91% OF CUSTOMERS GOT THIS DEAL!",
+            "title": "SAVE ON ACCESSORIES FOR YOUR NEW WATCH!",
+            "content": "<p><strong>JUST SELECT EVERYTHING YOU NEED FOR YOUR NEW CARBINOX AND USE THE CODE:<br/></strong><em><strong> \"ACC25\" </strong></em><strong><br/>AT CHECKOUT TO CLAIM 50% OFF!</strong></p>",
+            "button_text": "claim 25% off in BANDS!",
+            "button_link": "shopify://pages/carbinox-bands-collection-22mm"
+          }
+        }
+      },
+      "block_order": [
+        "9cd9c219-2037-479e-9fb6-3b78b192f3e0"
+      ],
+      "custom_css": [
+        "h3 {color: #ffc200;}",
+        "h2 {font-size: 14px;}"
+      ],
+      "settings": {
+        "section_id": "",
+        "reveal_on_scroll": false,
+        "background_type": "full_width",
+        "background_overlap": "text",
+        "image_position": "right",
+        "text_alignment": "center",
+        "cycle_speed": 8,
+        "accent_background": "#000000",
+        "text_color": "#ffffff",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)",
+        "enable_custom_margin": false,
+        "margin_bottom": 0
+      }
+    },
+    "rich_text_4f9B6M": {
+      "type": "rich-text",
+      "disabled": true,
+      "custom_css": [
+        "h3 {font-size: 20px;}"
+      ],
+      "settings": {
+        "section_id": "",
+        "subheading": "",
+        "title": "SOMETHING SPECIAL IS WAITING FOR YOU IF YOU FILL THIS 60-SECOND FORM! 👀🎁",
+        "content": "<p><strong>LEAVE YOUR THOUGHTS ABOUT YOUR NEW WATCH, AND SOMETHING WILL BE WAITING FOR YOU AT THE END OF THE FORM! </strong>😉</p>",
+        "button_text": "FILL 60-sec FORM NOW ➔",
+        "button_link": "https://form.typeform.com/to/STN0YxyD",
+        "background_type": "full_width",
+        "text_width": "fill",
+        "text_position": "center",
+        "text_alignment": "center",
+        "background": "#0e9e01",
+        "text_color": "#f9f9f9",
+        "button_background": "#000000",
+        "button_text_color": "#ffffff"
+      }
+    },
+    "1663792610bb887ccf": {
+      "type": "image-with-text",
+      "blocks": {
+        "16637926105c738b82-0": {
+          "type": "item",
+          "settings": {
+            "show_video": false,
+            "video_link": "",
+            "image": "shopify://shop_images/1-min-4.png",
+            "tab_label": "Item",
+            "subheading": "🎖 MOST POPULAR DEAL!",
+            "title": "WE ALSO HAVE THE STRONGEST OUTDOOR ARTILLERY WITH 25% OFF FOR YOU!",
+            "content": "<p><strong>BACKPACKS, POWER BANKS, SPEAKERS, FLASHLIGHTS AND WAY MORE IS WAITING FOR YOU GRAB, SO GET 25% OFF WITH THE CODE:<br/></strong><em><strong> \"ART25\"</strong></em><strong><br/> AT CHECKOUT!</strong></p>",
+            "button_text": "shop outdoor artillery",
+            "button_link": "shopify://collections/carbinox-products"
+          }
+        }
+      },
+      "block_order": [
+        "16637926105c738b82-0"
+      ],
+      "disabled": true,
+      "custom_css": [
+        "h3 {color: #ffc200;}",
+        "h2 {font-size: 14px;}"
+      ],
+      "settings": {
+        "section_id": "",
+        "reveal_on_scroll": false,
+        "background_type": "full_width",
+        "background_overlap": "both",
+        "image_position": "right",
+        "text_alignment": "center",
+        "cycle_speed": 8,
+        "accent_background": "#000000",
+        "text_color": "#ffffff",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)",
+        "enable_custom_margin": false,
+        "margin_bottom": 0
+      }
+    },
+    "12ea4fc5-1eed-432f-9874-56678d834a38": {
+      "type": "image-with-text",
+      "blocks": {
+        "d3de2a59-c528-428f-b62a-5dc50c1f944c": {
+          "type": "item",
+          "settings": {
+            "show_video": false,
+            "video_link": "",
+            "image": "shopify://shop_images/Diseno_sin_titulo-2-min.png",
+            "tab_label": "Item",
+            "subheading": "👀 60% OF CUSTOMERS HAVE MORE THAN ONE CARBINOX SMARTWATCH!",
+            "title": "NOW YOU WANT ANOTHER WATCH RIGHT? GET IT WITH 15% OFF THEN!",
+            "content": "<p><strong>SINCE WE'RE CONFIDENT YOU'RE SUPER EXCITED RIGHT NOW, WHY DON'T YOU GET THE OTHER MODEL YOU WERE INTERESTED IN WITH 15% OFF?</strong></p><p><strong>JUST USE THE CODE:<br/>\"YOUROCK15\"<br/> AT CHECKOUT!</strong></p>",
+            "button_text": "SHOP COLLECTION WITH 15% OFF!",
+            "button_link": "shopify://pages/our-collection-carbinox-1"
+          }
+        }
+      },
+      "block_order": [
+        "d3de2a59-c528-428f-b62a-5dc50c1f944c"
+      ],
+      "custom_css": [
+        "h3 {color: #ffc200;}",
+        "h2 {font-size: 14px;}"
+      ],
+      "settings": {
+        "section_id": "",
+        "reveal_on_scroll": false,
+        "background_type": "full_width",
+        "background_overlap": "both",
+        "image_position": "right",
+        "text_alignment": "center",
+        "cycle_speed": 8,
+        "accent_background": "#000000",
+        "text_color": "#ffffff",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)",
+        "enable_custom_margin": false,
+        "margin_bottom": 0
+      }
+    },
+    "ec1ddaee-d303-43fa-827d-dd93eff239d6": {
+      "type": "image-with-text",
+      "blocks": {
+        "a47a7d2c-7216-45d5-84e5-ff20c4fa0d8e": {
+          "type": "item",
+          "settings": {
+            "show_video": false,
+            "video_link": "",
+            "image": "shopify://shop_images/ezgif-1-a005b89f31.gif",
+            "tab_label": "Item",
+            "subheading": "YOU HAVE ACCESS TO THIS PRIVATE DROP!",
+            "title": "ENHANCE YOUR SOUND EXPERIENCE WITH THE CARBINOX ARMORBUDS.",
+            "content": "<p><strong>Built to last a lifetime and represent the hard workers like you. </strong></p><p><strong>LIMITED TO 100 PIECES ONLY, GET YOURS NOW!</strong></p>",
+            "button_text": "SHOP ARMORBUDS!",
+            "button_link": "shopify://products/carbinox-armorbuds"
+          }
+        }
+      },
+      "block_order": [
+        "a47a7d2c-7216-45d5-84e5-ff20c4fa0d8e"
+      ],
+      "disabled": true,
+      "custom_css": [
+        "h3 {color: #ffc200;}",
+        "h2 {font-size: 14px;}"
+      ],
+      "settings": {
+        "section_id": "",
+        "reveal_on_scroll": false,
+        "background_type": "full_width",
+        "background_overlap": "both",
+        "image_position": "right",
+        "text_alignment": "center",
+        "cycle_speed": 8,
+        "accent_background": "#000000",
+        "text_color": "#ffffff",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)",
+        "enable_custom_margin": false,
+        "margin_bottom": 0
+      }
+    },
+    "1663792869b3d34a04": {
+      "type": "image-with-text-block",
+      "disabled": true,
+      "settings": {
+        "reveal_on_scroll": true,
+        "image": "shopify://shop_images/titan3.jpg",
+        "subheading": "another gift before you go:",
+        "title": "enjoy 30% OFF on your next order!",
+        "content": "<p>Use the code <strong>YOUROCK30</strong> at checkout.<br/>This code will be activated for only <strong>7 days</strong> since NOW, so don't miss the chance and get something else you like from Carbinox.</p>",
+        "button_text": "use my code now!",
+        "button_link": "https://www.shopcarbinox.com/",
+        "enble_scroll": false,
+        "background_type": "full_width",
+        "text_position": "right",
+        "text_alignment": "left",
+        "text_background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "rich_text_4rUPkw": {
+      "type": "rich-text",
+      "disabled": true,
+      "custom_css": [
+        "h3 {font-size: 20px;}"
+      ],
+      "settings": {
+        "section_id": "",
+        "subheading": "",
+        "title": "SOMETHING SPECIAL IS WAITING FOR YOU IF YOU FILL THIS 60-SECOND FORM! 👀🎁",
+        "content": "<p><strong>LEAVE YOUR THOUGHTS ABOUT YOUR NEW WATCH, AND SOMETHING WILL BE WAITING FOR YOU AT THE END OF THE FORM! </strong>😉</p>",
+        "button_text": "FILL 60-sec FORM NOW ➔",
+        "button_link": "https://form.typeform.com/to/STN0YxyD",
+        "background_type": "full_width",
+        "text_width": "fill",
+        "text_position": "center",
+        "text_alignment": "center",
+        "background": "#0e9e01",
+        "text_color": "#f9f9f9",
+        "button_background": "#000000",
+        "button_text_color": "#ffffff"
+      }
+    }
+  },
+  "order": [
+    "68862341-fc8e-44dd-bc9e-31095377dc26",
+    "2c6154c4-a2fa-4f89-addf-4e3eb38d8318",
+    "1663790710de9cea3c",
+    "main",
+    "1663790672d9417fa9",
+    "1663791055f411539b",
+    "afb61531-b656-4a8e-9bb6-8a8384791df1",
+    "rich_text_aCkUyn",
+    "166379159769d7d947",
+    "image_with_text_VTTpHf",
+    "image_with_text_Yca3Dr",
+    "rich_text_ErkXwP",
+    "image_with_text_Gr9mJt",
+    "749facbc-49dd-4132-8572-c99836718e7c",
+    "rich_text_4f9B6M",
+    "1663792610bb887ccf",
+    "12ea4fc5-1eed-432f-9874-56678d834a38",
+    "ec1ddaee-d303-43fa-827d-dd93eff239d6",
+    "1663792869b3d34a04",
+    "rich_text_4rUPkw"
+  ]
+}

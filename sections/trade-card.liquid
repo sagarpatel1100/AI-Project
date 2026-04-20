@@ -1,0 +1,131 @@
+{{ 'trade-cards.css' | asset_url | stylesheet_tag }}
+
+<style>
+.tradein-{{ section.id }}{
+  background: {{ section.settings.background }};
+}
+</style>
+
+<section class="tradein-{{ section.id }}">
+  <div class="tradein-container-cards">
+
+    <h2 class="tradein-title-cards">
+      <span class="title-white">{{ section.settings.title_white }}</span>
+      <span class="title-yellow">{{ section.settings.title_yellow }}</span>
+    </h2>
+
+    <div class="tradein-cards">
+      {% for block in section.blocks %}
+        <div class="tradein-card" {{ block.shopify_attributes }}>
+          
+          {% if block.settings.icon != blank %}
+            <img
+              class="tradein-icon"
+              src="{{ block.settings.icon | image_url }}"
+              alt="{{ block.settings.title }}"
+            >
+          {% endif %}
+
+          <div class="tradein-card-content">
+            <h3 class="tradein-card-title">
+              {{ block.settings.title }}
+            </h3>
+
+            <p class="tradein-card-text">
+              {{ block.settings.text }}
+            </p>
+          </div>
+
+        </div>
+      {% endfor %}
+    </div>
+
+  </div>
+</section>
+
+
+{% schema %}
+{
+  "name": "Trade Cards",
+  "settings": [
+    {
+      "type": "color",
+      "id": "background",
+      "label": "Background",
+      "default": "#111111"
+    },
+    {
+      "type": "text",
+      "id": "title_white",
+      "label": "Title White Part",
+      "default": "EVERY TRADE-IN"
+    },
+    {
+      "type": "text",
+      "id": "title_yellow",
+      "label": "Title Yellow Part",
+      "default": "INCLUDES"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "card",
+      "name": "Benefit Card",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "icon",
+          "label": "Icon"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Card Title",
+          "default": "FREE PREPAID LABEL"
+        },
+        {
+          "type": "textarea",
+          "id": "text",
+          "label": "Card Text",
+          "default": "We cover the return shipping. No cost to you."
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Trade Cards",
+      "blocks": [
+        {
+          "type": "card",
+          "settings": {
+            "title": "FREE PREPAID LABEL",
+            "text": "We cover the return shipping. No cost to you."
+          }
+        },
+        {
+          "type": "card",
+          "settings": {
+            "title": "FREE ACCESSORIES",
+            "text": "Your new watch ships with complimentary accessories."
+          }
+        },
+        {
+          "type": "card",
+          "settings": {
+            "title": "LIFETIME WARRANTY",
+            "text": "Your new watch is covered by our Lifetime Warranty from day one."
+          }
+        },
+        {
+          "type": "card",
+          "settings": {
+            "title": "UP TO $100 BACK",
+            "text": "Get credit based on your old watch's condition. Even broken watches qualify."
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

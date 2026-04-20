@@ -1,0 +1,87 @@
+<style>
+  @media screen and (min-width: 1000px) {
+    :root {
+      --anchor-offset: 140px; /* When the sticky form is activate, every scroll must be offset by an extra value */
+    }
+  }
+</style>
+
+<product-sticky-form form-id="{{ product_form_id }}"  class="product-sticky-form" hidden>
+  <div class="container">
+    <div class="product-sticky-form__inner">
+      <div class="product-sticky-form__content-wrapper hidden-pocket"> 
+        <div class="product-sticky-form__image-wrapper">
+          {%- assign featured_media = product.selected_or_first_available_variant.featured_image | default: product.featured_media -%}
+          <img class="product-sticky-form__image" loading="lazy" sizes="55px" {% render 'image-attributes', image: featured_media, sizes: '55,110,165' %}>
+        </div>
+
+        <div class="product-sticky-form__info">
+          <div class="product-sticky-form__bottom-info">
+            <span class="product-sticky-form__title">{{ product.title }}</span>
+            <span class="square-separator square-separator--subdued"></span>
+            <span class="product-sticky-form__price">
+              {%- if settings.currency_code_enabled -%}
+                {{- product.selected_or_first_available_variant.price | money_with_currency -}}
+              {%- else -%}
+                {{- product.selected_or_first_available_variant.price | money -}}
+              {%- endif -%}
+            </span>
+
+            <div class="product-sticky-form__unit-price text--xsmall text--subdued" {% unless product.selected_or_first_available_variant.unit_price_measurement %}style="display: none"{% endunless %}>
+              <div class="unit-price-measurement">
+                <span class="unit-price-measurement__price">{{ product.selected_or_first_available_variant.unit_price | money }}</span>
+                <span class="unit-price-measurement__separator">/</span>
+
+                {%- if product.selected_or_first_available_variant.unit_price_measurement.reference_value != 1 -%}
+                  <span class="unit-price-measurement__reference-value">{{ product.selected_or_first_available_variant.unit_price_measurement.reference_value }}</span>
+                {%- endif -%}
+
+                <span class="unit-price-measurement__reference-unit">{{ product.selected_or_first_available_variant.unit_price_measurement.reference_unit }}</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {%- comment -%}This form is a simplified representation of the main form, and therefore uses its own code path{%- endcomment -%}
+      <div class="product-sticky-form__form">
+        {%- unless product.has_only_default_variant -%}
+          <product-variants handle="{{ product.handle }}" form-id="{{ product_form_id }}" update-url {% if variant_picker_block.settings.hide_sold_out_variants %}hide-sold-out-variants{% endif %} class="product-sticky-form__variants hidden-pocket">
+            <div class="select-wrapper">
+              <select
+                class="select"
+                autocomplete="off"
+                id="product-select-{{ section.id }}-{{ product.id }}"
+                name="id" data-productid="{{ product.id }}"
+                form="{{ product_form_id }}">
+                {%- for variant in product.variants -%}
+                  <option
+                    {% if variant == product.selected_or_first_available_variant %}selected="selected"{% endif %}
+                    {% unless variant.available %}disabled="disabled"{% endunless %}
+                    value="{{ variant.id }}"
+                    data-sku="{{ variant.sku }}">{{ variant.title }}</option>
+                {%- endfor -%}
+              </select>
+
+              {%- render 'icon' with 'chevron' -%}
+            </div>
+          </product-variants>
+        {%- endunless -%}
+
+        <product-payment-container form-id="{{ product_form_id }}" class="product-sticky-form__payment-container">
+          {%- capture button_content -%}
+            {{ section.settings.btn_label }}
+          {%- endcapture -%}
+
+          <a href="{{ product.url }}" id="StickyAddToCart" is="loader-button" form="{{ product_form_id }}" data-product-add-to-cart-button data-button-content="{{ button_content | escape }}" class="product-form__add-button button button--primary">
+            {%- if product.selected_or_first_available_variant.available -%}
+              {{- button_content -}}
+            {%- else -%}
+              {{- 'product.form.sold_out' | t -}}
+            {%- endif -%}
+          </a>
+        </product-payment-container>
+      </div>
+    </div>
+  </div>
+</product-sticky-form>

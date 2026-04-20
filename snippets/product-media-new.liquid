@@ -1,0 +1,38 @@
+<div class="product-media">
+    <div class="product-media-first product__media" id="product__media_1">
+        <div class="featured-media product__media-list-wrapper featured-media_1">
+            {% for media in product.metafields.custom.images.value %}
+            <div class="featured-media-item">
+                <img src="{{media.image | img_url: 'master'}}" class="featured-media-img" alt="img">
+            </div>
+            {% endfor %}
+        </div>
+        <div class="thumb-media product__media-nav thumb-media_1">
+            {% for media in product.metafields.custom.images.value %}
+            <div class="thumb-media-item">
+                <img src="{{media.image | img_url: 'master'}}" class="thumb-media-img" alt="img">
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+
+    {% if product.metafields.custom.images2.value != blank %}
+    <div class="product-media-second product__media hide" id="product__media_2">
+        <div class="featured-media product__media-list-wrapper featured-media_2">
+            {% for media in product.metafields.custom.images2.value %}
+            <div class="featured-media-item">
+                <img src="{{media.image | img_url: 'master'}}" class="featured-media-img" alt="img">
+            </div>
+            {% endfor %}
+        </div>
+        <div class="thumb-media product__media-nav thumb-media_2">
+            {% for media in product.metafields.custom.images2.value %}
+            <div class="thumb-media-item">
+                <img src="{{media.image | img_url: 'master'}}" class="thumb-media-img" alt="img">
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+    {% endif %}
+</div>
+

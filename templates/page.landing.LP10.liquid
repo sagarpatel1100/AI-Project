@@ -1,0 +1,329 @@
+<style>
+.announcement-bar,.header,#shopify-section-header,#shopify-section-announcement-bar,#shopify-section-footer,.site-header,.header-wrapper,.footer,.site-footer,.shopify-section-header,.shopify-section-footer{display:none!important}
+:root{
+  --bg:#fff;--text:#1a1a1a;--bg-s:#f7f7f7;--bg-dark:#1a1a1a;
+  --accent:#E67E22;--accent-h:#D35400;
+  --sec:#2c3e50;--muted:#4b5563;--border:#e5e5e5;
+  --green:#1a8a4a;--green-light:#e6f7ee;
+  --red:#c0392b;--red-light:#fdeaea;
+  --amber:#d4880f;
+  --gold:#d4a017;--gold-light:#fdf6e3;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Poppins',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif;color:var(--text);line-height:1.6;font-size:17px;background:var(--bg)}
+img{max-width:100%;display:block}
+a{text-decoration:none;color:inherit}
+.ed{max-width:680px;margin:0 auto;padding:0 20px}
+.sl{max-width:960px;margin:0 auto;padding:0 20px}
+.btn{display:inline-block;background:linear-gradient(135deg,var(--green),#158a42);color:#fff;font-size:18px;font-weight:700;padding:18px 40px;border-radius:6px;text-align:center;border:none;cursor:pointer;transition:all .2s;box-shadow:0 4px 14px rgba(26,138,74,.3)}
+.btn:hover{background:linear-gradient(135deg,#158a42,var(--green));transform:translateY(-1px);box-shadow:0 6px 20px rgba(26,138,74,.4)}
+.btn-full{display:block;width:100%}
+.btn-lg{font-size:20px;padding:20px 48px;max-width:460px;width:100%;margin-left:auto;margin-right:auto}
+.strike{text-decoration:line-through;color:var(--muted)}
+.micro{font-size:13px;color:#777;margin-top:10px}
+.tp-stars{display:inline-flex;gap:2px;vertical-align:middle}
+.tp-star{width:22px;height:22px;background:#00b67a;display:flex;align-items:center;justify-content:center;border-radius:2px}
+.tp-star svg{width:13px;height:13px;fill:#fff}
+.ann-bar{background:var(--accent);color:#fff;text-align:center;padding:10px 16px;font-size:13px;letter-spacing:.3px;font-weight:600}
+.hero{background:var(--bg-dark);color:#fff;padding:56px 20px 44px;text-align:center}
+.hero h1{font-size:clamp(26px,6vw,38px);font-weight:800;line-height:1.15;max-width:800px;margin:0 auto 16px}
+.hero h1 .hl{color:var(--accent)}
+.hero .sub{font-size:clamp(15px,2.5vw,17px);color:#ddd;max-width:620px;margin:0 auto 14px;line-height:1.6}
+.hero .bridge{font-style:italic;color:var(--accent);font-size:16px;margin-bottom:28px;max-width:580px;margin-left:auto;margin-right:auto}
+.hero-img{max-width:680px;margin:32px auto 0;border-radius:4px;width:100%}
+.trust-strip{display:flex;flex-wrap:wrap;justify-content:center;gap:14px;margin-top:24px;font-size:13px;color:#aaa}
+.trust-strip span{display:inline-flex;align-items:center;gap:4px}
+.trust-strip svg{width:14px;height:14px;stroke:var(--accent);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.section{padding:48px 20px}
+.section-dark{background:var(--bg-dark);color:#fff}
+.section-alt{background:var(--bg-s)}
+.section-gold{background:var(--gold-light)}
+.section h2{font-size:clamp(22px,4vw,30px);font-weight:800;margin-bottom:16px;line-height:1.25}
+.section h2.center{text-align:center}
+.section p{margin-bottom:14px}
+.section .intro{font-style:italic;color:var(--muted);text-align:center;margin-bottom:24px}
+.section img{border-radius:4px}
+.proof-break{background:var(--bg-dark);color:#fff;padding:28px 20px;text-align:center}
+.proof-break blockquote{font-size:16px;font-style:italic;max-width:560px;margin:8px auto;line-height:1.5}
+.proof-break cite{font-size:13px;color:var(--accent);font-style:normal;font-weight:600}
+.feat-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:24px}
+.feat-card{text-align:center;padding:20px}
+.feat-card .ic{width:52px;height:52px;margin:0 auto 12px;border:2px solid var(--accent);border-radius:50%;display:flex;align-items:center;justify-content:center}
+.feat-card .ic svg{width:24px;height:24px;stroke:var(--accent);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.feat-card h3{font-size:16px;font-weight:700;margin-bottom:6px}
+.feat-card p{font-size:14px;color:var(--muted);line-height:1.5}
+.feat-closer{text-align:center;font-weight:700;font-size:18px;margin-top:24px}
+.stats-bar{display:grid;grid-template-columns:repeat(3,1fr);gap:0;text-align:center;max-width:720px;margin:32px auto 0;border-top:1px solid var(--border);padding-top:28px}
+.stat-item{padding:16px 16px 0}
+.stat-item:not(:last-child){border-right:1px solid var(--border)}
+.stat-num{font-size:clamp(28px,5vw,36px);font-weight:800;color:var(--accent);line-height:1}
+.stat-label{font-size:13px;color:var(--muted);margin-top:8px;line-height:1.4}
+.comp{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:24px;max-width:700px;margin-left:auto;margin-right:auto}
+.comp-col{padding:24px;border-radius:8px}
+.comp-col.lose{background:var(--red-light);border:1px solid #f0c5c5}
+.comp-col.win{background:var(--green-light);border:2px solid var(--green)}
+.comp-col h3{font-size:18px;margin-bottom:12px;font-weight:700}
+.comp-col li{margin-bottom:8px;font-size:15px;list-style:none;display:flex;align-items:flex-start;gap:8px}
+.comp-col li svg{width:16px;height:16px;flex-shrink:0;margin-top:3px}
+.comp-col.lose li svg{stroke:var(--red);fill:none;stroke-width:2.5}
+.comp-col.win li svg{stroke:var(--green);fill:none;stroke-width:2.5}
+.comp-close{text-align:center;font-size:19px;font-weight:800;margin-top:24px;padding:16px;background:var(--bg-dark);color:var(--accent);border-radius:6px}
+.review-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:24px}
+.review-card{background:#fff;border:1px solid var(--border);border-radius:16px;overflow:hidden;position:relative}
+.review-card .verified{position:absolute;top:8px;right:8px;background:var(--green);color:#fff;font-size:10px;font-weight:700;padding:4px 10px;border-radius:20px;display:flex;align-items:center;gap:4px;z-index:2;box-shadow:0 1px 4px rgba(0,0,0,.3)}
+.review-card .verified svg{width:12px;height:12px;fill:#fff}
+.review-card img{width:100%;aspect-ratio:4/5;object-fit:cover}
+.review-card .card-body{padding:18px 20px}
+.review-card blockquote{font-size:16px;font-style:italic;line-height:1.6;margin:10px 0 12px;color:var(--text)}
+.review-card .divider{height:1px;background:var(--border);margin:12px 0}
+.review-card .reviewer{font-size:15px;font-weight:700}
+.review-card .rev-loc{font-size:13px;color:var(--muted)}
+.twist-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.twist-card{background:var(--bg-dark);color:#fff;border-radius:8px;overflow:hidden}
+.twist-card img{width:100%;aspect-ratio:1/1;object-fit:cover}
+.twist-card-body{padding:20px 24px;text-align:center}
+.twist-card h3{font-size:18px;font-weight:700;margin-bottom:8px}
+.twist-card p{font-size:14px;color:#ccc;line-height:1.5}
+.twist-intro{text-align:center;max-width:580px;margin:0 auto 28px;color:var(--muted)}
+.offer{text-align:center}
+.offer h2{font-size:clamp(32px,6vw,44px);margin-bottom:8px}
+.offer-img{max-width:680px;margin:24px auto;border-radius:4px;width:100%}
+.price-anchor{display:flex;align-items:center;justify-content:center;gap:12px;flex-wrap:wrap;margin:20px 0}
+.price-anchor .old{font-size:18px;text-decoration:line-through;color:var(--muted)}
+.price-anchor .now{font-size:32px;font-weight:800;color:var(--accent)}
+.price-anchor .save{background:var(--green);color:#fff;font-size:14px;font-weight:700;padding:6px 16px;border-radius:4px}
+.offer-list{list-style:none;max-width:520px;margin:24px auto;text-align:left}
+.offer-list li{display:flex;align-items:center;gap:10px;padding:10px 0;border-bottom:1px solid var(--border);font-size:16px}
+.offer-list li svg{width:18px;height:18px;stroke:var(--green);fill:none;stroke-width:2.5;flex-shrink:0}
+.offer-list li span:first-of-type{flex:1}
+.offer-list li .strike{font-size:15px;white-space:nowrap}
+.offer-total{max-width:520px;margin:0 auto;border-top:2px solid var(--text);padding-top:12px}
+.offer-total-row{display:flex;justify-content:space-between;font-size:17px;font-weight:700;padding:4px 0}
+.offer-pay{font-size:22px;color:var(--accent);margin-top:4px}
+.urg-cluster{max-width:460px;margin:12px auto 0;display:flex;flex-direction:column;gap:8px;align-items:center}
+.urg-badge{display:inline-flex;align-items:center;gap:8px;background:var(--red-light);color:var(--red);padding:8px 18px;border-radius:4px;font-size:14px;font-weight:700;border:1px solid #f0c5c5}
+.pulse{width:8px;height:8px;border-radius:50%;background:var(--red);display:inline-block;animation:pulse 1.5s ease-in-out infinite}
+@keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.4;transform:scale(.7)}}
+.stock-bar{width:100%;height:6px;background:#eee;border-radius:3px;overflow:hidden}
+.stock-bar-fill{height:100%;width:18%;background:linear-gradient(90deg,var(--red),var(--amber));border-radius:3px}
+.stock-text{font-size:13px;color:var(--red);font-weight:600}
+.pay-icons{display:flex;justify-content:center;gap:8px;margin-top:12px;align-items:center}
+.pay-icons .pay-icon{height:28px;width:auto}
+.guarantee-badges{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:28px;max-width:780px;margin-left:auto;margin-right:auto}
+.g-badge{text-align:center;padding:28px 20px;border-radius:8px;background:#fff}
+.g-badge-gold{border:2px solid var(--gold)}
+.g-badge-green{border:2px solid var(--green)}
+.g-badge-sec{border:2px solid var(--sec)}
+.g-badge .ic{width:64px;height:64px;margin:0 auto 14px;border-radius:50%;display:flex;align-items:center;justify-content:center}
+.g-badge .ic svg{width:32px;height:32px;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.ic-gold{background:var(--gold)}
+.ic-green{background:var(--green)}
+.ic-sec{background:var(--sec)}
+.g-badge h4{font-size:17px;font-weight:800;margin-bottom:6px}
+.g-badge p{font-size:14px;color:var(--muted);line-height:1.5}
+.faq-item{border-bottom:1px solid var(--border);padding:16px 0}
+.faq-q{font-weight:700;font-size:16px;cursor:pointer;display:flex;justify-content:space-between;align-items:center}
+.faq-q::after{content:'+';font-size:20px;color:var(--muted);transition:transform .2s}
+.faq-item.open .faq-q::after{content:'−'}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .3s;font-size:15px;color:var(--muted);line-height:1.5}
+.faq-item.open .faq-a{max-height:500px;padding-top:10px}
+.final-cta{text-align:center}
+.final-cta h2{font-size:clamp(26px,5vw,30px);margin-bottom:12px}
+.sticky-bar{display:none;position:fixed;bottom:0;left:0;right:0;background:var(--bg-dark);padding:14px 16px 20px;z-index:100;text-align:center;border-top:2px solid var(--green)}
+.sticky-bar .btn{font-size:16px;padding:16px 24px;width:100%}
+.sticky-bar .sm{font-size:11px;color:#aaa;margin-top:6px}
+.lp-foot{padding:24px 20px;font-size:12px;color:var(--muted);text-align:center;line-height:1.6;border-top:1px solid var(--border)}
+@media(max-width:640px){
+  .comp{grid-template-columns:1fr}.comp .comp-col.win{order:-1}
+  .ed,.sl{padding:0 16px}.section{padding:36px 16px}.hero{padding:40px 16px 32px}
+  .sticky-bar{display:block}.feat-grid{grid-template-columns:1fr 1fr}
+  .review-grid{grid-template-columns:1fr}
+  .stats-bar{grid-template-columns:1fr}.stat-item{padding:12px 16px 0}
+  .stat-item:not(:last-child){border-right:none;border-bottom:1px solid var(--border);padding-bottom:12px}
+  .ann-bar{font-size:11px;padding:8px 12px}
+  .btn-lg{padding:18px 32px;font-size:18px}
+  .twist-grid{grid-template-columns:1fr!important}
+  .guarantee-badges{grid-template-columns:1fr!important}
+  .offer-list li{font-size:15px}
+}
+.section,.proof-break,.section-alt,.section-gold{margin-top:0!important;margin-bottom:0!important}
+</style>
+
+<svg style="display:none"><symbol id="star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></symbol><symbol id="chk" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></symbol><symbol id="xm" viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18" fill="none" stroke-width="2.5"/><line x1="6" y1="6" x2="18" y2="18" fill="none" stroke-width="2.5"/></symbol></svg>
+
+<div class="ann-bar"><svg style="width:14px;height:14px;stroke:#fff;fill:none;stroke-width:2;vertical-align:middle;margin-right:4px" viewBox="0 0 24 24"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg> PRE-TARIFF PRICING — Free Shipping | Lifetime Warranty</div>
+
+<section id="hero" class="hero"><div class="sl">
+  <h1>The <span class="hl">2-Watch Deal</span> That's Making Guys Ditch Their Apple Watches — and Buy One for Their Dad Too</h1>
+  <p class="sub">You've already cracked one expensive watch. You've already thrown a cheap one in a drawer. This is the part where that cycle ends — for you and the guy in your life who's still dealing with the same problem.</p>
+  <p class="bridge">"My dad's worn the same busted Casio for 12 years. He'd never buy himself something like this. So I did." — Travis B., Tulsa OK</p>
+  <a href="#offer" class="btn btn-lg">See What's Inside the 2-Pack</a>
+  <div class="trust-strip">
+    <span><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg> 350,000+ Sold</span>
+    <span><svg viewBox="0 0 24 24"><rect x="1" y="3" width="15" height="13" rx="2"/><polyline points="16 8 20 8 23 11 23 16 19 16"/><circle cx="7" cy="16" r="2.5"/><circle cx="19" cy="16" r="2.5"/></svg> Free Shipping</span>
+    <span><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg> Lifetime Warranty</span>
+    <span><svg viewBox="0 0 24 24"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg> 45-Day Money-Back</span>
+    <span><svg viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg> Secure Checkout</span>
+    <span><svg viewBox="0 0 24 24"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12" y2="18"/></svg> iPhone & Android</span>
+  </div>
+  <img class="hero-img" src="https://cdn.shopify.com/s/files/1/0049/0533/6935/files/hf_20260413_180826_af506842-4444-43c1-8e01-fc47ed2b8a7b.png?v=1776103944&format=webp" alt="Carbinox Blaze S 2-Pack bundle with watches, bands, screen protectors, chargers, and mystery gifts" width="960" height="540">
+</div></section>
+
+<section id="problem" class="section"><div class="ed">
+  <h2>You're Either Overpaying for Fragile Tech or Settling for Junk. There's No In-Between.</h2>
+  <p>You spend $400 on an Apple Watch and three months later there's a crack across the screen because it caught the edge of a shelf. Or a door frame. Or a piece of rebar. Or you looked at it wrong on a humid day.</p>
+  <p>So you go the other direction. You grab a $40 smartwatch off Amazon. The screen looks like a toy. The battery dies by lunch. The band snaps in two weeks. You throw it in a drawer and go back to checking your phone every five minutes.</p>
+  <p><strong>You're stuck in a loop:</strong> overpay for something fragile, or underpay for something disposable. Either way you lose.</p>
+  <p>That loop is exactly what 350,000 guys got sick of before they found Carbinox.</p>
+  <img loading="lazy" src="https://cdn.shopify.com/s/files/1/0049/0533/6935/files/hf_20260413_181125_2c816927-740a-4509-bb0c-5ce8555ec6aa.png?v=1776103944&format=webp" alt="Cracked smartwatch on a construction job site" width="680" height="453">
+</div></section>
+
+<div class="proof-break"><div class="tp-stars"><span class="tp-star"><svg viewBox="0 0 24 24"><use href="#star"/></svg></span><span class="tp-star"><svg viewBox="0 0 24 24"><use href="#star"/></svg></span><span class="tp-star"><svg viewBox="0 0 24 24"><use href="#star"/></svg></span><span class="tp-star"><svg viewBox="0 0 24 24"><use href="#star"/></svg></span><span class="tp-star"><svg viewBox="0 0 24 24"><use href="#star"/></svg></span></div><blockquote>"I've put this Blaze through hell and back, and it's still ticking. Toughest watch I've ever owned."</blockquote><cite>— John D., Welder, Texas · Verified Purchase</cite></div>
+
+<section id="discovery" class="section section-alt"><div class="ed">
+  <h2>350,000 Americans Already Made the Switch. Here's Why.</h2>
+  <p>Carbinox wasn't built for boardrooms, coffee shops, or people who panic over a scratch. It was built for hard work, long days, rough environments, and guys who are tired of replacing watches that can't keep up.</p>
+  <p>The Blaze S gives you the rugged build you actually need, the smart features you actually use, and a price that actually makes sense. That's why <strong>350,000+ people</strong> have already trusted Carbinox on the job, at the gym, on the road, and everywhere in between.</p>
+  <img loading="lazy" src="https://cdn.shopify.com/s/files/1/0049/0533/6935/files/350000.webp?v=1776104117" alt="350,000 Carbinox watches sold" width="680" height="453">
+</div></section>
+
+<section id="features" class="section"><div class="sl">
+  <h2 class="center">What You're Actually Getting</h2>
+  <p class="intro">Built Tough. Built Smart. Built to Earn Its Keep.</p>
+  <div class="feat-grid">
+    <div class="feat-card"><div class="ic"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div><h3>Gorilla Glass Gen 3</h3><p>Holds up against the scratches, bumps, and abuse that wreck ordinary watches.</p></div>
+    <div class="feat-card"><div class="ic"><svg viewBox="0 0 24 24"><rect x="6" y="7" width="12" height="14" rx="2"/><line x1="10" y1="7" x2="10" y2="4"/><line x1="14" y1="7" x2="14" y2="4"/><line x1="10" y1="4" x2="14" y2="4"/><line x1="12" y1="11" x2="12" y2="15"/><line x1="10" y1="13" x2="14" y2="13"/></svg></div><h3>Up to 15-Day Battery</h3><p>Charge it once. Keep moving. No babysitting it every night.</p></div>
+    <div class="feat-card"><div class="ic"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></div><h3>GPS Built In</h3><p>Track your movement, routes, and daily grind without the guesswork.</p></div>
+    <div class="feat-card"><div class="ic"><svg viewBox="0 0 24 24"><path d="M12 1a3 3 0 00-3 3v8a3 3 0 006 0V4a3 3 0 00-3-3z"/><path d="M19 10v2a7 7 0 01-14 0v-2"/><line x1="12" y1="19" x2="12" y2="23"/><line x1="8" y1="23" x2="16" y2="23"/></svg></div><h3>AI Voice Assistant</h3><p>Get things done faster without digging around your phone every five minutes.</p></div>
+    <div class="feat-card"><div class="ic"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6A19.79 19.79 0 012.12 4.18 2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.362 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg></div><h3>Calls From Your Wrist</h3><p>Take calls on the go when your hands are full and your phone isn't.</p></div>
+    <div class="feat-card"><div class="ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83M16.62 12l-5.74 9.94"/></svg></div><h3>Zinc Alloy Construction</h3><p>Full metal body — not plastic, not rubber, metal. Built to take a beating.</p></div>
+  </div>
+  <p class="feat-closer">This ain't a toy. It's a tool that just happens to be smart.</p>
+  <div class="stats-bar">
+    <div class="stat-item"><div class="stat-num">93%</div><div class="stat-label">Say it survived conditions their last watch didn't</div></div>
+    <div class="stat-item"><div class="stat-num">87%</div><div class="stat-label">Stopped charging their watch daily</div></div>
+    <div class="stat-item"><div class="stat-num">4.8</div><div class="stat-label">Average rating across 12,000+ reviews</div></div>
+  </div>
+</div></section>
+
+<div class="proof-break"><div class="tp-stars"><span class="tp-star"><svg viewBox="0 0 24 24"><use href="#star"/></svg></span><span class="tp-star"><svg viewBox="0 0 24 24"><use href="#star"/></svg></span><span class="tp-star"><svg viewBox="0 0 24 24"><use href="#star"/></svg></span><span class="tp-star"><svg viewBox="0 0 24 24"><use href="#star"/></svg></span><span class="tp-star"><svg viewBox="0 0 24 24"><use href="#star"/></svg></span></div><blockquote>"I'm an underground coal miner and I'm constantly breaking the glass in my watches. This one has held up amazingly well."</blockquote><cite>— Verified Purchase</cite></div>
+
+<section id="comparison" class="section section-alt"><div class="sl">
+  <h2 class="center">Stop Overpaying. Do The Math.</h2>
+  <p class="intro">One look at this and you'll wonder why you ever considered the alternative.</p>
+  <div class="comp">
+    <div class="comp-col lose"><h3>1 Fragile Watch — $400+</h3><ul>
+      <li><svg viewBox="0 0 24 24"><use href="#xm"/></svg> Screen cracks the first time it hits something</li>
+      <li><svg viewBox="0 0 24 24"><use href="#xm"/></svg> Dead by bedtime — charges every single night</li>
+      <li><svg viewBox="0 0 24 24"><use href="#xm"/></svg> 1-year warranty, then you're on your own</li>
+      <li><svg viewBox="0 0 24 24"><use href="#xm"/></svg> Zero accessories included</li>
+      <li><svg viewBox="0 0 24 24"><use href="#xm"/></svg> 1 expensive gamble</li>
+    </ul></div>
+    <div class="comp-col win"><h3>The Carbinox 2-Pack — $239.95</h3><ul>
+      <li><svg viewBox="0 0 24 24"><use href="#chk"/></svg> Scratch-resistant screen that survives job sites</li>
+      <li><svg viewBox="0 0 24 24"><use href="#chk"/></svg> Charge it once, it runs all week</li>
+      <li><svg viewBox="0 0 24 24"><use href="#chk"/></svg> 2 watches, both covered by Lifetime Warranty</li>
+      <li><svg viewBox="0 0 24 24"><use href="#chk"/></svg> $280+ in free gear included</li>
+      <li><svg viewBox="0 0 24 24"><use href="#chk"/></svg> Zero risk — 45-day money back on both</li>
+    </ul></div>
+  </div>
+  <div class="comp-close">Two rugged smartwatches for less than one fragile one. You do the math.</div>
+</div></section>
+
+<div class="proof-break"><div class="tp-stars"><span class="tp-star"><svg viewBox="0 0 24 24"><use href="#star"/></svg></span><span class="tp-star"><svg viewBox="0 0 24 24"><use href="#star"/></svg></span><span class="tp-star"><svg viewBox="0 0 24 24"><use href="#star"/></svg></span><span class="tp-star"><svg viewBox="0 0 24 24"><use href="#star"/></svg></span><span class="tp-star"><svg viewBox="0 0 24 24"><use href="#star"/></svg></span></div><blockquote>"Got one for me and one for my old man. He called and said it's the nicest thing anyone's got him in years."</blockquote><cite>— Travis B., Owner/Operator, Tulsa OK · Verified Purchase</cite></div>
+
+<section id="twist" class="section"><div class="sl">
+  <h2 class="center">Nobody Needs Two Watches. Until They See This Deal.</h2>
+  <p class="twist-intro">At first glance, two watches sounds like overkill. Then real life kicks in. Because when you finally find gear that actually holds up, you think about the other guy in your life who's still wearing junk.</p>
+  <div class="twist-grid">
+    <div class="twist-card"><img loading="lazy" src="https://cdn.shopify.com/s/files/1/0049/0533/6935/files/hf_20260413_184719_14d73b89-4778-4c8a-abba-b37f9fa7dd76.png?v=1776106106&format=webp" alt="Father and son both wearing Carbinox watches" width="400" height="400"><div class="twist-card-body"><h3>For Your Dad or Brother</h3><p>He's worn the same beat-up watch for years and never buys himself anything. Now you don't have to wait for Father's Day to fix that.</p></div></div>
+    <div class="twist-card"><img loading="lazy" src="https://cdn.shopify.com/s/files/1/0049/0533/6935/files/hf_20260413_184836_bebbfc31-9973-4307-bdf0-508c4d37ab0f.png?v=1776106304&format=webp" alt="Two coworkers comparing Carbinox watches on a job site" width="400" height="400"><div class="twist-card-body"><h3>For Your Work Buddy</h3><p>He keeps asking about yours every shift. End the conversation — just get him one. He'd do the same for you.</p></div></div>
+    <div class="twist-card"><img loading="lazy" src="https://cdn.shopify.com/s/files/1/0049/0533/6935/files/hf_20260413_185317_e78251b5-b549-455a-9600-99fe0372c37d.png?v=1776106511&format=webp" alt="Same Carbinox watch with different bands for work and weekend" width="400" height="400"><div class="twist-card-body"><h3>One for Work, One for After</h3><p>Different band, different vibe. Your work watch takes the hits. Your off-duty watch turns heads. Same toughness either way.</p></div></div>
+  </div>
+  <p class="feat-closer">You're not buying two because you need two. You're buying two because finally, it makes sense.</p>
+  <div style="text-align:center;margin-top:20px"><a href="#offer" class="btn btn-lg">See the Full Deal</a></div>
+</div></section>
+
+<section id="reviews" class="section section-alt"><div class="sl">
+  <h2 class="center">Don't Take Our Word For It. Take Theirs.</h2>
+  <div style="text-align:center;margin-bottom:16px"><span class="tp-stars" style="display:inline-flex"><span class="tp-star"><svg viewBox="0 0 24 24"><use href="#star"/></svg></span><span class="tp-star"><svg viewBox="0 0 24 24"><use href="#star"/></svg></span><span class="tp-star"><svg viewBox="0 0 24 24"><use href="#star"/></svg></span><span class="tp-star"><svg viewBox="0 0 24 24"><use href="#star"/></svg></span><span class="tp-star"><svg viewBox="0 0 24 24"><use href="#star"/></svg></span></span> <span style="font-size:14px;color:var(--muted)">4.8/5 across 12,000+ reviews</span></div>
+  <p class="intro">This thing didn't get popular because of slick marketing. It got popular because it holds up where other watches quit.</p>
+  <div class="review-grid">
+    <div class="review-card"><span class="verified"><svg viewBox="0 0 24 24"><use href="#chk"/></svg> Verified</span><img loading="lazy" src="https://cdn.shopify.com/s/files/1/0049/0533/6935/files/review_1.webp?v=1776106826" alt="Heavy equipment mechanic wearing Carbinox watch" width="400" height="500"><div class="card-body"><div class="tp-stars"><span class="tp-star"><svg viewBox="0 0 24 24"><use href="#star"/></svg></span><span class="tp-star"><svg viewBox="0 0 24 24"><use href="#star"/></svg></span><span class="tp-star"><svg viewBox="0 0 24 24"><use href="#star"/></svg></span><span class="tp-star"><svg viewBox="0 0 24 24"><use href="#star"/></svg></span><span class="tp-star"><svg viewBox="0 0 24 24"><use href="#star"/></svg></span></div><blockquote>"Using a sledgehammer to bumping it on dozer track, it has stood alone where many others have failed."</blockquote><div class="divider"></div><div class="reviewer">Heavy Equipment Mechanic</div><div class="rev-loc">Verified Purchase</div></div></div>
+    <div class="review-card"><span class="verified"><svg viewBox="0 0 24 24"><use href="#chk"/></svg> Verified</span><img loading="lazy" src="https://cdn.shopify.com/s/files/1/0049/0533/6935/files/review_2.webp?v=1776106826" alt="Truck driver wearing Carbinox watch" width="400" height="500"><div class="card-body"><div class="tp-stars"><span class="tp-star"><svg viewBox="0 0 24 24"><use href="#star"/></svg></span><span class="tp-star"><svg viewBox="0 0 24 24"><use href="#star"/></svg></span><span class="tp-star"><svg viewBox="0 0 24 24"><use href="#star"/></svg></span><span class="tp-star"><svg viewBox="0 0 24 24"><use href="#star"/></svg></span><span class="tp-star"><svg viewBox="0 0 24 24"><use href="#star"/></svg></span></div><blockquote>"I'm a full time truck driver. Battery lasts through my long hauls without me thinking about it."</blockquote><div class="divider"></div><div class="reviewer">Mike S.</div><div class="rev-loc">Truck Driver, Texas</div></div></div>
+    <div class="review-card"><span class="verified"><svg viewBox="0 0 24 24"><use href="#chk"/></svg> Verified</span><img loading="lazy" src="https://cdn.shopify.com/s/files/1/0049/0533/6935/files/review_3.webp?v=1776106826" alt="Customer comparing Carbinox to Apple Watch" width="400" height="500"><div class="card-body"><div class="tp-stars"><span class="tp-star"><svg viewBox="0 0 24 24"><use href="#star"/></svg></span><span class="tp-star"><svg viewBox="0 0 24 24"><use href="#star"/></svg></span><span class="tp-star"><svg viewBox="0 0 24 24"><use href="#star"/></svg></span><span class="tp-star"><svg viewBox="0 0 24 24"><use href="#star"/></svg></span><span class="tp-star"><svg viewBox="0 0 24 24"><use href="#star"/></svg></span></div><blockquote>"This does everything my Apple Watch does for a LOT less money, and is far more rugged."</blockquote><div class="divider"></div><div class="reviewer">Apple Watch Switcher</div><div class="rev-loc">Verified Purchase</div></div></div>
+    <div class="review-card"><span class="verified"><svg viewBox="0 0 24 24"><use href="#chk"/></svg> Verified</span><img loading="lazy" src="https://cdn.shopify.com/s/files/1/0049/0533/6935/files/review_4.webp?v=1776106826" alt="Customer showing two Carbinox gift boxes" width="400" height="500"><div class="card-body"><div class="tp-stars"><span class="tp-star"><svg viewBox="0 0 24 24"><use href="#star"/></svg></span><span class="tp-star"><svg viewBox="0 0 24 24"><use href="#star"/></svg></span><span class="tp-star"><svg viewBox="0 0 24 24"><use href="#star"/></svg></span><span class="tp-star"><svg viewBox="0 0 24 24"><use href="#star"/></svg></span><span class="tp-star"><svg viewBox="0 0 24 24"><use href="#star"/></svg></span></div><blockquote>"Got one for me and one for him because I knew the cheap stuff wouldn't survive his job."</blockquote><div class="divider"></div><div class="reviewer">Gift Buyer</div><div class="rev-loc">Verified Purchase</div></div></div>
+  </div>
+</div></section>
+
+<section id="offer" class="section offer"><div class="sl">
+  <h2>The Carbinox 2-Pack</h2>
+  <p style="font-size:18px;margin-bottom:8px">Two watches. $500+ in gear. One price that makes your Apple Watch look like a bad joke.</p>
+  <div class="price-anchor"><span class="old">$518.85</span><span class="now">$239.95</span><span class="save">SAVE 54%</span></div>
+  <img class="offer-img" loading="lazy" src="https://cdn.shopify.com/s/files/1/0049/0533/6935/files/hf_20260413_183425_ea88cf84-99cd-41a2-8032-89b9923f2712.png?v=1776105781&format=webp" alt="Everything included in the Carbinox 2-Pack" width="600" height="338">
+  <ul class="offer-list">
+    <li><svg viewBox="0 0 24 24"><use href="#chk"/></svg><span>2x Carbinox Blaze S Smartwatches (Black)</span><span class="strike">$279.90</span></li>
+    <li><svg viewBox="0 0 24 24"><use href="#chk"/></svg><span>6x Tempered Glass Screen Protectors</span><span class="strike">$29.70</span></li>
+    <li><svg viewBox="0 0 24 24"><use href="#chk"/></svg><span>6x Charging Cables</span><span class="strike">$29.70</span></li>
+    <li><svg viewBox="0 0 24 24"><use href="#chk"/></svg><span>6-Pack of 22mm Bands (mix and match)</span><span class="strike">$149.70</span></li>
+    <li><svg viewBox="0 0 24 24"><use href="#chk"/></svg><span>2x Mystery Gifts</span><span class="strike">$19.90</span></li>
+    <li><svg viewBox="0 0 24 24"><use href="#chk"/></svg><span>Free Shipping</span><span class="strike">$9.95</span></li>
+    <li><svg viewBox="0 0 24 24"><use href="#chk"/></svg><span>Lifetime Warranty on Both Watches</span><span style="color:var(--green);font-weight:700">Included</span></li>
+  </ul>
+  <div class="offer-total">
+    <div class="offer-total-row"><span>Total Value:</span><span class="strike">$518.85</span></div>
+    <div class="offer-total-row offer-pay"><span>You Pay Today:</span><span>$239.95</span></div>
+  </div>
+  <div style="max-width:500px;margin:24px auto 0;text-align:center">
+    <a href="https://shopcarbinox.com/cart/54413221626228:1?checkout?utm_source=meta&utm_medium=paid&utm_campaign=LP10" class="btn btn-full btn-lg">Check Availability & Claim Discount</a>
+    <div class="pay-icons">{% assign pay_types = 'visa,master,american_express,paypal,apple_pay' | split: ',' %}{% for type in pay_types %}{{ type | payment_type_svg_tag: class: 'pay-icon' }}{% endfor %}</div>
+    <p class="micro">Free Shipping · Secure 256-bit Encrypted Checkout · 45-Day Money-Back Guarantee</p>
+    <div style="text-align:center;margin-top:10px;font-size:14px;color:var(--muted)">Order in the next <strong id="countdown" style="color:var(--accent)"></strong> to get all free gifts included</div>
+    <div class="urg-cluster"><span class="urg-badge"><span class="pulse"></span> Sell-Out Risk: HIGH — Pre-tariff stock is limited</span><div class="stock-bar"><div class="stock-bar-fill"></div></div><span class="stock-text">Only limited units left in stock — high demand</span></div>
+  </div>
+</div></section>
+
+<section id="guarantee" class="section section-gold"><div class="sl">
+  <h2 class="center">Zero Risk. Total Confidence. We'll Prove It.</h2>
+  <p style="text-align:center;max-width:560px;margin:0 auto 8px">We don't hide behind fine print. If we can't earn your trust, we don't deserve your money. Period.</p>
+  <div class="guarantee-badges">
+    <div class="g-badge g-badge-gold"><div class="ic ic-gold"><svg viewBox="0 0 24 24" stroke="#fff"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg></div><h4>Lifetime Warranty</h4><p>Both watches covered for life. Cracked screen, scratch, malfunction — we replace it. No questions. No cost. No expiration.</p></div>
+    <div class="g-badge g-badge-green"><div class="ic ic-green"><svg viewBox="0 0 24 24" stroke="#fff"><circle cx="12" cy="12" r="10"/><path d="M8 12l2.5 2.5L16 9"/></svg></div><h4>45-Day Money-Back Guarantee</h4><p>Wear them to work. Beat them up. If you're not impressed after 45 days, send them back for a full refund. You risk nothing.</p></div>
+    <div class="g-badge g-badge-sec"><div class="ic ic-sec"><svg viewBox="0 0 24 24" stroke="#fff"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg></div><h4>Secure Checkout</h4><p>256-bit encrypted checkout — the same security standard used by banks and military organizations. Your data is locked down.</p></div>
+  </div>
+</div></section>
+
+<section id="faq" class="section section-alt"><div class="ed">
+  <h2>Got Questions? Good. Here Are the Answers.</h2>
+  <div class="faq-item open"><div class="faq-q">Does the Lifetime Warranty cover both watches?</div><div class="faq-a">Yes. Both watches in the 2-Pack are fully covered under our Lifetime Warranty from day one.</div></div>
+  <div class="faq-item"><div class="faq-q">Is $240 a lot for two smartwatches?</div><div class="faq-a">That's $120 per watch — each one with Gorilla Glass, GPS, wrist calling, up to 15-day battery, and a Lifetime Warranty. A single Apple Watch costs $400+ and cracks the first time it hits a steel beam. Plus you're getting $280+ in free accessories with the 2-Pack. It's not even close.</div></div>
+  <div class="faq-item"><div class="faq-q">Does it work with my phone?</div><div class="faq-a">Yes. The Carbinox Blaze S works with both iPhone (iOS) and Android via the free companion app. Download it, pair your watch, and you're set in under two minutes.</div></div>
+  <div class="faq-item"><div class="faq-q">Is this the same Blaze S sold on your main site?</div><div class="faq-a">Yes. Exact same watch. The 2-Pack is just a better way to get it.</div></div>
+  <div class="faq-item"><div class="faq-q">How long does shipping take?</div><div class="faq-a">Shipping is free on every 2-Pack. Most orders arrive in 5–7 business days.</div></div>
+  <div class="faq-item"><div class="faq-q">What color are the watches?</div><div class="faq-a">Both Blaze S watches in the 2-Pack come in black — the most versatile option that goes with any band combo from the included 6-pack.</div></div>
+  <div class="faq-item"><div class="faq-q">Can I return one watch and keep the other?</div><div class="faq-a">The 45-day money-back guarantee applies to the full bundle.</div></div>
+  <div class="faq-item"><div class="faq-q">Who is the second watch really for?</div><div class="faq-a">Dad, brother, son, best friend, coworker — or keep one for work and one for weekends. You'll know the moment you see this deal.</div></div>
+  <div class="faq-item"><div class="faq-q">Are all the extras included with every 2-Pack?</div><div class="faq-a">Yes. The bands, screen protectors, cables, mystery gifts, free shipping, and Lifetime Warranty are all included — no upsells, no fine print.</div></div>
+</div></section>
+
+<section id="final-cta" class="section section-dark final-cta"><div class="ed">
+  <h2>Still Thinking About It? Your Apple Watch Is Already Cracking.</h2>
+  <p style="color:#ccc;margin-bottom:24px">Two rugged smartwatches. Free gear. Free shipping. Lifetime Warranty on both. $239.95. This won't last.</p>
+  <a href="https://shopcarbinox.com/cart/54413221626228:1?checkout?utm_source=meta&utm_medium=paid&utm_campaign=LP10" class="btn btn-lg" style="display:inline-block">Secure Your 2-Pack — $239.95</a>
+  <div class="pay-icons" style="margin-top:10px">{% assign pay_types = 'visa,master,american_express,paypal,apple_pay' | split: ',' %}{% for type in pay_types %}{{ type | payment_type_svg_tag: class: 'pay-icon' }}{% endfor %}</div>
+  <p class="micro" style="color:#777">Free Shipping · Secure Checkout · 45-Day Money-Back Guarantee</p>
+</div></section>
+
+<footer class="lp-foot"><div class="ed">
+  <p>&copy; 2026 Carbinox Co. All rights reserved. 1729 NW 79th Ave, Doral, Florida, 33126, United States.</p>
+  <p style="margin-top:8px">Individual results may vary. Testimonials represent individual experiences and are not guaranteed outcomes. The Lifetime Warranty covers manufacturing defects and normal wear; see full warranty terms on our website. "Pre-tariff pricing" refers to current inventory pricing before potential import duty increases. Product images are for illustration purposes.</p>
+</div></footer>
+
+<div class="sticky-bar" id="stickyBar"><a href="https://shopcarbinox.com/cart/54413221626228:1?checkout?utm_source=meta&utm_medium=paid&utm_campaign=LP10" class="btn">Check Availability</a><div class="sm">Free Shipping · Lifetime Warranty</div></div>
+
+<script>
+document.querySelectorAll('.faq-q').forEach(function(q){q.addEventListener('click',function(){this.parentElement.classList.toggle('open')})});
+var hero=document.getElementById('hero'),bar=document.getElementById('stickyBar');
+if(hero&&bar){var obs=new IntersectionObserver(function(e){bar.style.display=e[0].isIntersecting?'none':'block'},{threshold:0});obs.observe(hero)}
+(function(){var cd=document.getElementById('countdown');if(!cd)return;var key='cbx_lp10_timer',dur=3600,stored=null;try{stored=sessionStorage.getItem(key)}catch(e){}var end;if(stored){end=parseInt(stored,10);if(isNaN(end)||end<=Date.now())end=Date.now()+dur*1000}else{end=Date.now()+dur*1000}try{sessionStorage.setItem(key,end)}catch(e){}function tick(){var left=Math.max(0,Math.floor((end-Date.now())/1000));if(left<=0){cd.textContent='00:00:00';return}var h=Math.floor(left/3600),m=Math.floor((left%3600)/60),s=left%60;cd.textContent=(h<10?'0':'')+h+':'+(m<10?'0':'')+m+':'+(s<10?'0':'')+s}tick();setInterval(tick,1000)})();
+</script>

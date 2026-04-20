@@ -1,0 +1,85 @@
+ 
+	<!-- slimmer -->
+	<section class="ridge-slimmer">  
+		<div class="ridge-container">
+			<div class="ridge-slimmer-main">
+				<div class="ridge-slimmer-text">
+					<h2>{{ section.settings.text2 }}</h2>
+					<ul>
+                      {% for block in section.blocks %}
+						<li>
+							{{ block.settings.image1 | img_url: 'master' | img_tag }}
+							{{ block.settings.text3 }}
+						</li>
+                        {% endfor %}
+						
+					</ul>
+				</div>
+				<div class="ridge-slimmer-img">
+					{{ section.settings.image2 | img_url: 'master' | img_tag }}
+					<div class="ridge-slimmer-img-text">
+						<h3>{{ section.settings.text4 }}</h3>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+
+{% schema %}
+  {
+    "name": "Image with text",
+    
+    "settings": [
+       {
+      "type": "text",
+      "id": "text2",
+      "label": "Heading"
+    },
+             {
+      "type": "text",
+      "id": "text4",
+      "label": "Sub Heading"
+    },
+       {
+           "type": "image_picker",
+           "id": "image2",
+           "label": "Image"
+         }
+       ],
+
+ "blocks": [
+     {
+       "name": "List item",
+       "type": "Imagewithtext",
+       
+ "settings": [
+       
+      {
+           "type": "image_picker",
+           "id": "image1",
+           "label": "Item Image"
+         },
+      {
+      "type": "richtext",
+      "id": "text3",
+      "label": "Text"
+    }
+ ]
+   }
+ 
+ ],
+     "presets" : [
+{
+  "name" : "Image with text",
+  "category" : "Image with text",
+
+  }
+]
+    
+      
+   
+  }
+{% endschema %}

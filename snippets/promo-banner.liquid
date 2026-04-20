@@ -1,0 +1,60 @@
+
+<style>
+  #promo-banner img {
+    width: 100%;
+    background: transparent;
+  }
+
+  .banner-mobile {
+    display: none;
+  }
+
+  .banner-desktop {
+    display: block;
+    margin: auto;
+    margin-top: 5px;
+    max-width: 920px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    .banner-desktop {
+      margin-top: 170px;
+    }
+  }
+ @media screen and (min-width: 1240px) {
+    .banner-desktop {
+      margin-top: 120px;
+    }
+  }
+  @media screen and (min-width: 1385px) {
+    .banner-desktop {
+      margin-top: 87px;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .banner-mobile {
+      display: block;
+      padding-top: 10px;
+      margin-bottom: -25px;
+    }
+
+    .banner-desktop {
+      display: none;
+    }
+  }
+</style>
+
+<div id="promo-banner">
+  <img
+    src="https://cdn.shopify.com/s/files/1/0049/0533/6935/files/mobile-banner_offer_4.webp?v=1757534958"
+    alt="Promo banner"
+    class="banner-mobile"
+  />
+  <img
+    src="https://cdn.shopify.com/s/files/1/0049/0533/6935/files/new-banner-blaze.png?v=1757534573"
+    alt="Promo banner"
+    class="banner-desktop"
+    loading="lazy"
+  />
+</div>

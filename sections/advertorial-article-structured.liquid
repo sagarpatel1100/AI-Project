@@ -1,0 +1,234 @@
+{%- liquid
+  assign font_family = section.settings.font_family
+  assign title_size = section.settings.title_size
+  assign subtitle_size = section.settings.subtitle_size
+  assign text_size = section.settings.text_size
+  assign title_size_mobile = section.settings.title_size_mobile
+  assign subtitle_size_mobile = section.settings.subtitle_size_mobile
+  assign text_size_mobile = section.settings.text_size_mobile
+-%}
+
+<style>
+#adventorial-structured-{{ section.id }}{
+  font-family: {{ font_family }};
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.adventorial-structured__container {
+  max-width: 740px;
+  padding: 0 16px;
+}
+
+#adventorial-structured-{{ section.id }} .adventorial-structured__title{
+  font-weight:700;
+  font-size:{{ title_size }}px;
+  line-height:120%;
+  margin-bottom:16px;
+  margin-top: 0px;
+}
+
+#adventorial-structured-{{ section.id }} .adventorial-structured__subtitle{
+  font-weight:700;
+  font-size:{{ subtitle_size }}px;
+  margin:20px 0 10px;
+}
+
+#adventorial-structured-{{ section.id }} .adventorial-structured__text{
+  font-weight:400;
+  font-size:{{ text_size }}px;
+  line-height:1.5;
+}
+
+#adventorial-structured-{{ section.id }} .adventorial-structured__image{
+  width:100%;
+  border-radius:8px;
+  margin-bottom:20px;
+}
+
+.adventorial-structured__text ul {
+    padding-left: 12px;
+}
+
+.adventorial-article__content p {
+line-height: normal;
+}
+
+@media(max-width:768px){
+
+  #adventorial-structured-{{ section.id }} .adventorial-structured__title{
+    font-size:{{ title_size_mobile }}px;
+  }
+
+  #adventorial-structured-{{ section.id }} .adventorial-structured__subtitle{
+    font-size:{{ subtitle_size_mobile }}px;
+  }
+
+  #adventorial-structured-{{ section.id }} .adventorial-structured__text{
+    font-size:{{ text_size_mobile }}px;
+  }
+
+}
+</style>
+
+<section id="adventorial-structured-{{ section.id }}" class="adventorial-structured">
+
+  <div class="adventorial-structured__container">
+
+    {% if section.settings.image != blank %}
+      <img
+        src="{{ section.settings.image | image_url }}"
+        class="adventorial-structured__image"
+        loading="lazy"
+      >
+    {% endif %}
+
+    {% if section.settings.title != blank %}
+      <h2 class="adventorial-structured__title">
+        {{ section.settings.title }}
+      </h2>
+    {% endif %}
+
+    {% for block in section.blocks %}
+
+      {% case block.type %}
+
+        {% when 'subtitle' %}
+          <h3 class="adventorial-structured__subtitle">
+            {{ block.settings.subtitle }}
+          </h3>
+
+        {% when 'text' %}
+          <div class="adventorial-structured__text">
+            {{ block.settings.text }}
+          </div>
+
+      {% endcase %}
+
+    {% endfor %}
+
+<hr class="adventorial-article__divider">
+
+  </div>
+
+</section>
+
+{% schema %}
+{
+  "name": "Advertorial Article",
+  "tag": "section",
+  "settings": [
+
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Article title"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Article image"
+    },
+
+    {
+      "type": "text",
+      "id": "font_family",
+      "label": "Font family",
+      "default": "Inter"
+    },
+
+    {
+      "type": "range",
+      "id": "title_size",
+      "label": "Title size desktop",
+      "min":18,
+      "max":48,
+      "step":1,
+      "default":24
+    },
+    {
+      "type": "range",
+      "id": "subtitle_size",
+      "label": "Subtitle size desktop",
+      "min":14,
+      "max":32,
+      "step":1,
+      "default":18
+    },
+    {
+      "type": "range",
+      "id": "text_size",
+      "label": "Text size desktop",
+      "min":12,
+      "max":24,
+      "step":1,
+      "default":16
+    },
+
+    {
+      "type": "range",
+      "id": "title_size_mobile",
+      "label": "Title size mobile",
+      "min":18,
+      "max":40,
+      "step":1,
+      "default":24
+    },
+    {
+      "type": "range",
+      "id": "subtitle_size_mobile",
+      "label": "Subtitle size mobile",
+      "min":14,
+      "max":28,
+      "step":1,
+      "default":18
+    },
+    {
+      "type": "range",
+      "id": "text_size_mobile",
+      "label": "Text size mobile",
+      "min":12,
+      "max":22,
+      "step":1,
+      "default":16
+    }
+
+  ],
+
+  "blocks":[
+    {
+      "type":"subtitle",
+      "name":"Subtitle",
+      "settings":[
+        {
+          "type":"text",
+          "id":"subtitle",
+          "label":"Subtitle"
+        }
+      ]
+    },
+    {
+      "type":"text",
+      "name":"Text",
+      "settings":[
+        {
+          "type":"richtext",
+          "id":"text",
+          "label":"Text"
+        }
+      ]
+    }
+  ],
+
+  "presets":[
+    {
+      "name":"Advertorial Article Structured",
+      "blocks":[
+        { "type":"subtitle" },
+        { "type":"text" }
+      ]
+    }
+  ]
+}
+{% endschema %}

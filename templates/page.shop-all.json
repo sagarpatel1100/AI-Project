@@ -1,0 +1,213 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "featured-collections",
+      "blocks": {
+        "0c8c6534-a81d-428c-9702-b043339d8d19": {
+          "type": "collection",
+          "settings": {
+            "collection": "watches",
+            "label": "",
+            "button_text": "",
+            "button_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "0c8c6534-a81d-428c-9702-b043339d8d19"
+      ],
+      "settings": {
+        "subheading": "",
+        "title": "SmartWatches",
+        "heading_alignment": "left",
+        "content": "",
+        "products_count": 22,
+        "products_per_row": 4,
+        "stack_products": true,
+        "show_cta": false,
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "166094480938f5b01b": {
+      "type": "featured-collections",
+      "blocks": {
+        "1660944809bef0f279-0": {
+          "type": "collection",
+          "settings": {
+            "collection": "carbinox-bands-22mm",
+            "label": "",
+            "button_text": "",
+            "button_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "1660944809bef0f279-0"
+      ],
+      "settings": {
+        "subheading": "",
+        "title": "carbinox bands [22mm]",
+        "heading_alignment": "left",
+        "content": "",
+        "products_count": 12,
+        "products_per_row": 5,
+        "stack_products": true,
+        "show_cta": true,
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "featured_collections_4UHAiH": {
+      "type": "featured-collections",
+      "blocks": {
+        "collection_D9iUjY": {
+          "type": "collection",
+          "settings": {
+            "collection": "other-accessories",
+            "label": "",
+            "button_text": "",
+            "button_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "collection_D9iUjY"
+      ],
+      "settings": {
+        "subheading": "",
+        "title": "tempered glasses & cables",
+        "heading_alignment": "left",
+        "content": "",
+        "products_count": 35,
+        "products_per_row": 5,
+        "stack_products": true,
+        "show_cta": true,
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "1662059311257c1d72": {
+      "type": "featured-collections",
+      "blocks": {
+        "1662059311c2305fd7-0": {
+          "type": "collection",
+          "settings": {
+            "collection": "carbinox-products",
+            "label": "",
+            "button_text": "",
+            "button_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "1662059311c2305fd7-0"
+      ],
+      "settings": {
+        "subheading": "",
+        "title": "OUTDOOR ARTILLERY",
+        "heading_alignment": "left",
+        "content": "",
+        "products_count": 20,
+        "products_per_row": 4,
+        "stack_products": true,
+        "show_cta": false,
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "16624763132c259030": {
+      "type": "social-media-gallery",
+      "blocks": {
+        "1662476313b0e7539c-0": {
+          "type": "image",
+          "settings": {
+            "logo": "shopify://shop_images/hiw3.png",
+            "link": ""
+          }
+        },
+        "1662476313b0e7539c-1": {
+          "type": "image",
+          "settings": {
+            "logo": "shopify://shop_images/hiw1.png",
+            "link": ""
+          }
+        },
+        "1662476313b0e7539c-2": {
+          "type": "image",
+          "settings": {
+            "logo": "shopify://shop_images/hiw3.png",
+            "link": ""
+          }
+        },
+        "1662476313b0e7539c-3": {
+          "type": "image",
+          "settings": {
+            "logo": "shopify://shop_images/hiw1.png",
+            "link": ""
+          }
+        },
+        "1662476313b0e7539c-4": {
+          "type": "image",
+          "settings": {
+            "logo": "shopify://shop_images/hiw3.png",
+            "link": ""
+          }
+        },
+        "1662476313b0e7539c-5": {
+          "type": "image",
+          "settings": {
+            "logo": "shopify://shop_images/hiw1.png",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "1662476313b0e7539c-0",
+        "1662476313b0e7539c-1",
+        "1662476313b0e7539c-2",
+        "1662476313b0e7539c-3",
+        "1662476313b0e7539c-4",
+        "1662476313b0e7539c-5"
+      ],
+      "disabled": true,
+      "settings": {
+        "reveal_on_scroll": true,
+        "subheading": "follow us",
+        "title": "join our social media",
+        "button_text": "",
+        "button_link": "",
+        "stack_logos": true,
+        "background": "#2c3036",
+        "text_color": "#f9f9f9",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)",
+        "logo_background": "rgba(0,0,0,0)"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "166094480938f5b01b",
+    "featured_collections_4UHAiH",
+    "1662059311257c1d72",
+    "16624763132c259030"
+  ]
+}

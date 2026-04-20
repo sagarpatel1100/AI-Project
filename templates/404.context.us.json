@@ -1,0 +1,68 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "parent": "404.json",
+  "context": {
+    "market": "us"
+  },
+  "sections": {
+    "image_with_text_RzJ4i": {
+      "type": "image-with-text",
+      "disabled": false,
+      "custom_css": [
+        "h3{font-size: 20px;}"
+      ],
+      "settings": {
+        "section_id": "",
+        "reveal_on_scroll": true,
+        "background_type": "full_width",
+        "background_overlap": "text",
+        "image_position": "left",
+        "text_alignment": "center",
+        "cycle_speed": 8,
+        "accent_background": "#000000",
+        "text_color": "#ffffff",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)",
+        "enable_custom_margin": false,
+        "margin_bottom": 0
+      },
+      "blocks": {
+        "item_DbrEg": {
+          "type": "item",
+          "disabled": false,
+          "settings": {
+            "show_video": false,
+            "video_link": "",
+            "image": "shopify://shop_images/Diseno_sin_titulo_20_-min.png",
+            "tab_label": "Item",
+            "subheading": "",
+            "title": "We apologize, this page doesn't exist.",
+            "content": "",
+            "button_text": "TAKE ME BACK TO HOME PAGE",
+            "button_link": "https://shopcarbinox.com"
+          }
+        }
+      },
+      "block_order": [
+        "item_DbrEg"
+      ]
+    },
+    "main": {
+      "disabled": true,
+      "settings": {},
+      "blocks": {}
+    }
+  },
+  "order": [
+    "main",
+    "image_with_text_RzJ4i"
+  ]
+}

@@ -1,0 +1,447 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "5785959f-c70e-421a-860c-b31424278f60": {
+      "type": "slideshow",
+      "blocks": {
+        "template--14617441009767__5785959f-c70e-421a-860c-b31424278f60-image-2": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Diseno_sin_titulo-188-min.png",
+            "mobile_image": "shopify://shop_images/Please_send_a_text_message_to_John_saying_See_you_later_at_the_ranch_2_-min.png",
+            "text_position": "top_center",
+            "subheading": "AFTER A HUGE SUCCESS, WE HAVE TO SAY THAT YOU'VE MISSED IT OUT FOR NOW! 😢",
+            "title": "THE CARBINOX BLAZE TYPE R AND TYPE S are OFICIALLY OUT OF STOCK!",
+            "button_1_text": "",
+            "button_1_link": "",
+            "button_2_text": "",
+            "button_2_link": "",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "template--14617441009767__5785959f-c70e-421a-860c-b31424278f60-image-2"
+      ],
+      "custom_css": [
+        "h3 {font-size: 30px; letter-spacing: -2px;}",
+        "h2 {font-size: 14px;}"
+      ],
+      "settings": {
+        "section_height": "auto",
+        "transition_type": "fade",
+        "autoplay": false,
+        "cycle_speed": 5,
+        "background": "rgba(0,0,0,0)"
+      }
+    },
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "68cbfea4-6b54-4a02-af3c-8ca80e924f69": {
+          "type": "description",
+          "settings": {}
+        },
+        "aeb8ebf7-0071-475a-b587-0ad05d895fab": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "link": "",
+            "text": "",
+            "stretch": true,
+            "background": "rgba(0,0,0,0)",
+            "text_color": "rgba(0,0,0,0)"
+          }
+        },
+        "77b0126f-d176-4e47-b6f3-d2424b9b32ea": {
+          "type": "variant_picker",
+          "settings": {
+            "hide_sold_out_variants": false,
+            "selector_mode": "dropdown",
+            "color_mode": "variant_image",
+            "size_chart_page": ""
+          }
+        },
+        "54d2e274-c4e9-4efe-b6da-5bfe93a94d13": {
+          "type": "social_share_icons",
+          "settings": {
+            "icon_1": "shopify://shop_images/free-shipping.png",
+            "icon_text_1": "<p>Free Shipping</p>",
+            "icon_2": "shopify://shop_images/guarantee.png",
+            "icon_text_2": "<p>Satisfaction<br/>Guaranteed</p>",
+            "icon_3": "shopify://shop_images/easy-returns.png",
+            "icon_text_3": "<p>Easy Returns</p>"
+          }
+        },
+        "aa8adaeb-d404-4d2d-9f7b-7c87d4a68e8f": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_payment_button": true,
+            "atc_button_background": "#0023ff",
+            "atc_button_text_color": "#f9f9f9",
+            "buy_now_button_background": "rgba(0,0,0,0)",
+            "buy_now_button_text_color": "rgba(0,0,0,0)"
+          }
+        },
+        "4405410f-d098-41a4-9d3e-7f9d8e5edf7d": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Diseno_sin_titulo-12_68385dad-ca95-4b21-896d-8ab2aa4dc802.png",
+            "image_alignment": "center",
+            "image_width": 250
+          }
+        }
+      },
+      "block_order": [
+        "68cbfea4-6b54-4a02-af3c-8ca80e924f69",
+        "aeb8ebf7-0071-475a-b587-0ad05d895fab",
+        "77b0126f-d176-4e47-b6f3-d2424b9b32ea",
+        "54d2e274-c4e9-4efe-b6da-5bfe93a94d13",
+        "aa8adaeb-d404-4d2d-9f7b-7c87d4a68e8f",
+        "4405410f-d098-41a4-9d3e-7f9d8e5edf7d"
+      ],
+      "disabled": true,
+      "settings": {
+        "delivery_time": "<p><strong>Order today</strong> to get it delivered in <strong>5-7 days</strong></p>",
+        "show_vendor": false,
+        "show_sku": false,
+        "show_taxes_included": false,
+        "show_product_rating": true,
+        "show_sticky_add_to_cart": false,
+        "show_payment_methods": false,
+        "show_share_buttons": false,
+        "help_page": "",
+        "enable_video_autoplay": true,
+        "enable_video_looping": false,
+        "enable_image_zoom": false,
+        "show_thumbnails_on_mobile": false,
+        "desktop_thumbnails_position": "bottom",
+        "transition_effect": "slide"
+      }
+    },
+    "1660763234e5fce699": {
+      "type": "scroll-bar",
+      "disabled": true,
+      "settings": {
+        "scroll-show": true,
+        "scro1": "$29.99 TACTICAL PEN INCLUDED ON YOUR PACKAGE AT NO COST!"
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "disabled": true,
+      "settings": {
+        "subheading": "",
+        "title": "Complete your gear",
+        "recommendations_count": 4,
+        "products": [],
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "16600743810628a394": {
+      "type": "image-with-text",
+      "blocks": {
+        "166007438054eee82b-0": {
+          "type": "item",
+          "settings": {
+            "show_video": false,
+            "video_link": "",
+            "image": "shopify://shop_images/Diseno_sin_titulo-52_10df6072-aaed-4880-8399-c30c9c4683f2.png",
+            "tab_label": "Item",
+            "subheading": "ATTENTION: E-MAIL AND PHONE NUMBER ARE REQUIRED TO GET A CHANCE FOR A TITAN PRO.",
+            "title": "this is the last restock of titan pro ever.",
+            "content": "",
+            "button_text": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "166007438054eee82b-0"
+      ],
+      "disabled": true,
+      "settings": {
+        "section_id": "",
+        "reveal_on_scroll": true,
+        "background_type": "full_width",
+        "background_overlap": "image",
+        "image_position": "left",
+        "text_alignment": "left",
+        "cycle_speed": 8,
+        "accent_background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)",
+        "enable_custom_margin": false,
+        "margin_bottom": 0
+      }
+    },
+    "1660074846e66341a3": {
+      "type": "image-with-text-block",
+      "disabled": true,
+      "settings": {
+        "reveal_on_scroll": true,
+        "image": "shopify://shop_images/CAR_1108_1.png",
+        "mobile_image": "shopify://shop_images/CAR_1108_1.png",
+        "subheading": "",
+        "title": "your average watch could break easily, and we know it.",
+        "content": "<p>The Carbinox Titan is built on one primary key: Hard work. We’ve engineered this smartwatch using the most rigid materials in the industry to provide confidence for those who want to stay connected on challenging activities such as construction, carpentry, machine operations, welding, among other tasks, something that other devices would no beat.</p>",
+        "button_text": "claim today’s offer",
+        "button_link": "#focus-product-section",
+        "enble_scroll": true,
+        "background_type": "full_width",
+        "text_position": "left",
+        "text_alignment": "left",
+        "text_background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "#ffc200",
+        "button_text_color": "#2c3036"
+      }
+    },
+    "1660075058d49b6b6f": {
+      "type": "image-with-text",
+      "blocks": {
+        "16600750588a46f04b-0": {
+          "type": "item",
+          "settings": {
+            "show_video": false,
+            "video_link": "",
+            "image": "shopify://shop_images/product02.png",
+            "tab_label": "Item",
+            "subheading": "",
+            "title": "take yout adventures to a whole new stage.",
+            "content": "<p>Besides its tough features, the Carbinox Titan is perfect for extreme outdoor experiences, beating any condition you submit it on. The 5ATM & IP69K Water Resistant and Dustproof technology integrated will make you stay connected, no matter where you are.</p>",
+            "button_text": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "16600750588a46f04b-0"
+      ],
+      "disabled": true,
+      "settings": {
+        "section_id": "",
+        "reveal_on_scroll": true,
+        "background_type": "full_width",
+        "background_overlap": "image",
+        "image_position": "left",
+        "text_alignment": "left",
+        "cycle_speed": 8,
+        "accent_background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)",
+        "enable_custom_margin": false,
+        "margin_bottom": 18
+      }
+    },
+    "16600750743a3d39c2": {
+      "type": "image-with-text",
+      "blocks": {
+        "166007507484cd394b-0": {
+          "type": "item",
+          "settings": {
+            "show_video": false,
+            "video_link": "",
+            "image": "shopify://shop_images/CAR_1166_1.png",
+            "tab_label": "Item",
+            "subheading": "",
+            "title": "Reach your goals, track your health, stay connected with your people.",
+            "content": "<p>Get instant access to your daily performance, physical conditions, and personal life with The Carbinox Titan. Get accurate and advanced features on your wrist with a few swipes, such as:</p><p><br/><strong>. </strong>Steps counter<br/>. Blood pressure<br/>. Sleeping mode<br/>. Heart rate tracker<br/>. Oxygen measuring<br/>. Location-based weather<br/>. Social media notifications<br/>. Messages & calls control<br/>. +20 different sports modes</p>",
+            "button_text": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "166007507484cd394b-0"
+      ],
+      "disabled": true,
+      "settings": {
+        "section_id": "",
+        "reveal_on_scroll": true,
+        "background_type": "full_width",
+        "background_overlap": "image",
+        "image_position": "right",
+        "text_alignment": "left",
+        "cycle_speed": 8,
+        "accent_background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)",
+        "enable_custom_margin": false,
+        "margin_bottom": 0
+      }
+    },
+    "product-content": {
+      "type": "product-content",
+      "blocks": {
+        "description": {
+          "type": "description",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "description"
+      ],
+      "disabled": true,
+      "settings": {}
+    },
+    "09eed4ba-00fa-4e24-afec-4ac4f45e5620": {
+      "type": "rich-text",
+      "settings": {
+        "section_id": "",
+        "subheading": "🔥 5,000 units sold in less than 72 HOURS!",
+        "title": "you may be eligible for one (1) unit if you JOIN OUR LIST.",
+        "content": "<p><strong>Click the button below and sign up to the waiting list. We'll let you know if you get an allocation.</strong></p>",
+        "button_text": "SUBSCRIBE TO WAITING LIST ➔",
+        "button_link": "https://carbinox.attn.tv/p/6BC/landing-page",
+        "background_type": "full_width",
+        "text_width": "medium",
+        "text_position": "center",
+        "text_alignment": "center",
+        "background": "#000000",
+        "text_color": "#ffffff",
+        "button_background": "#02c916",
+        "button_text_color": "#ffffff"
+      }
+    },
+    "1664906748ba4b8cf6": {
+      "type": "apps",
+      "settings": {
+        "include_horizontal_margins": false,
+        "include_vertical_margins": false
+      }
+    },
+    "adae613b-9ecb-4964-b42c-91ab3b759285": {
+      "type": "rich-text",
+      "settings": {
+        "section_id": "",
+        "subheading": "",
+        "title": "DISCLAIMER:",
+        "content": "<p>These product have extremely high demand. We cannot guarantee access to one of our units. <span style=\"text-decoration:underline\"><strong><br/><br/>SUBSCRIBING TO THE WAITING LIST IS THE ONLY WAY TO GET AN ALLOCATION.</strong></span></p>",
+        "button_text": "",
+        "button_link": "",
+        "background_type": "full_width",
+        "text_width": "medium",
+        "text_position": "center",
+        "text_alignment": "center",
+        "background": "#000000",
+        "text_color": "#ffffff",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "16649026816649596d": {
+      "type": "custom-html",
+      "settings": {
+        "subheading": "",
+        "title": "",
+        "html": "<center>\n<img src=\"https://cdn.shopify.com/s/files/1/0049/0533/6935/files/Diseno_sin_titulo-68.png?v=1671215042\">\n</center>",
+        "add_vertical_spacing": false,
+        "background_type": "full_width",
+        "background": "#000000",
+        "text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "166247618353decb3f": {
+      "type": "social-media-gallery",
+      "blocks": {
+        "1662476183e2e8d687-0": {
+          "type": "image",
+          "settings": {
+            "logo": "shopify://shop_images/1-min.png",
+            "link": ""
+          }
+        },
+        "1662476183e2e8d687-1": {
+          "type": "image",
+          "settings": {
+            "logo": "shopify://shop_images/2-min.png",
+            "link": ""
+          }
+        },
+        "1662476183e2e8d687-2": {
+          "type": "image",
+          "settings": {
+            "logo": "shopify://shop_images/5-min.png",
+            "link": ""
+          }
+        },
+        "1662476183e2e8d687-3": {
+          "type": "image",
+          "settings": {
+            "logo": "shopify://shop_images/3-min.png",
+            "link": ""
+          }
+        },
+        "1662476183e2e8d687-4": {
+          "type": "image",
+          "settings": {
+            "logo": "shopify://shop_images/4-min.png",
+            "link": ""
+          }
+        },
+        "1662476183e2e8d687-5": {
+          "type": "image",
+          "settings": {
+            "logo": "shopify://shop_images/6-min.png",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "1662476183e2e8d687-0",
+        "1662476183e2e8d687-1",
+        "1662476183e2e8d687-2",
+        "1662476183e2e8d687-3",
+        "1662476183e2e8d687-4",
+        "1662476183e2e8d687-5"
+      ],
+      "disabled": true,
+      "settings": {
+        "reveal_on_scroll": true,
+        "subheading": "follow us",
+        "title": "join our social media",
+        "button_text": "",
+        "button_link": "",
+        "stack_logos": true,
+        "background": "#2c3036",
+        "text_color": "#f9f9f9",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)",
+        "logo_background": "rgba(0,0,0,0)"
+      }
+    }
+  },
+  "order": [
+    "5785959f-c70e-421a-860c-b31424278f60",
+    "main",
+    "1660763234e5fce699",
+    "product-recommendations",
+    "16600743810628a394",
+    "1660074846e66341a3",
+    "1660075058d49b6b6f",
+    "16600750743a3d39c2",
+    "product-content",
+    "09eed4ba-00fa-4e24-afec-4ac4f45e5620",
+    "1664906748ba4b8cf6",
+    "adae613b-9ecb-4964-b42c-91ab3b759285",
+    "16649026816649596d",
+    "166247618353decb3f"
+  ]
+}

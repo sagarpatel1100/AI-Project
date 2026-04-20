@@ -1,0 +1,206 @@
+{%- liquid
+  assign home_label = section.settings.home_label
+  assign home_link = section.settings.home_link
+  assign home_bold = section.settings.home_bold
+  assign separator = section.settings.separator
+  assign text_color = section.settings.text_color
+  assign bg_color = section.settings.bg_color
+  assign home_enable_link = section.settings.home_enable_link
+  assign hide_mobile = section.settings.hide_mobile
+-%}
+
+<style>
+
+#breadcrumb-adventorial-{{ section.id }}{
+  width:100%;
+  background: {{ bg_color }};
+  display: flex;
+  justify-content: center;
+}
+
+#breadcrumb-adventorial-{{ section.id }} .breadcrumb-container{
+  max-width:1200px;
+  padding: 20px 0px 0px;
+}
+
+#breadcrumb-adventorial-{{ section.id }} .breadcrumb{
+  display:flex;
+  align-items:center;
+  flex-wrap:wrap;
+  font-size:14px;
+  gap:6px;
+  color:{{ text_color }};
+}
+
+#breadcrumb-adventorial-{{ section.id }} a{
+  color:{{ text_color }};
+  text-decoration:none;
+}
+
+{% if hide_mobile %}
+
+@media screen and (max-width: 768px){
+  #breadcrumb-adventorial-{{ section.id }}{
+    display:none;
+  }
+}
+
+{% endif %}
+
+</style>
+
+
+<div id="breadcrumb-adventorial-{{ section.id }}">
+
+  <div class="breadcrumb-container">
+
+    <nav class="breadcrumb">
+
+      {% if home_enable_link and home_link != blank %}
+
+      <a 
+        href="{{ home_link }}"
+        style="font-weight:{% if home_bold %}600{% else %}400{% endif %};"
+      >
+        {{ home_label }}
+      </a>
+
+      {% else %}
+
+      <span style="font-weight:{% if home_bold %}600{% else %}400{% endif %};">
+        {{ home_label }}
+      </span>
+
+
+      {% endif %}
+
+
+      {% for block in section.blocks %}
+
+        <span>{{ separator }}</span>
+
+        {% if block.settings.link != blank %}
+
+          <a 
+            href="{{ block.settings.link }}"
+            style="font-weight:{% if block.settings.bold %}600{% else %}400{% endif %};"
+          >
+            {{ block.settings.label }}
+          </a>
+
+        {% else %}
+
+          <span 
+            style="font-weight:{% if block.settings.bold %}600{% else %}400{% endif %};"
+          >
+            {{ block.settings.label }}
+          </span>
+
+        {% endif %}
+
+      {% endfor %}
+
+    </nav>
+
+  </div>
+
+</div>
+
+
+{% schema %}
+{
+  "name": "Breadcrumb Adventorial",
+  "tag": "section",
+  "settings": [
+
+    {
+      "type": "text",
+      "id": "home_label",
+      "label": "Home label",
+      "default": "Home"
+    },
+    {
+      "type": "checkbox",
+      "id": "home_enable_link",
+      "label": "Enable home link",
+      "default": false
+    },
+    {
+      "type": "url",
+      "id": "home_link",
+      "label": "Home link"
+    },
+    {
+      "type": "checkbox",
+      "id": "home_bold",
+      "label": "Home bold",
+      "default": false
+    },
+
+    {
+      "type": "text",
+      "id": "separator",
+      "label": "Separator",
+      "default": ">"
+    },
+
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Breadcrumb text color",
+      "default": "#595959"
+    },
+
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Breadcrumb background color",
+      "default": "#ffffff"
+    },
+
+    {
+      "type": "checkbox",
+      "id": "hide_mobile",
+      "label": "Hide breadcrumb on mobile",
+      "default": false
+    }
+
+  ],
+
+  "blocks":[
+    {
+      "type":"crumb",
+      "name":"Breadcrumb item",
+      "settings":[
+        {
+          "type":"text",
+          "id":"label",
+          "label":"Label",
+          "default":"Our Blogs"
+        },
+        {
+          "type":"url",
+          "id":"link",
+          "label":"Link (optional)"
+        },
+        {
+          "type":"checkbox",
+          "id":"bold",
+          "label":"Bold text",
+          "default": false
+        }
+      ]
+    }
+  ],
+
+  "presets":[
+    {
+      "name":"Breadcrumb Adventorial",
+      "blocks":[
+        { "type":"crumb" },
+        { "type":"crumb" }
+      ]
+    }
+  ]
+}
+{% endschema %}
