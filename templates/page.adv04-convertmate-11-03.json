@@ -1,0 +1,289 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "show_title": true,
+        "page_width": "medium"
+      }
+    },
+    "new_header_advertorial_nxyiVz": {
+      "type": "new-header-advertorial",
+      "custom_css": [],
+      "name": "Header Adventorial",
+      "settings": {
+        "header_bg": "#0f0f0f",
+        "show_topbar": false,
+        "topbar_text": "#1 US Tech Gift 2025 – Order Now",
+        "topbar_bg": "#395b36",
+        "topbar_color": "#0f0f0f",
+        "logo": "shopify://shop_images/logo.webp",
+        "logo_alignment": "center",
+        "logo_size_desktop": 190,
+        "logo_size_mobile": 120
+      }
+    },
+    "custom_liquid_nC6PJT": {
+      "type": "custom-liquid",
+      "name": "Custom Liquid",
+      "settings": {
+        "subheading": "",
+        "title": "",
+        "liquid": "<style>\n.adventorial-article__container {\n    max-width: 840px !important;\n}\n#shopify-section-template--27202438398324__custom_liquid_nC6PJT .section {\nmargin: 0;\n}\n</style>",
+        "add_vertical_spacing": true,
+        "background_type": "boxed",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "adv_title_img_k6YrfN": {
+      "type": "adv-title-img",
+      "name": "Advertorial Hero",
+      "settings": {
+        "title": "How This Work Watch Saved Daniel’s Life, And Could Save Yours Too!",
+        "user_image": "shopify://shop_images/Ellipse_3.png",
+        "user_name": "Daniel T.",
+        "user_role": "True Customer Story",
+        "verified_icon": "shopify://shop_images/badge-check.png",
+        "hero_image": "shopify://shop_images/3_67-1.webp",
+        "hero_image_mobile": "shopify://shop_images/3_67mobile-1.webp"
+      }
+    },
+    "adventorial_article_7fKJMB": {
+      "type": "adventorial-article",
+      "custom_css": [
+        ".adventorial-article__container {padding-top: 60px;}"
+      ],
+      "name": "Adventorial Article",
+      "settings": {
+        "button_bg": "#000000",
+        "button_text_color": "#ffffff",
+        "button_radius": 6,
+        "button_font": "inherit",
+        "button_font_size": 16,
+        "button_font_size_mobile": 16,
+        "title": "",
+        "subtitle": "",
+        "content": "<p>Some jobs don’t allow distractions.<br/><br/><strong>You can’t pause.</strong></p><p><strong>You can’t step away.</strong></p><p><strong>You can’t “check later.”</strong></p><p>In industrial plants, warehouses, refineries, and construction sites, every movement matters. Every decision carries weight. And every mistake can have consequences.<br/><br/>For men like Daniel, that pressure is part of daily life.<br/><br/>He had worked maintenance and industrial repair for almost twenty years. Long shifts, heavy equipment, extreme temperatures, and constant noise had shaped his routine. He was used to being tired. Used to being sore. Used to pushing through discomfort.<br/><br/>That was the job.<br/><br/>And he was good at it.<br/><br/>So when something felt slightly off during his night shift, he did what he had always done.<br/><br/>He ignored it.</p>",
+        "show_button": false,
+        "button_label": "CLICK HERE TO CHECK AVAILABILITY",
+        "button_url": "",
+        "button_new_tab": false,
+        "show_divider": true
+      }
+    },
+    "adventorial_article_hEG4U7": {
+      "type": "adventorial-article",
+      "name": "Adventorial Article",
+      "settings": {
+        "button_bg": "#000000",
+        "button_text_color": "#ffffff",
+        "button_radius": 6,
+        "button_font": "inherit",
+        "button_font_size": 16,
+        "button_font_size_mobile": 16,
+        "title": "",
+        "subtitle": "The signs he thought were nothing",
+        "image": "shopify://shop_images/2_zon.webp",
+        "mobile_image": "shopify://shop_images/mob1.webp",
+        "content": "<p>It started around midnight.<br/><br/>A mild pressure in his chest. A strange tightness in his breathing. A light dizziness that came and went.<br/><br/>Daniel told himself it was exhaustion. He had worked overtime all week.<br/><br/>He hadn’t slept enough. He hadn’t eaten properly. It made sense.<br/><br/>So he kept going.<br/><br/>He climbed ladders. Checked valves. Monitored machinery. Logged data.<br/><br/>The plant was running at full capacity. Stopping wasn’t an option.<br/><br/>He didn’t want to be the guy who complained.</p>",
+        "show_button": false,
+        "button_label": "CLICK HERE TO CHECK AVAILABILITY",
+        "button_url": "",
+        "button_new_tab": false,
+        "show_divider": true
+      }
+    },
+    "adventorial_article_hNyRjX": {
+      "type": "adventorial-article",
+      "name": "Adventorial Article",
+      "settings": {
+        "button_bg": "#000000",
+        "button_text_color": "#ffffff",
+        "button_radius": 6,
+        "button_font": "inherit",
+        "button_font_size": 16,
+        "button_font_size_mobile": 16,
+        "title": "",
+        "subtitle": "When his body shut down on the floor",
+        "image": "shopify://shop_images/3_zon.webp",
+        "mobile_image": "shopify://shop_images/mob2.webp",
+        "content": "<p>Thirty minutes later, everything changed.<br/><br/>Daniel was inspecting a control panel when the room suddenly tilted.<br/><br/>His vision blurred.<br/><br/>The noise around him faded.<br/><br/>He tried to steady himself.<br/><br/>Missed.<br/><br/>And collapsed.<br/><br/>His helmet hit the concrete.<br/><br/>His tools scattered.<br/><br/>His radio slid out of reach.<br/><br/>The nearest coworker was in another section of the plant.<br/><br/>No one saw him fall.<br/><br/>No one heard him.<br/><br/>He was alone.</p>",
+        "show_button": false,
+        "button_label": "CLICK HERE TO CHECK AVAILABILITY",
+        "button_url": "",
+        "button_new_tab": false,
+        "show_divider": true
+      }
+    },
+    "adv_article_cuadro_TW6Y43": {
+      "type": "adv-article-cuadro",
+      "name": "Adventorial Article Cuadro",
+      "settings": {
+        "title": "The watch that refused to ignore it",
+        "subtitle": "",
+        "image": "shopify://shop_images/4_zon.webp",
+        "mobile_image": "shopify://shop_images/mob3.webp",
+        "content": "<p><strong>While Daniel lay on the ground, barely conscious, his </strong><a href=\"/products/carbinox-blaze\" title=\"Carbinox Blaze – Heavy Duty Smartwatch\"><span style=\"text-decoration:underline\"><strong>Carbinox</strong></span></a><strong> was still monitoring.</strong><br/><br/>It detected severe irregularities in his heart rhythm. Oxygen levels dropped. Movement stopped completely.<br/><br/>This wasn’t normal fatigue.<br/><br/>This was a medical emergency.<br/><br/>Within seconds, emergency mode activated.</p>",
+        "highlight_text": "<p>The <a href=\"/products/carbinox-blaze\" title=\"Carbinox Blaze – Heavy Duty Smartwatch\"><span style=\"text-decoration:underline\">watch</span></a> sent alerts to his emergency contacts. It transmitted his precise location inside the facility. It shared real-time biometric data.</p><p>All automatically.<br/><br/>Daniel never touched the screen.<br/><br/>He couldn’t.</p>",
+        "show_button": false,
+        "button_label": "CLICK HERE TO CHECK AVAILABILITY",
+        "button_url": "",
+        "button_new_tab": false,
+        "show_divider": true
+      }
+    },
+    "adventorial_article_dJ8V3V": {
+      "type": "adventorial-article",
+      "name": "Adventorial Article",
+      "settings": {
+        "button_bg": "#000000",
+        "button_text_color": "#ffffff",
+        "button_radius": 6,
+        "button_font": "inherit",
+        "button_font_size": 16,
+        "button_font_size_mobile": 16,
+        "title": "",
+        "subtitle": "How his team found him in time",
+        "content": "<p>In dangerous work environments, emergencies don’t wait.<br/><br/>You don’t always have time to call.<br/><br/>You don’t always have strength to speak.<br/><br/>You don’t always stay conscious.<br/><br/>Relying on someone to “ask for help” isn’t realistic.<br/><br/><a href=\"/products/carbinox-blaze\" title=\"Carbinox Blaze – Heavy Duty Smartwatch\"><span style=\"text-decoration:underline\"><strong>Carbinox</strong></span></a> was built for those moments.<br/><br/>Its system doesn’t depend on perfect conditions. It doesn’t require clear thinking. It doesn’t assume you’ll be able to react.<br/><br/>When something goes wrong, it reacts for you.</p>",
+        "show_button": false,
+        "button_label": "CLICK HERE TO CHECK AVAILABILITY",
+        "button_url": "",
+        "button_new_tab": false,
+        "show_divider": true
+      }
+    },
+    "adventorial_article_Dg7Dgn": {
+      "type": "adventorial-article",
+      "custom_css": [],
+      "name": "Adventorial Article",
+      "settings": {
+        "button_bg": "#000000",
+        "button_text_color": "#ffffff",
+        "button_radius": 6,
+        "button_font": "inherit",
+        "button_font_size": 16,
+        "button_font_size_mobile": 16,
+        "title": "",
+        "subtitle": "Recovery and a new perspective on safety",
+        "image": "shopify://shop_images/5_zon.webp",
+        "mobile_image": "shopify://shop_images/mob4.webp",
+        "content": "<p>Daniel spent two weeks in the hospital.<br/><br/>Then months in recovery.<br/><br/>When he returned to work, he came back slower, more careful, and more aware of his limits.<br/><br/>But one thing never changed.<br/><br/>The <a href=\"/products/carbinox-blaze\" title=\"Carbinox Blaze – Heavy Duty Smartwatch\"><span style=\"text-decoration:underline\"><strong>watch</strong></span> </a>stayed on his wrist.<br/><br/>It helped doctors track his progress. It monitored stress levels. It alerted him when his body needed rest.<br/><br/>It became part of how he stayed safe on the job.</p>",
+        "show_button": false,
+        "button_label": "CLICK HERE TO CHECK AVAILABILITY",
+        "button_url": "",
+        "button_new_tab": false,
+        "show_divider": true
+      }
+    },
+    "adventorial_article_qcaKta": {
+      "type": "adventorial-article",
+      "name": "Adventorial Article",
+      "settings": {
+        "button_bg": "#000000",
+        "button_text_color": "#ffffff",
+        "button_radius": 6,
+        "button_font": "inherit",
+        "button_font_size": 16,
+        "button_font_size_mobile": 16,
+        "title": "",
+        "subtitle": "When your job is risky, your gear has to be stronger",
+        "content": "<p>Daniel doesn’t think of <a href=\"/products/carbinox-blaze\" title=\"Carbinox Blaze – Heavy Duty Smartwatch\"><span style=\"text-decoration:underline\"><strong>Carbinox</strong></span></a> as a “smartwatch.”<br/><br/>He thinks of it as backup.<br/><br/>When his body failed under pressure, it didn’t.<br/><br/>When no one was nearby, it called for help.<br/><br/>When he couldn’t protect himself, it did.</p>",
+        "show_button": false,
+        "button_label": "CLICK HERE TO CHECK AVAILABILITY",
+        "button_url": "",
+        "button_new_tab": false,
+        "show_divider": true
+      }
+    },
+    "card_advertorial_kr4pAz": {
+      "type": "card-advertorial",
+      "name": "Advertorial Card",
+      "settings": {
+        "desktop_image": "shopify://shop_images/imagen_desk-1.webp",
+        "mobile_image": "shopify://shop_images/imagen_mob-1_6cf52715-7a53-4f2d-a149-8d70a93b3448.webp",
+        "title": "Why reliability isn’t optional",
+        "text": "<p>In blue-collar work, reliability isn’t a feature.<br/><br/>It’s survival.<br/><br/>And sometimes, the difference between finishing your shift and never coming home is one device that refuses to quit.</p>",
+        "button_label": "SHOP CARBINOX BLAZE HERE",
+        "button_link": "shopify://products/carbinox-blaze",
+        "new_tab": false
+      }
+    },
+    "footer_adventorial_nkyjy6": {
+      "type": "footer-adventorial",
+      "blocks": {
+        "link_CKRdtz": {
+          "type": "link",
+          "settings": {
+            "link_label": "Privacy Policy",
+            "link_url": "shopify://policies/privacy-policy"
+          }
+        },
+        "link_EbkPRq": {
+          "type": "link",
+          "settings": {
+            "link_label": "Terms Of Service",
+            "link_url": "shopify://policies/terms-of-service"
+          }
+        },
+        "link_X9b873": {
+          "type": "link",
+          "settings": {
+            "link_label": "Refund Policy",
+            "link_url": "shopify://policies/refund-policy"
+          }
+        }
+      },
+      "block_order": [
+        "link_CKRdtz",
+        "link_EbkPRq",
+        "link_X9b873"
+      ],
+      "name": "Footer Adventorial",
+      "settings": {
+        "footer_bg": "#0f0f0f",
+        "copyright": "©2025 Warrior Tech – All Rights Reserved."
+      }
+    },
+    "custom_liquid_jPideC": {
+      "type": "custom-liquid",
+      "disabled": true,
+      "name": "Hide header",
+      "settings": {
+        "subheading": "",
+        "title": "",
+        "liquid": "<style>\n.test-header.new-header {\ndisplay: none !important;\n}\n</style>",
+        "add_vertical_spacing": true,
+        "background_type": "full_width",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "new_header_advertorial_nxyiVz",
+    "custom_liquid_nC6PJT",
+    "adv_title_img_k6YrfN",
+    "adventorial_article_7fKJMB",
+    "adventorial_article_hEG4U7",
+    "adventorial_article_hNyRjX",
+    "adv_article_cuadro_TW6Y43",
+    "adventorial_article_dJ8V3V",
+    "adventorial_article_Dg7Dgn",
+    "adventorial_article_qcaKta",
+    "card_advertorial_kr4pAz",
+    "footer_adventorial_nkyjy6",
+    "custom_liquid_jPideC"
+  ]
+}

@@ -1,377 +1,1210 @@
+{%- comment -%}
+------------------------------------------------------------------------------------------------------------------------
+NOTE TO DEVELOPERS: welcome to Focal theme! We hope that you will enjoy editing this theme as much as we did for
+  developing it. We have put a lot of work to make this theme as developer friendly as possible by offering you
+  hooks to integrate into critical parts of the theme. You will find the complete technical documentation (including
+  all events, dependencies...) in the "custom.js" file, located in the Assets folder.
+
+------------------------------------------------------------------------------------------------------------------------
+{%- endcomment -%}
+
 <!doctype html>
-<html class="js" lang="{{ request.locale.iso_code }}">
+  
+{%- assign direction = 'ltr' -%}
+{%- case request.locale.iso_code -%}
+  {%- when 'ar' or 'arc' or 'dv' or 'fa' or 'ha' or 'he' or 'kwh' or 'ks' or 'ku' or 'ps' or 'ur' or 'yi' -%}
+    {%- assign direction = 'rtl' -%}
+{%- endcase -%}
+ 
+<html class="js" lang="{{ request.locale.iso_code }}" dir="{{ direction }}" style="--announcement-bar-height: 34.453125px; --header-height: 58px; --header-height-without-bottom-nav: 58px;" >
   <head>
+        <!-- Start Intelligems -->
+<script>
+    window.Shopify = window.Shopify || {theme: {id: {{ theme.id }}, role: '{{ theme.role }}' } };
+    window._template = {
+        directory: "{{ template.directory }}",
+        name: "{{ template.name }}",
+        suffix: "{{ template.suffix }}"
+    };
+  </script>
+  <script type="module" blocking="render" fetchpriority="high" data-mysrc="https://cdn.intelligems.io/esm/bb59a3ed21d3/bundle.js" async></script>
+    <!--  End Intelligems  -->
+  
+    <link rel='preconnect dns-prefetch' href='https://api.config-security.com/' crossorigin />
+    <link rel='preconnect dns-prefetch' href='https://conf.config-security.com/' crossorigin />
+    <link rel='preconnect dns-prefetch' href='https://whale.camera/' crossorigin />
+    
+    <meta name="google-site-verification" content="ekUBBrvcL1PA3LzY0ja-hlyesuOrSg25HITSxB99k_M" />
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="theme-color" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, height=device-height, minimum-scale=1.0, maximum-scale=5.0">
+    <meta name="theme-color" content="{{ settings.header_background }}">
+    {% comment %}
+{{ 'custom-announcement-bar.css' | asset_url | stylesheet_tag }}
+    {% endcomment %}
+
+    {% render 'preload-assets' %}
+
+	<meta charset="utf-8">
+	{% comment %}<meta name="viewport" content="width=device-width, initial-scale=1">{% endcomment %}
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	<!-- font family -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link nohref="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+	<!-- css -->    
+    <title>{% if page_title == blank %}{{ shop.name }}{% else %}{{ page_title }}{% if current_page != 1 %} &ndash; {{ 'general.meta.page' | t: page: current_page }}{% endif %}{% endif %}</title>
+
+    {%- if page_description -%}
+      <meta name="description" content="{{ page_description | escape }}">
+    {%- else -%}
+      <meta name="description" content="{% if page_title == blank %}{{ shop.name }}{% else %}{{ page_title }}{% if current_page != 1 %} &ndash; {{ 'general.meta.page' | t: page: current_page }}{% endif %}{% endif %}">
+    {%- endif -%}
+
     <link rel="canonical" href="{{ canonical_url }}">
 
-    {%- if settings.favicon != blank -%}
-      <link rel="icon" type="image/png" href="{{ settings.favicon | image_url: width: 32, height: 32 }}">
+    {%- if settings.favicon -%}
+      <link rel="shortcut icon" href="{{ settings.favicon | img_url: '96x96' }}" type="image/png">
     {%- endif -%}
 
-    {%- unless settings.type_header_font.system? and settings.type_body_font.system? -%}
+    {%- comment -%}Few prefech to increase performance on commonly used third-parties{%- endcomment -%}
+    <link rel="preconnect" href="https://cdn.shopify.com">
+    <link rel="dns-prefetch" href="https://www.google-analytics.com">
+
+    {%- unless settings.heading_font.system? and settings.text_font.system? -%}
       <link rel="preconnect" href="https://fonts.shopifycdn.com" crossorigin>
     {%- endunless -%}
+    
+    {%- if request.page_type == 'product' -%}
+      {%- assign selected_media = product.selected_variant.featured_media | default: product.featured_media -%}
 
-    <title>
-      {{ page_title }}
-      {%- if current_tags %} &ndash; tagged "{{ current_tags | join: ', ' }}"{% endif -%}
-      {%- if current_page != 1 %} &ndash; Page {{ current_page }}{% endif -%}
-      {%- unless page_title contains shop.name %} &ndash; {{ shop.name }}{% endunless -%}
-    </title>
-
-    {% if page_description %}
-      <meta name="description" content="{{ page_description | escape }}">
-    {% endif %}
-
-    {% render 'meta-tags' %}
-
-    <script src="{{ 'constants.js' | asset_url }}" defer="defer"></script>
-    <script src="{{ 'pubsub.js' | asset_url }}" defer="defer"></script>
-    <script src="{{ 'global.js' | asset_url }}" defer="defer"></script>
-    <script src="{{ 'details-disclosure.js' | asset_url }}" defer="defer"></script>
-    <script src="{{ 'details-modal.js' | asset_url }}" defer="defer"></script>
-    <script src="{{ 'search-form.js' | asset_url }}" defer="defer"></script>
-
-    {%- if settings.animations_reveal_on_scroll -%}
-      <script src="{{ 'animations.js' | asset_url }}" defer="defer"></script>
+      <link rel="preload" as="fetch" href="{{ product.url }}.js" crossorigin>
+      {% comment %}
+      <link rel="preload" as="image" href="https:{{ product.media[0] | img_url: '800x' }}">
+      {% endcomment %}
+      
+      {%- if product.media.size > 1 -%}
+        <link rel="preload" as="script" href="{{ 'flickity.js' | asset_url }}">
+      {%- endif -%}
+      
     {%- endif -%}
 
-    {{ content_for_header }}
+    {% render 'social-meta-tags' %}
+    {% render 'microdata-schema' %}
+    {% render 'css-variables', direction: direction %}
+    {% render 'js-variables', direction: direction %}
 
-    {%- liquid
-      assign body_font_bold = settings.type_body_font | font_modify: 'weight', 'bold'
-      assign body_font_italic = settings.type_body_font | font_modify: 'style', 'italic'
-      assign body_font_bold_italic = body_font_bold | font_modify: 'style', 'italic'
-    %}
+    {%- render "fonts" -%}
+      
+    {{ 'theme.css' | asset_url | stylesheet_tag: preload: true }}
+    {{ 'slick.css' | asset_url | stylesheet_tag: preload: true }}
+    {{ 'custom.css' | asset_url | stylesheet_tag: preload: true }}
+    
+    <!-- miniOrange ContentRestriction SCRIPT START -->{%- include 'miniorange-lock-message' -%}{%- include 'miniorange-lock' -%}<!-- miniOrange ContentRestriction SCRIPT END --> 
 
-    {% style %}
-      {{ settings.type_body_font | font_face: font_display: 'swap' }}
-      {{ body_font_bold | font_face: font_display: 'swap' }}
-      {{ body_font_italic | font_face: font_display: 'swap' }}
-      {{ body_font_bold_italic | font_face: font_display: 'swap' }}
-      {{ settings.type_header_font | font_face: font_display: 'swap' }}
-
-      {% for scheme in settings.color_schemes -%}
-        {% assign scheme_classes = scheme_classes | append: ', .color-' | append: scheme.id %}
-        {% if forloop.index == 1 -%}
-          :root,
-        {%- endif %}
-        .color-{{ scheme.id }} {
-          --color-background: {{ scheme.settings.background.red }},{{ scheme.settings.background.green }},{{ scheme.settings.background.blue }};
-        {% if scheme.settings.background_gradient != empty %}
-          --gradient-background: {{ scheme.settings.background_gradient }};
-        {% else %}
-          --gradient-background: {{ scheme.settings.background }};
-        {% endif %}
-
-        {% liquid
-          assign background_color = scheme.settings.background
-          assign background_color_brightness = background_color | color_brightness
-          if background_color_brightness <= 26
-            assign background_color_contrast = background_color | color_lighten: 50
-          elsif background_color_brightness <= 65
-            assign background_color_contrast = background_color | color_lighten: 5
-          else
-            assign background_color_contrast = background_color | color_darken: 25
-          endif
-        %}
-
-        --color-foreground: {{ scheme.settings.text.red }},{{ scheme.settings.text.green }},{{ scheme.settings.text.blue }};
-        --color-background-contrast: {{ background_color_contrast.red }},{{ background_color_contrast.green }},{{ background_color_contrast.blue }};
-        --color-shadow: {{ scheme.settings.shadow.red }},{{ scheme.settings.shadow.green }},{{ scheme.settings.shadow.blue }};
-        --color-button: {{ scheme.settings.button.red }},{{ scheme.settings.button.green }},{{ scheme.settings.button.blue }};
-        --color-button-text: {{ scheme.settings.button_label.red }},{{ scheme.settings.button_label.green }},{{ scheme.settings.button_label.blue }};
-        --color-secondary-button: {{ scheme.settings.background.red }},{{ scheme.settings.background.green }},{{ scheme.settings.background.blue }};
-        --color-secondary-button-text: {{ scheme.settings.secondary_button_label.red }},{{ scheme.settings.secondary_button_label.green }},{{ scheme.settings.secondary_button_label.blue }};
-        --color-link: {{ scheme.settings.secondary_button_label.red }},{{ scheme.settings.secondary_button_label.green }},{{ scheme.settings.secondary_button_label.blue }};
-        --color-badge-foreground: {{ scheme.settings.text.red }},{{ scheme.settings.text.green }},{{ scheme.settings.text.blue }};
-        --color-badge-background: {{ scheme.settings.background.red }},{{ scheme.settings.background.green }},{{ scheme.settings.background.blue }};
-        --color-badge-border: {{ scheme.settings.text.red }},{{ scheme.settings.text.green }},{{ scheme.settings.text.blue }};
-        --payment-terms-background-color: rgb({{ scheme.settings.background.rgb }});
-      }
-      {% endfor %}
-
-      {{ scheme_classes | prepend: 'body' }} {
-        color: rgba(var(--color-foreground), 0.75);
-        background-color: rgb(var(--color-background));
-      }
-
-      :root {
-        --font-body-family: {{ settings.type_body_font.family }}, {{ settings.type_body_font.fallback_families }};
-        --font-body-style: {{ settings.type_body_font.style }};
-        --font-body-weight: {{ settings.type_body_font.weight }};
-        --font-body-weight-bold: {{ settings.type_body_font.weight | plus: 300 | at_most: 1000 }};
-
-        --font-heading-family: {{ settings.type_header_font.family }}, {{ settings.type_header_font.fallback_families }};
-        --font-heading-style: {{ settings.type_header_font.style }};
-        --font-heading-weight: {{ settings.type_header_font.weight }};
-
-        --font-body-scale: {{ settings.body_scale | divided_by: 100.0 }};
-        --font-heading-scale: {{ settings.heading_scale | times: 1.0 | divided_by: settings.body_scale }};
-
-        --media-padding: {{ settings.media_padding }}px;
-        --media-border-opacity: {{ settings.media_border_opacity | divided_by: 100.0 }};
-        --media-border-width: {{ settings.media_border_thickness }}px;
-        --media-radius: {{ settings.media_radius }}px;
-        --media-shadow-opacity: {{ settings.media_shadow_opacity | divided_by: 100.0 }};
-        --media-shadow-horizontal-offset: {{ settings.media_shadow_horizontal_offset }}px;
-        --media-shadow-vertical-offset: {{ settings.media_shadow_vertical_offset }}px;
-        --media-shadow-blur-radius: {{ settings.media_shadow_blur }}px;
-        --media-shadow-visible: {% if settings.media_shadow_opacity > 0 %}1{% else %}0{% endif %};
-
-        --page-width: {{ settings.page_width | divided_by: 10 }}rem;
-        --page-width-margin: {% if settings.page_width == '1600' %}2{% else %}0{% endif %}rem;
-
-        --product-card-image-padding: {{ settings.card_image_padding | divided_by: 10.0 }}rem;
-        --product-card-corner-radius: {{ settings.card_corner_radius | divided_by: 10.0 }}rem;
-        --product-card-text-alignment: {{ settings.card_text_alignment }};
-        --product-card-border-width: {{ settings.card_border_thickness | divided_by: 10.0 }}rem;
-        --product-card-border-opacity: {{ settings.card_border_opacity | divided_by: 100.0 }};
-        --product-card-shadow-opacity: {{ settings.card_shadow_opacity | divided_by: 100.0 }};
-        --product-card-shadow-visible: {% if settings.card_shadow_opacity > 0 %}1{% else %}0{% endif %};
-        --product-card-shadow-horizontal-offset: {{ settings.card_shadow_horizontal_offset | divided_by: 10.0 }}rem;
-        --product-card-shadow-vertical-offset: {{ settings.card_shadow_vertical_offset | divided_by: 10.0 }}rem;
-        --product-card-shadow-blur-radius: {{ settings.card_shadow_blur | divided_by: 10.0 }}rem;
-
-        --collection-card-image-padding: {{ settings.collection_card_image_padding | divided_by: 10.0 }}rem;
-        --collection-card-corner-radius: {{ settings.collection_card_corner_radius | divided_by: 10.0 }}rem;
-        --collection-card-text-alignment: {{ settings.collection_card_text_alignment }};
-        --collection-card-border-width: {{ settings.collection_card_border_thickness | divided_by: 10.0 }}rem;
-        --collection-card-border-opacity: {{ settings.collection_card_border_opacity | divided_by: 100.0 }};
-        --collection-card-shadow-opacity: {{ settings.collection_card_shadow_opacity | divided_by: 100.0 }};
-        --collection-card-shadow-visible: {% if settings.collection_card_shadow_opacity > 0 %}1{% else %}0{% endif %};
-        --collection-card-shadow-horizontal-offset: {{ settings.collection_card_shadow_horizontal_offset | divided_by: 10.0 }}rem;
-        --collection-card-shadow-vertical-offset: {{ settings.collection_card_shadow_vertical_offset | divided_by: 10.0 }}rem;
-        --collection-card-shadow-blur-radius: {{ settings.collection_card_shadow_blur | divided_by: 10.0 }}rem;
-
-        --blog-card-image-padding: {{ settings.blog_card_image_padding | divided_by: 10.0 }}rem;
-        --blog-card-corner-radius: {{ settings.blog_card_corner_radius | divided_by: 10.0 }}rem;
-        --blog-card-text-alignment: {{ settings.blog_card_text_alignment }};
-        --blog-card-border-width: {{ settings.blog_card_border_thickness | divided_by: 10.0 }}rem;
-        --blog-card-border-opacity: {{ settings.blog_card_border_opacity | divided_by: 100.0 }};
-        --blog-card-shadow-opacity: {{ settings.blog_card_shadow_opacity | divided_by: 100.0 }};
-        --blog-card-shadow-visible: {% if settings.blog_card_shadow_opacity > 0 %}1{% else %}0{% endif %};
-        --blog-card-shadow-horizontal-offset: {{ settings.blog_card_shadow_horizontal_offset | divided_by: 10.0 }}rem;
-        --blog-card-shadow-vertical-offset: {{ settings.blog_card_shadow_vertical_offset | divided_by: 10.0 }}rem;
-        --blog-card-shadow-blur-radius: {{ settings.blog_card_shadow_blur | divided_by: 10.0 }}rem;
-
-        --badge-corner-radius: {{ settings.badge_corner_radius | divided_by: 10.0 }}rem;
-
-        --popup-border-width: {{ settings.popup_border_thickness }}px;
-        --popup-border-opacity: {{ settings.popup_border_opacity | divided_by: 100.0 }};
-        --popup-corner-radius: {{ settings.popup_corner_radius }}px;
-        --popup-shadow-opacity: {{ settings.popup_shadow_opacity | divided_by: 100.0 }};
-        --popup-shadow-horizontal-offset: {{ settings.popup_shadow_horizontal_offset }}px;
-        --popup-shadow-vertical-offset: {{ settings.popup_shadow_vertical_offset }}px;
-        --popup-shadow-blur-radius: {{ settings.popup_shadow_blur }}px;
-
-        --drawer-border-width: {{ settings.drawer_border_thickness }}px;
-        --drawer-border-opacity: {{ settings.drawer_border_opacity | divided_by: 100.0 }};
-        --drawer-shadow-opacity: {{ settings.drawer_shadow_opacity | divided_by: 100.0 }};
-        --drawer-shadow-horizontal-offset: {{ settings.drawer_shadow_horizontal_offset }}px;
-        --drawer-shadow-vertical-offset: {{ settings.drawer_shadow_vertical_offset }}px;
-        --drawer-shadow-blur-radius: {{ settings.drawer_shadow_blur }}px;
-
-        --spacing-sections-desktop: {{ settings.spacing_sections }}px;
-        --spacing-sections-mobile: {% if settings.spacing_sections < 24 %}{{ settings.spacing_sections }}{% else %}{{ settings.spacing_sections | times: 0.7 | round | at_least: 20 }}{% endif %}px;
-
-        --grid-desktop-vertical-spacing: {{ settings.spacing_grid_vertical }}px;
-        --grid-desktop-horizontal-spacing: {{ settings.spacing_grid_horizontal }}px;
-        --grid-mobile-vertical-spacing: {{ settings.spacing_grid_vertical | divided_by: 2 }}px;
-        --grid-mobile-horizontal-spacing: {{ settings.spacing_grid_horizontal | divided_by: 2 }}px;
-
-        --text-boxes-border-opacity: {{ settings.text_boxes_border_opacity | divided_by: 100.0 }};
-        --text-boxes-border-width: {{ settings.text_boxes_border_thickness }}px;
-        --text-boxes-radius: {{ settings.text_boxes_radius }}px;
-        --text-boxes-shadow-opacity: {{ settings.text_boxes_shadow_opacity | divided_by: 100.0 }};
-        --text-boxes-shadow-visible: {% if settings.text_boxes_shadow_opacity > 0 %}1{% else %}0{% endif %};
-        --text-boxes-shadow-horizontal-offset: {{ settings.text_boxes_shadow_horizontal_offset }}px;
-        --text-boxes-shadow-vertical-offset: {{ settings.text_boxes_shadow_vertical_offset }}px;
-        --text-boxes-shadow-blur-radius: {{ settings.text_boxes_shadow_blur }}px;
-
-        --buttons-radius: {{ settings.buttons_radius }}px;
-        --buttons-radius-outset: {% if settings.buttons_radius > 0 %}{{ settings.buttons_radius | plus: settings.buttons_border_thickness }}{% else %}0{% endif %}px;
-        --buttons-border-width: {% if settings.buttons_border_opacity > 0 %}{{ settings.buttons_border_thickness }}{% else %}0{% endif %}px;
-        --buttons-border-opacity: {{ settings.buttons_border_opacity | divided_by: 100.0 }};
-        --buttons-shadow-opacity: {{ settings.buttons_shadow_opacity | divided_by: 100.0 }};
-        --buttons-shadow-visible: {% if settings.buttons_shadow_opacity > 0 %}1{% else %}0{% endif %};
-        --buttons-shadow-horizontal-offset: {{ settings.buttons_shadow_horizontal_offset }}px;
-        --buttons-shadow-vertical-offset: {{ settings.buttons_shadow_vertical_offset }}px;
-        --buttons-shadow-blur-radius: {{ settings.buttons_shadow_blur }}px;
-        --buttons-border-offset: {% if settings.buttons_radius > 0 or settings.buttons_shadow_opacity > 0 %}0.3{% else %}0{% endif %}px;
-
-        --inputs-radius: {{ settings.inputs_radius }}px;
-        --inputs-border-width: {{ settings.inputs_border_thickness }}px;
-        --inputs-border-opacity: {{ settings.inputs_border_opacity | divided_by: 100.0 }};
-        --inputs-shadow-opacity: {{ settings.inputs_shadow_opacity | divided_by: 100.0 }};
-        --inputs-shadow-horizontal-offset: {{ settings.inputs_shadow_horizontal_offset }}px;
-        --inputs-margin-offset: {% if settings.inputs_shadow_vertical_offset != 0 and settings.inputs_shadow_opacity > 0 %}{{ settings.inputs_shadow_vertical_offset | abs }}{% else %}0{% endif %}px;
-        --inputs-shadow-vertical-offset: {{ settings.inputs_shadow_vertical_offset }}px;
-        --inputs-shadow-blur-radius: {{ settings.inputs_shadow_blur }}px;
-        --inputs-radius-outset: {% if settings.inputs_radius > 0 %}{{ settings.inputs_radius | plus: settings.inputs_border_thickness }}{% else %}0{% endif %}px;
-
-        --variant-pills-radius: {{ settings.variant_pills_radius }}px;
-        --variant-pills-border-width: {{ settings.variant_pills_border_thickness }}px;
-        --variant-pills-border-opacity: {{ settings.variant_pills_border_opacity | divided_by: 100.0 }};
-        --variant-pills-shadow-opacity: {{ settings.variant_pills_shadow_opacity | divided_by: 100.0 }};
-        --variant-pills-shadow-horizontal-offset: {{ settings.variant_pills_shadow_horizontal_offset }}px;
-        --variant-pills-shadow-vertical-offset: {{ settings.variant_pills_shadow_vertical_offset }}px;
-        --variant-pills-shadow-blur-radius: {{ settings.variant_pills_shadow_blur }}px;
-      }
-
-      *,
-      *::before,
-      *::after {
-        box-sizing: inherit;
-      }
-
-      html {
-        box-sizing: border-box;
-        font-size: calc(var(--font-body-scale) * 62.5%);
-        height: 100%;
-      }
-
-      body {
-        display: grid;
-        grid-template-rows: auto auto 1fr auto;
-        grid-template-columns: 100%;
-        min-height: 100%;
-        margin: 0;
-        font-size: 1.5rem;
-        letter-spacing: 0.06rem;
-        line-height: calc(1 + 0.8 / var(--font-body-scale));
-        font-family: var(--font-body-family);
-        font-style: var(--font-body-style);
-        font-weight: var(--font-body-weight);
-      }
-
-      @media screen and (min-width: 750px) {
-        body {
-          font-size: 1.6rem;
-        }
-      }
-    {% endstyle %}
-
-    {{ 'base.css' | asset_url | stylesheet_tag }}
-    {{ 'custom_s.css' | asset_url | stylesheet_tag }}
-    <link rel="stylesheet" href="{{ 'component-cart-items.css' | asset_url }}" media="print" onload="this.media='all'">
-
-    {%- if settings.cart_type == 'drawer' -%}
-      {{ 'component-cart-drawer.css' | asset_url | stylesheet_tag }}
-      {{ 'component-cart.css' | asset_url | stylesheet_tag }}
-      {{ 'component-totals.css' | asset_url | stylesheet_tag }}
-      {{ 'component-price.css' | asset_url | stylesheet_tag }}
-      {{ 'component-discounts.css' | asset_url | stylesheet_tag }}
-    {%- endif -%}
-
-    {%- unless settings.type_body_font.system? -%}
-      {% comment %}theme-check-disable AssetPreload{% endcomment %}
-      <link rel="preload" as="font" href="{{ settings.type_body_font | font_url }}" type="font/woff2" crossorigin>
-      {% comment %}theme-check-enable AssetPreload{% endcomment %}
-    {%- endunless -%}
-    {%- unless settings.type_header_font.system? -%}
-      {% comment %}theme-check-disable AssetPreload{% endcomment %}
-      <link rel="preload" as="font" href="{{ settings.type_header_font | font_url }}" type="font/woff2" crossorigin>
-      {% comment %}theme-check-enable AssetPreload{% endcomment %}
-    {%- endunless -%}
-
-    {%- if localization.available_countries.size > 1 or localization.available_languages.size > 1 -%}
-      {{ 'component-localization-form.css' | asset_url | stylesheet_tag: preload: true }}
-      <script src="{{ 'localization-form.js' | asset_url }}" defer="defer"></script>
-    {%- endif -%}
-
-    {%- if settings.predictive_search_enabled -%}
-      <link
-        rel="stylesheet"
-        href="{{ 'component-predictive-search.css' | asset_url }}"
-        media="print"
-        onload="this.media='all'"
-      >
-    {%- endif -%}
+    {% capture htmlcode %} 
+    {% capture MyJsFunc %}load', function(){}{% endcapture %} {% capture MyJsFunc2%}document.addEventListener('StartAsyncLoading',function(event){asyncLoad();});if(window.attachEvent){%endcapture %} {% capture MyJsFunc3%}document.addEventListener('StartAsyncLoading',function(event){prefetchAssets();});{%endcapture %} {% if template contains "index" or template contains "product" or template contains "collection" or page.url contains "pages" or blog.url contains "blogs" %} {{ content_for_header | replace: "load', asyncLoad",MyJsFunc | replace: 'if(window.attachEvent)', MyJsFunc2 | replace: 'defer="defer" src="//', 'defer="defer" data-src="//' | replace: 'DOMContentLoaded', 'StartPreviewBarLoading' | replace: "addEventListener('load', prefetchAssets);", MyJsFunc3 | replace: 'src="/checkouts/internal/preloads.js', 'data-src="/checkouts/internal/preloads.js' | replace: 'src="https://shop.app/checkouts', 'data-src="https://shop.app/checkouts' | replace: "src='https://cdn.shopify.com/shopifycloud/preview-bar/preview-bar-modules.js'", "data-src='https://cdn.shopify.com/shopifycloud/preview-bar/preview-bar-modules.js'" | replace: '<script defer="defer" async type="module" src', '<script defer="defer" async type="module" data-mysrc' | replace: 'await import("//', '//await import("//' }} {% else %} {%- if tinyscript -%}{{ content_for_header }}{%- else -%}{% render 'tiny-script-control' %}{%- endif -%} {% endif %}
+    {% endcapture %}
+    {{ htmlcode }}
 
     <script>
-      if (Shopify.designMode) {
-        document.documentElement.classList.add('shopify-design-mode');
-      }
+  document.addEventListener("instant:add-to-cart", () => {
+    fetch("/cart.js")
+      .then((res) => res.json())
+      .then((cart) =>
+        document.documentElement.dispatchEvent(
+          new CustomEvent("cart:refresh", { bubbles: true, detail: { cart: cart, openMiniCart: true } })
+        )
+      );
+  });
+</script>
+    <script>
+        window.lazySizesConfig = window.lazySizesConfig || {};
+        window.lazySizesConfig.loadMode = 1;
+        window.lazySizesConfig.expand = 100;
+        window.lazySizesConfig.loadHidden = false;
     </script>
+    <script src="{{ 'lazysizes.min.js' | asset_url }}" defer></script>
+
+    <script>
+      var arrow;
+      window.arrow = '{{ 'arrow.svg' | asset_url }}';
+    </script>
+
+    <script src="{{ 'vendor.js' | asset_url }}" defer></script>
+    <script src="{{ 'theme.js' | asset_url }}" defer></script>
+    <script src="{{ 'jquery.min.js' | asset_url }}" defer></script>
+    <script src="{{ 'slick.min.js' | asset_url }}" defer></script>
+    <script src="{{ 'custom.js' | asset_url }}" defer></script>
+
+    {% comment %}
+    <script>
+    /* >> TriplePixel :: start*/
+    document.addEventListener('StartAsyncLoading',function(event){  
+    window.TriplePixelData={TripleName:"ohmiux.myshopify.com",ver:"2.12",plat:"SHOPIFY",isHeadless:false},function(W,H,A,L,E,_,B,N){function O(U,T,P,H,R){void 0===R&&(R=!1),H=new XMLHttpRequest,P?(H.open("POST",U,!0),H.setRequestHeader("Content-Type","text/plain")):H.open("GET",U,!0),H.send(JSON.stringify(P||{})),H.onreadystatechange=function(){4===H.readyState&&200===H.status?(R=H.responseText,U.includes(".txt")?eval(R):P||(N[B]=R)):(299<H.status||H.status<200)&&T&&!R&&(R=!0,O(U,T-1,P))}}if(N=window,!N[H+"sn"]){N[H+"sn"]=1,L=function(){return Date.now().toString(36)+"_"+Math.random().toString(36)};try{A.setItem(H,1+(0|A.getItem(H)||0)),(E=JSON.parse(A.getItem(H+"U")||"[]")).push({u:location.href,r:document.referrer,t:Date.now(),id:L()}),A.setItem(H+"U",JSON.stringify(E))}catch(e){}var i,m,p;A.getItem('"!nC`')||(_=A,A=N,A[H]||(E=A[H]=function(t,e,a){return void 0===a&&(a=[]),"State"==t?E.s:(W=L(),(E._q=E._q||[]).push([W,t,e].concat(a)),W)},E.s="Installed",E._q=[],E.ch=W,B="configSecurityConfModel",N[B]=1,O("https://conf.config-security.com/model",5),i=L(),m=A[atob("c2NyZWVu")],_.setItem("di_pmt_wt",i),p={id:i,action:"profile",avatar:_.getItem("auth-security_rand_salt_"),time:m[atob("d2lkdGg=")]+":"+m[atob("aGVpZ2h0")],host:A.TriplePixelData.TripleName,plat:A.TriplePixelData.plat,url:window.location.href,ref:document.referrer,ver:A.TriplePixelData.ver},O("https://api.config-security.com/event",5,p),O("https://whale.camera/live/dot.txt",5)))}}("","TriplePixel",localStorage);
+    });
+    /* << TriplePixel :: end*/
+    </script>
+    {% endcomment %}
+    
+
+    <script data-src="https://www.googleoptimize.com/optimize.js?id=OPT-5DQ55LB" defer></script>
+    
+    <!-- Hotjar Tracking Code for https://shopcarbinox.com -->
+    <script>
+        document.addEventListener('StartAsyncLoading',function(event){
+        (function(h,o,t,j,a,r){
+            h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+            h._hjSettings={hjid:3112594,hjsv:6};
+            a=o.getElementsByTagName('head')[0];
+            r=o.createElement('script');r.async=1;
+            r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+        });
+    </script>
+
+    {% render 'gsf-conversion-pixels' %}
+
+    {% include "omega_twitter_multi_pixel" %}
+
+    <!-- Google Tag Manager -->
+    <script>document.addEventListener('StartAsyncLoading',function(event){(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-5XKJ3S8');});</script>
+    <!-- End Google Tag Manager -->
+    
+<!-- TrustBox script -->
+<script type="text/javascript" data-src="//widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js" async></script>
+<!-- End TrustBox script -->
+
+{% comment %}    
+    <script defer>
+      console.log('ConvertMate 3s wait')
+      const LOAD_DELAY = 3000;
+
+class ScriptLoader {
+  constructor() {
+    this.loaded = false;
+    this.bindEvents();
+  }
+
+  loadScripts(immediate = false) {
+    if (this.loaded) return;
+    
+    const loadAction = () => {
+      this.loaded = true;
+      this.updateElements('script', 'data-src', 'src');
+      this.updateElements('link', 'data-href', 'href');
+      this.dispatchLoadEvents();
+    };
+
+    immediate ? loadAction() : setTimeout(loadAction, LOAD_DELAY);
+  }
+
+  updateElements(tagName, dataAttr, newAttr) {
+    const elements = document.getElementsByTagName(tagName);
+    Array.from(elements).forEach(element => {
+      const dataValue = element.getAttribute(dataAttr);
+      if (dataValue) {
+        element.setAttribute(newAttr, dataValue);
+        element.removeAttribute(dataAttr);
+      }
+    });
+  }
+
+  dispatchLoadEvents() {
+    ['StartAsyncLoading', 'StartKernelLoading'].forEach(eventName => {
+      document.dispatchEvent(new CustomEvent(eventName));
+    });
+  }
+
+  bindEvents() {
+    const events = ['mousedown', 'mousemove', 'keydown', 'scroll', 'touchstart', 'click', 'keypress', 'touchmove'];
+    events.forEach(event => {
+      window.addEventListener(event, () => this.loadScripts(true), { once: true });
+    });
+    
+    ['DOMContentLoaded', 'load'].forEach(event => {
+      window.addEventListener(event, () => this.loadScripts());
+    });
+  }
+}
+
+new ScriptLoader();
+      </script>
+{% endcomment %}
+
   </head>
 
-  <body class="gradient{% if settings.animations_hover_elements != 'none' %} animate--hover-{{ settings.animations_hover_elements }}{% endif %}">
-    <a class="skip-to-content-link button visually-hidden" href="#MainContent">
-      {{ 'accessibility.skip_to_text' | t }}
-    </a>
+  {%- assign feature_classes = '' -%}
 
-    {%- if settings.cart_type == 'drawer' -%}
-      {%- render 'cart-drawer' -%}
+  {%- if settings.show_image_zoom -%}
+    {% assign feature_classes = feature_classes | append: ' features--image-zoom' %}
+  {%- endif -%}
+
+  
+  <body class="no-focus-outline {{ feature_classes }} template-{{template.name}}{% if template contains 'product' %} product-{{ product.id }}{% endif %}" id="{{template | handleize}}" data-instant-allow-query-string>
+    
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5XKJ3S8"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    {%- comment -%}Common SVG definitions that we are re-using in several places{%- endcomment -%}
+    <svg class="visually-hidden">
+      <linearGradient id="rating-star-gradient-half">
+        <stop offset="50%" stop-color="rgb(var(--product-star-rating))" />
+        <stop offset="50%" stop-color="rgb(var(--product-star-rating))" stop-opacity="0.4" />
+      </linearGradient>
+    </svg>
+
+    <a href="#main" class="visually-hidden skip-to-content">{{ 'general.accessibility.skip_to_content' | t }}</a>
+    <loading-bar class="loading-bar"></loading-bar>
+
+    <script defer>
+  (function () {
+    let observer = null;
+    let debounceTimer = null;
+  
+    function reloadTrustpilotWidgets() {
+      if (typeof Trustpilot !== "undefined" && typeof Trustpilot.loadFromElement === "function") {
+        console.log("[Trustpilot] Reload triggered.");
+  
+        if (observer) observer.disconnect();
+  
+        document.querySelectorAll(".trustpilot-widget").forEach((widget, index) => {
+          console.log(`[Trustpilot] Reloading widget #${index}`, widget);
+          Trustpilot.loadFromElement(widget, true);
+        });
+  
+        setTimeout(() => {
+          observer && observer.observe(document.body, {
+            childList: true,
+            subtree: true
+          });
+          console.log("[Trustpilot] Observer re-attached.");
+        }, 1000);
+      } else {
+        console.warn("[Trustpilot] Script not available or not yet initialized.");
+      }
+    }
+  
+    function debounceReload(reason = "") {
+      console.log(`[Trustpilot] Debounce triggered (${reason})`);
+      clearTimeout(debounceTimer);
+      debounceTimer = setTimeout(() => {
+        reloadTrustpilotWidgets();
+      }, 300);
+    }
+  
+    function loadTrustpilotScript(callback) {
+      const script = document.createElement("script");
+      script.src = "https://widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js";
+      script.async = true;
+      script.onload = () => {
+        setTimeout(function() {document.querySelector('.iSLwk1LO8L8BZmHrK')?.style.setProperty('opacity', '1');}, 750);
+        console.log("[Trustpilot] Script loaded.");
+        callback && callback();
+      };
+      document.body.appendChild(script);
+    }
+  
+    {% comment %}
+    document.addEventListener("DOMContentLoaded", () => {
+    {% endcomment %}
+    document.addEventListener('StartAsyncLoading', () => {
+      console.log("[Trustpilot] DOM ready.");
+  
+      loadTrustpilotScript(() => {
+        // Llama una vez después de que el script esté 100% cargado
+        reloadTrustpilotWidgets();
+  
+        observer = new MutationObserver((mutationsList) => {
+          let foundTrustpilotChange = false;
+  
+          for (const mutation of mutationsList) {
+            if (
+              mutation.addedNodes &&
+              Array.from(mutation.addedNodes).some(node =>
+                node.nodeType === 1 &&
+                (node.classList.contains("trustpilot-widget") || node.querySelector?.(".trustpilot-widget"))
+              )
+            ) {
+              foundTrustpilotChange = true;
+              break;
+            }
+          }
+  
+          if (foundTrustpilotChange) {
+            debounceReload("mutation observed");
+          }
+        });
+  
+        observer.observe(document.body, {
+          childList: true,
+          subtree: true
+        });
+  
+        console.log("[Trustpilot] MutationObserver initialized.");
+      });
+    });
+
+    
+  })();
+  </script>
+
+    {%- if request.page_type != 'gift_card' and request.page_type != 'password' -%}
+      {% unless page.id == 86093529191 
+        or page.id == 86134718567 
+        or page.id == 86135046247 
+        or page.id == 86171385959 
+        or page.id == 86211821671 
+        or page.id == 86211854439
+        or page.id == 86915121255
+        or page.id == 87006609511
+        or page.id == 87006675047
+        or page.id == 87006707815
+        or page.id == 87078994023
+        or page.id == 87124639847
+        or page.id == 87839834215
+        or page.id == 87951278183
+        or page.id == 87939711079
+        or page.id == 87939154023
+        or page.id == 88247730279
+        or page.id == 88247763047
+        or page.id == 88247795815
+        or page.id == 89188008039
+        or page.id == 89171853415
+        or page.id == 87435313255
+      %}
+        {% unless page.id == 86184624231 
+          or page.id == 86637641831 
+          or page.id == 86869442663
+          or product.id == 6874844266599
+          or page.id == 87839866983
+          or page.id == 87094853735
+          or page.id == 87435313255
+          or page.id == 89707839591
+          or page.id == 89750962279
+          or page.id == 89766330471
+          or page.id == 89813614695
+          or page.id == 85857665127
+          or page.id == 89953304679
+          or page.id == 686477246836
+          or page.id == 686498546036
+          or page.id == 686449951092
+          or page.id == 693101461876
+          or page.id == 700868034932
+          or page.id == 700872687988
+          or page.id == 700875702644
+          
+        %}
+          {%- section 'announcement-bar' -%}
+           {%- section 'header' -%}
+
+           {% capture htmlcode %}
+           {%- section 'instant-YgKvIlxHh11oq4pu' -%}
+           {% endcapture %} 
+           {{ htmlcode | replace: 'decoding="async" fetchpriority="high" loading="eager"', 'loading="lazy"'
+           | replace: 'srcSet="https://cdn.instant.so/sites/', 'data-srcset="https://cdn.instant.so/sites/' | replace: 'src="https://cdn.instant.so/sites/', 'data-src="https://cdn.instant.so/sites/' | replace: 'class="instant-fill instant-image__fill', 'class="lazyload instant-fill instant-image__fill' | replace: 'class="instant-image', 'class="lazyload instant-image'
+           }}
+
+        {% endunless %}
+        {%- section 'popup' -%}
+      
+      {% endunless %}
+
+      {%- unless settings.cart_type == 'page' or request.page_type == 'cart' -%}
+        {%- section 'mini-cart' -%}
+      {%- endunless -%}
     {%- endif -%}
 
-    {% sections 'header-group' %}
+    <div id="main" role="main" class="anchor">
+      {% comment %}
+      {% if request.path contains "/products/carbinox-blaze" %}
+        {% render 'promo-banner' %}
+      {% endif %}  
+      {% endcomment %}
+      {%- comment -%}
+      IMPLEMENTATION NOTE: on collection and search page, the theme was designed to show on mobile the filter bar and/or sort
+        by at the very top of the page. However, due to the fact that sections are isolated, I had to move the code
+        here. Then, the collection section, based on the selected settings, will eventually hide those elements in CSS
+      {%- endcomment -%}
+      {%- if request.page_type == 'collection' or request.page_type == 'search' -%}
+        {%- assign active_filters_count = 0 -%}
 
-    <main id="MainContent" class="content-for-layout focus-none" role="main" tabindex="-1">
+        {%- if request.page_type == 'collection' -%}
+          {%- assign filters = collection.filters -%}
+        {%- else -%}
+          {%- assign filters = search.filters -%}
+        {%- endif -%}
+
+        {%- for filter in filters -%}
+          {%- if filter.type == 'list' -%}
+            {%- assign active_filters_count = active_filters_count | plus: filter.active_values.size -%}
+          {%- elsif filter.type == 'price_range' and filter.min_value.value or filter.max_value.value -%}
+            {%- assign active_filters_count = active_filters_count | plus: 1 -%}
+          {%- endif -%}
+        {%- endfor -%}
+
+        {%- assign is_toolbar_collapsed = false -%}
+
+        {%- if request.page_type == 'search' and search.results.first.object_type != 'product' and search.results_count > 0 -%}
+          {%- assign is_toolbar_collapsed = true -%}
+        {%- endif -%}
+        <div class="collection-breadcrumbs">
+          <div class="container">
+            <div class="collection-breadcrumb">
+              {%  render 'breadcrumbs' %}
+            </div>
+          </div>
+        </div>
+        <div id="mobile-facet-toolbar" class="mobile-toolbar {% if is_toolbar_collapsed %}is-collapsed{% endif %} hidden-lap-and-up">
+          <button is="toggle-button" class="mobile-toolbar__item mobile-toolbar__item--filters {% if active_filters_count > 0 %}has-filters{% endif %}" aria-expanded="false" aria-controls="facet-filters" style="display: none">
+            {%- render 'icon' with 'filters' -%}
+            <span class="mobile-toolbar__item-label">{{- 'collection.general.filters' | t -}}</span>
+          </button>
+
+          <button is="toggle-button" class="mobile-toolbar__item mobile-toolbar__item--sort" aria-expanded="false" aria-controls="sort-by-popover" style="display: none">
+            <span class="mobile-toolbar__item-label">{{- 'collection.general.sort_by' | t -}}</span>
+            {%- render 'icon' with 'chevron' -%}
+          </button>
+        </div>
+      {%- endif -%}
+
+      {% if template contains 'index' %}
+      {{ content_for_layout | replace: 'decoding="async" fetchpriority="high" loading="eager"', 'loading="lazy"'
+      | replace: 'srcSet="https://cdn.instant.so/sites/', 'data-srcset="https://cdn.instant.so/sites/' | replace: 'src="https://cdn.instant.so/sites/', 'data-src="https://cdn.instant.so/sites/' | replace: 'class="instant-fill instant-image__fill', 'class="lazyload instant-fill instant-image__fill' | replace: 'class="instant-image', 'class="lazyload instant-image'
+      
+      | replace: 'data-srcset="https://cdn.instant.so/sites/wl7SR8wlT1PS4Ej3/assets/s9FaNTsKHqWLxSbm/herodesktop-edge.webp?width=1080 1080w, https://cdn.instant.so/sites/wl7SR8wlT1PS4Ej3/assets/s9FaNTsKHqWLxSbm/herodesktop-edge.webp?width=828 828w, https://cdn.instant.so/sites/wl7SR8wlT1PS4Ej3/assets/s9FaNTsKHqWLxSbm/herodesktop-edge.webp?width=750 750w, https://cdn.instant.so/sites/wl7SR8wlT1PS4Ej3/assets/s9FaNTsKHqWLxSbm/herodesktop-edge.webp?width=640 640w, https://cdn.instant.so/sites/wl7SR8wlT1PS4Ej3/assets/s9FaNTsKHqWLxSbm/herodesktop-edge.webp?width=360 360w, https://cdn.instant.so/sites/wl7SR8wlT1PS4Ej3/assets/s9FaNTsKHqWLxSbm/herodesktop-edge.webp?width=1280 1280w" data-src="https://cdn.instant.so/sites/wl7SR8wlT1PS4Ej3/assets/s9FaNTsKHqWLxSbm/herodesktop-edge.webp?width=1280" width="2880" height="1156" class="lazyload instant-fill instant-image__fill instant-responsive instant-responsive--desktop instant-responsive--laptop" style="object-fit:cover" decoding="async" fetchpriority="" loading="">', 'srcset="https://cdn.instant.so/sites/wl7SR8wlT1PS4Ej3/assets/s9FaNTsKHqWLxSbm/herodesktop-edge.webp?width=1080 1080w, https://cdn.instant.so/sites/wl7SR8wlT1PS4Ej3/assets/s9FaNTsKHqWLxSbm/herodesktop-edge.webp?width=828 828w, https://cdn.instant.so/sites/wl7SR8wlT1PS4Ej3/assets/s9FaNTsKHqWLxSbm/herodesktop-edge.webp?width=750 750w, https://cdn.instant.so/sites/wl7SR8wlT1PS4Ej3/assets/s9FaNTsKHqWLxSbm/herodesktop-edge.webp?width=640 640w, https://cdn.instant.so/sites/wl7SR8wlT1PS4Ej3/assets/s9FaNTsKHqWLxSbm/herodesktop-edge.webp?width=360 360w, https://cdn.instant.so/sites/wl7SR8wlT1PS4Ej3/assets/s9FaNTsKHqWLxSbm/herodesktop-edge.webp?width=1280 1280w" src="https://cdn.instant.so/sites/wl7SR8wlT1PS4Ej3/assets/s9FaNTsKHqWLxSbm/herodesktop-edge.webp?width=1280" width="2880" height="1156" class="lazyload-no instant-fill instant-image__fill instant-responsive instant-responsive--desktop instant-responsive--laptop" style="object-fit:cover" decoding="sync" loading="eager" fetchpriority="high">'
+      | replace: 'data-src="https://cdn.instant.so/sites/wl7SR8wlT1PS4Ej3/assets/MDU6IPCwO9k7bwft/heromobile-edge.webp?width=1280" width="780" height="1466" class="lazyload instant-fill instant-image__fill instant-responsive instant-responsive--mobile" style="object-fit:cover" decoding="async" fetchpriority="" loading="">', 'src="https://cdn.instant.so/sites/wl7SR8wlT1PS4Ej3/assets/MDU6IPCwO9k7bwft/heromobile-edge.webp?width=600" width="780" height="1466" class="lazyload-no instant-fill instant-image__fill instant-responsive instant-responsive--mobile" style="object-fit:cover" decoding="sync" loading="eager" fetchpriority="high">'
+      
+      | replace: 'class="instant-video__player" controls="" loop="" muted="" playsinline="" preload="metadata" src', 'class="lazy-video-new instant-video__player" controls="" loop="" muted="" playsinline="" preload="metadata" data-src'
+      | replace: '<link href="https://fonts.googleapis.com/css2', '<link nohref="https://fonts.googleapis.com/css2'
+      }}
+      {% else %}
       {{ content_for_layout }}
-    </main>
+      {% endif %}
 
-    {% sections 'footer-group' %}
+      {%- unless request.page_type == 'index' or request.page_type == 'password' or request.page_type == 'gift_card' -%}
+        {%- section 'static-text-with-icons' -%}
+        {%- section 'static-newsletter' -%}
+      {%- endunless -%}
+    </div>
 
-    <ul hidden>
-      <li id="a11y-refresh-page-message">{{ 'accessibility.refresh_page' | t }}</li>
-      <li id="a11y-new-window-message">{{ 'accessibility.link_messages.new_window' | t }}</li>
-    </ul>
+    {%- if request.page_type != 'gift_card' and request.page_type != 'password' -%}
+      {% unless page.id == 86171385959 %}
+        {%- section 'footer' -%}
+      {% endunless %}
+    {%- endif -%}
 
-    <script>
-      window.shopUrl = '{{ request.origin }}';
-      window.routes = {
-        cart_add_url: '{{ routes.cart_add_url }}',
-        cart_change_url: '{{ routes.cart_change_url }}',
-        cart_update_url: '{{ routes.cart_update_url }}',
-        cart_url: '{{ routes.cart_url }}',
-        predictive_search_url: '{{ routes.predictive_search_url }}',
-      };
+<script async data-src="https://static.klaviyo.com/onsite/js/Yx5SCN/klaviyo.js?company_id=Yx5SCN"></script>
+{% if template contains 'product' %} 
+<script id="viewed_product">
+  var _learnq = _learnq || [];
 
-      window.cartStrings = {
-        error: `{{ 'sections.cart.cart_error' | t }}`,
-        quantityError: `{{ 'sections.cart.cart_quantity_error_html' | t: quantity: '[quantity]' }}`,
-      };
+  var item = {
+    Name: {{ product.title|json }},
+    ProductID: {{ product.id|json }},
+    Categories: {{ product.collections|map:'title'|json }},
+    ImageURL: "https:{{ product.featured_image.src|img_url:'grande' }}",
+    URL: "{{ shop.secure_url }}{{ product.url }}",
+    Brand: {{ product.vendor|json }},
+    Price: {{ product.price|money|json }},
+    CompareAtPrice: {{ product.compare_at_price_max|money|json }}
+  };
 
-      window.variantStrings = {
-        addToCart: `{{ 'products.product.add_to_cart' | t }}`,
-        soldOut: `{{ 'products.product.sold_out' | t }}`,
-        unavailable: `{{ 'products.product.unavailable' | t }}`,
-        unavailable_with_option: `{{ 'products.product.value_unavailable' | t: option_value: '[value]' }}`,
-      };
+  _learnq.push(['track', 'Viewed Product', item]);
+  _learnq.push(['trackViewedItem', {
+    Title: item.Name,
+    ItemId: item.ProductID,
+    Categories: item.Categories,
+    ImageUrl: item.ImageURL,
+    Url: item.URL,
+    Metadata: {
+      Brand: item.Brand,
+      Price: item.Price,
+      CompareAtPrice: item.CompareAtPrice
+    }
+  }]);
+</script>
+{% endif %}
 
-      window.quickOrderListStrings = {
-        itemsAdded: `{{ 'sections.quick_order_list.items_added.other' | t: quantity: '[quantity]' }}`,
-        itemAdded: `{{ 'sections.quick_order_list.items_added.one' | t: quantity: '[quantity]' }}`,
-        itemsRemoved: `{{ 'sections.quick_order_list.items_removed.other' | t: quantity: '[quantity]' }}`,
-        itemRemoved: `{{ 'sections.quick_order_list.items_removed.one' | t: quantity: '[quantity]' }}`,
-        viewCart: `{{- 'sections.quick_order_list.view_cart' | t -}}`,
-        each: `{{- 'sections.quick_order_list.each' | t: money: '[money]' }}`,
-        min_error: `{{- 'sections.quick_order_list.min_error' | t: min: '[min]' }}`,
-        max_error: `{{- 'sections.quick_order_list.max_error' | t: max: '[max]' }}`,
-        step_error: `{{- 'sections.quick_order_list.step_error' | t: step: '[step]' }}`,
-      };
-
-      window.accessibilityStrings = {
-        imageAvailable: `{{ 'products.product.media.image_available' | t: index: '[index]' }}`,
-        shareSuccess: `{{ 'general.share.success_message' | t }}`,
-        pauseSlideshow: `{{ 'sections.slideshow.pause_slideshow' | t }}`,
-        playSlideshow: `{{ 'sections.slideshow.play_slideshow' | t }}`,
-        recipientFormExpanded: `{{ 'recipient.form.expanded' | t }}`,
-        recipientFormCollapsed: `{{ 'recipient.form.collapsed' | t }}`,
-        countrySelectorSearchCount: `{{ 'localization.country_results_count' | t: count: '[count]' }}`,
-      };
+    {% comment %}
+    <script> 
+      (function($, window, document, undefined) {
+          $.fn.eocjsNewsticker = function(options) {
+      
+              // _______ Options _______
+      
+      
+              let defaults = {
+                  speed: 20,
+                  timeout: 1,
+                  divider: '����',
+                  type: 'static', // static or ajax
+                  source: '', // ajax source (url)
+                  dataType: 'json', // data type of the expected file (json or jsonp)
+                  callback: 'callback', // used for jsonp
+                  interval: 120 // polling interval of the ajax source (seconds)
+              };
+            let divider;
+              let settings = $.extend({}, defaults, options);
+      
+      
+              // _______ Inner Variables _______
+      
+              let self = this;
+              let content = self.html();
+              let active = 'eocjs-newsticker-active';
+              let container = {};
+              let one = {};
+              let two = {};
+              let both = {};
+              let oneNeedsUpdate = false;
+              let twoNeedsUpdate = false;
+              let localWindow = $(window);
+              let localWindowWidth = localWindow.width();
+      
+      
+              // _______ Init _______
+      
+              function init() {
+                  if (!self.hasClass(active)) {
+                      create();
+                      start();
+                      self.addClass(active);
+                  }
+              }
+      
+      
+              // _______ Create _______
+      
+              function create() {
+      
+                  self.addClass('eocjs-newsticker').html('<div class="eocjs-newsticker-container"><div class="eocjs-newsticker-one"></div><div class="eocjs-newsticker-two"></div></div>');
+      
+                  container = self.find('.eocjs-newsticker-container');
+                  one = self.find('.eocjs-newsticker-one');
+                  two = self.find('.eocjs-newsticker-two');
+                  both = self.find('.eocjs-newsticker-one, .eocjs-newsticker-two');
+      
+              }
+      
+      
+              // _______ Start _______
+      
+              function start() {
+      
+                  if (settings.type === 'static') {
+      
+                      content = content + ' ' + settings.divider;
+                      run(content, (settings.timeout * 1000));
+      
+                  } else if (settings.type === 'ajax') {
+      
+                      container.prepend('<div class="eocjs-newsticker-loader"></div>');
+                      $.when(ajax(settings.source, settings.dataType, settings.callback)).done(function() {
+      
+                          container.find('.eocjs-newsticker-loader').fadeOut(300, function() {
+                              run(content, 0);
+                              $(this).remove();
+                          });
+      
+                          setInterval(function() {
+                              $.when(ajax(settings.source, settings.dataType, settings.callback)).done(function() {
+                                  oneNeedsUpdate = true;
+                                  twoNeedsUpdate = true;
+                              });
+                          }, settings.interval * 1000);
+      
+                      });
+      
+                  }
+      
+              }
+      
+      
+              // _______ Ajax _______
+      
+              function ajax(source, dataType, callback) {
+      
+                  return $.ajax({
+                      url: source,
+                      dataType: dataType,
+                      jsonpCallback: callback,
+                      success: function(data, textStatus, jqXHR) {
+                          content = '';
+                          if ($.isPlainObject(data) && !$.isEmptyObject(data)) {
+                              for (let property in data) {
+                                  if (data.hasOwnProperty(property)) {
+                                      if (content === '') {
+                                          content = data[property] + ' ' + settings.divider;
+                                      } else {
+                                          content = content + ' ' + data[property] + ' ' + settings.divider;
+                                      }
+                                  }
+                              }
+                          } else if (Array.isArray(data) && data.length > 0) {
+                              for (let i = 0; i < data.length; i += 1) {
+                                  if (content === '') {
+                                      content = data[i] + ' ' + settings.divider;
+                                  } else {
+                                      content = content + ' ' + data[i] + ' ' + settings.divider;
+                                  }
+                              }
+                          } else {
+                              content = 'Error: No data found. Check your remote source!';
+                          }
+                      }
+                  });
+      
+              }
+      
+      
+              // _______ Run _______
+      
+              function run(content, timeout) {
+      
+                  update(both, content);
+                  two.css({ 'left': one.width() });
+      
+                  setTimeout(function() {
+      
+                      let width = one.width();
+                      let speed = settings.speed * width;
+      
+                      animateSlide(one, 0, -width, speed);
+                      animateSlide(two, width, 0, speed);
+      
+                  }, timeout);
+      
+              }
+      
+      
+              // _______ Update _______
+      
+              function update(slide, content) {
+      
+                  slide.html(content);
+                  while (container.width() > slide.width()) {
+                      slide.append(' ' + content);
+                  }
+                  slide.append('&nbsp;');
+      
+              }
+      
+      
+              // _______ Animation _______
+      
+              function animateSlide(slide, start, destination, speed) {
+      
+                  slide.animate({ left: destination },
+                      speed,
+                      'linear',
+                      function() {
+      
+                          let width;
+      
+                          if (start === 0) {
+      
+                              if (slide === one && oneNeedsUpdate) {
+                                  update(one, content);
+                                  oneNeedsUpdate = false;
+                              } else if (slide === two && twoNeedsUpdate) {
+                                  update(two, content);
+                                  twoNeedsUpdate = false;
+                              }
+      
+                              slide === one ? width = two.width() : width = one.width();
+                              speed = settings.speed * width;
+                              slide.css({ 'left': width });
+                              animateSlide(slide, width, 0, speed);
+      
+                          } else {
+      
+                              slide === one ? width = one.width() : width = two.width();
+                              speed = settings.speed * width;
+                              animateSlide(slide, 0, -width, speed);
+      
+                          }
+      
+                      }
+                  );
+      
+              }
+      
+      
+              // _______ Resize _______
+      
+              localWindow.on('resize', function() {
+      
+                  let width = localWindow.width();
+      
+                  if (width != localWindowWidth) {
+      
+                      if (width > localWindowWidth) {
+                          if (one.position().left > 0) {
+                              update(one, content);
+                              twoNeedsUpdate = true;
+                          } else if (two.position().left > 0) {
+                              update(two, content);
+                              oneNeedsUpdate = true;
+                          }
+                      } else {
+                          oneNeedsUpdate = true;
+                          twoNeedsUpdate = true;
+                      }
+      
+                      localWindowWidth = width;
+      
+                  }
+      
+              });
+      
+      
+              // _______ Init _______
+      
+              init();
+      
+              return this;
+      
+          };
+      })(jQuery, window, document);
+      $('#ProdSec2').eocjsNewsticker({
+          speed: 25,
+          timeout: 0.5
+      });
+    </script>
+    {% endcomment %}
+          
+    {% include 'judgeme_core' %}
+  
+    <script type="text/javascript">
+      var _learnq = _learnq || [];
+        var classname = document.getElementsByClassName("product-form__add-button button button--secondary button--full");
+      var addToCart = function() {
+      _learnq.push(['track', 'Added to Cart', item]);
+      }; for (var i = 0; i < classname.length; i++) {
+      classname[i].addEventListener('click', addToCart, false);
+      }
     </script>
 
-    {%- if settings.predictive_search_enabled -%}
-      <script src="{{ 'predictive-search.js' | asset_url }}" defer="defer"></script>
-    {%- endif -%}
+          
+          <script>
+/* >> Heatmap.com :: Snippet << */
+document.addEventListener('StartAsyncLoading',function(event){
+(function (h,e,a,t,m,ap) {
+  (h._heatmap_paq = []).push([ 'setTrackerUrl', (h.heatUrl = e) + a]);
+  h.hErrorLogs=h.hErrorLogs || []; ap=t.createElement('script'); 
+  ap.src=h.heatUrl+'preprocessor.min.js?sid='+m; 
+  ap.defer=true; t.head.appendChild(ap);
+  ['error', 'unhandledrejection'].forEach(function (ty) {
+      h.addEventListener(ty, function (et) { h.hErrorLogs.push({ type: ty, event: et }); });
+  });
+})(window,'https://dashboard.heatmap.com/','heatmap.php',document,3437);
+});
+</script>
 
-    {%- if settings.cart_type == 'drawer' -%}
-      <script src="{{ 'cart-drawer.js' | asset_url }}" defer="defer"></script>
-    {%- endif -%}
-  </body>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+  const announcement = document.querySelector(".custom-announcement");
+  const header = document.getElementById("shopify-section-header");
+    console.log(announcement, 'annoucenment')
+    console.log(header, 'header')
+
+  if (announcement && header && header.parentNode) {
+    header.parentNode.insertBefore(announcement, header);
+  } else{
+    console.log('no se pudo')
+  }
+});
+  </script>
+  <script>
+document.addEventListener("DOMContentLoaded", function() {
+  function formatDate(date) {
+    const options = { month: "short", day: "numeric" };
+    return date.toLocaleDateString("en-US", options).toUpperCase();
+  }
+
+  const today = new Date();
+ today.setDate(today.getDate());
+
+  const past = new Date();
+  past.setDate(today.getDate() - 13); // sumamos 14 días
+
+  const promoText = `HURRY UP! ONLY FROM ${formatDate(past)} TO ${formatDate(today)}:`;
+  //const promoText = `COLUMBUS DAY SALE! 🚢`;
+
+  const target = document.querySelector(".announcement-bar__message strong");
+  if (target) {
+    const badge = document.createElement("span");
+    badge.textContent = "+ FREE MYSTERY GIFT"; 
+    badge.textContent = promoText; 
+    badge.style.backgroundColor = "#FDEEB6";
+    //badge.style.backgroundColor = "#1E3885";
+    //badge.style.color = "#F9F9F9";
+    badge.style.padding = "0px 5px";
+    badge.style.borderRadius = "2px";
+    badge.style.marginLeft = "6px"; 
+    badge.style.fontSize = "15px"; 
+    badge.style.fontWeight = "600"; 
+    
+    target.parentElement.insertAdjacentElement("afterbegin", document.createElement("br"));
+    target.parentElement.insertAdjacentElement("afterbegin", badge);
+    //target.parentElement.insertAdjacentElement("afterend", badge);
+  }
+});
+</script>
+  <script>
+  let timerInterval;
+
+  function initCountdown() {
+    const banner = document.querySelector('.reward-banner');
+    if (!banner) return;
+
+    let totalSeconds = 10 * 60; // 10 minutos
+
+    if (timerInterval) clearInterval(timerInterval);
+
+    function updateTimer() {
+      const bannerNow = document.querySelector('.reward-banner'); // re-buscar cada vez
+      if (!bannerNow) return;
+
+      const minutesEl = bannerNow.querySelector('#minutes');
+      const secondsEl = bannerNow.querySelector('#seconds');
+
+      if (totalSeconds <= 0) {
+        clearInterval(timerInterval);
+        minutesEl.textContent = "00";
+        secondsEl.textContent = "00";
+        bannerNow.style.background = "#c2c2c2";
+        bannerNow.style.opacity = "0.4";
+        return;
+      }
+
+      const minutes = Math.floor(totalSeconds / 60);
+      const seconds = totalSeconds % 60;
+
+      minutesEl.textContent = String(minutes).padStart(2, '0');
+      secondsEl.textContent = String(seconds).padStart(2, '0');
+
+      totalSeconds--;
+    }
+
+    updateTimer();
+    timerInterval = setInterval(updateTimer, 1000);
+  }
+
+  document.addEventListener('DOMContentLoaded', initCountdown);
+
+  document.addEventListener('cart:refresh', function(e) {
+    const hasItems = e.detail?.cart?.items?.length > 0;
+    if (hasItems) {
+      initCountdown();
+    }
+  });
+</script>
+
+<script defer src="{{ 'custom.min.js' | asset_url }}" ></script>  
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const banner = document.querySelector(".announcement-bar__message strong");
+  if (!banner) return;
+
+  banner.innerHTML = banner.innerHTML.replace(
+    "+ MYSTERY GIFT ON ALL BUNDLES!",
+    '<span class="announcement-highlight">+ MYSTERY GIFT ON ALL BUNDLES!</span>'
+  );
+});
+</script>
+
+<script>
+  function bundle2Select(btn, bgImgSrc) {
+  let bundle2ImageEl = document.getElementById("bundle2-image");
+  let bundle2SelectedVariantId = btn.dataset.variantId;
+  let bundle2SelectedContainer = btn.closest(".bundle2-selector");
+  let bundle2SelectedText = bundle2SelectedContainer.querySelector("#bundle2-selected-text");
+  let bundleBtn = document.querySelector(".bundle-btn"); // tu botón principal
+
+  // Cambiar imagen
+  if (btn.dataset.img && bundle2ImageEl) {
+    bundle2ImageEl.src = btn.dataset.img;
+  }
+
+  console.log(btn.dataset.label)
+  console.log({bundle2SelectedText})
+  // Cambiar texto seleccionado
+  if (btn.dataset.label && bundle2SelectedText) {
+    bundle2SelectedText.textContent = btn.dataset.label;
+  }
+
+  // Guardar variantId en el botón principal
+  if (bundleBtn) {
+    bundleBtn.dataset.variantId = bundle2SelectedVariantId;
+  }
+
+  // Quitar clase active de todos
+  document.querySelectorAll(".bundle2-option").forEach(b => b.classList.remove("bundle2-active"));
+
+  // Poner active en el seleccionado
+  btn.classList.add("bundle2-active");
+
+  const container = btn.closest(".test-recommendations");
+  if (container) {
+    if (bgImgSrc) {
+      container.style.setProperty('--bg-image', `url('${bgImgSrc}'`);
+    } else {
+      container.style.setProperty('--bg-image', "url('https://cdn.shopify.com/s/files/1/0049/0533/6935/files/bg-cart-2.webp?v=1769095666')");
+    }
+  }
+}
+</script>
+
+<script>
+  function bundleXmasSelect(btn) {
+    let xmasImageEl = document.getElementById("xmas-image");
+    let xmasSelectedVariantId = btn.dataset.variantId;
+    let xmasSelectedText = document.getElementById("xmas-selected-text");
+    let xmasBtn = document.querySelector(".bundle-xmas-btn"); // el botón solo NAVIDAD
+
+    // Cambiar imagen
+    if (btn.dataset.img && xmasImageEl) {
+      xmasImageEl.src = btn.dataset.img;
+    }
+
+    // Cambiar texto seleccionado
+    if (btn.dataset.label && xmasSelectedText) {
+      xmasSelectedText.textContent = btn.dataset.label;
+    }
+
+    // Guardar variantId en el botón principal de NAVIDAD
+    if (xmasBtn) {
+      xmasBtn.dataset.variantId = xmasSelectedVariantId;
+    }
+
+    // Quitar clase active de todas las opciones NAVIDAD
+    document.querySelectorAll(".xmas-option").forEach(b => b.classList.remove("xmas-active"));
+
+    // Activar solo la opción seleccionada
+    btn.classList.add("xmas-active");
+  }
+</script>
+<script>
+  function bundleXmasAdd(btn) {
+    btn.disabled = true;
+
+    // Obtener variantId desde la opción activa
+    const variantId = document.querySelector('.xmas-active')?.dataset.variantId 
+                      || btn.dataset.variantId;
+
+    fetch("/cart/add.js", {
+      method: "POST",
+      headers: { "Content-Type": "application/json", "Accept": "application/json" },
+      body: JSON.stringify({ items: [{ id: variantId, quantity: 1 }] })
+    })
+    .then(res => res.json())
+    .then(() => fetch("/cart.js"))
+    .then(res => res.json())
+    .then(cart => {
+      document.documentElement.dispatchEvent(
+        new CustomEvent("cart:refresh", { bubbles: true, detail: { cart, openMiniCart: true } })
+      );
+    })
+    .catch(err => {
+      console.error("Error adding Xmas bundle:", err);
+      btn.textContent = "Try Again";
+    })
+    .finally(() => btn.disabled = false);
+  }
+</script>
+
+
+<script>
+   window.bundleAddTest = function (btn) {
+    console.log('[bundleAddTest] Click detected', btn);
+
+    btn.disabled = true;
+    console.log('[bundleAddTest] Button disabled');
+
+    const wrapper = btn.closest('.bundle2-offer');
+    console.log('[bundleAddTest] Wrapper found:', wrapper);
+
+    if (!wrapper) {
+      console.error('[bundleAddTest] ❌ No .bundle2-offer wrapper found');
+      btn.disabled = false;
+      return;
+    }
+
+    const activeOption = wrapper.querySelector('.bundle2-active');
+    console.log('[bundleAddTest] Active option:', activeOption);
+
+    const variantId = activeOption
+      ? activeOption.dataset.variantId
+      : btn.dataset.variantId;
+
+    console.log('[bundleAddTest] Variant ID resolved:', variantId);
+
+    if (!variantId) {
+      console.error('[bundleAddTest] ❌ No variant selected for bundle');
+      btn.disabled = false;
+      return;
+    }
+
+    console.log('[bundleAddTest] 🛒 Adding to cart...', {
+      variantId: variantId,
+      quantity: 1
+    });
+
+    fetch('/cart/add.js', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'Accept': 'application/json'
+      },
+      body: JSON.stringify({
+        items: [{ id: variantId, quantity: 1 }]
+      })
+    })
+      .then(res => {
+        console.log('[bundleAddTest] /cart/add.js response:', res);
+        return res.json();
+      })
+      .then(data => {
+        console.log('[bundleAddTest] Item added:', data);
+        return fetch('/cart.js');
+      })
+      .then(res => {
+        console.log('[bundleAddTest] /cart.js response:', res);
+        return res.json();
+      })
+      .then(cart => {
+        console.log('[bundleAddTest] Cart updated:', cart);
+
+        document.documentElement.dispatchEvent(
+          new CustomEvent('cart:refresh', {
+            bubbles: true,
+            detail: { cart, openMiniCart: true }
+          })
+        );
+
+        console.log('[bundleAddTest] ✅ cart:refresh event dispatched');
+      })
+      .catch(err => {
+        console.error('[bundleAddTest] ❌ Error adding bundle product:', err);
+        btn.textContent = 'Try Again';
+      })
+      .finally(() => {
+        btn.disabled = false;
+        console.log('[bundleAddTest] Button re-enabled');
+      });
+  };
+  
+  function bundleXmasAddTwo(btn) {
+    btn.disabled = true;
+
+    // Obtener variantId desde la opción activa
+    const variantId = document.querySelector('.xmas-active')?.dataset.variantId 
+                      || btn.dataset.variantId;
+
+    fetch("/cart/add.js", {
+      method: "POST",
+      headers: { "Content-Type": "application/json", "Accept": "application/json" },
+      body: JSON.stringify({ items: [{ id: variantId, quantity: 1 }] })
+    })
+    .then(res => res.json())
+    .then(() => fetch("/cart.js"))
+    .then(res => res.json())
+    .then(cart => {
+      document.documentElement.dispatchEvent(
+        new CustomEvent("cart:refresh", { bubbles: true, detail: { cart, openMiniCart: true } })
+      );
+    })
+    .catch(err => {
+      console.error("Error adding Xmas bundle:", err);
+      btn.textContent = "Try Again";
+    })
+    .finally(() => btn.disabled = false);
+  }
+</script>
+
+
+<script>
+  function addWallet(btn) {
+    const variantId = btn.dataset.variantId;
+
+    const newItems = [{
+      id: variantId,
+      quantity: 1
+    }];
+
+    fetch('/cart/add.js', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'Accept': 'application/json'
+      },
+      body: JSON.stringify({ items: newItems })
+    })
+    .then(res => {
+      if (!res.ok) {
+        return res.text().then(t => { throw new Error(t) });
+      }
+      return res.json();
+    })
+    .then(() => fetch("/cart.js"))
+    .then(res => res.json())
+    .then(cart => {
+      // 🔥 Refresca y abre el mini-cart en Focal
+      document.documentElement.dispatchEvent(
+        new CustomEvent("cart:refresh", { 
+          bubbles: true, 
+          detail: { cart: cart, openMiniCart: true } 
+        })
+      );
+    })
+    .catch(err => console.error("❌ Error al añadir al carrito:", err));
+  }
+</script>
+
+
+<script>
+document.addEventListener("click", function(e) {
+  const wrapper = e.target.closest(".ymal-wrapper");
+  if (!wrapper) return;
+
+  const slider = wrapper.querySelector(".ymal-grid");
+  if (!slider) return;
+
+  const card = slider.querySelector(".ymal-card");
+  if (!card) return;
+
+  const cardWidth = card.offsetWidth;
+  const gap = parseInt(getComputedStyle(slider).gap) || 0;
+  const scrollAmount = cardWidth + gap;
+
+  if (e.target.closest(".ymal-next")) {
+    console.log("➡️ Next");
+    slider.scrollBy({
+      left: scrollAmount,
+      behavior: "smooth"
+    });
+  }
+
+  if (e.target.closest(".ymal-prev")) {
+    console.log("⬅️ Prev");
+    slider.scrollBy({
+      left: -scrollAmount,
+      behavior: "smooth"
+    });
+  }
+});
+</script>
+  </body>        
 </html>
+

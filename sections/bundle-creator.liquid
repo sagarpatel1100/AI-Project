@@ -1,0 +1,369 @@
+{% schema %}
+{
+  "name": "Bundle Maker",
+  "presets": [
+    {
+      "name": "Bundle Maker",
+      "category": "Custom"
+    }
+  ]
+}
+{% endschema %}
+
+<div class="bundle-maker">
+  <div class="bundle-container">
+    <div class="bundle-slots">
+      <div class="bundle-slot" data-slot="1">1</div>
+      <div class="bundle-slot" data-slot="2">2</div>
+      <div class="bundle-slot" data-slot="3">3</div>
+      <div class="bundle-slot" data-slot="4">4</div>
+    </div>
+    
+      <div class="bundle-summary">
+        <h5 class="discount-code-label">Spend $200, Get $20 Back with Code <strong>BUNDLE20</strong></h5>
+        <div class="total-price-bundle">
+          <p class="bundle-total">$0.00 </p>
+          <p class="bundle-compare">$0.00</p>
+        </div>
+        <button class="add-to-cart">add to cart ➔</button>
+        <div class="trust-icons-container">
+          <div class="trust-item">
+            <img src="https://cdn.shopify.com/s/files/1/0049/0533/6935/files/icon-warranty.png?v=1757429341" alt="icon" width="16" height="16">
+            <p>Lifetime Warranty</p>
+          </div>
+          <div class="trust-item">
+            <img src="https://cdn.shopify.com/s/files/1/0049/0533/6935/files/icon-free.png?v=1757429341" alt="icon" width="16" height="16">
+            <p>Free Shipping</p>
+          </div>
+        </div>
+     </div>
+  </div>
+
+</div>
+
+<style>
+    .bundle-maker {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  border-top: 1px solid #F1F1F1;
+  padding: 40px 20px;
+}
+
+.bundle-slots {
+  display: flex;
+  gap: 20px;
+}
+
+.bundle-slot {
+  width: 149px;
+  height: 149px;
+  font-size: 36px;
+  border: 0.6px dashed #5B6B86;
+  display: flex;
+  border-radius: 2.6px;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  color:rgba(200, 206, 217, 0.73);
+  background: #FDFCFD;
+}
+
+.bundle-slot.filled img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.bundle-summary {
+  margin-left: auto;
+  text-align: right;
+}
+.bundle-container {
+  max-width: 1040px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  width: 100%;  
+}
+
+div.total-price-bundle {
+  margin-bottom: 10px;
+  gap: 5px;
+  align-items: baseline;
+}
+.total-price-bundle p{
+  margin: 0px;
+  line-height: 110%;
+}
+.bundle-total {
+  font-weight: bold;
+  font-size: 24px;
+  text-align: center;
+}
+
+.bundle-compare{
+  color: #505050;
+  font-size: 20px;
+  font-weight: 500;
+  text-decoration: line-through;
+}
+
+.add-to-cart {
+  background: #FFC200;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  text-transform: uppercase;
+  width: 100%;
+  min-width: 305px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  border-radius: 2px;
+}
+
+.bundle-slot {
+  position: relative;
+}
+.trust-icons-container, .trust-item, .total-price-bundle{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.trust-icons-container {
+  gap: 10px;
+  margin-top: 5px;
+}
+.trust-item{
+  gap: 3px;
+}
+.trust-item img {
+  width: 16px;
+  height: auto;
+  object-fit: contain;
+}
+.trust-item p {
+  font-size: 12px;
+  margin: 0px;
+}
+
+.bundle-slot .remove-item {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background: #000;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  font-size: 14px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bundle-parent-fixed {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  background: #F9F9F9;
+}
+.bundle-parent-fixed-spacer {
+  display: block;
+  height: var(--bundle-height, 0px);
+}
+.discount-code-label {
+  font-size: 14px;
+  margin: 0px;
+  margin-bottom: 10px;
+  line-height: 120%;
+  text-align: center;
+  font-weight: 400;
+}
+@media (max-width: 768px){
+  .discount-code-label {
+    font-size: 12px;
+  }
+  .bundle-maker {
+    padding: 20px;
+    padding-top: 10px;
+    padding-right: 0px;
+  }
+  .bundle-summary{
+    width: -webkit-fill-available;
+    margin: 0px;
+    margin-right: 20px;
+  }
+  .bundle-slots {
+    overflow-x: scroll;
+    justify-content: left;
+    gap: 8px;
+    width: 100%;
+    -ms-overflow-style: none;
+    scrollbar-width: none;   
+    padding-right: 20px;
+    padding-top: 10px;
+  }
+  .bundle-slots::-webkit-scrollbar {
+    display: none;             
+  }
+  .bundle-slot {
+    width: 123px;
+    height: 123px;
+    aspect-ratio: 1/1;
+  }
+  .bundle-container {
+  flex-direction: column;
+  gap: 20px;
+}
+}
+</style>
+
+<script>
+  const slots = document.querySelectorAll('.bundle-slot');
+  const totalDisplay = document.querySelector('.bundle-total');
+  const compareDisplay = document.querySelector('.bundle-compare');
+  const addToCartBtn = document.querySelector('.add-to-cart');
+  let total = 0;
+  let selectedProducts = [];
+
+  // Función para actualizar el total
+  function updateTotal() {
+    // Total real
+    total = selectedProducts.reduce((sum, p) => sum + p.price, 0);
+    totalDisplay.textContent = `$${total.toFixed(2)}`;
+
+    // Compare Price (tachado)
+    const compareTotal = selectedProducts.reduce((sum, p) => sum + (p.comparePrice || 0), 0);
+    compareDisplay.textContent = `$${compareTotal.toFixed(2)}`;
+  }
+
+  // Escucha todos los botones "ADD TO BUNDLE"
+  document.querySelectorAll('.bundle-button').forEach(button => {
+    button.style.cursor = "pointer";
+    button.addEventListener('click', (e) => {
+
+      if (selectedProducts.length >= 4) return; // máximo 4 productos
+      
+      const form = e.target.closest('form');
+      const variantId = Number(form.dataset.instantFormVariantId);
+      const priceText = form.querySelector('[data-instant-dynamic-content-source="PRICE"]').innerText;
+      const price = parseFloat(priceText.replace(/[^0-9.]/g, ''));
+      const compareText = form.querySelector('[data-instant-dynamic-content-source="COMPARE_AT"]')?.innerText || '';
+      const comparePrice = compareText ? parseFloat(compareText.replace(/[^0-9.]/g, '')) : price;
+      let image = form.querySelector('img').src;
+
+      if(variantId == 51792900292980) {
+        image = "https://shopcarbinox.com/cdn/shop/files/2-min-12.jpg?v=1754083637&width=1280"
+      }
+
+      // Primer slot vacío
+      const emptySlot = Array.from(slots).find(slot => !slot.classList.contains('filled'));
+      if (emptySlot) {
+        // Agregar contenido con cruz
+        emptySlot.classList.add('filled');
+        emptySlot.innerHTML = `
+          <img src="${image}" alt="">
+          <button class="remove-item">✕</button>
+        `;
+
+        // Guardar en array con slot index
+        const slotIndex = emptySlot.dataset.slot;
+        selectedProducts.push({ variantId, price, comparePrice, slotIndex });
+
+        updateTotal();
+
+        // Event listener de la cruz
+        emptySlot.querySelector('.remove-item').addEventListener('click', () => {
+          // Quitar del array
+          selectedProducts = selectedProducts.filter(p => p.slotIndex !== slotIndex);
+          // Resetear slot
+          emptySlot.classList.remove('filled');
+          emptySlot.innerHTML = slotIndex; // mostrar número de slot
+          updateTotal();
+        });
+      }
+    });
+  });
+
+  // Botón final para añadir al carrito Shopify
+  addToCartBtn.addEventListener('click', () => {
+    if (selectedProducts.length === 0) return;
+
+    // Agrupar productos repetidos
+    const itemsMap = selectedProducts.reduce((acc, p) => {
+      const id = Number(p.variantId); // 👈 nos aseguramos que sea número
+      if (!acc[id]) {
+        acc[id] = { id, quantity: 0 };
+      }
+      acc[id].quantity += 1;
+      return acc;
+    }, {});
+
+    const newItems = Object.values(itemsMap);
+
+    console.log("🛒 Payload enviado:", { items: newItems });
+
+    fetch('/cart/add.js', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'Accept': 'application/json'
+      },
+      body: JSON.stringify({ items: newItems }) // 👈 siempre con "items"
+    })
+    .then(res => {
+      if (!res.ok) {
+        return res.text().then(t => { throw new Error(t) });
+      }
+      return res.json();
+    })
+    .then(() => fetch("/cart.js"))
+    .then(res => res.json())
+    .then(cart => {
+      document.documentElement.dispatchEvent(
+        new CustomEvent("cart:refresh", { 
+          bubbles: true, 
+          detail: { cart: cart, openMiniCart: true } 
+        })
+      );
+    })
+    .catch(err => console.error("❌ Error al añadir al carrito:", err));
+  });
+</script>
+
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const bundleParent = document.querySelector('.bundle-maker')?.parentElement;
+  const footer = document.querySelector('.footer');
+
+  if (!bundleParent || !footer) return;
+
+  // Creamos el spacer
+  const spacer = document.createElement("div");
+  spacer.className = "bundle-parent-fixed-spacer";
+  bundleParent.after(spacer);
+
+  const height = bundleParent.offsetHeight;
+  spacer.style.setProperty("--bundle-height", `${height}px`);
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        bundleParent.classList.remove("bundle-parent-fixed");
+        spacer.style.display = "none";
+      } else {
+        bundleParent.classList.add("bundle-parent-fixed");
+        spacer.style.display = "block";
+      }
+    });
+  }, { threshold: 0 });
+
+  observer.observe(footer);
+});
+</script>

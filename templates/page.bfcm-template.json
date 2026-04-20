@@ -1,0 +1,838 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "product_item_NHcV6M": {
+      "type": "product-item",
+      "blocks": {
+        "product_items_r3gxAr": {
+          "type": "Product-items",
+          "settings": {
+            "image1": "shopify://shop_images/LIFETIME_WARRANTY_300_000_CUSTOMERS_FREE_3-5_DAY_SHIPPING_1_-min.png",
+            "heading": "",
+            "para": ""
+          }
+        }
+      },
+      "block_order": [
+        "product_items_r3gxAr"
+      ],
+      "settings": {}
+    },
+    "rich_text_9KrN8V": {
+      "type": "rich-text",
+      "disabled": true,
+      "custom_css": [],
+      "settings": {
+        "section_id": "",
+        "subheading": "Subheading",
+        "title": "Talk about your brand",
+        "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>",
+        "button_text": "",
+        "button_link": "",
+        "background_type": "full_width",
+        "text_width": "medium",
+        "text_position": "center",
+        "text_alignment": "center",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "sl_timer_bar_1_1_XyyzHB": {
+      "type": "sl-timer-bar-1-1",
+      "settings": {
+        "devices": "all",
+        "sticky_on_scroll": false,
+        "headline_text": "UNLOCK 20% OFF + 3 FREE GIFTS WITH CODE \"VETERANS\" BEFORE:",
+        "strikethrough_text": "",
+        "message_link": "",
+        "link_style": "arrow",
+        "use_caps": true,
+        "message_icon": "icon-name",
+        "offer_countdown_date": "2024-11-11",
+        "offer_countdown_time": "11:59 PM -04:00",
+        "pattern_select": "110d5020-2c4a-47b6-94c8-74c9b3d3b8d9",
+        "bar_height": "medium",
+        "text_size": "medium",
+        "font_style": "title",
+        "timer_size": "large",
+        "timer_font_style": "body",
+        "label_font_style": "body",
+        "border_type": "brand_style",
+        "mobile_bar_height": "medium",
+        "mobile_text_size": "match_desktop",
+        "background_color": "#de0000",
+        "text_color": "#ffffff",
+        "border_color": "#ffffff",
+        "custom_timer_color": "#ffffff"
+      }
+    },
+    "slideshow_rQDYrz": {
+      "type": "slideshow",
+      "blocks": {
+        "image_t6BY44": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/Diseno_sin_titulo_94_-min.png",
+            "mobile_image": "shopify://shop_images/Diseno_sin_titulo_97_-min.png",
+            "text_position": "middle_center",
+            "subheading": "",
+            "title": "",
+            "button_1_text": "",
+            "button_1_link": "",
+            "button_2_text": "",
+            "button_2_link": "",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "image_t6BY44"
+      ],
+      "settings": {
+        "section_height": "auto",
+        "transition_type": "fade",
+        "autoplay": false,
+        "cycle_speed": 5,
+        "background": "rgba(0,0,0,0)"
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "show_title": true,
+        "page_width": "medium"
+      }
+    },
+    "image_with_text_bapa3y": {
+      "type": "image-with-text",
+      "blocks": {
+        "item_XThUJB": {
+          "type": "item",
+          "settings": {
+            "show_video": false,
+            "video_link": "",
+            "image": "shopify://shop_images/Diseno_sin_titulo_99_-min.png",
+            "tab_label": "Item",
+            "subheading": "🇺🇸 BECAUSE EVERY VETERAN DESERVES TO STAY CONNECTED, NO MATTER WHAT.",
+            "title": "whether is for you or gifting it to someone else, let us give you some reasons why us:",
+            "content": "<h4><strong>💸 PAY IN 4 INTEREST-FREE INSTALLMENTS:</strong> <br/>Budget is tight? Doesn't mean you cannot get our products. <span style=\"text-decoration:underline\"><strong>Start enjoying now while paying later </strong></span>with Affirm, Afterpay or Shop Pay.<span style=\"text-decoration:underline\"><strong><br/></strong></span><br/><strong>🏆 LIFETIME WARRANTY:</strong> <br/>We stand by our products with confidence. No matter what happens, <span style=\"text-decoration:underline\"><strong>get FREE replacements whenever you need them.</strong></span><br/><br/><strong>✅ 45-DAY MONEY BACK GUARANTEE:</strong> <br/>If you’re not completely satisfied, return it within 45 days for a full refund, <span style=\"text-decoration:underline\"><strong>no questions asked.</strong></span></h4>",
+            "button_text": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "item_XThUJB"
+      ],
+      "custom_css": [
+        "h3 {font-size: 22px; background-color: #de0000; padding-block: 6px;}",
+        "h2 {font-size: 13px;}",
+        "h4 {font-size: 14px; letter-spacing: -0.5px;}",
+        "div {background-color: black;}"
+      ],
+      "settings": {
+        "section_id": "",
+        "reveal_on_scroll": false,
+        "background_type": "full_width",
+        "background_overlap": "text",
+        "image_position": "left",
+        "text_alignment": "center",
+        "cycle_speed": 8,
+        "accent_background": "#000000",
+        "text_color": "#ffffff",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)",
+        "enable_custom_margin": false,
+        "margin_bottom": 0
+      }
+    },
+    "featured_product_GJmk6A": {
+      "type": "featured-product",
+      "blocks": {
+        "variant_picker_gcRcLb": {
+          "type": "variant_picker",
+          "settings": {
+            "hide_sold_out_variants": false,
+            "selector_mode": "block",
+            "color_mode": "color",
+            "size_chart_page": ""
+          }
+        },
+        "quantity_selector_Jezmka": {
+          "type": "quantity_selector",
+          "disabled": true,
+          "settings": {}
+        },
+        "text_AHqNyH": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<h5><strong>🥇AMERICA'S TOP RATED SMARTWATCH FOR BLUE COLLAR WORKERS, TRUCK DRIVERS, MANAGERS, OPERATORS AND MECHANICS.<br/><br/>🇺🇸 U.S MIL-STD </strong>CERTIFIED & IP69K WATERPROOF. FULLY RESISTANT AGAINST <strong>HARD IMPACTS, SCRATCHES, DENTS, AND OTHER ROUGH TESTS OR ENVIRONMENTS!<br/><br/>🔋 14-DAY BATTERY LIFE ON A SINGLE 90-MINUTE CHARGE, PLUS BLUETOOTH CALLING TECHNOLOGY.</strong></h5>"
+          }
+        },
+        "buy_buttons_zKDMzf": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_payment_button": false,
+            "atc_button_background": "#000000",
+            "atc_button_text_color": "#ffffff",
+            "buy_now_button_background": "rgba(0,0,0,0)",
+            "buy_now_button_text_color": "rgba(0,0,0,0)"
+          }
+        },
+        "text_mHcxEk": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<h4><strong>✅ CLAIM LIFETIME WARRANTY AND FREE SHIPPING IF YOU SHOP TODAY!</strong></h4>"
+          }
+        },
+        "image_w7zxrU": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/LIFETIME_WARRANTY_3_-min.png",
+            "image_alignment": "center",
+            "image_width": 440
+          }
+        }
+      },
+      "block_order": [
+        "variant_picker_gcRcLb",
+        "quantity_selector_Jezmka",
+        "text_AHqNyH",
+        "buy_buttons_zKDMzf",
+        "text_mHcxEk",
+        "image_w7zxrU"
+      ],
+      "custom_css": [
+        "h3 {font-size: 20px;}",
+        "h4 {font-size: 15px; letter-spacing: -0.5px; text-align: center;}",
+        "h2 {font-size: 18px; letter-spacing: -0.3px;}"
+      ],
+      "settings": {
+        "product": "carbinox-blaze-type-s-ultimate-pack",
+        "subheading": "",
+        "title": "🇺🇸 YOU ONLY PAY $135.96 WITH THE DISCOUNT CODE \"VETERANS\" AT CHECKOUT!",
+        "show_vendor": false,
+        "show_sku": false,
+        "show_taxes_included": false,
+        "show_product_rating": false,
+        "show_share_buttons": false,
+        "help_page": "",
+        "enable_video_autoplay": false,
+        "enable_video_looping": false,
+        "enable_image_zoom": false,
+        "show_thumbnails_on_mobile": false,
+        "desktop_thumbnails_position": "bottom",
+        "transition_effect": "fade",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "section_id": ""
+      }
+    },
+    "featured_product_3UkGEf": {
+      "type": "featured-product",
+      "blocks": {
+        "variant_picker_hmAF8e": {
+          "type": "variant_picker",
+          "settings": {
+            "hide_sold_out_variants": false,
+            "selector_mode": "block",
+            "color_mode": "color",
+            "size_chart_page": ""
+          }
+        },
+        "quantity_selector_MCY9eJ": {
+          "type": "quantity_selector",
+          "disabled": true,
+          "settings": {}
+        },
+        "text_JV9Bxg": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<h5><strong>🥇AMERICA'S TOP RATED SMARTWATCH FOR BLUE COLLAR WORKERS, TRUCK DRIVERS, MANAGERS, OPERATORS AND MECHANICS.<br/><br/>🇺🇸 U.S MIL-STD </strong>CERTIFIED & IP69K WATERPROOF. FULLY RESISTANT AGAINST <strong>HARD IMPACTS, SCRATCHES, DENTS, AND OTHER ROUGH TESTS OR ENVIRONMENTS!<br/><br/>🔋 14-DAY BATTERY LIFE ON A SINGLE 90-MINUTE CHARGE, PLUS BLUETOOTH CALLING TECHNOLOGY.</strong></h5>"
+          }
+        },
+        "buy_buttons_YLWfzm": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_payment_button": false,
+            "atc_button_background": "#000000",
+            "atc_button_text_color": "#ffffff",
+            "buy_now_button_background": "rgba(0,0,0,0)",
+            "buy_now_button_text_color": "rgba(0,0,0,0)"
+          }
+        },
+        "text_tPcHad": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<h4><strong>✅ CLAIM LIFETIME WARRANTY AND FREE SHIPPING IF YOU SHOP TODAY!</strong></h4>"
+          }
+        },
+        "image_QRpTLb": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/LIFETIME_WARRANTY_3_-min.png",
+            "image_alignment": "center",
+            "image_width": 440
+          }
+        }
+      },
+      "block_order": [
+        "variant_picker_hmAF8e",
+        "quantity_selector_MCY9eJ",
+        "text_JV9Bxg",
+        "buy_buttons_YLWfzm",
+        "text_tPcHad",
+        "image_QRpTLb"
+      ],
+      "custom_css": [
+        "h3 {font-size: 20px;}",
+        "h4 {font-size: 15px; letter-spacing: -0.5px; text-align: center;}",
+        "h2 {font-size: 18px; letter-spacing: -0.3px;}"
+      ],
+      "settings": {
+        "product": "carbinox-blaze-type-r-ultimate-pack",
+        "subheading": "",
+        "title": "🇺🇸 YOU ONLY PAY $135.96 WITH THE DISCOUNT CODE \"VETERANS\" AT CHECKOUT!",
+        "show_vendor": false,
+        "show_sku": false,
+        "show_taxes_included": false,
+        "show_product_rating": false,
+        "show_share_buttons": false,
+        "help_page": "",
+        "enable_video_autoplay": false,
+        "enable_video_looping": false,
+        "enable_image_zoom": false,
+        "show_thumbnails_on_mobile": false,
+        "desktop_thumbnails_position": "bottom",
+        "transition_effect": "fade",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "section_id": ""
+      }
+    },
+    "featured_product_eC8xfC": {
+      "type": "featured-product",
+      "blocks": {
+        "variant_picker_JiAcYK": {
+          "type": "variant_picker",
+          "settings": {
+            "hide_sold_out_variants": false,
+            "selector_mode": "block",
+            "color_mode": "color",
+            "size_chart_page": ""
+          }
+        },
+        "quantity_selector_cKWFDn": {
+          "type": "quantity_selector",
+          "disabled": true,
+          "settings": {}
+        },
+        "text_NWiNXL": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<h5><strong>🥇AMERICA'S TOP RATED SMARTWATCH FOR BLUE COLLAR WORKERS, TRUCK DRIVERS, MANAGERS, OPERATORS AND MECHANICS.<br/><br/>🇺🇸 U.S MIL-STD </strong>CERTIFIED & IP69K WATERPROOF. FULLY RESISTANT AGAINST <strong>HARD IMPACTS, SCRATCHES, DENTS, AND OTHER ROUGH TESTS OR ENVIRONMENTS!<br/><br/>🔋 14-DAY BATTERY LIFE ON A SINGLE 90-MINUTE CHARGE, PLUS BLUETOOTH CALLING TECHNOLOGY.</strong></h5>"
+          }
+        },
+        "buy_buttons_fXzAX3": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_payment_button": false,
+            "atc_button_background": "#000000",
+            "atc_button_text_color": "#ffffff",
+            "buy_now_button_background": "rgba(0,0,0,0)",
+            "buy_now_button_text_color": "rgba(0,0,0,0)"
+          }
+        },
+        "text_jdDwKY": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<h4><strong>✅ CLAIM LIFETIME WARRANTY AND FREE SHIPPING IF YOU SHOP TODAY!</strong></h4>"
+          }
+        },
+        "image_n3hEWP": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/LIFETIME_WARRANTY_3_-min.png",
+            "image_alignment": "center",
+            "image_width": 440
+          }
+        }
+      },
+      "block_order": [
+        "variant_picker_JiAcYK",
+        "quantity_selector_cKWFDn",
+        "text_NWiNXL",
+        "buy_buttons_fXzAX3",
+        "text_jdDwKY",
+        "image_n3hEWP"
+      ],
+      "custom_css": [
+        "h3 {font-size: 20px;}",
+        "h4 {font-size: 15px; letter-spacing: -0.5px; text-align: center;}",
+        "h2 {font-size: 18px; letter-spacing: -0.3px;}"
+      ],
+      "settings": {
+        "product": "carbinox-blaze-double-pack",
+        "subheading": "",
+        "title": "🇺🇸 YOU ONLY PAY $215.96 WITH THE DISCOUNT CODE \"VETERANS\" AT CHECKOUT!",
+        "show_vendor": false,
+        "show_sku": false,
+        "show_taxes_included": false,
+        "show_product_rating": false,
+        "show_share_buttons": false,
+        "help_page": "",
+        "enable_video_autoplay": false,
+        "enable_video_looping": false,
+        "enable_image_zoom": false,
+        "show_thumbnails_on_mobile": false,
+        "desktop_thumbnails_position": "bottom",
+        "transition_effect": "fade",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "section_id": ""
+      }
+    },
+    "featured_product_647B3g": {
+      "type": "featured-product",
+      "blocks": {
+        "variant_picker_fTtDdw": {
+          "type": "variant_picker",
+          "settings": {
+            "hide_sold_out_variants": false,
+            "selector_mode": "block",
+            "color_mode": "color",
+            "size_chart_page": ""
+          }
+        },
+        "quantity_selector_KkcrcN": {
+          "type": "quantity_selector",
+          "disabled": true,
+          "settings": {}
+        },
+        "text_jjDRLA": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<h5><strong>🥇AMERICA'S TOP RATED SMARTWATCH FOR BLUE COLLAR WORKERS, TRUCK DRIVERS, MANAGERS, OPERATORS AND MECHANICS.<br/><br/>🇺🇸 U.S MIL-STD </strong>CERTIFIED & IP69K WATERPROOF. FULLY RESISTANT AGAINST <strong>HARD IMPACTS, SCRATCHES, DENTS, AND OTHER ROUGH TESTS OR ENVIRONMENTS!<br/><br/>🔋 14-DAY BATTERY LIFE ON A SINGLE 90-MINUTE CHARGE, PLUS BLUETOOTH CALLING TECHNOLOGY.</strong></h5>"
+          }
+        },
+        "buy_buttons_3gqHWA": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_payment_button": false,
+            "atc_button_background": "#000000",
+            "atc_button_text_color": "#ffffff",
+            "buy_now_button_background": "rgba(0,0,0,0)",
+            "buy_now_button_text_color": "rgba(0,0,0,0)"
+          }
+        },
+        "text_MQHzBj": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<h4><strong>✅ CLAIM LIFETIME WARRANTY AND FREE SHIPPING IF YOU SHOP TODAY!</strong></h4>"
+          }
+        },
+        "image_w6fjCt": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/LIFETIME_WARRANTY_3_-min.png",
+            "image_alignment": "center",
+            "image_width": 440
+          }
+        }
+      },
+      "block_order": [
+        "variant_picker_fTtDdw",
+        "quantity_selector_KkcrcN",
+        "text_jjDRLA",
+        "buy_buttons_3gqHWA",
+        "text_MQHzBj",
+        "image_w6fjCt"
+      ],
+      "custom_css": [
+        "h3 {font-size: 20px;}",
+        "h4 {font-size: 15px; letter-spacing: -0.5px; text-align: center;}",
+        "h2 {font-size: 18px; letter-spacing: -0.3px;}"
+      ],
+      "settings": {
+        "product": "carbinox-blaze-type-s",
+        "subheading": "",
+        "title": "🇺🇸 YOU ONLY PAY $111.96 WITH THE DISCOUNT CODE \"VETERANS\" AT CHECKOUT!",
+        "show_vendor": false,
+        "show_sku": false,
+        "show_taxes_included": false,
+        "show_product_rating": false,
+        "show_share_buttons": false,
+        "help_page": "",
+        "enable_video_autoplay": false,
+        "enable_video_looping": false,
+        "enable_image_zoom": false,
+        "show_thumbnails_on_mobile": false,
+        "desktop_thumbnails_position": "bottom",
+        "transition_effect": "fade",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "section_id": ""
+      }
+    },
+    "featured_product_wEPc7f": {
+      "type": "featured-product",
+      "blocks": {
+        "variant_picker_4Q9z8t": {
+          "type": "variant_picker",
+          "settings": {
+            "hide_sold_out_variants": false,
+            "selector_mode": "block",
+            "color_mode": "color",
+            "size_chart_page": ""
+          }
+        },
+        "quantity_selector_AFCEFL": {
+          "type": "quantity_selector",
+          "disabled": true,
+          "settings": {}
+        },
+        "text_D3pdeY": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<h5><strong>🥇AMERICA'S TOP RATED SMARTWATCH FOR BLUE COLLAR WORKERS, TRUCK DRIVERS, MANAGERS, OPERATORS AND MECHANICS.<br/><br/>🇺🇸 U.S MIL-STD </strong>CERTIFIED & IP69K WATERPROOF. FULLY RESISTANT AGAINST <strong>HARD IMPACTS, SCRATCHES, DENTS, AND OTHER ROUGH TESTS OR ENVIRONMENTS!<br/><br/>🔋 14-DAY BATTERY LIFE ON A SINGLE 90-MINUTE CHARGE, PLUS BLUETOOTH CALLING TECHNOLOGY.</strong></h5>"
+          }
+        },
+        "buy_buttons_9J9TGm": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_payment_button": false,
+            "atc_button_background": "#000000",
+            "atc_button_text_color": "#ffffff",
+            "buy_now_button_background": "rgba(0,0,0,0)",
+            "buy_now_button_text_color": "rgba(0,0,0,0)"
+          }
+        },
+        "text_6PjwG6": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<h4><strong>✅ CLAIM LIFETIME WARRANTY AND FREE SHIPPING IF YOU SHOP TODAY!</strong></h4>"
+          }
+        },
+        "image_JTcaie": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/LIFETIME_WARRANTY_3_-min.png",
+            "image_alignment": "center",
+            "image_width": 440
+          }
+        }
+      },
+      "block_order": [
+        "variant_picker_4Q9z8t",
+        "quantity_selector_AFCEFL",
+        "text_D3pdeY",
+        "buy_buttons_9J9TGm",
+        "text_6PjwG6",
+        "image_JTcaie"
+      ],
+      "custom_css": [
+        "h3 {font-size: 20px;}",
+        "h4 {font-size: 15px; letter-spacing: -0.5px; text-align: center;}",
+        "h2 {font-size: 18px; letter-spacing: -0.3px;}"
+      ],
+      "settings": {
+        "product": "carbinox-blaze-type-r",
+        "subheading": "",
+        "title": "🇺🇸 YOU ONLY PAY $111.96 WITH THE DISCOUNT CODE \"VETERANS\" AT CHECKOUT!",
+        "show_vendor": false,
+        "show_sku": false,
+        "show_taxes_included": false,
+        "show_product_rating": false,
+        "show_share_buttons": false,
+        "help_page": "",
+        "enable_video_autoplay": false,
+        "enable_video_looping": false,
+        "enable_image_zoom": false,
+        "show_thumbnails_on_mobile": false,
+        "desktop_thumbnails_position": "bottom",
+        "transition_effect": "fade",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "section_id": ""
+      }
+    },
+    "featured_collections_8LnY9p": {
+      "type": "featured-collections",
+      "blocks": {
+        "collection_WHd3Ab": {
+          "type": "collection",
+          "settings": {
+            "collection": "carbinox-bands-22mm",
+            "label": "",
+            "button_text": "",
+            "button_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "collection_WHd3Ab"
+      ],
+      "custom_css": [
+        "h3 {font-size: 20px;}"
+      ],
+      "settings": {
+        "subheading": "YES, YOU ALSO GET 20% OFF ON THESE!",
+        "title": "🇺🇸 USE THE DISCOUNT CODE \"VETERANS\" AT CHECKOUT!",
+        "heading_alignment": "center",
+        "content": "",
+        "products_count": 43,
+        "products_per_row": 4,
+        "stack_products": true,
+        "show_cta": true,
+        "background": "rgba(0,0,0,0)",
+        "text_color": "#000000",
+        "button_background": "#ff8b04",
+        "button_text_color": "#ffffff"
+      }
+    },
+    "featured_product_89TBR9": {
+      "type": "featured-product",
+      "blocks": {
+        "variant_picker_a3Cdzi": {
+          "type": "variant_picker",
+          "settings": {
+            "hide_sold_out_variants": false,
+            "selector_mode": "block",
+            "color_mode": "color",
+            "size_chart_page": ""
+          }
+        },
+        "quantity_selector_P9a4EC": {
+          "type": "quantity_selector",
+          "disabled": true,
+          "settings": {}
+        },
+        "text_4DzLFX": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<h5><strong>🥇AMERICA'S TOP RATED SMARTWATCH FOR BLUE COLLAR WORKERS, TRUCK DRIVERS, MANAGERS, OPERATORS AND MECHANICS.<br/><br/>🇺🇸 U.S MIL-STD </strong>CERTIFIED & IP69K WATERPROOF. FULLY RESISTANT AGAINST <strong>HARD IMPACTS, SCRATCHES, DENTS, AND OTHER ROUGH TESTS OR ENVIRONMENTS!<br/><br/>🔋 14-DAY BATTERY LIFE ON A SINGLE 90-MINUTE CHARGE, PLUS BLUETOOTH CALLING TECHNOLOGY.</strong></h5>"
+          }
+        },
+        "buy_buttons_fFAmDb": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_payment_button": false,
+            "atc_button_background": "#000000",
+            "atc_button_text_color": "#ffffff",
+            "buy_now_button_background": "rgba(0,0,0,0)",
+            "buy_now_button_text_color": "rgba(0,0,0,0)"
+          }
+        },
+        "text_EkjTE7": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<h4><strong>✅ CLAIM LIFETIME WARRANTY AND FREE SHIPPING IF YOU SHOP TODAY!</strong></h4>"
+          }
+        },
+        "image_qczqi3": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/LIFETIME_WARRANTY_3_-min.png",
+            "image_alignment": "center",
+            "image_width": 440
+          }
+        }
+      },
+      "block_order": [
+        "variant_picker_a3Cdzi",
+        "quantity_selector_P9a4EC",
+        "text_4DzLFX",
+        "buy_buttons_fFAmDb",
+        "text_EkjTE7",
+        "image_qczqi3"
+      ],
+      "custom_css": [
+        "h3 {font-size: 20px;}",
+        "h4 {font-size: 15px; letter-spacing: -0.5px; text-align: center;}",
+        "h2 {font-size: 18px; letter-spacing: -0.3px;}"
+      ],
+      "settings": {
+        "product": "spkr",
+        "subheading": "",
+        "title": "🇺🇸 YOU ONLY PAY $87.96 WITH THE DISCOUNT CODE \"VETERANS\" AT CHECKOUT!",
+        "show_vendor": false,
+        "show_sku": false,
+        "show_taxes_included": false,
+        "show_product_rating": false,
+        "show_share_buttons": false,
+        "help_page": "",
+        "enable_video_autoplay": false,
+        "enable_video_looping": false,
+        "enable_image_zoom": false,
+        "show_thumbnails_on_mobile": false,
+        "desktop_thumbnails_position": "bottom",
+        "transition_effect": "fade",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "section_id": ""
+      }
+    },
+    "featured_product_TJYjMH": {
+      "type": "featured-product",
+      "blocks": {
+        "variant_picker_HKdPbt": {
+          "type": "variant_picker",
+          "settings": {
+            "hide_sold_out_variants": false,
+            "selector_mode": "block",
+            "color_mode": "color",
+            "size_chart_page": ""
+          }
+        },
+        "quantity_selector_cGCigt": {
+          "type": "quantity_selector",
+          "disabled": true,
+          "settings": {}
+        },
+        "text_jAfEFM": {
+          "type": "text",
+          "settings": {
+            "text": "<h5><strong>🥇AMERICA'S TOP RATED SMARTWATCH FOR BLUE COLLAR WORKERS, TRUCK DRIVERS, MANAGERS, OPERATORS AND MECHANICS.<br/><br/>🇺🇸 U.S MIL-STD </strong>CERTIFIED & IP69K WATERPROOF. FULLY RESISTANT AGAINST <strong>HARD IMPACTS, SCRATCHES, DENTS, AND OTHER ROUGH TESTS OR ENVIRONMENTS!<br/><br/>🔋 14-DAY BATTERY LIFE ON A SINGLE 90-MINUTE CHARGE, PLUS BLUETOOTH CALLING TECHNOLOGY.</strong></h5>"
+          }
+        },
+        "buy_buttons_iEXQ74": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_payment_button": false,
+            "atc_button_background": "#000000",
+            "atc_button_text_color": "#ffffff",
+            "buy_now_button_background": "rgba(0,0,0,0)",
+            "buy_now_button_text_color": "rgba(0,0,0,0)"
+          }
+        },
+        "text_3RXyGU": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<h4><strong>✅ CLAIM LIFETIME WARRANTY AND FREE SHIPPING IF YOU SHOP TODAY!</strong></h4>"
+          }
+        },
+        "image_JHkyna": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/LIFETIME_WARRANTY_3_-min.png",
+            "image_alignment": "center",
+            "image_width": 440
+          }
+        }
+      },
+      "block_order": [
+        "variant_picker_HKdPbt",
+        "quantity_selector_cGCigt",
+        "text_jAfEFM",
+        "buy_buttons_iEXQ74",
+        "text_3RXyGU",
+        "image_JHkyna"
+      ],
+      "custom_css": [
+        "h3 {font-size: 20px;}",
+        "h4 {font-size: 15px; letter-spacing: -0.5px; text-align: center;}",
+        "h2 {font-size: 18px; letter-spacing: -0.3px;}"
+      ],
+      "settings": {
+        "product": "carbinox-wallet-pro",
+        "subheading": "",
+        "title": "🇺🇸 YOU ONLY PAY $63.96 WITH THE DISCOUNT CODE \"VETERANS\" AT CHECKOUT!",
+        "show_vendor": false,
+        "show_sku": false,
+        "show_taxes_included": false,
+        "show_product_rating": false,
+        "show_share_buttons": false,
+        "help_page": "",
+        "enable_video_autoplay": false,
+        "enable_video_looping": false,
+        "enable_image_zoom": false,
+        "show_thumbnails_on_mobile": false,
+        "desktop_thumbnails_position": "bottom",
+        "transition_effect": "fade",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "section_id": ""
+      }
+    },
+    "featured_collections_FALhyT": {
+      "type": "featured-collections",
+      "blocks": {
+        "collection_zNr7kq": {
+          "type": "collection",
+          "settings": {
+            "collection": "other-accessories",
+            "label": "",
+            "button_text": "",
+            "button_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "collection_zNr7kq"
+      ],
+      "custom_css": [
+        "h3 {font-size: 20px;}"
+      ],
+      "settings": {
+        "subheading": "",
+        "title": "YES, YOU ALSO GET 20% OFF ON THESE!",
+        "heading_alignment": "center",
+        "content": "",
+        "products_count": 43,
+        "products_per_row": 4,
+        "stack_products": true,
+        "show_cta": true,
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "#000000",
+        "button_text_color": "#ffffff"
+      }
+    }
+  },
+  "order": [
+    "product_item_NHcV6M",
+    "rich_text_9KrN8V",
+    "sl_timer_bar_1_1_XyyzHB",
+    "slideshow_rQDYrz",
+    "main",
+    "image_with_text_bapa3y",
+    "featured_product_GJmk6A",
+    "featured_product_3UkGEf",
+    "featured_product_eC8xfC",
+    "featured_product_647B3g",
+    "featured_product_wEPc7f",
+    "featured_collections_8LnY9p",
+    "featured_product_89TBR9",
+    "featured_product_TJYjMH",
+    "featured_collections_FALhyT"
+  ]
+}

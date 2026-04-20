@@ -1,0 +1,174 @@
+{%- liquid
+  assign title = section.settings.title
+  assign subtitle = section.settings.subtitle
+  assign image = section.settings.image
+  assign mobile_image = section.settings.mobile_image
+  assign content = section.settings.content
+  assign show_button = section.settings.show_button
+  assign button_label = section.settings.button_label
+  assign button_url = section.settings.button_url
+  assign button_new_tab = section.settings.button_new_tab
+  assign show_divider = section.settings.show_divider
+  assign button_icon = section.settings.button_icon
+-%}
+
+{{ 'new-adventorial-article.css' | asset_url | stylesheet_tag }}
+
+<div id="adventorial-article-{{ section.id }}" class="adventorial-article">
+
+  <div class="adventorial-article__container">
+
+  {%- if image != blank -%}
+    <div class="adventorial-article__image-wrapper">
+      <picture>
+
+        {%- if mobile_image != blank -%}
+          <source
+            media="(max-width: 768px)"
+            srcset="{{ mobile_image | image_url }}"
+          >
+        {%- endif -%}
+
+        <img
+          src="{{ image | image_url }}"
+          alt="Article Image"
+          class="adventorial-article__image"
+          loading="lazy"
+        >
+      </picture>
+    </div>
+  {%- endif -%}
+    
+    {%- if title != blank -%}
+      <h2 class="adventorial-article__title">
+        {{ title }}
+      </h2>
+    {%- endif -%}
+
+    {%- if subtitle != blank -%}
+      <h3 class="adventorial-article__subtitle">
+          {{ subtitle }}
+      </h3>
+    {%- endif -%}
+
+    {%- if content != blank -%}
+    <div class="adventorial-article__content">
+        {{ content }}
+    </div>
+    {%- endif -%}
+
+    {%- if section.settings.highlight_text != blank -%}
+    <div class="adventorial-article__highlight">
+        {{ section.settings.highlight_text }}
+    </div>
+    {%- endif -%}
+
+    {%- if show_button and button_label != blank and button_url != blank -%}
+        <div class="adventorial-article__button-wrapper">
+            <a
+            href="{{ button_url }}"
+            class="adventorial-article__button"
+            {% if button_new_tab %}target="_blank"{% endif %}
+            >
+            <span class="adventorial-article__button-text">{{ button_label }}</span>
+
+            {%- if button_icon != blank -%}
+              <div class="adventorial-icon-container">
+                <img 
+                src="{{ button_icon | image_url }}"
+                alt=""
+                class="adventorial-article__button-icon"
+                loading="lazy"
+                >
+              </div>
+            {%- endif -%}
+            </a>
+        </div>
+    {%- endif -%}
+
+
+    {%- if show_divider -%}
+      <hr class="adventorial-article__divider">
+    {%- endif -%}
+
+  </div>
+
+</div>
+
+{% schema %}
+{
+  "name": "Adventorial Article",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Article title"
+    },
+    {
+      "type": "text",
+      "id": "subtitle",
+      "label": "Article subtitle"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Article image"
+    },
+    {
+      "type": "image_picker",
+      "id": "mobile_image",
+      "label": "Article image (Mobile)"
+    },
+    {
+      "type": "richtext",
+      "id": "content",
+      "label": "Article content"
+    },
+    {
+    "type": "richtext",
+    "id": "highlight_text",
+    "label": "Highlight box text"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_button",
+      "label": "Show button",
+      "default": false
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "label": "Button label",
+      "default": "CLICK HERE TO CHECK AVAILABILITY"
+    },
+    {
+      "type": "url",
+      "id": "button_url",
+      "label": "Button URL"
+    },
+    {
+      "type": "image_picker",
+      "id": "button_icon",
+      "label": "Button icon"
+    },
+    {
+      "type": "checkbox",
+      "id": "button_new_tab",
+      "label": "Open button in new tab",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "show_divider",
+      "label": "Show divider",
+      "default": true
+    }
+  ],
+  "presets": [
+    {
+      "name": "Adventorial Article Cuadro"
+    }
+  ]
+}
+{% endschema %}

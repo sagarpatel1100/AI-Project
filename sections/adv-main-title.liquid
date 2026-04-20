@@ -1,0 +1,125 @@
+<section class="adv-article-title">
+  <div class="adv-article-title__container">
+
+    <h1 class="adv-article-title__heading">
+      {{ section.settings.title | default: article.title }}
+    </h1>
+
+    {% if section.settings.show_author %}
+      <div class="adv-article-title__author">
+
+        {% if section.settings.author_image != blank %}
+          <img
+            class="adv-article-title__author-image"
+            src="{{ section.settings.author_image | image_url: width: 80 }}"
+            alt="Author"
+          >
+        {% endif %}
+
+        <p class="adv-article-title__author-text">
+          {{ section.settings.author_text }}
+        </p>
+
+      </div>
+    {% endif %}
+
+  </div>
+</section>
+
+<style>
+.adv-article-title{
+    padding: 40px 15px 20px;
+}
+
+@media(max-width: 768px) {
+.adv-article-title{
+    padding: 30px 15px 20px;
+}
+}
+
+.adv-article-title__container{
+  max-width:740px;
+  margin:0 auto;
+}
+
+.adv-article-title__breadcrumb{
+  font-size:14px;
+  color:#6b6b6b;
+  margin-bottom:12px;
+}
+
+.adv-article-title__breadcrumb a{
+  color:#6b6b6b;
+  text-decoration:none;
+}
+
+.adv-article-title__separator{
+  margin:0 6px;
+}
+
+.adv-article-title__heading{
+  font-size:24px;
+  font-weight:700;
+  line-height: 120%;
+  margin-bottom:20px;
+}
+
+.adv-article-title__author{
+  display:flex;
+  align-items:center;
+  gap:12px;
+}
+
+.adv-article-title__author-image{
+  width:40px;
+  height:40px;
+  border-radius:50%;
+  object-fit:cover;
+}
+
+.adv-article-title__author-text{
+font-family: Inter;
+font-weight: 400;
+font-size: 14px;
+line-height: 100%;
+letter-spacing: 0%;
+color:#000;
+margin: 0;
+max-width: 441px;
+font-style: italic;
+}
+</style>
+
+{% schema %}
+{
+  "name": "Advertorial Article Title",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Custom title (optional)"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_author",
+      "label": "Show author",
+      "default": true
+    },
+    {
+      "type": "image_picker",
+      "id": "author_image",
+      "label": "Author image"
+    },
+    {
+      "type": "textarea",
+      "id": "author_text",
+      "label": "Author description"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Advertorial Article Title"
+    }
+  ]
+}
+{% endschema %}

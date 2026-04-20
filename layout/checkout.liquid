@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="{{ locale }}" dir="{{ direction }}" class="{{ checkout_html_classes }}">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, height=device-height, minimum-scale=1.0, user-scalable=0">
+    <meta name="referrer" content="origin">
+<!-- Swiper CSS -->
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+/>
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <title>{{ page_title }}</title>
+
+    {{ content_for_header }}
+
+    {{ checkout_stylesheets }}
+    {{ checkout_scripts }}
+    <script src="https://www.googleoptimize.com/optimize.js?id=OPT-5DQ55LB"></script>
+
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-5XKJ3S8');</script>
+    <!-- End Google Tag Manager -->
+    
+  </head>
+  <body>
+    {{ skip_to_content_link }}
+
+    <header class="banner" data-header role="banner">
+      <div class="wrap">
+        {{ content_for_logo }}
+      </div>
+    </header>
+    {{ order_summary_toggle }}
+    <div class="content" data-content>
+      <div class="wrap">
+        <div class="main">
+          <header class="main__header" role="banner">
+            {{ content_for_logo }}
+            {% if content_for_layout contains 'data-step="contact_information"' %}
+              <ul class="bc">
+                <a href="/cart">
+                  <li class="bc_item bc_complete">Cart</li>
+                </a>
+                <li class="bc_item bc_current">Customer Information</li>
+                <li class="bc_item">Shipping Method</li>
+                <li class="bc_item">Payment Method</li>
+              </ul>
+              
+            {% elsif content_for_layout contains 'data-step="shipping_method"' %}
+              <ul class="bc">
+                <a href="/cart">
+                  <li class="bc_item bc_complete">Cart</li>
+                </a> 
+                <a href="/cart/checkout?step=contact_information">
+                  <li class="bc_item bc_complete">Customer Information</li>
+                </a>
+                <li class="bc_item bc_current">Shipping Method</li>
+                <li class="bc_item">Payment Method</li>
+              </ul>
+              
+            {% elsif content_for_layout contains 'data-step="payment_method"' %}
+              <ul class="bc">
+                <a href="/cart">
+                  <li class="bc_item bc_complete">Cart</li>
+                </a>
+                <a href="/cart/checkout?step=contact_information">
+                  <li class="bc_item bc_complete">Customer Information</li>
+                </a>
+                <a href="/cart/checkout?step=shipping_method">
+                  <li class="bc_item bc_complete">Shipping Method</li>
+                </a>
+                <li class="bc_item bc_current">Payment Method</li>
+              </ul>
+              
+            {% elsif content_for_layout contains 'data-step="review"' %}
+              <ul class="bc">
+                <a href="/cart">
+                  <li class="bc_item bc_complete">Cart</li>
+                </a>
+                <a href="/cart/checkout?step=contact_information">
+                  <li class="bc_item bc_complete">Customer Information</li>
+                </a>
+                <a href="/cart/checkout?step=shipping_method">
+                  <li class="bc_item bc_complete">Shipping Method</li>
+                </a>
+                <a href="/cart/checkout?step=payment_method">
+                  <li class="bc_item bc_complete">Payment Method</li>
+                </a>
+              </ul>
+            {% endif %}
+            
+            {{ alternative_payment_methods }}
+          </header>
+          <div class="reserver-cart">YOUR ORDER IS RESERVED FOR ONLY <span id="time">05:00</span> MINUTES!</div>
+          <main class="main__content" role="main">
+          
+            {{ content_for_layout }}
+            
+          </main>
+          
+          <footer class="main__footer" role="contentinfo">
+            {{ content_for_footer }}
+            <div>
+              <img class="lazyload" data-src="https://cdn.shopify.com/s/files/1/0049/0533/6935/files/Diseno_sin_titulo-38.jpg?v=1694711021">
+              <p><center>After thousands of successful deliveries across the United States, we can confidently say that we'll guarantee you a professional shopping experience, top of the line support, and products that will last a lifetime.</center></p>
+              <p></p>
+            </div>
+          </footer>
+        </div>
+        <aside class="sidebar" role="complementary">
+          <div class="sidebar__header">
+            {{ content_for_logo }}
+          </div>
+          <div class="sidebar__content">
+            {{ content_for_order_summary }}
+          </div>
+          {% render 'checkout-testimonial' %}
+
+        </aside>
+      </div>
+    </div>
+
+    {{ tracking_code }}
+
+    {{ 'checkout.css' | asset_url | stylesheet_tag: preload: true }}
+    <script src="{{ 'jquery.min.js' | asset_url }}" defer></script>
+    <script src="{{ 'lazysizes.min.js' | asset_url }}" defer></script>
+    <script src="{{ 'checkout.js' | asset_url }}" defer></script>
+  </body>
+    
+</html>

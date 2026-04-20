@@ -1,0 +1,196 @@
+{{ 'section-table-tabs.css' | asset_url | stylesheet_tag }}
+
+{% assign heading = section.blocks | where: 'type', 'heading' | first %}
+
+<div class="table-tabs__container">
+    <h2>{{ section.settings.title }}</h2>
+
+    <div class="table-tabs__btns">
+        <input onchange="handleOnChangeTabs(event)" type="radio" id="{{ heading.settings.title | handleize }}" name="table-tabs" value="{{ heading.settings.title | handleize }}" checked />
+        <label for="{{ heading.settings.title | handleize }}">
+            {{ heading.settings.title }}
+        </label>
+
+        <input onchange="handleOnChangeTabs(event)" type="radio" id="{{ heading.settings.title_2 | handleize }}" name="table-tabs" value="{{ heading.settings.title_2 | handleize }}" />
+        <label for="{{ heading.settings.title_2 | handleize }}">
+            {{ heading.settings.title_2 }}
+        </label>
+    </div>
+
+    <div class="table-tabs__table">
+        {% for block in section.blocks %}
+            {% case block.type %}
+            {% when "heading" %}
+                {% assign block_price = product.variants[0].price | money %}
+                {% assign block_compare_price = product.variants[0].compare_at_price | money %}
+
+                {% assign block_price_2 = product.variants[1].price | money %}
+                {% assign block_compare_price_2 = product.variants[1].compare_at_price | money %}
+                <div class="table-tabs__row" {{ block.shopify_attributes }}>
+                    <div class="table-tabs__empty"></div>
+                    <div class="table-tabs__card is-active" data-handle="{{ block.settings.title | handleize }}">
+                        <img
+                            src="{{ block.settings.image | image_url: width: 500 }}"
+                            alt="{{ block.settings.image.alt }}"
+                            width="176"
+                            height="176"
+                            loading="lazy"
+                            class="table-tabs__img"
+                        />
+                        <h3 class="table-tabs__title">
+                            {{ block.settings.title }}
+                        </h3>
+                        <p class="table-tabs__prices">
+                            <span>{{ block.settings.price | default: block_price }}</span>
+                            <span>{{ block.settings.compare_price | default: block_compare_price }}</span>
+                        </p>
+                    </div>
+                    <div class="table-tabs__card" data-handle="{{ block.settings.title_2 | handleize }}">
+                        <img
+                            src="{{ block.settings.image_2 | image_url: width: 500 }}"
+                            alt="{{ block.settings.image_2.alt }}"
+                            width="176"
+                            height="176"
+                            loading="lazy"
+                            class="table-tabs__img"
+                        />
+                        <h3 class="table-tabs__title">
+                            {{ block.settings.title_2 }}
+                        </h3>
+                        <p class="table-tabs__prices">
+                            <span>{{ block.settings.price_2 | default: block_price_2 }}</span>
+                            <span>{{ block.settings.compare_price_2 | default: block_compare_price_2 }}</span>
+                        </p>
+                    </div>
+                </div>
+            {% when "content" %}
+                <div class="table-tabs__row" {{ block.shopify_attributes }}>
+                    <h4 {{ block.shopify_attributes }}>
+                        {{ block.settings.text }}
+                    </h4>
+                    <h5 {{ block.shopify_attributes }} class="is-active" data-handle="{{ heading.settings.title | handleize }}">
+                        {{ block.settings.text_2 }}
+                    </h5>
+                    <h5 {{ block.shopify_attributes }} data-handle="{{ heading.settings.title_2 | handleize }}">
+                        {{ block.settings.text_3 }}
+                    </h5>
+                </div>
+            {% endcase %}
+        {% endfor %}
+    </div>
+</div>
+
+<script>
+    const handleOnChangeTabs = (event) => {
+        const currentHeading = event.target.value;
+        const dynamicElements = document.querySelectorAll(".table-tabs__container [data-handle]");
+        dynamicElements.forEach(el => {
+            const handle = el.getAttribute("data-handle")
+            if (handle === currentHeading) {
+                el.classList.add("is-active")
+            } else {
+                el.classList.remove("is-active")
+            }
+        });
+    }
+</script>
+
+{% schema %}
+{
+  "name": "Table Tabs",
+  "class": "table-tabs",
+  "settings": [
+    {
+        "type": "text",
+        "id": "title",
+        "label": "Title",
+        "default": "Type R for the Traditional Man, Type S for the Modern One"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "heading",
+      "name": "Heading",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "header",
+          "content": "Product 1"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+            "type": "text",
+            "id": "title",
+            "label": "Title"
+        },
+        {
+            "type": "text",
+            "id": "price",
+            "label": "Price"
+        },
+        {
+            "type": "text",
+            "id": "compare_price",
+            "label": "Compare Price"
+        },
+        {
+          "type": "header",
+          "content": "Product 2"
+        },
+        {
+          "type": "image_picker",
+          "id": "image_2",
+          "label": "Image"
+        },
+        {
+            "type": "text",
+            "id": "title_2",
+            "label": "Title"
+        },
+        {
+            "type": "text",
+            "id": "price_2",
+            "label": "Price"
+        },
+        {
+            "type": "text",
+            "id": "compare_price_2",
+            "label": "Compare Price"
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "name": "Content",
+      "settings": [
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Text"
+        },
+        {
+          "type": "text",
+          "id": "text_2",
+          "label": "Text"
+        },
+        {
+          "type": "text",
+          "id": "text_3",
+          "label": "Text"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Table Tabs",
+      "settings": {},
+      "blocks": []
+    }
+  ]
+}
+{% endschema %}

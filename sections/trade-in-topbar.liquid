@@ -1,0 +1,195 @@
+{% liquid
+  assign desktop_text = section.settings.desktop_text
+  assign mobile_text = section.settings.mobile_text
+  assign topbar_link = section.settings.topbar_link
+
+  assign bg_color = section.settings.bg_color
+  assign text_color = section.settings.text_color
+
+  assign desktop_font_size = section.settings.desktop_font_size
+  assign mobile_font_size = section.settings.mobile_font_size
+
+  assign font_weight = section.settings.font_weight
+  assign letter_spacing = section.settings.letter_spacing
+
+  assign padding_top = section.settings.padding_top
+  assign padding_bottom = section.settings.padding_bottom
+  assign padding_horizontal = section.settings.padding_horizontal
+
+  assign section_padding_top = section.settings.section_padding_top
+  assign section_padding_bottom = section.settings.section_padding_bottom
+
+  if mobile_text == blank
+    assign mobile_text = desktop_text
+  endif
+%}
+
+{{ 'section-trade-in-topbar.css' | asset_url | stylesheet_tag }}
+
+{% if desktop_text != blank %}
+  <section
+    id="trade-in-topbar-{{ section.id }}"
+    class="trade-in-topbar section-{{ section.id }}"
+    style="
+      --trade-in-topbar-bg: {{ bg_color }};
+      --trade-in-topbar-text-color: {{ text_color }};
+      --trade-in-topbar-desktop-font-size: {{ desktop_font_size }}px;
+      --trade-in-topbar-mobile-font-size: {{ mobile_font_size }}px;
+      --trade-in-topbar-font-weight: {{ font_weight }};
+      --trade-in-topbar-letter-spacing: {{ letter_spacing }}px;
+      --trade-in-topbar-padding-top: {{ padding_top }}px;
+      --trade-in-topbar-padding-bottom: {{ padding_bottom }}px;
+      --trade-in-topbar-padding-horizontal: {{ padding_horizontal }}px;
+      --trade-in-topbar-section-padding-top: {{ section_padding_top }}px;
+      --trade-in-topbar-section-padding-bottom: {{ section_padding_bottom }}px;
+    "
+  >
+    <div class="trade-in-topbar__inner">
+      <div class="trade-in-topbar__container">
+        {% if topbar_link != blank %}
+          <a href="{{ topbar_link }}" class="trade-in-topbar__text-link">
+            <span class="trade-in-topbar__text trade-in-topbar__text--desktop">
+              {{ desktop_text }}
+            </span>
+            <span class="trade-in-topbar__text trade-in-topbar__text--mobile">
+              {{ mobile_text }}
+            </span>
+          </a>
+        {% else %}
+          <div class="trade-in-topbar__text-wrapper">
+            <span class="trade-in-topbar__text trade-in-topbar__text--desktop">
+              {{ desktop_text }}
+            </span>
+            <span class="trade-in-topbar__text trade-in-topbar__text--mobile">
+              {{ mobile_text }}
+            </span>
+          </div>
+        {% endif %}
+      </div>
+    </div>
+  </section>
+{% endif %}
+
+{% schema %}
+{
+  "name": "Trade In Topbar",
+  "tag": "section",
+  "class": "section-trade-in-topbar",
+  "settings": [
+    {
+      "type": "richtext",
+      "id": "desktop_text",
+      "label": "Desktop text"
+    },
+    {
+      "type": "richtext",
+      "id": "mobile_text",
+      "label": "Mobile text",
+      "info": "Optional. If left empty, the desktop text will be used."
+    },
+    {
+      "type": "url",
+      "id": "topbar_link",
+      "label": "Link"
+    },
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Background color",
+      "default": "#FFC200"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text color",
+      "default": "#000000"
+    },
+    {
+      "type": "range",
+      "id": "desktop_font_size",
+      "label": "Desktop font size",
+      "min": 10,
+      "max": 24,
+      "step": 1,
+      "default": 14
+    },
+    {
+      "type": "range",
+      "id": "mobile_font_size",
+      "label": "Mobile font size",
+      "min": 10,
+      "max": 20,
+      "step": 1,
+      "default": 12
+    },
+    {
+      "type": "range",
+      "id": "font_weight",
+      "label": "Font weight",
+      "min": 400,
+      "max": 800,
+      "step": 100,
+      "default": 600
+    },
+    {
+      "type": "range",
+      "id": "letter_spacing",
+      "label": "Letter spacing",
+      "min": 0,
+      "max": 4,
+      "step": 1,
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "label": "Inner top padding",
+      "min": 0,
+      "max": 20,
+      "step": 1,
+      "default": 6
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "label": "Inner bottom padding",
+      "min": 0,
+      "max": 20,
+      "step": 1,
+      "default": 6
+    },
+    {
+      "type": "range",
+      "id": "padding_horizontal",
+      "label": "Inner horizontal padding",
+      "min": 0,
+      "max": 40,
+      "step": 1,
+      "default": 10
+    },
+    {
+      "type": "range",
+      "id": "section_padding_top",
+      "label": "Outer top spacing",
+      "min": 0,
+      "max": 60,
+      "step": 2,
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "section_padding_bottom",
+      "label": "Outer bottom spacing",
+      "min": 0,
+      "max": 60,
+      "step": 2,
+      "default": 0
+    }
+  ],
+  "presets": [
+    {
+      "name": "Trade In Topbar"
+    }
+  ]
+}
+{% endschema %}

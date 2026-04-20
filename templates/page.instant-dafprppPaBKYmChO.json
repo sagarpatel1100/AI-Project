@@ -1,0 +1,34 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "instant-dafprppPaBKYmChO": {
+      "type": "instant-dafprppPaBKYmChO",
+      "settings": {}
+    },
+    "custom_liquid_KQtjqa": {
+      "type": "custom-liquid",
+      "name": "Custom Liquid",
+      "settings": {
+        "subheading": "",
+        "title": "",
+        "liquid": "<style>\n.announcement-bar {\n  display: none !important;\n}\n\n.footer {\n  display: none !important;\n}\n\n.header {\ndisplay: none !important;\n}\n</style>",
+        "add_vertical_spacing": false,
+        "background_type": "full_width",
+        "background": "#000000",
+        "text_color": "rgba(0,0,0,0)"
+      }
+    }
+  },
+  "order": [
+    "instant-dafprppPaBKYmChO",
+    "custom_liquid_KQtjqa"
+  ]
+}

@@ -1,0 +1,107 @@
+{{ 'section-image-txt.css' | asset_url | stylesheet_tag }}
+
+<div class="image-txt__container{% if section.settings.full_width %} image-txt__container-full{% endif %}" style="--color-text: {{ section.settings.text_color }}; --color-bg: {{ section.settings.background_color }};">
+    <img
+        src="{{ section.settings.image | image_url: width: 1000 }}"
+        alt="{{ section.settings.image.alt }}"
+        width="570"
+        height="570"
+        loading="lazy"
+        class="image-txt__img image-txt__img--{{ section.settings.image_position }}"
+    />
+
+    <div class="image-txt__content">
+        {% for block in section.blocks %}
+          {% case block.type %}
+            {% when "heading" %}
+              <h2 {{ block.shopify_attributes }}>{{ block.settings.title }}</h2>
+            {% when "content" %}
+              <div class="rte" {{ block.shopify_attributes }}>
+                {{ block.settings.content }}
+              </div>
+          {% endcase %}
+        {% endfor %}
+    </div>
+</div>
+
+{% schema %}
+{
+  "name": "Image with text",
+  "class": "image-txt",
+  "settings": [
+    {
+        "type": "checkbox",
+        "id": "full_width",
+        "label": "Full width",
+        "default": false
+    },
+    {
+        "type": "image_picker",
+        "id": "image",
+        "label": "Image",
+        "info": "1400 x 1400px .jpg recommended"
+    },
+    {
+      "type": "select",
+      "id": "image_position",
+      "label": "Desktop image position",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        }
+      ],
+      "default": "left"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background Color",
+      "default": "#EFEFEF"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text color",
+      "default": "#191919"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "heading",
+      "name": "Heading",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Heading",
+          "default": "Image with text"
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "name": "Content",
+      "settings": [
+        {
+          "type": "richtext",
+          "id": "content",
+          "label": "Content",
+          "default": "<p>Use image with text to give your customers insight into your brand. Select imagery and text that relates to your style and story.</p>"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Image with text V2",
+      "settings": {},
+      "blocks": []
+    }
+  ]
+}
+{% endschema %}

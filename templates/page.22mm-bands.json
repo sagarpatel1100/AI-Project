@@ -1,0 +1,294 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "177446673746afe4eb": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_8e9dfad_wmpJtg": {
+          "type": "ai_gen_block_8e9dfad",
+          "settings": {
+            "desktop_image": "shopify://shop_images/mob3.webp",
+            "mobile_image": "shopify://shop_images/Diseno_sin_titulo_66_1.png",
+            "desktop_width_percent": 100,
+            "main_headline": "BUNDLE & SAVE WITH THESE GREAT OFFERS:",
+            "main_headline_size": 38,
+            "main_headline_color": "#ffffff",
+            "title_1": "BUY ONE → GET ONE 50% OFF!",
+            "subtitle_1": "USE CODE: BAND50 TO UNLOCK 🔓",
+            "title_2": "BUY TWO → GET TWO FREE!",
+            "subtitle_2": "USE CODE: BAND2FREE TO UNLOCK 🔓",
+            "title_3": "BUY THREE → GET FOUR FREE!",
+            "subtitle_3": "USE CODE: BAND4FREE TO UNLOCK 🔓",
+            "title_size": 28,
+            "subtitle_size": 20,
+            "spacing_between_elements": 20,
+            "spacing_title_subtitle": 10
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_8e9dfad_wmpJtg"
+      ],
+      "settings": {}
+    },
+    "image_with_text_yiLqWL": {
+      "type": "image-with-text",
+      "blocks": {
+        "item_JkKVPK": {
+          "type": "item",
+          "settings": {
+            "show_video": false,
+            "video_link": "",
+            "image": "shopify://shop_images/Diseno_sin_titulo_39_-min.png",
+            "tab_label": "Item",
+            "subheading": "30 NEW MODELS ARE WAITING FOR YOU RIGHT NOW!",
+            "title": "buy one, get o",
+            "content": "",
+            "button_text": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "item_JkKVPK"
+      ],
+      "disabled": true,
+      "custom_css": [
+        "h3 {font-size: 22px; color: #ffc200;}",
+        "h2 {font-size: 16px;}"
+      ],
+      "settings": {
+        "section_id": "",
+        "reveal_on_scroll": false,
+        "background_type": "full_width",
+        "background_overlap": "both",
+        "image_position": "left",
+        "text_alignment": "center",
+        "cycle_speed": 8,
+        "accent_background": "#000000",
+        "text_color": "#ffffff",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)",
+        "enable_custom_margin": false,
+        "margin_bottom": 0
+      }
+    },
+    "featured_product_Pe9xTD": {
+      "type": "featured-product",
+      "blocks": {
+        "variant_picker_nYiTGM": {
+          "type": "variant_picker",
+          "settings": {
+            "hide_sold_out_variants": false,
+            "selector_mode": "block",
+            "color_mode": "color",
+            "size_chart_page": ""
+          }
+        },
+        "buy_buttons_d4hqa3": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_payment_button": false,
+            "atc_button_background": "rgba(0,0,0,0)",
+            "atc_button_text_color": "rgba(0,0,0,0)",
+            "buy_now_button_background": "rgba(0,0,0,0)",
+            "buy_now_button_text_color": "rgba(0,0,0,0)"
+          }
+        },
+        "image_RNBxgt": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/3-min_2.png",
+            "image_alignment": "center",
+            "image_width": 370
+          }
+        },
+        "new_guarantee_banner_CYGQyF": {
+          "type": "new-guarantee_banner",
+          "disabled": true,
+          "settings": {}
+        },
+        "guarantee_banner_BH8DkP": {
+          "type": "guarantee_banner",
+          "settings": {
+            "badge": "shopify://shop_images/3-min_2_440x_png.png",
+            "title_start": "NO B.S. LIFETIME WARRANTY:",
+            "title_highlight": "BREAK IT. WE'LL REPLACE IT.",
+            "description": "<b>If your watch ever fails, we'll send you a new one FOR FREE. No questions asked.</b>"
+          }
+        }
+      },
+      "block_order": [
+        "variant_picker_nYiTGM",
+        "buy_buttons_d4hqa3",
+        "image_RNBxgt",
+        "new_guarantee_banner_CYGQyF",
+        "guarantee_banner_BH8DkP"
+      ],
+      "disabled": true,
+      "custom_css": [
+        "button {margin-top: -10px; padding: 5px; font-size: 16px;}",
+        ".product-guarantee-banner {margin-top: 3px;}"
+      ],
+      "settings": {
+        "product": "carbinox-limited-edition-straps-6-pack-22mm",
+        "subheading": "",
+        "title": "",
+        "show_vendor": false,
+        "show_sku": false,
+        "show_taxes_included": false,
+        "show_product_rating": false,
+        "show_share_buttons": false,
+        "help_page": "",
+        "enable_video_autoplay": false,
+        "enable_video_looping": false,
+        "enable_image_zoom": false,
+        "show_thumbnails_on_mobile": false,
+        "desktop_thumbnails_position": "bottom",
+        "transition_effect": "slide",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "section_id": ""
+      }
+    },
+    "rich_text_CLQXR8": {
+      "type": "rich-text",
+      "disabled": true,
+      "custom_css": [
+        "h2 {font-size: 16px;}",
+        "h3 {color: #ffc200; font-size: 25px;}"
+      ],
+      "settings": {
+        "section_id": "",
+        "subheading": "🚨 JUST FOR A LIMITED TIME:",
+        "title": "BUY THREE BANDS, GET 20% OFF APPLIED ON THEM!",
+        "content": "<h5><strong>*JUST ADD THE 3 BANDS TO YOUR CART AND DISCOUNT WILL BE APPLIED AUTOMATICALLY!</strong></h5>",
+        "button_text": "",
+        "button_link": "",
+        "background_type": "full_width",
+        "text_width": "fill",
+        "text_position": "center",
+        "text_alignment": "center",
+        "background": "#000000",
+        "text_color": "#ffffff",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "image_with_text_pbMj4H": {
+      "type": "image-with-text",
+      "blocks": {
+        "item_3xykzd": {
+          "type": "item",
+          "settings": {
+            "show_video": false,
+            "video_link": "",
+            "image": "shopify://shop_images/SAVE_BIG_ON_STRAPS_BY_BUNDLING-min.png",
+            "tab_label": "Item",
+            "subheading": "",
+            "title": "",
+            "content": "<h5><strong>*THESE BANDS ARE ONLY COMPATIBLE WITH CARBINOX VESTA, CARBINOX X-RANGER AND CARBINOX VORTEX.</strong></h5>",
+            "button_text": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "item_3xykzd"
+      ],
+      "disabled": true,
+      "settings": {
+        "section_id": "",
+        "reveal_on_scroll": false,
+        "background_type": "full_width",
+        "background_overlap": "both",
+        "image_position": "left",
+        "text_alignment": "center",
+        "cycle_speed": 8,
+        "accent_background": "#000000",
+        "text_color": "#ffffff",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)",
+        "enable_custom_margin": false,
+        "margin_bottom": 0
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "show_title": true,
+        "page_width": "medium"
+      }
+    },
+    "1660943138b8d1a11b": {
+      "type": "featured-collections",
+      "blocks": {
+        "166094313829073205-0": {
+          "type": "collection",
+          "settings": {
+            "collection": "carbinox-bands-22mm",
+            "label": "",
+            "button_text": "",
+            "button_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "166094313829073205-0"
+      ],
+      "settings": {
+        "subheading": "",
+        "title": "THREE SIMPLE STEPS:",
+        "heading_alignment": "center",
+        "content": "<p><strong>1. ADD YOUR FAVORITE BANDS TO YOUR SHOPPING CART.<br/>2. COPY THE DISCOUNT CODE THAT APPLIES FOR YOUR QUANTITIES.<br/>3. PASTE THE CODE AT CHECKOUT TO CLAIM YOUR OFFER 🎉</strong></p>",
+        "products_count": 50,
+        "products_per_row": 5,
+        "stack_products": true,
+        "show_cta": true,
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "16609431490f6f5bc0": {
+      "type": "featured-collections",
+      "disabled": true,
+      "settings": {
+        "subheading": "",
+        "title": "smartwatches",
+        "heading_alignment": "left",
+        "content": "",
+        "products_count": 8,
+        "products_per_row": 4,
+        "stack_products": true,
+        "show_cta": false,
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    }
+  },
+  "order": [
+    "177446673746afe4eb",
+    "image_with_text_yiLqWL",
+    "featured_product_Pe9xTD",
+    "rich_text_CLQXR8",
+    "image_with_text_pbMj4H",
+    "main",
+    "1660943138b8d1a11b",
+    "16609431490f6f5bc0"
+  ]
+}

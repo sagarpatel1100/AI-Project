@@ -1,0 +1,236 @@
+<section class="story-hero">
+
+  <div class="story-hero__content">
+
+    <h1 class="story-hero__title">
+      {{ section.settings.title }}
+    </h1>
+
+    <div class="story-hero__user">
+
+      <img
+        class="story-hero__avatar"
+        src="{{ section.settings.user_image | image_url }}"
+        alt="{{ section.settings.user_name }}"
+      >
+
+      <div class="story-hero__user-info">
+        <span class="story-hero__name">
+          {{ section.settings.user_name }}
+        </span>
+        <div class="test-verify">
+        <span class="story-hero__role">
+          {{ section.settings.user_role }}
+        </span>
+          <img
+            class="story-hero__verified"
+            src="{{ section.settings.verified_icon | image_url }}"
+            alt="Verified"
+          >
+          </div>
+      </div>
+
+    </div>
+
+  </div>
+
+<div class="story-hero__image">
+
+  <picture>
+    {% if section.settings.hero_image_mobile != blank %}
+      <source 
+        media="(max-width: 768px)" 
+        srcset="{{ section.settings.hero_image_mobile | image_url }}"
+      >
+    {% endif %}
+
+    <img
+      src="{{ section.settings.hero_image | image_url }}"
+      alt=""
+      loading="lazy"
+    >
+  </picture>
+
+</div>
+
+</section>
+
+
+<style>
+
+.story-hero{
+  width:100%;
+  background:#FAFAFA;
+}
+
+.story-hero__content{
+  max-width:1140px;
+  margin:0 auto;
+  padding:80px 20px;
+}
+
+.story-hero__title{
+  font-family:Inter;
+  font-weight:700;
+  font-size:60px;
+  line-height:100%;
+  letter-spacing:-1%;
+  color:#000;
+  margin:0;
+}
+
+.story-hero__user{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  margin-top:38px;
+}
+
+.test-verify {
+display: flex;
+align-items:center;
+gap: 6px;
+}
+
+.story-hero__avatar{
+  width:56.73px;
+  height:56.73px;
+  border-radius:50%;
+  object-fit:cover;
+}
+
+.story-hero__user-info{
+  display:flex;
+  flex-direction:column;
+}
+
+.story-hero__name{
+  font-family:Inter;
+  font-weight:500;
+  font-size:18px;
+  line-height:120%;
+  color:#000;
+  display:flex;
+  align-items:center;
+  gap:6px;
+}
+
+.story-hero__verified{
+  width:25.53px;
+  height:25.53px;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+.story-hero__verified{
+  width:18px;
+  height:18px;
+}
+
+}
+
+.story-hero__role{
+  font-family:Inter;
+  font-weight:400;
+  font-size:18px;
+  line-height:120%;
+  color:#000;
+}
+
+.story-hero__image{
+  width:100%;
+  max-width:1440px;
+  margin:0 auto;
+}
+
+.story-hero__image img{
+  width:100%;
+  display:block;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+.story-hero__content{
+  padding:30px 20px;
+}
+
+.story-hero__title{
+  font-size:34px;
+}
+
+.story-hero__user{
+  margin-top:15px;
+}
+
+.story-hero__name{
+  font-size:14px;
+}
+
+.story-hero__role{
+  font-size:14px;
+}
+
+.story-hero__avatar{
+  width:40px;
+  height:40px;
+}
+
+}
+
+</style>
+
+
+{% schema %}
+{
+  "name": "Customer Story Hero",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+      "default": "How This Work Watch Saved Daniel’s Life, And Could Save Yours Too!"
+    },
+    {
+      "type": "image_picker",
+      "id": "user_image",
+      "label": "User image"
+    },
+    {
+      "type": "text",
+      "id": "user_name",
+      "label": "User name",
+      "default": "Daniel T."
+    },
+    {
+      "type": "text",
+      "id": "user_role",
+      "label": "User role",
+      "default": "True Customer Story"
+    },
+    {
+      "type": "image_picker",
+      "id": "verified_icon",
+      "label": "Verified icon"
+    },
+    {
+      "type": "image_picker",
+      "id": "hero_image",
+      "label": "Hero image"
+    },
+    {
+      "type": "image_picker",
+      "id": "hero_image_mobile",
+      "label": "Hero image mobile"
+    }
+  ],
+  "presets":[
+    {
+      "name":"Advertorial Hero"
+    }
+  ]
+}
+{% endschema %}

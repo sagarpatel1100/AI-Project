@@ -1,0 +1,182 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "show_title": true,
+        "page_width": "medium"
+      }
+    },
+    "1660943138b8d1a11b": {
+      "type": "featured-collections",
+      "blocks": {
+        "166094313829073205-0": {
+          "type": "collection",
+          "settings": {
+            "collection": "accessories",
+            "label": "",
+            "button_text": "",
+            "button_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "166094313829073205-0"
+      ],
+      "disabled": true,
+      "settings": {
+        "subheading": "",
+        "title": "Accessories",
+        "heading_alignment": "left",
+        "content": "",
+        "products_count": 14,
+        "products_per_row": 5,
+        "stack_products": true,
+        "show_cta": false,
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "16609431490f6f5bc0": {
+      "type": "featured-collections",
+      "blocks": {
+        "16609431499ce85c1d-0": {
+          "type": "collection",
+          "settings": {
+            "collection": "watches",
+            "label": "",
+            "button_text": "",
+            "button_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "16609431499ce85c1d-0"
+      ],
+      "disabled": true,
+      "settings": {
+        "subheading": "",
+        "title": "smartwatches",
+        "heading_alignment": "left",
+        "content": "",
+        "products_count": 8,
+        "products_per_row": 4,
+        "stack_products": true,
+        "show_cta": false,
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "1660943153e3b6cfb3": {
+      "type": "featured-collections",
+      "blocks": {
+        "1660943153c31626fa-0": {
+          "type": "collection",
+          "settings": {
+            "collection": "extras-1",
+            "label": "",
+            "button_text": "",
+            "button_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "1660943153c31626fa-0"
+      ],
+      "disabled": true,
+      "settings": {
+        "subheading": "",
+        "title": "extra",
+        "heading_alignment": "left",
+        "content": "",
+        "products_count": 8,
+        "products_per_row": 4,
+        "stack_products": true,
+        "show_cta": false,
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "slideshow_pCrccH": {
+      "type": "slideshow",
+      "blocks": {
+        "image_C8a9ar": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Diseno_sin_titulo_35_-min.png",
+            "mobile_image": "shopify://shop_images/Diseno_sin_titulo_34_-min.png",
+            "text_position": "middle_center",
+            "subheading": "",
+            "title": "",
+            "button_1_text": "DOWNLOAD ON ios APPLE STORE ➔",
+            "button_1_link": "https://apps.apple.com/en/app/id6751258013",
+            "button_2_text": "DOWNLOAD ON GOOGLE PLAY STORE ➔",
+            "button_2_link": "https://play.google.com/store/apps/details?id=com.carbinox.app.max",
+            "text_color": "#ffc200",
+            "button_background": "#ffc200",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "image_C8a9ar"
+      ],
+      "custom_css": [
+        "@media (max-width: 360px) {.button--primary {padding-right: 10px !important; padding-left: 10px !important; position: relative !important; top: 0px !important; }}"
+      ],
+      "name": "Slideshow",
+      "settings": {
+        "section_height": "large",
+        "transition_type": "reveal",
+        "autoplay": false,
+        "cycle_speed": 5,
+        "background": "rgba(0,0,0,0)"
+      }
+    },
+    "custom_liquid_bBwBr9": {
+      "type": "custom-liquid",
+      "name": "Custom Liquid",
+      "settings": {
+        "subheading": "",
+        "title": "",
+        "liquid": "<style>\n.announcement-bar {\n  display: none !important;\n}\n\n.footer {\n  display: none !important;\n}\n\n.slideshow__slide-inner {\n  height: 64vh;\n }\n\n@media screen and (min-width: 1380px) {\n  .slideshow__slide-inner {\n    height: 100%;\n  }\n}\n\n@media screen and (min-width: 1000px) {\n  .slideshow__slide-inner {\n    height: 100%;\n  }\n  .button-group__wrapper {\n    display: flex !important;\n    gap: 12px !important;\n    flex-direction: column !important;\n  }\n \n  .content-box.content-box--medium.content-box--text-center.content-box--center.text-container {\n    width: 50%;\n    display: flex;\n  }\n}\n\n@media screen and (max-width: 768px) {\n  .content-box.content-box--medium.content-box--text-center.content-box--center.text-container {\n    position: relative;\n    top: 180px;\n  }\n\n  .button-group .button {\n    margin: 6px;\n  }\n\n  .content-box.content-box--medium.content-box--text-center.content-box--center.text-container {\n    position: relative;\n    top: 180px;\n  }\n\n  .slideshow__text-wrapper.slideshow__text-wrapper--middle.vertical-breather {\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n  }\n}\n\n@media (min-width: 741px) and (max-width: 999px) {\n  .button-group__wrapper {\n    display: flex;\n    gap: 12px;\n    flex-direction: column;\n  }\n\n.content-box.content-box--medium.content-box--text-center.content-box--center.text-container {\n        position: relative;\n        top: 240px;\n    }\n\n .slideshow__slide-inner {\n    height: 100%;\n }\n\n.slideshow__text-wrapper.slideshow__text-wrapper--middle.vertical-breather {\n    display: flex;\n    justify-content: center;\n}\n}\n\n@media screen and (max-width: 428px) {\n  .content-box.content-box--medium.content-box--text-center.content-box--center.text-container {\n    position: relative;\n    top: 130px;\n  }\n}\n\n@media screen and (min-width: 359px) and (max-width: 361px) {\n    .content-box.content-box--medium.content-box--text-center.content-box--center.text-container {\n        position: relative;\n        top: 110px;\n    }\n}\n\n</style>",
+        "add_vertical_spacing": false,
+        "background_type": "full_width",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "blocks_fmh9gg": {
+      "type": "_blocks",
+      "name": "Image with buttons",
+      "settings": {}
+    }
+  },
+  "order": [
+    "main",
+    "1660943138b8d1a11b",
+    "16609431490f6f5bc0",
+    "1660943153e3b6cfb3",
+    "slideshow_pCrccH",
+    "custom_liquid_bBwBr9",
+    "blocks_fmh9gg"
+  ]
+}

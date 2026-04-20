@@ -1,0 +1,333 @@
+{% liquid
+  assign heading_line_1 = section.settings.heading_line_1
+  assign heading_line_2 = section.settings.heading_line_2
+  assign description = section.settings.description
+
+  assign background_color = section.settings.background_color
+  assign heading_color = section.settings.heading_color
+  assign highlight_color = section.settings.highlight_color
+  assign description_color = section.settings.description_color
+
+  assign content_max_width = section.settings.content_max_width
+  assign heading_max_width = section.settings.heading_max_width
+  assign description_max_width = section.settings.description_max_width
+
+  assign content_max_width_mobile = section.settings.content_max_width_mobile
+  assign heading_max_width_mobile = section.settings.heading_max_width_mobile
+  assign description_max_width_mobile = section.settings.description_max_width_mobile
+
+  assign padding_top = section.settings.padding_top
+  assign padding_bottom = section.settings.padding_bottom
+  assign padding_horizontal = section.settings.padding_horizontal
+
+  assign padding_top_mobile = section.settings.padding_top_mobile
+  assign padding_bottom_mobile = section.settings.padding_bottom_mobile
+  assign padding_horizontal_mobile = section.settings.padding_horizontal_mobile
+
+  assign heading_size_desktop = section.settings.heading_size_desktop
+  assign heading_size_mobile = section.settings.heading_size_mobile
+  assign description_size_desktop = section.settings.description_size_desktop
+  assign description_size_mobile = section.settings.description_size_mobile
+
+  assign gap_desktop = section.settings.gap_desktop
+  assign gap_mobile = section.settings.gap_mobile
+
+  assign has_content = false
+  if heading_line_1 != blank or heading_line_2 != blank or description != blank
+    assign has_content = true
+  endif
+%}
+
+{{ 'section-trade-in-upgrade-message.css' | asset_url | stylesheet_tag }}
+
+{% if has_content %}
+  <section
+    id="trade-in-upgrade-message-{{ section.id }}"
+    class="trade-in-upgrade-message"
+    style="
+      --trade-in-upgrade-message-bg: {{ background_color }};
+      --trade-in-upgrade-message-heading-color: {{ heading_color }};
+      --trade-in-upgrade-message-highlight-color: {{ highlight_color }};
+      --trade-in-upgrade-message-description-color: {{ description_color }};
+      --trade-in-upgrade-message-content-max-width: {{ content_max_width }}px;
+      --trade-in-upgrade-message-heading-max-width: {{ heading_max_width }}px;
+      --trade-in-upgrade-message-description-max-width: {{ description_max_width }}px;
+      --trade-in-upgrade-message-content-max-width-mobile: {{ content_max_width_mobile }}px;
+      --trade-in-upgrade-message-heading-max-width-mobile: {{ heading_max_width_mobile }}px;
+      --trade-in-upgrade-message-description-max-width-mobile: {{ description_max_width_mobile }}px;
+      --trade-in-upgrade-message-padding-top: {{ padding_top }}px;
+      --trade-in-upgrade-message-padding-bottom: {{ padding_bottom }}px;
+      --trade-in-upgrade-message-padding-horizontal: {{ padding_horizontal }}px;
+      --trade-in-upgrade-message-padding-top-mobile: {{ padding_top_mobile }}px;
+      --trade-in-upgrade-message-padding-bottom-mobile: {{ padding_bottom_mobile }}px;
+      --trade-in-upgrade-message-padding-horizontal-mobile: {{ padding_horizontal_mobile }}px;
+      --trade-in-upgrade-message-heading-size-desktop: {{ heading_size_desktop }}px;
+      --trade-in-upgrade-message-heading-size-mobile: {{ heading_size_mobile }}px;
+      --trade-in-upgrade-message-description-size-desktop: {{ description_size_desktop }}px;
+      --trade-in-upgrade-message-description-size-mobile: {{ description_size_mobile }}px;
+      --trade-in-upgrade-message-gap-desktop: {{ gap_desktop }}px;
+      --trade-in-upgrade-message-gap-mobile: {{ gap_mobile }}px;
+    "
+  >
+    <div class="trade-in-upgrade-message__inner">
+      <div class="trade-in-upgrade-message__container">
+        {% if heading_line_1 != blank or heading_line_2 != blank %}
+          <h2 class="trade-in-upgrade-message__heading">
+            {% if heading_line_1 != blank %}
+              <span class="trade-in-upgrade-message__heading-line">
+                {{ heading_line_1 }}
+              </span>
+            {% endif %}
+
+            {% if heading_line_2 != blank %}
+              <span class="trade-in-upgrade-message__heading-line trade-in-upgrade-message__heading-line--highlight">
+                {{ heading_line_2 }}
+              </span>
+            {% endif %}
+          </h2>
+        {% endif %}
+
+        {% if description != blank %}
+          <div class="trade-in-upgrade-message__description rte">
+            {{ description }}
+          </div>
+        {% endif %}
+      </div>
+    </div>
+  </section>
+{% endif %}
+
+{% schema %}
+{
+  "name": "Trade In Upgrade Message",
+  "tag": "section",
+  "class": "section-trade-in-upgrade-message",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading_line_1",
+      "label": "Heading line 1 (36px desktop / 30px mobile)",
+      "default": "YOUR CARBINOX SERVED YOU WELL."
+    },
+    {
+      "type": "text",
+      "id": "heading_line_2",
+      "label": "Heading line 2 highlight (36px desktop / 30px mobile)",
+      "default": "NOW UPGRADE FOR LESS."
+    },
+    {
+      "type": "richtext",
+      "id": "description",
+      "label": "Description (16px)",
+      "default": "<p>You beat the hell out of your watch — and it kept going. But our newest models are tougher, faster, and packed with features your old one doesn't have. <strong>Don't let your old watch collect dust.</strong> Turn it into credit and gear up with something better.</p>"
+    },
+    {
+      "type": "header",
+      "content": "Colors"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background color (#000000)",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "heading_color",
+      "label": "Heading color (#FFFFFF)",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "color",
+      "id": "highlight_color",
+      "label": "Highlight color (#FFC200)",
+      "default": "#FFC200"
+    },
+    {
+      "type": "color",
+      "id": "description_color",
+      "label": "Description color (#FFFFFF)",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "header",
+      "content": "Desktop layout"
+    },
+    {
+      "type": "range",
+      "id": "content_max_width",
+      "label": "Content max width desktop (1440px)",
+      "min": 800,
+      "max": 1600,
+      "step": 20,
+      "default": 1440
+    },
+    {
+      "type": "range",
+      "id": "heading_max_width",
+      "label": "Heading max width desktop (1040px)",
+      "min": 600,
+      "max": 1200,
+      "step": 20,
+      "default": 1040
+    },
+    {
+      "type": "range",
+      "id": "description_max_width",
+      "label": "Description max width desktop (1040px)",
+      "min": 600,
+      "max": 1200,
+      "step": 20,
+      "default": 1040
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "label": "Top padding desktop (60px)",
+      "min": 0,
+      "max": 160,
+      "step": 2,
+      "default": 60
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "label": "Bottom padding desktop (60px)",
+      "min": 0,
+      "max": 160,
+      "step": 2,
+      "default": 60
+    },
+    {
+      "type": "range",
+      "id": "padding_horizontal",
+      "label": "Horizontal padding desktop (100px)",
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "default": 100
+    },
+    {
+      "type": "header",
+      "content": "Mobile layout"
+    },
+    {
+      "type": "range",
+      "id": "content_max_width_mobile",
+      "label": "Content max width mobile (390px)",
+      "min": 260,
+      "max": 500,
+      "step": 5,
+      "default": 390
+    },
+    {
+      "type": "range",
+      "id": "heading_max_width_mobile",
+      "label": "Heading max width mobile (310px)",
+      "min": 220,
+      "max": 400,
+      "step": 2,
+      "default": 310
+    },
+    {
+      "type": "range",
+      "id": "description_max_width_mobile",
+      "label": "Description max width mobile (310px)",
+      "min": 220,
+      "max": 400,
+      "step": 2,
+      "default": 310
+    },
+    {
+      "type": "range",
+      "id": "padding_top_mobile",
+      "label": "Top padding mobile (30px)",
+      "min": 0,
+      "max": 120,
+      "step": 2,
+      "default": 30
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom_mobile",
+      "label": "Bottom padding mobile (30px)",
+      "min": 0,
+      "max": 120,
+      "step": 2,
+      "default": 30
+    },
+    {
+      "type": "range",
+      "id": "padding_horizontal_mobile",
+      "label": "Horizontal padding mobile (40px)",
+      "min": 0,
+      "max": 80,
+      "step": 2,
+      "default": 40
+    },
+    {
+      "type": "header",
+      "content": "Typography"
+    },
+    {
+      "type": "range",
+      "id": "heading_size_desktop",
+      "label": "Heading font size desktop (36px)",
+      "min": 20,
+      "max": 60,
+      "step": 1,
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "heading_size_mobile",
+      "label": "Heading font size mobile (30px)",
+      "min": 18,
+      "max": 44,
+      "step": 1,
+      "default": 30
+    },
+    {
+      "type": "range",
+      "id": "description_size_desktop",
+      "label": "Description font size desktop (16px)",
+      "min": 12,
+      "max": 24,
+      "step": 1,
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "description_size_mobile",
+      "label": "Description font size mobile (16px)",
+      "min": 12,
+      "max": 24,
+      "step": 1,
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "gap_desktop",
+      "label": "Gap desktop (30px)",
+      "min": 0,
+      "max": 80,
+      "step": 2,
+      "default": 30
+    },
+    {
+      "type": "range",
+      "id": "gap_mobile",
+      "label": "Gap mobile (10px)",
+      "min": 0,
+      "max": 40,
+      "step": 2,
+      "default": 10
+    }
+  ],
+  "presets": [
+    {
+      "name": "Trade In Upgrade Message"
+    }
+  ]
+}
+{% endschema %}

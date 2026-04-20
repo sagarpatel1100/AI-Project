@@ -1,0 +1,176 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "show_title": true,
+        "page_width": "medium"
+      }
+    },
+    "header_adventorial_R9c3d7": {
+      "type": "header-adventorial",
+      "name": "Header Adventorial",
+      "settings": {
+        "show_topbar": true,
+        "topbar_text": "#1 US Tech Gift 2025 – Order Now",
+        "topbar_bg": "#395B36",
+        "topbar_color": "#FFFFFF",
+        "logo": "shopify://shop_images/image_97.png",
+        "show_breadcrumbs": true,
+        "breadcrumb_home_label": "Home"
+      }
+    },
+    "adventorial_article_VCP7TH": {
+      "type": "adventorial-article",
+      "name": "Adventorial Article",
+      "settings": {
+        "title": "5 Reasons This Durable Smartwatch Beats Gift Cards, Gadgets, And Stinky Socks He’ll Never Use",
+        "subtitle": "",
+        "image": "shopify://shop_images/3_66.png",
+        "content": "<p>Buying gifts for <strong>a man who works with his hands</strong> is always a gamble.<br/><br/>You can only give so many gift cards before it feels lazy. Random gadgets seem fun for a day, then end up in a drawer. And every year, it gets harder to find something that feels thoughtful but doesn’t turn into clutter.<br/><br/>If the guy you’re shopping for spends his days in a shop, on a job site, in a truck, or out in the cold, the best gift you can give him is something he’ll actually use every day—and that can survive the way he works.<br/><br/>That’s where a rugged smartwatch like <span style=\"text-decoration:underline\"><strong>The Carbinox Blaze</strong></span> quietly beats the usual December gifts. Here are the top 5 reasons why it’s a better move than another plastic gadget or envelope with a card inside.</p>",
+        "show_button": false,
+        "button_label": "CLICK HERE TO CHECK AVAILABILITY",
+        "button_url": "",
+        "button_new_tab": false,
+        "show_divider": true
+      }
+    },
+    "adventorial_article_yw3zdA": {
+      "type": "adventorial-article",
+      "custom_css": [
+        ".adventorial-article__content {max-width: 770px;}"
+      ],
+      "name": "Adventorial Article",
+      "settings": {
+        "title": "",
+        "subtitle": "1. He’ll Actually Use It Every Day",
+        "image": "shopify://shop_images/4_63.png",
+        "content": "<p>Most gifts get their moment when the wrapping paper comes off… and that’s about it. A gift card gets stuffed in a wallet and forgotten. A novelty gadget gets played with once or twice, then disappears into a toolbox or a desk drawer.<br/><br/>A <span style=\"text-decoration:underline\"><strong>rugged smartwatch</strong></span> is different. It goes on his wrist in the morning and stays there all day. When he’s at work, he glances at it to see who’s calling without digging his phone out of a dirty pocket. When his hands are full, he can quickly check a message and decide if it’s worth stopping what he’s doing. When the day finally slows down, it’s still on his wrist, tracking how much he’s moved and how hard he’s pushed.<br/><br/>Instead of a gift that shows up once a month, you’re giving him <span style=\"text-decoration:underline\"><strong>the best work watch</strong></span> that quietly shows up every single day.<br/></p>",
+        "show_button": false,
+        "button_label": "CLICK HERE TO CHECK AVAILABILITY",
+        "button_url": "",
+        "button_new_tab": false,
+        "show_divider": true
+      }
+    },
+    "adventorial_article_FinM3J": {
+      "type": "adventorial-article",
+      "name": "Adventorial Article",
+      "settings": {
+        "title": "",
+        "subtitle": "2. It’s Built For His World, Not An Office",
+        "image": "shopify://shop_images/6_1_1.png",
+        "content": "<p>A lot of “nice” tech is made for climate-controlled, polished environments. It looks great next to a laptop and a latte. But if he works around concrete, rebar, engines, steel, mud, or heavy equipment, that kind of gear doesn’t last long.<br/><br/>His reality is different. He’s crawling under trucks, squeezing through framing, climbing ladders, handling tools, loading and unloading in all kinds of weather. That’s the world <span style=\"text-decoration:underline\"><strong>The Carbinox Blaze</strong></span> is built for. The casing is rugged, the screen is impact-resistant, and the whole thing is designed to shrug off dust, sweat, grease, and the occasional hard knock.<br/><br/>Instead of buying him something he has to baby, you’re giving him <a href=\"https://shopcarbinox.com/products/carbinox-blaze?_pos=1&_psq=blaze&_ss=e&_v=1.0\" target=\"_blank\">the toughest tool</a> that’s meant to take the same beating he does.</p>",
+        "show_button": false,
+        "button_label": "CLICK HERE TO CHECK AVAILABILITY",
+        "button_url": "",
+        "button_new_tab": false,
+        "show_divider": true
+      }
+    },
+    "adventorial_article_Kmdz8F": {
+      "type": "adventorial-article",
+      "name": "Adventorial Article",
+      "settings": {
+        "title": "",
+        "subtitle": "3. Does What $800+ Watches Do—Without The $800+ Price",
+        "image": "shopify://shop_images/Frame_1984078502.png",
+        "content": "<p>Top-brand smartwatches can easily climb into the $800 range once you start adding features, finishes, and logos. The problem is, most of what you’re paying for has nothing to do with how he actually uses the watch.<br/><br/>At the end of the day, he cares about the basics: seeing who’s calling, reading texts, getting notifications, tracking his heart rate, sleep, and daily activity. <span style=\"text-decoration:underline\"><strong>A rugged watch like our</strong></span>s does all of that without asking you to drop eight hundred bucks on something that might not survive his work week.<br/><br/>You still get the “smart” part of a smartwatch—connection, health tracking, and everyday convenience—but in a package built for real work, at a price that doesn’t make you nervous every time he bangs it on a lift or a workbench. <span style=\"text-decoration:underline\"><strong>The Carbinox Blaze</strong></span> feels like a premium gift without you paying premium-brand money.</p>",
+        "show_button": false,
+        "button_label": "CLICK HERE TO CHECK AVAILABILITY",
+        "button_url": "",
+        "button_new_tab": false,
+        "show_divider": true
+      }
+    },
+    "adventorial_article_qrxCYn": {
+      "type": "adventorial-article",
+      "name": "Adventorial Article",
+      "settings": {
+        "title": "",
+        "subtitle": "4. Battery That Outlasts His Double Shift",
+        "image": "shopify://shop_images/Mask_group_4.png",
+        "content": "<p>Buying gifts for <strong>a man who works with his hands</strong> is always a gamble.<br/><br/>You can only give so many gift cards before it feels lazy. Random gadgets seem fun for a day, then end up in a drawer. And every year, it gets harder to find something that feels thoughtful but doesn’t turn into clutter.<br/><br/>If the guy you’re shopping for spends his days in a shop, on a job site, in a truck, or out in the cold, the best gift you can give him is something he’ll actually use every day—and that can survive the way he works.<br/><br/>That’s where a rugged smartwatch like <span style=\"text-decoration:underline\"><strong>The Carbinox Blaze</strong></span> quietly beats the usual December gifts. Here are the top 5 reasons why it’s a better move than another plastic gadget or envelope with a card inside.</p>",
+        "show_button": false,
+        "button_label": "CLICK HERE TO CHECK AVAILABILITY",
+        "button_url": "",
+        "button_new_tab": false,
+        "show_divider": true
+      }
+    },
+    "adventorial_article_3eQRCt": {
+      "type": "adventorial-article",
+      "name": "Adventorial Article",
+      "settings": {
+        "title": "",
+        "subtitle": "5. Zero-Risk Gift",
+        "image": "shopify://shop_images/2_4_1.png",
+        "content": "<p>Buying gifts for <strong>a man who works with his hands</strong> is always a gamble.<br/><br/>You can only give so many gift cards before it feels lazy. Random gadgets seem fun for a day, then end up in a drawer. And every year, it gets harder to find something that feels thoughtful but doesn’t turn into clutter.<br/><br/>If the guy you’re shopping for spends his days in a shop, on a job site, in a truck, or out in the cold, the best gift you can give him is something he’ll actually use every day—and that can survive the way he works.<br/><br/>That’s where a rugged smartwatch like <span style=\"text-decoration:underline\"><strong>The Carbinox Blaze</strong></span> quietly beats the usual December gifts. Here are the top 5 reasons why it’s a better move than another plastic gadget or envelope with a card inside.</p>",
+        "show_button": true,
+        "button_label": "CLICK HERE TO CHECK AVAILABILITY",
+        "button_url": "shopify://products/carbinox-blaze-smartwatch-ultimate-pack-1",
+        "button_icon": "shopify://shop_images/arrow-up-right.png",
+        "button_new_tab": true,
+        "show_divider": false
+      }
+    },
+    "footer_adventorial_iAiJYb": {
+      "type": "footer-adventorial",
+      "blocks": {
+        "link_xG9V7p": {
+          "type": "link",
+          "settings": {
+            "link_label": "Privacy Policy",
+            "link_url": "shopify://policies/privacy-policy"
+          }
+        },
+        "link_YUUEte": {
+          "type": "link",
+          "settings": {
+            "link_label": "Terms Of Service",
+            "link_url": "shopify://policies/terms-of-service"
+          }
+        },
+        "link_YWYekz": {
+          "type": "link",
+          "settings": {
+            "link_label": "Refund Policy",
+            "link_url": "shopify://policies/refund-policy"
+          }
+        }
+      },
+      "block_order": [
+        "link_xG9V7p",
+        "link_YUUEte",
+        "link_YWYekz"
+      ],
+      "name": "Footer Adventorial",
+      "settings": {
+        "footer_bg": "#395B36",
+        "logo": "shopify://shop_images/image_98.png",
+        "copyright": "©2025 CARBINOX – All Rights Reserved."
+      }
+    }
+  },
+  "order": [
+    "main",
+    "header_adventorial_R9c3d7",
+    "adventorial_article_VCP7TH",
+    "adventorial_article_yw3zdA",
+    "adventorial_article_FinM3J",
+    "adventorial_article_Kmdz8F",
+    "adventorial_article_qrxCYn",
+    "adventorial_article_3eQRCt",
+    "footer_adventorial_iAiJYb"
+  ]
+}

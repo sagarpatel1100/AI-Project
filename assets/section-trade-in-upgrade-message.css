@@ -1,0 +1,92 @@
+.trade-in-upgrade-message {
+  background-color: var(--trade-in-upgrade-message-bg);
+}
+
+.trade-in-upgrade-message__inner {
+  padding-top: var(--trade-in-upgrade-message-padding-top);
+  padding-right: var(--trade-in-upgrade-message-padding-horizontal);
+  padding-bottom: var(--trade-in-upgrade-message-padding-bottom);
+  padding-left: var(--trade-in-upgrade-message-padding-horizontal);
+}
+
+.trade-in-upgrade-message__container {
+  width: 100%;
+  max-width: var(--trade-in-upgrade-message-content-max-width);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--trade-in-upgrade-message-gap-desktop);
+}
+
+.trade-in-upgrade-message__description strong{
+  color: rgba(255,255,255,1);
+}
+
+.trade-in-upgrade-message__heading {
+  width: 100%;
+  max-width: var(--trade-in-upgrade-message-heading-max-width);
+  margin: 0;
+  text-align: center;
+  color: var(--trade-in-upgrade-message-heading-color);
+  font-size: var(--trade-in-upgrade-message-heading-size-desktop);
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+}
+
+.trade-in-upgrade-message__heading-line {
+  display: block;
+}
+
+.trade-in-upgrade-message__heading-line--highlight {
+  color: var(--trade-in-upgrade-message-highlight-color);
+  font-style: italic;
+}
+
+.trade-in-upgrade-message__description {
+  width: 100%;
+  max-width: var(--trade-in-upgrade-message-description-max-width);
+  margin: 0;
+  text-align: center;
+  color: var(--trade-in-upgrade-message-description-color);
+  font-size: var(--trade-in-upgrade-message-description-size-desktop);
+  font-weight: 400;
+  line-height: 1.25;
+  letter-spacing: -0.01em;
+  color: rgba(255,255,255,0.8);
+}
+
+.trade-in-upgrade-message__description p {
+  margin: 0;
+}
+
+.trade-in-upgrade-message__description strong {
+  font-weight: 600;
+}
+
+@media screen and (max-width: 767px) {
+  .trade-in-upgrade-message__inner {
+    padding-top: var(--trade-in-upgrade-message-padding-top-mobile);
+    padding-right: var(--trade-in-upgrade-message-padding-horizontal-mobile);
+    padding-bottom: var(--trade-in-upgrade-message-padding-bottom-mobile);
+    padding-left: var(--trade-in-upgrade-message-padding-horizontal-mobile);
+  }
+
+  .trade-in-upgrade-message__container {
+    max-width: var(--trade-in-upgrade-message-content-max-width-mobile);
+    gap: var(--trade-in-upgrade-message-gap-mobile);
+  }
+
+  .trade-in-upgrade-message__heading {
+    max-width: var(--trade-in-upgrade-message-heading-max-width-mobile);
+    font-size: var(--trade-in-upgrade-message-heading-size-mobile);
+  }
+
+  .trade-in-upgrade-message__description {
+    max-width: var(--trade-in-upgrade-message-description-max-width-mobile);
+    font-size: var(--trade-in-upgrade-message-description-size-mobile);
+    line-height: 1.25;
+  }
+}

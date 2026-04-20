@@ -1,0 +1,688 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "show_title": true,
+        "page_width": "medium"
+      }
+    },
+    "custom_liquid_tfjXkt": {
+      "type": "custom-liquid",
+      "name": "Hide header",
+      "settings": {
+        "subheading": "",
+        "title": "",
+        "liquid": "<style>\n.test-header.new-header {\ndisplay: none !important;\n}\n#shopify-section-announcement-bar,\n#shopify-section-header,\n#shopify-section-footer {\ndisplay: none !important;\n}\n#shopify-section-template--27215993930100__custom_liquid_tfjXkt .section {\npadding: 0;\nmargin: 0;\n}\n</style>",
+        "add_vertical_spacing": true,
+        "background_type": "full_width",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "trade_in_topbar_nCnLFf": {
+      "type": "trade-in-topbar",
+      "name": "Trade In Topbar",
+      "settings": {
+        "desktop_text": "<p>TRADE IN YOUR OLD WATCH → GET UP TO $100 IN CREDIT TOWARD YOUR UPGRADE</p>",
+        "mobile_text": "<p>TRADE IN YOUR OLD WATCH →<br/>GET UP TO $100 IN CREDIT TOWARD YOUR UPGRADE</p>",
+        "topbar_link": "",
+        "bg_color": "#ffc200",
+        "text_color": "#000000",
+        "desktop_font_size": 14,
+        "mobile_font_size": 12,
+        "font_weight": 600,
+        "letter_spacing": 0,
+        "padding_top": 6,
+        "padding_bottom": 6,
+        "padding_horizontal": 10,
+        "section_padding_top": 0,
+        "section_padding_bottom": 0
+      }
+    },
+    "trade_in_hero_6EK7p9": {
+      "type": "trade-in-hero",
+      "name": "Trade In Hero",
+      "settings": {
+        "desktop_image": "shopify://shop_images/hero-desktop-1.webp",
+        "mobile_image": "shopify://shop_images/hero-mobile-1.webp",
+        "badge_text": "CARBINOX TRADE-IN PROGRAM",
+        "heading_line_1": "YOUR OLD WATCH",
+        "heading_highlight": "STILL HAS VALUE.",
+        "description": "<p>Trade in any Carbinox watch — working or not — and get up to $100 in credit toward our newest models</p>",
+        "button_label": "START MY TRADE-IN →",
+        "button_link": "https://form.typeform.com/to/CQfWDI7q",
+        "disclaimer": "Free prepaid return label included. No risk.",
+        "section_bg_color": "#000000",
+        "content_bg_color": "#191919",
+        "badge_text_color": "#ffc200",
+        "badge_border_color": "#ffc200",
+        "heading_color": "#ffffff",
+        "highlight_color": "#ffc200",
+        "description_color": "#ffffff",
+        "button_bg_color": "#ffc200",
+        "button_text_color": "#000000",
+        "disclaimer_color": "#ffffff",
+        "overlay_start_color": "rgba(0,0,0,0)",
+        "overlay_middle_color": "#191919cc",
+        "overlay_end_color": "#191919",
+        "desktop_height": 448,
+        "mobile_image_height": 336,
+        "desktop_content_max_width": 464,
+        "mobile_content_max_width": 388,
+        "desktop_content_padding_right": 148,
+        "desktop_content_padding_left": 40,
+        "mobile_content_padding_top": 10,
+        "mobile_content_padding_right": 20,
+        "mobile_content_padding_bottom": 10,
+        "mobile_content_padding_left": 20,
+        "section_margin_top": 0,
+        "section_margin_bottom": 0,
+        "badge_font_size": 16,
+        "desktop_heading_size": 40,
+        "mobile_heading_size": 34,
+        "desktop_description_size": 18,
+        "mobile_description_size": 16,
+        "button_font_size": 17,
+        "disclaimer_font_size": 12
+      }
+    },
+    "trade_in_stats_band_KjwNDF": {
+      "type": "trade-in-stats-band",
+      "blocks": {
+        "stat_gkeK4d": {
+          "type": "stat",
+          "settings": {
+            "stat_value": "350K+",
+            "stat_label": "WATCHES SOLD"
+          }
+        },
+        "stat_ghzaN8": {
+          "type": "stat",
+          "settings": {
+            "stat_value": "$100",
+            "stat_label": "MAX TRADE-IN CREDIT"
+          }
+        },
+        "stat_4xYBF6": {
+          "type": "stat",
+          "settings": {
+            "stat_value": "7",
+            "stat_label": "DAY EASY PROCESS"
+          }
+        }
+      },
+      "block_order": [
+        "stat_gkeK4d",
+        "stat_ghzaN8",
+        "stat_4xYBF6"
+      ],
+      "name": "Trade In Stats Band",
+      "settings": {
+        "heading": "THE NUMBERS SPEAK FOR THEMSELVES",
+        "description": "",
+        "section_bg_color": "#111111",
+        "heading_color": "#ffffff",
+        "description_color": "#ffffff",
+        "stat_value_color": "#ffc200",
+        "stat_label_color": "#ffffff",
+        "content_max_width": 1140,
+        "section_padding_top": 60,
+        "section_padding_bottom": 60,
+        "section_padding_horizontal": 24,
+        "section_padding_top_mobile": 30,
+        "section_padding_bottom_mobile": 30,
+        "section_padding_horizontal_mobile": 20,
+        "stats_gap_desktop": 50,
+        "stats_gap_mobile": 24,
+        "heading_margin_bottom": 30,
+        "description_margin_bottom": 30,
+        "heading_font_size_desktop": 30,
+        "heading_font_size_mobile": 16,
+        "description_font_size_desktop": 18,
+        "description_font_size_mobile": 16,
+        "stat_value_font_size_desktop": 36,
+        "stat_value_font_size_mobile": 30,
+        "stat_label_font_size_desktop": 18,
+        "stat_label_font_size_mobile": 16
+      }
+    },
+    "trade_in_upgrade_message_6g8dnp": {
+      "type": "trade-in-upgrade-message",
+      "name": "Trade In Upgrade Message",
+      "settings": {
+        "heading_line_1": "YOUR CARBINOX SERVED YOU WELL.",
+        "heading_line_2": "NOW UPGRADE FOR LESS.",
+        "description": "<p>You beat the hell out of your watch — and it kept going. But our newest models are tougher, faster, and packed with features your old one doesn't have. <strong>Don't let your old watch collect dust.</strong> Turn it into credit and gear up with something better.</p>",
+        "background_color": "#000000",
+        "heading_color": "#ffffff",
+        "highlight_color": "#ffc200",
+        "description_color": "#ffffff",
+        "content_max_width": 1440,
+        "heading_max_width": 1040,
+        "description_max_width": 1040,
+        "padding_top": 60,
+        "padding_bottom": 60,
+        "padding_horizontal": 100,
+        "content_max_width_mobile": 390,
+        "heading_max_width_mobile": 310,
+        "description_max_width_mobile": 310,
+        "padding_top_mobile": 30,
+        "padding_bottom_mobile": 30,
+        "padding_horizontal_mobile": 40,
+        "heading_size_desktop": 36,
+        "heading_size_mobile": 30,
+        "description_size_desktop": 16,
+        "description_size_mobile": 16,
+        "gap_desktop": 30,
+        "gap_mobile": 10
+      }
+    },
+    "trade_in_watch_worth_Bx7rBp": {
+      "type": "trade-in-watch-worth",
+      "blocks": {
+        "card_d6pxmK": {
+          "type": "card",
+          "settings": {
+            "card_image": "shopify://shop_images/prd1.png",
+            "card_title": "LIKE NEW ✨",
+            "card_price": "$100",
+            "card_suffix": "CREDIT",
+            "card_description": "<p>Minimal wear. Screen intact. Fully functional. Looks close to how it came out of the box.</p>",
+            "enable_featured": false,
+            "featured_badge_text": "BEST VALUE",
+            "card_bg_color": "#1a1a1a",
+            "card_border_color": "#2b2b2b",
+            "featured_border_color": "#ffc200",
+            "title_color": "#ffffff",
+            "price_color": "#ffc200",
+            "suffix_color": "#ffffff",
+            "card_description_color": "#ffffff",
+            "badge_bg_color": "#ffc200",
+            "badge_text_color": "#000000"
+          }
+        },
+        "card_49e6tK": {
+          "type": "card",
+          "settings": {
+            "card_image": "shopify://shop_images/prd2.png",
+            "card_title": "WORKING ⚡",
+            "card_price": "$75",
+            "card_suffix": "CREDIT",
+            "card_description": "<p>Minimal wear. Screen intact. Fully functional. Looks close to how it came out of the box.</p>",
+            "enable_featured": true,
+            "featured_badge_text": "BEST VALUE",
+            "card_bg_color": "#1a1a1a",
+            "card_border_color": "#2b2b2b",
+            "featured_border_color": "#ffc200",
+            "title_color": "#ffffff",
+            "price_color": "#ffc200",
+            "suffix_color": "#ffffff",
+            "card_description_color": "#ffffff",
+            "badge_bg_color": "#ffc200",
+            "badge_text_color": "#000000"
+          }
+        },
+        "card_nd6t9z": {
+          "type": "card",
+          "settings": {
+            "card_image": "shopify://shop_images/prd3.png",
+            "card_title": "NON-WORKING 🔧",
+            "card_price": "$50",
+            "card_suffix": "CREDIT",
+            "card_description": "<p>Minimal wear. Screen intact. Fully functional. Looks close to how it came out of the box.</p>",
+            "enable_featured": false,
+            "featured_badge_text": "BEST VALUE",
+            "card_bg_color": "#1a1a1a",
+            "card_border_color": "#2b2b2b",
+            "featured_border_color": "#ffc200",
+            "title_color": "#ffffff",
+            "price_color": "#ffc200",
+            "suffix_color": "#ffffff",
+            "card_description_color": "#ffffff",
+            "badge_bg_color": "#ffc200",
+            "badge_text_color": "#000000"
+          }
+        }
+      },
+      "block_order": [
+        "card_d6pxmK",
+        "card_49e6tK",
+        "card_nd6t9z"
+      ],
+      "name": "Trade In Watch Worth",
+      "settings": {
+        "heading_line_1": "WHAT'S YOUR WATCH",
+        "heading_highlight": "WORTH?",
+        "description": "<p>Every Carbinox has value no matter the condition.</p>",
+        "section_bg_color": "#000000",
+        "heading_color": "#ffffff",
+        "highlight_color": "#ffc200",
+        "description_color": "#ffffff",
+        "cards_wrapper_bg_start": "#000000",
+        "cards_wrapper_bg_end": "#111111",
+        "content_max_width": 1440,
+        "section_padding_top": 0,
+        "section_padding_bottom": 60,
+        "section_padding_horizontal": 100,
+        "heading_gap_desktop": 10,
+        "cards_gap_desktop": 30,
+        "card_width_desktop": 310,
+        "section_padding_top_mobile": 0,
+        "section_padding_bottom_mobile": 30,
+        "section_padding_horizontal_mobile": 40,
+        "heading_gap_mobile": 10,
+        "cards_gap_mobile": 20,
+        "card_width_mobile": 310,
+        "card_radius": 15,
+        "card_padding_top": 200,
+        "card_padding_right": 40,
+        "card_padding_bottom": 20,
+        "card_padding_left": 40,
+        "card_padding_top_mobile": 180,
+        "card_padding_right_mobile": 32,
+        "card_padding_bottom_mobile": 20,
+        "card_padding_left_mobile": 32,
+        "image_width_desktop": 190,
+        "image_height_desktop": 190,
+        "image_width_mobile": 160,
+        "image_height_mobile": 160,
+        "heading_size_desktop": 36,
+        "heading_size_mobile": 30,
+        "description_size_desktop": 16,
+        "description_size_mobile": 16,
+        "title_size_desktop": 20,
+        "title_size_mobile": 20,
+        "price_size_desktop": 30,
+        "price_size_mobile": 30,
+        "suffix_size_desktop": 20,
+        "suffix_size_mobile": 20,
+        "card_description_size_desktop": 14,
+        "card_description_size_mobile": 14,
+        "badge_font_size": 14,
+        "badge_font_size_mobile": 12,
+        "badge_padding_vertical": 5,
+        "badge_padding_horizontal": 30,
+        "badge_rotation": 45
+      }
+    },
+    "trade_in_how_it_works_8nHyRK": {
+      "type": "trade-in-how-it-works",
+      "blocks": {
+        "step_YLyV8P": {
+          "type": "step",
+          "settings": {
+            "step_number": "1",
+            "step_title": "START YOUR TRADE-IN",
+            "step_description": "<p>Fill out the quick trade-in form. Tell us which watch you have and pick the new model you want.</p>"
+          }
+        },
+        "step_kc8fFa": {
+          "type": "step",
+          "settings": {
+            "step_number": "2",
+            "step_title": "GET YOUR DISCOUNT",
+            "step_description": "<p>You’ll receive a checkout link with your new watch and a $50 discount code already applied. Complete your purchase.</p>"
+          }
+        },
+        "step_JEfJtJ": {
+          "type": "step",
+          "settings": {
+            "step_number": "3",
+            "step_title": "RECEIVE YOUR NEW WATCH",
+            "step_description": "<p>We ship your new Carbinox with free accessories, a prepaid return label, and a purple return package for your old watch.</p>"
+          }
+        },
+        "step_cpBpbR": {
+          "type": "step",
+          "settings": {
+            "step_number": "4",
+            "step_title": "SHIP YOUR OLD WATCH BACK",
+            "step_description": "<p>Reset your old watch, pack it in the purple package with your order number, attach the label, and drop it at USPS. You have 7 days.</p>"
+          }
+        },
+        "step_CgpU4X": {
+          "type": "step",
+          "settings": {
+            "step_number": "5",
+            "step_title": "GET YOUR CREDIT",
+            "step_description": "<p>Once we receive and inspect your old watch, we issue your credit — up to $100 depending on condition. Partial refund or store credit, your call.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "step_YLyV8P",
+        "step_kc8fFa",
+        "step_JEfJtJ",
+        "step_cpBpbR",
+        "step_CgpU4X"
+      ],
+      "name": "Trade In How It Works",
+      "settings": {
+        "heading_line_1": "HOW IT",
+        "heading_highlight": "WORKS?",
+        "section_bg_color": "#000000",
+        "heading_color": "#ffffff",
+        "highlight_color": "#ffc200",
+        "timeline_color": "#ffc200",
+        "step_circle_bg": "#ffc200",
+        "step_circle_text": "#000000",
+        "step_title_color": "#ffffff",
+        "step_description_color": "#ffffff",
+        "content_max_width": 1440,
+        "steps_max_width_desktop": 1040,
+        "section_padding_top": 60,
+        "section_padding_bottom": 60,
+        "section_padding_horizontal": 100,
+        "heading_gap_desktop": 30,
+        "steps_gap_desktop": 40,
+        "rail_content_gap_desktop": 20,
+        "step_gap_desktop": 10,
+        "section_padding_top_mobile": 30,
+        "section_padding_bottom_mobile": 30,
+        "section_padding_horizontal_mobile": 26,
+        "heading_gap_mobile": 20,
+        "steps_gap_mobile": 30,
+        "rail_content_gap_mobile": 14,
+        "step_gap_mobile": 8,
+        "rail_width_desktop": 34,
+        "rail_width_mobile": 28,
+        "circle_size_desktop": 34,
+        "circle_size_mobile": 30,
+        "line_width": 1,
+        "heading_size_desktop": 36,
+        "heading_size_mobile": 30,
+        "step_title_size_desktop": 18,
+        "step_title_size_mobile": 16,
+        "step_description_size_desktop": 16,
+        "step_description_size_mobile": 14
+      }
+    },
+    "trade_card_RfJM7H": {
+      "type": "trade-card",
+      "blocks": {
+        "card_NwJGAr": {
+          "type": "card",
+          "settings": {
+            "icon": "shopify://shop_images/icon1.png",
+            "title": "FREE PREPAID LABEL",
+            "text": "We cover the return shipping. No cost to you."
+          }
+        },
+        "card_QhxntP": {
+          "type": "card",
+          "settings": {
+            "icon": "shopify://shop_images/icon2.png",
+            "title": "FREE ACCESSORIES",
+            "text": "Your new watch ships with complimentary accessories."
+          }
+        },
+        "card_Hxg3Vy": {
+          "type": "card",
+          "settings": {
+            "icon": "shopify://shop_images/icon3.png",
+            "title": "LIFETIME WARRANTY",
+            "text": "Your new watch is covered by our Lifetime Warranty from day one."
+          }
+        },
+        "card_wky34p": {
+          "type": "card",
+          "settings": {
+            "icon": "shopify://shop_images/icon4.png",
+            "title": "UP TO $100 BACK",
+            "text": "Get credit based on your old watch's condition. Even broken watches qualify."
+          }
+        }
+      },
+      "block_order": [
+        "card_NwJGAr",
+        "card_QhxntP",
+        "card_Hxg3Vy",
+        "card_wky34p"
+      ],
+      "name": "Trade Cards",
+      "settings": {
+        "background": "#111111",
+        "title_white": "EVERY TRADE-IN",
+        "title_yellow": "INCLUDES"
+      }
+    },
+    "trade_reviews_ybDU6c": {
+      "type": "trade-reviews",
+      "blocks": {
+        "review_98WKkA": {
+          "type": "review",
+          "settings": {
+            "stars": 5,
+            "text": "\"Traded my old Blaze that had a cracked screen. Got $50 back and my new Titan Pro is a beast.\"",
+            "name": "Marcus",
+            "job": "Electrician"
+          }
+        },
+        "review_XJbrz6": {
+          "type": "review",
+          "settings": {
+            "stars": 5,
+            "text": "\"Didn't think my beat-up watch was worth anything. Got $75 credit and the upgrade was seamless.\"",
+            "name": "Derek",
+            "job": "HVAC Tech"
+          }
+        },
+        "review_wEGncA": {
+          "type": "review",
+          "settings": {
+            "stars": 5,
+            "text": "\"The return label was already in the box. Dropped it at USPS on my lunch break. Easiest upgrade ever.\"",
+            "name": "Ray",
+            "job": "Trucker"
+          }
+        }
+      },
+      "block_order": [
+        "review_98WKkA",
+        "review_XJbrz6",
+        "review_wEGncA"
+      ],
+      "name": "Trade Reviews Cards",
+      "settings": {
+        "background": "#111111",
+        "title_white": "REAL TOOLS.",
+        "title_yellow": "REAL UPGRADES.",
+        "stars_image": "shopify://shop_images/stars.png"
+      }
+    },
+    "trade_accordion_mgN3ky": {
+      "type": "trade-accordion",
+      "blocks": {
+        "faq_ty7xLE": {
+          "type": "faq",
+          "settings": {
+            "question": "Which watches qualify for trade-in?",
+            "answer": "Any previous Carbinox smartwatch — X-Ranger, Vesta, Vortex, Blaze Type R, or Blaze Type S. Older models are eligible but you may be eligible for up to $50 trade-in value only."
+          }
+        },
+        "faq_9Rhwj9": {
+          "type": "faq",
+          "settings": {
+            "question": "How long do I have to ship my old watch?",
+            "answer": "You must place your order for the new Carbinox Edge immediately after completing the trade-in application. Once your new watch ships, you'll receive instructions on where to send your old watch. We recommend shipping within 7 days of receiving your new watch."
+          }
+        },
+        "faq_Q8qixE": {
+          "type": "faq",
+          "settings": {
+            "question": "How is my credit amount determined?",
+            "answer": "You choose your refund type during the application:\n•⁠  ⁠Store credit — you receive 50% more value (best deal)\n•⁠  ⁠Refund to original payment method — standard credit applied to your order\n\nThe credit amount is the same regardless of which Carbinox model you're trading in. Condition (like-new vs. used but working) may affect eligibility."
+          }
+        },
+        "faq_kV7GgC": {
+          "type": "faq",
+          "settings": {
+            "question": "Do I pay anything to ship the old watch back?",
+            "answer": "No. We'll provide a prepaid return shipping label with your instructions. Shipping your old watch back is completely free."
+          }
+        },
+        "faq_xqJkE9": {
+          "type": "faq",
+          "settings": {
+            "question": "Can I trade in a watch from another brand?",
+            "answer": "No. The trade-in program is exclusively for existing Carbinox smartwatch owners. Only Carbinox models qualify."
+          }
+        }
+      },
+      "block_order": [
+        "faq_ty7xLE",
+        "faq_9Rhwj9",
+        "faq_Q8qixE",
+        "faq_kV7GgC",
+        "faq_xqJkE9"
+      ],
+      "name": "Trade FAQ",
+      "settings": {
+        "title_white": "QUESTIONS?",
+        "title_yellow": "WE GOT YOU.",
+        "background": "#111111"
+      }
+    },
+    "trade_features_xdqR6p": {
+      "type": "trade-features",
+      "blocks": {
+        "feature_iqztNn": {
+          "type": "feature",
+          "settings": {
+            "icon": "shopify://shop_images/feat-1.png",
+            "text": "FREE RETURN SHIPPING"
+          }
+        },
+        "feature_j74p3F": {
+          "type": "feature",
+          "settings": {
+            "icon": "shopify://shop_images/feat-2.png",
+            "text": "LIFETIME WARRANTY"
+          }
+        },
+        "feature_GFABXY": {
+          "type": "feature",
+          "settings": {
+            "icon": "shopify://shop_images/feat-3.png",
+            "text": "7-DAY EASY PROCESS"
+          }
+        },
+        "feature_mLH3fY": {
+          "type": "feature",
+          "settings": {
+            "icon": "shopify://shop_images/feat-4.png",
+            "text": "UP TO $100 CREDIT"
+          }
+        }
+      },
+      "block_order": [
+        "feature_iqztNn",
+        "feature_j74p3F",
+        "feature_GFABXY",
+        "feature_mLH3fY"
+      ],
+      "name": "Trade Features",
+      "settings": {}
+    },
+    "trade_in_bannertext_RYtTY6": {
+      "type": "trade-in-bannertext",
+      "blocks": {
+        "bullet_4hh77j": {
+          "type": "bullet",
+          "settings": {
+            "icon": "shopify://shop_images/circle-check-big.png",
+            "text": "Up to $100 in credit"
+          }
+        },
+        "bullet_yRbQFb": {
+          "type": "bullet",
+          "settings": {
+            "icon": "shopify://shop_images/circle-check-big.png",
+            "text": "Free prepaid return label"
+          }
+        },
+        "bullet_6LbhDH": {
+          "type": "bullet",
+          "settings": {
+            "icon": "shopify://shop_images/circle-check-big.png",
+            "text": "Free accessories with new watch"
+          }
+        },
+        "bullet_QBN4zX": {
+          "type": "bullet",
+          "settings": {
+            "icon": "shopify://shop_images/circle-check-big.png",
+            "text": "Lifetime Warranty included"
+          }
+        },
+        "bullet_BCtKH8": {
+          "type": "bullet",
+          "settings": {
+            "icon": "shopify://shop_images/circle-check-big.png",
+            "text": "Any condition accepted"
+          }
+        }
+      },
+      "block_order": [
+        "bullet_4hh77j",
+        "bullet_yRbQFb",
+        "bullet_6LbhDH",
+        "bullet_QBN4zX",
+        "bullet_BCtKH8"
+      ],
+      "name": "Trade In Bannertext",
+      "settings": {
+        "title_white": "DON'T LET YOUR OLD WATCH",
+        "title_yellow": "COLLECT DUST.",
+        "subtitle": "Trade it in. Upgrade to our newest model. Get up to $100 back.",
+        "button_text": "START MY TRADE-IN ➔",
+        "button_url": "https://form.typeform.com/to/CQfWDI7q",
+        "small_text": "Takes 2 minutes. No commitment until checkout."
+      }
+    },
+    "trade_in_footer_note_Hk6K4T": {
+      "type": "trade-in-footer-note",
+      "name": "Trade In Footer Note",
+      "settings": {
+        "copyright_text": "© Carbinox Co. All rights reserved.",
+        "background_color": "#000000",
+        "text_color": "#ffffff",
+        "padding_top": 15,
+        "padding_bottom": 15,
+        "padding_horizontal": 20,
+        "padding_top_mobile": 15,
+        "padding_bottom_mobile": 15,
+        "padding_horizontal_mobile": 20,
+        "desktop_font_size": 12,
+        "mobile_font_size": 12
+      }
+    }
+  },
+  "order": [
+    "main",
+    "custom_liquid_tfjXkt",
+    "trade_in_topbar_nCnLFf",
+    "trade_in_hero_6EK7p9",
+    "trade_in_stats_band_KjwNDF",
+    "trade_in_upgrade_message_6g8dnp",
+    "trade_in_watch_worth_Bx7rBp",
+    "trade_in_how_it_works_8nHyRK",
+    "trade_card_RfJM7H",
+    "trade_reviews_ybDU6c",
+    "trade_accordion_mgN3ky",
+    "trade_features_xdqR6p",
+    "trade_in_bannertext_RYtTY6",
+    "trade_in_footer_note_Hk6K4T"
+  ]
+}

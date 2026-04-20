@@ -1,0 +1,343 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "show_title": true,
+        "page_width": "medium"
+      }
+    },
+    "16601318212c0f9113": {
+      "type": "image-with-text",
+      "blocks": {
+        "166013182104dbe11f-0": {
+          "type": "item",
+          "settings": {
+            "show_video": false,
+            "video_link": "",
+            "image": "shopify://shop_images/Diseno_sin_titulo-171-min.png",
+            "tab_label": "",
+            "subheading": "",
+            "title": "FREQUENTLY ASKED QUESTIONS.",
+            "content": "<p><strong>Whether if you already have your smartwatch or you're thinking on getting it, doubts may appear. That's why want to ensure you're super clear about our products and live the Carbinox experience at it highest. </strong></p>",
+            "button_text": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "166013182104dbe11f-0"
+      ],
+      "settings": {
+        "reveal_on_scroll": true,
+        "background_type": "full_width",
+        "background_overlap": "image",
+        "image_position": "left",
+        "text_alignment": "center",
+        "cycle_speed": 8,
+        "accent_background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)",
+        "enable_custom_margin": true,
+        "margin_bottom": 0
+      }
+    },
+    "faq": {
+      "type": "faq",
+      "blocks": {
+        "1d5a64fb-728b-4fa8-a925-98b1cedf7026": {
+          "type": "question",
+          "settings": {
+            "title": "ARE THESE SMARTWATCHES WATERPROOF?",
+            "answer": "<p><strong>Excluding the Carbinox Titan Pro, all our smartwatches are fully Waterproof and can be used while swimming, fishing, etc.</strong></p>"
+          }
+        },
+        "043d3603-b8b7-430f-8e88-c0f05e3e887c": {
+          "type": "question",
+          "settings": {
+            "title": "DO YOU OFFER GUARANTEE ON YOUR PRODUCTS?",
+            "answer": "<p><strong>All our Carbinox smartwatches come with a 45-day Risk Free Guarantee, meaning that whether it's a return or replacement, you'll be able to do it within this period of time at no cost.</strong></p>"
+          }
+        },
+        "947002cc-e276-47c0-90e8-953234691d3b": {
+          "type": "question",
+          "settings": {
+            "title": "IS MY SMARTPHONE COMPATIBLE WITH ANY CARBINOX SMARTWATCH?",
+            "answer": "<p><strong>Yes! Carbinox smartwatches are compatible with all Android and Apple Devices. You just need to download the Carbinox App, available on your app store.</strong></p><p><strong>Note: For Carbinox Titan Pro, the app you have to install is DaFit.</strong></p>"
+          }
+        },
+        "ef5c375f-07c1-42a2-9a51-287915bdecea": {
+          "type": "question",
+          "settings": {
+            "title": "CAN I MAKE CALLS WITH THE CARBINOX SMARTWATCHES?",
+            "answer": "<p><strong>Yes! All smartwatches come with Bluetooth Calling technology, excluding the Carbinox Ivy.</strong></p>"
+          }
+        },
+        "dd5ee1f7-8c28-4618-a4b2-f28055c01c94": {
+          "type": "question",
+          "settings": {
+            "title": "CAN I REPLY TO SMS WITH THE CARBINOX SMARTWATCHES?",
+            "answer": "<p><strong>You can read SMS or social media notifications on your smartwatch, but you cannot reply to it. The reason behind this is that this particular feature is extremely expensive and it could dramatically increase the costs of our products. There’s no smartwatch in the market that you can reply to messages and cost less than $500. Please keep in mind this.</strong></p>"
+          }
+        },
+        "9a0ed6c6-52b4-4fdf-ae76-a28f0a4f7a2e": {
+          "type": "question",
+          "settings": {
+            "title": "WILL MY WRIST FIT ON THE CARBINOX WATCHES?",
+            "answer": "<p><strong>Yes, all of our smartwatches have adjustable bands that can fit with any wrist.</strong></p>"
+          }
+        },
+        "12aa3212-aca4-47c0-8e7c-e9fd985bb87e": {
+          "type": "question",
+          "settings": {
+            "title": "DO I NEED AN APP TO USE THE CARBINOX SMARTWATCHES?",
+            "answer": "<p><strong>Yes! You'll need to install the Carbinox App available in your Android or Apple device and then pair it with your smartwatch.</strong></p><p><strong>NOTE: For Carbinox Titan Pro, the app you'll have to use is DaFit.</strong></p>"
+          }
+        },
+        "da01b2ad-1d7a-4262-8b3c-860c565a0610": {
+          "type": "question",
+          "settings": {
+            "title": "HOW LONG DOES IT TAKE TO FULLY CHARGE THESE SMARTWATCHES?",
+            "answer": "<p><strong>Your smartwatch will be fully charged after approximately 2-3 hours.</strong></p>"
+          }
+        },
+        "60e7e4f8-3462-450f-bfde-8da0c8f19e51": {
+          "type": "question",
+          "disabled": true,
+          "settings": {
+            "title": "I BOUGHT A CARBINOX FLASHLIGHT AND IS NOT WORKING, WHAT SHOULD I DO?",
+            "answer": "<p>Please unscrew the bottom of the flashlight and remove the plastic film on the blue battery and then screw again. The battery comes with this film to avoid any contact while shipping.</p>"
+          }
+        },
+        "5dc1f894-2ce9-41b7-a3c8-32f0f8148670": {
+          "type": "question",
+          "settings": {
+            "title": "HOW LONG DOES IT TAKE TO RECEIVE AN ORDER?",
+            "answer": "<p><strong>From the day you place an order with us, it could take 1 business day or less to process and ship it. After that, it will take around 3 to 5 business days to arrive in normal conditions. The packages are fully protected through shipping process so you don't have to worry about your order getting damaged.</strong></p>"
+          }
+        },
+        "985055ef-de36-45b5-9d86-995d788872fb": {
+          "type": "question",
+          "settings": {
+            "title": "DOES MY CARBINOX SMARTWATCH COMES WITH CHARGING CORD?",
+            "answer": "<p><strong>Yes of course, each Carbinox smartwatch comes with a USB Charging Cord, as well as an Instructions Manual to learn how to properly set it up.</strong></p>"
+          }
+        },
+        "918d8828-206b-4d4e-835e-25f27a4351ac": {
+          "type": "question",
+          "settings": {
+            "title": "CAN I CHARGE THE CARBINOX SMARTWATCHES WIRELESSLY?",
+            "answer": "<p>The only way to charge them will be through your charging cord connected to a power outlet. Wireless Charge could come for future models.</p>"
+          }
+        },
+        "32ea8e0e-5020-4966-acca-34fc9c4bf425": {
+          "type": "question",
+          "settings": {
+            "title": "DO THESE SMARTWATCHES SUPPORT GPS?",
+            "answer": "<p><strong>The actual models don't have that feature but we'll include them on the new releases soon.</strong></p>"
+          }
+        },
+        "bcc20eab-0768-4c9e-9782-759e66aa5029": {
+          "type": "question",
+          "disabled": true,
+          "settings": {
+            "title": "I'M FACING SOME ISSUES WITH MY NOTIFICATIONS, HEALTH TRACKING, WEATHER OR ANY OTHER FEATURE ON THE SMARTWATCH. WHAT SHOULD I DO?",
+            "answer": "<p>Don't worry, it happens and you know what? We've got you covered. Please click the button <strong>above</strong>  to download our Troubleshooting Guide as well as the Digital Instructions Manual for your smartwatch.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "1d5a64fb-728b-4fa8-a925-98b1cedf7026",
+        "043d3603-b8b7-430f-8e88-c0f05e3e887c",
+        "947002cc-e276-47c0-90e8-953234691d3b",
+        "ef5c375f-07c1-42a2-9a51-287915bdecea",
+        "dd5ee1f7-8c28-4618-a4b2-f28055c01c94",
+        "9a0ed6c6-52b4-4fdf-ae76-a28f0a4f7a2e",
+        "12aa3212-aca4-47c0-8e7c-e9fd985bb87e",
+        "da01b2ad-1d7a-4262-8b3c-860c565a0610",
+        "60e7e4f8-3462-450f-bfde-8da0c8f19e51",
+        "5dc1f894-2ce9-41b7-a3c8-32f0f8148670",
+        "985055ef-de36-45b5-9d86-995d788872fb",
+        "918d8828-206b-4d4e-835e-25f27a4351ac",
+        "32ea8e0e-5020-4966-acca-34fc9c4bf425",
+        "bcc20eab-0768-4c9e-9782-759e66aa5029"
+      ],
+      "settings": {
+        "show_navigation": true,
+        "title": "",
+        "content": "",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "16624767613ef6af64": {
+      "type": "social-media-gallery",
+      "blocks": {
+        "1662476761ff9ee940-0": {
+          "type": "image",
+          "settings": {
+            "logo": "shopify://shop_images/hiw4.png",
+            "link": ""
+          }
+        },
+        "1662476761ff9ee940-1": {
+          "type": "image",
+          "settings": {
+            "logo": "shopify://shop_images/hiw3.png",
+            "link": ""
+          }
+        },
+        "1662476761ff9ee940-2": {
+          "type": "image",
+          "settings": {
+            "logo": "shopify://shop_images/hiw1.png",
+            "link": ""
+          }
+        },
+        "1662476761ff9ee940-3": {
+          "type": "image",
+          "settings": {
+            "logo": "shopify://shop_images/hiw1.png",
+            "link": ""
+          }
+        },
+        "1662476761ff9ee940-4": {
+          "type": "image",
+          "settings": {
+            "logo": "shopify://shop_images/hiw3.png",
+            "link": ""
+          }
+        },
+        "1662476761ff9ee940-5": {
+          "type": "image",
+          "settings": {
+            "logo": "shopify://shop_images/hiw4.png",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "1662476761ff9ee940-0",
+        "1662476761ff9ee940-1",
+        "1662476761ff9ee940-2",
+        "1662476761ff9ee940-3",
+        "1662476761ff9ee940-4",
+        "1662476761ff9ee940-5"
+      ],
+      "disabled": true,
+      "settings": {
+        "reveal_on_scroll": true,
+        "subheading": "follow us",
+        "title": "join our social media",
+        "button_text": "",
+        "button_link": "",
+        "stack_logos": true,
+        "background": "#2c3036",
+        "text_color": "#f9f9f9",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)",
+        "logo_background": "rgba(0,0,0,0)"
+      }
+    },
+    "9bc4b5ea-c09b-4a8b-b498-707f1dfaac67": {
+      "type": "rich-text",
+      "custom_css": [
+        "h3 {font-size: 22px;}"
+      ],
+      "settings": {
+        "section_id": "",
+        "subheading": "",
+        "title": "experiencing any issues? please check our troubleshooting guide:",
+        "content": "",
+        "button_text": "GO TO TROUBLESHOOTING",
+        "button_link": "shopify://pages/carbinox-troubleshooting-guide",
+        "background_type": "full_width",
+        "text_width": "medium",
+        "text_position": "center",
+        "text_alignment": "center",
+        "background": "#f9f9f9",
+        "text_color": "#000000",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "8c052e8a-cdc0-4370-90a9-87157582b689": {
+      "type": "rich-text",
+      "settings": {
+        "section_id": "",
+        "subheading": "",
+        "title": "DIFFERENCES BETWEEN MODELS:",
+        "content": "",
+        "button_text": "",
+        "button_link": "",
+        "background_type": "full_width",
+        "text_width": "medium",
+        "text_position": "center",
+        "text_alignment": "center",
+        "background": "#000000",
+        "text_color": "#ffffff",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "eb648680-a70c-4b23-a12a-a9efde212ddf": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--14617439699047__eb648680-a70c-4b23-a12a-a9efde212ddf-item-1": {
+          "type": "item",
+          "settings": {
+            "show_video": false,
+            "video_link": "",
+            "image": "shopify://shop_images/Weight_Battery_Diameter_Material_Water_Resistance_Health_Tracking_Sport_Modes_Bluetooth_Calling_Software_Phone_App_AMOLED_Screen_1_-min.png",
+            "tab_label": "Item",
+            "subheading": "",
+            "title": "if you have any other question, please reach our team at info@shopcarbinox.com and they'll get back to you as soon as possible.",
+            "content": "",
+            "button_text": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--14617439699047__eb648680-a70c-4b23-a12a-a9efde212ddf-item-1"
+      ],
+      "custom_css": [
+        "h3 {font-size: 20px;}"
+      ],
+      "settings": {
+        "reveal_on_scroll": true,
+        "background_type": "full_width",
+        "background_overlap": "both",
+        "image_position": "left",
+        "text_alignment": "center",
+        "cycle_speed": 8,
+        "accent_background": "#000000",
+        "text_color": "#ffffff",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)",
+        "enable_custom_margin": false,
+        "margin_bottom": 0
+      }
+    }
+  },
+  "order": [
+    "main",
+    "16601318212c0f9113",
+    "faq",
+    "16624767613ef6af64",
+    "9bc4b5ea-c09b-4a8b-b498-707f1dfaac67",
+    "8c052e8a-cdc0-4370-90a9-87157582b689",
+    "eb648680-a70c-4b23-a12a-a9efde212ddf"
+  ]
+}

@@ -1,0 +1,246 @@
+{{ 'trade-accordion.css' | asset_url | stylesheet_tag }}
+
+{% style %}
+
+.faq-section-{{ section.id }}{
+  background: {{ section.settings.background }};
+  padding: 60px 30px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:30px;
+}
+
+.faq-title-{{ section.id }}{
+  font-family:Poppins, sans-serif;
+  font-weight:800;
+  font-size:36px !important;
+  line-height:100%;
+  letter-spacing:-3%;
+  text-align:center;
+  text-transform:uppercase;
+  margin: 0;
+}
+
+.faq-title-{{ section.id }} span{
+  font-family:Poppins, sans-serif;
+  font-weight:800;
+  font-size:36px !important;
+  line-height:100%;
+  letter-spacing:-3%;
+  text-align:center;
+  text-transform:uppercase;
+}
+
+.faq-title-{{ section.id }} span.white{
+  color:#fff;
+}
+
+.faq-title-{{ section.id }} span.yellow{
+  color:#FFC200;
+}
+
+.faq-accordion-{{ section.id }}{
+  width:100%;
+  max-width:1040px;
+  display:flex;
+  flex-direction:column;
+  gap:15px;
+  width: 100%;
+  max-width: 1040px;
+}
+
+.faq-card-{{ section.id }}{
+  border-bottom:1px solid rgba(255,255,255,0.1);
+  padding:10px;
+}
+
+.faq-question-{{ section.id }}{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  cursor:pointer;
+  gap:10px;
+}
+
+.faq-answer-SECTIONID{
+display:none;
+}
+
+.faq-card-SECTIONID.active .faq-answer-SECTIONID{
+display:block;
+}
+
+.faq-question-{{ section.id }} p{
+  font-family:Poppins,sans-serif;
+  font-weight:400;
+  font-size:16px;
+  line-height:146%;
+  color:#fff;
+  margin:0;
+}
+
+.faq-icon-{{ section.id }}{
+  font-size:24px;
+  color:#FFC200;
+  font-weight:200;
+  transition: transform .25s ease, opacity .2s ease;
+  display:inline-block;
+}
+
+.faq-card-{{ section.id }}.active .faq-icon-{{ section.id }}{
+  transform: rotate(180deg);
+}
+
+.faq-answer-{{ section.id }}{
+  display:none;
+  margin-top:10px;
+  color:rgba(255,255,255,0.7);
+  font-family:Poppins,sans-serif;
+  font-size:14px;
+  line-height:150%;
+}
+
+.faq-card-{{ section.id }}.active .faq-answer-{{ section.id }}{
+  display:block;
+}
+
+@media(max-width:768px){
+
+.faq-section-{{ section.id }}{
+  padding:30px 20px;
+}
+
+.faq-title-{{ section.id }}{
+  font-size:30px;
+}
+
+}
+{% endstyle %}
+
+
+<section class="faq-section-{{ section.id }}">
+
+<h2 class="faq-title-{{ section.id }}">
+<span class="white">{{ section.settings.title_white }}</span>
+<span class="yellow">{{ section.settings.title_yellow }}</span>
+</h2>
+
+<div class="faq-accordion-{{ section.id }}">
+
+{% for block in section.blocks %}
+
+<div class="faq-card-{{ section.id }}" {{ block.shopify_attributes }}>
+
+<div class="faq-question-{{ section.id }}">
+<p>{{ block.settings.question }}</p>
+<span class="faq-icon-{{ section.id }}">+</span>
+</div>
+
+<div class="faq-answer-{{ section.id }}">
+{{ block.settings.answer }}
+</div>
+
+</div>
+
+{% endfor %}
+
+</div>
+
+</section>
+
+
+<script>
+
+document.addEventListener("DOMContentLoaded", function(){
+
+  const items = document.querySelectorAll(".faq-card-{{ section.id }}");
+
+  items.forEach(item => {
+
+    const btn = item.querySelector(".faq-question-{{ section.id }}");
+    const icon = item.querySelector(".faq-icon-{{ section.id }}");
+
+    btn.addEventListener("click", () => {
+
+      item.classList.toggle("active");
+
+      if(item.classList.contains("active")){
+        icon.textContent = "−";
+      } else {
+        icon.textContent = "+";
+      }
+
+    });
+
+  });
+
+});
+
+</script>
+
+
+{% schema %}
+{
+"name": "Trade FAQ",
+"settings":[
+{
+"type":"text",
+"id":"title_white",
+"label":"Title white",
+"default":"Questions?"
+},
+{
+"type":"text",
+"id":"title_yellow",
+"label":"Title yellow",
+"default":"We got you."
+},
+{
+"type":"color",
+"id":"background",
+"label":"Background",
+"default":"#111111"
+}
+],
+"blocks":[
+{
+"type":"faq",
+"name":"FAQ Item",
+"settings":[
+{
+"type":"text",
+"id":"question",
+"label":"Question",
+"default":"Which watches qualify for trade-in?"
+},
+{
+"type":"textarea",
+"id":"answer",
+"label":"Answer",
+"default":"Any watch in working condition may qualify."
+}
+]
+}
+],
+"presets":[
+{
+"name":"Trade FAQ",
+"blocks":[
+{
+"type":"faq"
+},
+{
+"type":"faq"
+},
+{
+"type":"faq"
+},
+{
+"type":"faq"
+}
+]
+}
+]
+}
+{% endschema %}

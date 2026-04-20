@@ -1,0 +1,259 @@
+.trade-in-watch-worth {
+  background: linear-gradient(180deg, #111111 0%, #000000 100%);
+  background-image: linear-gradient(
+    180deg,
+    var(--trade-in-watch-worth-cards-bg-start) 0%,
+    var(--trade-in-watch-worth-cards-bg-end) 100%
+  );
+}
+
+.trade-in-watch-worth__inner {
+  padding-top: var(--trade-in-watch-worth-padding-top);
+  padding-right: var(--trade-in-watch-worth-padding-horizontal);
+  padding-bottom: var(--trade-in-watch-worth-padding-bottom);
+  padding-left: var(--trade-in-watch-worth-padding-horizontal);
+}
+
+.trade-in-watch-worth__container {
+  width: 100%;
+  max-width: var(--trade-in-watch-worth-content-max-width);
+  margin: 0 auto;
+}
+
+.trade-in-watch-worth__intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--trade-in-watch-worth-heading-gap-desktop);
+  margin-bottom: var(--trade-in-watch-worth-cards-gap-desktop);
+}
+
+.trade-in-watch-worth__heading {
+  margin: 0;
+  text-align: center;
+  color: var(--trade-in-watch-worth-heading-color);
+  font-size: var(--trade-in-watch-worth-heading-size-desktop);
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+}
+
+.trade-in-watch-worth__heading-text--highlight {
+  color: var(--trade-in-watch-worth-highlight-color);
+  font-style: italic;
+}
+
+.trade-in-watch-worth__description {
+  margin: 0;
+  max-width: 1040px;
+  text-align: center;
+  color: var(--trade-in-watch-worth-description-color);
+  font-size: var(--trade-in-watch-worth-description-size-desktop);
+  font-weight: 400;
+  line-height: 1.25;
+  letter-spacing: -0.01em;
+  opacity: 0.8;
+}
+
+.trade-in-watch-worth__description p {
+  margin: 0;
+}
+
+.trade-in-watch-worth__cards {
+  display: flex;
+  justify-content: center;
+  gap: var(--trade-in-watch-worth-cards-gap-desktop);
+  flex-wrap: wrap;
+}
+
+.trade-in-watch-worth__card {
+  position: relative;
+  width: 100%;
+  max-width: var(--trade-in-watch-worth-card-width-desktop);
+  min-height: 344px;
+  padding-top: var(--trade-in-watch-worth-card-padding-top);
+  padding-right: var(--trade-in-watch-worth-card-padding-right);
+  padding-bottom: var(--trade-in-watch-worth-card-padding-bottom);
+  padding-left: var(--trade-in-watch-worth-card-padding-left);
+  border-radius: var(--trade-in-watch-worth-card-radius);
+  border: 1px solid var(--trade-in-watch-worth-card-border);
+  background-color: var(--trade-in-watch-worth-card-bg);
+  overflow: hidden;
+  text-align: center;
+}
+
+.trade-in-watch-worth__card--featured {
+  border-color: var(--trade-in-watch-worth-card-featured-border);
+}
+
+.trade-in-watch-worth__badge {
+  position: absolute;
+  top: 25px;
+  right: -30px;
+  z-index: 2;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 134px;
+  height: 25px;
+  padding: 5px 30px;
+  background-color: var(--trade-in-watch-worth-badge-bg);
+  color: var(--trade-in-watch-worth-badge-text);
+  font-size: var(--trade-in-watch-worth-badge-font-size);
+  font-weight: 600;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  transform: rotate(var(--trade-in-watch-worth-badge-rotation));
+  transform-origin: center;
+}
+
+.trade-in-watch-worth__card-image-wrap {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: var(--trade-in-watch-worth-image-width-desktop);
+  height: var(--trade-in-watch-worth-image-height-desktop);
+  transform: translateX(-50%);
+}
+
+.trade-in-watch-worth__card-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.trade-in-watch-worth__card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.trade-in-watch-worth__card-title {
+  margin: 0;
+  color: var(--trade-in-watch-worth-card-title-color);
+  font-size: var(--trade-in-watch-worth-title-size-desktop);
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+}
+
+.trade-in-watch-worth__card-price-row {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+
+.trade-in-watch-worth__card-price {
+  color: var(--trade-in-watch-worth-card-price-color);
+  font-size: var(--trade-in-watch-worth-price-size-desktop);
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+}
+
+.trade-in-watch-worth__card-suffix {
+  color: var(--trade-in-watch-worth-card-suffix-color);
+  font-size: var(--trade-in-watch-worth-suffix-size-desktop);
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  opacity: 0.6;
+}
+
+.trade-in-watch-worth__card-description {
+  margin: 0;
+  color: var(--trade-in-watch-worth-card-description-color);
+  font-size: var(--trade-in-watch-worth-card-description-size-desktop);
+  font-weight: 400;
+  line-height: 1.3;
+  letter-spacing: -0.01em;
+  opacity: 0.7;
+}
+
+.trade-in-watch-worth__card-description p {
+  margin: 0;
+}
+
+@media screen and (max-width: 767px) {
+  .trade-in-watch-worth__inner {
+    padding-top: var(--trade-in-watch-worth-padding-top-mobile);
+    padding-right: var(--trade-in-watch-worth-padding-horizontal-mobile);
+    padding-bottom: var(--trade-in-watch-worth-padding-bottom-mobile);
+    padding-left: var(--trade-in-watch-worth-padding-horizontal-mobile);
+  }
+
+  .trade-in-watch-worth__container {
+    width: 100%;
+    max-width: 390px;
+    margin: 0 auto;
+  }
+
+  .trade-in-watch-worth__intro {
+    gap: var(--trade-in-watch-worth-heading-gap-mobile);
+    margin-bottom: var(--trade-in-watch-worth-cards-gap-mobile);
+  }
+
+  .trade-in-watch-worth__heading {
+    font-size: var(--trade-in-watch-worth-heading-size-mobile);
+  }
+
+  .trade-in-watch-worth__description {
+    max-width: 310px;
+    font-size: var(--trade-in-watch-worth-description-size-mobile);
+    line-height: 1.25;
+  }
+
+  .trade-in-watch-worth__cards {
+    flex-direction: column;
+    align-items: center;
+    gap: var(--trade-in-watch-worth-cards-gap-mobile);
+  }
+
+  .trade-in-watch-worth__card {
+    max-width: var(--trade-in-watch-worth-card-width-mobile);
+    min-height: 344px;
+    padding-top: var(--trade-in-watch-worth-card-padding-top-mobile);
+    padding-right: var(--trade-in-watch-worth-card-padding-right-mobile);
+    padding-bottom: var(--trade-in-watch-worth-card-padding-bottom-mobile);
+    padding-left: var(--trade-in-watch-worth-card-padding-left-mobile);
+  }
+
+  .trade-in-watch-worth__card-image-wrap {
+    width: var(--trade-in-watch-worth-image-width-mobile);
+    height: var(--trade-in-watch-worth-image-height-mobile);
+  }
+
+  .trade-in-watch-worth__card-title {
+    font-size: var(--trade-in-watch-worth-title-size-mobile);
+  }
+
+  .trade-in-watch-worth__card-price {
+    font-size: var(--trade-in-watch-worth-price-size-mobile);
+  }
+
+  .trade-in-watch-worth__card-suffix {
+    font-size: var(--trade-in-watch-worth-suffix-size-mobile);
+  }
+
+  .trade-in-watch-worth__card-description {
+    font-size: var(--trade-in-watch-worth-card-description-size-mobile);
+  }
+
+  .trade-in-watch-worth__badge {
+    top: 20px;
+    right: -25px;
+    min-width: 118px;
+    height: 22px;
+    padding: 4px 24px;
+    font-size: var(--trade-in-watch-worth-badge-font-size-mobile);
+  }
+}

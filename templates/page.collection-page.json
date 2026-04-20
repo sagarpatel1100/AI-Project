@@ -1,0 +1,687 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "product_item_qdBNRL": {
+      "type": "product-item",
+      "blocks": {
+        "product_items_yB8WLP": {
+          "type": "Product-items",
+          "settings": {
+            "image1": "shopify://shop_images/THESMARTWATCHEXPERT-2.png",
+            "heading": "",
+            "para": ""
+          }
+        }
+      },
+      "block_order": [
+        "product_items_yB8WLP"
+      ],
+      "custom_css": [
+        "img {width: 100%;}"
+      ],
+      "settings": {}
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "show_title": true,
+        "page_width": "medium"
+      }
+    },
+    "4a22f6f7-4b81-40fc-b06a-c92bff1aada4": {
+      "type": "slideshow",
+      "blocks": {
+        "template--14643624509543__4a22f6f7-4b81-40fc-b06a-c92bff1aada4-16893538798ff374a4-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/2-min-1.jpg",
+            "mobile_image": "shopify://shop_images/Diseno_sin_titulo-145-min_5a2af750-2ac1-430d-a2fc-e072027ab497.png",
+            "text_position": "top_center",
+            "subheading": "AMERICA'S FAVORITE SMARTWATCH FOR TOUGH JOBS AND EXTREME CONDITIONS.",
+            "title": "STRONGER THAN YOUR LATEST SMARTWATCH.",
+            "button_1_text": "",
+            "button_1_link": "",
+            "button_2_text": "",
+            "button_2_link": "",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "template--14643624509543__4a22f6f7-4b81-40fc-b06a-c92bff1aada4-16893538798ff374a4-0"
+      ],
+      "disabled": true,
+      "settings": {
+        "section_height": "auto",
+        "transition_type": "sweep",
+        "autoplay": false,
+        "cycle_speed": 5,
+        "background": "rgba(0,0,0,0)"
+      }
+    },
+    "dae6c0f3-362c-4ddc-92c4-686e78c3f5e5": {
+      "type": "rich-text",
+      "custom_css": [
+        "h5 {color: #ffc200;}",
+        "h2 {color: #ffc200;}",
+        "div {padding: 4px; background: black;}",
+        "h3 {font-size: 23px;}"
+      ],
+      "settings": {
+        "section_id": "",
+        "subheading": "4.75/5★ BASED ON +18,000 REVIEWS 🇺🇸",
+        "title": "DURABILITY and reliability, BEYOND REALITY.",
+        "content": "<h5><strong>SMARTWATCHES DESIGNED TO WITHSTAND EXTREME WORK CONDITIONS AND KEEP YOU CONNECTED, NO MATTER WHAT.</strong></h5>",
+        "button_text": "",
+        "button_link": "#more",
+        "background_type": "full_width",
+        "text_width": "large",
+        "text_position": "center",
+        "text_alignment": "center",
+        "background": "#000000",
+        "text_color": "#ffffff",
+        "button_background": "#0023ff",
+        "button_text_color": "#ffffff"
+      }
+    },
+    "custom_html_ih8rqp": {
+      "type": "custom-html",
+      "custom_css": [
+        "div {padding: 1px; background-color: black;}"
+      ],
+      "settings": {
+        "subheading": "",
+        "title": "",
+        "html": "<img src=\"https://cdn.shopify.com/s/files/1/0049/0533/6935/files/Anadir_un_titulo_15_-min.png?v=1722362936\">",
+        "add_vertical_spacing": false,
+        "background_type": "full_width",
+        "background": "#000000",
+        "text_color": "#ffffff"
+      }
+    },
+    "c36a000b-e69b-4f0e-857e-384f2b1e28f9": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--14643624509543__c36a000b-e69b-4f0e-857e-384f2b1e28f9-16893549416bd90b39-0": {
+          "type": "item",
+          "settings": {
+            "show_video": true,
+            "video_link": "https://cdn.shopify.com/videos/c/o/v/94bdcd1da4304b60a3bf147d4be5efb8.mp4",
+            "tab_label": "Item",
+            "subheading": "",
+            "title": "IF YOU WANTED ALL THE FUNCTIONS OF OUR SMARTWATCHES, YOU WOULD HAVE TO WEAR FIVE FROM OTHER BRANDS AT THE SAME TIME.",
+            "content": "<p><strong>LET'S FACE IT: MOST SMARTWATCHES IN THE MARKET ARE EXPENSIVE, COMPLEX AND UNREADY TO RESIST THE CONDITIONS OF OUR DAILY DUTIES.</strong></p><p><strong>That's why we bring the solution to your wrist, without breaking the bank.</strong></p>",
+            "button_text": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--14643624509543__c36a000b-e69b-4f0e-857e-384f2b1e28f9-16893549416bd90b39-0"
+      ],
+      "custom_css": [
+        "h3 {font-size: 20px; color: #ffc200;}"
+      ],
+      "settings": {
+        "section_id": "",
+        "reveal_on_scroll": false,
+        "background_type": "full_width",
+        "background_overlap": "both",
+        "image_position": "right",
+        "text_alignment": "center",
+        "cycle_speed": 8,
+        "accent_background": "#000000",
+        "text_color": "#ffffff",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)",
+        "enable_custom_margin": false,
+        "margin_bottom": 0
+      }
+    },
+    "ae3c90d2-c089-4d88-8df5-25897df88374": {
+      "type": "rich-text",
+      "custom_css": [
+        "h2 {color: #ffc200; font-size: 18px;}",
+        "h3 {font-size: 18px;}",
+        "h5 {color: #0bdf00;}"
+      ],
+      "settings": {
+        "section_id": "",
+        "subheading": "★★★★★",
+        "title": "\"The watch has taken all the punishment I can throw at it and works like the first day I opened the box”",
+        "content": "<h5><strong>TAYLOR S.<br/>✔ VERIFIED BUYER</strong></h5>",
+        "button_text": "",
+        "button_link": "",
+        "background_type": "full_width",
+        "text_width": "medium",
+        "text_position": "center",
+        "text_alignment": "center",
+        "background": "#282828",
+        "text_color": "#ffffff",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "gallery_84nWhc": {
+      "type": "gallery",
+      "blocks": {
+        "image_BknwU3": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/2_df796f7e-5860-41f1-b779-ea616ddcf1ba.png",
+            "caption": ""
+          }
+        },
+        "image_G9QwQH": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/4_4f5b71f5-ce3a-4b59-9849-5a16710b602c.png",
+            "caption": ""
+          }
+        },
+        "image_FYHwyp": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/3_3db2c48d-5fbf-463a-82f0-12f556a8d4b4.png",
+            "caption": ""
+          }
+        },
+        "image_WYR349": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/4-min_3.jpg",
+            "caption": ""
+          }
+        },
+        "image_WFnBDy": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/5-min_2.jpg",
+            "caption": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_BknwU3",
+        "image_G9QwQH",
+        "image_FYHwyp",
+        "image_WYR349",
+        "image_WFnBDy"
+      ],
+      "custom_css": [
+        "h3 {font-size: 22px;}"
+      ],
+      "settings": {
+        "subheading": "300,000+ successfully delivered watches 🇺🇸",
+        "title": "WE TAKE GREAT PRIDE IN BACKING THOUSANDS OF AMERICAN HARD WORKERS ACROSS THE NATION.",
+        "show_arrows": true,
+        "background": "#000000",
+        "text_color": "#ffffff"
+      }
+    },
+    "rich_text_RpMyTP": {
+      "type": "rich-text",
+      "custom_css": [
+        "div {padding: 3px; background: black;}",
+        "h3 {font-size: 20px; color: #ffc200;}"
+      ],
+      "settings": {
+        "section_id": "",
+        "subheading": "",
+        "title": "🛠️ BUILT FOR THOSE WHO DEMAND UNBREAKABLE DURABILITY AND CUTTING-EDGE TECH — FROM CONSTRUCTION SITES TO ADVENTURE TRAILS:",
+        "content": "",
+        "button_text": "",
+        "button_link": "",
+        "background_type": "full_width",
+        "text_width": "large",
+        "text_position": "center",
+        "text_alignment": "center",
+        "background": "#000000",
+        "text_color": "#ffffff",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "5ba31fd4-b6fe-4c81-a063-aa5b9472039a": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--14643624509543__5ba31fd4-b6fe-4c81-a063-aa5b9472039a-1689287772ebe9bff4-0": {
+          "type": "item",
+          "settings": {
+            "show_video": false,
+            "video_link": "",
+            "image": "shopify://shop_images/blaze-sm_2.png",
+            "tab_label": "Item",
+            "subheading": "NEW CUSTOMER SPECIAL DISCOUNT: EXTRA 10% OFF WITH CODE \"VIP10\" AT CHECKOUT!",
+            "title": "CARBINOX BLAZE",
+            "content": "<p><strong>Our most advanced model yet, the Carbinox Blaze offers unmatched toughness and next-level versatility. On the job or off the grid, it’s built to take hits and keep you connected—no matter what.</strong></p>",
+            "button_text": "shop now ➔",
+            "button_link": "shopify://products/carbinox-blaze-2"
+          }
+        }
+      },
+      "block_order": [
+        "template--14643624509543__5ba31fd4-b6fe-4c81-a063-aa5b9472039a-1689287772ebe9bff4-0"
+      ],
+      "settings": {
+        "section_id": "",
+        "reveal_on_scroll": false,
+        "background_type": "full_width",
+        "background_overlap": "both",
+        "image_position": "left",
+        "text_alignment": "left",
+        "cycle_speed": 8,
+        "accent_background": "#000000",
+        "text_color": "#ffffff",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)",
+        "enable_custom_margin": true,
+        "margin_bottom": 0
+      }
+    },
+    "f38ec50e-8940-4de4-9b46-582dbc21de41": {
+      "type": "rich-text",
+      "custom_css": [
+        "div {padding: 3px; background: black;}",
+        "h3 {font-size: 20px; color: #ffc200;}"
+      ],
+      "settings": {
+        "section_id": "",
+        "subheading": "",
+        "title": "👷🏻‍♂️ MANAGERS, OPERATORS, TECHNICIANS, AND TRUCK DRIVERS LOOKING FOR RELIABILITY AND THE LATEST TECH FEATURES:",
+        "content": "",
+        "button_text": "",
+        "button_link": "",
+        "background_type": "full_width",
+        "text_width": "large",
+        "text_position": "center",
+        "text_alignment": "center",
+        "background": "#000000",
+        "text_color": "#ffffff",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "image_with_text_RARarR": {
+      "type": "image-with-text",
+      "blocks": {
+        "item_wC6LFL": {
+          "type": "item",
+          "settings": {
+            "show_video": false,
+            "video_link": "",
+            "image": "shopify://shop_images/Diseno_sin_titulo_36_-min.png",
+            "tab_label": "Item",
+            "subheading": "NEW CUSTOMER SPECIAL DISCOUNT: EXTRA 10% OFF WITH CODE \"VIP10\" AT CHECKOUT!",
+            "title": "CARBINOX VORTEX",
+            "content": "<p><em><strong>🏅 TOP-RATED</strong></em><strong><br/>Our newest model, the Carbinox Vortex, redefines toughness and durability. No matter how rough the task, you won't have to worry about breaking it—because it won't.</strong></p>",
+            "button_text": "shop now ➔",
+            "button_link": "shopify://products/carbinox-vortex-1"
+          }
+        }
+      },
+      "block_order": [
+        "item_wC6LFL"
+      ],
+      "settings": {
+        "section_id": "",
+        "reveal_on_scroll": false,
+        "background_type": "full_width",
+        "background_overlap": "both",
+        "image_position": "left",
+        "text_alignment": "left",
+        "cycle_speed": 8,
+        "accent_background": "#000000",
+        "text_color": "#ffffff",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)",
+        "enable_custom_margin": true,
+        "margin_bottom": 0
+      }
+    },
+    "9ae87f71-70ec-4095-95c7-a9d945d60bc1": {
+      "type": "rich-text",
+      "custom_css": [
+        "div {padding: 3px; background: black;}",
+        "h3 {font-size: 20px; color: #ffc200;}"
+      ],
+      "settings": {
+        "section_id": "",
+        "subheading": "",
+        "title": "⌚️ WORKING ON REALLY TOUGH CONDITIONS, REGULAR CONDITIONS, FITNESS JUNKIE OR JUST LOOKING FOR A NIGHT-OUT WATCH? THIS HAS IT ALL in one.",
+        "content": "",
+        "button_text": "",
+        "button_link": "",
+        "background_type": "full_width",
+        "text_width": "large",
+        "text_position": "center",
+        "text_alignment": "center",
+        "background": "#000000",
+        "text_color": "#ffffff",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "image_with_text_MPC6CN": {
+      "type": "image-with-text",
+      "blocks": {
+        "item_BCbQPN": {
+          "type": "item",
+          "settings": {
+            "show_video": false,
+            "video_link": "",
+            "image": "shopify://shop_images/Diseno_sin_titulo-164-min.png",
+            "tab_label": "Item",
+            "subheading": "NEW CUSTOMER SPECIAL DISCOUNT: EXTRA 10% OFF WITH CODE \"VIP10\" AT CHECKOUT!",
+            "title": "CARBINOX X-RANGER",
+            "content": "<p><strong>You're looking for a smartwatch that's perfect for all kinds of work and activities. Whether you're tackling tough tasks or enjoying a cold one at a Sunday BBQ with family and friends, the X-Ranger has got you covered.</strong></p>",
+            "button_text": "shop now ➔",
+            "button_link": "shopify://products/carbinox-x-ranger-1"
+          }
+        }
+      },
+      "block_order": [
+        "item_BCbQPN"
+      ],
+      "settings": {
+        "section_id": "",
+        "reveal_on_scroll": false,
+        "background_type": "full_width",
+        "background_overlap": "both",
+        "image_position": "left",
+        "text_alignment": "left",
+        "cycle_speed": 8,
+        "accent_background": "#000000",
+        "text_color": "#ffffff",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)",
+        "enable_custom_margin": true,
+        "margin_bottom": 0
+      }
+    },
+    "94e70290-a234-4dbb-9364-eaecbd8e554c": {
+      "type": "rich-text",
+      "disabled": true,
+      "custom_css": [
+        "div {padding: 1px; background: black;}",
+        "h3 {font-size: 20px; color: #ffc200;}"
+      ],
+      "settings": {
+        "section_id": "",
+        "subheading": "",
+        "title": "🪨 CONSTRUCTION WORKERS, MECHANICS, HVAC ENGINEERS, LOOKING FOR AN ALL-TERRAIN and pocket-friendly WATCH.",
+        "content": "",
+        "button_text": "",
+        "button_link": "",
+        "background_type": "full_width",
+        "text_width": "large",
+        "text_position": "center",
+        "text_alignment": "center",
+        "background": "#000000",
+        "text_color": "#ffffff",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "4b57710e-4e1a-4a01-9369-cda4a0bf0a6e": {
+      "type": "image-with-text",
+      "blocks": {
+        "44b660e5-c4a8-42bb-99c5-7d570c35d7fd": {
+          "type": "item",
+          "settings": {
+            "show_video": false,
+            "video_link": "",
+            "image": "shopify://shop_images/2-min-9.png",
+            "tab_label": "Item",
+            "subheading": "NEW CUSTOMER SPECIAL DISCOUNT: EXTRA 10% OFF WITH CODE \"VIP10\" AT CHECKOUT!",
+            "title": "CARBINOX VESTA",
+            "content": "<h5>You’re looking for a smartwatch that’s tough and durable for your duties, but also with high-tech features and a smooth interface to be wore even outside work. Definitely stronger than your last smartwatch. </h5>",
+            "button_text": "shop now ➔",
+            "button_link": "shopify://products/carbinox-vesta-black"
+          }
+        }
+      },
+      "block_order": [
+        "44b660e5-c4a8-42bb-99c5-7d570c35d7fd"
+      ],
+      "disabled": true,
+      "settings": {
+        "section_id": "",
+        "reveal_on_scroll": false,
+        "background_type": "full_width",
+        "background_overlap": "both",
+        "image_position": "left",
+        "text_alignment": "left",
+        "cycle_speed": 8,
+        "accent_background": "#000000",
+        "text_color": "#ffffff",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)",
+        "enable_custom_margin": true,
+        "margin_bottom": 0
+      }
+    },
+    "d7e99d7a-e9f6-4173-bc0a-c028cd9ef360": {
+      "type": "rich-text",
+      "disabled": true,
+      "custom_css": [
+        "div {padding: 3px; background: black;}",
+        "h3 {font-size: 20px; color: #ffc200;}"
+      ],
+      "settings": {
+        "section_id": "",
+        "subheading": "",
+        "title": "🏋🏻‍♂️ looking for an accurate activity tracker without having to worry about breaking it like others?",
+        "content": "",
+        "button_text": "",
+        "button_link": "",
+        "background_type": "full_width",
+        "text_width": "large",
+        "text_position": "center",
+        "text_alignment": "center",
+        "background": "#000000",
+        "text_color": "#ffffff",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "c876ce95-16d2-4353-ba93-817a4abb26c8": {
+      "type": "image-with-text",
+      "blocks": {
+        "0dd1e3fa-9234-427d-ac92-2bc8dc8fc4f4": {
+          "type": "item",
+          "settings": {
+            "show_video": false,
+            "video_link": "",
+            "image": "shopify://shop_images/4-min-11.png",
+            "tab_label": "Item",
+            "subheading": "NEW CUSTOMER SPECIAL DISCOUNT: EXTRA 10% OFF WITH CODE \"VIP10\" AT CHECKOUT!",
+            "title": "CARBINOX IVY",
+            "content": "<h5>You think being worried about scratching a watch at your workouts is too boomer, so you're looking for reliability, modernism, but affordability at the same time, enjoying 4x times more functions than other ones.</h5>",
+            "button_text": "shop now ➔",
+            "button_link": "shopify://products/carbinox-ivy"
+          }
+        }
+      },
+      "block_order": [
+        "0dd1e3fa-9234-427d-ac92-2bc8dc8fc4f4"
+      ],
+      "disabled": true,
+      "settings": {
+        "section_id": "",
+        "reveal_on_scroll": false,
+        "background_type": "full_width",
+        "background_overlap": "both",
+        "image_position": "left",
+        "text_alignment": "left",
+        "cycle_speed": 8,
+        "accent_background": "#000000",
+        "text_color": "#ffffff",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)",
+        "enable_custom_margin": true,
+        "margin_bottom": 0
+      }
+    },
+    "82e43596-6ed5-44ac-9459-c0cd04ad0f8c": {
+      "type": "rich-text",
+      "disabled": true,
+      "settings": {
+        "section_id": "",
+        "subheading": "DON'T KNOW WHICH ONE TO BUY?",
+        "title": "DIFFERENCES BETWEEN MODELS:",
+        "content": "",
+        "button_text": "",
+        "button_link": "",
+        "background_type": "full_width",
+        "text_width": "medium",
+        "text_position": "center",
+        "text_alignment": "center",
+        "background": "#000000",
+        "text_color": "#ffffff",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "276bddb0-24f8-400c-aaa2-02dce90491cb": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--14643624509543__276bddb0-24f8-400c-aaa2-02dce90491cb-168936039426714537-0": {
+          "type": "item",
+          "settings": {
+            "show_video": false,
+            "video_link": "",
+            "image": "shopify://shop_images/Weight_Battery_Diameter_Material_Water_Resistance_Health_Tracking_Sport_Modes_Bluetooth_Calling_Software_Phone_App_AMOLED_Screen_2_-min.png",
+            "tab_label": "Item",
+            "subheading": "",
+            "title": "",
+            "content": "",
+            "button_text": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--14643624509543__276bddb0-24f8-400c-aaa2-02dce90491cb-168936039426714537-0"
+      ],
+      "disabled": true,
+      "settings": {
+        "section_id": "",
+        "reveal_on_scroll": false,
+        "background_type": "full_width",
+        "background_overlap": "image",
+        "image_position": "left",
+        "text_alignment": "center",
+        "cycle_speed": 8,
+        "accent_background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)",
+        "enable_custom_margin": true,
+        "margin_bottom": 0
+      }
+    },
+    "1b832578-658c-4d0b-82e1-153d7ea683c0": {
+      "type": "image-with-text",
+      "blocks": {
+        "96ae7eb2-65de-459c-ad97-ae8fde1ab6fc": {
+          "type": "item",
+          "settings": {
+            "show_video": false,
+            "video_link": "",
+            "image": "shopify://shop_images/DOWNLOAD_THE_APP_GLORYFIT_PRO_TO_PAIR_YOUR_VORTEX_WITH_YOUR_PHONE._1_-min.png",
+            "tab_label": "Item",
+            "subheading": "",
+            "title": "",
+            "content": "",
+            "button_text": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "96ae7eb2-65de-459c-ad97-ae8fde1ab6fc"
+      ],
+      "disabled": true,
+      "settings": {
+        "section_id": "",
+        "reveal_on_scroll": false,
+        "background_type": "full_width",
+        "background_overlap": "image",
+        "image_position": "right",
+        "text_alignment": "center",
+        "cycle_speed": 8,
+        "accent_background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)",
+        "enable_custom_margin": true,
+        "margin_bottom": 0
+      }
+    },
+    "4c7a05c0-70e4-457f-ac98-28566d70bb9c": {
+      "type": "rich-text",
+      "settings": {
+        "section_id": "",
+        "subheading": "",
+        "title": "don't take our word for granted. read our hundreds of reviews.",
+        "content": "",
+        "button_text": "",
+        "button_link": "",
+        "background_type": "full_width",
+        "text_width": "medium",
+        "text_position": "center",
+        "text_alignment": "center",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "1689358211f47e1c3c": {
+      "type": "apps",
+      "settings": {
+        "include_horizontal_margins": false,
+        "include_vertical_margins": false
+      }
+    }
+  },
+  "order": [
+    "product_item_qdBNRL",
+    "main",
+    "4a22f6f7-4b81-40fc-b06a-c92bff1aada4",
+    "dae6c0f3-362c-4ddc-92c4-686e78c3f5e5",
+    "custom_html_ih8rqp",
+    "c36a000b-e69b-4f0e-857e-384f2b1e28f9",
+    "ae3c90d2-c089-4d88-8df5-25897df88374",
+    "gallery_84nWhc",
+    "rich_text_RpMyTP",
+    "5ba31fd4-b6fe-4c81-a063-aa5b9472039a",
+    "f38ec50e-8940-4de4-9b46-582dbc21de41",
+    "image_with_text_RARarR",
+    "9ae87f71-70ec-4095-95c7-a9d945d60bc1",
+    "image_with_text_MPC6CN",
+    "94e70290-a234-4dbb-9364-eaecbd8e554c",
+    "4b57710e-4e1a-4a01-9369-cda4a0bf0a6e",
+    "d7e99d7a-e9f6-4173-bc0a-c028cd9ef360",
+    "c876ce95-16d2-4353-ba93-817a4abb26c8",
+    "82e43596-6ed5-44ac-9459-c0cd04ad0f8c",
+    "276bddb0-24f8-400c-aaa2-02dce90491cb",
+    "1b832578-658c-4d0b-82e1-153d7ea683c0",
+    "4c7a05c0-70e4-457f-ac98-28566d70bb9c",
+    "1689358211f47e1c3c"
+  ]
+}

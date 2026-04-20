@@ -1,0 +1,499 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "product_item_nVJz6H": {
+      "type": "product-item",
+      "blocks": {
+        "product_items_Mw79yt": {
+          "type": "Product-items",
+          "settings": {
+            "image1": "shopify://shop_images/THESMARTWATCHEXPERT-2.png",
+            "heading": "",
+            "para": ""
+          }
+        }
+      },
+      "block_order": [
+        "product_items_Mw79yt"
+      ],
+      "custom_css": [
+        "div {padding: 0px; background-color: black;}"
+      ],
+      "settings": {}
+    },
+    "rich_text_NV3pam": {
+      "type": "rich-text",
+      "custom_css": [
+        "h3 {font-size: 22px; color: #ffc200;}"
+      ],
+      "settings": {
+        "section_id": "",
+        "subheading": "introducing the first carbinox exclusive membership.",
+        "title": "CELEBRATING OUR MOST DISTINGUISHED CLIENTS.",
+        "content": "",
+        "button_text": "",
+        "button_link": "",
+        "background_type": "full_width",
+        "text_width": "medium",
+        "text_position": "center",
+        "text_alignment": "center",
+        "background": "#000000",
+        "text_color": "#ffffff",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "rich_text_4GjE6x": {
+      "type": "rich-text",
+      "disabled": true,
+      "custom_css": [
+        "h3 {font-size: 20px;}",
+        "div {margin-block: -7px;}"
+      ],
+      "settings": {
+        "section_id": "",
+        "subheading": "",
+        "title": "UPCOMING GIVEAWAY FOR OCTOBER: $250 AMAZON GIFT CARD 👀",
+        "content": "",
+        "button_text": "",
+        "button_link": "",
+        "background_type": "full_width",
+        "text_width": "medium",
+        "text_position": "center",
+        "text_alignment": "center",
+        "background": "#0f9103",
+        "text_color": "#ffffff",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "image_with_text_34p3j7": {
+      "type": "image-with-text",
+      "blocks": {
+        "item_VgLddb": {
+          "type": "item",
+          "settings": {
+            "show_video": false,
+            "video_link": "",
+            "image": "shopify://shop_images/Diseno_sin_titulo_64_-min.png",
+            "tab_label": "",
+            "subheading": "",
+            "title": "",
+            "content": "",
+            "button_text": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "item_VgLddb"
+      ],
+      "custom_css": [
+        "div {background-color: black;}"
+      ],
+      "settings": {
+        "section_id": "",
+        "reveal_on_scroll": false,
+        "background_type": "full_width",
+        "background_overlap": "image",
+        "image_position": "left",
+        "text_alignment": "center",
+        "cycle_speed": 8,
+        "accent_background": "#000000",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)",
+        "enable_custom_margin": true,
+        "margin_bottom": 0
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "show_title": true,
+        "page_width": "medium"
+      }
+    },
+    "rich_text_Ubcfit": {
+      "type": "rich-text",
+      "settings": {
+        "section_id": "",
+        "subheading": "",
+        "title": "limitless benefits, only for the elite.",
+        "content": "<p><strong>As a member, you will unlock a wide range of perks that will take your experience with Carbinox to the next level. </strong></p>",
+        "button_text": "",
+        "button_link": "#shopify-section-template--14832595796071__featured_product_9zXCDA",
+        "background_type": "full_width",
+        "text_width": "medium",
+        "text_position": "center",
+        "text_alignment": "center",
+        "background": "#000000",
+        "text_color": "#ffffff",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "image_with_text_T77pCY": {
+      "type": "image-with-text",
+      "blocks": {
+        "item_MAjx6W": {
+          "type": "item",
+          "settings": {
+            "show_video": false,
+            "video_link": "",
+            "image": "shopify://shop_images/El_texto_del_parrafo_8_-min.png",
+            "tab_label": "Item",
+            "subheading": "",
+            "title": "",
+            "content": "",
+            "button_text": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "item_MAjx6W"
+      ],
+      "settings": {
+        "section_id": "",
+        "reveal_on_scroll": false,
+        "background_type": "full_width",
+        "background_overlap": "text",
+        "image_position": "left",
+        "text_alignment": "center",
+        "cycle_speed": 8,
+        "accent_background": "#000000",
+        "text_color": "#ffffff",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)",
+        "enable_custom_margin": false,
+        "margin_bottom": 0
+      }
+    },
+    "image_with_text_UepVXf": {
+      "type": "image-with-text",
+      "blocks": {
+        "item_dE6VnE": {
+          "type": "item",
+          "settings": {
+            "show_video": false,
+            "video_link": "",
+            "image": "shopify://shop_images/G.png",
+            "tab_label": "Item",
+            "subheading": "",
+            "title": "",
+            "content": "",
+            "button_text": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "item_dE6VnE"
+      ],
+      "disabled": true,
+      "custom_css": [
+        "h3 {font-size: 20px;}"
+      ],
+      "settings": {
+        "section_id": "",
+        "reveal_on_scroll": false,
+        "background_type": "full_width",
+        "background_overlap": "text",
+        "image_position": "left",
+        "text_alignment": "center",
+        "cycle_speed": 8,
+        "accent_background": "#000000",
+        "text_color": "#ffffff",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)",
+        "enable_custom_margin": false,
+        "margin_bottom": 0
+      }
+    },
+    "image_with_text_BQzfJw": {
+      "type": "image-with-text",
+      "blocks": {
+        "item_ciebPP": {
+          "type": "item",
+          "settings": {
+            "show_video": false,
+            "video_link": "",
+            "image": "shopify://shop_images/4-min_1.jpg",
+            "tab_label": "Item",
+            "subheading": "HUNDREDS OF MEMBERS ARE WAITING FOR YOU TO JOIN!",
+            "title": "3 reasons why you should join:",
+            "content": "<h4><strong>1. PEACE OF MIND: REPLACEMENTS WON'T COST YOU A SINGLE PENNY.</strong></h4><h4><strong>2. DISCOUNTED PRICES AND ACCESS TO NEW PRODUCTS OTHERS WON'T GET.</strong></h4><h4><strong>3. PREMIUM SUPPORT, GIVEAWAYS, AND THE CHANCE TO CONNECT WITH NEW PEOPLE!</strong></h4>",
+            "button_text": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "item_ciebPP"
+      ],
+      "settings": {
+        "section_id": "",
+        "reveal_on_scroll": false,
+        "background_type": "full_width",
+        "background_overlap": "text",
+        "image_position": "left",
+        "text_alignment": "center",
+        "cycle_speed": 8,
+        "accent_background": "#000000",
+        "text_color": "#ffffff",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)",
+        "enable_custom_margin": false,
+        "margin_bottom": 0
+      }
+    },
+    "image_with_text_cxKDwN": {
+      "type": "image-with-text",
+      "blocks": {
+        "item_gUUPnT": {
+          "type": "item",
+          "settings": {
+            "show_video": false,
+            "video_link": "",
+            "image": "shopify://shop_images/ELITE_PRIVATE_CLUB_8_-min-min.png",
+            "tab_label": "Item",
+            "subheading": "You're not required to sign a contract, don't worry.",
+            "title": "cancel anytime.",
+            "content": "<p><strong>If our membership stops being your priority, just reach out and we'll cancel it instantly*.</strong></p>",
+            "button_text": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "item_gUUPnT"
+      ],
+      "custom_css": [
+        "H3 {font-size: 40px; letter-spacing: -2px; color: #ffc200;}",
+        "h2 {font-size: 16px; letter-spacing: -0.5px;}"
+      ],
+      "settings": {
+        "section_id": "",
+        "reveal_on_scroll": false,
+        "background_type": "full_width",
+        "background_overlap": "text",
+        "image_position": "left",
+        "text_alignment": "center",
+        "cycle_speed": 8,
+        "accent_background": "#000000",
+        "text_color": "#ffffff",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)",
+        "enable_custom_margin": false,
+        "margin_bottom": 0
+      }
+    },
+    "rich_text_TREzQ6": {
+      "type": "rich-text",
+      "disabled": true,
+      "custom_css": [
+        "h3 {font-size: 20px;}",
+        "div {margin-block: -7px;}"
+      ],
+      "settings": {
+        "section_id": "",
+        "subheading": "",
+        "title": "UPCOMING GIVEAWAY FOR OCTOBRER: $250 AMAZON GIFT CARD 👀",
+        "content": "",
+        "button_text": "",
+        "button_link": "",
+        "background_type": "full_width",
+        "text_width": "medium",
+        "text_position": "center",
+        "text_alignment": "center",
+        "background": "#0f9103",
+        "text_color": "#ffffff",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "featured_product_9zXCDA": {
+      "type": "featured-product",
+      "blocks": {
+        "text_ygdqLF": {
+          "type": "text",
+          "settings": {
+            "text": "<h4><span style=\"text-decoration:underline\"><strong>UNLOCK A WIDE RANGE OF PERKS BY JOINING OUR MEMBERSHIP:</strong></span><strong><br/><br/>✅ LIFETIME REPLACEMENTS FOR SCRATCHED, DENTED OR BROKEN WATCHES.<br/>✅ FREE ACCESSORIES, JUST PAY FOR SHIPPING!<br/>✅ MYSTERY GIFT WHEN YOU JOIN.<br/>✅ ACCESS TO OUR PRIVATE FACEBOOK GROUP.<br/>✅ 25% OFF EVERY TIME YOU SHOP AT CARBINOX!<br/>✅ ACCESS TO EARLY AND LIMITED LAUNCHES.</strong></h4>"
+          }
+        },
+        "buy_buttons_RxVLAA": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_payment_button": false,
+            "atc_button_background": "rgba(0,0,0,0)",
+            "atc_button_text_color": "rgba(0,0,0,0)",
+            "buy_now_button_background": "rgba(0,0,0,0)",
+            "buy_now_button_text_color": "rgba(0,0,0,0)"
+          }
+        },
+        "image_z9zVg7": {
+          "type": "image",
+          "settings": {
+            "image_alignment": "center",
+            "image_width": 500
+          }
+        }
+      },
+      "block_order": [
+        "text_ygdqLF",
+        "buy_buttons_RxVLAA",
+        "image_z9zVg7"
+      ],
+      "custom_css": [],
+      "settings": {
+        "product": "carbinox-elite-private-club-membership",
+        "subheading": "",
+        "title": "",
+        "show_vendor": false,
+        "show_sku": false,
+        "show_taxes_included": false,
+        "show_product_rating": false,
+        "show_share_buttons": false,
+        "help_page": "",
+        "enable_video_autoplay": false,
+        "enable_video_looping": false,
+        "enable_image_zoom": false,
+        "show_thumbnails_on_mobile": false,
+        "desktop_thumbnails_position": "bottom",
+        "transition_effect": "slide",
+        "background": "#f9f9f9",
+        "text_color": "rgba(0,0,0,0)",
+        "section_id": ""
+      }
+    },
+    "rich_text_pcxjmz": {
+      "type": "rich-text",
+      "disabled": true,
+      "settings": {
+        "section_id": "",
+        "subheading": "LAUNCHING THIS FRIDAY, YOU'LL RECEIVE A MESSAGE!",
+        "title": "SAVE THE DATE: MARCH 15TH OF 2024!",
+        "content": "",
+        "button_text": "",
+        "button_link": "",
+        "background_type": "full_width",
+        "text_width": "medium",
+        "text_position": "center",
+        "text_alignment": "center",
+        "background": "#000000",
+        "text_color": "#ffc200",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "faq_QwmYQP": {
+      "type": "faq",
+      "blocks": {
+        "question_AmL8wb": {
+          "type": "question",
+          "settings": {
+            "title": "ABOUT LIFETIME REPLACEMENTS OF SMARTWATCHES AND OTHER PRODUCTS:",
+            "answer": "<p>When you join Carbinox EPC, any Carbinox smartwatch you own will be fully covered against scratches, dents, broken screens, and more. To apply for a replacement, simply contact your VIP representative. We’ll provide you with a pre-paid return label to ship your product back to us, and we’ll send you a new one at no cost.</p><p><em><strong>Please note: We only approve replacements for smartwatches purchased after August 1st, 2023. It is mandatory to ship your old smartwatch to our facility to receive a new unit.</strong></em></p>"
+          }
+        },
+        "question_qdbqxA": {
+          "type": "question",
+          "settings": {
+            "title": "ABOUT LIFETIME FREE ACCESSORIES FOR YOUR SMARTWATCH:",
+            "answer": "<p>As a member, you will gain instant access to free tempered glasses, USB chargers, and original bands for your smartwatch. You will be provided with a URL where you can order what you need AT NO COST. We only charge $5 to cover shipping, pick and pack, materials, and handling by our employees.</p><p>Please note:</p><ul><li>You can include up to one (1) accessory per order.</li><li>You can place up to three (3) orders per month.</li><li>We only ship the original band that comes with your smartwatch.</li></ul><p></p>"
+          }
+        },
+        "question_bxFzzx": {
+          "type": "question",
+          "settings": {
+            "title": "ABOUT MYSTERY GIFT EVERY 90 DAYS:",
+            "answer": "<p>Only for our members, we'll be shipping you new products every 90 days at no cost. These products could be special gadgets, limited edition bands, and more.</p><p>You won't have to do anything to claim your gifts, they'll be shipped automatically.</p>"
+          }
+        },
+        "question_XVr7My": {
+          "type": "question",
+          "settings": {
+            "title": "ABOUT PRIVATE FACEBOOK GROUP:",
+            "answer": "<p>As soon as you become a member, you will receive an email or text message with a custom URL to join our Facebook group. Simply request access, and we'll review your information and approve your membership promptly.</p>"
+          }
+        },
+        "question_rNm3KK": {
+          "type": "question",
+          "settings": {
+            "title": "ABOUT LIFETIME 25% OFF:",
+            "answer": "<p>You will receive a custom discount code linked to your email address. To enjoy your 25% off every time you order, please use the same email address you used to purchase the membership.</p>"
+          }
+        },
+        "question_hAdQr6": {
+          "type": "question",
+          "settings": {
+            "title": "ABOUT EARLY ACCESS TO NEW PRODUCTS:",
+            "answer": "<p>Every time we launch a new product, you will be the first to find out. We will publish all the information weeks before the launch on the Facebook Private Group, giving you exclusive access and a special discounted price.</p>"
+          }
+        },
+        "question_eMqmnY": {
+          "type": "question",
+          "settings": {
+            "title": "ABOUT CANCELLATIONS:",
+            "answer": "<p>It would be really bad to see you go. However, if a cancellation is needed, just reach our VIP department at paulina@shopcarbinox.com and we'll help you out. <br/></p><p>*We do not provide any refunds if you were already charged for the membership.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "question_AmL8wb",
+        "question_qdbqxA",
+        "question_bxFzzx",
+        "question_XVr7My",
+        "question_rNm3KK",
+        "question_hAdQr6",
+        "question_eMqmnY"
+      ],
+      "settings": {
+        "show_navigation": false,
+        "title": "FAQs",
+        "content": "",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "custom_liquid_nWHaQc": {
+      "type": "custom-liquid",
+      "settings": {
+        "subheading": "",
+        "title": "",
+        "liquid": "<script>\nsetTimeout(function(){\njQuery('#AddToCart span.loader-button__text').text(' BECOME A MEMBER NOW ➔ ');\n\n}, 1000);\n\n</script>",
+        "add_vertical_spacing": true,
+        "background_type": "full_width",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)"
+      }
+    }
+  },
+  "order": [
+    "product_item_nVJz6H",
+    "rich_text_NV3pam",
+    "rich_text_4GjE6x",
+    "image_with_text_34p3j7",
+    "main",
+    "rich_text_Ubcfit",
+    "image_with_text_T77pCY",
+    "image_with_text_UepVXf",
+    "image_with_text_BQzfJw",
+    "image_with_text_cxKDwN",
+    "rich_text_TREzQ6",
+    "featured_product_9zXCDA",
+    "rich_text_pcxjmz",
+    "faq_QwmYQP",
+    "custom_liquid_nWHaQc"
+  ]
+}

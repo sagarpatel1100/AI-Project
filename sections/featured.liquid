@@ -1,0 +1,44 @@
+<div class="featured">
+    <div class="container">
+        <h3 class="featured-title">{{section.settings.title}}</h3>
+        <div class="featured-items">
+            {% for block in section.blocks %}
+                <div class="featured-item">
+                    <img class="featured-img lazyload" data-src="{{block.settings.icon | img_url: 'master'}}" alt="img"
+                      width="{{ block.settings.icon.width }}"
+                      height="{{ block.settings.icon.height }}">
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</div> 
+
+{% schema %}
+    {
+        "name" : "Featured",
+        "settings" : [
+            {
+                "type" : "text",
+                "id": "title",
+                "label": "Title",
+                "default": "AS FEATURED IN"
+            }
+        ],
+        "blocks": [
+            {
+                "name" : "Icon",
+                "type": "icon",
+                "settings": [
+                    {
+                        "type" : "image_picker",
+                        "id": "icon",
+                        "label": "Icon"
+                    }
+                ]
+            }
+        ],
+        "presets": [{
+            "name" : "Featured"
+        }]
+    }
+{% endschema %}

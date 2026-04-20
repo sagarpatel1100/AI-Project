@@ -1,0 +1,832 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "rich_text_8NgTVz": {
+      "type": "rich-text",
+      "disabled": true,
+      "name": "Rich text",
+      "settings": {
+        "section_id": "",
+        "subheading": "👷🏼‍♂️ IT'S SIMPLE: YOU WORK A LOT AND YOU DESERVE TO SAVE BIG ON YOUR FIRST DURABLE SMARTWATCH!",
+        "title": "",
+        "content": "<h3>UNLOCK $50 OFF, $100 OFF AND $150 OFF WITH OUR BUNDLE PACKS!</h3>",
+        "button_text": "",
+        "button_link": "",
+        "background_type": "full_width",
+        "text_width": "fill",
+        "text_position": "center",
+        "text_alignment": "center",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "list_icons_pdp_8DDjnH": {
+          "type": "list-icons-pdp",
+          "settings": {
+            "title-icon-1": "Versatile Lighting:",
+            "subtitle-icon-1": "6 modes, including LED & warning lights.",
+            "title-icon-2": "Hands-Free Use:",
+            "subtitle-icon-2": "Magnetic base and keychain ready.",
+            "title-icon-3": "Durable & Rechargeable:",
+            "subtitle-icon-3": "Fast charging with battery indicator."
+          }
+        },
+        "liquid_9giWJk": {
+          "type": "liquid",
+          "name": " Header Banner",
+          "disabled": true,
+          "settings": {
+            "liquid": "<div id=\"promo-banner\">\n  <img\n    src=\"https://cdn.shopify.com/s/files/1/0049/0533/6935/files/mobile-banner_offer_4.webp?v=1757534958\"\n    alt=\"Promo banner\"\n    class=\"banner-mobile\"\n  />\n  <img\n    src=\"https://cdn.shopify.com/s/files/1/0049/0533/6935/files/new-banner-blaze.png?v=1757534573\"\n    alt=\"Promo banner\"\n    class=\"banner-desktop\"\n    loading=\"lazy\"\n  />\n</div>\n\n<script>\n  document.addEventListener(\"DOMContentLoaded\", function () {\n    const mainElement = document.getElementById(\"main\");\n    const bannerContainer = document.getElementById(\"promo-banner\");\n\n    if (!mainElement || !bannerContainer) {\n      console.error(\"main or banner container not found\");\n      return;\n    }\n\n    mainElement.insertBefore(bannerContainer, mainElement.firstChild);\n  });\n</script>\n\n<style>\n  #promo-banner img {\n    width: 100%;\n    background: transparent;\n  }\n\n  .banner-mobile {\n    display: none;\n  }\n\n  .banner-desktop {\n    display: block;\n    margin: auto;\n    margin-top: 5px;\n    max-width: 920px;\n  }\n\n  @media screen and (min-width: 1200px) {\n    .banner-desktop {\n      margin-top: 170px;\n    }\n  }\n @media screen and (min-width: 1240px) {\n    .banner-desktop {\n      margin-top: 120px;\n    }\n  }\n  @media screen and (min-width: 1385px) {\n    .banner-desktop {\n      margin-top: 87px;\n    }\n  }\n\n  @media screen and (max-width: 768px) {\n    .banner-mobile {\n      display: block;\n      padding-top: 10px;\n      margin-bottom: -25px;\n    }\n\n    .banner-desktop {\n      display: none;\n    }\n  }\n</style>"
+          }
+        },
+        "liquid_h7XXDD": {
+          "type": "liquid",
+          "disabled": true,
+          "settings": {
+            "liquid": "<style>\n@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');\n\n.discount-custom-badge{\nfont-family: 'Poppins', sans-serif;\n}\n</style>\n\n<script>\ndocument.addEventListener('DOMContentLoaded', function() {\n  const swatchContainers = document.querySelectorAll('.block-swatch');\n\n  swatchContainers.forEach(container => {\n    const label = container.querySelector('.block-swatch__item');\n    if (label && label.textContent.includes('Round')) {\n      // Crear el badge\n      const badge = document.createElement('div');\nbadge.classList.add(\"discount-custom-badge\");\n      badge.textContent = '$10 OFF + FREE GIFT';\n      badge.style.backgroundColor = '#e70000';\n badge.style.display = 'flex';\n badge.style.alignItems= 'center';\n badge.style.alignSelf = 'center';\n      badge.style.color = '#fff';\nbadge.style.fontFamily = 'Poppins';\nbadge.style.fontWeight = \"600\";\nbadge.style.fontSize = \"11px\";\n      badge.style.width = 'max-content';\n      badge.style.padding = '2px 4px';\n      badge.style.position = 'absolute';\n      badge.style.top = '-8px'; /* Ajusta según sea necesario para la superposición */\n      badge.style.left = '50%'; /* Ajusta según sea necesario para la posición horizontal */\n badge.style.transform = 'translateX(-50%)'; \n      badge.style.zIndex = '1'; /* Asegura que esté por encima del label */\n      badge.style.textAlign = 'center';\n       badge.style.paddingTop = '4px';\nbadge.style.borderRadius = '5px'; /* Opcional: para esquinas redondeadas */\n      \n\n      // Hacer el contenedor position: relative para posicionar el badge absolutamente dentro\n      \ncontainer.style.position = 'relative';\n\n      // Insertar el badge antes del label\n\n      container.appendChild(badge);\n    }\n\nif (label && (label.textContent.includes('Round') || label.textContent.includes('Square') )){\ncontainer.style.marginTop = \"10px\";\n\n}\n  });\n});\n</script>"
+          }
+        },
+        "liquid_A8phzp": {
+          "type": "liquid",
+          "name": "TrustPilot - Read Reviews - Tolstoy Styles",
+          "settings": {
+            "liquid": "<!-- TrustBox widget - Micro TrustScore -->\n<div id=\"review-box-container\" style=\"display:flex; flex-wrap: wrap;\">\n<div\nid=\"trust-pilot-pdp\"\n  class=\"trustpilot-widget\"\nstyle=\"\ntransform: scale(1.2);\n    max-width: fit-content;\n    position: relative;\n    left: -8px;\ntop: -3px;\nmargin: 0px;\n    margin-top: 0px;\n    margin-bottom: 0px;\n    display: inline-block; /* ensures it shrinks to content */\n  \"\n  data-locale=\"en-US\"\n  data-template-id=\"5419b637fa0340045cd0c936\"\n  data-businessunit-id=\"66228504ff2e396d557df8e6\"\n  data-style-height=\"20px\"\n  data-style-width=\"100%\"\n>\n  <a\n    href=\"https://www.trustpilot.com/review/shopcarbinox.com\"\n    target=\"_blank\"\n    rel=\"noopener\"\n  >\n    Trustpilot\n  </a>\n</div>\n<a style=\"font-size: 14px; display: flex; align-items: center;\" href=\"#judgeme_product_reviews\"><span>Read reviews</span><svg xmlns=\"http://www.w3.org/2000/svg\" height=\"16\" viewBox=\"0 0 24 24\" width=\"16\" fill=\"#1E1F24\"><path d=\"M24 24H0V0h24v24z\" fill=\"none\" opacity=\"0.87\"></path><path d=\"M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6-1.41-1.41z\"></path></svg></a>\n</div>\n<!-- End TrustBox widget -->\n<script>\n  function moveTrustBox() {\n    const widget = document.getElementById('review-box-container');\n    const titleEl = document.querySelector('.product-meta__title');\n    if (!widget) {\n      console.warn('Trustpilot widget not found.');\n      return;\n    }\n    if (!titleEl || !titleEl.parentNode) {\n      console.warn('Product title element not found or has no parent.');\n      return;\n    }\n    // Move the TrustBox into its final position\n    titleEl.parentNode.insertBefore(widget, titleEl);\n  }\n  function observeForTitle() {\n    const observer = new MutationObserver((mutations, obs) => {\n      if (document.querySelector('.product-meta__title')) {\n        moveTrustBox();\n        obs.disconnect();\n      }\n    });\n    observer.observe(document.body, { childList: true, subtree: true });\n  }\n  document.addEventListener('DOMContentLoaded', () => {\n    // 1. Move now if title already exists\n    moveTrustBox();\n    // 2. Watch for late-loaded titles\n    observeForTitle();\n    // 3. Once moved, load the Trustpilot script\n    const script = document.createElement('script');\n    script.src = 'https://widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js';\n    script.async = true;\n    document.body.appendChild(script);\n const elementToMove = document.getElementById(\"shopify-block-AUVZGeFZJcXBoQ29sT__tolstoy_shoppable_video_quiz_carousel_block_erLTME\");\n    const targetElement = document.getElementById(\"shopify-section-template--24748880494964__e9dc35e4-0664-46cf-ad4f-0d4aa37441e3\");\n    if (elementToMove && targetElement && targetElement.parentNode) {\n      targetElement.parentNode.insertBefore(elementToMove, targetElement);\n    }\n  });\n</script>\n<style>\n@media (max-width: 768px) {\n#trust-pilot-pdp {\nleft: -12px !important;\n}\n}\n  .tolstoy-video-carousel-container {\nmargin-top: 20px;\n}\nh1.product-meta__title.heading.h3 {\n    margin-top: 0 !important;\nfont-weight: 700 !important;\n}\n._carouselVideoContainer_1cxil_16 {\ngap: 0px !important;\n}\n@media (max-width: 1024px) {\n  .tolstoy-carousel-container {\n    margin-top: 0px;\n  }\n}\n@media (max-width: 600px) {\n\n  .tolstoy-carousel-container {\n    margin: -30px 0px 0px 24px;\n  }\n  .tolstoy-carousel-arrow-button {\n    display: none;\n  }\n}\n@media (min-width: 1024px) {\n  .tolstoy-carousel-container {\n    max-width: 48% !important;\n    margin-top: -80px;\n    margin-left: auto;\n    margin-right: 0px;\n  }\n.block-swatch__item.pack-item {\n  padding-right: 30px !important;\n  padding-left: 30px !important;\n}\n  .tolstoy-video-carousel-container {\n    max-width: 90% !important;\n  }\n}\n@media (min-width: 1500px) {\n  .tolstoy-video-carousel-container {\n    max-width: 690px !important;\n    padding-left: 15px;\n  }\n}\n.product__media-item {\nmargin-left: 1px;\n}\n\n@media (max-width: 768px){\n#shopify-section-template--25675562418548__image_with_text_zbdBqG {\n  background-image: url('https://cdn.shopify.com/s/files/1/0049/0533/6935/files/mobile-smart-features.webp?v=1760543785');\n  background-size: cover;\n  background-position: center;\n  background-repeat: no-repeat;\n  aspect-ratio: 390 / 322;\n  width: 100%;\n}\n\n#shopify-section-template--25675562418548__image_with_text_zbdBqG .image-with-text__wrapper {\ndisplay: none !important;\n}\n}\n</style>"
+          }
+        },
+        "liquid_bQmFjW": {
+          "type": "liquid",
+          "name": "Shop Payments badge",
+          "settings": {
+            "liquid": "{% render 'payments-badge-pdp' product: product %}\n\n<style>\nproduct-payment-terms {\ndisplay: none;\n}\n\nh1.product-meta__title.heading.h3 {\nmargin-bottom: 7px !important;\n}\n@media (max-width: 768px) {\n.payments-badge-pdp {\nmargin: -18px 0px 12px 0px !important;\n}\n}\n</style>"
+          }
+        },
+        "77b0126f-d176-4e47-b6f3-d2424b9b32ea": {
+          "type": "variant_picker",
+          "settings": {
+            "hide_sold_out_variants": false,
+            "selector_mode": "block",
+            "color_mode": "block",
+            "size_chart_page": ""
+          }
+        },
+        "liquid_UwKrnt": {
+          "type": "liquid",
+          "name": "Buy Box Variants",
+          "settings": {
+            "liquid": "<div class=\"pack-list ultimate-pack\">\n      <p class=\"congrats-p\">\n<img alt=\"save money\" width=\"22\" height=\"22\" src=\"https://cdn.shopify.com/s/files/1/0049/0533/6935/files/icon-congrats.png?v=1755265589\"/>\nCongrats! You’re saving <span class=\"congrats-saving\">$110</span>TODAY!</p>\n</div>\n <div class=\"pack-list starter-pack\">\n      <p class=\"congrats-p\">\n<img alt=\"save money\"  width=\"22\" height=\"22\" src=\"https://cdn.shopify.com/s/files/1/0049/0533/6935/files/icon-congrats.png?v=1755265589\"/>\nCongrats! You’re saving <span class=\"congrats-saving\">$30</span>TODAY!</p>\n\n  </div>\n<div class=\"pack-list double-pack\">\n\n      <p class=\"congrats-p\">\n<img alt=\"save money\"  width=\"22\" height=\"22\" src=\"https://cdn.shopify.com/s/files/1/0049/0533/6935/files/icon-congrats.png?v=1755265589\"/>\nCongrats! You’re saving <span class=\"congrats-saving\">$180</span>TODAY!</p>\n        </div>\n\n\n\n\n\n<script>\n  document.addEventListener(\"DOMContentLoaded\", function () {\nconst featureList = document.querySelector(\".feature-list\");\n    const productTitle = document.querySelector(\".product-meta__title\");\n\n    if (featureList && productTitle) {\n      productTitle.insertAdjacentElement(\"afterend\", featureList);\nfeatureList.style.marginBottom = \"13px\"\n    }\n\n  // Procesar opciones\n  const optionContainers = document.querySelectorAll(\".product-form__option-info\");\n\n  optionContainers.forEach((container, index) => {\n    const labelEl = container.querySelector(\".product-form__option-name\");\n    const valueEl = container.querySelector(\".product-form__option-value\");\n\n    if (labelEl && valueEl) {\n      labelEl.textContent = labelEl.textContent.replace(/^\\s*[\\d#*️⃣️]+/g, '').trim();\n      if (index === 1) {\n      }\n      valueEl.style.fontWeight = \"500\";\n    }\n  });\n\n  const swatchLabels = document.querySelectorAll(\"label.block-swatch__item\");\n\n  swatchLabels.forEach((label) => {\n    const text = label.textContent;\n\n    if (text.includes(\"Starter\")) {\n      label.setAttribute(\"data-pack\", \"starter-pack\");\n    }\n\n    if (text.includes(\"Triple\")) {\n      label.setAttribute(\"data-pack\", \"ultimate-pack\");\n    }\n\n    if (text.includes(\"Famil\")) {\n      label.setAttribute(\"data-pack\", \"double-pack\");\n    }\n  });\n\nfunction detectWatchTypeAndUpdateText() {\n  const selectedRadio = document.querySelector('.block-swatch__radio:checked');\n  if (!selectedRadio) return;\n\n  const typeValue = selectedRadio.value.trim();\n  const formattedText =\n    typeValue.includes(\"Type S\")\n      ? '1 Carbinox Blaze Type S'\n      : typeValue.includes(\"Type R\")\n      ? '1 Carbinox Blaze Type R'\n      : '1 Carbinox Blaze';\n\n  // Modificar solo en packs visibles que NO sean double-pack\n  const visiblePackLists = document.querySelectorAll('.pack-list');\n  visiblePackLists.forEach(pack => {\n    if (pack.style.display === \"block\" && !pack.classList.contains(\"double-pack\")) {\n      const lis = pack.querySelectorAll('ul li .pack-li-content p:first-child');\n      lis.forEach(p => {\n        if (p.textContent.trim().startsWith(\"1 Carbinox Blaze\")) {\n          p.innerHTML = `<span class=\"icon\"></span>${formattedText}`;\n        }\n      });\n    }\n  });\n}\n\n  // Mostrar pack correspondiente y actualizar textos según tipo\n  function updatePackVisibility(selectedPack) {\n    const packs = document.querySelectorAll(\".pack-list\");\n    packs.forEach((pack) => {\n      if (pack.classList.contains(selectedPack)) {\n        pack.style.display = \"block\";\n      } else {\n        pack.style.display = \"none\";\n      }\n    });\n\n    // 👇 Muy importante: actualizar tipo de reloj solo después de mostrar\n    detectWatchTypeAndUpdateText();\n  }\n\n  // Detectar clic en swatches\n  const swatches = document.querySelectorAll(\"label.block-swatch__item[data-pack]\");\n  swatches.forEach((swatch) => {\n    swatch.addEventListener(\"click\", () => {\n      const selected = swatch.getAttribute(\"data-pack\");\n      updatePackVisibility(selected);\n    });\n  });\n// Escuchar cambios en el tipo de reloj (Type S / Type R)\ndocument.querySelectorAll('.block-swatch__radio').forEach(radio => {\n  radio.addEventListener('change', () => {\n    detectWatchTypeAndUpdateText();\n  });\n});\n  // Al seleccionar por primera vez\n  const firstSwatch = document.querySelector(\"label.block-swatch__item[data-pack]\");\n  if (firstSwatch) {\n    const firstRadio = firstSwatch.previousElementSibling;\n    if (firstRadio && firstRadio.type === 'radio') {\n      firstRadio.checked = true;\n      const selected = firstSwatch.getAttribute(\"data-pack\");\n      updatePackVisibility(selected);\n    }\n  }\n});\n</script>\n\n<style>\n.block-swatch{\nwidth: 100%;\n}\n.block-swatch:has(.pack-item) {\n  width: auto !important;\n}\n.block-swatch__item{\nfont-weight: 400 !important;\nmargin: 0px !important;\nwidth: 100%!important;\nfont-size: 14px !important;\npadding: 10px !important;\nposition: relative;\nmargin-top: 8px !important;\nbackground-color: #F9F9F9 !important;\nborder: 1px solid #D4D4D4;\nborder-radius: 4px !important;\ndisplay: flex;\nflex-direction: column;\njustify-content: center;\nalign-items: center;\nline-height: 1.2 !important;\n}\n.block-swatch-list{\nflex-wrap: unset !important;\ngap: 8px;\njustify-content: center;\nmax-width: 100%;\nmargin: auto;\n}\n.block-swatch__item:after {border-radius: 4px !important;\n}\n.block-swatch__radio:checked + label {\nfont-weight: 500 !important;\n}\n.block-swatch__radio:checked + .block-swatch__item[data-pack] {\nborder-radius: 4px !important;\n}\n\n.block-swatch__item[data-pack]::after {\nborder-radius: 4px !important;\n\n}\n.save-badge{\nfont-size: 10px;\npadding: 2px 6px;\n}\n\n .best-value-badge {\n    position: absolute;\n    top: -17px;\n    left: 50%;\n    transform: translateX(-50%);\n    background-color: #95C122;\n    color: white;\n    font-weight: 600;\n    font-size: 10px;\n    padding: 2px 6px;\n    border-radius: 4px 4px 0px 0px;\n    z-index: 1;\nwidth: max-content;\n  }\n  .type-s-image,\n  .type-r-image,\n  .starter-image,\n  .ultimate-image,\n  .double-image {\n    width: 64px;\n    height: 64px;\n    object-fit: contain;\n    margin: auto;\n    display: inline-block;\n    vertical-align: middle;\n  }\n\n.pack-list p{\nmargin: 0px;\n}\n.pack-list ul {\n  list-style: none;\n  padding: 0;\n  margin: 0;\nfont-size: 14px;\n}\n\n.pack-list li {\n  display: flex;\n  align-items: center;\n  gap: 5px;\njustify-content: space-between;\n  margin-bottom: 2px;\n  font-family: sans-serif;\n  font-size: 14px;\nwidth: 100%;\nborder-bottom: 0.5px solid #D4D4D4;\n}\n\n.pack-list .icon {\n  width: 16px;\n  height: 16px;\nmargin-right: 4px;\n  display: inline-block;\n  background-image: url('data:image/svg+xml;utf8,<svg width=\"16\" height=\"17\" viewBox=\"0 0 16 17\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M14.6673 8.50016C14.6673 12.1822 11.6827 15.1668 8.00065 15.1668C4.31865 15.1668 1.33398 12.1822 1.33398 8.50016C1.33398 4.81816 4.31865 1.8335 8.00065 1.8335C11.6827 1.8335 14.6673 4.81816 14.6673 8.50016Z\" fill=\"%2395C122\"/><path d=\"M10.6868 6.47972C10.7804 6.57347 10.833 6.70056 10.833 6.83306C10.833 6.96556 10.7804 7.09264 10.6868 7.18639L7.35344 10.5197C7.25969 10.6134 7.1326 10.6659 7.0001 10.6659C6.8676 10.6659 6.74052 10.6134 6.64677 10.5197L5.31344 9.18639C5.26431 9.14061 5.22491 9.08541 5.19758 9.02408C5.17025 8.96275 5.15556 8.89654 5.15437 8.8294C5.15319 8.76227 5.16554 8.69558 5.19069 8.63332C5.21583 8.57107 5.25326 8.51451 5.30074 8.46703C5.34822 8.41955 5.40478 8.38212 5.46704 8.35697C5.5293 8.33183 5.59598 8.31948 5.66312 8.32066C5.73025 8.32185 5.79646 8.33654 5.85779 8.36387C5.91913 8.3912 5.97433 8.4306 6.0201 8.47972L7.0001 9.45972L8.4901 7.96972L9.9801 6.47972C10.0739 6.38609 10.2009 6.3335 10.3334 6.3335C10.4659 6.3335 10.593 6.38609 10.6868 6.47972Z\" fill=\"black\"/></svg>');\n  background-repeat: no-repeat;\n  background-size: contain;\n}\n\n.pack-list {\n  display: none;\nmargin-bottom: 0px;\n}\n\n.pack-list p, .pack-list span{\n  font-family: 'Poppins', sans-serif;\n  font-size: 14px;\n}\n.footer-pack-list {\n  padding: 10px 0px 0px 20px;\n  display: flex;\n  justify-content: space-between;\n}\n.footer-pack-list p {\n   font-weight: 600;\nmargin: 0px;\n}\n.compare-price-li {\n  color: #5B5B5B;\n  text-decoration: line-through;\nmargin-left: 1px;\n}\n.congrats-p {\nwidth: 100%;\ndisplay: flex;\nalign-items: center;\ngap: 4px;\njustify-content: center;\nfont-size:14px;\n  color: black;\n  font-weight: 550;\nbackground: #F3FFE8;\nborder: 0.5px solid #06B036;\nborder-radius: 5px;\npadding: 10px;\nmargin-top: 10px !important;\n}\n\n.congrats-saving {\n    background: #06B036;\n    color: #fff;\n    border-radius: 3px;\n    padding: 0px 4px;\n}\n\n.pack-li-content{\nwidth: 100%;\npadding: 10px 0px !important;\ndisplay: flex;\njustify-content: space-between;\n}\n.price-li{\nfont-weight: 600;\n}\n\n.block-swatch__radio + .block-swatch__item[data-pack] {\nmargin-top: 15px;\n}\n.product-form__option-info {\nmargin: 0px;\nmargin-top: -12px;\njustify-content: flex-start !important;\n}\n.pack-list {\nmargin-bottom: -15px;\n}\n@media (max-width: 768px) {\n  .product-guarantee-banner {\n    margin-top: 10px !important;\n  }\n.pack-list {\nmargin-top: 5px;\nmargin-bottom: -5px;\n}\n    .congrats-p {\n        font-size: 12px !important;\n    }\n    .congrats-saving {\n        font-size: 12px !important;\n    }\n}\n\n.product-form__buy-buttons {\nmargin-top: -15px;\n}\n\n.block-swatch__item pack-item {\nheight: 100%;\n}\n.product-meta {\nmargin: 0px;\nborder: none;\npadding: 0px;\n}\n.product-form__text {\ntext-align: center;\nfont-weight: 900;\nline-height: 140%;\n}\nproduct-payment-terms {\nmargin-bottom: 15px;\n}\n.product-guarantee-banner {\nmargin-top: 3px;\n}\n</style>"
+          }
+        },
+        "aa8adaeb-d404-4d2d-9f7b-7c87d4a68e8f": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_payment_button": false,
+            "atc_button_background": "#ffc200",
+            "atc_button_text_color": "#000000",
+            "buy_now_button_background": "rgba(0,0,0,0)",
+            "buy_now_button_text_color": "rgba(0,0,0,0)"
+          }
+        },
+        "liquid_UbAGXa": {
+          "type": "liquid",
+          "name": "Amazon",
+          "settings": {
+            "liquid": "<a \nclass=\"amazon-link__custom\"\n\nhref=\"https://www.amazon.com/dp/B0FRFBTL2K?maas=maas_adg_0803CA850E76D640C44F7EF11D906D8D_afap_abs&ref_=aa_maas&tag=maas\" target=\"_blank\">\n<div class=\"amazon-button\">\n<img src=\"https://cdn.shopify.com/s/files/1/0049/0533/6935/files/amazon.png?v=1770847365\" \n/>\n<p>\nBUY ON AMAZON ➔\n</p>\n</div>\n</a>\n<style>\n.amazon-button {\ndisplay: flex;\nalign-items: center;\njustify-content: center;\ngap: 10px;\nborder-radius: 4px;\nborder: 1px solid black;\nmin-height: 50px;\n}\n.amazon-button img{\nwidth: 20px;\nmargin: auto 0px;\n}\n.amazon-button p{\nmargin: 0px;\nfont-size: 14px;\nfont-family: Poppins;\nfont-weight: 600;\nletter-spacing: 0.1em;\n}\n</style>"
+          }
+        },
+        "liquid_cfng9G": {
+          "type": "liquid",
+          "disabled": true,
+          "settings": {
+            "liquid": "<script>\ndocument.addEventListener(\"DOMContentLoaded\", () => {\n  setTimeout(() => {\n    const host = document.querySelector(\"shopify-payment-terms\");\n    if (!host) {\n      console.log(\"⚠️ No se encontró el elemento <shopify-payment-terms>\");\n      return;\n    }\n\n    const shadow = host.shadowRoot;\n    if (!shadow) {\n      console.log(\"⚠️ No se pudo acceder al shadowRoot (puede ser closed)\");\n      return;\n    }\n\n    const el = shadow.querySelector(\"#shopify-installments-content\");\n    if (!el) {\n      console.log(\"⚠️ #shopify-installments-content no encontrado dentro del shadowRoot\");\n      return;\n    }\n\n    const amountEl = el.querySelector(\".font-bold\");\n    const shopPayEl = el.querySelector(\"svg\")?.closest(\"div\");\n\n    if (amountEl && shopPayEl) {\n      const amount = amountEl.textContent.trim();\n      const shopPayHTML = shopPayEl.outerHTML;\n\n      el.innerHTML = `\n        Pay only <strong>${amount}</strong> today.\n        Split the cost with 4 easy, interest-free payments using ${shopPayHTML}.\n        No stress. No extra fees.\n      `;\n\n      console.log(\"✅ Texto reemplazado correctamente dentro del shadowRoot.\");\n    } else {\n      console.log(\"⚠️ No se encontraron los elementos internos dentro del shadowRoot.\");\n    }\n  }, 2000);\n});\n</script>"
+          }
+        },
+        "guarantee_banner_EUidYn": {
+          "type": "guarantee_banner",
+          "settings": {
+            "badge": "shopify://shop_images/3-min_2_440x_png.png",
+            "title_start": "NO B.S. LIFETIME WARRANTY:",
+            "title_highlight": "BREAK IT. WE'LL REPLACE IT.",
+            "description": "<b>If your watch ever fails, we'll send you a new one FOR FREE. No questions asked.</b>"
+          }
+        },
+        "new_guarantee_banner_MKimng": {
+          "type": "new-guarantee_banner",
+          "disabled": true,
+          "settings": {}
+        },
+        "liquid_KVrTQ6": {
+          "type": "liquid",
+          "name": "Slider reviews pdp",
+          "settings": {
+            "liquid": "{% render 'slider-reviews-pdp', product: product %}"
+          }
+        },
+        "liquid_xj9xMB": {
+          "type": "liquid",
+          "name": "Videos",
+          "settings": {
+            "liquid": "<div class=\"video-carousel-pdp\">\n  <button class=\"carousel-arrow left\" aria-label=\"Previous\">\n    <svg width=\"10\" height=\"18\" viewBox=\"0 0 10 18\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M7.797 16.664.648 9.204A1.071 1.071 0 0 1 .375 8.5c0-.195.078-.43.234-.625L7.758.415a.932.932 0 0 1 1.328-.04c.39.352.39.938.039 1.328L2.602 8.5l6.562 6.875a.932.932 0 0 1-.039 1.328.932.932 0 0 1-1.328-.039Z\" fill=\"#090A0B\"></path></svg>\n  </button>\n\n  <div class=\"carousel-track\">\n    <!-- Slide 1 -->\n    <div class=\"carousel-slide\">\n      <div class=\"video-wrapper\">\n        <video\n          src=\"https://cdn.shopify.com/videos/c/o/v/c047f2b629b44ab9813070de387d89a6.mp4\"\n          poster=\"https://cdn.shopify.com/s/files/1/0049/0533/6935/files/poster-blastbeam-1_1.webp?v=1760718887\"\n          playsinline\n          controlsList=\"nodownload noremoteplayback noplaybackrate nopictureinpicture\"\n          preload=\"auto\">\n        </video>\n        <div class=\"play-button\">\n          <svg class=\"\" xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\"><path d=\"M4 3.532c0-1.554 1.696-2.514 3.029-1.715l14.113 8.468c1.294.777 1.294 2.653 0 3.43L7.029 22.183c-1.333.8-3.029-.16-3.029-1.715V3.532Z\" fill=\"#FFFFFF\"></path></svg>\n        </div>\n      </div>\n    </div>\n\n    <!-- Slide 2 -->\n    <div class=\"carousel-slide\">\n      <div class=\"video-wrapper\">\n        <video\n          src=\"https://cdn.shopify.com/videos/c/o/v/edfed2ae2ddf418cb15cdf87df5dc956.mp4\"\n          poster=\"https://cdn.shopify.com/s/files/1/0049/0533/6935/files/poster-blastbeam-2_1.webp?v=1760718887\"\n          playsinline\n          controlsList=\"nodownload noremoteplayback noplaybackrate nopictureinpicture\"\n          preload=\"auto\">\n        </video>\n        <div class=\"play-button\">\n          <svg class=\"\" xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\"><path d=\"M4 3.532c0-1.554 1.696-2.514 3.029-1.715l14.113 8.468c1.294.777 1.294 2.653 0 3.43L7.029 22.183c-1.333.8-3.029-.16-3.029-1.715V3.532Z\" fill=\"#FFFFFF\"></path></svg>\n        </div>\n      </div>\n    </div>\n\n    <!-- Slide 3 -->\n    <div class=\"carousel-slide\">\n      <div class=\"video-wrapper\">\n        <video\n          src=\"https://cdn.shopify.com/videos/c/o/v/e0844d4039244680b71376b45b99bdca.mp4\"\n          poster=\"https://cdn.shopify.com/s/files/1/0049/0533/6935/files/poster-blastbeam-3_1.webp?v=1760718887\"\n          playsinline\n          controlsList=\"nodownload noremoteplayback noplaybackrate nopictureinpicture\"\n          preload=\"auto\">\n        </video>\n        <div class=\"play-button\">\n          <svg class=\"\" xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\"><path d=\"M4 3.532c0-1.554 1.696-2.514 3.029-1.715l14.113 8.468c1.294.777 1.294 2.653 0 3.43L7.029 22.183c-1.333.8-3.029-.16-3.029-1.715V3.532Z\" fill=\"#FFFFFF\"></path></svg>\n        </div>\n      </div>\n    </div>\n\n    <!-- Slide 4 -->\n    <div class=\"carousel-slide\">\n      <div class=\"video-wrapper\">\n        <video\n          src=\"https://cdn.shopify.com/videos/c/o/v/f3b4a85db1404fcaa84bbf5653e9dcbf.mp4\"\n          poster=\"https://cdn.shopify.com/s/files/1/0049/0533/6935/files/poster-blastbeam-4_1.webp?v=1760718887\"\n          playsinline\n          controlsList=\"nodownload noremoteplayback noplaybackrate nopictureinpicture\"\n          preload=\"auto\">\n        </video>\n        <div class=\"play-button\">\n          <svg class=\"\" xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\"><path d=\"M4 3.532c0-1.554 1.696-2.514 3.029-1.715l14.113 8.468c1.294.777 1.294 2.653 0 3.43L7.029 22.183c-1.333.8-3.029-.16-3.029-1.715V3.532Z\" fill=\"#FFFFFF\"></path></svg>\n        </div>\n      </div>\n    </div>\n\n    <!-- Slide 5 -->\n    <div class=\"carousel-slide\">\n      <div class=\"video-wrapper\">\n        <video\n          src=\"https://cdn.shopify.com/videos/c/o/v/bab1e56b1c74459789df9f1e968c108f.mp4\"\n          poster=\"https://cdn.shopify.com/s/files/1/0049/0533/6935/files/poster-blastbeam-5_1.webp?v=1760718887\"\n          playsinline\n          controlsList=\"nodownload noremoteplayback noplaybackrate nopictureinpicture\"\n          preload=\"auto\">\n        </video>\n        <div class=\"play-button\">\n          <svg class=\"\" xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\"><path d=\"M4 3.532c0-1.554 1.696-2.514 3.029-1.715l14.113 8.468c1.294.777 1.294 2.653 0 3.43L7.029 22.183c-1.333.8-3.029-.16-3.029-1.715V3.532Z\" fill=\"#FFFFFF\"></path></svg>\n        </div>\n      </div>\n    </div>\n\n  </div>\n\n  <button class=\"carousel-arrow right\" aria-label=\"Next\">\n    <svg width=\"10\" height=\"18\" viewBox=\"0 0 10 18\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M7.797 16.664.648 9.204A1.071 1.071 0 0 1 .375 8.5c0-.195.078-.43.234-.625L7.758.415a.932.932 0 0 1 1.328-.04c.39.352.39.938.039 1.328L2.602 8.5l6.562 6.875a.932.932 0 0 1-.039 1.328.932.932 0 0 1-1.328-.039Z\" fill=\"#090A0B\"></path></svg>\n  </button>\n</div>\n\n<style>\n.video-carousel-pdp {\n  position: relative;\n  width: 100%;\nmax-width: calc(var(--grid-column-width) * 8 + var(--grid-gap) * 7);\n  overflow: hidden;\n}\n\n.video-carousel-pdp .carousel-track {\n  display: flex;\n  gap: 6px;\n  overflow-x: auto;\n  scroll-behavior: smooth;\n  margin: 0px 30px;\n   scrollbar-width: none; /* Firefox */\n  -ms-overflow-style: none; /* IE y Edge antiguos */\n}\n\n.video-carousel-pdp .carousel-slide {\n  flex: 0 0 auto;\n  width: 200px;\n}\n\n.video-carousel-pdp .video-wrapper {\n  position: relative;\n  aspect-ratio: 9 / 16;\n  background: #000;\n  border-radius: 2px;\n  overflow: hidden;\n}\n.video-wrapper video::-webkit-media-controls-picture-in-picture-button {\n  display: none;\n}\n\n\n.video-carousel-pdp video {\n  width: 100%;\n  height: 100%;\n  object-fit: cover;\n  display: block;\n}\n\n.video-carousel-pdp .play-button {\n\n    position: absolute;\n    top: 50%;\n    left: 50%;\n    transform: translate(-50%, -50%);\n    font-size: 26px !important;\n    padding: 5px 18px;\n    padding-top: 10px;\n    color: white;\n    background: transparent;\n    border: 2px solid white;\n    border-radius: 50%;\n    cursor: pointer;\n}\n\n.video-carousel-pdp .carousel-arrow {\n  position: absolute;\n  top: 50%;\n  transform: translateY(-50%);\n  background: white;\n  border: none;\n  color: black;\n  cursor: pointer;\n  width: 30px;\n  height: 30px;\n  z-index: 10;\n  border-radius: 999px;\n}\n\n.video-carousel-pdp .carousel-arrow.left {\n  left: 0px;\n}\n\n.video-carousel-pdp .carousel-arrow.right {\n  right: 0px;\n  transform: scaleX(-1);\n}\n\n.video-carousel-pdp .carousel-arrow.left svg {\n  position: relative;\n  right: -5px;\n}\n\n.video-carousel-pdp .carousel-arrow.right svg {\n  position: relative;\n  left: 5px;\n}\n@media (max-width: 1000px) {\n.video-carousel-pdp {\nmax-width: calc(100vw - 48px);\n}\n}\n@media (max-width: 768px) {\n  .video-carousel-pdp .carousel-slide {\n    width: 150px;\n  }\n  .video-carousel-pdp .carousel-arrow{\n    display: none;\n  }\n  .video-carousel-pdp .carousel-track {\n  margin: 0px;\n}\n}\n</style>\n\n<script>\ndocument.addEventListener(\"DOMContentLoaded\", function() {\n  const carousel = document.querySelector(\".video-carousel-pdp\");\n  const track = carousel.querySelector(\".carousel-track\");\n  const leftBtn = carousel.querySelector(\".carousel-arrow.left\");\n  const rightBtn = carousel.querySelector(\".carousel-arrow.right\");\n\n  leftBtn.addEventListener(\"click\", () => {\n    track.scrollBy({ left: -200, behavior: \"smooth\" });\n  });\n\n  rightBtn.addEventListener(\"click\", () => {\n    track.scrollBy({ left: 200, behavior: \"smooth\" });\n  });\n\n  carousel.querySelectorAll(\".video-wrapper\").forEach(wrapper => {\n    const video = wrapper.querySelector(\"video\");\n    const playBtn = wrapper.querySelector(\".play-button\");\n    video.disablePictureInPicture = true;\n\n    playBtn.addEventListener(\"click\", () => {\n      if (video.paused) {\n        video.play();\n        playBtn.style.display = \"none\";\n        video.setAttribute(\"controls\", \"controls\"); // Muestra controles\n    } else {\n        video.pause();\n        playBtn.style.display = \"block\";\n        video.removeAttribute(\"controls\", \"controls\"); // Muestra controles\n      }\n    });\n\n    video.addEventListener(\"ended\", () => {\n      playBtn.style.display = \"block\";\n    });\n  });\n});\n</script>"
+          }
+        },
+        "4ac75f75-351e-49cb-9367-33b5cfe6a9bd": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/3-min_2.png",
+            "image_alignment": "center",
+            "image_width": 440
+          }
+        }
+      },
+      "block_order": [
+        "list_icons_pdp_8DDjnH",
+        "liquid_9giWJk",
+        "liquid_h7XXDD",
+        "liquid_A8phzp",
+        "liquid_bQmFjW",
+        "77b0126f-d176-4e47-b6f3-d2424b9b32ea",
+        "liquid_UwKrnt",
+        "aa8adaeb-d404-4d2d-9f7b-7c87d4a68e8f",
+        "liquid_UbAGXa",
+        "liquid_cfng9G",
+        "guarantee_banner_EUidYn",
+        "new_guarantee_banner_MKimng",
+        "liquid_KVrTQ6",
+        "liquid_xj9xMB",
+        "4ac75f75-351e-49cb-9367-33b5cfe6a9bd"
+      ],
+      "custom_css": [
+        "@media (min-width: 768px) {.product {margin-top: 20px; }}",
+        "button {padding: 4px; font-size: 16px;}",
+        "h5 {font-size: 13px; color: #11a603; text-align: center;}",
+        "div {font-size: 14px;}",
+        "h4 {font-size: 12px; letter-spacing: -0.3px; text-align: center;}",
+        ".price--highlight {font-size: 20px;}",
+        ".label--highlight {font-size: 13px;}",
+        "@media (max-width: 768px) {.reviews-slider-template--25675562418548__main {margin-bottom: 10px; }}"
+      ],
+      "settings": {
+        "delivery_time": "",
+        "show_vendor": false,
+        "show_sku": false,
+        "show_taxes_included": false,
+        "show_product_rating": false,
+        "show_sticky_add_to_cart": true,
+        "show_payment_methods": false,
+        "show_share_buttons": false,
+        "help_page": "",
+        "enable_video_autoplay": true,
+        "enable_video_looping": true,
+        "enable_image_zoom": false,
+        "show_thumbnails_on_mobile": true,
+        "desktop_thumbnails_position": "bottom",
+        "transition_effect": "slide"
+      }
+    },
+    "product_item_nDWeCY": {
+      "type": "product-item",
+      "blocks": {
+        "product_items_QF4B8t": {
+          "type": "Product-items",
+          "settings": {
+            "image1": "shopify://shop_images/Sin_titulo_1000_x_500_px_-min.png",
+            "heading": "",
+            "para": ""
+          }
+        }
+      },
+      "block_order": [
+        "product_items_QF4B8t"
+      ],
+      "custom_css": [
+        ".ridge-step-item-img {display: flex; justify-content: center; margin-top: -20px;}",
+        "@media (min-width: 768px) {.ridge-step-item-img {margin-top: -80px; }}"
+      ],
+      "settings": {}
+    },
+    "image_with_text_zbdBqG": {
+      "type": "image-with-text",
+      "blocks": {
+        "item_7UgUPD": {
+          "type": "item",
+          "settings": {
+            "show_video": false,
+            "video_link": "",
+            "image": "shopify://shop_images/blastbeam-7.webp",
+            "tab_label": "Item",
+            "subheading": "",
+            "title": "⬇️ SMART FEATURES ⬇️",
+            "content": "",
+            "button_text": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "item_7UgUPD"
+      ],
+      "custom_css": [
+        ".image-with-text__wrapper {display: flex; flex-direction: column-reverse; gap: 60px;}",
+        ".image-with-text__image-wrapper {margin: auto;}",
+        "@media (max-width: 768px) {.image-with-text {padding: 0px 30px 20px; } .image-with-text__wrapper {gap: 20px; } .container.custom-full-width {padding: 0px; }}",
+        ".image-with-text__content-wrapper {width: fit-content; margin: auto;}"
+      ],
+      "settings": {
+        "section_id": "",
+        "reveal_on_scroll": false,
+        "background_type": "full_width",
+        "background_overlap": "both",
+        "image_position": "left",
+        "text_alignment": "center",
+        "cycle_speed": 8,
+        "accent_background": "#000000",
+        "text_color": "#ffc200",
+        "button_background": "#292323",
+        "button_text_color": "#5a5353",
+        "enable_custom_margin": false,
+        "margin_bottom": 0
+      }
+    },
+    "c4d5d849-903b-4f94-a366-9dd19f7a438e": {
+      "type": "image-with-text",
+      "blocks": {
+        "35be12bc-6d06-4cc0-94ac-25211273e8e5": {
+          "type": "item",
+          "settings": {
+            "show_video": false,
+            "video_link": "",
+            "image": "shopify://shop_images/blastbeam-1_2.webp",
+            "tab_label": "Item",
+            "subheading": "",
+            "title": "YOUR POCKET-SIZED WORKHORSE",
+            "content": "<p><strong>For men who work hard every day. The Blastbeam delivers 300 lumens, survives drops and dirt, and sticks to metal for hands-free work. Ready for any job, anytime.</strong></p>",
+            "button_text": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "35be12bc-6d06-4cc0-94ac-25211273e8e5"
+      ],
+      "custom_css": [
+        "h2 {font-size: 12px;}",
+        "h3 {font-size: 22px; color: #ffc200;}",
+        "h5 {font-size: 16px; letter-spacing: -0.7px; line-height: 20px;}",
+        ".image-with-text__image-wrapper,.image-with-text__wrapper,.container.custom-full-width,.image-with-text {padding: 0px !important; margin: 0px auto !important;}",
+        ".image-with-text__content {padding: 30px 15px;}",
+        "@media (min-width: 768px) {.image-with-text__wrapper {flex-direction: row !important; }}",
+        ".image-with-text__text-wrapper {line-height: 140%;}",
+        ".heading.h3 {margin-bottom: 10px;}"
+      ],
+      "settings": {
+        "section_id": "",
+        "reveal_on_scroll": false,
+        "background_type": "full_width",
+        "background_overlap": "both",
+        "image_position": "right",
+        "text_alignment": "center",
+        "cycle_speed": 8,
+        "accent_background": "#000000",
+        "text_color": "#ffffff",
+        "button_background": "#292323",
+        "button_text_color": "#5a5353",
+        "enable_custom_margin": false,
+        "margin_bottom": 0
+      }
+    },
+    "7093bb3e-6e7a-4e7c-b3dd-09080160deb5": {
+      "type": "rich-text",
+      "custom_css": [
+        "h2 {color: #ffc200; font-size: 24px;}",
+        "h3 {font-size: 16px;"
+      ],
+      "settings": {
+        "section_id": "",
+        "subheading": "★★★★★",
+        "title": "\"I take the Blastbeam everywhere on the job. Drops, mud, long shifts, it never lets me down.\"",
+        "content": "<p><strong>Mike R., Construction Worker, Ohio</strong></p>",
+        "button_text": "",
+        "button_link": "",
+        "background_type": "full_width",
+        "text_width": "fill",
+        "text_position": "center",
+        "text_alignment": "center",
+        "background": "#eeeeee",
+        "text_color": "#000000",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "image_with_text_VQm8QP": {
+      "type": "image-with-text",
+      "blocks": {
+        "item_qr7yiJ": {
+          "type": "item",
+          "settings": {
+            "show_video": false,
+            "video_link": "",
+            "image": "shopify://shop_images/blastbeam-2_1.webp",
+            "tab_label": "Item",
+            "subheading": "",
+            "title": "BUILT TO LAST, BRIGHTER THAN EVER.",
+            "content": "<p><strong>The Blastbeam isn’t just any flashlight, it’s your go-to companion for the toughest jobs and the roughest environments.<br/><br/>Ultra-portable, blindingly bright, and built to survive drops, dirt, and extreme conditions, it keeps you going when every second counts.</strong></p>",
+            "button_text": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "item_qr7yiJ"
+      ],
+      "custom_css": [
+        "h2 {font-size: 12px;}",
+        "h3 {font-size: 22px; color: #ffc200;}",
+        "h5 {font-size: 16px; letter-spacing: -0.7px; line-height: 20px;}",
+        ".image-with-text__image-wrapper,.image-with-text__wrapper,.container.custom-full-width,.image-with-text {padding: 0px !important; margin: 0px auto !important;}",
+        ".image-with-text__content {padding: 30px 15px;}",
+        "@media (min-width: 768px) {.image-with-text__wrapper {flex-direction: row !important; }}",
+        ".image-with-text__text-wrapper {line-height: 140%;}",
+        ".heading.h3 {margin-bottom: 10px;}"
+      ],
+      "settings": {
+        "section_id": "",
+        "reveal_on_scroll": false,
+        "background_type": "full_width",
+        "background_overlap": "both",
+        "image_position": "right",
+        "text_alignment": "center",
+        "cycle_speed": 8,
+        "accent_background": "#000000",
+        "text_color": "#ffffff",
+        "button_background": "#292323",
+        "button_text_color": "#5a5353",
+        "enable_custom_margin": false,
+        "margin_bottom": 0
+      }
+    },
+    "image_with_text_pp3yTD": {
+      "type": "image-with-text",
+      "blocks": {
+        "item_W7jNje": {
+          "type": "item",
+          "settings": {
+            "show_video": false,
+            "video_link": "",
+            "image": "shopify://shop_images/blastbeam-3_1.webp",
+            "tab_label": "Item",
+            "subheading": "",
+            "title": "POCKET-SIZED POWER",
+            "content": "<p><strong>At just 6cm, with a built-in keychain ring, the Blastbeam is ultra-portable, ready for any emergency.</strong></p>",
+            "button_text": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "item_W7jNje"
+      ],
+      "custom_css": [
+        "h2 {font-size: 12px;}",
+        "h3 {font-size: 22px; color: #ffc200;}",
+        "h5 {font-size: 16px; letter-spacing: -0.7px; line-height: 20px;}",
+        ".image-with-text__image-wrapper,.image-with-text__wrapper,.container.custom-full-width,.image-with-text {padding: 0px !important; margin: 0px auto !important;}",
+        ".image-with-text__content {padding: 30px 15px;}",
+        ".image-with-text__text-wrapper {line-height: 140%;}",
+        ".heading.h3 {margin-bottom: 10px;}"
+      ],
+      "settings": {
+        "section_id": "",
+        "reveal_on_scroll": false,
+        "background_type": "full_width",
+        "background_overlap": "both",
+        "image_position": "right",
+        "text_alignment": "center",
+        "cycle_speed": 8,
+        "accent_background": "#000000",
+        "text_color": "#ffffff",
+        "button_background": "#292323",
+        "button_text_color": "#5a5353",
+        "enable_custom_margin": false,
+        "margin_bottom": 0
+      }
+    },
+    "image_with_text_jWEbLD": {
+      "type": "image-with-text",
+      "blocks": {
+        "item_tiXmUq": {
+          "type": "item",
+          "settings": {
+            "show_video": false,
+            "video_link": "",
+            "image": "shopify://shop_images/blastbeam-4_1.webp",
+            "tab_label": "Item",
+            "subheading": "",
+            "title": "Blindingly Bright",
+            "content": "<p><strong>Delivers an impressive 300 lumens with 6 adjustable modes—providing professional-grade illumination in seconds.</strong></p>",
+            "button_text": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "item_tiXmUq"
+      ],
+      "custom_css": [
+        "h2 {font-size: 12px;}",
+        "h3 {font-size: 22px; color: #ffc200;}",
+        "h5 {font-size: 16px; letter-spacing: -0.7px; line-height: 20px;}",
+        ".image-with-text__image-wrapper,.image-with-text__wrapper,.container.custom-full-width,.image-with-text {padding: 0px !important; margin: 0px auto !important;}",
+        ".image-with-text__content {padding: 30px 15px;}",
+        "@media (min-width: 768px) {.image-with-text__wrapper {flex-direction: row !important; }}",
+        ".image-with-text__text-wrapper {line-height: 140%;}",
+        ".heading.h3 {margin-bottom: 10px;}"
+      ],
+      "settings": {
+        "section_id": "",
+        "reveal_on_scroll": false,
+        "background_type": "full_width",
+        "background_overlap": "both",
+        "image_position": "right",
+        "text_alignment": "center",
+        "cycle_speed": 8,
+        "accent_background": "#000000",
+        "text_color": "#ffffff",
+        "button_background": "#292323",
+        "button_text_color": "#5a5353",
+        "enable_custom_margin": false,
+        "margin_bottom": 0
+      }
+    },
+    "image_with_text_gnHywA": {
+      "type": "image-with-text",
+      "blocks": {
+        "item_DpBCbr": {
+          "type": "item",
+          "settings": {
+            "show_video": false,
+            "video_link": "",
+            "image": "shopify://shop_images/blastbeam-5_1.webp",
+            "tab_label": "Item",
+            "subheading": "",
+            "title": "Unmatched Durability",
+            "content": "<p><strong>Built from rugged aluminum alloy & ABS, it’s drop-resistant, dirt-proof, and ready for any abuse.</strong></p>",
+            "button_text": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "item_DpBCbr"
+      ],
+      "custom_css": [
+        "h2 {font-size: 12px;}",
+        "h3 {font-size: 22px; color: #ffc200;}",
+        "h5 {font-size: 16px; letter-spacing: -0.7px; line-height: 20px;}",
+        ".image-with-text__image-wrapper,.image-with-text__wrapper,.container.custom-full-width,.image-with-text {padding: 0px !important; margin: 0px auto !important;}",
+        ".image-with-text__content {padding: 30px 15px;}",
+        ".image-with-text__text-wrapper {line-height: 140%;}",
+        ".heading.h3 {margin-bottom: 10px;}"
+      ],
+      "settings": {
+        "section_id": "",
+        "reveal_on_scroll": false,
+        "background_type": "full_width",
+        "background_overlap": "both",
+        "image_position": "right",
+        "text_alignment": "center",
+        "cycle_speed": 8,
+        "accent_background": "#000000",
+        "text_color": "#ffffff",
+        "button_background": "#292323",
+        "button_text_color": "#5a5353",
+        "enable_custom_margin": false,
+        "margin_bottom": 0
+      }
+    },
+    "image_with_text_aVLkBb": {
+      "type": "image-with-text",
+      "blocks": {
+        "item_gKGPmw": {
+          "type": "item",
+          "settings": {
+            "show_video": false,
+            "video_link": "",
+            "image": "shopify://shop_images/blastbeam-6_1.webp",
+            "tab_label": "Item",
+            "subheading": "",
+            "title": "Magnetic Hands-Free Lighting",
+            "content": "<p><strong>The magnetic base sticks to metal surfaces, making it perfect for hands-free work in tough conditions.</strong></p>",
+            "button_text": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "item_gKGPmw"
+      ],
+      "custom_css": [
+        "h2 {font-size: 12px;}",
+        "h3 {font-size: 22px; color: #ffc200;}",
+        "h5 {font-size: 16px; letter-spacing: -0.7px; line-height: 20px;}",
+        ".image-with-text__image-wrapper,.image-with-text__wrapper,.container.custom-full-width,.image-with-text {padding: 0px !important; margin: 0px auto !important;}",
+        ".image-with-text__content {padding: 30px 15px;}",
+        "@media (min-width: 768px) {.image-with-text__wrapper {flex-direction: row !important; }}",
+        ".image-with-text__text-wrapper {line-height: 140%;}",
+        ".heading.h3 {margin-bottom: 10px;}"
+      ],
+      "settings": {
+        "section_id": "",
+        "reveal_on_scroll": false,
+        "background_type": "full_width",
+        "background_overlap": "both",
+        "image_position": "right",
+        "text_alignment": "center",
+        "cycle_speed": 8,
+        "accent_background": "#000000",
+        "text_color": "#ffffff",
+        "button_background": "#292323",
+        "button_text_color": "#5a5353",
+        "enable_custom_margin": false,
+        "margin_bottom": 0
+      }
+    },
+    "product-content": {
+      "type": "product-content",
+      "blocks": {
+        "description": {
+          "type": "description",
+          "disabled": true,
+          "settings": {}
+        },
+        "bc751217-69a0-4865-b75f-a3750a2b9c28": {
+          "type": "content",
+          "disabled": true,
+          "settings": {
+            "title": "x-ranger SPECIFICATIONS:",
+            "content": "<h6><strong>- Full Metal Bezel and Body<br/>- Waterproof Technology<br/>- 70 SPORTS MODES<br/>- 410mAh of battery<br/>- 14 days of battery within one charge<br/>- 1.43’’ AMOLED Display<br/>- Heart Rate Sensor: VP60<br/>- Pedometer Sensor: STK8325<br/>- OXYGEN TRACKING<br/>- STEPS COUNTER<br/>- SLEEP MODE<br/>- Scratch-proof tempered glass<br/>- Microphone & Speaker INTEGRATED<br/>- social media notifications<br/>- alarm<br/>- Calendar<br/>- Weather tracking<br/>- CARBINOX APP<br/>- COMPATIBLE WITH ANDROID AND IOS<br/>- Diameter: 44mm<br/>- Weight: 100 gR</strong></h6>",
+            "page": ""
+          }
+        },
+        "c6ed9da0-bdf5-43a3-8685-71d9c9d6fcf6": {
+          "type": "content",
+          "settings": {
+            "title": "Package includes:",
+            "content": "<h6>1x carbinox x-ranger<br/>1x usb charging cable<br/>1x Instructions Manual<br/>1x Free Gift 🎁</h6>",
+            "page": ""
+          }
+        },
+        "3429e515-9812-4e6e-8dcb-71d5cf1a780b": {
+          "type": "content",
+          "settings": {
+            "title": "GUARANTEES:",
+            "content": "<h6>THE CARBINOX X-RANGER COMES WITH A 45-DAY RISK FREE GUARANTEE. FAST RETURNS OR REPLACEMENTS AT NO COST. WE'VE GOT YOU COVERED.</h6>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "description",
+        "bc751217-69a0-4865-b75f-a3750a2b9c28",
+        "c6ed9da0-bdf5-43a3-8685-71d9c9d6fcf6",
+        "3429e515-9812-4e6e-8dcb-71d5cf1a780b"
+      ],
+      "disabled": true,
+      "custom_css": [],
+      "settings": {}
+    },
+    "b97def7a-4167-4995-aeed-ca9dcdcf40b5": {
+      "type": "image-with-text",
+      "blocks": {
+        "46276caf-7bec-4dc3-babb-e90e3753b5ab": {
+          "type": "item",
+          "settings": {
+            "show_video": false,
+            "video_link": "",
+            "image": "shopify://shop_images/3-min_6_381e6dbc-2788-4cb0-a5b5-604cca6fdba4.png",
+            "tab_label": "Item",
+            "subheading": "The data you need to stay on top of your game.",
+            "title": "Superior Accuracy WITH Smarter Sensors.",
+            "content": "",
+            "button_text": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "46276caf-7bec-4dc3-babb-e90e3753b5ab"
+      ],
+      "disabled": true,
+      "custom_css": [
+        "h3 {font-size: 20px; color: #ffc200;}",
+        "H4 {font-size: 18px; text-align: left; letter-spacing: -0.7px; margin-top: -20px;}"
+      ],
+      "settings": {
+        "section_id": "",
+        "reveal_on_scroll": false,
+        "background_type": "full_width",
+        "background_overlap": "both",
+        "image_position": "right",
+        "text_alignment": "center",
+        "cycle_speed": 8,
+        "accent_background": "#000000",
+        "text_color": "#ffffff",
+        "button_background": "#292323",
+        "button_text_color": "#5a5353",
+        "enable_custom_margin": false,
+        "margin_bottom": 0
+      }
+    },
+    "reviews_pdp_custom_EQKwQ9": {
+      "type": "reviews-pdp-custom",
+      "blocks": {
+        "testimonial_hRaRUz": {
+          "type": "testimonial",
+          "settings": {
+            "text": "I DROP IT, KICK IT, GET IT COVERED IN MUD—AND IT STILL LIGHTS UP LIKE NEW. NEVER LEAVING MY SIDE ON THE JOB.",
+            "author": "Mike T., Construction Foreman, Ohio"
+          }
+        },
+        "testimonial_CDMmx3": {
+          "type": "testimonial",
+          "settings": {
+            "text": "SMALL ENOUGH TO FIT IN MY POCKET, BUT THIS THING BLINDS THE ROOM. I’VE NEVER TRUSTED A FLASHLIGHT LIKE THIS BEFORE.",
+            "author": "Carlos R., Mechanic, California"
+          }
+        },
+        "testimonial_fnMrEE": {
+          "type": "testimonial",
+          "settings": {
+            "text": "NEVER LEAVE HOME WITHOUT IT. THE BLASTBEAM LIGHTS UP MY ENTIRE WORKSPACE IN SECONDS AND SURVIVES EVERYTHING I THROW AT IT.",
+            "author": "Travis S., Mechanic, Ohio"
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_hRaRUz",
+        "testimonial_CDMmx3",
+        "testimonial_fnMrEE"
+      ],
+      "name": "Testimonials Section",
+      "settings": {
+        "bg_color": "#161616",
+        "text_color": "#ffffff"
+      }
+    },
+    "a82c5f6c-8f61-455c-8e88-fefb5e155ec4": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--14658305654887__a82c5f6c-8f61-455c-8e88-fefb5e155ec4-item-1": {
+          "type": "item",
+          "settings": {
+            "show_video": false,
+            "video_link": "",
+            "image": "shopify://shop_images/blastbeam-8.webp",
+            "tab_label": "",
+            "subheading": "",
+            "title": "️ ABOUT OUR LIFETIME WARRANTY:",
+            "content": "<p><strong>We are a company that stands behind their<br/>products. We’re so confident they’ll deliver the durability and performance you need that you’re covered for life. If anything<br/>happens, we'll replace it for free. No<br/>questions asked.</strong></p>",
+            "button_text": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--14658305654887__a82c5f6c-8f61-455c-8e88-fefb5e155ec4-item-1"
+      ],
+      "custom_css": [
+        "h2 {font-size: 12px;}",
+        "h3 {font-size: 22px;}",
+        "h5 {font-size: 16px; letter-spacing: -0.7px; line-height: 20px;}",
+        ".image-with-text__image-wrapper,.image-with-text__wrapper,.container.custom-full-width,.image-with-text {padding: 0px !important; margin: 0px auto !important;}",
+        ".image-with-text__content {padding: 30px 15px;}",
+        "@media (min-width: 768px) {.image-with-text__wrapper {flex-direction: row !important; }}",
+        ".image-with-text__text-wrapper {line-height: 150%;}",
+        ".heading.h3 {margin-bottom: 10px; padding: 0px 20px;}"
+      ],
+      "settings": {
+        "section_id": "",
+        "reveal_on_scroll": false,
+        "background_type": "full_width",
+        "background_overlap": "both",
+        "image_position": "left",
+        "text_alignment": "center",
+        "cycle_speed": 8,
+        "accent_background": "#000000",
+        "text_color": "#ffffff",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)",
+        "enable_custom_margin": false,
+        "margin_bottom": 0
+      }
+    },
+    "instant_f_qsl5v_ii_zqoj_lz9_f_QjJ3aq": {
+      "type": "instant-fQsl5vIIZqojLZ9F",
+      "name": "Still skeptical",
+      "settings": {
+        "text_UNqsO6pQ2AodLuje": "<p>Still Skeptical?</p>",
+        "text_jBpvFjCHIzwVj8vg": "<p>Try It Risk-Free</p><p>for 45 Days</p>",
+        "text_9JiklYXCQhdQcv7g": "<p>Take the Carbinox Blaze for a test run, if you don’t love it, <strong>return it within 45 days, no questions asked.</strong></p>",
+        "text_ECg5P6sURkzl3Psl": "<p>Unlimited Replacements</p>",
+        "text_NXjNgHYzPwmCDGzd": "<p>for an entire Year.</p>",
+        "text_VdJYYkELN6DmlQ5a": "<p>You’re fully covered for 365 full days against any internal or external defects, no questions asked.</p>",
+        "text_5KaWEgatKjHDHcgA": "<p><strong>NO B.S. LIFETIME WARRANTY:</strong></p>",
+        "text_H5Y30nQIWOzVq258": "<p><strong>BREAK IT. WE&apos;LL REPLACE IT.</strong></p>",
+        "text_YWg8AScJ8ZjIlms0": "<p>If your watch ever fails, we&apos;ll send you a new one FOR FREE. No questions asked.</p>",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "166007646669623aaa": {
+      "type": "faq",
+      "blocks": {
+        "9e45f6ba-ce45-4182-ab2f-4f8bcd8f6681": {
+          "type": "question",
+          "settings": {
+            "title": "HOW MANY LIGHTING MODES DOES THE BLASTBEAM HAVE?",
+            "answer": "<p>The Blastbeam features <strong>6 lighting modes</strong>, including bright LED and warning lights for any situation.</p>"
+          }
+        },
+        "1660076465f1e811f4-4": {
+          "type": "question",
+          "settings": {
+            "title": "CAN I USE IT HANDS-FREE?",
+            "answer": "<p>Yes! Thanks to its <strong>magnetic base</strong> and <strong>keychain hook</strong>, you can attach it anywhere or hang it for easy, hands-free use.</p>"
+          }
+        },
+        "b94b4ba9-d47e-4003-8a27-597acb9b7952": {
+          "type": "question",
+          "settings": {
+            "title": "IS IT RECHARGEABLE?",
+            "answer": "<p>Absolutely. The Blastbeam is <strong>USB rechargeable</strong> and includes a <strong>battery level indicator</strong> so you always know when it’s time to recharge.</p>"
+          }
+        },
+        "91345035-5b96-4951-8a1e-d62883b97573": {
+          "type": "question",
+          "settings": {
+            "title": "WHAT BUNDLE OPTIONS ARE AVAILABLE?",
+            "answer": "<ul><li><strong>Starter Pack (1 Unit)</strong> — Perfect for personal use.</li><li><strong>Triple Pack (3 Units)</strong> — Save more per unit.</li><li><strong>Family Pack (5 Units)</strong> — Best value for gifts or multiple uses.</li></ul>"
+          }
+        }
+      },
+      "block_order": [
+        "9e45f6ba-ce45-4182-ab2f-4f8bcd8f6681",
+        "1660076465f1e811f4-4",
+        "b94b4ba9-d47e-4003-8a27-597acb9b7952",
+        "91345035-5b96-4951-8a1e-d62883b97573"
+      ],
+      "settings": {
+        "show_navigation": false,
+        "title": "Frequently asked questions",
+        "content": "",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "17297101183d2e6360": {
+      "type": "apps",
+      "custom_css": [
+        "@media (max-width: 1024px) {.tolstoy-carousel-container {margin-top: 0px; }}",
+        "@media (max-width: 600px) {.tolstoy-carousel-container {margin: -30px 0px 0px 24px; } .tolstoy-carousel-arrow-button {display: none; }}",
+        "@media (min-width: 1024px) {.tolstoy-carousel-container {max-width: 48% !important; margin-top: -80px; margin-left: auto; margin-right: 0px; } .tolstoy-video-carousel-container {max-width: 90% !important; }}",
+        "@media (min-width: 1500px) {.tolstoy-video-carousel-container {max-width: 690px !important; padding-left: 15px; }}"
+      ],
+      "settings": {
+        "include_horizontal_margins": true,
+        "include_vertical_margins": true
+      }
+    }
+  },
+  "order": [
+    "rich_text_8NgTVz",
+    "main",
+    "product_item_nDWeCY",
+    "image_with_text_zbdBqG",
+    "c4d5d849-903b-4f94-a366-9dd19f7a438e",
+    "7093bb3e-6e7a-4e7c-b3dd-09080160deb5",
+    "image_with_text_VQm8QP",
+    "image_with_text_pp3yTD",
+    "image_with_text_jWEbLD",
+    "image_with_text_gnHywA",
+    "image_with_text_aVLkBb",
+    "product-content",
+    "b97def7a-4167-4995-aeed-ca9dcdcf40b5",
+    "reviews_pdp_custom_EQKwQ9",
+    "a82c5f6c-8f61-455c-8e88-fefb5e155ec4",
+    "instant_f_qsl5v_ii_zqoj_lz9_f_QjJ3aq",
+    "166007646669623aaa",
+    "17297101183d2e6360"
+  ]
+}

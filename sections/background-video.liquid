@@ -1,0 +1,58 @@
+<section id="background-video">
+    <div class="contain">
+      <div class="video-overlay">
+        <div class="content">
+          <div class="txt">
+            {% if section.settings.title != blank %}
+                <h3 class="heading heading--large">{{ section.settings.title }}</h3>
+            {% endif %}
+          </div>
+          {% if section.settings.btn_text != blank %}
+            <div class="button button--primary">
+                <a href="{{ section.settings.btn_link }}" class="btn ">{{ section.settings.btn_text }}</a>
+            </div>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+    <video preload autoplay loop muted playsinline>
+        <source type="video/mp4" src="{{ section.settings.video_url }}">
+    </video>
+</section>
+
+{% schema %}
+{
+    "name": "Background video",
+    "class": "shopify-section--video",
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Title",
+        "default": "No #1 brand"
+      },
+      {
+        "type": "url",
+        "id": "video_url",
+        "label": "Video URL",
+        "info": "Add mp4 file url like: https://example.com/file.mp4"
+      },
+      {
+        "type": "text",
+        "id": "btn_text",
+        "label": "Button text",
+        "default": "Shop Now"
+      },
+      {
+        "type": "url",
+        "id": "btn_link",
+        "label": "Button link"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Background sideo"
+      }
+    ]
+  }
+{% endschema %}

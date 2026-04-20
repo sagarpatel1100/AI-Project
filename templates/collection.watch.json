@@ -1,0 +1,40 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "collection-top",
+      "settings": {
+        "img": "shopify://shop_images/Diseno_sin_titulo-27-min.jpg",
+        "title": "stronger than your current smartwatch."
+      }
+    },
+    "abb87c80-8d23-479a-9063-65a0c66805cd": {
+      "type": "main-collections",
+      "settings": {
+        "show_sort_by": true,
+        "products_per_page": 24,
+        "mobile_products_per_row": "2",
+        "desktop_products_per_row": 5,
+        "show_filters": true,
+        "show_filter_group_name": false,
+        "show_color_swatch": true,
+        "open_first_filter_group": false,
+        "filter_position": "always_visible",
+        "promotion_position": "top",
+        "promotion_height": "small"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "abb87c80-8d23-479a-9063-65a0c66805cd"
+  ]
+}

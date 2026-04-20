@@ -1,0 +1,59 @@
+<!-- product step -->
+	<section class="ridge-step">
+		<div class="ridge-container"> 
+			<div class="ridge-step-main">
+                {% for block in section.blocks %}
+				<div class="ridge-step-item">
+					<div class="ridge-step-item-img">
+						{{ block.settings.image1 | img_url: 'master' | img_tag }}
+					</div>
+					<div class="ridge-step-item-text">
+						<h2>{{ block.settings.heading }}</h2>
+						{{ block.settings.para }}
+					</div>
+				</div>
+                  {% endfor %}
+				
+			</div>
+		</div>
+	</section>
+
+
+
+{% schema %}
+  {
+    "name": "Products",
+     "blocks": [
+     {
+       "name": "Product Items",
+       "type": "Product-items",
+    "settings": [
+      {
+           "type": "image_picker",
+           "id": "image1",
+           "label": "Image"
+         },
+      {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading"
+    },
+      {
+      "type": "richtext",
+      "id": "para",
+      "label": "Description"
+    }
+      
+    ],
+        }
+     ],
+       
+    "presets" : [
+{
+  "name" : "Product-item",
+  "category" : "Product-item",
+
+  }
+]
+  }
+{% endschema %}

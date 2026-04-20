@@ -1,0 +1,44 @@
+{{ 'section-images-columns.css' | asset_url | stylesheet_tag }}
+
+{% for block in section.blocks %}
+    <img
+        {{ block.shopify_attributes }}
+        src="{{ block.settings.image | image_url: width: 1000 }}"
+        alt="{{ block.settings.image.alt }}"
+        width="{{ block.settings.width }}"
+        height="{{ block.settings.width }}"
+        loading="lazy"
+    />
+{% endfor %}
+
+{% schema %}
+{
+  "name": "Images columns",
+  "class": "image-columns",
+  "blocks": [
+    {
+      "type": "image",
+      "name": "Image",
+      "settings": [
+        {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+        },
+        {
+            "type": "number",
+            "id": "width",
+            "label": "Width"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Images columns",
+      "settings": {},
+      "blocks": []
+    }
+  ]
+}
+{% endschema %}

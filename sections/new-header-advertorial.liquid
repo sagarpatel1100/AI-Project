@@ -1,0 +1,176 @@
+{%- liquid
+  assign show_topbar = section.settings.show_topbar
+  assign topbar_text = section.settings.topbar_text
+  assign topbar_bg = section.settings.topbar_bg
+  assign topbar_color = section.settings.topbar_color
+  assign logo = section.settings.logo
+  assign logo_alignment = section.settings.logo_alignment
+  assign logo_size_desktop = section.settings.logo_size_desktop
+  assign logo_size_mobile = section.settings.logo_size_mobile
+  assign header_bg = section.settings.header_bg
+-%}
+
+{{ 'new-header-advertorial.css' | asset_url | stylesheet_tag }}
+{{ 'new-adventorial-article.css' | asset_url | stylesheet_tag }}
+
+<style>
+
+#header-adventorial-{{ section.id }}{
+  width:100%;
+  background: {{ header_bg }};
+}
+
+#header-adventorial-{{ section.id }} .header-adventorial__logo-container{
+  display:flex;
+  justify-content:
+  {% if logo_alignment == 'left' %}
+  flex-start
+  {% elsif logo_alignment == 'right' %}
+  flex-end
+  {% else %}
+  center
+  {% endif %};
+}
+
+#header-adventorial-{{ section.id }} .header-adventorial__logo{
+  width:{{ logo_size_desktop }}px;
+}
+
+@media(max-width:768px){
+
+  #header-adventorial-{{ section.id }} .header-adventorial__logo{
+    width:{{ logo_size_mobile }}px;
+  }
+
+}
+
+.adventorial-article__container {
+  max-width: 740px !important;
+}
+
+</style>
+
+
+<div id="header-adventorial-{{ section.id }}" class="header-adventorial">
+
+  {% if show_topbar and topbar_text != blank %}
+  <div class="header-adventorial__topbar" style="background:{{ topbar_bg }}; color:{{ topbar_color }}">
+
+    <div class="header-adventorial__container">
+      <p class="header-adventorial__topbar-text">
+        {{ topbar_text }}
+      </p>
+    </div>
+
+  </div>
+  {% endif %}
+
+
+  <div class="header-adventorial__logo-wrapper">
+
+    <div class="header-adventorial__container header-adventorial__logo-container">
+
+      {% if logo != blank %}
+
+      <img
+        src="{{ logo | image_url }}"
+        class="header-adventorial__logo"
+        alt="logo"
+        loading="lazy"
+      >
+
+      {% endif %}
+
+    </div>
+
+  </div>
+
+</div>
+
+
+{% schema %}
+{
+  "name": "Header Adventorial",
+  "tag": "section",
+  "settings": [
+
+    {
+      "type": "color",
+      "id": "header_bg",
+      "label": "Header background color",
+      "default": "#FFFFFF"
+    },
+
+    {
+      "type": "checkbox",
+      "id": "show_topbar",
+      "label": "Show top bar",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "topbar_text",
+      "label": "Top bar text",
+      "default": "#1 US Tech Gift 2025 – Order Now"
+    },
+    {
+      "type": "color",
+      "id": "topbar_bg",
+      "label": "Top bar background color",
+      "default": "#395B36"
+    },
+    {
+      "type": "color",
+      "id": "topbar_color",
+      "label": "Top bar text color",
+      "default": "#FFFFFF"
+    },
+
+    {
+      "type": "image_picker",
+      "id": "logo",
+      "label": "Logo image"
+    },
+
+    {
+      "type": "select",
+      "id": "logo_alignment",
+      "label": "Logo alignment",
+      "default": "center",
+      "options": [
+        { "value": "left", "label": "Left" },
+        { "value": "center", "label": "Center" },
+        { "value": "right", "label": "Right" }
+      ]
+    },
+
+    {
+      "type": "range",
+      "id": "logo_size_desktop",
+      "min": 50,
+      "max": 400,
+      "step": 10,
+      "unit": "px",
+      "label": "Logo size desktop",
+      "default": 180
+    },
+
+    {
+      "type": "range",
+      "id": "logo_size_mobile",
+      "min": 40,
+      "max": 250,
+      "step": 10,
+      "unit": "px",
+      "label": "Logo size mobile",
+      "default": 120
+    }
+
+  ],
+  "presets": [
+    {
+      "name": "Header Adventorial"
+    }
+  ]
+}
+{% endschema %}

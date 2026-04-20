@@ -1,0 +1,33 @@
+{% if section.settings.scroll-show != blank %} 
+  <div id="ProdSec2" > 
+    <span>
+    {{ section.settings.scro1 }}
+    </span>
+  </div> 
+{% endif %}
+{% schema %}
+  {
+    "name": "About 5",
+    "settings":[
+      {
+        "type": "checkbox",
+        "id": "scroll-show",
+        "label": "Show Scroll bar"   
+      },   
+      {
+        "type":"text",
+        "id":"scro1",
+        "label":"Scrollbar Text"
+      }
+     ],
+    "presets": [
+      {
+        "name": "Scroll-bar"
+      }
+    ]
+  }
+{% endschema %}
+{% stylesheet %}
+{% endstylesheet %}
+{% javascript %}
+{% endjavascript %}

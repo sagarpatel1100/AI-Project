@@ -1,0 +1,112 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "show_title": true,
+        "page_width": "medium"
+      }
+    },
+    "16600147594a68770c": {
+      "type": "rich-text",
+      "settings": {
+        "subheading": "",
+        "title": "shipping policy",
+        "content": "<p>All our products are shipped and delivered by well known companies across the United States such as FedEx, UPS, DHL and USPS. All orders are processed within 1-2 business days (excluding weekends and holidays) after receiving your order confirmation..We offer two types of shipping: Free Shipping (3-5 business days) and Pre-Paid Shipping for $12.99 (1-2 business days)..To pack every single order, we use strong boxes with internal protection to guarantee safety through shipping process..After processing your order, it free shipping takes around 3-5 business days, and paid shipping 1-2 business days(excluding weekends and holidays) to arrive to its final destination.</p><p>If you received a tracking number via e-mail, it means that your order has been processed and shipped to the distribution facility. As soon as your tracking information changes from \"On Its Way\" to \"In Transit\", it only takes about 3-5 business days to arrive for Free Shipping and 1-2 business days for Pre-Paid Shipping.</p><p>If you want to track your order please visit the following link: <a href=\"https://shopcarbinox.com/apps/order-tracking\">https://shopcarbinox.com/apps/order-tracking</a></p><p>Disclaimer: These policies are verified for Carbinox and able to be used against any claim. Please make sure to read these policies before placing your order. </p><p> </p><p><strong>Carbinox Co.</strong><br/><strong>Support: </strong>Monday - Friday 9:00 AM - 6:00 PM (EST)<br/><strong>E-mail: </strong>info@shopcarbinox.com<br/></p>",
+        "button_text": "",
+        "button_link": "",
+        "background_type": "full_width",
+        "text_width": "medium",
+        "text_position": "center",
+        "text_alignment": "left",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "166247646084a0b229": {
+      "type": "social-media-gallery",
+      "blocks": {
+        "1662476460b6a0a8ff-0": {
+          "type": "image",
+          "settings": {
+            "logo": "shopify://shop_images/hiw3.png",
+            "link": ""
+          }
+        },
+        "1662476460b6a0a8ff-1": {
+          "type": "image",
+          "settings": {
+            "logo": "shopify://shop_images/hiw3.png",
+            "link": ""
+          }
+        },
+        "1662476460b6a0a8ff-2": {
+          "type": "image",
+          "settings": {
+            "logo": "shopify://shop_images/hiw3.png",
+            "link": ""
+          }
+        },
+        "1662476460b6a0a8ff-3": {
+          "type": "image",
+          "settings": {
+            "logo": "shopify://shop_images/hiw1.png",
+            "link": ""
+          }
+        },
+        "1662476460b6a0a8ff-4": {
+          "type": "image",
+          "settings": {
+            "logo": "shopify://shop_images/hiw1.png",
+            "link": ""
+          }
+        },
+        "1662476460b6a0a8ff-5": {
+          "type": "image",
+          "settings": {
+            "logo": "shopify://shop_images/hiw1.png",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "1662476460b6a0a8ff-0",
+        "1662476460b6a0a8ff-1",
+        "1662476460b6a0a8ff-2",
+        "1662476460b6a0a8ff-3",
+        "1662476460b6a0a8ff-4",
+        "1662476460b6a0a8ff-5"
+      ],
+      "settings": {
+        "reveal_on_scroll": true,
+        "subheading": "follow us",
+        "title": "join our social media",
+        "button_text": "",
+        "button_link": "",
+        "stack_logos": true,
+        "background": "#2c3036",
+        "text_color": "#f9f9f9",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)",
+        "logo_background": "rgba(0,0,0,0)"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "16600147594a68770c",
+    "166247646084a0b229"
+  ]
+}

@@ -1,1 +1,469 @@
-{"sections":{"main":{"type":"main-product","blocks":{"vendor":{"type":"text","settings":{"text":"{{ product.vendor }}","text_style":"uppercase"}},"title":{"type":"title","settings":{}},"price":{"type":"price","settings":{}},"variant_picker":{"type":"variant_picker","settings":{"picker_type":"button","swatch_shape":"circle"}},"quantity_selector":{"type":"quantity_selector","settings":{}},"buy_buttons":{"type":"buy_buttons","settings":{"show_dynamic_checkout":true,"show_gift_card_recipient":true}},"description":{"type":"description","settings":{}},"share":{"type":"share","settings":{"share_label":"Share"}}},"block_order":["vendor","title","price","variant_picker","quantity_selector","buy_buttons","description","share"],"settings":{"enable_sticky_info":true,"color_scheme":"scheme-1","media_size":"large","constrain_to_viewport":true,"media_fit":"contain","gallery_layout":"stacked","mobile_thumbnails":"hide","media_position":"left","image_zoom":"lightbox","hide_variants":true,"enable_video_looping":false,"padding_top":36,"padding_bottom":12}},"related-products":{"type":"related-products","settings":{"heading":"You may also like","heading_size":"h2","products_to_show":4,"columns_desktop":4,"columns_mobile":"2","color_scheme":"scheme-1","image_ratio":"square","image_shape":"default","show_secondary_image":true,"show_vendor":false,"show_rating":false,"padding_top":36,"padding_bottom":28}}},"order":["main","related-products"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "68cbfea4-6b54-4a02-af3c-8ca80e924f69": {
+          "type": "description",
+          "disabled": true,
+          "settings": {}
+        },
+        "aeb8ebf7-0071-475a-b587-0ad05d895fab": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "link": "",
+            "text": "",
+            "stretch": true,
+            "background": "rgba(0,0,0,0)",
+            "text_color": "rgba(0,0,0,0)"
+          }
+        },
+        "77b0126f-d176-4e47-b6f3-d2424b9b32ea": {
+          "type": "variant_picker",
+          "settings": {
+            "hide_sold_out_variants": false,
+            "selector_mode": "dropdown",
+            "color_mode": "variant_image",
+            "size_chart_page": ""
+          }
+        },
+        "aa8adaeb-d404-4d2d-9f7b-7c87d4a68e8f": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_payment_button": true,
+            "atc_button_background": "#0023ff",
+            "atc_button_text_color": "#f9f9f9",
+            "buy_now_button_background": "rgba(0,0,0,0)",
+            "buy_now_button_text_color": "rgba(0,0,0,0)"
+          }
+        },
+        "54d2e274-c4e9-4efe-b6da-5bfe93a94d13": {
+          "type": "social_share_icons",
+          "settings": {
+            "icon_1": "shopify://shop_images/1_e9a71822-007d-44ff-8d36-cd9d1d56a572.png",
+            "icon_text_1": "<p><strong>45-DAY RISK FREE GUARANTEE, NO QUESTIONS ASKED!</strong></p>",
+            "icon_2": "shopify://shop_images/2_488612df-9e8b-4df8-ad46-4984a06f6a06.png",
+            "icon_text_2": "<p><strong>UNLOCK A COMPLIMENTARY GIFT VALUED AT $30!</strong></p>",
+            "icon_3": "shopify://shop_images/3_35fa32d6-9ea8-4d3e-a58e-e4347fe98115.png",
+            "icon_text_3": "<p><strong>300,000+ SUCCESSFUL DELIVERIES!</strong></p>"
+          }
+        },
+        "4405410f-d098-41a4-9d3e-7f9d8e5edf7d": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/3-min_2.png",
+            "image_alignment": "center",
+            "image_width": 460
+          }
+        },
+        "guarantee_banner_Mqkzp7": {
+          "type": "guarantee_banner",
+          "disabled": true,
+          "settings": {
+            "badge": "shopify://shop_images/3-min_2_440x_png.png",
+            "title_start": "UNLIMITED REPLACEMENTS",
+            "title_highlight": "FOR AN ENTIRE YEAR.",
+            "description": "You’re fully covered for 365 full days against any internal or external defects, no questions asked."
+          }
+        },
+        "new_guarantee_banner_LTaYz8": {
+          "type": "new-guarantee_banner",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "68cbfea4-6b54-4a02-af3c-8ca80e924f69",
+        "aeb8ebf7-0071-475a-b587-0ad05d895fab",
+        "77b0126f-d176-4e47-b6f3-d2424b9b32ea",
+        "aa8adaeb-d404-4d2d-9f7b-7c87d4a68e8f",
+        "54d2e274-c4e9-4efe-b6da-5bfe93a94d13",
+        "4405410f-d098-41a4-9d3e-7f9d8e5edf7d",
+        "guarantee_banner_Mqkzp7",
+        "new_guarantee_banner_LTaYz8"
+      ],
+      "settings": {
+        "delivery_time": "<p>🟢 READY TO SHIP! <br/>DELIVERED IN 5 BUSINESS DAYS 🛩️</p>",
+        "show_vendor": false,
+        "show_sku": false,
+        "show_taxes_included": false,
+        "show_product_rating": false,
+        "show_sticky_add_to_cart": true,
+        "show_payment_methods": false,
+        "show_share_buttons": false,
+        "help_page": "",
+        "enable_video_autoplay": true,
+        "enable_video_looping": false,
+        "enable_image_zoom": false,
+        "show_thumbnails_on_mobile": false,
+        "desktop_thumbnails_position": "bottom",
+        "transition_effect": "slide"
+      }
+    },
+    "1660763234e5fce699": {
+      "type": "scroll-bar",
+      "disabled": true,
+      "settings": {
+        "scroll-show": true,
+        "scro1": "$29.99 TACTICAL PEN INCLUDED ON YOUR PACKAGE AT NO COST!"
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "disabled": true,
+      "settings": {
+        "subheading": "",
+        "title": "Complete your gear",
+        "recommendations_count": 4,
+        "products": [],
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "16600743810628a394": {
+      "type": "image-with-text",
+      "blocks": {
+        "166007438054eee82b-0": {
+          "type": "item",
+          "settings": {
+            "show_video": false,
+            "video_link": "",
+            "image": "shopify://shop_images/product01.png",
+            "tab_label": "Item",
+            "subheading": "",
+            "title": "A new definition of high technology and durability has arrived.",
+            "content": "<p>The smartwatch designed for those who want to stay connected, even on the roughest activities and extreme conditions. High performance, toughness and rugged design, all in one</p><p></p><p>Say hello to the titan by Carbinox</p>",
+            "button_text": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "166007438054eee82b-0"
+      ],
+      "disabled": true,
+      "settings": {
+        "section_id": "",
+        "reveal_on_scroll": true,
+        "background_type": "full_width",
+        "background_overlap": "image",
+        "image_position": "left",
+        "text_alignment": "left",
+        "cycle_speed": 8,
+        "accent_background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)",
+        "enable_custom_margin": false,
+        "margin_bottom": 0
+      }
+    },
+    "1660074846e66341a3": {
+      "type": "image-with-text-block",
+      "disabled": true,
+      "settings": {
+        "reveal_on_scroll": true,
+        "image": "shopify://shop_images/CAR_1108_1.png",
+        "mobile_image": "shopify://shop_images/CAR_1108_1.png",
+        "subheading": "",
+        "title": "your average watch could break easily, and we know it.",
+        "content": "<p>The Carbinox Titan is built on one primary key: Hard work. We’ve engineered this smartwatch using the most rigid materials in the industry to provide confidence for those who want to stay connected on challenging activities such as construction, carpentry, machine operations, welding, among other tasks, something that other devices would no beat.</p>",
+        "button_text": "claim today’s offer",
+        "button_link": "#focus-product-section",
+        "enble_scroll": true,
+        "background_type": "full_width",
+        "text_position": "left",
+        "text_alignment": "left",
+        "text_background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "#ffc200",
+        "button_text_color": "#2c3036"
+      }
+    },
+    "1660075058d49b6b6f": {
+      "type": "image-with-text",
+      "blocks": {
+        "16600750588a46f04b-0": {
+          "type": "item",
+          "settings": {
+            "show_video": false,
+            "video_link": "",
+            "image": "shopify://shop_images/product02.png",
+            "tab_label": "Item",
+            "subheading": "",
+            "title": "take yout adventures to a whole new stage.",
+            "content": "<p>Besides its tough features, the Carbinox Titan is perfect for extreme outdoor experiences, beating any condition you submit it on. The 5ATM & IP69K Water Resistant and Dustproof technology integrated will make you stay connected, no matter where you are.</p>",
+            "button_text": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "16600750588a46f04b-0"
+      ],
+      "disabled": true,
+      "settings": {
+        "section_id": "",
+        "reveal_on_scroll": true,
+        "background_type": "full_width",
+        "background_overlap": "image",
+        "image_position": "left",
+        "text_alignment": "left",
+        "cycle_speed": 8,
+        "accent_background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)",
+        "enable_custom_margin": false,
+        "margin_bottom": 18
+      }
+    },
+    "16600750743a3d39c2": {
+      "type": "image-with-text",
+      "blocks": {
+        "166007507484cd394b-0": {
+          "type": "item",
+          "settings": {
+            "show_video": false,
+            "video_link": "",
+            "image": "shopify://shop_images/CAR_1166_1.png",
+            "tab_label": "Item",
+            "subheading": "",
+            "title": "Reach your goals, track your health, stay connected with your people.",
+            "content": "<p>Get instant access to your daily performance, physical conditions, and personal life with The Carbinox Titan. Get accurate and advanced features on your wrist with a few swipes, such as:</p><p><br/><strong>. </strong>Steps counter<br/>. Blood pressure<br/>. Sleeping mode<br/>. Heart rate tracker<br/>. Oxygen measuring<br/>. Location-based weather<br/>. Social media notifications<br/>. Messages & calls control<br/>. +20 different sports modes</p>",
+            "button_text": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "166007507484cd394b-0"
+      ],
+      "disabled": true,
+      "settings": {
+        "section_id": "",
+        "reveal_on_scroll": true,
+        "background_type": "full_width",
+        "background_overlap": "image",
+        "image_position": "right",
+        "text_alignment": "left",
+        "cycle_speed": 8,
+        "accent_background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)",
+        "enable_custom_margin": false,
+        "margin_bottom": 0
+      }
+    },
+    "product-content": {
+      "type": "product-content",
+      "blocks": {
+        "description": {
+          "type": "description",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "description"
+      ],
+      "disabled": true,
+      "settings": {}
+    },
+    "166007646669623aaa": {
+      "type": "faq",
+      "blocks": {
+        "1660076465f1e811f4-0": {
+          "type": "category",
+          "disabled": true,
+          "settings": {
+            "title": "Shipping"
+          }
+        },
+        "1660076465f1e811f4-1": {
+          "type": "question",
+          "settings": {
+            "title": "Are these smartwatches indestructible?",
+            "answer": "<p>Yes, we ship all over the world. Shipping costs will apply, and will be added at checkout. We run discounts and promotions all year, so stay tuned for exclusive deals.</p>"
+          }
+        },
+        "1660076465f1e811f4-2": {
+          "type": "question",
+          "settings": {
+            "title": "Can I answer calls, send messages and speak with the Carbinox Smartwatches?",
+            "answer": "<p>It depends on where you are. Orders processed here will take 5-7 business days to arrive. Overseas deliveries can take anywhere from 7-16 days. Delivery details will be provided in your confirmation email.</p>"
+          }
+        },
+        "1660076465f1e811f4-4": {
+          "type": "question",
+          "settings": {
+            "title": "Do you offer guarantee on your products?",
+            "answer": "<p>You can contact us through our contact page! We will be happy to assist you.</p>"
+          }
+        },
+        "b94b4ba9-d47e-4003-8a27-597acb9b7952": {
+          "type": "question",
+          "settings": {
+            "title": "Is my smartphone compatible with any Carbinox Smartwatch?",
+            "answer": "<p>Write content to help your customers to better understand your products or policies.</p>"
+          }
+        },
+        "91345035-5b96-4951-8a1e-d62883b97573": {
+          "type": "question",
+          "settings": {
+            "title": "Will my wrist fist on the Carbinox smartwatches?",
+            "answer": "<p>Write content to help your customers to better understand your products or policies.</p>"
+          }
+        },
+        "b1b69a37-56f7-497e-b973-6abbf1bb8a51": {
+          "type": "question",
+          "settings": {
+            "title": "Do I need an app to use the Carbinox smartwatches?",
+            "answer": "<p>Write content to help your customers to better understand your products or policies.</p>"
+          }
+        },
+        "08cad6de-133a-438f-9a28-8990559de84f": {
+          "type": "question",
+          "settings": {
+            "title": "How long does it take to charge fully?",
+            "answer": "<p>Write content to help your customers to better understand your products or policies.</p>"
+          }
+        },
+        "7c26ebf9-9f0f-4f89-a025-4868a8e8855f": {
+          "type": "question",
+          "settings": {
+            "title": "How can I contact Carbinox?",
+            "answer": "<p>Write content to help your customers to better understand your products or policies.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "1660076465f1e811f4-0",
+        "1660076465f1e811f4-1",
+        "1660076465f1e811f4-2",
+        "1660076465f1e811f4-4",
+        "b94b4ba9-d47e-4003-8a27-597acb9b7952",
+        "91345035-5b96-4951-8a1e-d62883b97573",
+        "b1b69a37-56f7-497e-b973-6abbf1bb8a51",
+        "08cad6de-133a-438f-9a28-8990559de84f",
+        "7c26ebf9-9f0f-4f89-a025-4868a8e8855f"
+      ],
+      "disabled": true,
+      "settings": {
+        "show_navigation": false,
+        "title": "Frequently asked questions",
+        "content": "",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "d0e939a6-ef01-41b2-a26c-43be8b1503b8": {
+      "type": "product-reviews",
+      "settings": {}
+    },
+    "166247618353decb3f": {
+      "type": "social-media-gallery",
+      "blocks": {
+        "16624773435b98926b-0": {
+          "type": "image",
+          "settings": {
+            "logo": "shopify://shop_images/1-min_0b9a9e07-00b3-46d4-929f-f1cfe9e56e35.png",
+            "link": ""
+          }
+        },
+        "16624773435b98926b-1": {
+          "type": "image",
+          "settings": {
+            "logo": "shopify://shop_images/8-min.png",
+            "link": ""
+          }
+        },
+        "16624773435b98926b-2": {
+          "type": "image",
+          "settings": {
+            "logo": "shopify://shop_images/2-min_414de226-22f8-44f7-9785-2130ba4def19.png",
+            "link": ""
+          }
+        },
+        "16624773435b98926b-3": {
+          "type": "image",
+          "settings": {
+            "logo": "shopify://shop_images/3-min_0a35c203-f9a2-4666-8c2a-e861c36b7566.png",
+            "link": ""
+          }
+        },
+        "16624773435b98926b-4": {
+          "type": "image",
+          "settings": {
+            "logo": "shopify://shop_images/5-min_f4ee9a3b-cfa2-4f00-9c04-6afa78726e92.png",
+            "link": ""
+          }
+        },
+        "16624773435b98926b-5": {
+          "type": "image",
+          "settings": {
+            "logo": "shopify://shop_images/7-min.png",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "16624773435b98926b-0",
+        "16624773435b98926b-1",
+        "16624773435b98926b-2",
+        "16624773435b98926b-3",
+        "16624773435b98926b-4",
+        "16624773435b98926b-5"
+      ],
+      "settings": {
+        "reveal_on_scroll": true,
+        "subheading": "follow us",
+        "title": "join our social media",
+        "button_text": "",
+        "button_link": "",
+        "stack_logos": true,
+        "background": "#121212",
+        "text_color": "#f9f9f9",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)",
+        "logo_background": "rgba(0,0,0,0)"
+      }
+    },
+    "bd6b6952-806f-42b1-988d-6344239a7046": {
+      "type": "custom-liquid",
+      "settings": {
+        "subheading": "",
+        "title": "",
+        "liquid": "<script type=\"text/javascript\">\nvar _learnq = _learnq || [];\n  var classname = document.getElementsByClassName(\"product-form__add-button button button--secondary button--full\");\nvar addToCart = function() {\n_learnq.push(['track', 'Added to Cart', item]);\n}; for (var i = 0; i < classname.length; i++) {\nclassname[i].addEventListener('click', addToCart, false);\n}\n</script>",
+        "add_vertical_spacing": false,
+        "background_type": "full_width",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1660763234e5fce699",
+    "product-recommendations",
+    "16600743810628a394",
+    "1660074846e66341a3",
+    "1660075058d49b6b6f",
+    "16600750743a3d39c2",
+    "product-content",
+    "166007646669623aaa",
+    "d0e939a6-ef01-41b2-a26c-43be8b1503b8",
+    "166247618353decb3f",
+    "bd6b6952-806f-42b1-988d-6344239a7046"
+  ]
+}

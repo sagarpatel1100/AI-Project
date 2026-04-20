@@ -1,0 +1,24 @@
+.image-columns {
+    display: flex;
+    align-items: center;
+    padding: 30px 30px 60px;
+    justify-content: center;
+    gap: 15px 40px;
+    flex-wrap: wrap;
+}
+
+.image-columns img {
+    display: flex;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .image-columns {
+        padding: 20px 30px 30px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .image-columns img {
+        width: 100%;
+    }
+}

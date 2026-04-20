@@ -1,0 +1,641 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "1660763234e5fce699": {
+      "type": "scroll-bar",
+      "disabled": true,
+      "settings": {
+        "scroll-show": true,
+        "scro1": "🚨 USE THE CODE \"NOV20\" TO CLAIM 20% OFF TODAY! 🚨"
+      }
+    },
+    "a6c7437c-76d6-433b-8178-4990e84e3fc2": {
+      "type": "custom-html",
+      "disabled": true,
+      "settings": {
+        "subheading": "",
+        "title": "",
+        "html": "<center><img src=\"https://cdn.shopify.com/s/files/1/0049/0533/6935/files/BLACK_FRIDAY_SALE-3.png?v=1668833178\"></center>",
+        "add_vertical_spacing": false,
+        "background_type": "full_width",
+        "background": "#000000",
+        "text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "1a88ccd1-850b-435f-94f1-35b83d45bfe8": {
+      "type": "rich-text",
+      "disabled": true,
+      "settings": {
+        "section_id": "",
+        "subheading": "",
+        "title": "⚠️ LAST 30 UNITS!",
+        "content": "",
+        "button_text": "",
+        "button_link": "",
+        "background_type": "full_width",
+        "text_width": "medium",
+        "text_position": "center",
+        "text_alignment": "center",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "aeb8ebf7-0071-475a-b587-0ad05d895fab": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "link": "",
+            "text": "",
+            "stretch": true,
+            "background": "rgba(0,0,0,0)",
+            "text_color": "rgba(0,0,0,0)"
+          }
+        },
+        "d088c7b9-6ca8-47b5-8975-5f0b917bd917": {
+          "type": "variant_picker",
+          "settings": {
+            "hide_sold_out_variants": false,
+            "selector_mode": "block",
+            "color_mode": "block",
+            "size_chart_page": ""
+          }
+        },
+        "0ea9c7af-4467-47eb-9ea6-e408f67220ce": {
+          "type": "description",
+          "settings": {}
+        },
+        "54d2e274-c4e9-4efe-b6da-5bfe93a94d13": {
+          "type": "social_share_icons",
+          "disabled": true,
+          "settings": {
+            "icon_1": "shopify://shop_images/free-shipping.png",
+            "icon_text_1": "<p>Free Shipping</p>",
+            "icon_2": "shopify://shop_images/guarantee.png",
+            "icon_text_2": "<p>Satisfaction<br/>Guaranteed</p>",
+            "icon_3": "shopify://shop_images/easy-returns.png",
+            "icon_text_3": "<p>Easy Returns</p>"
+          }
+        },
+        "aa8adaeb-d404-4d2d-9f7b-7c87d4a68e8f": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_payment_button": true,
+            "atc_button_background": "#0023ff",
+            "atc_button_text_color": "#f9f9f9",
+            "buy_now_button_background": "rgba(0,0,0,0)",
+            "buy_now_button_text_color": "rgba(0,0,0,0)"
+          }
+        },
+        "53d115f4-44e9-4e62-86c3-a55ee7cab219": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/banner-cta_1.png",
+            "image_alignment": "center",
+            "image_width": 500
+          }
+        }
+      },
+      "block_order": [
+        "aeb8ebf7-0071-475a-b587-0ad05d895fab",
+        "d088c7b9-6ca8-47b5-8975-5f0b917bd917",
+        "0ea9c7af-4467-47eb-9ea6-e408f67220ce",
+        "54d2e274-c4e9-4efe-b6da-5bfe93a94d13",
+        "aa8adaeb-d404-4d2d-9f7b-7c87d4a68e8f",
+        "53d115f4-44e9-4e62-86c3-a55ee7cab219"
+      ],
+      "settings": {
+        "delivery_time": "<h5><strong>🛩️ THIS PRODUCT QUALIFIES FOR FREE EXPEDITED SHIPPING!<br/>[3-5 BUSINESS DAYS]</strong></h5>",
+        "show_vendor": false,
+        "show_sku": false,
+        "show_taxes_included": false,
+        "show_product_rating": true,
+        "show_sticky_add_to_cart": true,
+        "show_payment_methods": false,
+        "show_share_buttons": false,
+        "help_page": "",
+        "enable_video_autoplay": true,
+        "enable_video_looping": false,
+        "enable_image_zoom": false,
+        "show_thumbnails_on_mobile": false,
+        "desktop_thumbnails_position": "bottom",
+        "transition_effect": "slide"
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "disabled": true,
+      "settings": {
+        "subheading": "",
+        "title": "Complete your gear:",
+        "recommendations_count": 4,
+        "products": [
+          "black-camo-band-for-carbinox-titan",
+          "cable",
+          "green-camo-band-for-carbinox-titan",
+          "carbinox-tempered-glass-2x-pack",
+          "carbinox-fiber-limited-edition-band-for-carbinox-titan"
+        ],
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "2a159bc0-f4b3-4d0e-9a45-50193fa37bd3": {
+      "type": "video",
+      "disabled": true,
+      "settings": {
+        "subheading": "",
+        "title": "",
+        "video_url": "https://www.youtube.com/watch?v=m8phh-9Z-1A",
+        "image": "shopify://shop_images/Screen_Shot_2022-11-30_at_12.04.50_PM.png",
+        "background_type": "full_width",
+        "video_size": "auto",
+        "autoplay": false,
+        "background": "#c02b2b",
+        "text_color": "#ffc200"
+      }
+    },
+    "0a3fae90-fed1-4f7d-9c0c-1f3088cc7227": {
+      "type": "custom-html",
+      "settings": {
+        "subheading": "",
+        "title": "",
+        "html": "",
+        "add_vertical_spacing": true,
+        "background_type": "full_width",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "16614525544f4ccbb7": {
+      "type": "image-with-text-overlay",
+      "disabled": true,
+      "settings": {
+        "reveal_on_scroll": true,
+        "section_height": "auto",
+        "image": "shopify://shop_images/newsletter_1.png",
+        "subheading": "strength and power",
+        "title": "right on your wrist.",
+        "content": "",
+        "button_text": "",
+        "button_link": "",
+        "link_style": "link",
+        "background_type": "full_width",
+        "text_width": "medium",
+        "text_position": "middle_center",
+        "text_color": "#ffffff",
+        "button_background": "#ffffff",
+        "button_text_color": "#000000",
+        "overlay_color": "#000000",
+        "overlay_opacity": 56
+      }
+    },
+    "16600743810628a394": {
+      "type": "image-with-text",
+      "blocks": {
+        "166007438054eee82b-0": {
+          "type": "item",
+          "settings": {
+            "show_video": false,
+            "video_link": "",
+            "image": "shopify://shop_images/Diseno_sin_titulo-12.jpg",
+            "tab_label": "Item",
+            "subheading": "",
+            "title": "SPREAD YOUR MUSIC ACROSS ANY ENVIRONMENT, STRESS FREE.",
+            "content": "<p>Fact: Most “hi-tech” speakers are <strong>BULKY, HEAVY, NOTHING-PROOF and yes… VERY EXPENSIVE. </strong></p><p>Why do you have to be afraid of <strong>water, dust, mud, and shocks </strong>if we’ve just built <strong>the most rugged, portable, and affordable speaker in the industry?</strong> (Yes, we did it again).</p><p><strong>Introducing the CRBNX SPKR: When technology meets durability.</strong></p>",
+            "button_text": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "166007438054eee82b-0"
+      ],
+      "settings": {
+        "section_id": "",
+        "reveal_on_scroll": false,
+        "background_type": "full_width",
+        "background_overlap": "both",
+        "image_position": "left",
+        "text_alignment": "center",
+        "cycle_speed": 8,
+        "accent_background": "#000000",
+        "text_color": "#ffffff",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)",
+        "enable_custom_margin": false,
+        "margin_bottom": 0
+      }
+    },
+    "166145257050f4054e": {
+      "type": "text-with-icons",
+      "blocks": {
+        "16614525700cbef662-0": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-box",
+            "custom_icon": "shopify://shop_images/iconcomponents.png",
+            "custom_icon_width": 40,
+            "title": "designed with rugged components",
+            "content": ""
+          }
+        },
+        "16614525700cbef662-1": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-phone",
+            "custom_icon": "shopify://shop_images/iconbattery.png",
+            "custom_icon_width": 40,
+            "title": "long battery life",
+            "content": ""
+          }
+        },
+        "16614525700cbef662-2": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-lock",
+            "custom_icon": "shopify://shop_images/iconhammer.png",
+            "custom_icon_width": 40,
+            "title": "unbeatable against extreme conditions",
+            "content": ""
+          }
+        }
+      },
+      "block_order": [
+        "16614525700cbef662-0",
+        "16614525700cbef662-1",
+        "16614525700cbef662-2"
+      ],
+      "disabled": true,
+      "settings": {
+        "background": "#f9f9f9",
+        "text_color": "#2c3036"
+      }
+    },
+    "1660074846e66341a3": {
+      "type": "image-with-text-block",
+      "settings": {
+        "reveal_on_scroll": true,
+        "image": "shopify://shop_images/Diseno_sin_titulo-13-min.jpg",
+        "mobile_image": "shopify://shop_images/1_7dd60658-4230-4ff8-bc1b-15eaaaeb2055.jpg",
+        "subheading": "",
+        "title": "HIGH-END 3D SOUND, REDEFINED.",
+        "content": "<p><strong>The CRBNX SPKR</strong> is equipped with two <strong>20W 3D powered speakers </strong>(40W), built inside a subwoofer metal diaphragm to assure <strong>smooth, clear, and high quality music experience anytime, anywhere.</strong></p>",
+        "button_text": "",
+        "button_link": "",
+        "enble_scroll": false,
+        "background_type": "full_width",
+        "text_position": "left",
+        "text_alignment": "left",
+        "text_background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "#ffc200",
+        "button_text_color": "#2c3036"
+      }
+    },
+    "1660075058d49b6b6f": {
+      "type": "image-with-text",
+      "blocks": {
+        "16600750588a46f04b-0": {
+          "type": "item",
+          "settings": {
+            "show_video": false,
+            "video_link": "",
+            "image": "shopify://shop_images/3_8cbaecc0-886e-4a0c-96d7-1238e503c468.jpg",
+            "tab_label": "Item",
+            "subheading": "",
+            "title": "THERE’S NOTHING IT CAN’T WITHSTAND.",
+            "content": "<p>Our speaker is engineered to guarantee<strong> full-protection </strong>against extreme environments and natural conditions with <strong>IPX7 Waterproof and Shockproof technology. </strong>We just didn’t made it affordable, <strong>we excelled at building the strongest one in the industry.</strong></p><p></p>",
+            "button_text": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "16600750588a46f04b-0"
+      ],
+      "settings": {
+        "section_id": "",
+        "reveal_on_scroll": false,
+        "background_type": "full_width",
+        "background_overlap": "image",
+        "image_position": "left",
+        "text_alignment": "left",
+        "cycle_speed": 8,
+        "accent_background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)",
+        "enable_custom_margin": false,
+        "margin_bottom": 0
+      }
+    },
+    "16600750743a3d39c2": {
+      "type": "image-with-text",
+      "blocks": {
+        "166007507484cd394b-0": {
+          "type": "item",
+          "settings": {
+            "show_video": false,
+            "video_link": "",
+            "image": "shopify://shop_images/2_0c49e2f1-6fa8-464f-b2be-407283be9c65.jpg",
+            "tab_label": "Item",
+            "subheading": "",
+            "title": "LIMITLESS FEATURES. PLAY FOR HOURS. CONNECT MULTIPLE.",
+            "content": "<p><strong>Looking to make the party louder? </strong>You can pair <strong>TWO CRBNX SPKRS at the same time via bluetooth </strong>just by connecting your smartphone. Play music continuously for almost <strong>8 hours per charging cycle</strong> with its 5.200mAh battery integrated.</p><p></p><p><strong>NEED WE SAY MORE?</strong></p>",
+            "button_text": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "166007507484cd394b-0"
+      ],
+      "settings": {
+        "section_id": "",
+        "reveal_on_scroll": false,
+        "background_type": "full_width",
+        "background_overlap": "image",
+        "image_position": "right",
+        "text_alignment": "left",
+        "cycle_speed": 8,
+        "accent_background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)",
+        "enable_custom_margin": false,
+        "margin_bottom": 0
+      }
+    },
+    "product-content": {
+      "type": "product-content",
+      "blocks": {
+        "description": {
+          "type": "description",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "description"
+      ],
+      "disabled": true,
+      "settings": {}
+    },
+    "1663514366324a40c0": {
+      "type": "image-with-text",
+      "blocks": {
+        "1663514366480375d8-0": {
+          "type": "item",
+          "settings": {
+            "show_video": false,
+            "video_link": "",
+            "image": "shopify://shop_images/Copia_de_Copia_de_Sin_titulo.png",
+            "tab_label": "Item",
+            "subheading": "",
+            "title": "EASILY PAIR YOUR CARBINOX TITAN WITH ANY SMARTPHONE THROUGH DAFIT APP!",
+            "content": "",
+            "button_text": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "1663514366480375d8-0"
+      ],
+      "disabled": true,
+      "settings": {
+        "section_id": "",
+        "reveal_on_scroll": true,
+        "background_type": "full_width",
+        "background_overlap": "image",
+        "image_position": "left",
+        "text_alignment": "center",
+        "cycle_speed": 8,
+        "accent_background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)",
+        "enable_custom_margin": false,
+        "margin_bottom": 0
+      }
+    },
+    "1661449013131ba9f7": {
+      "type": "image-with-text-overlay",
+      "settings": {
+        "reveal_on_scroll": true,
+        "section_height": "medium",
+        "image": "shopify://shop_images/Diseno_sin_titulo-33-min.png",
+        "subheading": "",
+        "title": "Features and Specifications:",
+        "content": "<p><strong>Dimensions: 5.3 in x 3 in x 1.9 in</strong></p><p><strong>Working Distance: Up to 18 meters</strong></p><p><strong>Charging Time: Up to 3 hours</strong></p><p><strong>Output Power: 40W</strong></p><p><strong>Connection: Bluetooth</strong></p><p><strong>Aux Input Integrated</strong></p><p><strong>Waterproof IPX7 Technology</strong></p><p><strong>3D Surround Sound Effect</strong></p><p><strong>Type-C Fast Charging</strong></p><p><strong>Weight: 650gr</strong></p>",
+        "button_text": "",
+        "button_link": "",
+        "link_style": "link",
+        "background_type": "full_width",
+        "text_width": "large",
+        "text_position": "top_center",
+        "text_color": "#ffffff",
+        "button_background": "#ffffff",
+        "button_text_color": "#000000",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0
+      }
+    },
+    "166007646669623aaa": {
+      "type": "faq",
+      "blocks": {
+        "1660076465f1e811f4-1": {
+          "type": "question",
+          "settings": {
+            "title": "Are these smartwatches indestructible?",
+            "answer": "<p>We guarantee you'll receive the stronger smartwatch you've ever had. However,don't submit it to abuse tests such as as throwing it from a 30th floor or test it with a saw to see if it holds up <strong>(This is a true story 🥴).</strong></p>"
+          }
+        },
+        "1660076465f1e811f4-2": {
+          "type": "question",
+          "settings": {
+            "title": "Can I answer calls, send messages and speak with the Carbinox Smartwatches?",
+            "answer": "<p>You can only REJECT OR FORWARD CALLS, as well as only READ messages and notifications.</p>"
+          }
+        },
+        "1660076465f1e811f4-4": {
+          "type": "question",
+          "settings": {
+            "title": "Are these smartwatches waterproof?",
+            "answer": "<p>Our smartwatches are water resistant, which means that they’re able to be in contact with certain amount of water but <strong>we do not recommend to swim, dive or take a shower with them.</strong></p>"
+          }
+        },
+        "b94b4ba9-d47e-4003-8a27-597acb9b7952": {
+          "type": "question",
+          "settings": {
+            "title": "Do you offer guarantee on your products?",
+            "answer": "<p>Of course! All our smartwatches are covered with 30-Day Money Back Guarantee in case that they don't fit your needs, as well as 30-Day Protection from any software or internal issues. If this happens, we'll provide you a replacement without cost.</p>"
+          }
+        },
+        "91345035-5b96-4951-8a1e-d62883b97573": {
+          "type": "question",
+          "settings": {
+            "title": "Is my smartphone compatible with any Carbinox Smartwatch?",
+            "answer": "<p>Yes, you can connect any smartphone, whether it’s Android or Apple to your Carbinox Smartwatch via Bluetooth by using the app DAFIT (Available on App Store).</p>"
+          }
+        },
+        "b1b69a37-56f7-497e-b973-6abbf1bb8a51": {
+          "type": "question",
+          "settings": {
+            "title": "Will my wrist fit on the Carbinox watches?",
+            "answer": "<p>Yes, all of our smartwatches have adjustable bands that can fit with any wrist.</p>"
+          }
+        },
+        "08cad6de-133a-438f-9a28-8990559de84f": {
+          "type": "question",
+          "settings": {
+            "title": "Do I need an app to use the Carbinox Smartwatches?",
+            "answer": "<p>YES! You need to install the APP DAFIT and connect the watch to your smartphone via Bluetooth.</p>"
+          }
+        },
+        "7c26ebf9-9f0f-4f89-a025-4868a8e8855f": {
+          "type": "question",
+          "settings": {
+            "title": "How long does it take to charge fully?",
+            "answer": "<p>Your smartwatch will be fully charged after approximately 2-3 hours.</p>"
+          }
+        },
+        "1c978de2-39b0-45ac-824f-3346be21f7e9": {
+          "type": "question",
+          "settings": {
+            "title": "How do I contact Carbinox?",
+            "answer": "<p>If you have any questions or doubts, please don't hesitate to send us an e-mail to <strong>info@shopcarbinox.com</strong> or through our social media channels such as Facebook or Instagram.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "1660076465f1e811f4-1",
+        "1660076465f1e811f4-2",
+        "1660076465f1e811f4-4",
+        "b94b4ba9-d47e-4003-8a27-597acb9b7952",
+        "91345035-5b96-4951-8a1e-d62883b97573",
+        "b1b69a37-56f7-497e-b973-6abbf1bb8a51",
+        "08cad6de-133a-438f-9a28-8990559de84f",
+        "7c26ebf9-9f0f-4f89-a025-4868a8e8855f",
+        "1c978de2-39b0-45ac-824f-3346be21f7e9"
+      ],
+      "disabled": true,
+      "settings": {
+        "show_navigation": false,
+        "title": "Frequently asked questions",
+        "content": "",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "1660076426c47b59c6": {
+      "type": "apps",
+      "disabled": true,
+      "settings": {
+        "include_horizontal_margins": true,
+        "include_vertical_margins": true
+      }
+    },
+    "16624773432b65f1d8": {
+      "type": "social-media-gallery",
+      "blocks": {
+        "16624773435b98926b-0": {
+          "type": "image",
+          "settings": {
+            "logo": "shopify://shop_images/1-min_0b9a9e07-00b3-46d4-929f-f1cfe9e56e35.png",
+            "link": ""
+          }
+        },
+        "16624773435b98926b-1": {
+          "type": "image",
+          "settings": {
+            "logo": "shopify://shop_images/8-min.png",
+            "link": ""
+          }
+        },
+        "16624773435b98926b-2": {
+          "type": "image",
+          "settings": {
+            "logo": "shopify://shop_images/2-min_414de226-22f8-44f7-9785-2130ba4def19.png",
+            "link": ""
+          }
+        },
+        "16624773435b98926b-3": {
+          "type": "image",
+          "settings": {
+            "logo": "shopify://shop_images/3-min_0a35c203-f9a2-4666-8c2a-e861c36b7566.png",
+            "link": ""
+          }
+        },
+        "16624773435b98926b-4": {
+          "type": "image",
+          "settings": {
+            "logo": "shopify://shop_images/5-min_f4ee9a3b-cfa2-4f00-9c04-6afa78726e92.png",
+            "link": ""
+          }
+        },
+        "16624773435b98926b-5": {
+          "type": "image",
+          "settings": {
+            "logo": "shopify://shop_images/7-min.png",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "16624773435b98926b-0",
+        "16624773435b98926b-1",
+        "16624773435b98926b-2",
+        "16624773435b98926b-3",
+        "16624773435b98926b-4",
+        "16624773435b98926b-5"
+      ],
+      "settings": {
+        "reveal_on_scroll": true,
+        "subheading": "follow us",
+        "title": "join our social media",
+        "button_text": "",
+        "button_link": "",
+        "stack_logos": true,
+        "background": "#121212",
+        "text_color": "#f9f9f9",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)",
+        "logo_background": "rgba(0,0,0,0)"
+      }
+    }
+  },
+  "order": [
+    "1660763234e5fce699",
+    "a6c7437c-76d6-433b-8178-4990e84e3fc2",
+    "1a88ccd1-850b-435f-94f1-35b83d45bfe8",
+    "main",
+    "product-recommendations",
+    "2a159bc0-f4b3-4d0e-9a45-50193fa37bd3",
+    "0a3fae90-fed1-4f7d-9c0c-1f3088cc7227",
+    "16614525544f4ccbb7",
+    "16600743810628a394",
+    "166145257050f4054e",
+    "1660074846e66341a3",
+    "1660075058d49b6b6f",
+    "16600750743a3d39c2",
+    "product-content",
+    "1663514366324a40c0",
+    "1661449013131ba9f7",
+    "166007646669623aaa",
+    "1660076426c47b59c6",
+    "16624773432b65f1d8"
+  ]
+}

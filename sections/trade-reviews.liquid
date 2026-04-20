@@ -1,0 +1,126 @@
+{{ 'trade-reviews.css' | asset_url | stylesheet_tag }}
+
+<style>
+.reviews-section-{{ section.id }}{
+  background: {{ section.settings.background }};
+  padding:60px 30px;
+}
+@media(max-width:768px){
+
+  .reviews-section-{{ section.id }}{
+  padding:30px 20px;
+}
+}
+</style>
+
+<section class="reviews-section-{{ section.id }}">
+  <div class="reviews-container">
+
+    <h2 class="reviews-title">
+      <span class="title-white">{{ section.settings.title_white }}</span>
+      <span class="title-yellow">{{ section.settings.title_yellow }}</span>
+    </h2>
+
+    <div class="reviews-cards">
+      {% for block in section.blocks %}
+      <div class="review-card">
+
+<div class="review-stars">
+  {{ section.settings.stars_image 
+    | image_url: width: 88 
+    | image_tag: class: 'review-stars-img', alt: '5 star rating' 
+  }}
+</div>
+        <p class="review-text">
+          "{{ block.settings.text }}"
+        </p>
+
+        <div class="review-author">
+          <span class="review-name">{{ block.settings.name }}</span>
+          <span class="review-job"> — {{ block.settings.job }}</span>
+        </div>
+
+      </div>
+      {% endfor %}
+    </div>
+
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Reviews Cards",
+  "settings": [
+    {
+      "type":"color",
+      "id":"background",
+      "label":"Background",
+      "default":"#111111"
+    },
+    {
+      "type":"text",
+      "id":"title_white",
+      "label":"Title White",
+      "default":"REAL TOOLS."
+    },
+    {
+      "type":"text",
+      "id":"title_yellow",
+      "label":"Title Yellow",
+      "default":"REAL UPGRADES."
+    },
+    {
+      "type": "image_picker",
+      "id": "stars_image",
+      "label": "Stars Image"
+    }
+  ],
+
+  "blocks":[
+    {
+      "type":"review",
+      "name":"Review Card",
+      "settings":[
+        {
+          "type":"range",
+          "id":"stars",
+          "label":"Stars",
+          "min":1,
+          "max":5,
+          "step":1,
+          "default":5
+        },
+        {
+          "type":"textarea",
+          "id":"text",
+          "label":"Review Text",
+          "default":"This watch is amazing."
+        },
+        {
+          "type":"text",
+          "id":"name",
+          "label":"Reviewer Name",
+          "default":"Marcus"
+        },
+        {
+          "type":"text",
+          "id":"job",
+          "label":"Reviewer Job",
+          "default":"Electrician"
+        }
+      ]
+    }
+  ],
+
+  "presets":[
+    {
+      "name":"Trade Reviews Cards",
+      "blocks":[
+        {"type":"review"},
+        {"type":"review"},
+        {"type":"review"}
+      ]
+    }
+  ]
+}
+{% endschema %}

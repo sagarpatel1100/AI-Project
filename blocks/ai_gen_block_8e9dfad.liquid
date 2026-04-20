@@ -1,0 +1,352 @@
+{% doc %}
+  @prompt
+    I need to generate a section where I can place an image up to 1080x1920 on mobile and 1800x600 on desktop. Also, I need to be able to place 3 different titles with #fcc200 and for each title one subtitle (will be a discount code) on #ffffff color., Let me also add a main headline above please!
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-promo-banner-{{ ai_gen_id }} {
+    position: relative;
+    width: {{ block.settings.desktop_width_percent }}%;
+    max-width: 100%;
+    display: block;
+  }
+
+  .ai-promo-banner__image-wrapper-{{ ai_gen_id }} {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .ai-promo-banner__image-{{ ai_gen_id }} {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .ai-promo-banner__image-placeholder-{{ ai_gen_id }} {
+    background-color: #f4f4f4;
+    width: 100%;
+    aspect-ratio: 3 / 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+
+  .ai-promo-banner__image-placeholder-{{ ai_gen_id }} svg {
+    width: 100%;
+    height: 100%;
+    max-width: 500px;
+    max-height: 500px;
+  }
+
+  .ai-promo-banner__empty-state-{{ ai_gen_id }} {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 12px 20px;
+    font-size: 14px;
+    color: #666;
+    text-align: center;
+    pointer-events: none;
+  }
+
+  .ai-promo-banner__content-{{ ai_gen_id }} {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 90%;
+    max-width: 1200px;
+  }
+
+  .ai-promo-banner__main-headline-{{ ai_gen_id }} {
+    font-size: {{ block.settings.main_headline_size }}px;
+    color: {{ block.settings.main_headline_color }};
+    margin: 0 0 {{ block.settings.spacing_between_elements }}px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  .ai-promo-banner__item-{{ ai_gen_id }} {
+    margin-bottom: {{ block.settings.spacing_between_elements }}px;
+  }
+
+  .ai-promo-banner__item-{{ ai_gen_id }}:last-child {
+    margin-bottom: 0;
+  }
+
+  .ai-promo-banner__title-{{ ai_gen_id }} {
+    font-size: {{ block.settings.title_size }}px;
+    color: #fcc200;
+    margin: 0 0 {{ block.settings.spacing_title_subtitle }}px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  .ai-promo-banner__subtitle-{{ ai_gen_id }} {
+    font-size: {{ block.settings.subtitle_size }}px;
+    color: #ffffff;
+    margin: 0;
+    font-weight: 600;
+    letter-spacing: 1px;
+  }
+
+  @media screen and (max-width: 749px) {
+    .ai-promo-banner__image-placeholder-{{ ai_gen_id }} {
+      aspect-ratio: 9 / 16;
+    }
+
+    .ai-promo-banner__main-headline-{{ ai_gen_id }} {
+      font-size: {{ block.settings.main_headline_size | times: 0.7 }}px;
+    }
+
+    .ai-promo-banner__title-{{ ai_gen_id }} {
+      font-size: {{ block.settings.title_size | times: 0.7 }}px;
+    }
+
+    .ai-promo-banner__subtitle-{{ ai_gen_id }} {
+      font-size: {{ block.settings.subtitle_size | times: 0.7 }}px;
+    }
+  }
+{% endstyle %}
+
+<div class="ai-promo-banner-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
+  <div class="ai-promo-banner__image-wrapper-{{ ai_gen_id }}">
+    {% if block.settings.desktop_image %}
+      <picture>
+        {% if block.settings.mobile_image %}
+          <source
+            media="(max-width: 749px)"
+            srcset="{{ block.settings.mobile_image | image_url: width: 1080 }}"
+          >
+        {% endif %}
+        <img
+          src="{{ block.settings.desktop_image | image_url: width: 1800 }}"
+          alt="{{ block.settings.desktop_image.alt | escape }}"
+          loading="lazy"
+          width="{{ block.settings.desktop_image.width }}"
+          height="{{ block.settings.desktop_image.height }}"
+          class="ai-promo-banner__image-{{ ai_gen_id }}"
+        >
+      </picture>
+    {% else %}
+      <div class="ai-promo-banner__image-placeholder-{{ ai_gen_id }}">
+        {{ 'hero-apparel-1' | placeholder_svg_tag }}
+        <div class="ai-promo-banner__empty-state-{{ ai_gen_id }}">
+          Next, add desktop and mobile images
+        </div>
+      </div>
+    {% endif %}
+
+    <div class="ai-promo-banner__content-{{ ai_gen_id }}">
+      {% if block.settings.main_headline != blank %}
+        <h1 class="ai-promo-banner__main-headline-{{ ai_gen_id }}">
+          {{ block.settings.main_headline }}
+        </h1>
+      {% endif %}
+
+      {% if block.settings.title_1 != blank %}
+        <div class="ai-promo-banner__item-{{ ai_gen_id }}">
+          <h2 class="ai-promo-banner__title-{{ ai_gen_id }}">
+            {{ block.settings.title_1 }}
+          </h2>
+          {% if block.settings.subtitle_1 != blank %}
+            <p class="ai-promo-banner__subtitle-{{ ai_gen_id }}">
+              {{ block.settings.subtitle_1 }}
+            </p>
+          {% endif %}
+        </div>
+      {% endif %}
+
+      {% if block.settings.title_2 != blank %}
+        <div class="ai-promo-banner__item-{{ ai_gen_id }}">
+          <h2 class="ai-promo-banner__title-{{ ai_gen_id }}">
+            {{ block.settings.title_2 }}
+          </h2>
+          {% if block.settings.subtitle_2 != blank %}
+            <p class="ai-promo-banner__subtitle-{{ ai_gen_id }}">
+              {{ block.settings.subtitle_2 }}
+            </p>
+          {% endif %}
+        </div>
+      {% endif %}
+
+      {% if block.settings.title_3 != blank %}
+        <div class="ai-promo-banner__item-{{ ai_gen_id }}">
+          <h2 class="ai-promo-banner__title-{{ ai_gen_id }}">
+            {{ block.settings.title_3 }}
+          </h2>
+          {% if block.settings.subtitle_3 != blank %}
+            <p class="ai-promo-banner__subtitle-{{ ai_gen_id }}">
+              {{ block.settings.subtitle_3 }}
+            </p>
+          {% endif %}
+        </div>
+      {% endif %}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Promo banner",
+  "tag": null,
+  "settings": [
+    {
+      "type": "header",
+      "content": "Images"
+    },
+    {
+      "type": "paragraph",
+      "content": "Desktop: 1800x600px recommended. Mobile: 1080x1920px recommended."
+    },
+    {
+      "type": "image_picker",
+      "id": "desktop_image",
+      "label": "Desktop image"
+    },
+    {
+      "type": "image_picker",
+      "id": "mobile_image",
+      "label": "Mobile image"
+    },
+    {
+      "type": "range",
+      "id": "desktop_width_percent",
+      "label": "Desktop width",
+      "min": 50,
+      "max": 100,
+      "step": 5,
+      "unit": "%",
+      "default": 100
+    },
+    {
+      "type": "header",
+      "content": "Main headline"
+    },
+    {
+      "type": "text",
+      "id": "main_headline",
+      "label": "Main headline",
+      "default": "Special Offers"
+    },
+    {
+      "type": "range",
+      "id": "main_headline_size",
+      "label": "Main headline size",
+      "min": 20,
+      "max": 80,
+      "step": 2,
+      "unit": "px",
+      "default": 48
+    },
+    {
+      "type": "color",
+      "id": "main_headline_color",
+      "label": "Main headline color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "header",
+      "content": "Offer 1"
+    },
+    {
+      "type": "text",
+      "id": "title_1",
+      "label": "Title 1",
+      "default": "Buy 2 Get 1 Free"
+    },
+    {
+      "type": "text",
+      "id": "subtitle_1",
+      "label": "Discount code 1",
+      "default": "CODE: BUY2GET1"
+    },
+    {
+      "type": "header",
+      "content": "Offer 2"
+    },
+    {
+      "type": "text",
+      "id": "title_2",
+      "label": "Title 2",
+      "default": "30% Off Sitewide"
+    },
+    {
+      "type": "text",
+      "id": "subtitle_2",
+      "label": "Discount code 2",
+      "default": "CODE: SAVE30"
+    },
+    {
+      "type": "header",
+      "content": "Offer 3"
+    },
+    {
+      "type": "text",
+      "id": "title_3",
+      "label": "Title 3",
+      "default": "Free Shipping"
+    },
+    {
+      "type": "text",
+      "id": "subtitle_3",
+      "label": "Discount code 3",
+      "default": "CODE: FREESHIP"
+    },
+    {
+      "type": "header",
+      "content": "Typography"
+    },
+    {
+      "type": "range",
+      "id": "title_size",
+      "label": "Title size",
+      "min": 16,
+      "max": 60,
+      "step": 2,
+      "unit": "px",
+      "default": 32
+    },
+    {
+      "type": "range",
+      "id": "subtitle_size",
+      "label": "Subtitle size",
+      "min": 12,
+      "max": 40,
+      "step": 2,
+      "unit": "px",
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "spacing_between_elements",
+      "label": "Spacing between offers",
+      "min": 10,
+      "max": 60,
+      "step": 5,
+      "unit": "px",
+      "default": 30
+    },
+    {
+      "type": "range",
+      "id": "spacing_title_subtitle",
+      "label": "Spacing title to subtitle",
+      "min": 5,
+      "max": 30,
+      "step": 5,
+      "unit": "px",
+      "default": 10
+    }
+  ],
+  "presets": [
+    {
+      "name": "Promo banner"
+    }
+  ]
+}
+{% endschema %}

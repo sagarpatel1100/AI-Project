@@ -1,0 +1,968 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "custom_html_cpeKCV": {
+      "type": "custom-html",
+      "disabled": true,
+      "custom_css": [
+        "div {margin: -5px;}"
+      ],
+      "settings": {
+        "subheading": "",
+        "title": "",
+        "html": "<img src=\"https://cdn.shopify.com/s/files/1/0049/0533/6935/files/THESMARTWATCHEXPERT_7.png?\">",
+        "add_vertical_spacing": false,
+        "background_type": "full_width",
+        "background": "#000000",
+        "text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "5ae1f711-27ab-43e4-8735-49a5b0e183ff": {
+      "type": "rich-text",
+      "disabled": true,
+      "custom_css": [
+        "H2 {color: black; margin-bottom: -11px; letter-spacing: 0.5px; font-size: 14px;}",
+        "h3 {font-size: 18px; background-color: blue; padding: 7px; margin: 20px;}",
+        "h5 {font-size: 15px; color: #000000; margin-top: -0.5cm;}",
+        "div {margin-top: -7px; margin-bottom: -10px;}"
+      ],
+      "settings": {
+        "section_id": "",
+        "subheading": "GET 15% OFF ON THE VIRAL TIKTOK SMARTWATCH! ⚡️",
+        "title": "CLAIM 15% OFF WITH THE CODE \"TIKTOK\" AT CHECKOUT! 🤑",
+        "content": "<h5>HEY, THIS IS ONLY FOR TODAY FOLKS!</h5>",
+        "button_text": "",
+        "button_link": "",
+        "background_type": "full_width",
+        "text_width": "fill",
+        "text_position": "center",
+        "text_alignment": "center",
+        "background": "#f9f9f9",
+        "text_color": "#ffffff",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "94157900-ca99-4d79-b443-7f058350974e": {
+          "type": "text",
+          "settings": {
+            "text": "<h5><strong>👷🏻 BUILT AND MADE FOR THE HARDWORKING FOLKS WHO KEEP THIS COUNTRY MOVING, FROM BLUE-COLLAR TO LONG-HAUL TRUCKERS.<br/><br/>🎁 TOP-RATED GIFT FOR THOSE WHO NEED A SMARTWATCH THAT DOESN'T BREAK EASILY!<br/><br/>🔋 WHOOPING 14 DAYS OF RELENTLESS PERFORMANCE AFTER ONLY 90 MINUTES OF CHARGE, GUARANTEED!</strong></h5>"
+          }
+        },
+        "77b0126f-d176-4e47-b6f3-d2424b9b32ea": {
+          "type": "variant_picker",
+          "settings": {
+            "hide_sold_out_variants": false,
+            "selector_mode": "block",
+            "color_mode": "block",
+            "size_chart_page": ""
+          }
+        },
+        "aa8adaeb-d404-4d2d-9f7b-7c87d4a68e8f": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_payment_button": false,
+            "atc_button_background": "#00c60b",
+            "atc_button_text_color": "#ffffff",
+            "buy_now_button_background": "rgba(0,0,0,0)",
+            "buy_now_button_text_color": "rgba(0,0,0,0)"
+          }
+        },
+        "54d2e274-c4e9-4efe-b6da-5bfe93a94d13": {
+          "type": "social_share_icons",
+          "settings": {
+            "icon_1": "shopify://shop_images/1_e9a71822-007d-44ff-8d36-cd9d1d56a572.png",
+            "icon_text_1": "<p><strong>45-DAY MONEY BACK GUARANTEE, NO QUESTIONS ASKED!</strong></p>",
+            "icon_2": "shopify://shop_images/2_488612df-9e8b-4df8-ad46-4984a06f6a06.png",
+            "icon_text_2": "<p><strong>RECEIVE A LIMITED EDITION GIFT WITH YOUR ORDER!</strong></p>",
+            "icon_3": "shopify://shop_images/3_35fa32d6-9ea8-4d3e-a58e-e4347fe98115.png",
+            "icon_text_3": "<p>300K+ SUCCESSFUL DELIVERIES NATIONWIDE!</p>"
+          }
+        },
+        "4ac75f75-351e-49cb-9367-33b5cfe6a9bd": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/3-min_2.png",
+            "image_alignment": "center",
+            "image_width": 440
+          }
+        },
+        "9fe58044-5471-494c-876e-57342da7aa62": {
+          "type": "image",
+          "settings": {
+            "image_alignment": "left",
+            "image_width": 150
+          }
+        }
+      },
+      "block_order": [
+        "94157900-ca99-4d79-b443-7f058350974e",
+        "77b0126f-d176-4e47-b6f3-d2424b9b32ea",
+        "aa8adaeb-d404-4d2d-9f7b-7c87d4a68e8f",
+        "54d2e274-c4e9-4efe-b6da-5bfe93a94d13",
+        "4ac75f75-351e-49cb-9367-33b5cfe6a9bd",
+        "9fe58044-5471-494c-876e-57342da7aa62"
+      ],
+      "custom_css": [
+        "button {margin-top: -10px; padding: 5px; font-size: 16px;}",
+        "h5 {line-height: 16px; font-size: 13px;}",
+        "div {font-size: 13px;}"
+      ],
+      "settings": {
+        "delivery_time": "",
+        "show_vendor": false,
+        "show_sku": false,
+        "show_taxes_included": false,
+        "show_product_rating": true,
+        "show_sticky_add_to_cart": true,
+        "show_payment_methods": false,
+        "show_share_buttons": false,
+        "help_page": "",
+        "enable_video_autoplay": false,
+        "enable_video_looping": false,
+        "enable_image_zoom": false,
+        "show_thumbnails_on_mobile": false,
+        "desktop_thumbnails_position": "bottom",
+        "transition_effect": "slide"
+      }
+    },
+    "e9dc35e4-0664-46cf-ad4f-0d4aa37441e3": {
+      "type": "rich-text",
+      "custom_css": [
+        "h3 {font-size: 24px;}"
+      ],
+      "settings": {
+        "section_id": "",
+        "subheading": "",
+        "title": "BUNDLE & SAVE PACKS INFORMATION:",
+        "content": "<p><strong>SINGLE PACK: </strong>Includes Carbinox Vortex.<strong><br/><br/>🏅 METAL PACK: </strong>Includes Carbinox Vortex and Black Metal Band w/ Toolkit.</p><p><strong>GIFT PACK: </strong>Includes 2 Carbinox Vortex and 2 Metal Bands w/Toolkit.<br/></p>",
+        "button_text": "",
+        "button_link": "",
+        "background_type": "full_width",
+        "text_width": "fill",
+        "text_position": "center",
+        "text_alignment": "center",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "gallery_9zTWVe": {
+      "type": "gallery",
+      "blocks": {
+        "image_UTjMJA": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/5-min_2.jpg",
+            "caption": ""
+          }
+        },
+        "image_WwBJUL": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/6-min_2.jpg",
+            "caption": ""
+          }
+        },
+        "image_CC4JeJ": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/4-min_3.jpg",
+            "caption": ""
+          }
+        },
+        "image_TgkHtH": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/1-min_2.jpg",
+            "caption": ""
+          }
+        },
+        "image_bVBVrj": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/2-min_2.jpg",
+            "caption": ""
+          }
+        },
+        "image_9F3pCB": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/3-min_3.jpg",
+            "caption": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_UTjMJA",
+        "image_WwBJUL",
+        "image_CC4JeJ",
+        "image_TgkHtH",
+        "image_bVBVrj",
+        "image_9F3pCB"
+      ],
+      "custom_css": [
+        "h3 {font-size: 22px;}",
+        "h2 {font-size: 16px;}"
+      ],
+      "settings": {
+        "subheading": "🇺🇸 ask to our 300,000+ customers!",
+        "title": "you WOULD HAVE TO WEAR FIVE WATCHES FROM OTHER BRANDS TO GET WHAT THE CARBINOX VORTEX OFFERS!",
+        "show_arrows": true,
+        "background": "#f9f9f9",
+        "text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "product-content": {
+      "type": "product-content",
+      "blocks": {
+        "description": {
+          "type": "description",
+          "disabled": true,
+          "settings": {}
+        },
+        "bc751217-69a0-4865-b75f-a3750a2b9c28": {
+          "type": "content",
+          "disabled": true,
+          "settings": {
+            "title": "x-ranger SPECIFICATIONS:",
+            "content": "<h6><strong>- Full Metal Bezel and Body<br/>- Waterproof Technology<br/>- 70 SPORTS MODES<br/>- 410mAh of battery<br/>- 14 days of battery within one charge<br/>- 1.43’’ AMOLED Display<br/>- Heart Rate Sensor: VP60<br/>- Pedometer Sensor: STK8325<br/>- OXYGEN TRACKING<br/>- STEPS COUNTER<br/>- SLEEP MODE<br/>- Scratch-proof tempered glass<br/>- Microphone & Speaker INTEGRATED<br/>- social media notifications<br/>- alarm<br/>- Calendar<br/>- Weather tracking<br/>- CARBINOX APP<br/>- COMPATIBLE WITH ANDROID AND IOS<br/>- Diameter: 44mm<br/>- Weight: 100 gR</strong></h6>",
+            "page": ""
+          }
+        },
+        "c6ed9da0-bdf5-43a3-8685-71d9c9d6fcf6": {
+          "type": "content",
+          "settings": {
+            "title": "Package includes:",
+            "content": "<h6>1x carbinox x-ranger<br/>1x usb charging cable<br/>1x Instructions Manual<br/>1x Free Gift 🎁</h6>",
+            "page": ""
+          }
+        },
+        "3429e515-9812-4e6e-8dcb-71d5cf1a780b": {
+          "type": "content",
+          "settings": {
+            "title": "GUARANTEES:",
+            "content": "<h6>THE CARBINOX X-RANGER COMES WITH A 45-DAY RISK FREE GUARANTEE. FAST RETURNS OR REPLACEMENTS AT NO COST. WE'VE GOT YOU COVERED.</h6>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "description",
+        "bc751217-69a0-4865-b75f-a3750a2b9c28",
+        "c6ed9da0-bdf5-43a3-8685-71d9c9d6fcf6",
+        "3429e515-9812-4e6e-8dcb-71d5cf1a780b"
+      ],
+      "disabled": true,
+      "custom_css": [],
+      "settings": {}
+    },
+    "3afaf0dd-bef3-46c5-9f9d-42e70684a19b": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--14658305654887__3afaf0dd-bef3-46c5-9f9d-42e70684a19b-item-1": {
+          "type": "item",
+          "settings": {
+            "show_video": true,
+            "video_link": "https://cdn.shopify.com/videos/c/o/v/94bdcd1da4304b60a3bf147d4be5efb8.mp4",
+            "tab_label": "Item",
+            "subheading": "",
+            "title": "YOUR ONLY REGRET WILL BE NOT GETTING THIS SOONER, TRUST US.",
+            "content": "<p><strong>Get ready to unlock the unbeatable durability of the Carbinox Vortex, built and priced to outshine the rest. Meticulously crafted, we ain't just meeting standards, we're blowing them away. </strong></p><p><strong>This blend of tough build and top-notch tech means you're always in control, no matter where you are, for a fraction of the usual price.</strong></p>",
+            "button_text": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--14658305654887__3afaf0dd-bef3-46c5-9f9d-42e70684a19b-item-1"
+      ],
+      "custom_css": [
+        "div {background-color: #000000;}",
+        "h3 {color: #ffc200; font-size: 22px; letter-spacing: -1px;}",
+        "h5 {font-size: 20px; letter-spacing: -1px; color: #ffc200; line-height: 25px;}"
+      ],
+      "settings": {
+        "section_id": "",
+        "reveal_on_scroll": false,
+        "background_type": "full_width",
+        "background_overlap": "text",
+        "image_position": "left",
+        "text_alignment": "center",
+        "cycle_speed": 8,
+        "accent_background": "#454545",
+        "text_color": "#ffffff",
+        "button_background": "#292323",
+        "button_text_color": "#5a5353",
+        "enable_custom_margin": false,
+        "margin_bottom": 0
+      }
+    },
+    "3a5567fb-8e7e-4cb3-bb8e-f2c156493a67": {
+      "type": "image-with-text",
+      "blocks": {
+        "7f6a9c5e-0fe0-4000-bbab-c0217fa108eb": {
+          "type": "item",
+          "settings": {
+            "show_video": false,
+            "video_link": "",
+            "image": "shopify://shop_images/vortex-6-min.png",
+            "tab_label": "Item",
+            "subheading": "",
+            "title": "14 TO 60 DAYS OF BATTERY WITHIN ONE 90-MINUTE CHARGE!",
+            "content": "<p><strong>The Carbinox Vortex fires up in a mere 90 minutes, packing a punch for 14 days straight. <br/><br/>Its sturdy battery keeps you linked through marathon workdays, leaving the competition in the dust.</strong></p>",
+            "button_text": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "7f6a9c5e-0fe0-4000-bbab-c0217fa108eb"
+      ],
+      "custom_css": [
+        "h3 {font-size: 22px; color: #ffc200;}",
+        "H4 {font-size: 18px; text-align: left; letter-spacing: -0.7px; margin-top: -20px;}"
+      ],
+      "settings": {
+        "section_id": "",
+        "reveal_on_scroll": false,
+        "background_type": "full_width",
+        "background_overlap": "text",
+        "image_position": "left",
+        "text_alignment": "center",
+        "cycle_speed": 8,
+        "accent_background": "#000000",
+        "text_color": "#ffffff",
+        "button_background": "#292323",
+        "button_text_color": "#5a5353",
+        "enable_custom_margin": false,
+        "margin_bottom": 0
+      }
+    },
+    "ff560379-7d10-4627-a4dc-278938136553": {
+      "type": "image-with-text",
+      "blocks": {
+        "1ae59a29-eaeb-4fc2-8215-438e69660792": {
+          "type": "item",
+          "settings": {
+            "show_video": false,
+            "video_link": "",
+            "image": "shopify://shop_images/1-min-14.png",
+            "tab_label": "Item",
+            "subheading": "",
+            "title": "TOUGHER THAT ANY OTHER SMARTWATCH YOU'VE EVER HAD.",
+            "content": "<p><strong>We've set a new standard for rugged technology and durability. The Carbinox Vortex is crafted with zinc alloy, metal, and aluminum. Made for the bold, it laughs off scratches, shakes off drops, and brushes off dirt. </strong></p><p></p><p><strong>A rugged timepiece that lets you focus on your tasks without fretting over breakin' it.</strong></p>",
+            "button_text": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "1ae59a29-eaeb-4fc2-8215-438e69660792"
+      ],
+      "custom_css": [
+        "h3 {font-size: 22px;}"
+      ],
+      "settings": {
+        "section_id": "",
+        "reveal_on_scroll": false,
+        "background_type": "full_width",
+        "background_overlap": "text",
+        "image_position": "left",
+        "text_alignment": "center",
+        "cycle_speed": 8,
+        "accent_background": "#f9f9f9",
+        "text_color": "#000000",
+        "button_background": "#292323",
+        "button_text_color": "#5a5353",
+        "enable_custom_margin": false,
+        "margin_bottom": 0
+      }
+    },
+    "84dd6a94-028e-44de-a5af-eed905356deb": {
+      "type": "image-with-text",
+      "blocks": {
+        "2666836f-fdb5-4031-a67a-23cba73c2c91": {
+          "type": "item",
+          "settings": {
+            "show_video": false,
+            "video_link": "",
+            "image": "shopify://shop_images/3-min-16.png",
+            "tab_label": "Item",
+            "subheading": "",
+            "title": "The Workday Warrior, ready to make you focus on what's truly important.",
+            "content": "<p><strong>Tough as nails, tailored for America's hardworking folks. The Carbinox Vortex shines where others falter, whether it's on construction sites, cross-country hauls, or out in the field, it'll respond to your requirements, no matter what.</strong></p><p><strong>Trusted from managers to heavy machinery mechanics, it's the go-to watch for the toughest gigs. Wear it proud, work with ease. That's why we're the #1 choice for:<br/><br/>👨🏼‍🔧OPERATORS<br/>🚛 TRUCK DRIVERS<br/>👷🏻‍♂️CONSTRUCTION WORKERS<br/>⚙️TECHNICIANS<br/>👨🏻‍🏭 WELDERS & ELECTRICIANS<br/>💨 HVAC & MAINTENANCE ENGINEERS<br/>🪖VETERANS & RETIRED<br/>🚔 LAW ENFORCEMENT<br/>⛑️ FIRST RESPONDERS</strong></p>",
+            "button_text": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "2666836f-fdb5-4031-a67a-23cba73c2c91"
+      ],
+      "custom_css": [
+        "h3 {font-size: 22px;}",
+        "H4 {font-size: 18px; text-align: left; letter-spacing: -0.7px; margin-top: -20px;}"
+      ],
+      "settings": {
+        "section_id": "",
+        "reveal_on_scroll": false,
+        "background_type": "full_width",
+        "background_overlap": "text",
+        "image_position": "right",
+        "text_alignment": "center",
+        "cycle_speed": 8,
+        "accent_background": "#f9f9f9",
+        "text_color": "#000000",
+        "button_background": "#292323",
+        "button_text_color": "#5a5353",
+        "enable_custom_margin": false,
+        "margin_bottom": 0
+      }
+    },
+    "cfffb33b-6a18-484b-af56-b40301e1f632": {
+      "type": "image-with-text",
+      "blocks": {
+        "242aee7e-1d8a-4b2f-8680-f43ccf662d4d": {
+          "type": "item",
+          "settings": {
+            "show_video": false,
+            "video_link": "",
+            "image": "shopify://shop_images/Diseno_sin_titulo-208-min.png",
+            "tab_label": "Item",
+            "subheading": "",
+            "title": "expansive 1.96\" AMOLED screen, packed with high-definition technology that'll blow your boots off.",
+            "content": "",
+            "button_text": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "242aee7e-1d8a-4b2f-8680-f43ccf662d4d"
+      ],
+      "custom_css": [
+        "h3 {font-size: 16px; color: #ffc200;}",
+        "H4 {font-size: 18px; text-align: left; letter-spacing: -0.7px; margin-top: -20px;}"
+      ],
+      "settings": {
+        "section_id": "",
+        "reveal_on_scroll": false,
+        "background_type": "full_width",
+        "background_overlap": "text",
+        "image_position": "left",
+        "text_alignment": "center",
+        "cycle_speed": 8,
+        "accent_background": "#000000",
+        "text_color": "#ffffff",
+        "button_background": "#292323",
+        "button_text_color": "#5a5353",
+        "enable_custom_margin": false,
+        "margin_bottom": 0
+      }
+    },
+    "b97def7a-4167-4995-aeed-ca9dcdcf40b5": {
+      "type": "image-with-text",
+      "blocks": {
+        "46276caf-7bec-4dc3-babb-e90e3753b5ab": {
+          "type": "item",
+          "settings": {
+            "show_video": false,
+            "video_link": "",
+            "image": "shopify://shop_images/Diseno_sin_titulo-186-min.png",
+            "tab_label": "Item",
+            "subheading": "",
+            "title": "Unlock over 100 customizable watch faces, including two unique always-on display options.",
+            "content": "",
+            "button_text": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "46276caf-7bec-4dc3-babb-e90e3753b5ab"
+      ],
+      "custom_css": [
+        "h3 {font-size: 16px; color: #ffc200;}",
+        "H4 {font-size: 18px; text-align: left; letter-spacing: -0.7px; margin-top: -20px;}"
+      ],
+      "settings": {
+        "section_id": "",
+        "reveal_on_scroll": false,
+        "background_type": "full_width",
+        "background_overlap": "text",
+        "image_position": "left",
+        "text_alignment": "center",
+        "cycle_speed": 8,
+        "accent_background": "#000000",
+        "text_color": "#ffffff",
+        "button_background": "#292323",
+        "button_text_color": "#5a5353",
+        "enable_custom_margin": false,
+        "margin_bottom": 0
+      }
+    },
+    "8512ccfe-ca7f-4b2f-a0e2-70f92c988a05": {
+      "type": "image-with-text",
+      "blocks": {
+        "5c633d77-bb3b-4ca1-a3f8-7faae8f6d9a3": {
+          "type": "item",
+          "settings": {
+            "show_video": true,
+            "video_link": "https://cdn.shopify.com/videos/c/o/v/ab76cd10fcbd4c6f9f2e8ef1e3dbcf77.mp4",
+            "tab_label": "Item",
+            "subheading": "",
+            "title": "Choose from 100+ sports and workout modes, plus smart recognition technology.",
+            "content": "",
+            "button_text": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "5c633d77-bb3b-4ca1-a3f8-7faae8f6d9a3"
+      ],
+      "custom_css": [
+        "h3 {font-size: 16px; color: #ffc200;}",
+        "H4 {font-size: 18px; text-align: left; letter-spacing: -0.7px; margin-top: -20px;}",
+        "div {}"
+      ],
+      "settings": {
+        "section_id": "",
+        "reveal_on_scroll": false,
+        "background_type": "full_width",
+        "background_overlap": "both",
+        "image_position": "left",
+        "text_alignment": "center",
+        "cycle_speed": 8,
+        "accent_background": "#000000",
+        "text_color": "#ffffff",
+        "button_background": "#292323",
+        "button_text_color": "#5a5353",
+        "enable_custom_margin": false,
+        "margin_bottom": 0
+      }
+    },
+    "c4d5d849-903b-4f94-a366-9dd19f7a438e": {
+      "type": "image-with-text",
+      "blocks": {
+        "35be12bc-6d06-4cc0-94ac-25211273e8e5": {
+          "type": "item",
+          "settings": {
+            "show_video": false,
+            "video_link": "",
+            "image": "shopify://shop_images/7-min-7.png",
+            "tab_label": "Item",
+            "subheading": "",
+            "title": "Unrivaled Durability.",
+            "content": "<p><strong>- U.S. MIL-STD-810H MILITARY CERTIFIED FOR EXTREME CONDITIONS.<br/><br/>- MICROSHIELD NANO TECHNOLOGY BLOCKS DUST, DIRT, SAND, AND MUD.<br/><br/>- IP69K WATERPROOF TECHNOLOGY ENSURES WATER WON'T BE AN ISSUE.<br/><br/>- SHOCKPROOF & DUSTPROOF: BUILT TO LAUGH AT DROPS AND BANGS.<br/><br/>- CORNING GORILLA GLASS SCREEN FOR GUARANTEED PROTECTION.</strong></p>",
+            "button_text": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "35be12bc-6d06-4cc0-94ac-25211273e8e5"
+      ],
+      "custom_css": [
+        "h3 {font-size: 24px; color: #ffc200;}",
+        "h5 {font-size: 16px; letter-spacing: -0.7px; line-height: 20px;}"
+      ],
+      "settings": {
+        "section_id": "",
+        "reveal_on_scroll": false,
+        "background_type": "full_width",
+        "background_overlap": "text",
+        "image_position": "left",
+        "text_alignment": "left",
+        "cycle_speed": 8,
+        "accent_background": "#000000",
+        "text_color": "#ffffff",
+        "button_background": "#292323",
+        "button_text_color": "#5a5353",
+        "enable_custom_margin": false,
+        "margin_bottom": 0
+      }
+    },
+    "rich_text_hNVG3m": {
+      "type": "rich-text",
+      "custom_css": [
+        "h3 {font-size: 22px;}"
+      ],
+      "settings": {
+        "section_id": "",
+        "subheading": "",
+        "title": "Unlock Infinite Possibilities on Your Wrist:",
+        "content": "",
+        "button_text": "",
+        "button_link": "",
+        "background_type": "full_width",
+        "text_width": "fill",
+        "text_position": "center",
+        "text_alignment": "center",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "8677f37a-5180-4ed3-8ef5-57b6acaae572": {
+      "type": "image-with-text",
+      "blocks": {
+        "91e8bfbe-7016-4d65-ab32-face8d5ba002": {
+          "type": "item",
+          "settings": {
+            "show_video": false,
+            "video_link": "",
+            "image": "shopify://shop_images/Heart_Rate-min.jpg",
+            "tab_label": "Item",
+            "subheading": "",
+            "title": "",
+            "content": "",
+            "button_text": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "91e8bfbe-7016-4d65-ab32-face8d5ba002"
+      ],
+      "custom_css": [
+        "h3 {font-size: 18px; text-align: center;}"
+      ],
+      "settings": {
+        "section_id": "",
+        "reveal_on_scroll": false,
+        "background_type": "full_width",
+        "background_overlap": "text",
+        "image_position": "right",
+        "text_alignment": "center",
+        "cycle_speed": 8,
+        "accent_background": "#f9f9f9",
+        "text_color": "#000000",
+        "button_background": "#292323",
+        "button_text_color": "#5a5353",
+        "enable_custom_margin": false,
+        "margin_bottom": 0
+      }
+    },
+    "d51359e5-b85d-4eb2-908e-a2f797b33ad5": {
+      "type": "image-with-text",
+      "blocks": {
+        "42abea4b-af17-46cb-8b58-6d60c5088dd0": {
+          "type": "item",
+          "settings": {
+            "show_video": false,
+            "video_link": "",
+            "image": "shopify://shop_images/6-min-7.png",
+            "tab_label": "Item",
+            "subheading": "★★★★★",
+            "title": "\"THIS SMARTWATCH IS AN EXCELLENT CHOICE FOR BLUE-COLLAR WORKERS WHO NEED A STRICT, RELIABLE WATCH THAT CAN WITHSTAND EXTREME CONDITIONS\".",
+            "content": "<h4><strong>TECHBULLION.COM</strong></h4>",
+            "button_text": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "42abea4b-af17-46cb-8b58-6d60c5088dd0"
+      ],
+      "custom_css": [
+        "h2 {color: #ffc200; font-size: 24px;}",
+        "h3 {font-size: 16px;}"
+      ],
+      "settings": {
+        "section_id": "",
+        "reveal_on_scroll": false,
+        "background_type": "full_width",
+        "background_overlap": "both",
+        "image_position": "left",
+        "text_alignment": "left",
+        "cycle_speed": 8,
+        "accent_background": "#121212",
+        "text_color": "#ffffff",
+        "button_background": "#292323",
+        "button_text_color": "#5a5353",
+        "enable_custom_margin": false,
+        "margin_bottom": 0
+      }
+    },
+    "rich_text_gfVdjC": {
+      "type": "rich-text",
+      "custom_css": [
+        "h2 {color: #ffc200; font-size: 24px;}",
+        "h3 {font-size: 16px;"
+      ],
+      "settings": {
+        "section_id": "",
+        "subheading": "★★★★★",
+        "title": "\"THANKS TO ITS INNOVATIVE DESIGN AND USER-FRIENDLY INTERFACE, CARBINOX IS WELL-POSITIONED TO CONTINUE DISRUPTING THE SMARTWATCH INDUSTRY IN THE YEARS TO COME\".",
+        "content": "<h4><strong>ACCESSWIRE.COM</strong></h4>",
+        "button_text": "",
+        "button_link": "",
+        "background_type": "full_width",
+        "text_width": "medium",
+        "text_position": "right",
+        "text_alignment": "right",
+        "background": "#363636",
+        "text_color": "#ffffff",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "rich_text_4GNewQ": {
+      "type": "rich-text",
+      "custom_css": [
+        "h2 {color: #ffc200; font-size: 24px;}",
+        "h3 {font-size: 16px;"
+      ],
+      "settings": {
+        "section_id": "",
+        "subheading": "★★★★★",
+        "title": "\"THIS WATCH IS AFFORDABLE, WITH DIFFERENT STYLES TO FIT DIFFERENT NEEDS, MAKING IT AN EXCELLENT OPTION FOR WORKERS ON A BUDGET\"",
+        "content": "<h4><strong>ACCESSWIRE.COM</strong></h4>",
+        "button_text": "",
+        "button_link": "",
+        "background_type": "full_width",
+        "text_width": "medium",
+        "text_position": "left",
+        "text_alignment": "left",
+        "background": "#000000",
+        "text_color": "#ffffff",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "a82c5f6c-8f61-455c-8e88-fefb5e155ec4": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--14658305654887__a82c5f6c-8f61-455c-8e88-fefb5e155ec4-item-1": {
+          "type": "item",
+          "settings": {
+            "show_video": false,
+            "video_link": "",
+            "image": "shopify://shop_images/Diseno_sin_titulo-210-min.png",
+            "tab_label": "",
+            "subheading": "🏆 CARBINOX AWARD-WINNING GUARANTEE:",
+            "title": "EXPERIENCE IT FOR 45 DAYS, RISK-FREE.",
+            "content": "<p><strong>Let's keep it simple: If it's not tougher than your current watch, return it for a </strong><span style=\"text-decoration:underline\"><strong>full refund.</strong></span><strong> No questions asked.</strong></p>",
+            "button_text": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--14658305654887__a82c5f6c-8f61-455c-8e88-fefb5e155ec4-item-1"
+      ],
+      "custom_css": [
+        "h3 {font-size: 22px;}",
+        "h5 {color: #ffc200;}",
+        "h2 {font-size: 14px;}"
+      ],
+      "settings": {
+        "section_id": "",
+        "reveal_on_scroll": false,
+        "background_type": "full_width",
+        "background_overlap": "both",
+        "image_position": "left",
+        "text_alignment": "center",
+        "cycle_speed": 8,
+        "accent_background": "#000000",
+        "text_color": "#ffffff",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)",
+        "enable_custom_margin": false,
+        "margin_bottom": 0
+      }
+    },
+    "af3b67a6-d614-4707-afda-9d7b66d3addc": {
+      "type": "image-with-text",
+      "blocks": {
+        "b9ba9caa-760c-4a47-a67d-b350595291be": {
+          "type": "item",
+          "settings": {
+            "show_video": false,
+            "video_link": "",
+            "image": "shopify://shop_images/1_4fff85ec-8ba2-4d70-87e2-ffa3f801e0c9.png",
+            "tab_label": "Item",
+            "subheading": "",
+            "title": "",
+            "content": "",
+            "button_text": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "b9ba9caa-760c-4a47-a67d-b350595291be"
+      ],
+      "custom_css": [
+        "div {padding-top: 5px;"
+      ],
+      "settings": {
+        "section_id": "",
+        "reveal_on_scroll": false,
+        "background_type": "full_width",
+        "background_overlap": "image",
+        "image_position": "left",
+        "text_alignment": "center",
+        "cycle_speed": 8,
+        "accent_background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)",
+        "enable_custom_margin": false,
+        "margin_bottom": 0
+      }
+    },
+    "59ab30f9-1c7c-4bf9-8217-9f0f095a6238": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--14658305654887__59ab30f9-1c7c-4bf9-8217-9f0f095a6238-item-1": {
+          "type": "item",
+          "settings": {
+            "show_video": false,
+            "video_link": "",
+            "image": "shopify://shop_images/DOWNLOAD_THE_APP_GLORYFIT_PRO_TO_PAIR_YOUR_VORTEX_WITH_YOUR_PHONE._1_-min.png",
+            "tab_label": "Item",
+            "subheading": "",
+            "title": "",
+            "content": "",
+            "button_text": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--14658305654887__59ab30f9-1c7c-4bf9-8217-9f0f095a6238-item-1"
+      ],
+      "settings": {
+        "section_id": "",
+        "reveal_on_scroll": false,
+        "background_type": "full_width",
+        "background_overlap": "image",
+        "image_position": "left",
+        "text_alignment": "center",
+        "cycle_speed": 8,
+        "accent_background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)",
+        "enable_custom_margin": true,
+        "margin_bottom": 0
+      }
+    },
+    "166007646669623aaa": {
+      "type": "faq",
+      "blocks": {
+        "1660076465f1e811f4-2": {
+          "type": "question",
+          "settings": {
+            "title": "Can I Answer and Make Calls with the Carbinox Vortex?",
+            "answer": "<p>Yes, you can easily answer and dial calls with your Carbinox Vortex. Simply pair it with your phone via Bluetooth.</p>"
+          }
+        },
+        "9e45f6ba-ce45-4182-ab2f-4f8bcd8f6681": {
+          "type": "question",
+          "settings": {
+            "title": "Can You Check and Reply to Text Messages with the Carbinox Vortex?",
+            "answer": "<p>While you can receive SMS or social media notifications, replying isn't available due to cost constraints.</p>"
+          }
+        },
+        "1660076465f1e811f4-4": {
+          "type": "question",
+          "settings": {
+            "title": "Is the Carbinox Vortex Waterproof?",
+            "answer": "<p>Absolutely, it boasts full waterproofing with IP69K and 5ATM technology.</p>"
+          }
+        },
+        "b94b4ba9-d47e-4003-8a27-597acb9b7952": {
+          "type": "question",
+          "settings": {
+            "title": "Is My Smartphone Compatible with the Carbinox Vortex?",
+            "answer": "<p>Yes, it's compatible with both Apple and Android devices through the GLORYFIT PRO APP.</p>"
+          }
+        },
+        "91345035-5b96-4951-8a1e-d62883b97573": {
+          "type": "question",
+          "settings": {
+            "title": "Will the Carbinox Vortex Fit My Wrist?",
+            "answer": "<p>Certainly, our smartwatches feature adjustable bands to fit any wrist comfortably.</p>"
+          }
+        },
+        "b1b69a37-56f7-497e-b973-6abbf1bb8a51": {
+          "type": "question",
+          "settings": {
+            "title": "Do You Offer Guarantees?",
+            "answer": "<p>Absolutely, enjoy a 45-day Risk-Free Guarantee and full protection against software or internal issues. We'll replace it at no cost if needed.</p>"
+          }
+        },
+        "08cad6de-133a-438f-9a28-8990559de84f": {
+          "type": "question",
+          "settings": {
+            "title": "How Long Does the Vortex Take to Charge Fully?",
+            "answer": "<p>Expect a full charge in 2-3 hours, lasting up to 14 days on a single cycle.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "1660076465f1e811f4-2",
+        "9e45f6ba-ce45-4182-ab2f-4f8bcd8f6681",
+        "1660076465f1e811f4-4",
+        "b94b4ba9-d47e-4003-8a27-597acb9b7952",
+        "91345035-5b96-4951-8a1e-d62883b97573",
+        "b1b69a37-56f7-497e-b973-6abbf1bb8a51",
+        "08cad6de-133a-438f-9a28-8990559de84f"
+      ],
+      "settings": {
+        "show_navigation": false,
+        "title": "Frequently asked questions",
+        "content": "",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "d0e939a6-ef01-41b2-a26c-43be8b1503b8": {
+      "type": "product-reviews",
+      "settings": {}
+    }
+  },
+  "order": [
+    "custom_html_cpeKCV",
+    "5ae1f711-27ab-43e4-8735-49a5b0e183ff",
+    "main",
+    "e9dc35e4-0664-46cf-ad4f-0d4aa37441e3",
+    "gallery_9zTWVe",
+    "product-content",
+    "3afaf0dd-bef3-46c5-9f9d-42e70684a19b",
+    "3a5567fb-8e7e-4cb3-bb8e-f2c156493a67",
+    "ff560379-7d10-4627-a4dc-278938136553",
+    "84dd6a94-028e-44de-a5af-eed905356deb",
+    "cfffb33b-6a18-484b-af56-b40301e1f632",
+    "b97def7a-4167-4995-aeed-ca9dcdcf40b5",
+    "8512ccfe-ca7f-4b2f-a0e2-70f92c988a05",
+    "c4d5d849-903b-4f94-a366-9dd19f7a438e",
+    "rich_text_hNVG3m",
+    "8677f37a-5180-4ed3-8ef5-57b6acaae572",
+    "d51359e5-b85d-4eb2-908e-a2f797b33ad5",
+    "rich_text_gfVdjC",
+    "rich_text_4GNewQ",
+    "a82c5f6c-8f61-455c-8e88-fefb5e155ec4",
+    "af3b67a6-d614-4707-afda-9d7b66d3addc",
+    "59ab30f9-1c7c-4bf9-8217-9f0f095a6238",
+    "166007646669623aaa",
+    "d0e939a6-ef01-41b2-a26c-43be8b1503b8"
+  ]
+}

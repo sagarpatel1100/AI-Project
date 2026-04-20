@@ -1,0 +1,418 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "sl_timer_bar_1_1_gjQAnM": {
+      "type": "sl-timer-bar-1-1",
+      "custom_css": [
+        "div {margin-block: -2px;}"
+      ],
+      "settings": {
+        "devices": "all",
+        "sticky_on_scroll": true,
+        "headline_text": "🚨 ATTENTION: WE'LL GIVE 25% OFF ON THE FIRST 100 WATCHES SOLD!",
+        "strikethrough_text": "250",
+        "message_link": "",
+        "link_style": "arrow",
+        "use_caps": true,
+        "message_icon": "icon-name",
+        "offer_countdown_date": "2024-09-27",
+        "offer_countdown_time": "12:00 AM -04:00",
+        "pattern_select": "110d5020-2c4a-47b6-94c8-74c9b3d3b8d9",
+        "bar_height": "large",
+        "text_size": "large",
+        "font_style": "title",
+        "timer_size": "large",
+        "timer_font_style": "heading",
+        "label_font_style": "heading",
+        "border_type": "none",
+        "mobile_bar_height": "match_desktop",
+        "mobile_text_size": "match_desktop",
+        "background_color": "#db0404",
+        "text_color": "#ffffff",
+        "border_color": "#ffffff",
+        "custom_timer_color": "#ffffff"
+      }
+    },
+    "product_item_8CDLKF": {
+      "type": "product-item",
+      "blocks": {
+        "product_items_byzeR9": {
+          "type": "Product-items",
+          "settings": {
+            "image1": "shopify://shop_images/THESMARTWATCHEXPERT-2.png",
+            "heading": "",
+            "para": ""
+          }
+        }
+      },
+      "block_order": [
+        "product_items_byzeR9"
+      ],
+      "custom_css": [
+        "div {margin-block: -15px;}"
+      ],
+      "settings": {}
+    },
+    "image_with_text_itRPWH": {
+      "type": "image-with-text",
+      "blocks": {
+        "item_8wgCGb": {
+          "type": "item",
+          "settings": {
+            "show_video": true,
+            "video_link": "https://cdn.shopify.com/videos/c/o/v/73c8506b79184e85a3ac36a7b065df09.mp4",
+            "tab_label": "Item",
+            "subheading": "launching at midnight. are you ready?",
+            "title": "REGISTRATION IS OFFICIALLY CLOSED.",
+            "content": "",
+            "button_text": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "item_8wgCGb"
+      ],
+      "custom_css": [
+        "div {background-color: black;}",
+        "h3 {margin-bottom: -5px; margin-top: -1px; padding-block: 20px; font-size: 24px;}",
+        "h2 {letter-spacing: -0.3px; font-size: 13px; margin-bottom: -5px;}"
+      ],
+      "settings": {
+        "section_id": "",
+        "reveal_on_scroll": false,
+        "background_type": "full_width",
+        "background_overlap": "image",
+        "image_position": "left",
+        "text_alignment": "center",
+        "cycle_speed": 8,
+        "accent_background": "#000000",
+        "text_color": "#ffffff",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)",
+        "enable_custom_margin": false,
+        "margin_bottom": 0
+      }
+    },
+    "rich_text_AwVrPq": {
+      "type": "rich-text",
+      "disabled": true,
+      "custom_css": [
+        "h3 {font-size: 16px;}",
+        "div {margin-block: -8px;}"
+      ],
+      "settings": {
+        "section_id": "",
+        "subheading": "",
+        "title": "We're only launching 500 unique pieces, secure your spot now!",
+        "content": "",
+        "button_text": "",
+        "button_link": "",
+        "background_type": "full_width",
+        "text_width": "medium",
+        "text_position": "center",
+        "text_alignment": "center",
+        "background": "#db0404",
+        "text_color": "#ffffff",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "slideshow_rzra8f": {
+      "type": "slideshow",
+      "custom_css": [
+        "h3 {margin-bottom: -10px; margin-top: -1px; padding-block: 7px; font-size: 24px;}",
+        "h2 {letter-spacing: -0.3px; font-size: 13px;}"
+      ],
+      "settings": {
+        "section_height": "auto",
+        "transition_type": "fade",
+        "autoplay": false,
+        "cycle_speed": 5,
+        "background": "rgba(0,0,0,0)"
+      }
+    },
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "68cbfea4-6b54-4a02-af3c-8ca80e924f69": {
+          "type": "description",
+          "settings": {}
+        },
+        "aeb8ebf7-0071-475a-b587-0ad05d895fab": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "link": "",
+            "text": "",
+            "stretch": true,
+            "background": "rgba(0,0,0,0)",
+            "text_color": "rgba(0,0,0,0)"
+          }
+        },
+        "77b0126f-d176-4e47-b6f3-d2424b9b32ea": {
+          "type": "variant_picker",
+          "settings": {
+            "hide_sold_out_variants": false,
+            "selector_mode": "dropdown",
+            "color_mode": "variant_image",
+            "size_chart_page": ""
+          }
+        },
+        "54d2e274-c4e9-4efe-b6da-5bfe93a94d13": {
+          "type": "social_share_icons",
+          "disabled": true,
+          "settings": {
+            "icon_1": "shopify://shop_images/free-shipping.png",
+            "icon_text_1": "<p>Free Shipping</p>",
+            "icon_2": "shopify://shop_images/guarantee.png",
+            "icon_text_2": "<p>Satisfaction<br/>Guaranteed</p>",
+            "icon_3": "shopify://shop_images/easy-returns.png",
+            "icon_text_3": "<p>Easy Returns</p>"
+          }
+        },
+        "aa8adaeb-d404-4d2d-9f7b-7c87d4a68e8f": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_payment_button": true,
+            "atc_button_background": "#0023ff",
+            "atc_button_text_color": "#f9f9f9",
+            "buy_now_button_background": "rgba(0,0,0,0)",
+            "buy_now_button_text_color": "rgba(0,0,0,0)"
+          }
+        },
+        "4405410f-d098-41a4-9d3e-7f9d8e5edf7d": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Diseno_sin_titulo-12_68385dad-ca95-4b21-896d-8ab2aa4dc802.png",
+            "image_alignment": "center",
+            "image_width": 250
+          }
+        }
+      },
+      "block_order": [
+        "68cbfea4-6b54-4a02-af3c-8ca80e924f69",
+        "aeb8ebf7-0071-475a-b587-0ad05d895fab",
+        "77b0126f-d176-4e47-b6f3-d2424b9b32ea",
+        "54d2e274-c4e9-4efe-b6da-5bfe93a94d13",
+        "aa8adaeb-d404-4d2d-9f7b-7c87d4a68e8f",
+        "4405410f-d098-41a4-9d3e-7f9d8e5edf7d"
+      ],
+      "disabled": true,
+      "settings": {
+        "delivery_time": "<p><strong>Order today</strong> to get it delivered in <strong>5-7 days</strong></p>",
+        "show_vendor": false,
+        "show_sku": false,
+        "show_taxes_included": false,
+        "show_product_rating": true,
+        "show_sticky_add_to_cart": false,
+        "show_payment_methods": false,
+        "show_share_buttons": false,
+        "help_page": "",
+        "enable_video_autoplay": true,
+        "enable_video_looping": false,
+        "enable_image_zoom": false,
+        "show_thumbnails_on_mobile": false,
+        "desktop_thumbnails_position": "bottom",
+        "transition_effect": "slide"
+      }
+    },
+    "video_LbierN": {
+      "type": "video",
+      "disabled": true,
+      "settings": {
+        "subheading": "",
+        "title": "",
+        "video_url": "https://www.youtube.com/watch?v=4JJl0468K30",
+        "image": "shopify://shop_images/Diseno_sin_titulo_13_-min.jpg",
+        "background_type": "full_width",
+        "video_size": "auto",
+        "autoplay": false,
+        "background": "#ffc200",
+        "text_color": "#ffc200"
+      }
+    },
+    "product-content": {
+      "type": "product-content",
+      "blocks": {
+        "description": {
+          "type": "description",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "description"
+      ],
+      "disabled": true,
+      "settings": {}
+    },
+    "rich_text_Nna7PY": {
+      "type": "rich-text",
+      "disabled": true,
+      "custom_css": [
+        "h3 {font-size: 22px; color: #ffc200;}"
+      ],
+      "settings": {
+        "section_id": "",
+        "subheading": "",
+        "title": "SMARTWATCHES THAT WILL EVEN WORK MORE THAN YOU.",
+        "content": "<h5><strong>GET READY TO UNLOCK THE NEXT GENERATION OF CARBINOX SMARTWATCHES, BUILT FOR EXTREME DURABILITY AND CUTTING-EDGE TECHNOLOGY. <br/><br/>NEW FEATURES TO ELEVATE YOUR PERFORMANCE ON THE TOUGHEST TASKS, DESIGNED TO OUTPERFORM ANY OTHER IN THE INDUSTRY.</strong></h5>",
+        "button_text": "",
+        "button_link": "",
+        "background_type": "full_width",
+        "text_width": "medium",
+        "text_position": "center",
+        "text_alignment": "center",
+        "background": "#000000",
+        "text_color": "#ffffff",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "image_with_text_bnXGEr": {
+      "type": "image-with-text",
+      "blocks": {
+        "item_HKcj8g": {
+          "type": "item",
+          "settings": {
+            "show_video": false,
+            "video_link": "",
+            "image": "shopify://shop_images/6-min_87ac7bc5-2933-41be-a8de-568a2f5ccf42.jpg",
+            "tab_label": "Item",
+            "subheading": "",
+            "title": "Get Ready to Explore: Unveiling GPS Like Never Before.",
+            "content": "<p><strong>Prepare to navigate your world with unparalleled precision, whether you're gearing up for a tough job or embarking on a new adventure. Stay tuned for the launch and be the first to experience the future of navigation.</strong></p>",
+            "button_text": "SUBSCRIBE TO WAITING LIST ➔",
+            "button_link": "https://carbinox.attn.tv/p/6BC/landing-page"
+          }
+        }
+      },
+      "block_order": [
+        "item_HKcj8g"
+      ],
+      "disabled": true,
+      "custom_css": [
+        "h3 {font-size: 22px; color: #ffc200;}"
+      ],
+      "settings": {
+        "section_id": "",
+        "reveal_on_scroll": false,
+        "background_type": "full_width",
+        "background_overlap": "both",
+        "image_position": "left",
+        "text_alignment": "center",
+        "cycle_speed": 8,
+        "accent_background": "#000000",
+        "text_color": "#ffffff",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)",
+        "enable_custom_margin": false,
+        "margin_bottom": 0
+      }
+    },
+    "image_with_text_iCFyMK": {
+      "type": "image-with-text",
+      "blocks": {
+        "item_3ADJEB": {
+          "type": "item",
+          "settings": {
+            "show_video": false,
+            "video_link": "",
+            "image": "shopify://shop_images/4-min_b58a17ba-181f-44b0-ac11-09e68ab2b29c.jpg",
+            "tab_label": "Item",
+            "subheading": "",
+            "title": "WHAT ELSE IS NEW?",
+            "content": "<p><strong>✅ MADE WITH EVEN TOUGHER MATERIALS.<br/>✅ 3RD GEN GORILLA GLASS SCREEN.<br/>✅ ALTIMETER, BAROMETER, COMPASS.<br/>✅ MORE SPORTS MODES AND WATCH FACES.<br/>✅ THICKER STRAPS FOR MORE RESISTANCE.<br/>✅ MORE ACCURATE SENSORS TO TRACK WHAT MATTERS.</strong></p>",
+            "button_text": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "item_3ADJEB"
+      ],
+      "disabled": true,
+      "custom_css": [
+        "h3 {font-size: 22px; color: #ffc200;}"
+      ],
+      "settings": {
+        "section_id": "",
+        "reveal_on_scroll": false,
+        "background_type": "full_width",
+        "background_overlap": "both",
+        "image_position": "left",
+        "text_alignment": "center",
+        "cycle_speed": 8,
+        "accent_background": "#000000",
+        "text_color": "#ffffff",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)",
+        "enable_custom_margin": false,
+        "margin_bottom": 0
+      }
+    },
+    "image_with_text_tJx4TK": {
+      "type": "image-with-text",
+      "blocks": {
+        "item_dnRBLy": {
+          "type": "item",
+          "settings": {
+            "show_video": false,
+            "video_link": "",
+            "image": "shopify://shop_images/1-min_98423bf6-c562-4bc3-8bc2-99162a2a3184.jpg",
+            "tab_label": "Item",
+            "subheading": "",
+            "title": "📅 SAVE THE DATE: september 27, 2024",
+            "content": "<p><strong>WE'RE LIMITING THIS SALE TO ONLY 500 PIECES. SUBSCRIBE NOW AND BE THE FIRST ONE TO GET ACCESS.</strong></p>",
+            "button_text": "SUBSCRIBE TO WAITING LIST ➔",
+            "button_link": "https://carbinox.attn.tv/p/6BC/landing-page"
+          }
+        }
+      },
+      "block_order": [
+        "item_dnRBLy"
+      ],
+      "disabled": true,
+      "custom_css": [
+        "h3 {font-size: 22px; color: #ffc200;}"
+      ],
+      "settings": {
+        "section_id": "",
+        "reveal_on_scroll": false,
+        "background_type": "full_width",
+        "background_overlap": "both",
+        "image_position": "left",
+        "text_alignment": "center",
+        "cycle_speed": 8,
+        "accent_background": "#000000",
+        "text_color": "#ffffff",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)",
+        "enable_custom_margin": false,
+        "margin_bottom": 0
+      }
+    }
+  },
+  "order": [
+    "sl_timer_bar_1_1_gjQAnM",
+    "product_item_8CDLKF",
+    "image_with_text_itRPWH",
+    "rich_text_AwVrPq",
+    "slideshow_rzra8f",
+    "main",
+    "video_LbierN",
+    "product-content",
+    "rich_text_Nna7PY",
+    "image_with_text_bnXGEr",
+    "image_with_text_iCFyMK",
+    "image_with_text_tJx4TK"
+  ]
+}

@@ -1,0 +1,549 @@
+{%- comment -%}
+------------------------------------------------------------------------------------------------------------------------
+NOTE TO DEVELOPERS: welcome to Focal theme! We hope that you will enjoy editing this theme as much as we did for
+  developing it. We have put a lot of work to make this theme as developer friendly as possible by offering you
+  hooks to integrate into critical parts of the theme. You will find the complete technical documentation (including
+  all events, dependencies...) in the "custom.js" file, located in the Assets folder.
+
+------------------------------------------------------------------------------------------------------------------------
+{%- endcomment -%}
+
+<!doctype html>
+
+{%- assign direction = 'ltr' -%}
+{%- case request.locale.iso_code -%}
+  {%- when 'ar' or 'arc' or 'dv' or 'fa' or 'ha' or 'he' or 'kwh' or 'ks' or 'ku' or 'ps' or 'ur' or 'yi' -%}
+    {%- assign direction = 'rtl' -%}
+{%- endcase -%}
+
+<html class="no-js" lang="{{ request.locale.iso_code }}" dir="{{ direction }}">
+
+  <head>
+<link rel='preconnect dns-prefetch' href='https://api.config-security.com/' crossorigin />
+<link rel='preconnect dns-prefetch' href='https://conf.config-security.com/' crossorigin />
+<link rel='preconnect dns-prefetch' href='https://whale.camera/' crossorigin />
+<script>
+/* >> TriplePixel :: start*/
+window.TriplePixelData={TripleName:"ohmiux.myshopify.com",ver:"2.12",plat:"SHOPIFY",isHeadless:false},function(W,H,A,L,E,_,B,N){function O(U,T,P,H,R){void 0===R&&(R=!1),H=new XMLHttpRequest,P?(H.open("POST",U,!0),H.setRequestHeader("Content-Type","text/plain")):H.open("GET",U,!0),H.send(JSON.stringify(P||{})),H.onreadystatechange=function(){4===H.readyState&&200===H.status?(R=H.responseText,U.includes(".txt")?eval(R):P||(N[B]=R)):(299<H.status||H.status<200)&&T&&!R&&(R=!0,O(U,T-1,P))}}if(N=window,!N[H+"sn"]){N[H+"sn"]=1,L=function(){return Date.now().toString(36)+"_"+Math.random().toString(36)};try{A.setItem(H,1+(0|A.getItem(H)||0)),(E=JSON.parse(A.getItem(H+"U")||"[]")).push({u:location.href,r:document.referrer,t:Date.now(),id:L()}),A.setItem(H+"U",JSON.stringify(E))}catch(e){}var i,m,p;A.getItem('"!nC`')||(_=A,A=N,A[H]||(E=A[H]=function(t,e,a){return void 0===a&&(a=[]),"State"==t?E.s:(W=L(),(E._q=E._q||[]).push([W,t,e].concat(a)),W)},E.s="Installed",E._q=[],E.ch=W,B="configSecurityConfModel",N[B]=1,O("https://conf.config-security.com/model",5),i=L(),m=A[atob("c2NyZWVu")],_.setItem("di_pmt_wt",i),p={id:i,action:"profile",avatar:_.getItem("auth-security_rand_salt_"),time:m[atob("d2lkdGg=")]+":"+m[atob("aGVpZ2h0")],host:A.TriplePixelData.TripleName,plat:A.TriplePixelData.plat,url:window.location.href,ref:document.referrer,ver:A.TriplePixelData.ver},O("https://api.config-security.com/event",5,p),O("https://whale.camera/live/dot.txt",5)))}}("","TriplePixel",localStorage);
+/* << TriplePixel :: end*/
+</script>
+    {% render 'alena-speed-snippet' %}
+    
+    
+    
+    
+
+    <script type="lazyload2" data-src="https://www.googleoptimize.com/optimize.js?id=OPT-5DQ55LB"></script>
+    
+    <!-- Hotjar Tracking Code for https://shopcarbinox.com -->
+    <script type="lazyload2">
+        (function(h,o,t,j,a,r){
+            h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+            h._hjSettings={hjid:3112594,hjsv:6};
+            a=o.getElementsByTagName('head')[0];
+            r=o.createElement('script');r.async=1;
+            r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+    </script>
+    
+    <meta name="google-site-verification" content="ekUBBrvcL1PA3LzY0ja-hlyesuOrSg25HITSxB99k_M" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, height=device-height, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="theme-color" content="{{ settings.header_background }}">
+
+    <title>{% if page_title == blank %}{{ shop.name }}{% else %}{{ page_title }}{% if current_page != 1 %} &ndash; {{ 'general.meta.page' | t: page: current_page }}{% endif %}{% endif %}</title>
+
+    {%- if page_description -%}
+      <meta name="description" content="{{ page_description | escape }}">
+    {%- endif -%}
+
+    <link rel="canonical" href="{{ canonical_url }}">
+
+    {%- if settings.favicon -%}
+      <link rel="shortcut icon" href="{{ settings.favicon | img_url: '96x96' }}" type="image/png">
+    {%- endif -%}
+
+    {%- comment -%}Few prefech to increase performance on commonly used third-parties{%- endcomment -%}
+    <link rel="preconnect" href="https://cdn.shopify.com">
+    <link rel="dns-prefetch" href="https://productreviews.shopifycdn.com">
+    <link rel="dns-prefetch" href="https://www.google-analytics.com">
+
+    {%- unless settings.heading_font.system? and settings.text_font.system? -%}
+      <link rel="preconnect" href="https://fonts.shopifycdn.com" crossorigin>
+    {%- endunless -%}
+
+    {%- comment -%}
+      IMPLEMENTATION NOTE: for improving performance, Focal tries to preload images on known pages (such as blog page,
+      product or collection pages). In order to keep a main JS file size minimal, the theme also lazyloads non-essential
+      libraries (such as PhotoSwipe or Flickity) and only loads them on demand.
+    {%- endcomment -%}
+    
+    {%- if request.page_type == 'product' -%}
+      {%- assign selected_media = product.selected_variant.featured_media | default: product.featured_media -%}
+
+      <link rel="preload" as="fetch" href="{{ product.url }}.js" crossorigin>
+      <link rel="preload" as="image" href="https:{{ product.media[0] | img_url: '800x' }}">
+      
+      {%- if product.media.size > 1 -%}
+        <link rel="preload" as="script" href="{{ 'flickity.js' | asset_url }}">
+      {%- endif -%}
+      
+    {%- elsif template contains 'collection' -%}
+      
+      <link rel="preload" as="image" href="https:{{ collection.products[0].featured_media | img_url: '500x' }}">
+      <link rel="preload" as="image" href="https:{{ collection.products[1].featured_media | img_url: '500x' }}">
+      
+    {%- endif -%}
+
+    {% render 'social-meta-tags' %}
+    {% render 'microdata-schema' %}
+    {% render 'css-variables', direction: direction %}
+    {% render 'js-variables', direction: direction %}
+
+    {%- render "fonts" -%}
+      
+    {{ 'theme.css' | asset_url | stylesheet_tag: preload: true }}
+    {{ 'slick.css' | asset_url | stylesheet_tag: preload: true }}
+    {{ 'custom.css' | asset_url | stylesheet_tag: preload: true }}
+
+    <script>
+        window.lazySizesConfig = window.lazySizesConfig || {};
+        window.lazySizesConfig.loadMode = 1;
+        window.lazySizesConfig.expand = 10;
+        window.lazySizesConfig.loadHidden = false;
+    </script>
+    <script src="{{ 'lazysizes.min.js' | asset_url }}" defer></script>
+
+    <script>
+      var arrow;
+      window.arrow = '{{ 'arrow.svg' | asset_url }}';
+    </script>
+
+    <script src="{{ 'vendor.js' | asset_url }}" defer></script>
+    <script src="{{ 'theme.js' | asset_url }}" defer></script>
+    <script type="lazyload2" data-src="{{ 'jquery.min.js' | asset_url }}" defer></script>
+    <script type="lazyload2" data-src="{{ 'slick.min.js' | asset_url }}" defer></script>
+    <script type="lazyload2" data-src="{{ 'custom.js' | asset_url }}" defer></script>
+
+    {% comment %}
+    {{ content_for_header }}
+    {% endcomment %}
+    {% include 'content-header' %}
+
+    <script id="docapp-cart">window.docappCart = {{ cart | json }}; window.docappCart.currency = "{{ 0 | money_with_currency | slice: -3, 3 }}"; window.docappCart.shop_currency = "{{ shop.currency }}";</script>
+    <script id="docapp-free-item-speedup">
+    (() => { if (!document.documentElement.innerHTML.includes('\\/shop' + '\\/js' + '\\/free-gift-cart-upsell-pro.min.js') || window.freeGiftCartUpsellProAppLoaded) return; let script = document.createElement('script'); script.src = "https://d2fk970j0emtue.cloudfront.net/shop/js/free-gift-cart-upsell-pro.min.js?shop=ohmiux.myshopify.com"; document.getElementById('docapp-free-item-speedup').after(script); })();
+    </script>
+
+    {% render 'gsf-conversion-pixels' %}
+
+    <script>(() => {const installerKey = 'docapp-free-gift-auto-install'; const urlParams = new URLSearchParams(window.location.search); if (urlParams.get(installerKey)) {window.sessionStorage.setItem(installerKey, JSON.stringify({integrationId: urlParams.get('docapp-integration-id'), divClass: urlParams.get('docapp-install-class'), check: urlParams.get('docapp-check')}));}})();</script>
+    
+    <script>(() => {const previewKey = 'docapp-free-gift-test'; const urlParams = new URLSearchParams(window.location.search); if (urlParams.get(previewKey)) {window.sessionStorage.setItem(previewKey, JSON.stringify({active: true, integrationId: urlParams.get('docapp-free-gift-inst-test')}));}})();</script>
+
+    {% include "omega_twitter_multi_pixel" %}
+
+    <!-- Google Tag Manager -->
+    <script type="lazyload2">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-5XKJ3S8');</script>
+    <!-- End Google Tag Manager -->
+
+</head>
+
+  {%- assign feature_classes = '' -%}
+
+  {%- if settings.show_image_zoom -%}
+    {% assign feature_classes = feature_classes | append: ' features--image-zoom' %}
+  {%- endif -%}
+
+  
+  <body class="no-focus-outline {{ feature_classes }} template-{{template.name}}" id="{{template | handleize}}" data-instant-allow-query-string>
+    
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5XKJ3S8"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    {%- comment -%}Common SVG definitions that we are re-using in several places{%- endcomment -%}
+    <svg class="visually-hidden">
+      <linearGradient id="rating-star-gradient-half">
+        <stop offset="50%" stop-color="rgb(var(--product-star-rating))" />
+        <stop offset="50%" stop-color="rgb(var(--product-star-rating))" stop-opacity="0.4" />
+      </linearGradient>
+    </svg>
+
+    <a href="#main" class="visually-hidden skip-to-content">{{ 'general.accessibility.skip_to_content' | t }}</a>
+    <loading-bar class="loading-bar"></loading-bar>
+
+    {%- if request.page_type != 'gift_card' and request.page_type != 'password' -%}
+      {%- section 'announcement-bar' -%}
+      {%- section 'popup' -%}
+      {%- section 'header' -%}
+
+      {%- unless settings.cart_type == 'page' or request.page_type == 'cart' -%}
+        {%- section 'mini-cart' -%}
+      {%- endunless -%}
+    {%- endif -%}
+
+    <div id="main" role="main" class="anchor">
+      {%- comment -%}
+      IMPLEMENTATION NOTE: on collection and search page, the theme was designed to show on mobile the filter bar and/or sort
+        by at the very top of the page. However, due to the fact that sections are isolated, I had to move the code
+        here. Then, the collection section, based on the selected settings, will eventually hide those elements in CSS
+      {%- endcomment -%}
+      {%- if request.page_type == 'collection' or request.page_type == 'search' -%}
+        {%- assign active_filters_count = 0 -%}
+
+        {%- if request.page_type == 'collection' -%}
+          {%- assign filters = collection.filters -%}
+        {%- else -%}
+          {%- assign filters = search.filters -%}
+        {%- endif -%}
+
+        {%- for filter in filters -%}
+          {%- if filter.type == 'list' -%}
+            {%- assign active_filters_count = active_filters_count | plus: filter.active_values.size -%}
+          {%- elsif filter.type == 'price_range' and filter.min_value.value or filter.max_value.value -%}
+            {%- assign active_filters_count = active_filters_count | plus: 1 -%}
+          {%- endif -%}
+        {%- endfor -%}
+
+        {%- assign is_toolbar_collapsed = false -%}
+
+        {%- if request.page_type == 'search' and search.results.first.object_type != 'product' and search.results_count > 0 -%}
+          {%- assign is_toolbar_collapsed = true -%}
+        {%- endif -%}
+        <div class="collection-breadcrumbs">
+          <div class="container">
+            <div class="collection-breadcrumb">
+              {%  render 'breadcrumbs' %}
+            </div>
+          </div>
+        </div>
+        <div id="mobile-facet-toolbar" class="mobile-toolbar {% if is_toolbar_collapsed %}is-collapsed{% endif %} hidden-lap-and-up">
+          <button is="toggle-button" class="mobile-toolbar__item mobile-toolbar__item--filters {% if active_filters_count > 0 %}has-filters{% endif %}" aria-expanded="false" aria-controls="facet-filters" style="display: none">
+            {%- render 'icon' with 'filters' -%}
+            <span class="mobile-toolbar__item-label">{{- 'collection.general.filters' | t -}}</span>
+          </button>
+
+          <button is="toggle-button" class="mobile-toolbar__item mobile-toolbar__item--sort" aria-expanded="false" aria-controls="sort-by-popover" style="display: none">
+            <span class="mobile-toolbar__item-label">{{- 'collection.general.sort_by' | t -}}</span>
+            {%- render 'icon' with 'chevron' -%}
+          </button>
+        </div>
+      {%- endif -%}
+
+      {{ content_for_layout }}
+
+      {%- unless request.page_type == 'index' or request.page_type == 'password' or request.page_type == 'gift_card' -%}
+        {%- section 'static-text-with-icons' -%}
+        {%- section 'static-newsletter' -%}
+      {%- endunless -%}
+    </div>
+
+    {%- if request.page_type != 'gift_card' and request.page_type != 'password' -%}
+      {%- section 'footer' -%}
+    {%- endif -%}
+
+    {% if template contains 'product' %} 
+      <script id="viewed_product">
+        var _learnq = _learnq || [];
+      
+        var item = {
+          Name: {{ product.title|json }},
+          ProductID: {{ product.id|json }},
+          Categories: {{ product.collections|map:'title'|json }},
+          ImageURL: "https:{{ product.featured_image.src|img_url:'grande' }}",
+          URL: "{{ shop.secure_url }}{{ product.url }}",
+          Brand: {{ product.vendor|json }},
+          Price: {{ product.price|money|json }},
+          CompareAtPrice: {{ product.compare_at_price_max|money|json }}
+        };
+      
+        _learnq.push(['track', 'Viewed Product', item]);
+        _learnq.push(['trackViewedItem', {
+          Title: item.Name,
+          ItemId: item.ProductID,
+          Categories: item.Categories,
+          ImageUrl: item.ImageURL,
+          Url: item.URL,
+          Metadata: {
+            Brand: item.Brand,
+            Price: item.Price,
+            CompareAtPrice: item.CompareAtPrice
+          }
+        }]);
+      </script>
+    {% endif %}
+   
+    <script type="lazyload2"> 
+      (function($, window, document, undefined) {
+          $.fn.eocjsNewsticker = function(options) {
+      
+              // _______ Options _______
+      
+      
+              let defaults = {
+                  speed: 20,
+                  timeout: 1,
+                  divider: '    ',
+                  type: 'static', // static or ajax
+                  source: '', // ajax source (url)
+                  dataType: 'json', // data type of the expected file (json or jsonp)
+                  callback: 'callback', // used for jsonp
+                  interval: 120 // polling interval of the ajax source (seconds)
+              };
+            let divider;
+              let settings = $.extend({}, defaults, options);
+      
+      
+              // _______ Inner Variables _______
+      
+              let self = this;
+              let content = self.html();
+              let active = 'eocjs-newsticker-active';
+              let container = {};
+              let one = {};
+              let two = {};
+              let both = {};
+              let oneNeedsUpdate = false;
+              let twoNeedsUpdate = false;
+              let localWindow = $(window);
+              let localWindowWidth = localWindow.width();
+      
+      
+              // _______ Init _______
+      
+              function init() {
+                  if (!self.hasClass(active)) {
+                      create();
+                      start();
+                      self.addClass(active);
+                  }
+              }
+      
+      
+              // _______ Create _______
+      
+              function create() {
+      
+                  self.addClass('eocjs-newsticker').html('<div class="eocjs-newsticker-container"><div class="eocjs-newsticker-one"></div><div class="eocjs-newsticker-two"></div></div>');
+      
+                  container = self.find('.eocjs-newsticker-container');
+                  one = self.find('.eocjs-newsticker-one');
+                  two = self.find('.eocjs-newsticker-two');
+                  both = self.find('.eocjs-newsticker-one, .eocjs-newsticker-two');
+      
+              }
+      
+      
+              // _______ Start _______
+      
+              function start() {
+      
+                  if (settings.type === 'static') {
+      
+                      content = content + ' ' + settings.divider;
+                      run(content, (settings.timeout * 1000));
+      
+                  } else if (settings.type === 'ajax') {
+      
+                      container.prepend('<div class="eocjs-newsticker-loader"></div>');
+                      $.when(ajax(settings.source, settings.dataType, settings.callback)).done(function() {
+      
+                          container.find('.eocjs-newsticker-loader').fadeOut(300, function() {
+                              run(content, 0);
+                              $(this).remove();
+                          });
+      
+                          setInterval(function() {
+                              $.when(ajax(settings.source, settings.dataType, settings.callback)).done(function() {
+                                  oneNeedsUpdate = true;
+                                  twoNeedsUpdate = true;
+                              });
+                          }, settings.interval * 1000);
+      
+                      });
+      
+                  }
+      
+              }
+      
+      
+              // _______ Ajax _______
+      
+              function ajax(source, dataType, callback) {
+      
+                  return $.ajax({
+                      url: source,
+                      dataType: dataType,
+                      jsonpCallback: callback,
+                      success: function(data, textStatus, jqXHR) {
+                          content = '';
+                          if ($.isPlainObject(data) && !$.isEmptyObject(data)) {
+                              for (let property in data) {
+                                  if (data.hasOwnProperty(property)) {
+                                      if (content === '') {
+                                          content = data[property] + ' ' + settings.divider;
+                                      } else {
+                                          content = content + ' ' + data[property] + ' ' + settings.divider;
+                                      }
+                                  }
+                              }
+                          } else if (Array.isArray(data) && data.length > 0) {
+                              for (let i = 0; i < data.length; i += 1) {
+                                  if (content === '') {
+                                      content = data[i] + ' ' + settings.divider;
+                                  } else {
+                                      content = content + ' ' + data[i] + ' ' + settings.divider;
+                                  }
+                              }
+                          } else {
+                              content = 'Error: No data found. Check your remote source!';
+                          }
+                      }
+                  });
+      
+              }
+      
+      
+              // _______ Run _______
+      
+              function run(content, timeout) {
+      
+                  update(both, content);
+                  two.css({ 'left': one.width() });
+      
+                  setTimeout(function() {
+      
+                      let width = one.width();
+                      let speed = settings.speed * width;
+      
+                      animateSlide(one, 0, -width, speed);
+                      animateSlide(two, width, 0, speed);
+      
+                  }, timeout);
+      
+              }
+      
+      
+              // _______ Update _______
+      
+              function update(slide, content) {
+      
+                  slide.html(content);
+                  while (container.width() > slide.width()) {
+                      slide.append(' ' + content);
+                  }
+                  slide.append('&nbsp;');
+      
+              }
+      
+      
+              // _______ Animation _______
+      
+              function animateSlide(slide, start, destination, speed) {
+      
+                  slide.animate({ left: destination },
+                      speed,
+                      'linear',
+                      function() {
+      
+                          let width;
+      
+                          if (start === 0) {
+      
+                              if (slide === one && oneNeedsUpdate) {
+                                  update(one, content);
+                                  oneNeedsUpdate = false;
+                              } else if (slide === two && twoNeedsUpdate) {
+                                  update(two, content);
+                                  twoNeedsUpdate = false;
+                              }
+      
+                              slide === one ? width = two.width() : width = one.width();
+                              speed = settings.speed * width;
+                              slide.css({ 'left': width });
+                              animateSlide(slide, width, 0, speed);
+      
+                          } else {
+      
+                              slide === one ? width = one.width() : width = two.width();
+                              speed = settings.speed * width;
+                              animateSlide(slide, 0, -width, speed);
+      
+                          }
+      
+                      }
+                  );
+      
+              }
+      
+      
+              // _______ Resize _______
+      
+              localWindow.on('resize', function() {
+      
+                  let width = localWindow.width();
+      
+                  if (width != localWindowWidth) {
+      
+                      if (width > localWindowWidth) {
+                          if (one.position().left > 0) {
+                              update(one, content);
+                              twoNeedsUpdate = true;
+                          } else if (two.position().left > 0) {
+                              update(two, content);
+                              oneNeedsUpdate = true;
+                          }
+                      } else {
+                          oneNeedsUpdate = true;
+                          twoNeedsUpdate = true;
+                      }
+      
+                      localWindowWidth = width;
+      
+                  }
+      
+              });
+      
+      
+              // _______ Init _______
+      
+              init();
+      
+              return this;
+      
+          };
+      })(jQuery, window, document);
+      $('#ProdSec2').eocjsNewsticker({
+          speed: 25,
+          timeout: 0.5
+      });
+    </script>
+
+    <script type="lazyload2" data-src="https://static.klaviyo.com/onsite/js/klaviyo.js?company_id=Yx5SCN"></script>
+          
+    {% include 'judgeme_core' %}
+  
+    <script type="text/javascript">
+      var _learnq = _learnq || [];
+        var classname = document.getElementsByClassName("product-form__add-button button button--secondary button--full");
+      var addToCart = function() {
+      _learnq.push(['track', 'Added to Cart', item]);
+      }; for (var i = 0; i < classname.length; i++) {
+      classname[i].addEventListener('click', addToCart, false);
+      }
+    </script>
+  
+        
+    <script src="{{ 'alena-speed.js' | asset_url }}"></script>
+  
+{% render 'oneclickupsellapp-theme', oneclickupsellapp: oneclickupsellapp %}
+{% assign oneclickupsellapp = true %}
+</body>        
+</html>

@@ -1,0 +1,1073 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "rich_text_8NgTVz": {
+      "type": "rich-text",
+      "disabled": true,
+      "name": "Rich text",
+      "settings": {
+        "section_id": "",
+        "subheading": "👷🏼‍♂️ IT'S SIMPLE: YOU WORK A LOT AND YOU DESERVE TO SAVE BIG ON YOUR FIRST DURABLE SMARTWATCH!",
+        "title": "",
+        "content": "<h3>UNLOCK $50 OFF, $100 OFF AND $150 OFF WITH OUR BUNDLE PACKS!</h3>",
+        "button_text": "",
+        "button_link": "",
+        "background_type": "full_width",
+        "text_width": "fill",
+        "text_position": "center",
+        "text_alignment": "center",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "liquid_9giWJk": {
+          "type": "liquid",
+          "name": " Header Banner",
+          "disabled": true,
+          "settings": {
+            "liquid": "<div id=\"promo-banner\">\n  <img\n    src=\"https://cdn.shopify.com/s/files/1/0049/0533/6935/files/mobile-banner_offer_4.webp?v=1757534958\"\n    alt=\"Promo banner\"\n    class=\"banner-mobile\"\n  />\n  <img\n    src=\"https://cdn.shopify.com/s/files/1/0049/0533/6935/files/new-banner-blaze.png?v=1757534573\"\n    alt=\"Promo banner\"\n    class=\"banner-desktop\"\n    loading=\"lazy\"\n  />\n</div>\n\n<script>\n  document.addEventListener(\"DOMContentLoaded\", function () {\n    const mainElement = document.getElementById(\"main\");\n    const bannerContainer = document.getElementById(\"promo-banner\");\n\n    if (!mainElement || !bannerContainer) {\n      console.error(\"main or banner container not found\");\n      return;\n    }\n\n    mainElement.insertBefore(bannerContainer, mainElement.firstChild);\n  });\n</script>\n\n<style>\n  #promo-banner img {\n    width: 100%;\n    background: transparent;\n  }\n\n  .banner-mobile {\n    display: none;\n  }\n\n  .banner-desktop {\n    display: block;\n    margin: auto;\n    margin-top: 5px;\n    max-width: 920px;\n  }\n\n  @media screen and (min-width: 1200px) {\n    .banner-desktop {\n      margin-top: 170px;\n    }\n  }\n @media screen and (min-width: 1240px) {\n    .banner-desktop {\n      margin-top: 120px;\n    }\n  }\n  @media screen and (min-width: 1385px) {\n    .banner-desktop {\n      margin-top: 87px;\n    }\n  }\n\n  @media screen and (max-width: 768px) {\n    .banner-mobile {\n      display: block;\n      padding-top: 10px;\n      margin-bottom: -25px;\n    }\n\n    .banner-desktop {\n      display: none;\n    }\n  }\n</style>"
+          }
+        },
+        "liquid_h7XXDD": {
+          "type": "liquid",
+          "disabled": true,
+          "settings": {
+            "liquid": "<style>\n@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');\n\n.discount-custom-badge{\nfont-family: 'Poppins', sans-serif;\n}\n</style>\n\n<script>\ndocument.addEventListener('DOMContentLoaded', function() {\n  const swatchContainers = document.querySelectorAll('.block-swatch');\n\n  swatchContainers.forEach(container => {\n    const label = container.querySelector('.block-swatch__item');\n    if (label && label.textContent.includes('Round')) {\n      // Crear el badge\n      const badge = document.createElement('div');\nbadge.classList.add(\"discount-custom-badge\");\n      badge.textContent = '$10 OFF + FREE GIFT';\n      badge.style.backgroundColor = '#e70000';\n badge.style.display = 'flex';\n badge.style.alignItems= 'center';\n badge.style.alignSelf = 'center';\n      badge.style.color = '#fff';\nbadge.style.fontFamily = 'Poppins';\nbadge.style.fontWeight = \"600\";\nbadge.style.fontSize = \"11px\";\n      badge.style.width = 'max-content';\n      badge.style.padding = '2px 4px';\n      badge.style.position = 'absolute';\n      badge.style.top = '-8px'; /* Ajusta según sea necesario para la superposición */\n      badge.style.left = '50%'; /* Ajusta según sea necesario para la posición horizontal */\n badge.style.transform = 'translateX(-50%)'; \n      badge.style.zIndex = '1'; /* Asegura que esté por encima del label */\n      badge.style.textAlign = 'center';\n       badge.style.paddingTop = '4px';\nbadge.style.borderRadius = '5px'; /* Opcional: para esquinas redondeadas */\n      \n\n      // Hacer el contenedor position: relative para posicionar el badge absolutamente dentro\n      \ncontainer.style.position = 'relative';\n\n      // Insertar el badge antes del label\n\n      container.appendChild(badge);\n    }\n\nif (label && (label.textContent.includes('Round') || label.textContent.includes('Square') )){\ncontainer.style.marginTop = \"10px\";\n\n}\n  });\n});\n</script>"
+          }
+        },
+        "liquid_A8phzp": {
+          "type": "liquid",
+          "name": "TrustPilot - Read Reviews - Tolstoy Styles",
+          "settings": {
+            "liquid": "{% comment %}\n<!-- TrustBox widget - Micro TrustScore -->\n<div id=\"review-box-container\" style=\"display:flex; flex-wrap: wrap;\">\n<div\nid=\"trust-pilot-pdp\"\n  class=\"trustpilot-widget\"\nstyle=\"\ntransform: scale(1.2);\n    max-width: fit-content;\n    position: relative;\n    left: -8px;\ntop: -3px;\nmargin: 0px;\n    margin-top: 0px;\n    margin-bottom: 0px;\n    display: inline-block; /* ensures it shrinks to content */\n  \"\n  data-locale=\"en-US\"\n  data-template-id=\"5419b637fa0340045cd0c936\"\n  data-businessunit-id=\"66228504ff2e396d557df8e6\"\n  data-style-height=\"20px\"\n  data-style-width=\"100%\"\n>\n  <a\n    href=\"https://www.trustpilot.com/review/shopcarbinox.com\"\n    target=\"_blank\"\n    rel=\"noopener\"\n  >\n    Trustpilot\n  </a>\n</div>\n<a style=\"font-size: 14px; display: flex; align-items: center;\" href=\"#judgeme_product_reviews\"><span>Read reviews</span><svg xmlns=\"http://www.w3.org/2000/svg\" height=\"16\" viewBox=\"0 0 24 24\" width=\"16\" fill=\"#1E1F24\"><path d=\"M24 24H0V0h24v24z\" fill=\"none\" opacity=\"0.87\"></path><path d=\"M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6-1.41-1.41z\"></path></svg></a>\n</div>\n<!-- End TrustBox widget -->\n{% endcomment %}\n\n<script>\n  function moveTrustBox() {\n    const widget = document.getElementById('review-box-container');\n    const titleEl = document.querySelector('.product-meta__title');\n    if (!widget) {\n      console.warn('Trustpilot widget not found.');\n      return;\n    }\n    if (!titleEl || !titleEl.parentNode) {\n      console.warn('Product title element not found or has no parent.');\n      return;\n    }\n    // Move the TrustBox into its final position\n    titleEl.parentNode.insertBefore(widget, titleEl);\n  }\n  function observeForTitle() {\n    const observer = new MutationObserver((mutations, obs) => {\n      if (document.querySelector('.product-meta__title')) {\n        moveTrustBox();\n        obs.disconnect();\n      }\n    });\n    observer.observe(document.body, { childList: true, subtree: true });\n  }\n  document.addEventListener('DOMContentLoaded', () => {\n    // 1. Move now if title already exists\n    moveTrustBox();\n    // 2. Watch for late-loaded titles\n    observeForTitle();\n    // 3. Once moved, load the Trustpilot script\n    const script = document.createElement('script');\n    script.src = 'https://widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js';\n    script.async = true;\n    document.body.appendChild(script);\n const elementToMove = document.getElementById(\"shopify-block-AUVZGeFZJcXBoQ29sT__tolstoy_shoppable_video_quiz_carousel_block_erLTME\");\n    const targetElement = document.getElementById(\"shopify-section-template--24748880494964__e9dc35e4-0664-46cf-ad4f-0d4aa37441e3\");\n    if (elementToMove && targetElement && targetElement.parentNode) {\n      targetElement.parentNode.insertBefore(elementToMove, targetElement);\n    }\n  });\n</script>\n<style>\n@media (max-width: 768px) {\n#trust-pilot-pdp {\nleft: -12px !important;\n}\n}\n  .tolstoy-video-carousel-container {\nmargin-top: 20px;\n}\nh1.product-meta__title.heading.h3 {\n    margin-top: 0 !important;\n}\n._carouselVideoContainer_1cxil_16 {\ngap: 0px !important;\n}\n@media (max-width: 1024px) {\n  .tolstoy-carousel-container {\n    margin-top: 0px;\n  }\n}\n@media (max-width: 600px) {\n\n  .tolstoy-carousel-container {\n    margin: -30px 0px 0px 24px;\n  }\n  .tolstoy-carousel-arrow-button {\n    display: none;\n  }\n}\n@media (min-width: 1024px) {\n  .tolstoy-carousel-container {\n    max-width: 48% !important;\n    margin-top: -80px;\n    margin-left: auto;\n    margin-right: 0px;\n  }\n.block-swatch__item.pack-item {\n  padding-right: 30px !important;\n  padding-left: 30px !important;\n}\n  .tolstoy-video-carousel-container {\n    max-width: 90% !important;\n  }\n}\n@media (min-width: 1500px) {\n  .tolstoy-video-carousel-container {\n    max-width: 690px !important;\n    padding-left: 15px;\n  }\n}\n</style>"
+          }
+        },
+        "94157900-ca99-4d79-b443-7f058350974e": {
+          "type": "text",
+          "settings": {
+            "text": "<h4>⌚️ <strong>BUILT WITH ZINC ALLOY, TITANIUM AND ALUMINUM TO PROVIDE RESISTANCE AGAINST HARD IMPACTS, SCRATCHES, DROPS, EXTREME TEMPERATURES, MUD, AND EXTREME WORK ENVIRONMENTS.</strong><br/></h4>"
+          }
+        },
+        "54d2e274-c4e9-4efe-b6da-5bfe93a94d13": {
+          "type": "social_share_icons",
+          "settings": {
+            "icon_1": "shopify://shop_images/Diseno_sin_titulo_-_2024-11-07T181009.445.png",
+            "icon_text_1": "<p>U.S MIL-STD 810H CERTIFIED</p>",
+            "icon_2": "shopify://shop_images/2_e3698ff8-966b-493e-aa75-0881daa5f95e.png",
+            "icon_text_2": "<p>DESIGNED AND BUILT FOR AMERICA</p>",
+            "icon_3": "shopify://shop_images/3_fd5dc79c-8064-4d08-9c53-a1102be5bd8f.png",
+            "icon_text_3": "<p>IP69K WATERPROOF RATING</p>"
+          }
+        },
+        "77b0126f-d176-4e47-b6f3-d2424b9b32ea": {
+          "type": "variant_picker",
+          "settings": {
+            "hide_sold_out_variants": false,
+            "selector_mode": "block",
+            "color_mode": "block",
+            "size_chart_page": ""
+          }
+        },
+        "aa8adaeb-d404-4d2d-9f7b-7c87d4a68e8f": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_payment_button": false,
+            "atc_button_background": "#ffc200",
+            "atc_button_text_color": "#000000",
+            "buy_now_button_background": "rgba(0,0,0,0)",
+            "buy_now_button_text_color": "rgba(0,0,0,0)"
+          }
+        },
+        "liquid_wcqRGR": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<div class=\"banner-buy-buttons\" style=\"display: flex; justify-content: center;\">\n  <div class=\"banner-buy-buttons-inner\" style=\"display:none;\">\n    <div style=\"background:#F3FFE8; padding: 2px 4px; text-align:center; font-size:12px; color:#000; width: fit-content; line-height: 110%;\">\n      Due to high demand, next Blaze Type R<br> batch \n      <span style=\"font-weight:500\">ships in 7–12 business days</span>.\n    </div>\n  </div>\n</div>\n\n<script>\ndocument.addEventListener(\"DOMContentLoaded\", () => {\n  const targetInput = document.getElementById(\"option-template--24748880494964__main-carbinox-blaze-2025-14663578222964-1-2\");\n  const banner = document.querySelector(\".banner-buy-buttons-inner\");\n  const radios = document.querySelectorAll('input[name=\"option1\"]'); // todos los radios del grupo\n\n  if (!targetInput || !banner || radios.length === 0) return;\n\n  const toggleBanner = () => {\n    banner.style.display = targetInput.checked ? \"block\" : \"none\";\n  };\n\n  // Escuchar cambios en todos los radios del grupo\n  radios.forEach(radio => {\n    radio.addEventListener(\"change\", toggleBanner);\n  });\n\n  // Ejecutar al cargar (por si ya está seleccionado)\n  toggleBanner();\n});\n</script>"
+          }
+        },
+        "liquid_UwKrnt": {
+          "type": "liquid",
+          "name": "Buy Box Variants",
+          "settings": {
+            "liquid": "<div class=\"pack-list ultimate-pack\">\n <ul>\n      <li>\n        <div class=\"pack-li-content\">\n          <p><span class=\"icon\"></span>1 Carbinox Blaze  </p>\n          <p class=\"price-li\">$139.95</p>\n        </div>\n      </li>\n          <li>\n        <div class=\"pack-li-content\">\n          <p><span class=\"icon\"></span>2 Tempered Glass Packs</p>\n          <p class=\"price-li\">$14.95</p>\n        </div>\n      </li>\n          <li>\n        <div class=\"pack-li-content\">\n          <p><span class=\"icon\"></span>2 USB Charging Cords</p>\n          <p class=\"price-li\">$14.95</p>\n        </div>\n      </li>\n          <li>\n        <div class=\"pack-li-content\">\n          <p><span class=\"icon\"></span>1 Black Metal Band</p>\n          <p class=\"price-li\">$29.95</p>\n        </div>\n      </li>\n          <li>\n        <div class=\"pack-li-content\">\n          <p><span class=\"icon\"></span>6 Limited Edition Straps</p>\n          <p class=\"price-li\">$69.95</p>\n        </div>\n      </li>\n      <li>\n        <div class=\"pack-li-content\">\n          <p><span class=\"icon\"></span>1 Mystery Gift</p>\n          <p class=\"price-li\">FREE</p>\n        </div>\n      </li>\n    </ul>\n    <div class=\"footer-pack-list\">\n      <p>Total</p>\n      <p>$169.95 <span class=\"compare-price-li\">$319.95</span></p>\n    </div>\n      <p class=\"congrats-p\">\n<img alt=\"save money\" width=\"22\" height=\"22\" src=\"https://cdn.shopify.com/s/files/1/0049/0533/6935/files/icon-congrats.png?v=1755265589\"/>\nCongrats! You’re saving <span class=\"congrats-saving\">$150</span>TODAY!</p>\n</div>\n <div class=\"pack-list starter-pack\">\n    <ul>\n      <li>\n        <div class=\"pack-li-content\">\n          <p><span class=\"icon\"></span>1 Carbinox Blaze</p>\n          <p class=\"price-li\">$139.95</p>\n        </div>\n      </li>\n      <li>\n        <div class=\"pack-li-content\">\n          <p><span class=\"icon\"></span>1 Mystery Gift</p>\n          <p class=\"price-li\">FREE</p>\n        </div>\n      </li>\n    </ul>\n    <div class=\"footer-pack-list\">\n      <p>Total</p>\n      <p>$139.95 <span class=\"compare-price-li\">$189.95</span></p>\n    </div>\n      <p class=\"congrats-p\">\n<img alt=\"save money\"  width=\"22\" height=\"22\" src=\"https://cdn.shopify.com/s/files/1/0049/0533/6935/files/icon-congrats.png?v=1755265589\"/>\nCongrats! You’re saving <span class=\"congrats-saving\">$50</span>TODAY!</p>\n\n  </div>\n<div class=\"pack-list double-pack\">\n <ul>\n            <li>\n        <div class=\"pack-li-content\">\n          <p><span class=\"icon\"></span>1 Carbinox Blaze Type S</p>\n          <p class=\"price-li\">$139.95</p>\n        </div>\n      </li>\n      <li>\n        <div class=\"pack-li-content\">\n          <p><span class=\"icon\"></span>1 Carbinox Blaze Type R</p>\n          <p class=\"price-li\">$139.95</p>\n        </div>\n      </li>\n          <li>\n        <div class=\"pack-li-content\">\n          <p><span class=\"icon\"></span>2 Tempered Glass Pack</p>\n          <p class=\"price-li\">$14.95</p>\n        </div>\n      </li>\n          <li>\n        <div class=\"pack-li-content\">\n          <p><span class=\"icon\"></span>2 USB Charging Cord</p>\n          <p class=\"price-li\">$14.95</p>\n        </div>\n      </li>\n          <li>\n        <div class=\"pack-li-content\">\n          <p><span class=\"icon\"></span>1 Black Metal Band</p>\n          <p class=\"price-li\">$29.95</p>\n        </div>\n      </li>\n          <li>\n        <div class=\"pack-li-content\">\n          <p><span class=\"icon\"></span>6 Limited Edition Straps</p>\n          <p class=\"price-li\">$69.95</p>\n        </div>\n      </li>\n      <li>\n        <div class=\"pack-li-content\">\n          <p><span class=\"icon\"></span>1 Mystery Gift</p>\n          <p class=\"price-li\">FREE</p>\n        </div>\n      </li>\n    </ul>\n    <div class=\"footer-pack-list\">\n      <p>Total</p>\n      <p>$289.95 <span class=\"compare-price-li\">$389.95</span></p>\n    </div>\n      <p class=\"congrats-p\">\n<img alt=\"save money\"  width=\"22\" height=\"22\" src=\"https://cdn.shopify.com/s/files/1/0049/0533/6935/files/icon-congrats.png?v=1755265589\"/>\nCongrats! You’re saving <span class=\"congrats-saving\">$100</span>TODAY!</p>\n        </div>\n\n\n\n\n\n<script>\n  document.addEventListener(\"DOMContentLoaded\", function () {\n  // Procesar opciones\n  const optionContainers = document.querySelectorAll(\".product-form__option-info\");\n\n  optionContainers.forEach((container, index) => {\n    const labelEl = container.querySelector(\".product-form__option-name\");\n    const valueEl = container.querySelector(\".product-form__option-value\");\n\n    if (labelEl && valueEl) {\n      labelEl.textContent = labelEl.textContent.replace(/^\\s*[\\d#*️⃣️]+/g, '').trim();\n      if (index === 1) {\n        valueEl.textContent = \"Ultimate Pack ($150 OFF)\";\n      }\n      valueEl.style.fontWeight = \"500\";\n    }\n  });\n\n  const swatchLabels = document.querySelectorAll(\"label.block-swatch__item\");\n\n  swatchLabels.forEach((label) => {\n    const text = label.textContent;\n\n    if (text.includes(\"Starter\")) {\n      label.setAttribute(\"data-pack\", \"starter-pack\");\n    }\n\n    if (text.includes(\"Ulti\")) {\n      label.setAttribute(\"data-pack\", \"ultimate-pack\");\n      label.textContent = \"Ultimate Pack\";\n    }\n\n    if (text.includes(\"Double\")) {\n      label.setAttribute(\"data-pack\", \"double-pack\");\n    }\n\n    if (text.includes(\"Pack\")) {\n      const badge = document.createElement(\"span\");\n      badge.classList.add(\"save-badge\");\n      badge.textContent = text.includes(\"Double Pack\") ? \"($100 OFF)\" :\n                          text.includes(\"Starter\") ? \"($50 OFF)\" : \"($150 OFF)\";\n\n      label.classList.add(\"pack-item\");\n      label.appendChild(badge);\n\n      if (text.includes(\"Ultimate Pack\")) {\n        const bestValueBadge = document.createElement(\"span\");\n        bestValueBadge.classList.add(\"best-value-badge\");\n        bestValueBadge.appendChild(document.createTextNode(\"MOST POPULAR 🔥\"));\n        label.appendChild(bestValueBadge);\n      }\n    }\n  });\n\nfunction detectWatchTypeAndUpdateText() {\n  const selectedRadio = document.querySelector('.block-swatch__radio:checked');\n  if (!selectedRadio) return;\n\n  const typeValue = selectedRadio.value.trim();\n  const formattedText =\n    typeValue.includes(\"Type S\")\n      ? '1 Carbinox Blaze Type S'\n      : typeValue.includes(\"Type R\")\n      ? '1 Carbinox Blaze Type R'\n      : '1 Carbinox Blaze';\n\n  // Modificar solo en packs visibles que NO sean double-pack\n  const visiblePackLists = document.querySelectorAll('.pack-list');\n  visiblePackLists.forEach(pack => {\n    if (pack.style.display === \"block\" && !pack.classList.contains(\"double-pack\")) {\n      const lis = pack.querySelectorAll('ul li .pack-li-content p:first-child');\n      lis.forEach(p => {\n        if (p.textContent.trim().startsWith(\"1 Carbinox Blaze\")) {\n          p.innerHTML = `<span class=\"icon\"></span>${formattedText}`;\n        }\n      });\n    }\n  });\n}\n\n  // Mostrar pack correspondiente y actualizar textos según tipo\n  function updatePackVisibility(selectedPack) {\n    const packs = document.querySelectorAll(\".pack-list\");\n    packs.forEach((pack) => {\n      if (pack.classList.contains(selectedPack)) {\n        pack.style.display = \"block\";\n      } else {\n        pack.style.display = \"none\";\n      }\n    });\n\n    // 👇 Muy importante: actualizar tipo de reloj solo después de mostrar\n    detectWatchTypeAndUpdateText();\n  }\n\n  // Detectar clic en swatches\n  const swatches = document.querySelectorAll(\"label.block-swatch__item[data-pack]\");\n  swatches.forEach((swatch) => {\n    swatch.addEventListener(\"click\", () => {\n      const selected = swatch.getAttribute(\"data-pack\");\n      updatePackVisibility(selected);\n    });\n  });\n// Escuchar cambios en el tipo de reloj (Type S / Type R)\ndocument.querySelectorAll('.block-swatch__radio').forEach(radio => {\n  radio.addEventListener('change', () => {\n    detectWatchTypeAndUpdateText();\n  });\n});\n  // Al seleccionar por primera vez\n  const firstSwatch = document.querySelector(\"label.block-swatch__item[data-pack]\");\n  if (firstSwatch) {\n    const firstRadio = firstSwatch.previousElementSibling;\n    if (firstRadio && firstRadio.type === 'radio') {\n      firstRadio.checked = true;\n      const selected = firstSwatch.getAttribute(\"data-pack\");\n      updatePackVisibility(selected);\n    }\n  }\n});\n</script>\n\n<style>\n.block-swatch{\nwidth: 100%;\n}\n.block-swatch:has(.pack-item) {\n  width: auto !important;\n}\n.block-swatch__item{\nfont-weight: 400 !important;\nwidth: 100%!important;\nfont-size: 14px !important;\npadding: 10px !important;\nposition: relative;\nbackground-color: #F9F9F9 !important;\nborder: 1px solid #D4D4D4;\nborder-radius: 4px !important;\ndisplay: flex;\nflex-direction: column;\njustify-content: center;\nalign-items: center;\nline-height: 1.2 !important;\n}\n.block-swatch-list{\nflex-wrap: unset !important;\ngap: 8px;\njustify-content: center;\n}\n.block-swatch__item:after {border-radius: 4px !important;\n}\n.block-swatch__radio:checked + label {\nfont-weight: 500 !important;\n}\n.block-swatch__radio:checked + .block-swatch__item[data-pack] {\n  background-color: #F3FFE8 !important;\nborder-radius: 4px !important;\n}\n\n.block-swatch__item[data-pack]::after {\n  box-shadow: 0 0 0 1px #95C122 inset, 0 0 0 1px #95C122;\nborder-radius: 4px !important;\n\n}\n.save-badge{\nfont-size: 10px;\npadding: 2px 6px;\n}\n\n .best-value-badge {\n    position: absolute;\n    top: -17px;\n    left: 50%;\n    transform: translateX(-50%);\n    background-color: #95C122;\n    color: white;\n    font-weight: 600;\n    font-size: 10px;\n    padding: 2px 6px;\n    border-radius: 4px 4px 0px 0px;\n    z-index: 1;\nwidth: max-content;\n  }\n  .type-s-image,\n  .type-r-image,\n  .starter-image,\n  .ultimate-image,\n  .double-image {\n    width: 64px;\n    height: 64px;\n    object-fit: contain;\n    margin: auto;\n    display: inline-block;\n    vertical-align: middle;\n  }\n\n.pack-list p{\nmargin: 0px;\n}\n.pack-list ul {\n  list-style: none;\n  padding: 0;\n  margin: 0;\nfont-size: 14px;\n}\n\n.pack-list li {\n  display: flex;\n  align-items: center;\n  gap: 5px;\njustify-content: space-between;\n  margin-bottom: 2px;\n  font-family: sans-serif;\n  font-size: 14px;\nwidth: 100%;\nborder-bottom: 0.5px solid #D4D4D4;\n}\n\n.pack-list .icon {\n  width: 16px;\n  height: 16px;\nmargin-right: 4px;\n  display: inline-block;\n  background-image: url('data:image/svg+xml;utf8,<svg width=\"16\" height=\"17\" viewBox=\"0 0 16 17\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M14.6673 8.50016C14.6673 12.1822 11.6827 15.1668 8.00065 15.1668C4.31865 15.1668 1.33398 12.1822 1.33398 8.50016C1.33398 4.81816 4.31865 1.8335 8.00065 1.8335C11.6827 1.8335 14.6673 4.81816 14.6673 8.50016Z\" fill=\"%2395C122\"/><path d=\"M10.6868 6.47972C10.7804 6.57347 10.833 6.70056 10.833 6.83306C10.833 6.96556 10.7804 7.09264 10.6868 7.18639L7.35344 10.5197C7.25969 10.6134 7.1326 10.6659 7.0001 10.6659C6.8676 10.6659 6.74052 10.6134 6.64677 10.5197L5.31344 9.18639C5.26431 9.14061 5.22491 9.08541 5.19758 9.02408C5.17025 8.96275 5.15556 8.89654 5.15437 8.8294C5.15319 8.76227 5.16554 8.69558 5.19069 8.63332C5.21583 8.57107 5.25326 8.51451 5.30074 8.46703C5.34822 8.41955 5.40478 8.38212 5.46704 8.35697C5.5293 8.33183 5.59598 8.31948 5.66312 8.32066C5.73025 8.32185 5.79646 8.33654 5.85779 8.36387C5.91913 8.3912 5.97433 8.4306 6.0201 8.47972L7.0001 9.45972L8.4901 7.96972L9.9801 6.47972C10.0739 6.38609 10.2009 6.3335 10.3334 6.3335C10.4659 6.3335 10.593 6.38609 10.6868 6.47972Z\" fill=\"black\"/></svg>');\n  background-repeat: no-repeat;\n  background-size: contain;\n}\n\n.pack-list {\n  display: none;\nmargin-bottom: 0px;\n}\n\n.pack-list p, .pack-list span{\n  font-family: 'Poppins', sans-serif;\n  font-size: 14px;\n}\n.footer-pack-list {\n  padding: 10px 0px 0px 20px;\n  display: flex;\n  justify-content: space-between;\n}\n.footer-pack-list p {\n   font-weight: 600;\nmargin: 0px;\n}\n.compare-price-li {\n  color: #5B5B5B;\n  text-decoration: line-through;\nmargin-left: 1px;\n}\n.congrats-p {\nwidth: 100%;\ndisplay: flex;\nalign-items: center;\ngap: 4px;\nfont-size:14px;\n  color: black;\n  font-weight: 550;\npadding-left: 20px;\nbackground: #F3FFE8;\nborder: 0.5px solid #95C122;\nborder-radius: 5px;\npadding: 10px;\nmargin-top: 10px !important;\n}\n\n.congrats-saving {\n    background: #95C122;\n    color: #fff;\n    border-radius: 3px;\n    padding: 0px 4px;\n}\n\n.pack-li-content{\nwidth: 100%;\npadding: 10px 0px !important;\ndisplay: flex;\njustify-content: space-between;\n}\n.price-li{\nfont-weight: 600;\n}\n\n.block-swatch__radio + .block-swatch__item[data-pack] {\nmargin-top: 15px;\n}\n\n@media (max-width: 768px) {\n.product-form__option-info {\njustify-content: center;f\n}\n    .congrats-p {\n        font-size: 12px !important;\n    }\n    .congrats-saving {\n        font-size: 12px !important;\n    }\n}\n</style>"
+          }
+        },
+        "4ac75f75-351e-49cb-9367-33b5cfe6a9bd": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/3-min_2.png",
+            "image_alignment": "center",
+            "image_width": 440
+          }
+        },
+        "new_guarantee_banner_MKimng": {
+          "type": "new-guarantee_banner",
+          "settings": {}
+        },
+        "guarantee_banner_EUidYn": {
+          "type": "guarantee_banner",
+          "disabled": true,
+          "settings": {
+            "badge": "shopify://shop_images/3-min_2_440x_png.png",
+            "title_start": "UNLIMITED REPLACEMENTS",
+            "title_highlight": "FOR AN ENTIRE YEAR.",
+            "description": "You’re fully covered for 365 full days against any internal or external defects, no questions asked."
+          }
+        },
+        "liquid_cfng9G": {
+          "type": "liquid",
+          "name": "Reviews Duplicado",
+          "settings": {
+            "liquid": "{% if product.id == 14744689705332 %}\n<link rel=\"dns-prefetch\" href=\"https://cdn.judge.me/\">\n<div id=\"shopify-section-template--24894728765812__17297101183d2e6360\" class=\"shopify-section shopify-section--apps\"><div class=\"container vertical-breather\"><div id=\"shopify-block-AUUMrOXR6R29lcDhrU__judge_me_reviews_review_widget_FwMYre\" class=\"shopify-block shopify-app-block\"><div style=\"clear:both\"></div>\n<div id=\"judgeme_product_reviews\" class=\"jdgm-widget jdgm-review-widget jdgm--done-setup-widget\" data-product-title=\"Carbinox Blaze ⌚️\" data-id=\"14663578222964\" data-widget-name=\"review_widget\" data-impressions-tracked=\"true\" data-views-tracked=\"true\">\n  <div class=\"jdgm-rev-widg\" data-updated-at=\"2025-07-07T21:11:21Z\" data-average-rating=\"4.61\" data-number-of-reviews=\"1854\" data-number-of-questions=\"0\" data-image-url=\"https://cdn.shopify.com/s/files/1/0049/0533/6935/files/1-min-8.jpg?v=1747671430\"> <style class=\"jdgm-temp-hiding-style\">.jdgm-rev-widg{ display: none }</style> <div class=\"jdgm-rev-widg__header\"> <h2 class=\"jdgm-rev-widg__title\">350,000+ customers across the nation!</h2>  <div class=\"jdgm-row-stars\"><div class=\"jdgm-rev-widg__summary\"><div class=\"jdgm-rev-widg__summary-inner\"> <div class=\"jdgm-rev-widg__summary-stars\" aria-label=\"Average rating is 4.61 stars\" role=\"img\"> <span class=\"jdgm-star jdgm--on\"></span><span class=\"jdgm-star jdgm--on\"></span><span class=\"jdgm-star jdgm--on\"></span><span class=\"jdgm-star jdgm--on\"></span><span class=\"jdgm-star jdgm--half\"></span> <span class=\"jdgm-rev-widg__summary-average\">4.61 out of 5</span></div> <div class=\"jdgm-rev-widg__summary-text jdgm-all-reviews__summary-text--verified\">🇺🇸 We're proud to be the favorite smartwatch for thousands of americans!<img class=\"jdgm-verified-checkmark\" src=\"https://judgeme-public-images.imgix.net/judgeme/logos/verified-checkmark.svg\" alt=\"Verified Checkmark\"></div> </div></div><div class=\"jdgm-histogram jdgm-temp-hidden\">  <div class=\"jdgm-histogram__row\" data-rating=\"5\" data-frequency=\"1407\" data-percentage=\"76\">  <div class=\"jdgm-histogram__star\" role=\"button\" aria-label=\"76% (1407) reviews with 5 star rating\" tabindex=\"0\"><span class=\"jdgm-star jdgm--on\"></span><span class=\"jdgm-star jdgm--on\"></span><span class=\"jdgm-star jdgm--on\"></span><span class=\"jdgm-star jdgm--on\"></span><span class=\"jdgm-star jdgm--on\"></span></div> <div class=\"jdgm-histogram__bar\"> <div class=\"jdgm-histogram__bar-content\" style=\"width: 76%;\"> </div> </div>  <div class=\"jdgm-histogram__frequency\">1407</div> </div>  <div class=\"jdgm-histogram__row\" data-rating=\"4\" data-frequency=\"322\" data-percentage=\"17\">  <div class=\"jdgm-histogram__star\" role=\"button\" aria-label=\"17% (322) reviews with 4 star rating\" tabindex=\"0\"><span class=\"jdgm-star jdgm--on\"></span><span class=\"jdgm-star jdgm--on\"></span><span class=\"jdgm-star jdgm--on\"></span><span class=\"jdgm-star jdgm--on\"></span><span class=\"jdgm-star jdgm--off\"></span></div> <div class=\"jdgm-histogram__bar\"> <div class=\"jdgm-histogram__bar-content\" style=\"width: 17%;\"> </div> </div>  <div class=\"jdgm-histogram__frequency\">322</div> </div>  <div class=\"jdgm-histogram__row\" data-rating=\"3\" data-frequency=\"45\" data-percentage=\"2\">  <div class=\"jdgm-histogram__star\" role=\"button\" aria-label=\"2% (45) reviews with 3 star rating\" tabindex=\"0\"><span class=\"jdgm-star jdgm--on\"></span><span class=\"jdgm-star jdgm--on\"></span><span class=\"jdgm-star jdgm--on\"></span><span class=\"jdgm-star jdgm--off\"></span><span class=\"jdgm-star jdgm--off\"></span></div> <div class=\"jdgm-histogram__bar\"> <div class=\"jdgm-histogram__bar-content\" style=\"width: 2%;\"> </div> </div>  <div class=\"jdgm-histogram__frequency\">45</div> </div>  <div class=\"jdgm-histogram__row\" data-rating=\"2\" data-frequency=\"16\" data-percentage=\"1\">  <div class=\"jdgm-histogram__star\" role=\"button\" aria-label=\"1% (16) reviews with 2 star rating\" tabindex=\"0\"><span class=\"jdgm-star jdgm--on\"></span><span class=\"jdgm-star jdgm--on\"></span><span class=\"jdgm-star jdgm--off\"></span><span class=\"jdgm-star jdgm--off\"></span><span class=\"jdgm-star jdgm--off\"></span></div> <div class=\"jdgm-histogram__bar\"> <div class=\"jdgm-histogram__bar-content\" style=\"width: 1%;\"> </div> </div>  <div class=\"jdgm-histogram__frequency\">16</div> </div>  <div class=\"jdgm-histogram__row\" data-rating=\"1\" data-frequency=\"64\" data-percentage=\"3\">  <div class=\"jdgm-histogram__star\" role=\"button\" aria-label=\"3% (64) reviews with 1 star rating\" tabindex=\"0\"><span class=\"jdgm-star jdgm--on\"></span><span class=\"jdgm-star jdgm--off\"></span><span class=\"jdgm-star jdgm--off\"></span><span class=\"jdgm-star jdgm--off\"></span><span class=\"jdgm-star jdgm--off\"></span></div> <div class=\"jdgm-histogram__bar\"> <div class=\"jdgm-histogram__bar-content\" style=\"width: 3%;\"> </div> </div>  <div class=\"jdgm-histogram__frequency\">64</div> </div>  <div class=\"jdgm-histogram__row jdgm-histogram__clear-filter\" data-rating=\"null\" tabindex=\"0\">See all reviews</div> </div>\n</div><div class=\"jdgm-row-media\"><div class=\"jdgm-gallery-wrapper\"><div class=\"jdgm-gallery-title\">Customer photos &amp; videos</div><div class=\"jdgm-gallery\" data-url=\"reviews/reviews_for_widget\" data-per-page=\"10\" data-loaded=\"true\" data-id=\"gallery-data-0\" data-setup-event=\"true\">  \n\n\n  \n    \n    <div class=\"jdgm-gallery__thumbnail-link\">\n      <div class=\"jdgm-gallery__thumbnail-wrapper\">\n        <img class=\"jdgm-gallery__thumbnail\" alt=\"User picture\" data-src=\"https://judgeme.imgix.net/carbinox-co/1751073071__2025-06-272110006852166669033055211__original.jpg?auto=format&amp;w=160\" data-mfp-src=\"https://judgeme.imgix.net/carbinox-co/1751073071__2025-06-272110006852166669033055211__original.jpg?auto=format\" data-review-id=\"3dbe5edb-8074-48f9-9bf7-5eefa7d001e1\" src=\"https://judgeme.imgix.net/carbinox-co/1751073071__2025-06-272110006852166669033055211__original.jpg?auto=format&amp;w=160\">\n      </div>\n    </div>\n  \n\n\n\n  \n\n\n\n  \n\n\n\n\n  \n    \n    <div class=\"jdgm-gallery__thumbnail-link\">\n      <div class=\"jdgm-gallery__thumbnail-wrapper\">\n        <img class=\"jdgm-gallery__thumbnail\" alt=\"User picture\" data-src=\"https://judgeme.imgix.net/carbinox-co/1750764228__image__original.jpg?auto=format&amp;w=160\" data-mfp-src=\"https://judgeme.imgix.net/carbinox-co/1750764228__image__original.jpg?auto=format\" data-review-id=\"9f3e3dcd-3eb6-4823-a43c-9e70c9929e81\" src=\"https://judgeme.imgix.net/carbinox-co/1750764228__image__original.jpg?auto=format&amp;w=160\">\n      </div>\n    </div>\n  \n\n\n\n  \n\n\n\n  \n\n\n\n\n  \n    \n    <div class=\"jdgm-gallery__thumbnail-link\">\n      <div class=\"jdgm-gallery__thumbnail-wrapper\">\n        <img class=\"jdgm-gallery__thumbnail\" alt=\"User picture\" data-src=\"https://judgeme.imgix.net/carbinox-co/1750568669__img_20250610_193935409__original.jpg?auto=format&amp;w=160\" data-mfp-src=\"https://judgeme.imgix.net/carbinox-co/1750568669__img_20250610_193935409__original.jpg?auto=format\" data-review-id=\"2e7387c3-0ad7-4dd6-ac8e-f5085d674525\" src=\"https://judgeme.imgix.net/carbinox-co/1750568669__img_20250610_193935409__original.jpg?auto=format&amp;w=160\">\n      </div>\n    </div>\n  \n    \n    <div class=\"jdgm-gallery__thumbnail-link\">\n      <div class=\"jdgm-gallery__thumbnail-wrapper\">\n        <img class=\"jdgm-gallery__thumbnail\" alt=\"User picture\" data-src=\"https://judgeme.imgix.net/carbinox-co/1750568672__06a44ecc-8bd5-4810-a74a-056583fcc64cphot__original.jpeg?auto=format&amp;w=160\" data-mfp-src=\"https://judgeme.imgix.net/carbinox-co/1750568672__06a44ecc-8bd5-4810-a74a-056583fcc64cphot__original.jpeg?auto=format\" data-review-id=\"2e7387c3-0ad7-4dd6-ac8e-f5085d674525\" src=\"https://judgeme.imgix.net/carbinox-co/1750568672__06a44ecc-8bd5-4810-a74a-056583fcc64cphot__original.jpeg?auto=format&amp;w=160\">\n      </div>\n    </div>\n  \n\n\n\n  \n\n\n\n  \n\n\n\n\n  \n    \n    <div class=\"jdgm-gallery__thumbnail-link\">\n      <div class=\"jdgm-gallery__thumbnail-wrapper\">\n        <img class=\"jdgm-gallery__thumbnail\" alt=\"User picture\" data-src=\"https://judgeme.imgix.net/carbinox-co/1750181474__image__original.jpg?auto=format&amp;w=160\" data-mfp-src=\"https://judgeme.imgix.net/carbinox-co/1750181474__image__original.jpg?auto=format\" data-review-id=\"ad363cb9-600d-42b2-8a2f-e105ab342de1\" src=\"https://judgeme.imgix.net/carbinox-co/1750181474__image__original.jpg?auto=format&amp;w=160\">\n      </div>\n    </div>\n  \n    \n    <div class=\"jdgm-gallery__thumbnail-link\">\n      <div class=\"jdgm-gallery__thumbnail-wrapper\">\n        <img class=\"jdgm-gallery__thumbnail\" alt=\"User picture\" data-src=\"https://judgeme.imgix.net/carbinox-co/1750181476__image__original.jpg?auto=format&amp;w=160\" data-mfp-src=\"https://judgeme.imgix.net/carbinox-co/1750181476__image__original.jpg?auto=format\" data-review-id=\"ad363cb9-600d-42b2-8a2f-e105ab342de1\" src=\"https://judgeme.imgix.net/carbinox-co/1750181476__image__original.jpg?auto=format&amp;w=160\">\n      </div>\n    </div>\n  \n\n\n\n  \n\n\n\n  \n\n\n\n\n  \n    \n    <div class=\"jdgm-gallery__thumbnail-link\">\n      <div class=\"jdgm-gallery__thumbnail-wrapper\">\n        <img class=\"jdgm-gallery__thumbnail\" alt=\"User picture\" data-src=\"https://judgeme.imgix.net/carbinox-co/1749837463__1000006931__original.jpg?auto=format&amp;w=160\" data-mfp-src=\"https://judgeme.imgix.net/carbinox-co/1749837463__1000006931__original.jpg?auto=format\" data-review-id=\"23205613-cfd2-4e0e-b40f-41ed64d56b29\" src=\"https://judgeme.imgix.net/carbinox-co/1749837463__1000006931__original.jpg?auto=format&amp;w=160\">\n      </div>\n    </div>\n  \n\n\n\n  \n\n\n\n  \n\n\n\n\n  \n    \n    <div class=\"jdgm-gallery__thumbnail-link\">\n      <div class=\"jdgm-gallery__thumbnail-wrapper\">\n        <img class=\"jdgm-gallery__thumbnail\" alt=\"User picture\" data-src=\"https://judgeme.imgix.net/carbinox-co/1749605965__moonandcologo__original.png?auto=format&amp;w=160\" data-mfp-src=\"https://judgeme.imgix.net/carbinox-co/1749605965__moonandcologo__original.png?auto=format\" data-review-id=\"a6bac832-2d0e-41ef-8e81-d6a0381a5181\" src=\"https://judgeme.imgix.net/carbinox-co/1749605965__moonandcologo__original.png?auto=format&amp;w=160\">\n      </div>\n    </div>\n  \n    \n    <div class=\"jdgm-gallery__thumbnail-link\">\n      <div class=\"jdgm-gallery__thumbnail-wrapper jdgm--loading\">\n        <img class=\"jdgm-gallery__thumbnail\" alt=\"User picture\" data-src=\"https://judgeme.imgix.net/carbinox-co/1749605966__image__original.jpg?auto=format&amp;w=160\" data-mfp-src=\"https://judgeme.imgix.net/carbinox-co/1749605966__image__original.jpg?auto=format\" data-review-id=\"a6bac832-2d0e-41ef-8e81-d6a0381a5181\">\n      </div>\n    </div>\n  \n\n\n\n  \n\n\n\n  \n\n\n\n\n  \n    \n    <div class=\"jdgm-gallery__thumbnail-link\">\n      <div class=\"jdgm-gallery__thumbnail-wrapper jdgm--loading\">\n        <img class=\"jdgm-gallery__thumbnail\" alt=\"User picture\" data-src=\"https://judgeme.imgix.net/carbinox-co/1749557578__image__original.jpg?auto=format&amp;w=160\" data-mfp-src=\"https://judgeme.imgix.net/carbinox-co/1749557578__image__original.jpg?auto=format\" data-review-id=\"b93b6e67-07f4-4a41-b72f-71be6565c8ba\">\n      </div>\n    </div>\n  \n\n\n\n  \n\n\n\n  \n\n\n\n\n  \n    \n    <div class=\"jdgm-gallery__thumbnail-link\">\n      <div class=\"jdgm-gallery__thumbnail-wrapper jdgm--loading\">\n        <img class=\"jdgm-gallery__thumbnail\" alt=\"User picture\" data-src=\"https://judgeme.imgix.net/carbinox-co/1749480181__20250609_094202__original.jpg?auto=format&amp;w=160\" data-mfp-src=\"https://judgeme.imgix.net/carbinox-co/1749480181__20250609_094202__original.jpg?auto=format\" data-review-id=\"04308667-47d0-4751-abd8-4f18161eeaf0\">\n      </div>\n    </div>\n  \n    \n    <div class=\"jdgm-gallery__thumbnail-link\">\n      <div class=\"jdgm-gallery__thumbnail-wrapper jdgm--loading\">\n        <img class=\"jdgm-gallery__thumbnail\" alt=\"User picture\" data-src=\"https://judgeme.imgix.net/carbinox-co/1749480184__20250609_094127__original.jpg?auto=format&amp;w=160\" data-mfp-src=\"https://judgeme.imgix.net/carbinox-co/1749480184__20250609_094127__original.jpg?auto=format\" data-review-id=\"04308667-47d0-4751-abd8-4f18161eeaf0\">\n      </div>\n    </div>\n  \n    \n    <div class=\"jdgm-gallery__thumbnail-link\">\n      <div class=\"jdgm-gallery__thumbnail-wrapper jdgm--loading\">\n        <img class=\"jdgm-gallery__thumbnail\" alt=\"User picture\" data-src=\"https://judgeme.imgix.net/carbinox-co/1749480186__20250609_094225__original.jpg?auto=format&amp;w=160\" data-mfp-src=\"https://judgeme.imgix.net/carbinox-co/1749480186__20250609_094225__original.jpg?auto=format\" data-review-id=\"04308667-47d0-4751-abd8-4f18161eeaf0\">\n      </div>\n    </div>\n  \n    \n    <div class=\"jdgm-gallery__thumbnail-link\">\n      <div class=\"jdgm-gallery__thumbnail-wrapper jdgm--loading\">\n        <img class=\"jdgm-gallery__thumbnail\" alt=\"User picture\" data-src=\"https://judgeme.imgix.net/carbinox-co/1749480262__20250609_094225__original.jpg?auto=format&amp;w=160\" data-mfp-src=\"https://judgeme.imgix.net/carbinox-co/1749480262__20250609_094225__original.jpg?auto=format\" data-review-id=\"04308667-47d0-4751-abd8-4f18161eeaf0\">\n      </div>\n    </div>\n  \n    \n    <div class=\"jdgm-gallery__thumbnail-link\">\n      <div class=\"jdgm-gallery__thumbnail-wrapper jdgm--loading\">\n        <img class=\"jdgm-gallery__thumbnail\" alt=\"User picture\" data-src=\"https://judgeme.imgix.net/carbinox-co/1749480266__20250609_094127__original.jpg?auto=format&amp;w=160\" data-mfp-src=\"https://judgeme.imgix.net/carbinox-co/1749480266__20250609_094127__original.jpg?auto=format\" data-review-id=\"04308667-47d0-4751-abd8-4f18161eeaf0\">\n      </div>\n    </div>\n  \n    \n    <div class=\"jdgm-gallery__thumbnail-link\">\n      <div class=\"jdgm-gallery__thumbnail-wrapper jdgm--loading\">\n        <img class=\"jdgm-gallery__thumbnail\" alt=\"User picture\" data-src=\"https://judgeme.imgix.net/carbinox-co/1749480269__20250609_094202__original.jpg?auto=format&amp;w=160\" data-mfp-src=\"https://judgeme.imgix.net/carbinox-co/1749480269__20250609_094202__original.jpg?auto=format\" data-review-id=\"04308667-47d0-4751-abd8-4f18161eeaf0\">\n      </div>\n    </div>\n  \n    \n    <div class=\"jdgm-gallery__thumbnail-link\">\n      <div class=\"jdgm-gallery__thumbnail-wrapper jdgm--loading\">\n        <img class=\"jdgm-gallery__thumbnail\" alt=\"User picture\" data-src=\"https://judgeme.imgix.net/carbinox-co/1749480338__20250609_094202__original.jpg?auto=format&amp;w=160\" data-mfp-src=\"https://judgeme.imgix.net/carbinox-co/1749480338__20250609_094202__original.jpg?auto=format\" data-review-id=\"04308667-47d0-4751-abd8-4f18161eeaf0\">\n      </div>\n    </div>\n  \n    \n    <div class=\"jdgm-gallery__thumbnail-link\">\n      <div class=\"jdgm-gallery__thumbnail-wrapper jdgm--loading\">\n        <img class=\"jdgm-gallery__thumbnail\" alt=\"User picture\" data-src=\"https://judgeme.imgix.net/carbinox-co/1749480341__20250609_094225__original.jpg?auto=format&amp;w=160\" data-mfp-src=\"https://judgeme.imgix.net/carbinox-co/1749480341__20250609_094225__original.jpg?auto=format\" data-review-id=\"04308667-47d0-4751-abd8-4f18161eeaf0\">\n      </div>\n    </div>\n  \n    \n    <div class=\"jdgm-gallery__thumbnail-link\">\n      <div class=\"jdgm-gallery__thumbnail-wrapper jdgm--loading\">\n        <img class=\"jdgm-gallery__thumbnail\" alt=\"User picture\" data-src=\"https://judgeme.imgix.net/carbinox-co/1749480345__20250609_094127__original.jpg?auto=format&amp;w=160\" data-mfp-src=\"https://judgeme.imgix.net/carbinox-co/1749480345__20250609_094127__original.jpg?auto=format\" data-review-id=\"04308667-47d0-4751-abd8-4f18161eeaf0\">\n      </div>\n    </div>\n  \n\n\n\n  \n\n\n\n  \n\n\n\n\n  \n    \n    <div class=\"jdgm-gallery__thumbnail-link\">\n      <div class=\"jdgm-gallery__thumbnail-wrapper jdgm--loading\">\n        <img class=\"jdgm-gallery__thumbnail\" alt=\"User picture\" data-src=\"https://judgeme.imgix.net/carbinox-co/1748879452__1000007399__original.jpg?auto=format&amp;w=160\" data-mfp-src=\"https://judgeme.imgix.net/carbinox-co/1748879452__1000007399__original.jpg?auto=format\" data-review-id=\"6fbd0eed-d625-4af5-a449-9d76749bf4da\">\n      </div>\n    </div>\n  \n\n\n\n  \n\n\n\n  \n\n\n\n\n  \n    \n    <div class=\"jdgm-gallery__thumbnail-link\">\n      <div class=\"jdgm-gallery__thumbnail-wrapper jdgm--loading\">\n        <img class=\"jdgm-gallery__thumbnail\" alt=\"User picture\" data-src=\"https://judgeme.imgix.net/carbinox-co/1748827208__1000044181__original.jpg?auto=format&amp;w=160\" data-mfp-src=\"https://judgeme.imgix.net/carbinox-co/1748827208__1000044181__original.jpg?auto=format\" data-review-id=\"94573ad9-bb09-4fce-b438-e34497e20bf4\">\n      </div>\n    </div>\n  \n\n\n\n  \n\n\n\n  \n\n</div></div><div class=\"jdgm-medals-wrapper\"> <style type=\"text/css\"></style> <div class=\"jdgm-medals\" data-link=\"https://app.judge.me/reviews/medals\"> <div class=\"jdgm-medals__container\"> <div class=\"jdgm-medal-wrapper\" title=\"Diamond Authentic Shop. 100% of published reviews are verified reviews\"> <a class=\"jdgm-medal\" data-value=\"100.0\" data-type=\"auth\" data-tier=\"diamond\"> <div class=\"jdgm-medal__image\" data-url=\"auth/diamond.svg\" data-alt=\"Judge.me Diamond Authentic Shop medal\"><img alt=\"Judge.me Diamond Authentic Shop medal\" src=\"https://judgeme-public-images.imgix.net/judgeme/medals-v2-2025-rebranding/auth/diamond.svg?auto=format\"></div> <div class=\"jdgm-medal__value \">100.0</div> </a> </div> </div> </div> </div></div>        </div> <div class=\"jdgm-rev-widg__actions\"><div class=\"jdgm-row-actions\"><div class=\"jdgm-rev-widg__sort-wrapper\"><div class=\"jdgm-sort-dropdown-wrapper\">\n  <select class=\"jdgm-sort-dropdown\" aria-label=\"Sort dropdown\">\n    <option value=\"most-recent\">Most Recent</option>\n    <option value=\"highest-rating\">Highest Rating</option>\n    <option value=\"lowest-rating\">Lowest Rating</option>\n    <option value=\"with-pictures\">Only Pictures</option>\n    <option value=\"pictures-first\">Pictures First</option>\n    <option value=\"videos-first\">Videos First</option>\n    <option value=\"most-helpful\">Most Helpful</option>\n  </select><span class=\"jdgm-sort-dropdown-arrow\"></span>\n</div>\n</div></div></div><div class=\"jdgm-rev-widg__body\">  <div class=\"jdgm-rev-widg__reviews\" style=\"position: relative; height: 1638px;\"><div class=\"jdgm-rev jdgm-divider-top jdgm--done-setup jdgm--leex-done-setup\" data-verified-buyer=\"true\" data-review-id=\"3dbe5edb-8074-48f9-9bf7-5eefa7d001e1\" data-review-language=\"\" data-product-title=\"Carbinox Blaze ⌚️\" data-product-url=\"/products/carbinox-blaze\" data-thumb-up-count=\"0\" data-thumb-down-count=\"0\" style=\"position: absolute; left: 0px; top: 0px;\"> <div class=\"jdgm-rev__header\"><div class=\"jdgm-row-product\"></div><div class=\"jdgm-row-rating\"><span class=\"jdgm-rev__rating\" data-score=\"5\" tabindex=\"0\" aria-label=\"5 star review\" role=\"img\"> <span class=\"jdgm-star jdgm--on\"></span><span class=\"jdgm-star jdgm--on\"></span><span class=\"jdgm-star jdgm--on\"></span><span class=\"jdgm-star jdgm--on\"></span><span class=\"jdgm-star jdgm--on\"></span> </span><span class=\"jdgm-rev__timestamp\" data-content=\"2025-06-28 01:09:40 UTC\">06/28/25</span></div><div class=\"jdgm-row-profile\"><div class=\"jdgm-rev__icon\"></div><span class=\"jdgm-rev__author-wrapper\"> <span class=\"jdgm-rev__author\">Wayne Sovey</span>   <span class=\"jdgm-rev__buyer-badge-wrapper\"> <span class=\"jdgm-rev__buyer-badge\"></span> </span></span></div><div class=\"jdgm-row-extra\"><span class=\"jdgm-rev__location\" data-country-code=\"US\">  </span><img class=\"jdgm-rev__location-country-flag-img\" alt=\"US\" data-src=\"https://judgeme-public-images.imgix.net/judgeme/flags/US.svg\" src=\"https://judgeme-public-images.imgix.net/judgeme/flags/US.svg\"></div>       <div class=\"jdgm-rev__br\"></div>   </div><div class=\"jdgm-rev__pics\">  <a class=\"jdgm-rev__pic-link\" target=\"_blank\" rel=\"nofollow\" href=\"https://judgeme.imgix.net/carbinox-co/1751073071__2025-06-272110006852166669033055211__original.jpg?auto=format\" data-mfp-src=\"https://judgeme.imgix.net/carbinox-co/1751073071__2025-06-272110006852166669033055211__original.jpg?auto=format&amp;w=1024\" aria-label=\"Link to user picture 1\"> <img class=\"jdgm-rev__pic-img\" alt=\"User picture\" data-src=\"https://judgeme.imgix.net/carbinox-co/1751073071__2025-06-272110006852166669033055211__original.jpg?auto=format&amp;w=160&amp;dpr=2&amp;w=360\" src=\"https://judgeme.imgix.net/carbinox-co/1751073071__2025-06-272110006852166669033055211__original.jpg?auto=format&amp;w=160&amp;dpr=2&amp;w=360\"> </a>  </div> <div class=\"jdgm-rev__content\">   <b class=\"jdgm-rev__title\">Awesome</b> <div class=\"jdgm-rev__body\" style=\"overflow-wrap: break-word;\"><p>Best watch ever and it even helps drain water build-up lol</p><a class=\"jdgm-rev__body-read-more\" tabindex=\"0\" aria-label=\"Read more\" role=\"button\">Read more</a></div><div class=\"jdgm-rev__custom-form\">  </div>   <div class=\"jdgm-rev__transparency-badge-wrapper\">  </div> </div> <div class=\"jdgm-rev__actions\"> <div class=\"jdgm-rev__social\"></div> <div class=\"jdgm-rev__votes\"></div> </div>  </div><div class=\"jdgm-rev jdgm-divider-top jdgm--done-setup jdgm--leex-done-setup\" data-verified-buyer=\"true\" data-review-id=\"9f3e3dcd-3eb6-4823-a43c-9e70c9929e81\" data-review-language=\"\" data-product-title=\"Carbinox Blaze ⌚️\" data-product-url=\"/products/carbinox-blaze\" data-thumb-up-count=\"0\" data-thumb-down-count=\"0\" style=\"position: absolute; left: 450px; top: 0px;\"> <div class=\"jdgm-rev__header\"><div class=\"jdgm-row-product\"></div><div class=\"jdgm-row-rating\"><span class=\"jdgm-rev__rating\" data-score=\"4\" tabindex=\"0\" aria-label=\"4 star review\" role=\"img\"> <span class=\"jdgm-star jdgm--on\"></span><span class=\"jdgm-star jdgm--on\"></span><span class=\"jdgm-star jdgm--on\"></span><span class=\"jdgm-star jdgm--on\"></span><span class=\"jdgm-star jdgm--off\"></span> </span><span class=\"jdgm-rev__timestamp\" data-content=\"2025-06-24 10:08:55 UTC\">06/24/25</span></div><div class=\"jdgm-row-profile\"><div class=\"jdgm-rev__icon\"></div><span class=\"jdgm-rev__author-wrapper\"> <span class=\"jdgm-rev__author\">Jake</span>   <span class=\"jdgm-rev__buyer-badge-wrapper\"> <span class=\"jdgm-rev__buyer-badge\"></span> </span></span></div><div class=\"jdgm-row-extra\"><span class=\"jdgm-rev__location\">  </span></div>       <div class=\"jdgm-rev__br\"></div>   </div><div class=\"jdgm-rev__pics\">  <a class=\"jdgm-rev__pic-link\" target=\"_blank\" rel=\"nofollow\" href=\"https://judgeme.imgix.net/carbinox-co/1750764228__image__original.jpg?auto=format\" data-mfp-src=\"https://judgeme.imgix.net/carbinox-co/1750764228__image__original.jpg?auto=format&amp;w=1024\" aria-label=\"Link to user picture 1\"> <img class=\"jdgm-rev__pic-img\" alt=\"User picture\" data-src=\"https://judgeme.imgix.net/carbinox-co/1750764228__image__original.jpg?auto=format&amp;w=160&amp;dpr=2&amp;w=360\" src=\"https://judgeme.imgix.net/carbinox-co/1750764228__image__original.jpg?auto=format&amp;w=160&amp;dpr=2&amp;w=360\"> </a>  </div> <div class=\"jdgm-rev__content\">   <b class=\"jdgm-rev__title\">Highly functional, and tough watch!</b> <div class=\"jdgm-rev__body is-truncated\" style=\"overflow-wrap: break-word;\"><p style=\"\">Truly a great watch for the money paid. I’ve used it to track walks, and workouts. I’ve worn it in the river, at the gym, at work, and have had no problems with it holding up! The only issues I’ve had is it doesn’t always get my steps right, because I’ll be riding down the road in a big truck and it’ll be counting steps that I’m not taking. And it doesn’t always track my heart rate unless I click on the heart rate feature and have it update. But it’s still functional and great if you can work... <a class=\"jdgm-rev__body-read-more\" tabindex=\"0\" aria-label=\"Read more\" role=\"button\">Read more</a></p></div><div class=\"jdgm-rev__custom-form\">  </div>   <div class=\"jdgm-rev__transparency-badge-wrapper\">  </div> </div> <div class=\"jdgm-rev__actions\"> <div class=\"jdgm-rev__social\"></div> <div class=\"jdgm-rev__votes\"></div> </div>  </div><div class=\"jdgm-rev jdgm-divider-top jdgm--done-setup jdgm--leex-done-setup\" data-verified-buyer=\"true\" data-review-id=\"2e7387c3-0ad7-4dd6-ac8e-f5085d674525\" data-review-language=\"\" data-product-title=\"Carbinox Blaze ⌚️\" data-product-url=\"/products/carbinox-blaze\" data-thumb-up-count=\"0\" data-thumb-down-count=\"0\" style=\"position: absolute; left: 901px; top: 0px;\"> <div class=\"jdgm-rev__header\"><div class=\"jdgm-row-product\"></div><div class=\"jdgm-row-rating\"><span class=\"jdgm-rev__rating\" data-score=\"3\" tabindex=\"0\" aria-label=\"3 star review\" role=\"img\"> <span class=\"jdgm-star jdgm--on\"></span><span class=\"jdgm-star jdgm--on\"></span><span class=\"jdgm-star jdgm--on\"></span><span class=\"jdgm-star jdgm--off\"></span><span class=\"jdgm-star jdgm--off\"></span> </span><span class=\"jdgm-rev__timestamp\" data-content=\"2025-06-22 04:58:29 UTC\">06/22/25</span></div><div class=\"jdgm-row-profile\"><div class=\"jdgm-rev__icon\"></div><span class=\"jdgm-rev__author-wrapper\"> <span class=\"jdgm-rev__author\">Okwydili Anuluoha</span>   <span class=\"jdgm-rev__buyer-badge-wrapper\"> <span class=\"jdgm-rev__buyer-badge\"></span> </span></span></div><div class=\"jdgm-row-extra\"><span class=\"jdgm-rev__location\" data-country-code=\"US\">  </span><img class=\"jdgm-rev__location-country-flag-img\" alt=\"US\" data-src=\"https://judgeme-public-images.imgix.net/judgeme/flags/US.svg\" src=\"https://judgeme-public-images.imgix.net/judgeme/flags/US.svg\"></div>       <div class=\"jdgm-rev__br\"></div>   </div><div class=\"jdgm-rev__pics\">  <a class=\"jdgm-rev__pic-link\" target=\"_blank\" rel=\"nofollow\" href=\"https://judgeme.imgix.net/carbinox-co/1750568669__img_20250610_193935409__original.jpg?auto=format\" data-mfp-src=\"https://judgeme.imgix.net/carbinox-co/1750568669__img_20250610_193935409__original.jpg?auto=format&amp;w=1024\" aria-label=\"Link to user picture 1\"> <img class=\"jdgm-rev__pic-img\" alt=\"User picture\" data-src=\"https://judgeme.imgix.net/carbinox-co/1750568669__img_20250610_193935409__original.jpg?auto=format&amp;w=160&amp;dpr=2&amp;w=360\" src=\"https://judgeme.imgix.net/carbinox-co/1750568669__img_20250610_193935409__original.jpg?auto=format&amp;w=160&amp;dpr=2&amp;w=360\"> </a>  <a class=\"jdgm-rev__pic-link\" target=\"_blank\" rel=\"nofollow\" href=\"https://judgeme.imgix.net/carbinox-co/1750568672__06a44ecc-8bd5-4810-a74a-056583fcc64cphot__original.jpeg?auto=format\" data-mfp-src=\"https://judgeme.imgix.net/carbinox-co/1750568672__06a44ecc-8bd5-4810-a74a-056583fcc64cphot__original.jpeg?auto=format&amp;w=1024\" aria-label=\"Link to user picture 2\"> <img class=\"jdgm-rev__pic-img\" alt=\"User picture\" data-src=\"https://judgeme.imgix.net/carbinox-co/1750568672__06a44ecc-8bd5-4810-a74a-056583fcc64cphot__original.jpeg?auto=format&amp;w=160\" src=\"https://judgeme.imgix.net/carbinox-co/1750568672__06a44ecc-8bd5-4810-a74a-056583fcc64cphot__original.jpeg?auto=format&amp;w=160\"> </a>  </div> <div class=\"jdgm-rev__content\">   <b class=\"jdgm-rev__title\">Client review</b> <div class=\"jdgm-rev__body\" style=\"overflow-wrap: break-word;\"><p>Multi function watch is very useful \n  <br>  Thumbs up for the device!</p><a class=\"jdgm-rev__body-read-more\" tabindex=\"0\" aria-label=\"Read more\" role=\"button\">Read more</a></div><div class=\"jdgm-rev__custom-form\">  </div>   <div class=\"jdgm-rev__transparency-badge-wrapper\">  </div> </div> <div class=\"jdgm-rev__actions\"> <div class=\"jdgm-rev__social\"></div> <div class=\"jdgm-rev__votes\"></div> </div>  </div><div class=\"jdgm-rev jdgm-divider-top jdgm--done-setup jdgm--leex-done-setup\" data-verified-buyer=\"true\" data-review-id=\"ad363cb9-600d-42b2-8a2f-e105ab342de1\" data-review-language=\"\" data-product-title=\"Carbinox Blaze ⌚️\" data-product-url=\"/products/carbinox-blaze\" data-thumb-up-count=\"0\" data-thumb-down-count=\"0\" style=\"position: absolute; left: 0px; top: 781px;\"> <div class=\"jdgm-rev__header\"><div class=\"jdgm-row-product\"></div><div class=\"jdgm-row-rating\"><span class=\"jdgm-rev__rating\" data-score=\"5\" tabindex=\"0\" aria-label=\"5 star review\" role=\"img\"> <span class=\"jdgm-star jdgm--on\"></span><span class=\"jdgm-star jdgm--on\"></span><span class=\"jdgm-star jdgm--on\"></span><span class=\"jdgm-star jdgm--on\"></span><span class=\"jdgm-star jdgm--on\"></span> </span><span class=\"jdgm-rev__timestamp\" data-content=\"2025-06-17 17:27:51 UTC\">06/17/25</span></div><div class=\"jdgm-row-profile\"><div class=\"jdgm-rev__icon\"></div><span class=\"jdgm-rev__author-wrapper\"> <span class=\"jdgm-rev__author\">Norman Lee</span>   <span class=\"jdgm-rev__buyer-badge-wrapper\"> <span class=\"jdgm-rev__buyer-badge\"></span> </span></span></div><div class=\"jdgm-row-extra\"><span class=\"jdgm-rev__location\" data-country-code=\"US\">  </span><img class=\"jdgm-rev__location-country-flag-img\" alt=\"US\" data-src=\"https://judgeme-public-images.imgix.net/judgeme/flags/US.svg\" src=\"https://judgeme-public-images.imgix.net/judgeme/flags/US.svg\"></div>       <div class=\"jdgm-rev__br\"></div>   </div><div class=\"jdgm-rev__pics\">  <a class=\"jdgm-rev__pic-link\" target=\"_blank\" rel=\"nofollow\" href=\"https://judgeme.imgix.net/carbinox-co/1750181474__image__original.jpg?auto=format\" data-mfp-src=\"https://judgeme.imgix.net/carbinox-co/1750181474__image__original.jpg?auto=format&amp;w=1024\" aria-label=\"Link to user picture 1\"> <img class=\"jdgm-rev__pic-img\" alt=\"User picture\" data-src=\"https://judgeme.imgix.net/carbinox-co/1750181474__image__original.jpg?auto=format&amp;w=160&amp;dpr=2&amp;w=360\" src=\"https://judgeme.imgix.net/carbinox-co/1750181474__image__original.jpg?auto=format&amp;w=160&amp;dpr=2&amp;w=360\"> </a>  <a class=\"jdgm-rev__pic-link\" target=\"_blank\" rel=\"nofollow\" href=\"https://judgeme.imgix.net/carbinox-co/1750181476__image__original.jpg?auto=format\" data-mfp-src=\"https://judgeme.imgix.net/carbinox-co/1750181476__image__original.jpg?auto=format&amp;w=1024\" aria-label=\"Link to user picture 2\"> <img class=\"jdgm-rev__pic-img\" alt=\"User picture\" data-src=\"https://judgeme.imgix.net/carbinox-co/1750181476__image__original.jpg?auto=format&amp;w=160\" src=\"https://judgeme.imgix.net/carbinox-co/1750181476__image__original.jpg?auto=format&amp;w=160\"> </a>  </div> <div class=\"jdgm-rev__content\">   <b class=\"jdgm-rev__title\">My Blaze S is here!</b> <div class=\"jdgm-rev__body\" style=\"overflow-wrap: break-word;\"><p>Love this smartwatch. It does everything I want in a smartwatch without the cost of other brands. Extremely happy!</p><a class=\"jdgm-rev__body-read-more\" tabindex=\"0\" aria-label=\"Read more\" role=\"button\">Read more</a></div><div class=\"jdgm-rev__custom-form\">  </div>   <div class=\"jdgm-rev__transparency-badge-wrapper\">  </div> </div> <div class=\"jdgm-rev__actions\"> <div class=\"jdgm-rev__social\"></div> <div class=\"jdgm-rev__votes\"></div> </div>  </div><div class=\"jdgm-rev jdgm-divider-top jdgm--done-setup jdgm--leex-done-setup\" data-verified-buyer=\"true\" data-review-id=\"23205613-cfd2-4e0e-b40f-41ed64d56b29\" data-review-language=\"\" data-product-title=\"Carbinox Blaze ⌚️\" data-product-url=\"/products/carbinox-blaze\" data-thumb-up-count=\"0\" data-thumb-down-count=\"0\" style=\"position: absolute; left: 901px; top: 832px;\"> <div class=\"jdgm-rev__header\"><div class=\"jdgm-row-product\"></div><div class=\"jdgm-row-rating\"><span class=\"jdgm-rev__rating\" data-score=\"5\" tabindex=\"0\" aria-label=\"5 star review\" role=\"img\"> <span class=\"jdgm-star jdgm--on\"></span><span class=\"jdgm-star jdgm--on\"></span><span class=\"jdgm-star jdgm--on\"></span><span class=\"jdgm-star jdgm--on\"></span><span class=\"jdgm-star jdgm--on\"></span> </span><span class=\"jdgm-rev__timestamp\" data-content=\"2025-06-13 17:55:13 UTC\">06/13/25</span></div><div class=\"jdgm-row-profile\"><div class=\"jdgm-rev__icon\"></div><span class=\"jdgm-rev__author-wrapper\"> <span class=\"jdgm-rev__author\">Nasario Contreras</span>   <span class=\"jdgm-rev__buyer-badge-wrapper\"> <span class=\"jdgm-rev__buyer-badge\"></span> </span></span></div><div class=\"jdgm-row-extra\"><span class=\"jdgm-rev__location\" data-country-code=\"US\">  </span><img class=\"jdgm-rev__location-country-flag-img\" alt=\"US\" data-src=\"https://judgeme-public-images.imgix.net/judgeme/flags/US.svg\" src=\"https://judgeme-public-images.imgix.net/judgeme/flags/US.svg\"></div>       <div class=\"jdgm-rev__br\"></div>   </div><div class=\"jdgm-rev__pics\">  <a class=\"jdgm-rev__pic-link\" target=\"_blank\" rel=\"nofollow\" href=\"https://judgeme.imgix.net/carbinox-co/1749837463__1000006931__original.jpg?auto=format\" data-mfp-src=\"https://judgeme.imgix.net/carbinox-co/1749837463__1000006931__original.jpg?auto=format&amp;w=1024\" aria-label=\"Link to user picture 1\"> <img class=\"jdgm-rev__pic-img\" alt=\"User picture\" data-src=\"https://judgeme.imgix.net/carbinox-co/1749837463__1000006931__original.jpg?auto=format&amp;w=160&amp;dpr=2&amp;w=360\" src=\"https://judgeme.imgix.net/carbinox-co/1749837463__1000006931__original.jpg?auto=format&amp;w=160&amp;dpr=2&amp;w=360\"> </a>  </div> <div class=\"jdgm-rev__content\">   <b class=\"jdgm-rev__title\">Best smart watch</b> <div class=\"jdgm-rev__body\" style=\"overflow-wrap: break-word;\"><p>Im impressed with durability and the battery life. The battery lasts 4-5 days!</p><a class=\"jdgm-rev__body-read-more\" tabindex=\"0\" aria-label=\"Read more\" role=\"button\">Read more</a></div><div class=\"jdgm-rev__custom-form\">  </div>   <div class=\"jdgm-rev__transparency-badge-wrapper\">  </div> </div> <div class=\"jdgm-rev__actions\"> <div class=\"jdgm-rev__social\"></div> <div class=\"jdgm-rev__votes\"></div> </div>  </div></div> <div class=\"jdgm-paginate\" data-per-page=\"5\" data-url=\"https://api.judge.me/reviews/reviews_for_widget\"><a class=\"jdgm-btn jdgm-btn--solid jdgm-paginate__load-more\" data-page=\"2\" role=\"button\">Load More</a></div>  </div> <div class=\"jdgm-rev-widg__paginate-spinner-wrapper\"> <div class=\"jdgm-spinner\"></div> </div> </div>\n</div>\n\n\n\n\n\n\n</div></div>\n\n\n</div>\n\n\n<script>\n  document.addEventListener(\"DOMContentLoaded\", function () {\n    const sectionToMove = document.getElementById(\"shopify-section-template--24894728765812__17297101183d2e6360\");\n    const targetSection = document.getElementById(\"shopify-section-template--24748880494964__166007646669623aaa\");\n\n    if (sectionToMove && targetSection && targetSection.parentNode) {\n      targetSection.parentNode.insertBefore(sectionToMove, targetSection.nextSibling);\n    } else {\n      console.warn(\"Alguno de los elementos no se encontró en el DOM.\");\n    }\n  });\n</script>\n<script data-cfasync=\"false\" class=\"jdgm-settings-script\">window.jdgmSettings={\"pagination\":5,\"disable_web_reviews\":true,\"badge_no_review_text\":\"No reviews\",\"badge_n_reviews_text\":\"{{ n }} review/reviews ({{ average_rating }}/5)\",\"badge_star_color\":\"#fcc900\",\"hide_badge_preview_if_no_reviews\":true,\"badge_hide_text\":false,\"enforce_center_preview_badge\":false,\"widget_title\":\"350,000+ customers across the nation!\",\"widget_open_form_text\":\"Write a review ➔\",\"widget_close_form_text\":\"Cancel review ➔\",\"widget_refresh_page_text\":\"Refresh page\",\"widget_summary_text\":\"🇺🇸 We're proud to be the favorite smartwatch for thousands of americans!\",\"widget_no_review_text\":\"Be the first to write a review!\",\"widget_name_field_text\":\"What's your name?\",\"widget_verified_name_field_text\":\"What's your name\",\"widget_name_placeholder_text\":\"Enter your name\",\"widget_required_field_error_text\":\"This field is required.\",\"widget_email_field_text\":\"What's your e-mail address?\",\"widget_verified_email_field_text\":\"What's your e-mail address?\",\"widget_email_placeholder_text\":\"Enter your e-mail\",\"widget_email_field_error_text\":\"Please enter a valid email address.\",\"widget_rating_field_text\":\"How many stars? 😁\",\"widget_review_title_field_text\":\"What's the title for your review?\",\"widget_review_title_placeholder_text\":\"Enter your title\",\"widget_review_body_field_text\":\"Describe your experience:\",\"widget_review_body_placeholder_text\":\"Write your comments here\",\"widget_pictures_field_text\":\"Share your picture!\",\"widget_submit_review_text\":\"Submit Review\",\"widget_submit_verified_review_text\":\"Submit Verified Review\",\"widget_submit_success_msg_with_auto_publish\":\"Thank you! Please refresh the page in a few moments to see your review. You can remove or edit your review by logging into \\u003ca href='https://judge.me/login' target='_blank' rel='nofollow noopener'\\u003eJudge.me\\u003c/a\\u003e\",\"widget_submit_success_msg_no_auto_publish\":\"Thank you! Your review will be published as soon as it is approved by the shop admin. You can remove or edit your review by logging into \\u003ca href='https://judge.me/login' target='_blank' rel='nofollow noopener'\\u003eJudge.me\\u003c/a\\u003e\",\"widget_show_default_reviews_out_of_total_text\":\"Showing {{ n_reviews_shown }} out of {{ n_reviews }} reviews.\",\"widget_show_all_link_text\":\"Show all\",\"widget_show_less_link_text\":\"Show less\",\"widget_author_said_text\":\"{{ reviewer_name }} said:\",\"widget_days_text\":\"{{ n }} days ago\",\"widget_weeks_text\":\"{{ n }} week/weeks ago\",\"widget_months_text\":\"{{ n }} month/months ago\",\"widget_years_text\":\"{{ n }} year/years ago\",\"widget_yesterday_text\":\"Yesterday\",\"widget_today_text\":\"Today\",\"widget_replied_text\":\"\\u003e\\u003e {{ shop_name }} replied:\",\"widget_read_more_text\":\"Read more\",\"widget_rating_filter_color\":\"#fcc900\",\"widget_rating_filter_see_all_text\":\"See all reviews\",\"widget_sorting_most_recent_text\":\"Most Recent\",\"widget_sorting_highest_rating_text\":\"Highest Rating\",\"widget_sorting_lowest_rating_text\":\"Lowest Rating\",\"widget_sorting_with_pictures_text\":\"Only Pictures\",\"widget_sorting_most_helpful_text\":\"Most Helpful\",\"widget_open_question_form_text\":\"Ask a question\",\"widget_reviews_subtab_text\":\"Reviews\",\"widget_questions_subtab_text\":\"Questions\",\"widget_question_label_text\":\"Question\",\"widget_answer_label_text\":\"Answer\",\"widget_question_placeholder_text\":\"Write your question here\",\"widget_submit_question_text\":\"Submit Question\",\"widget_question_submit_success_text\":\"Thank you for your question! We will notify you once it gets answered.\",\"widget_star_color\":\"#fcc900\",\"verified_badge_text\":\"Verified\",\"verified_badge_bg_color\":\"#00ac34\",\"verified_badge_text_color\":\"#ffffff\",\"verified_badge_placement\":\"left-of-reviewer-name\",\"widget_review_max_height\":10,\"widget_hide_border\":false,\"widget_social_share\":false,\"widget_thumb\":false,\"widget_review_location_show\":false,\"widget_location_format\":\"country_iso_code\",\"all_reviews_include_out_of_store_products\":true,\"all_reviews_out_of_store_text\":\"(out of store)\",\"all_reviews_product_name_prefix_text\":\"about\",\"enable_review_pictures\":true,\"enable_question_anwser\":false,\"widget_theme\":\"leex\",\"review_date_format\":\"mm/dd/yy\",\"default_sort_method\":\"pictures-first\",\"widget_product_reviews_subtab_text\":\"Product Reviews\",\"widget_shop_reviews_subtab_text\":\"Shop Reviews\",\"widget_write_a_store_review_text\":\"Write a Store Review\",\"widget_sorting_pictures_first_text\":\"Pictures First\",\"floating_tab_button_name\":\"★ Judge.me Reviews\",\"floating_tab_title\":\"Let customers speak for us\",\"floating_tab_url\":\"\",\"floating_tab_url_enabled\":false,\"all_reviews_text_badge_text\":\"Customers rate us {{ shop.metafields.judgeme.all_reviews_rating | round: 1 }}/5 based on {{ shop.metafields.judgeme.all_reviews_count }} reviews.\",\"all_reviews_text_badge_text_branded_style\":\"{{ shop.metafields.judgeme.all_reviews_rating | round: 1 }} out of 5 stars based on {{ shop.metafields.judgeme.all_reviews_count }} reviews\",\"all_reviews_text_badge_url\":\"\",\"featured_carousel_title\":\"Let customers speak for us\",\"featured_carousel_count_text\":\"from {{ n }} reviews\",\"featured_carousel_url\":\"\",\"verified_count_badge_url\":\"\",\"widget_histogram_use_custom_color\":true,\"widget_pagination_use_custom_color\":true,\"widget_star_use_custom_color\":true,\"widget_verified_badge_use_custom_color\":true,\"picture_reminder_submit_button\":\"Upload Pictures\",\"widget_sorting_videos_first_text\":\"Videos First\",\"widget_review_pending_text\":\"Pending\",\"remove_microdata_snippet\":true,\"preview_badge_no_question_text\":\"No questions\",\"preview_badge_n_question_text\":\"{{ number_of_questions }} question/questions\",\"remove_judgeme_branding\":true,\"widget_search_bar_placeholder\":\"Search reviews\",\"widget_sorting_verified_only_text\":\"Verified only\",\"featured_carousel_more_reviews_button_text\":\"Read more reviews\",\"featured_carousel_view_product_button_text\":\"View product\",\"all_reviews_page_load_more_text\":\"Load More Reviews\",\"widget_public_name_text\":\"Show as:\",\"default_reviewer_name_has_non_latin\":true,\"widget_reviewer_anonymous\":\"Anonymous\",\"medals_widget_title\":\"Judge.me Review Medals\",\"show_reviewer_avatar\":false,\"widget_invalid_yt_video_url_error_text\":\"Not a YouTube video URL\",\"widget_max_length_field_error_text\":\"Please enter no more than {0} characters.\",\"widget_show_country_flag\":true,\"widget_verified_by_shop_text\":\"Verified by Shop\",\"widget_show_photo_gallery\":true,\"widget_load_with_code_splitting\":true,\"widget_ugc_title\":\"Made by us, Shared by you\",\"widget_ugc_subtitle\":\"Tag us to see your picture featured in our page\",\"widget_ugc_primary_button_text\":\"Buy Now\",\"widget_ugc_secondary_button_text\":\"Load More\",\"widget_ugc_reviews_button_text\":\"View Reviews\",\"widget_primary_color\":\"#000000\",\"widget_summary_average_rating_text\":\"{{ average_rating }} out of 5\",\"widget_media_grid_title\":\"Customer photos \\u0026 videos\",\"widget_media_grid_see_more_text\":\"See more\",\"widget_round_style\":true,\"widget_verified_by_judgeme_text\":\"Verified by Judge.me\",\"widget_verified_by_judgeme_text_in_store_medals\":\"Verified by Judge.me\",\"widget_media_field_exceed_quantity_message\":\"Sorry, we can only accept {{ max_media }} for one review.\",\"widget_media_field_exceed_limit_message\":\"{{ file_name }} is too large, please select a {{ media_type }} less than {{ size_limit }}MB.\",\"widget_review_submitted_text\":\"Review Submitted!\",\"widget_question_submitted_text\":\"Question Submitted!\",\"widget_close_form_text_question\":\"Cancel\",\"widget_write_your_answer_here_text\":\"Write your answer here\",\"widget_enabled_branded_link\":true,\"widget_show_collected_by_judgeme\":true,\"widget_write_review_bg_color\":\"#000000\",\"widget_collected_by_judgeme_text\":\"collected by Judge.me\",\"widget_pagination_type\":\"load_more\",\"widget_load_more_text\":\"Load More\",\"widget_load_more_color\":\"#000000\",\"widget_full_review_text\":\"Full Review\",\"widget_read_more_reviews_text\":\"Read More Reviews\",\"widget_read_questions_text\":\"Read Questions\",\"widget_questions_and_answers_text\":\"Questions \\u0026 Answers\",\"widget_verified_by_text\":\"Verified by\",\"widget_number_of_reviews_text\":\"{{ number_of_reviews }} reviews\",\"widget_back_button_text\":\"Back\",\"widget_next_button_text\":\"Next\",\"widget_custom_forms_filter_button\":\"Filters\",\"custom_forms_style\":\"vertical\",\"how_reviews_are_collected\":\"How reviews are collected?\",\"widget_gdpr_statement\":\"How we use your data: We’ll only contact you about the review you left, and only if necessary. By submitting your review, you agree to Judge.me’s \\u003ca href='https://judge.me/terms' target='_blank' rel='nofollow noopener'\\u003eterms\\u003c/a\\u003e, \\u003ca href='https://judge.me/privacy' target='_blank' rel='nofollow noopener'\\u003eprivacy\\u003c/a\\u003e and \\u003ca href='https://judge.me/content-policy' target='_blank' rel='nofollow noopener'\\u003econtent\\u003c/a\\u003e policies.\",\"review_snippet_widget_round_border_style\":true,\"review_snippet_widget_card_color\":\"#FFFFFF\",\"review_snippet_widget_slider_arrows_background_color\":\"#FFFFFF\",\"review_snippet_widget_slider_arrows_color\":\"#000000\",\"review_snippet_widget_star_color\":\"#339999\",\"preview_badge_custom_css\":\".jdgm-prev-badge {\\ntext-align: center !important;\\nfont-weight: 600 !important;\\n}\",\"preview_badge_collection_page_install_preference\":true,\"preview_badge_product_page_install_preference\":true,\"review_widget_best_location\":true,\"platform\":\"shopify\",\"branding_url\":\"https://judge.me/reviews\",\"branding_text\":\"Powered by Judge.me\",\"locale\":\"en\",\"reply_name\":\"Carbinox Co.\",\"widget_version\":\"3.0\",\"footer\":true,\"autopublish\":false,\"review_dates\":true,\"enable_custom_form\":false,\"can_be_branded\":false};</script>\n\n<script data-cfasync=\"false\" class=\"jdgm-script\">\n  \n\ndocument.addEventListener('StartAsyncLoading',function(event){  \n \n  \n!function(e){window.jdgm=window.jdgm||{},jdgm.CDN_HOST=\"https://cdn.judge.me/\",\njdgm.docReady=function(d){(e.attachEvent?\"complete\"===e.readyState:\"loading\"!==e.readyState)?\nsetTimeout(d,0):e.addEventListener(\"DOMContentLoaded\",d)},jdgm.loadCSS=function(d,t,o,s){\n!o&&jdgm.loadCSS.requestedUrls.indexOf(d)>=0||(jdgm.loadCSS.requestedUrls.push(d),\n(s=e.createElement(\"link\")).rel=\"stylesheet\",s.class=\"jdgm-stylesheet\",s.media=\"nope!\",\ns.href=d,s.onload=function(){this.media=\"all\",t&&setTimeout(t)},e.body.appendChild(s))},\njdgm.loadCSS.requestedUrls=[],jdgm.loadJS=function(e,d){var t=new XMLHttpRequest;\nt.onreadystatechange=function(){4===t.readyState&&(Function(t.response)(),d&&d(t.response))},\nt.open(\"GET\",e),t.send()},jdgm.docReady((function(){(window.jdgmLoadCSS||e.querySelectorAll(\n\".jdgm-widget, .jdgm-all-reviews-page\").length>0)&&(jdgmSettings.widget_load_with_code_splitting?\nparseFloat(jdgmSettings.widget_version)>=3?jdgm.loadCSS(jdgm.CDN_HOST+\"widget_v3/base.css\"):\njdgm.loadCSS(jdgm.CDN_HOST+\"widget/base.css\"):jdgm.loadCSS(jdgm.CDN_HOST+\"shopify_v2.css\"),\njdgm.loadJS(jdgm.CDN_HOST+\"loader.js\"))}))}(document);\n\n\n});\n\n  \n</script>\n\n<style>\n#shopify-section-template--24748880494964__17297101183d2e6360 {\ndisplay: none;\n}\n</style>\n{% endif %}"
+          }
+        }
+      },
+      "block_order": [
+        "liquid_9giWJk",
+        "liquid_h7XXDD",
+        "liquid_A8phzp",
+        "94157900-ca99-4d79-b443-7f058350974e",
+        "54d2e274-c4e9-4efe-b6da-5bfe93a94d13",
+        "77b0126f-d176-4e47-b6f3-d2424b9b32ea",
+        "aa8adaeb-d404-4d2d-9f7b-7c87d4a68e8f",
+        "liquid_wcqRGR",
+        "liquid_UwKrnt",
+        "4ac75f75-351e-49cb-9367-33b5cfe6a9bd",
+        "new_guarantee_banner_MKimng",
+        "guarantee_banner_EUidYn",
+        "liquid_cfng9G"
+      ],
+      "custom_css": [
+        "@media (min-width: 768px) {.product {margin-top: 20px; }}",
+        "button {padding: 4px; font-size: 16px;}",
+        "h5 {font-size: 13px; color: #11a603; text-align: center;}",
+        "div {font-size: 14px;}",
+        "h4 {font-size: 12px; letter-spacing: -0.3px; text-align: center;}",
+        ".price--highlight {font-size: 20px;}",
+        ".label--highlight {font-size: 13px;}"
+      ],
+      "settings": {
+        "delivery_time": "",
+        "show_vendor": false,
+        "show_sku": false,
+        "show_taxes_included": false,
+        "show_product_rating": false,
+        "show_sticky_add_to_cart": true,
+        "show_payment_methods": false,
+        "show_share_buttons": false,
+        "help_page": "",
+        "enable_video_autoplay": true,
+        "enable_video_looping": true,
+        "enable_image_zoom": false,
+        "show_thumbnails_on_mobile": true,
+        "desktop_thumbnails_position": "bottom",
+        "transition_effect": "slide"
+      }
+    },
+    "e9dc35e4-0664-46cf-ad4f-0d4aa37441e3": {
+      "type": "rich-text",
+      "custom_css": [
+        "h3 {font-size: 24px;}",
+        "p {font-size: 17px; letter-spacing: -0.5px;}"
+      ],
+      "settings": {
+        "section_id": "",
+        "subheading": "",
+        "title": "PACKS INFORMATION:",
+        "content": "<h4><span style=\"text-decoration:underline\"><strong>STARTER PACK</strong></span><strong>:<br/></strong>(1) Carbinox Blaze Type R or Type S<strong><br/><br/></strong><span style=\"text-decoration:underline\"><strong>ULTIMATE PACK ($150 OFF)</strong></span><strong>:</strong><br/>(1) Carbinox Blaze Type R or Type S<br/>(1) Tempered Glass Pack<br/>(1) USB Charging Cord<br/>(1) Black Metal Band<br/>(6) Limited Edition Straps<br/><span style=\"text-decoration:underline\"><strong><br/>DOUBLE PACK</strong></span><strong>:<br/></strong>(1) Carbinox Blaze Type R<br/>(1) Carbinox Blaze Type S<br/>(1) Tempered Glass Pack for each watch<br/>(1) USB Charging Cord for each watch<br/>(1) Black Metal Band<br/>(6) Limited Edition Straps<strong><br/></strong></h4>",
+        "button_text": "",
+        "button_link": "",
+        "background_type": "full_width",
+        "text_width": "fill",
+        "text_position": "center",
+        "text_alignment": "center",
+        "background": "#f9f9f9",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "product_item_nDWeCY": {
+      "type": "product-item",
+      "blocks": {
+        "product_items_QF4B8t": {
+          "type": "Product-items",
+          "settings": {
+            "image1": "shopify://shop_images/Sin_titulo_1000_x_500_px_-min.png",
+            "heading": "",
+            "para": ""
+          }
+        }
+      },
+      "block_order": [
+        "product_items_QF4B8t"
+      ],
+      "settings": {}
+    },
+    "c4d5d849-903b-4f94-a366-9dd19f7a438e": {
+      "type": "image-with-text",
+      "blocks": {
+        "35be12bc-6d06-4cc0-94ac-25211273e8e5": {
+          "type": "item",
+          "settings": {
+            "show_video": false,
+            "video_link": "",
+            "image": "shopify://shop_images/ezgif-2-8392fdab4c-min.gif",
+            "tab_label": "Item",
+            "subheading": "top rated durable smartwatch since 2021",
+            "title": "BACKED BY 350,000+ HARD WORKERS ACROSS AMERICA 🇺🇸",
+            "content": "<p><strong>Your job isn’t for the faint of heart, and neither is your gear. We’ve designed the Carbinox Blaze to stand up to everything a rough environment throws at it.</strong></p>",
+            "button_text": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "35be12bc-6d06-4cc0-94ac-25211273e8e5"
+      ],
+      "custom_css": [
+        "h2 {font-size: 12px;}",
+        "h3 {font-size: 22px; color: #ffc200;}",
+        "h5 {font-size: 16px; letter-spacing: -0.7px; line-height: 20px;}"
+      ],
+      "settings": {
+        "section_id": "",
+        "reveal_on_scroll": false,
+        "background_type": "full_width",
+        "background_overlap": "both",
+        "image_position": "right",
+        "text_alignment": "center",
+        "cycle_speed": 8,
+        "accent_background": "#000000",
+        "text_color": "#ffffff",
+        "button_background": "#292323",
+        "button_text_color": "#5a5353",
+        "enable_custom_margin": false,
+        "margin_bottom": 0
+      }
+    },
+    "7093bb3e-6e7a-4e7c-b3dd-09080160deb5": {
+      "type": "rich-text",
+      "custom_css": [
+        "h2 {color: #ffc200; font-size: 24px;}",
+        "h3 {font-size: 16px;"
+      ],
+      "settings": {
+        "section_id": "",
+        "subheading": "★★★★★",
+        "title": "\"I’ve put this Blaze through hell and back, and it’s still ticking. It’s the toughest watch I’ve ever owned.\"",
+        "content": "<p><strong>John D., Welder, Texas</strong></p>",
+        "button_text": "",
+        "button_link": "",
+        "background_type": "full_width",
+        "text_width": "fill",
+        "text_position": "center",
+        "text_alignment": "center",
+        "background": "#eeeeee",
+        "text_color": "#000000",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "product-content": {
+      "type": "product-content",
+      "blocks": {
+        "description": {
+          "type": "description",
+          "disabled": true,
+          "settings": {}
+        },
+        "bc751217-69a0-4865-b75f-a3750a2b9c28": {
+          "type": "content",
+          "disabled": true,
+          "settings": {
+            "title": "x-ranger SPECIFICATIONS:",
+            "content": "<h6><strong>- Full Metal Bezel and Body<br/>- Waterproof Technology<br/>- 70 SPORTS MODES<br/>- 410mAh of battery<br/>- 14 days of battery within one charge<br/>- 1.43’’ AMOLED Display<br/>- Heart Rate Sensor: VP60<br/>- Pedometer Sensor: STK8325<br/>- OXYGEN TRACKING<br/>- STEPS COUNTER<br/>- SLEEP MODE<br/>- Scratch-proof tempered glass<br/>- Microphone & Speaker INTEGRATED<br/>- social media notifications<br/>- alarm<br/>- Calendar<br/>- Weather tracking<br/>- CARBINOX APP<br/>- COMPATIBLE WITH ANDROID AND IOS<br/>- Diameter: 44mm<br/>- Weight: 100 gR</strong></h6>",
+            "page": ""
+          }
+        },
+        "c6ed9da0-bdf5-43a3-8685-71d9c9d6fcf6": {
+          "type": "content",
+          "settings": {
+            "title": "Package includes:",
+            "content": "<h6>1x carbinox x-ranger<br/>1x usb charging cable<br/>1x Instructions Manual<br/>1x Free Gift 🎁</h6>",
+            "page": ""
+          }
+        },
+        "3429e515-9812-4e6e-8dcb-71d5cf1a780b": {
+          "type": "content",
+          "settings": {
+            "title": "GUARANTEES:",
+            "content": "<h6>THE CARBINOX X-RANGER COMES WITH A 45-DAY RISK FREE GUARANTEE. FAST RETURNS OR REPLACEMENTS AT NO COST. WE'VE GOT YOU COVERED.</h6>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "description",
+        "bc751217-69a0-4865-b75f-a3750a2b9c28",
+        "c6ed9da0-bdf5-43a3-8685-71d9c9d6fcf6",
+        "3429e515-9812-4e6e-8dcb-71d5cf1a780b"
+      ],
+      "disabled": true,
+      "custom_css": [],
+      "settings": {}
+    },
+    "3afaf0dd-bef3-46c5-9f9d-42e70684a19b": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--14658305654887__3afaf0dd-bef3-46c5-9f9d-42e70684a19b-item-1": {
+          "type": "item",
+          "settings": {
+            "show_video": true,
+            "video_link": "https://cdn.shopify.com/videos/c/o/v/019df4d5563e41988c6aec9ef668123d.mp4",
+            "tab_label": "Item",
+            "subheading": "",
+            "title": "BUILT TOUGHER, MADE SMARTER. GET READY TO UNLEASH THE ULTIMATE HARD WORKING BEAST.",
+            "content": "<p><strong>The most advanced and rugged smartwatch we've ever created is here. With cutting-edge technology and indestructible design, your ultimate companion for the most challenging environments is finally here... in two different designs.</strong></p><p><strong>Introducing the Carbinox Blaze Type R and Type S: Built to exceed every expectation.</strong></p>",
+            "button_text": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--14658305654887__3afaf0dd-bef3-46c5-9f9d-42e70684a19b-item-1"
+      ],
+      "custom_css": [
+        "div {background-color: #000000;}",
+        "h3 {color: #ffc200; font-size: 22px; letter-spacing: -1px;}",
+        "h5 {font-size: 20px; letter-spacing: -1px; color: #ffc200; line-height: 25px;}"
+      ],
+      "settings": {
+        "section_id": "",
+        "reveal_on_scroll": false,
+        "background_type": "full_width",
+        "background_overlap": "text",
+        "image_position": "left",
+        "text_alignment": "center",
+        "cycle_speed": 8,
+        "accent_background": "#454545",
+        "text_color": "#ffffff",
+        "button_background": "#292323",
+        "button_text_color": "#5a5353",
+        "enable_custom_margin": false,
+        "margin_bottom": 0
+      }
+    },
+    "3a5567fb-8e7e-4cb3-bb8e-f2c156493a67": {
+      "type": "image-with-text",
+      "blocks": {
+        "7f6a9c5e-0fe0-4000-bbab-c0217fa108eb": {
+          "type": "item",
+          "settings": {
+            "show_video": false,
+            "video_link": "",
+            "image": "shopify://shop_images/4-min_b58a17ba-181f-44b0-ac11-09e68ab2b29c.jpg",
+            "tab_label": "Item",
+            "subheading": "",
+            "title": "UNMATCHED VERSATILITY, SELECT A BLAZE FOR EVERY EXPERIENCE.",
+            "content": "<p><strong>For the first time ever, we're presenting two different designs: ROUND OR SQUARE. <br/><br/>Tailor your needs and taste without compromising the rugged durability and reliability that represents our company. Whatever your day has prepared, stay connected effectively.</strong></p>",
+            "button_text": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "7f6a9c5e-0fe0-4000-bbab-c0217fa108eb"
+      ],
+      "custom_css": [
+        "h3 {font-size: 22px; color: #ffc200;}",
+        "H4 {font-size: 18px; text-align: left; letter-spacing: -0.7px; margin-top: -20px;}"
+      ],
+      "settings": {
+        "section_id": "",
+        "reveal_on_scroll": false,
+        "background_type": "full_width",
+        "background_overlap": "both",
+        "image_position": "right",
+        "text_alignment": "center",
+        "cycle_speed": 8,
+        "accent_background": "#000000",
+        "text_color": "#ffffff",
+        "button_background": "#292323",
+        "button_text_color": "#5a5353",
+        "enable_custom_margin": false,
+        "margin_bottom": 0
+      }
+    },
+    "ff560379-7d10-4627-a4dc-278938136553": {
+      "type": "image-with-text",
+      "blocks": {
+        "1ae59a29-eaeb-4fc2-8215-438e69660792": {
+          "type": "item",
+          "settings": {
+            "show_video": false,
+            "video_link": "",
+            "image": "shopify://shop_images/3-min_5113e297-b189-4eee-a8db-e2e3c5e16464.jpg",
+            "tab_label": "Item",
+            "subheading": "",
+            "title": "Durability Like Never Before: The Toughest SMARTWATCH YET.",
+            "content": "<p><strong>Crafted with a premium zinc alloy body and a third-generation Gorilla Glass screen, the Carbinox Blaze stands as the toughest smartwatch we've ever engineered. <br/><br/>The thicker, </strong><span style=\"text-decoration:underline\"><strong>more resistant straps</strong></span><strong> ensure that no matter how intense your day gets, your Blaze will be right there with you, taking the hits and pushing through.<br/><br/></strong></p>",
+            "button_text": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "1ae59a29-eaeb-4fc2-8215-438e69660792"
+      ],
+      "custom_css": [
+        "h3 {font-size: 22px; color: #ffc200;}",
+        "H4 {font-size: 18px; text-align: left; letter-spacing: -0.7px; margin-top: -20px;}"
+      ],
+      "settings": {
+        "section_id": "",
+        "reveal_on_scroll": false,
+        "background_type": "full_width",
+        "background_overlap": "both",
+        "image_position": "left",
+        "text_alignment": "center",
+        "cycle_speed": 8,
+        "accent_background": "#000000",
+        "text_color": "#ffffff",
+        "button_background": "#292323",
+        "button_text_color": "#5a5353",
+        "enable_custom_margin": false,
+        "margin_bottom": 0
+      }
+    },
+    "84dd6a94-028e-44de-a5af-eed905356deb": {
+      "type": "image-with-text",
+      "blocks": {
+        "2666836f-fdb5-4031-a67a-23cba73c2c91": {
+          "type": "item",
+          "settings": {
+            "show_video": false,
+            "video_link": "",
+            "image": "shopify://shop_images/Please_send_a_text_message_to_John_saying_See_you_later_at_the_ranch_1_-min.png",
+            "tab_label": "Item",
+            "subheading": "",
+            "title": "AI Voice Assistant at Your Command, ready to reply and send messages.",
+            "content": "<p><strong>The Carbinox Blaze takes convenience to the next level with its built-in AI voice assistant. Seamlessly paired with your smartphone, you can send and reply to SMS messages using simple voice commands—no need to stop what you’re doing. Whether you're on the job or on the go, the AI assistant keeps you connected, hands-free.</strong></p>",
+            "button_text": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "2666836f-fdb5-4031-a67a-23cba73c2c91"
+      ],
+      "custom_css": [
+        "h3 {font-size: 22px; color: #ffc200;}",
+        "H4 {font-size: 18px; text-align: left; letter-spacing: -0.7px; margin-top: -20px;}"
+      ],
+      "settings": {
+        "section_id": "",
+        "reveal_on_scroll": false,
+        "background_type": "full_width",
+        "background_overlap": "both",
+        "image_position": "right",
+        "text_alignment": "center",
+        "cycle_speed": 8,
+        "accent_background": "#000000",
+        "text_color": "#ffffff",
+        "button_background": "#292323",
+        "button_text_color": "#5a5353",
+        "enable_custom_margin": false,
+        "margin_bottom": 0
+      }
+    },
+    "image_with_text_GYT8DM": {
+      "type": "image-with-text",
+      "blocks": {
+        "item_pXydhJ": {
+          "type": "item",
+          "settings": {
+            "show_video": false,
+            "video_link": "",
+            "image": "shopify://shop_images/1-min_8.png",
+            "tab_label": "Item",
+            "subheading": "",
+            "title": "Navigate Your World: Introducing GPS with Unmatched Precision 📍",
+            "content": "<p><strong>The Carbinox Blaze is our first smartwatch equipped with state-of-the-art GPS technology. Whether you’re navigating a job site or exploring off the beaten path, it will keep you on track with reliable, accurate positioning.<br/><br/>This feature can be easily enjoyed by selecting any of the sports modes on your smartwatch.</strong></p>",
+            "button_text": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "item_pXydhJ"
+      ],
+      "settings": {
+        "section_id": "",
+        "reveal_on_scroll": false,
+        "background_type": "full_width",
+        "background_overlap": "both",
+        "image_position": "right",
+        "text_alignment": "center",
+        "cycle_speed": 8,
+        "accent_background": "#000000",
+        "text_color": "#ffffff",
+        "button_background": "#292323",
+        "button_text_color": "#5a5353",
+        "enable_custom_margin": false,
+        "margin_bottom": 0
+      }
+    },
+    "cfffb33b-6a18-484b-af56-b40301e1f632": {
+      "type": "image-with-text",
+      "blocks": {
+        "242aee7e-1d8a-4b2f-8680-f43ccf662d4d": {
+          "type": "item",
+          "settings": {
+            "show_video": false,
+            "video_link": "",
+            "image": "shopify://shop_images/2-min_6.png",
+            "tab_label": "Item",
+            "subheading": "every situation. is now within your control.",
+            "title": "Be Ready for Anything: Altimeter, Barometer, and compass.",
+            "content": "",
+            "button_text": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "242aee7e-1d8a-4b2f-8680-f43ccf662d4d"
+      ],
+      "custom_css": [
+        "h3 {font-size: 20px; color: #ffc200;}",
+        "H4 {font-size: 18px; text-align: left; letter-spacing: -0.7px; margin-top: -20px;}"
+      ],
+      "settings": {
+        "section_id": "",
+        "reveal_on_scroll": false,
+        "background_type": "full_width",
+        "background_overlap": "both",
+        "image_position": "left",
+        "text_alignment": "center",
+        "cycle_speed": 8,
+        "accent_background": "#000000",
+        "text_color": "#ffffff",
+        "button_background": "#292323",
+        "button_text_color": "#5a5353",
+        "enable_custom_margin": false,
+        "margin_bottom": 0
+      }
+    },
+    "b97def7a-4167-4995-aeed-ca9dcdcf40b5": {
+      "type": "image-with-text",
+      "blocks": {
+        "46276caf-7bec-4dc3-babb-e90e3753b5ab": {
+          "type": "item",
+          "settings": {
+            "show_video": false,
+            "video_link": "",
+            "image": "shopify://shop_images/3-min_6_381e6dbc-2788-4cb0-a5b5-604cca6fdba4.png",
+            "tab_label": "Item",
+            "subheading": "The data you need to stay on top of your game.",
+            "title": "Superior Accuracy WITH Smarter Sensors.",
+            "content": "",
+            "button_text": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "46276caf-7bec-4dc3-babb-e90e3753b5ab"
+      ],
+      "disabled": true,
+      "custom_css": [
+        "h3 {font-size: 20px; color: #ffc200;}",
+        "H4 {font-size: 18px; text-align: left; letter-spacing: -0.7px; margin-top: -20px;}"
+      ],
+      "settings": {
+        "section_id": "",
+        "reveal_on_scroll": false,
+        "background_type": "full_width",
+        "background_overlap": "both",
+        "image_position": "right",
+        "text_alignment": "center",
+        "cycle_speed": 8,
+        "accent_background": "#000000",
+        "text_color": "#ffffff",
+        "button_background": "#292323",
+        "button_text_color": "#5a5353",
+        "enable_custom_margin": false,
+        "margin_bottom": 0
+      }
+    },
+    "8512ccfe-ca7f-4b2f-a0e2-70f92c988a05": {
+      "type": "image-with-text",
+      "blocks": {
+        "5c633d77-bb3b-4ca1-a3f8-7faae8f6d9a3": {
+          "type": "item",
+          "settings": {
+            "show_video": false,
+            "video_link": "",
+            "image": "shopify://shop_images/7-min_2_daf3d103-3915-4c8e-9a2a-0248dc9a6ef0.png",
+            "tab_label": "Item",
+            "subheading": "is not just a tool, it's an extension of your personality.",
+            "title": "More Modes, More You: 170+ Sports Modes and New Watch Faces INTEGRATED.",
+            "content": "",
+            "button_text": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "5c633d77-bb3b-4ca1-a3f8-7faae8f6d9a3"
+      ],
+      "custom_css": [
+        "h3 {font-size: 20px; color: #ffc200;}",
+        "H4 {font-size: 18px; text-align: left; letter-spacing: -0.7px; margin-top: -20px;}"
+      ],
+      "settings": {
+        "section_id": "",
+        "reveal_on_scroll": false,
+        "background_type": "full_width",
+        "background_overlap": "both",
+        "image_position": "left",
+        "text_alignment": "center",
+        "cycle_speed": 8,
+        "accent_background": "#000000",
+        "text_color": "#ffffff",
+        "button_background": "#292323",
+        "button_text_color": "#5a5353",
+        "enable_custom_margin": false,
+        "margin_bottom": 0
+      }
+    },
+    "8677f37a-5180-4ed3-8ef5-57b6acaae572": {
+      "type": "image-with-text",
+      "blocks": {
+        "91e8bfbe-7016-4d65-ab32-face8d5ba002": {
+          "type": "item",
+          "settings": {
+            "show_video": false,
+            "video_link": "",
+            "image": "shopify://shop_images/CARBINOX_PRO-min_cf4030d8-79a9-49e2-9609-486f401bbac3.png",
+            "tab_label": "Item",
+            "subheading": "",
+            "title": "",
+            "content": "",
+            "button_text": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "91e8bfbe-7016-4d65-ab32-face8d5ba002"
+      ],
+      "custom_css": [
+        "h3 {font-size: 18px; text-align: center;}"
+      ],
+      "settings": {
+        "section_id": "",
+        "reveal_on_scroll": false,
+        "background_type": "full_width",
+        "background_overlap": "both",
+        "image_position": "left",
+        "text_alignment": "center",
+        "cycle_speed": 8,
+        "accent_background": "#000000",
+        "text_color": "#ffffff",
+        "button_background": "#292323",
+        "button_text_color": "#5a5353",
+        "enable_custom_margin": false,
+        "margin_bottom": 0
+      }
+    },
+    "image_with_text_zbdBqG": {
+      "type": "image-with-text",
+      "blocks": {
+        "item_7UgUPD": {
+          "type": "item",
+          "settings": {
+            "show_video": false,
+            "video_link": "",
+            "image": "shopify://shop_images/VOICE_CONTROL-min.png",
+            "tab_label": "Item",
+            "subheading": "",
+            "title": "⬆ SMART FEATURES ⬆",
+            "content": "",
+            "button_text": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "item_7UgUPD"
+      ],
+      "settings": {
+        "section_id": "",
+        "reveal_on_scroll": false,
+        "background_type": "full_width",
+        "background_overlap": "both",
+        "image_position": "left",
+        "text_alignment": "center",
+        "cycle_speed": 8,
+        "accent_background": "#000000",
+        "text_color": "#ffc200",
+        "button_background": "#292323",
+        "button_text_color": "#5a5353",
+        "enable_custom_margin": false,
+        "margin_bottom": 0
+      }
+    },
+    "rich_text_cxKrM8": {
+      "type": "rich-text",
+      "custom_css": [
+        "h2 {color: #ffc200; font-size: 24px;}",
+        "h3 {font-size: 16px;"
+      ],
+      "settings": {
+        "section_id": "",
+        "subheading": "★★★★★",
+        "title": "\"I’ve banged it on metal, been through all kinds of weather, and this thing just keeps going. Battery life is solid, and the GPS is a lifesaver when I’m navigating off the beaten path. \"",
+        "content": "<p><strong>Mike S.,Truck Driver, Texas</strong></p>",
+        "button_text": "",
+        "button_link": "",
+        "background_type": "full_width",
+        "text_width": "fill",
+        "text_position": "left",
+        "text_alignment": "left",
+        "background": "#000000",
+        "text_color": "#ffffff",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "rich_text_VU6KWF": {
+      "type": "rich-text",
+      "custom_css": [
+        "h2 {color: #ffc200; font-size: 24px;}",
+        "h3 {font-size: 16px;"
+      ],
+      "settings": {
+        "section_id": "",
+        "subheading": "★★★★★",
+        "title": "\"This GPS is a game-changer. Out on the ranch, I know exactly where I am, no matter what.\"",
+        "content": "<p><strong>Mike R., Rancher, Montana</strong></p>",
+        "button_text": "",
+        "button_link": "",
+        "background_type": "full_width",
+        "text_width": "fill",
+        "text_position": "center",
+        "text_alignment": "right",
+        "background": "#000000",
+        "text_color": "#ffffff",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "2b1cb403-5565-464f-97a6-c15e724dad1a": {
+      "type": "rich-text",
+      "custom_css": [
+        "h2 {color: #ffc200; font-size: 24px;}",
+        "h3 {font-size: 16px;"
+      ],
+      "settings": {
+        "section_id": "",
+        "subheading": "★★★★★",
+        "title": "\"It’s a solid watch, and it handles everything I throw at it—dust, water, you name it. Couldn’t ask for more.\"",
+        "content": "<p><strong>Travis S., Construction Worker, Alabama</strong></p>",
+        "button_text": "",
+        "button_link": "",
+        "background_type": "full_width",
+        "text_width": "fill",
+        "text_position": "center",
+        "text_alignment": "left",
+        "background": "#121212",
+        "text_color": "#ffffff",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "a82c5f6c-8f61-455c-8e88-fefb5e155ec4": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--14658305654887__a82c5f6c-8f61-455c-8e88-fefb5e155ec4-item-1": {
+          "type": "item",
+          "settings": {
+            "show_video": false,
+            "video_link": "",
+            "image": "shopify://shop_images/1_286_800_x_1200_px_-min.png",
+            "tab_label": "",
+            "subheading": "",
+            "title": "🎖️ ABOUT OUR LIFETIME WARRANTY:",
+            "content": "<p><strong>We are a company that stands behind their products. We're so confident your smartwatch will provide durability to your life, that you're covered for life. If anything happens, we'll replace it for free. No questions asked.</strong></p>",
+            "button_text": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--14658305654887__a82c5f6c-8f61-455c-8e88-fefb5e155ec4-item-1"
+      ],
+      "custom_css": [
+        "h3 {font-size: 22px;}",
+        "h5 {color: #ffc200;}",
+        "h2 {font-size: 13px;}"
+      ],
+      "settings": {
+        "section_id": "",
+        "reveal_on_scroll": false,
+        "background_type": "full_width",
+        "background_overlap": "both",
+        "image_position": "left",
+        "text_alignment": "center",
+        "cycle_speed": 8,
+        "accent_background": "#000000",
+        "text_color": "#ffffff",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)",
+        "enable_custom_margin": false,
+        "margin_bottom": 0
+      }
+    },
+    "af3b67a6-d614-4707-afda-9d7b66d3addc": {
+      "type": "image-with-text",
+      "blocks": {
+        "b9ba9caa-760c-4a47-a67d-b350595291be": {
+          "type": "item",
+          "settings": {
+            "show_video": false,
+            "video_link": "",
+            "image": "shopify://shop_images/4-min_5.png",
+            "tab_label": "TYPE R",
+            "subheading": "",
+            "title": "CARBINOX BLAZE [TYPE R]",
+            "content": "<p><strong>Dimensions and Measurement.</strong></p>",
+            "button_text": "",
+            "button_link": ""
+          }
+        },
+        "item_pkRNfL": {
+          "type": "item",
+          "settings": {
+            "show_video": false,
+            "video_link": "",
+            "image": "shopify://shop_images/5-min_5.png",
+            "tab_label": "TYPE S",
+            "subheading": "",
+            "title": "CARBINOX BLAZE [TYPE S]",
+            "content": "<p><strong>Dimensions and Measurement.</strong></p>",
+            "button_text": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "b9ba9caa-760c-4a47-a67d-b350595291be",
+        "item_pkRNfL"
+      ],
+      "custom_css": [
+        "div {margin-block: -1px;}"
+      ],
+      "settings": {
+        "section_id": "",
+        "reveal_on_scroll": false,
+        "background_type": "full_width",
+        "background_overlap": "both",
+        "image_position": "left",
+        "text_alignment": "center",
+        "cycle_speed": 20,
+        "accent_background": "#000000",
+        "text_color": "#ffffff",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)",
+        "enable_custom_margin": false,
+        "margin_bottom": 0
+      }
+    },
+    "59ab30f9-1c7c-4bf9-8217-9f0f095a6238": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--14658305654887__59ab30f9-1c7c-4bf9-8217-9f0f095a6238-item-1": {
+          "type": "item",
+          "settings": {
+            "show_video": false,
+            "video_link": "",
+            "image": "shopify://shop_images/8-min_1.png",
+            "tab_label": "Item",
+            "subheading": "",
+            "title": "PAIR YOUR SMARTWATCH WITH YOUR PHONE THROUGH THE CARBINOX PRO APP.",
+            "content": "",
+            "button_text": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--14658305654887__59ab30f9-1c7c-4bf9-8217-9f0f095a6238-item-1"
+      ],
+      "custom_css": [
+        "h3 {font-size: 22px;}"
+      ],
+      "settings": {
+        "section_id": "",
+        "reveal_on_scroll": false,
+        "background_type": "full_width",
+        "background_overlap": "both",
+        "image_position": "right",
+        "text_alignment": "center",
+        "cycle_speed": 8,
+        "accent_background": "#000000",
+        "text_color": "#ffffff",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)",
+        "enable_custom_margin": false,
+        "margin_bottom": 0
+      }
+    },
+    "166007646669623aaa": {
+      "type": "faq",
+      "blocks": {
+        "1660076465f1e811f4-0": {
+          "type": "category",
+          "disabled": true,
+          "settings": {
+            "title": "Shipping"
+          }
+        },
+        "1660076465f1e811f4-1": {
+          "type": "question",
+          "disabled": true,
+          "settings": {
+            "title": "Are these smartwatches indestructible?",
+            "answer": "<p>We guarantee you'll receive the stronger smartwatch you've ever had. However,don't submit it to abuse tests such as as throwing it from a 30th floor or test it with a saw to see if it holds up (This is a true story 🥴)</p>"
+          }
+        },
+        "1660076465f1e811f4-2": {
+          "type": "question",
+          "settings": {
+            "title": "CAN I ANSWER AND MAKE CALLS WITH THE CARBINOX BLAZE?",
+            "answer": "<p>Yes, you can answer and dial calls with your Carbinox Blaze. Just pair it with your phone and make sure Bluetooth is on.</p>"
+          }
+        },
+        "7c26ebf9-9f0f-4f89-a025-4868a8e8855f": {
+          "type": "question",
+          "settings": {
+            "title": "HOW DOES THE GPS WORK?",
+            "answer": "<p>To ensure accurate tracking of your activities, the GPS functionality on the Carbinox Blaze works in conjunction with the Carbinox Pro App. When you select any sport mode on your smartwatch, the device relies on your smartphone’s GPS for precise location data. This allows the smartwatch to accurately track your movements, speed, and distance during outdoor activities.</p>"
+          }
+        },
+        "9e45f6ba-ce45-4182-ab2f-4f8bcd8f6681": {
+          "type": "question",
+          "settings": {
+            "title": "HOW DOES THE AI ASSISTANT WORKS TO SEND TEXT MESSAGES?",
+            "answer": "<p><strong>Access the Voice Assistant:</strong> Simply navigate to the voice assistant feature on your Carbinox Blaze smartwatch by selecting it from the main menu.</p><p><strong>Activate Voice Commands:</strong> Once in the voice assistant menu, tap the screen to speak.</p><p><strong>Send a Text Message:</strong> After activating the assistant, you can send a text message by saying the command, for example, “<strong>Send a text message to [name] saying [message].</strong>”</p><p><strong>Message Sent:</strong> The AI assistant will instantly pair with your smartphone and send the message as instructed.<br/><br/><strong>You can also make calls with the AI voice assistant. Just follow the same steps as the ones to send a message but instead, say \"Call [name]\".</strong></p><p><strong>Important Disclaimer:</strong><br/>While the AI voice assistant is highly responsive, it is also very sensitive. This means that in some cases, the message <strong>may not be delivered exactly as you intended.</strong> Always double-check your command to ensure it’s understood correctly. We recommend speaking clearly and confirming any important messages.</p>"
+          }
+        },
+        "1660076465f1e811f4-4": {
+          "type": "question",
+          "settings": {
+            "title": "ARE THE CARBINOX BLAZE WATCHES WATERPROOF?",
+            "answer": "<p>Yes, the Carbinox Vortex is fully Waterproof with IP69K and 5ATM technology.</p>"
+          }
+        },
+        "b94b4ba9-d47e-4003-8a27-597acb9b7952": {
+          "type": "question",
+          "settings": {
+            "title": "IS MY SMARTPHONE COMPATIBLE WITH THE CARBINOX BLAZE WATCHES?",
+            "answer": "<p>Yes. The Carbinox Blaze watches work with any Apple or Android device through the <strong>CARBINOX PRO APP.</strong></p>"
+          }
+        },
+        "91345035-5b96-4951-8a1e-d62883b97573": {
+          "type": "question",
+          "settings": {
+            "title": "WILL THE CARBINOX BLAZE FIT MY WRIST?",
+            "answer": "<p>Yes, all of our smartwatches come with adjustable bands that can fit any wrist.</p>"
+          }
+        },
+        "b1b69a37-56f7-497e-b973-6abbf1bb8a51": {
+          "type": "question",
+          "settings": {
+            "title": "DO YOU OFFER GUARANTEES?",
+            "answer": "<p>Of course! All of our smartwatches are covered with 45-Day Risk Free Trial, and Lifetime Warranty in case they don't fit your needs or if you face any software or internal issues. If this happens, we'll provide you a replacement at no cost.</p>"
+          }
+        },
+        "08cad6de-133a-438f-9a28-8990559de84f": {
+          "type": "question",
+          "settings": {
+            "title": "HOW LONG DO THE CARBINOX BLAZE TAKE TO FULLY CHARGE?",
+            "answer": "<p>The Carbinox Blaze will be fully charged after approximately 90 minutes and lasts up to 14 days within a single cycle.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "1660076465f1e811f4-0",
+        "1660076465f1e811f4-1",
+        "1660076465f1e811f4-2",
+        "7c26ebf9-9f0f-4f89-a025-4868a8e8855f",
+        "9e45f6ba-ce45-4182-ab2f-4f8bcd8f6681",
+        "1660076465f1e811f4-4",
+        "b94b4ba9-d47e-4003-8a27-597acb9b7952",
+        "91345035-5b96-4951-8a1e-d62883b97573",
+        "b1b69a37-56f7-497e-b973-6abbf1bb8a51",
+        "08cad6de-133a-438f-9a28-8990559de84f"
+      ],
+      "settings": {
+        "show_navigation": false,
+        "title": "Frequently asked questions",
+        "content": "",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "17297101183d2e6360": {
+      "type": "apps",
+      "custom_css": [
+        "@media (max-width: 1024px) {.tolstoy-carousel-container {margin-top: 0px; }}",
+        "@media (max-width: 600px) {.tolstoy-carousel-container {margin: -30px 0px 0px 24px; } .tolstoy-carousel-arrow-button {display: none; }}",
+        "@media (min-width: 1024px) {.tolstoy-carousel-container {max-width: 48% !important; margin-top: -80px; margin-left: auto; margin-right: 0px; } .tolstoy-video-carousel-container {max-width: 90% !important; }}",
+        "@media (min-width: 1500px) {.tolstoy-video-carousel-container {max-width: 690px !important; padding-left: 15px; }}"
+      ],
+      "settings": {
+        "include_horizontal_margins": true,
+        "include_vertical_margins": true
+      }
+    }
+  },
+  "order": [
+    "rich_text_8NgTVz",
+    "main",
+    "e9dc35e4-0664-46cf-ad4f-0d4aa37441e3",
+    "product_item_nDWeCY",
+    "c4d5d849-903b-4f94-a366-9dd19f7a438e",
+    "7093bb3e-6e7a-4e7c-b3dd-09080160deb5",
+    "product-content",
+    "3afaf0dd-bef3-46c5-9f9d-42e70684a19b",
+    "3a5567fb-8e7e-4cb3-bb8e-f2c156493a67",
+    "ff560379-7d10-4627-a4dc-278938136553",
+    "84dd6a94-028e-44de-a5af-eed905356deb",
+    "image_with_text_GYT8DM",
+    "cfffb33b-6a18-484b-af56-b40301e1f632",
+    "b97def7a-4167-4995-aeed-ca9dcdcf40b5",
+    "8512ccfe-ca7f-4b2f-a0e2-70f92c988a05",
+    "8677f37a-5180-4ed3-8ef5-57b6acaae572",
+    "image_with_text_zbdBqG",
+    "rich_text_cxKrM8",
+    "rich_text_VU6KWF",
+    "2b1cb403-5565-464f-97a6-c15e724dad1a",
+    "a82c5f6c-8f61-455c-8e88-fefb5e155ec4",
+    "af3b67a6-d614-4707-afda-9d7b66d3addc",
+    "59ab30f9-1c7c-4bf9-8217-9f0f095a6238",
+    "166007646669623aaa",
+    "17297101183d2e6360"
+  ]
+}

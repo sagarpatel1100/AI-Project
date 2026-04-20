@@ -1,0 +1,47 @@
+<style>
+  .fd-wrap{font-family:'Poppins',sans-serif;border-radius:10px;overflow:hidden;max-width:580px;background:#fff;margin:0px auto 18px;}
+  .fd-header{background:#FFC200;text-align:center;padding:8px 15px;font-size:13px;font-weight:700;color:#000;margin:0}
+  .fd-body{display:grid;grid-template-columns:1fr auto;grid-template-rows:auto auto;align-items:center;padding:15px;gap:4px 16px;border:1px solid #e0e0e0; border-top: none; border-radius:0px 0px 10px 10px;}
+  .fd-title{grid-column:1;grid-row:1;font-size:13px;font-weight:700;color:#000;margin:0}
+  .fd-sub{grid-column:1;grid-row:2;font-size:14px;font-weight:400;color:#000;margin:0}
+  .fd-sub span{font-weight:500}
+  .fd-countdown{grid-column:2;grid-row:1/3;display:flex;gap:8px;align-items:center}
+  .fd-unit{width:54px;height:54px;background:rgba(255,194,0,.05);border-radius:2.6px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1px}
+  .fd-num{font-size:26px;font-weight:700;color:#FFC200;line-height:1;margin:0}
+  .fd-lbl{font-size:13px;font-weight:400;color:#000;margin:0;line-height:1}
+  @media(max-width:480px){
+    .fd-title{grid-column:1/3;grid-row:1}
+    .fd-sub{grid-column:1;grid-row:2;font-size:13px}
+    .fd-countdown{grid-column:2;grid-row:2}
+    .fd-unit{width:44px;height:44px}
+    .fd-num{font-size:21px}
+    .fd-lbl{font-size:10px}
+  }
+</style>
+
+<div class="fd-wrap">
+  <p class="fd-header">FATHER'S DAY — JUNE 15</p>
+  <div class="fd-body">
+    <p class="fd-title">A WATCH YOUR OLD MAN WOULD RESPECT.</p>
+    <p class="fd-sub">Don't scramble last minute, <span>lock it in now.</span></p>
+    <div class="fd-countdown">
+      <div class="fd-unit"><span class="fd-num" id="fd-days">00</span><span class="fd-lbl">DAYS</span></div>
+      <div class="fd-unit"><span class="fd-num" id="fd-hrs">00</span><span class="fd-lbl">HRS</span></div>
+      <div class="fd-unit"><span class="fd-num" id="fd-min">00</span><span class="fd-lbl">MIN</span></div>
+      <div class="fd-unit"><span class="fd-num" id="fd-sec">00</span><span class="fd-lbl">SEC</span></div>
+    </div>
+  </div>
+</div>
+
+<script>
+  function updateCountdown(){
+    var diff=new Date('2026-06-15T00:00:00')-new Date();
+    if(diff<0)diff=0;
+    document.getElementById('fd-days').textContent=String(Math.floor(diff/864e5)).padStart(2,'0');
+    document.getElementById('fd-hrs').textContent=String(Math.floor((diff%864e5)/36e5)).padStart(2,'0');
+    document.getElementById('fd-min').textContent=String(Math.floor((diff%36e5)/6e4)).padStart(2,'0');
+    document.getElementById('fd-sec').textContent=String(Math.floor((diff%6e4)/1e3)).padStart(2,'0');
+  }
+  updateCountdown();
+  setInterval(updateCountdown,1000);
+</script>

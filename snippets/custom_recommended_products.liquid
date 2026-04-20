@@ -1,0 +1,742 @@
+{% assign bundle2_product = all_products["essentials-six-pack-for-blaze-type-s"] %}
+{% assign variant_s = bundle2_product.variants | where: "id", 53372893462900 | first %}
+{% assign variant_r = bundle2_product.variants | where: "id", 53372893495668 | first %}
+
+{% assign edge_product = all_products["essentials-six-pack-for-carbinox-edge"] %}
+{% assign variant_edge = edge_product.variants | where: "id", 53732941594996 | first %}
+
+{% comment %}
+{% assign found_variant = false %}
+
+{% for item in cart.items %}
+  {% if item.variant.id == 52098694480244 or item.variant.id == 53464133468532 %}
+    {% assign found_variant = true %}
+  {% endif %}
+{% endfor %}
+
+{% unless found_variant %}
+  <div class="bundle-offer metalband-gift-cart">
+    <div class="offer-bonus-cart">
+    <span class="offer-bonus__text">
+      Add this and get our new <strong style="font-weight: 600">Tactical Blastbeam</strong> 
+      <span class="free-badge">FOR FREE!</span>
+    </span>
+    <img src="https://cdn.shopify.com/s/files/1/0049/0533/6935/files/blastbeam-cart.webp?v=1755526978" alt="Blastbeam">
+  </div>
+
+  <div class="bundle-products" style="margin: 0px auto; max-width: 90%;">
+    <div class="product-box" style="display: flex;">
+      <img style="max-width: 30%" src="https://shopcarbinox.com/cdn/shop/files/Disenosintitulo-2025-05-13T170452.419-min_400x.png?v=1747170568" alt="Carbinox Black Metal">
+      <div>
+      
+      <p style="text-align: left;" class="product-box-title">Black Metal Band Pro V2 & ToolKit [22mm]
+      <span class="discount-upsell">
+            50% OFF
+          </span>
+      </p>
+      <p style="display: flex; align-items: center; gap: 5px;" class="product-pricing">
+        <span class="price">$19.95</span>
+        <span class="compare">$39.95</span>
+      </p>
+    </div>
+    </div>
+  </div>
+
+  <button onclick="addWallet(this)" class="bundle-btn" data-variant-id="52098694480244">
+    GET OFFER →
+  </button>
+</div>
+
+  <div class="bundle-offer metalband-cart-test" style="display: none">
+
+  <div class="bundle-products" style="margin: 0px; max-width: 90%;">
+    <div class="product-box" style="display: flex;">
+      <img style="max-width: 30%" src="https://shopcarbinox.com/cdn/shop/files/Disenosintitulo-2025-05-13T170452.419-min_400x.png?v=1747170568" alt="Carbinox Black Metal">
+      <div>
+      
+      <p style="text-align: left;" class="product-box-title">Black Metal Band Pro V2 & ToolKit [22mm]
+      <span class="discount-upsell">
+            75% OFF
+          </span>
+      </p>
+      <p style="display: flex; align-items: center; gap: 5px;" class="product-pricing">
+        <span class="price">$9.95</span>
+        <span class="compare">$39.95</span>
+      </p>
+    </div>
+    </div>
+  </div>
+
+  <button onclick="addWallet(this)" class="bundle-btn" data-variant-id="53464133468532">
+    GET OFFER →
+  </button>
+</div>
+{% endunless %}
+{% endcomment %}
+ 
+<div class="bundle-offer" style="display:none;">
+  <div class="bundle-header">
+    <span class="highlight">Get $150 of value...</span>
+    <span class="pay-text">only pay 1/3 of that now:</span>
+  </div>
+
+  <div class="bundle-products">
+    <div class="product-box">
+      <img src="https://cdn.shopify.com/s/files/1/0049/0533/6935/files/1-170967.jpg?v=1732036842" alt="Carbinox Wallet Pro">
+      <p class="product-box-title">Carbinox Wallet Pro</p>
+      <p class="product-pricing">
+        <span class="price">$49.95</span>
+        <span class="compare">$99.95</span>
+      </p>
+    </div>
+
+    <div class="equal-sign">=</div>
+
+    <div class="product-box">
+      <img src="https://cdn.shopify.com/s/files/1/0049/0533/6935/files/Link_Carbinox_Blaze.png?v=1758052715" alt="Carbinox Sunglasses">
+      <p class="product-box-title">Carbinox Sunglasses</p>
+      <p class="free-tag">FREE</p>
+    </div>
+  </div>
+
+  <button onclick="addWallet(this)" class="bundle-btn" data-variant-id="53372904309108">
+    CLAIM $150 IN VALUE FOR $49.95 →
+  </button>
+</div>
+
+            <div class="bundle-xmas-container">       
+              <h2 class="title-bundle-xmas">Buy a Wallet Pro. <br/> Get 3 Blastbeam FOR FREE:</h2>  
+              <img 
+                class="bundle-xmas-img"
+                src="https://cdn.shopify.com/s/files/1/0049/0533/6935/files/Frame_1984078328.png?v=1765251040"
+                alt="Carbinox Xmas Bundle"
+              >
+              <button 
+                class="bundle-xmas-btn"
+                data-variant-id="53738144301428"
+                onclick="bundleXmasAddTwo(this)"
+              >
+                ADD TO ORDER →
+              </button>
+            </div>
+
+<div class="bundle2-offer">
+  <h2 class="title">Things happen, be prepared.</h2>
+  <p class="title">Get 6 accessories for <span style="color: #E70000; font-weight: bold;">$4.99 each.</span></p>
+
+  <div class="bundle2-selector">
+    <p class="pack-title">Select your pack: <span style="font-weight: 500" id="bundle2-selected-text">Type S [Square]</span></p>
+    <div class="bundle2-options">
+      <button 
+        class="bundle2-option bundle2-active" 
+        data-variant-id="{{ variant_s.id }}" 
+        data-img="{{ variant_s.featured_image | img_url: '400x' }}"
+        data-label="Type S [Square]"
+        onclick="bundle2Select(this)">
+        For Type S
+      </button>
+      <button 
+        class="bundle2-option" 
+        data-variant-id="{{ variant_r.id }}" 
+        data-img="{{ variant_r.featured_image | img_url: '400x' }}"
+        data-label="Type R [Round]"
+        onclick="bundle2Select(this)">
+        For Type R
+      </button>
+    </div>
+  </div>
+
+  <div class="bundle2-details">
+    <div style="display: flex;flex-direction: column;align-items: center;flex: 1;">
+        <img id="bundle2-image" src="{{ variant_s.featured_image | img_url: '400x' }}" alt="Accessory pack" width="75" />
+         <p style="font-size: 12px; margin: 0px;">Six-pack accessories</p>
+
+            <p style="font-weight:bold; margin: 0px;">$29.95<span style="text-decoration: line-through; opacity: 0.7; margin-left: 5px;">$99.95</span></p>
+    </div>
+    <div class="list-details-glass" style="display: flex; flex-direction: column;flex:1;">
+            <p class="detail" style="margin-bottom: 10px;"><span style="color: #E70000;">+</span> 3x Tempered Glass</p>
+            <p class="detail"><span style="color: #E70000;">+</span> 3x Charging Cord</p>
+        <div style="margin-top: 16px;">
+            <p style="margin: 0; font-size: 12px; margin-bottom: 3px; line-height: 22.5px; text-align: left;">Regular Cost: $99.95</p>
+            <p style="margin: 0; border-radius: 2px; padding: 1px 4px; font-size: 15px; font-weight: 600; line-height: 120%; background: #E70000; color: white; width: fit-content;">
+                You pay: $29.95
+            </p>
+        </div>
+    </div>
+  </div>
+
+      <button 
+        style="margin-top: 10px; align-self: center;"  
+        class="bundle-btn" 
+        data-variant-id="53372893462900"
+        onclick="bundle2AddSelected(this)">YES, GET ACCESSORIES FOR $4.99 NOW →
+      </button>
+</div>
+
+
+<div class="test-recommendations" style="display: none; --bg-image: url('https://cdn.shopify.com/s/files/1/0049/0533/6935/files/bg-cart-2.webp?v=1769095666');">
+<div class="bundle2-offer test" style="background: var(--bg-image); aspect-ratio: 36 / 27; display: flex; flex-direction: column; justify-content: end; background-size: contain; margin: 0px 20px; background-repeat: no-repeat; padding: 18px; padding-bottom: 20px;">
+
+  <div class="bundle2-selector" style="width: 100%;">
+    <p class="pack-title" style="color: white; text-align: center;">Select your pack: <span style="font-weight: 500" id="bundle2-selected-text">Type S [Square]</span></p>
+    <div class="bundle2-options">
+      <button 
+        class="bundle2-option test-bundle-option bundle2-active" 
+        style="flex: 1;"
+        data-variant-id="{{ variant_s.id }}" 
+        data-img="{{ variant_s.featured_image | img_url: '400x' }}"
+        data-label="Type S [Square]"
+        onclick="bundle2Select(this)">
+        For Type S
+      </button>
+      <button 
+        class="bundle2-option test-bundle-option edge-bundle2-option" 
+        style="flex: 1; display: none;"
+        data-variant-id="{{ variant_edge.id }}" 
+        data-img="{{ variant_edge.featured_image | img_url: '400x' }}"
+        data-label="Edge"
+        onclick="bundle2Select(this, 'https://cdn.shopify.com/s/files/1/0049/0533/6935/files/cardupsells_1.webp?v=1774037577')">
+        For Edge
+      </button>
+      <button 
+        class="bundle2-option test-bundle-option" 
+        style="flex: 1;"
+        data-variant-id="{{ variant_r.id }}" 
+        data-img="{{ variant_r.featured_image | img_url: '400x' }}"
+        data-label="Type R [Round]"
+        onclick="bundle2Select(this)">
+        For Type R
+      </button>
+    </div>
+  </div>
+
+      <button 
+        style="margin-top: 10px; align-self: center; width: 100%; background: #FFC200; color: black" 
+        class="bundle-btn" 
+        data-variant-id="53372893462900"
+        onclick="window.bundleAddTest(this)">GET ACCESSORIES FOR $4.99 NOW ➔
+      </button>
+</div>
+
+  <div style="background: url('https://cdn.shopify.com/s/files/1/0049/0533/6935/files/bg-cart-wallet.webp?v=1769096948'); aspect-ratio: 36 / 17; display: flex; flex-direction: column; justify-content: end; background-size: contain; margin: 15px 20px; padding: 20px;">
+
+    <button 
+      style="background: #ffc200; color: black; max-width: fit-content; padding: 5px 13px;"
+      class="bundle-xmas-btn"
+      data-variant-id="53738144301428"
+      onclick="bundleXmasAddTwo(this)"
+    >
+      ADD TO ORDER →
+    </button>
+  </div>
+
+  {% assign cart_variant_ids = '' %}
+
+  {% for item in cart.items %}
+    {% assign cart_variant_ids = cart_variant_ids | append: item.variant_id | append: ',' %}
+  {% endfor %}
+
+  {% if collections['upsells-cart'].products.size > 0 %}
+    <div class="you-may-also-like">
+      <h2 class="ymal-title">YOU MAY ALSO LIKE:</h2>
+
+    <div class="ymal-wrapper">
+
+    <button class="ymal-arrow ymal-prev">
+      <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M5.11073 0.467879C5.10899 0.590343 5.05893 0.707157 4.97145 0.792879L1.11788 4.64645L4.97145 8.50002C5.03851 8.58943 5.07106 8.70003 5.06314 8.8115C5.05522 8.92298 5.00735 9.02787 4.92832 9.10689C4.84929 9.18592 4.74441 9.23379 4.63293 9.24171C4.52145 9.24963 4.41086 9.21708 4.32145 9.15002L0.142879 4.97145C0.0978465 4.93013 0.0618923 4.87991 0.0372965 4.82396C0.0127007 4.76801 0 4.70756 0 4.64645C0 4.58533 0.0127007 4.52489 0.0372965 4.46894C0.0618923 4.41299 0.0978465 4.36277 0.142879 4.32145L4.32145 0.142879C4.36277 0.0978465 4.41299 0.0618923 4.46894 0.0372965C4.52489 0.0127007 4.58533 0 4.64645 0C4.70756 0 4.76801 0.0127007 4.82396 0.0372965C4.87991 0.0618923 4.93013 0.0978465 4.97145 0.142879C5.05893 0.2286 5.10899 0.345414 5.11073 0.467879Z" fill="#302F2F"/>
+      </svg>
+    </button>
+
+      <div class="ymal-grid" id="ymalSlider">
+        {% for product in collections['upsells-cart'].products limit: 7 %}
+          {% assign variant = product.selected_or_first_available_variant %}
+          {% assign variant_id_string = variant.id | append: ',' %}
+
+          {% unless cart_variant_ids contains variant_id_string %}
+            <div class="ymal-card">
+              <div class="ymal-image">
+                <img
+                  src="{{ product.featured_image | img_url: '400x' }}"
+                  alt="{{ product.title }}"
+                  loading="lazy"
+                >
+              </div>
+
+              <div class="ymal-info">
+                {% if variant.compare_at_price > variant.price %}
+                  {% assign savings = variant.compare_at_price | minus: variant.price %}
+                  {% assign savings_percent = savings | times: 100 | divided_by: variant.compare_at_price %}
+                  <span class="ymal-badge">
+                    SAVE {{ savings_percent | round }}%
+                  </span>
+                {% endif %}
+
+                <h3 class="ymal-product-title">
+                  {{ product.title | replace: 'Carbinox Edge Smartwatch – Ultimate Pack', 'Carbinox Edge' }}
+                </h3>
+
+                <div class="ymal-price">
+                  <span class="price">${{ variant.price | money_without_currency }}</span>
+                  {% if variant.compare_at_price > variant.price %}
+                    <span class="compare">${{ variant.compare_at_price | money_without_currency }}</span>
+                  {% endif %}
+                </div>
+
+                <button
+                  class="ymal-btn"
+                  data-variant-id="{{ variant.id }}"
+                  onclick="bundleXmasAddTwo(this)"
+                >
+                  ADD TO CART →
+                </button>
+              </div>
+            </div>
+          {% endunless %}
+        {% endfor %}
+      </div>
+    
+    <button class="ymal-arrow ymal-next">
+      <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M-0.00136085 8.77431C0.000383429 8.65184 0.050447 8.53503 0.137925 8.44931L3.9915 4.59574L0.137926 0.742167C0.0708692 0.652759 0.0383141 0.542162 0.0462368 0.430684C0.0541595 0.319204 0.102028 0.214323 0.181054 0.135296C0.260081 0.0562692 0.364962 0.0084005 0.476442 0.000478339C0.587921 -0.00744382 0.698517 0.0251108 0.787926 0.0921665L4.9665 4.27074C5.01153 4.31206 5.04748 4.36228 5.07208 4.41823C5.09667 4.47418 5.10938 4.53462 5.10938 4.59574C5.10938 4.65685 5.09667 4.7173 5.07208 4.77325C5.04748 4.8292 5.01153 4.87942 4.9665 4.92074L0.787925 9.09931C0.746607 9.14434 0.696382 9.18029 0.640435 9.20489C0.584488 9.22949 0.52404 9.24219 0.462925 9.24219C0.40181 9.24219 0.341362 9.22949 0.285415 9.20489C0.229468 9.18029 0.179243 9.14434 0.137925 9.09931C0.050447 9.01359 0.000383407 8.89677 -0.00136085 8.77431Z" fill="#302F2F"/>
+      </svg>
+    </button>
+
+    </div>
+    </div>
+{% endif %}
+</div>
+
+<style>
+    .bundle2-offer {
+        padding: 10px 20px;
+        border-top: 0.5px solid #D4D4D4;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .bundle2-offer .title {
+        font-size: 15px;
+        line-height: 140%;
+        font-weight: 600;
+        margin: 0;
+        text-align: center;
+    }
+    .bundle2-offer .pack-title {
+        font-size: 12px;
+        line-height: 24px;
+        margin: 0px;
+        margin-bottom: 5px;
+        text-align: left;
+    }
+    .list-details-glass .detail {font-size: 13px; text-align: left; margin: 0px; line-height: 120%;}
+    .list-details-glass { display: flex; flex-direction: column; gap: 0px;}
+    .bundle2-selector { margin-top: 10px; }
+  .bundle2-options { display: flex; gap: 8px; margin: 0;}
+  .bundle2-option { width: 100%; font-size: 12px; padding: 5px 10px; border: 1px solid #D4D4D4; background: #F9F9F9; cursor: pointer; border-radius: 4px;text-align: center; }
+  .bundle2-option.bundle2-active { background: white; border: 1.5px solid black; }
+  .bundle2-details { display: flex; justify-content: space-between; margin-top: 15px; gap: 10px; }
+  .bundle2-btn { display: block; margin-top: 16px; background: #0057ff; color: white; padding: 12px 16px; border: none; border-radius: 6px; font-weight: bold; cursor: pointer; width: 100%; }
+  .bundle2-btn:disabled { opacity: 0.6; cursor: not-allowed; }
+  .bundle2-image { width: 92px; height: auto; aspect-ratio: 1/1; }
+</style>
+
+<style>
+.mini-cart__recommendations-inner {
+    padding: 0px !important;
+}
+.mini-cart__recommendations-inner .scroller,
+.mini-cart__recommendations-heading  {
+    display: none !important;
+}
+@media screen and (min-width: 1000px) {
+    .mini-cart__recommendations {
+        width: 390px;
+    }
+}
+.bundle-offer {
+  border-top: 0.5px solid #D4D4D4;
+  text-align: center;
+  width: 100%;
+  margin: 0px;
+  border-radius: 12px;
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+.bundle-header {
+  margin: 0px;
+  font-size: 18px;
+  font-weight: 600;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+}
+.bundle-header .highlight {
+  background: #E70000;
+  color: #fff;
+  padding: 1px 4px;
+  border-radius: 2px;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 120%;
+  height: fit-content;
+}
+.bundle-header .pay-text {
+  font-size: 15px;
+  color: #000;
+  line-height: 120%;
+}
+.bundle-products {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-items: baseline;
+  gap: 0px;
+  margin-top: -15px;
+}
+.product-box {
+  text-align: center;
+}
+.product-box p {
+margin: 0px;}
+.product-box img {
+  max-width: 50px;
+  aspect-ratio: 1/1;
+  margin-bottom: 7px;
+}
+.product-box-title {
+  font-size: 13px;
+  margin: 8px 0 4px;
+}
+.product-pricing {
+  font-size: 15px;
+  font-weight: bold;
+}
+.product-pricing .price {
+  color: #000;
+  margin-right: 5px;
+}
+.product-pricing .compare {
+  text-decoration: line-through;
+  opacity: 0.7;
+}
+.equal-sign {
+  font-size: 20px;
+  color: #E70000;
+  font-weight: bold;
+  position: relative;
+  bottom: -20px;
+}
+.free-tag {
+  display: inline-block;
+  background: #FFC107;
+  color: #000;
+  font-weight: bold;
+  padding: 0px 13px;
+  border-radius: 2px;
+  font-size: 12px;
+}
+.bundle-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  margin: auto;
+  background: #0023FF;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 8px;
+  height: fit-content;
+  border: none;
+  border-radius: 6px;
+  margin: 0px;
+  cursor: pointer;
+}
+.bundle-btn:hover {
+  background: #003ecc;
+}
+
+
+.offer-bonus-cart {
+  border: 0.5px solid #FFC200;
+  background: #FFFAE8;
+  padding: 8px 10px;
+  border-radius: 8px;
+  margin: auto;
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 13px;
+  position: relative;
+  max-width: 90%;
+}
+  .offer-bonus-cart .offer-bonus__text {
+    max-width: 85%;
+  }
+
+.offer-bonus-cart img {
+    max-width: 105px;
+    height: auto;
+    position: absolute;
+    right: -35px;
+    top: -30px;
+}
+@media (min-width: 768px) {
+  .test-recommendations {
+    margin-top: 20px;
+  }
+  .offer-bonus-cart .offer-bonus__text {
+    text-align: left;
+    padding: 0px 10px;
+    padding-right: 50px;
+  }
+    .offer-bonus-cart .offer-bonus__text {
+    max-width: 90%;
+  }
+}
+
+      .bundle-xmas-btn {
+          width: 90%;
+          background-color: #0023FF; 
+          color: #FFFFFF;
+          font-family: 'Poppins', sans-serif;
+          font-size: 12px;
+          font-weight: 600;
+          border: none;
+          border-radius: 6px;
+          cursor: pointer;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          text-transform: uppercase;
+          letter-spacing: 0.5px;
+          padding: 8px 15px;
+          text-align: center;
+        }
+
+        .bundle-xmas-container {
+          padding: 20px;
+          width: 100%;
+          max-width: 420px;
+          margin: 0 auto;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 16px; 
+        }
+
+        .bundle-xmas-img {
+          width: 100%;
+          max-width: 230px;
+          height: auto;
+          display: block;
+          margin: 0 auto;
+        }
+
+        .title-bundle-xmas {
+          font-size: 15px;
+          font-weight: 600;
+          margin: 0px;
+          text-align: center;
+        }
+
+  .test-bundle-option {
+    background: #3B3B3B !important;
+    border: none !important;
+    color: white !important;
+  }
+  .test-bundle-option.bundle2-active{
+    background: #242424 !important;
+    border: 1px solid #FFC200 !important;
+  }
+
+  .you-may-also-like {
+  margin: 15px 0px 15px 20px ;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.ymal-title {
+  font-size: 16px;
+  font-weight: 500;
+  text-align: left;
+}
+.ymal-grid::-webkit-scrollbar {
+  display: none;
+}
+
+.ymal-card {
+  display: flex;
+  flex: 0 0 75%;
+  scroll-snap-align: start;
+  border: 1px solid #eee;
+  border-radius: 5px;
+  background: #fff;
+  position: relative;
+}
+.ymal-image {
+  background: #f9f9f9;
+  width: 106px;
+}
+.ymal-card img{
+  width: 106px;
+  height: 100%;
+  border-right: 1px solid #eee;
+  object-fit: contain;
+}
+.ymal-info {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  padding: 6px 10px;
+  align-items: flex-start;
+}
+.ymal-badge {
+  font-size: 8px;
+  background: #E70000;
+  padding: 0px 2px;
+  border-radius: 2px;
+  color: white;
+  width: fit-content;
+  line-height: 130%;
+}
+.ymal-product-title{
+  font-size: 14px;
+  letter-spacing: 0em;
+  font-weight: 400;
+  line-height: 100%;
+  margin: 0px;
+  text-align: left;
+}
+
+.ymal-price span {
+  font-size: 14px;
+}
+.ymal-price .price {
+  font-weight: 700;
+}
+.ymal-price .compare {
+  color: #3B3B3B;
+  text-decoration: line-through;
+}
+.ymal-btn {
+  background: black;
+  color: white;
+  width: fit-content;
+  padding: 5px 10px;
+  font-weight: 700;
+  border-radius: 3px;
+  font-size: 12px;
+}
+
+
+.ymal-wrapper {
+  position: relative;
+}
+.ymal-wrapper {
+  position: relative;
+}
+
+.ymal-grid {
+  display: flex;
+  gap: 10px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  scroll-snap-type: x mandatory;
+  padding-bottom: 10px;
+  position: relative;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+.ymal-grid::-webkit-scrollbar {
+  height: 6px;
+}
+
+.ymal-grid::-webkit-scrollbar-track {
+  background: #eee;
+}
+
+.ymal-grid::-webkit-scrollbar-thumb {
+  background: #999;
+  border-radius: 4px;
+    }
+
+
+.ymal-card {
+  flex: 0 0 75%;
+  scroll-snap-align: start;
+}
+
+.ymal-arrow {
+  position: absolute;
+  top: 45%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: none;
+  background: white;
+  cursor: pointer;
+  z-index: 10;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ymal-prev {
+  left: -5px;
+}
+
+.ymal-next {
+  right: -5px;
+}
+
+@media (max-width: 768px){
+.ymal-arrow {
+  display: none;
+}
+}
+</style>
+
+<script>
+document.addEventListener("click", function(e) {
+  const wrapper = e.target.closest(".ymal-wrapper");
+  if (!wrapper) return;
+
+  const slider = wrapper.querySelector(".ymal-grid");
+  if (!slider) return;
+
+  const card = slider.querySelector(".ymal-card");
+  if (!card) return;
+
+  const cardWidth = card.offsetWidth;
+  const gap = parseInt(getComputedStyle(slider).gap) || 0;
+  const scrollAmount = cardWidth + gap;
+
+  if (e.target.closest(".ymal-next")) {
+    console.log("➡️ Next");
+    slider.scrollBy({
+      left: scrollAmount,
+      behavior: "smooth"
+    });
+  }
+
+  if (e.target.closest(".ymal-prev")) {
+    console.log("⬅️ Prev");
+    slider.scrollBy({
+      left: -scrollAmount,
+      behavior: "smooth"
+    });
+  }
+});
+</script>

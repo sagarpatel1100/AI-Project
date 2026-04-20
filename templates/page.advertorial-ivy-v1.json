@@ -1,0 +1,789 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "8d5248e8-84fc-4dbf-b95d-e1e337c74106": {
+      "type": "custom-html",
+      "custom_css": [
+        "div {padding: 0.5px;}"
+      ],
+      "settings": {
+        "subheading": "",
+        "title": "",
+        "html": "<center>\n<img src=\"https://cdn.shopify.com/s/files/1/0049/0533/6935/files/THESMARTWATCHEXPERT_1000_x_150_px.png?v=1703011459\">\n</center>",
+        "add_vertical_spacing": false,
+        "background_type": "full_width",
+        "background": "#ffffff",
+        "text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "9c58ebda-9463-4e49-aca3-be201311e1c2": {
+      "type": "rich-text",
+      "disabled": true,
+      "custom_css": [
+        "H2 {font-size: 13px; letter-spacing: 0.1px;}",
+        "h3 {font-size: 18px;}",
+        "div {padding-block: 2px; background: #009f1f;}"
+      ],
+      "settings": {
+        "section_id": "",
+        "subheading": "🎄 CHRISTMAS LIMITED OFFERS AVAILABLE AT THE BOTTOM OF THIS ARTICLE!",
+        "title": "",
+        "content": "",
+        "button_text": "",
+        "button_link": "",
+        "background_type": "full_width",
+        "text_width": "fill",
+        "text_position": "center",
+        "text_alignment": "center",
+        "background": "#009f1f",
+        "text_color": "#ffffff",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "show_title": true,
+        "page_width": "medium"
+      }
+    },
+    "d6fca1b9-edb4-42c8-9ee7-ddd89a063d89": {
+      "type": "rich-text",
+      "custom_css": [
+        "h3 {font-size: 22px; margin-bottom: -10px;}",
+        "h5 {color: #de2a2a; font-size: 15px;}",
+        "div {margin-left: 1px; margin-bottom: -7px; padding: 2px; margin-top: -5px; line-height: 1.3;}"
+      ],
+      "settings": {
+        "section_id": "",
+        "subheading": "fitness and sports > technology > smartwatches",
+        "title": "THIS NEW \"durable FITNESS WATCH\" IS ALL over tiktok AND SELLING LIKE CRAZY, SEE WHY...",
+        "content": "<h5><a href=\"/products/carbinox-ivy\" title=\"Carbinox Ivy\"><strong>ATTENTION: YOU COULD FEEL EAGER TO GET INTO THEIR </strong><span style=\"text-decoration:underline\"><strong>WEBSITE HERE</strong></span><strong> AND BUY IN THE NEXT 20 MINUTES!</strong></a></h5>",
+        "button_text": "",
+        "button_link": "",
+        "background_type": "full_width",
+        "text_width": "fill",
+        "text_position": "left",
+        "text_alignment": "left",
+        "background": "#f9f9f9",
+        "text_color": "#000000",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "ae0d0d05-b27c-4c56-b039-66464cc69948": {
+      "type": "custom-html",
+      "settings": {
+        "subheading": "",
+        "title": "",
+        "html": "<center>\n<img src=\"https://cdn.shopify.com/s/files/1/0049/0533/6935/files/AS_FEATURED_IN.png?v=1701864388\">\n</center>",
+        "add_vertical_spacing": false,
+        "background_type": "full_width",
+        "background": "#f9f9f9",
+        "text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "ce8f96f6-63a7-48e2-8d9f-91e515f32d3b": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--14803068158055__ce8f96f6-63a7-48e2-8d9f-91e515f32d3b-item-1": {
+          "type": "item",
+          "settings": {
+            "show_video": false,
+            "video_link": "",
+            "image": "shopify://shop_images/Diseno_sin_titulo_19.png",
+            "tab_label": "Item",
+            "subheading": "",
+            "title": "",
+            "content": "<h5>📌 DECEMBER 11TH, 2023 BY SABRINA THOMPSON<br/><a href=\"/products/carbinox-vesta\" title=\"Carbinox Vesta Gloss Black\"><span style=\"text-decoration:underline\"><strong>IMAGE SOURCE: SHOPCARBINOX.COM/PRODUCTS/CARBINOX-IVY</strong></span></a></h5>",
+            "button_text": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--14803068158055__ce8f96f6-63a7-48e2-8d9f-91e515f32d3b-item-1"
+      ],
+      "custom_css": [
+        "div {margin-bottom: 8px; margin-left: -1px;}",
+        "h5 {font-size: 10px;}"
+      ],
+      "settings": {
+        "section_id": "",
+        "reveal_on_scroll": false,
+        "background_type": "full_width",
+        "background_overlap": "image",
+        "image_position": "left",
+        "text_alignment": "left",
+        "cycle_speed": 8,
+        "accent_background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)",
+        "enable_custom_margin": false,
+        "margin_bottom": 0
+      }
+    },
+    "01fa6cd5-dd1a-4a21-8a1d-3bfb7192a746": {
+      "type": "rich-text",
+      "custom_css": [
+        "h4 {font-size: 16px;}",
+        "h3 {font-size: 24px;}"
+      ],
+      "settings": {
+        "section_id": "",
+        "subheading": "",
+        "title": "the quest for a smartwatch that had it alL.",
+        "content": "<p><strong>Britney, a vibrant 28-year-old fitness instructor from California, lives for her high-intensity workouts and outdoor adventures. </strong></p><p><strong>Her days are a blend of yoga sessions, crossfit challenges, and long hikes under the sun. </strong></p><p><strong>Always on the go, Britney sought a smartwatch that could keep up with her active lifestyle. </strong></p><p><strong>FUNNY THING: </strong><span style=\"text-decoration:underline\"><strong>She thought it was gonna be super easy.</strong></span></p>",
+        "button_text": "",
+        "button_link": "",
+        "background_type": "full_width",
+        "text_width": "fill",
+        "text_position": "left",
+        "text_alignment": "left",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "f3d526ef-cc1d-49cc-b412-1f4f5babe7af": {
+      "type": "image-with-text",
+      "blocks": {
+        "f76f51e9-d5e7-46e4-90dd-660dd651dcc7": {
+          "type": "item",
+          "settings": {
+            "show_video": false,
+            "video_link": "",
+            "image": "shopify://shop_images/1_dd19ee93-2ad0-464b-96b6-91f44e6038ea.png",
+            "tab_label": "Item",
+            "subheading": "",
+            "title": "STRUGGLING WITH FRAGILITY.",
+            "content": "<p><strong>Britney’s journey was fraught with disappointments. She had gone through several high-end smartwatches, but each one failed her. </strong></p><p><strong>They either got scratched during her rugged workouts or simply broke, unable to withstand the intensity. </strong></p><h4>“I WAS JUST TIRED OF SPENDING HUNDREDS OF DOLLARS ON WATCHES THAT COULDN’T SURVIVE A WEEK WITH ME, IT'S NOT MY FAULT SOMETIMES I COULD GO TOO FAR WITH MY WORKOUTS 😂” </h4>",
+            "button_text": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "f76f51e9-d5e7-46e4-90dd-660dd651dcc7"
+      ],
+      "custom_css": [
+        "h3 {font-size: 22px;}",
+        "div {margin-top: -10px; margin-bottom: px; margin-left: -1px;"
+      ],
+      "settings": {
+        "section_id": "",
+        "reveal_on_scroll": false,
+        "background_type": "full_width",
+        "background_overlap": "both",
+        "image_position": "right",
+        "text_alignment": "left",
+        "cycle_speed": 8,
+        "accent_background": "#f9f9f9",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)",
+        "enable_custom_margin": false,
+        "margin_bottom": 0
+      }
+    },
+    "1034ff40-84c6-4460-83e4-9e15d2f5d397": {
+      "type": "rich-text",
+      "custom_css": [
+        "h3 {font-size: 22px;}",
+        "div {margin-left: -1px;}"
+      ],
+      "settings": {
+        "section_id": "",
+        "subheading": "",
+        "title": "THE 24-HOUR DISAPPOINTMENT.",
+        "content": "<p><strong>Another constant battle was with battery life. Busy with back-to-back fitness sessions, Britney often forgot to charge her watch, leaving her disconnected during crucial times because they didn't even last longer than 24 hours.</strong></p><p></p><h4><strong>“I NEED A WATCH THAT LASTS LONGER THAN A DAY, NOT SOMETHING I HAVE TO BABYSIT”</strong></h4>",
+        "button_text": "",
+        "button_link": "",
+        "background_type": "full_width",
+        "text_width": "fill",
+        "text_position": "left",
+        "text_alignment": "left",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "55e65fb5-d422-4957-b512-21f5068a90aa": {
+      "type": "image-with-text",
+      "blocks": {
+        "efcb0d79-c43e-4902-a0a9-d3425dcd5a6b": {
+          "type": "item",
+          "settings": {
+            "show_video": false,
+            "video_link": "",
+            "image": "shopify://shop_images/DALL_E_2023-12-21_07.33.45_-_A_smartwatch_entirely_covered_in_dollar_bills_displayed_on_a_woman_s_wrist._The_screen_of_the_smartwatch_is_partly_visible_beneath_the_neatly_arrange-min.png",
+            "tab_label": "Item",
+            "subheading": "",
+            "title": "The Price Tag Dilemma.",
+            "content": "<p><strong>Britney also observed how smartwatches had become a luxury. “It felt like these gadgets were made for people who just sit in cafes, showing off their tech, not for real fitness enthusiasts like me,” she said, highlighting the steep prices that didn't align with her values.<br/><br/></strong></p>",
+            "button_text": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "efcb0d79-c43e-4902-a0a9-d3425dcd5a6b"
+      ],
+      "custom_css": [
+        "h3 {font-size: 22px;}",
+        "div {margin-top: -10px; margin-bottom: px; margin-left: -1px;"
+      ],
+      "settings": {
+        "section_id": "",
+        "reveal_on_scroll": false,
+        "background_type": "full_width",
+        "background_overlap": "both",
+        "image_position": "right",
+        "text_alignment": "left",
+        "cycle_speed": 8,
+        "accent_background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)",
+        "enable_custom_margin": false,
+        "margin_bottom": 0
+      }
+    },
+    "1f4d029d-91c1-4aa3-850c-eae0913b707d": {
+      "type": "rich-text",
+      "custom_css": [
+        "h3 {font-size: 22px;}",
+        "div {margin-left: -1px;}"
+      ],
+      "settings": {
+        "section_id": "",
+        "subheading": "",
+        "title": "NOT ONLY THAT, TO ADD MORE TO THEIR WRONGFUL CHOICE, SHE EXPERIENCED:",
+        "content": "<p><strong>❌ INCONSISTENT CONNECTIVITY: </strong>Losing sync in the middle of tasks from their smartphone to the smartwatch.<br/><strong>❌ COMPLEX INTERFACES:</strong> Difficult navigation, especially on-the-go.<br/><strong>❌ UNCOMFORTABLE DESIGN:</strong> Bulky, unergonomic design, tight and non-adjustable wrist bands.<br/><strong>❌ INACCURATE STATS: </strong>Inconsistent health tracking, lack of sports modes, etc.</p>",
+        "button_text": "",
+        "button_link": "",
+        "background_type": "full_width",
+        "text_width": "fill",
+        "text_position": "left",
+        "text_alignment": "left",
+        "background": "#373737",
+        "text_color": "#ffffff",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "d38477ff-c0eb-4dd0-a3e9-fd19f21edb29": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--14803068158055__d38477ff-c0eb-4dd0-a3e9-fd19f21edb29-item-1": {
+          "type": "item",
+          "settings": {
+            "show_video": false,
+            "video_link": "",
+            "image": "shopify://shop_images/3-min-14.png",
+            "tab_label": "Item",
+            "subheading": "",
+            "title": "but everything changed when Stacy (Britney's friend) stumbled upon a TikTok Ad and got the Carbinox Ivy, the one that would change Britney's life, literally 😂",
+            "content": "",
+            "button_text": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--14803068158055__d38477ff-c0eb-4dd0-a3e9-fd19f21edb29-item-1"
+      ],
+      "custom_css": [
+        "h3 {font-size: 16px;}"
+      ],
+      "settings": {
+        "section_id": "",
+        "reveal_on_scroll": false,
+        "background_type": "full_width",
+        "background_overlap": "both",
+        "image_position": "left",
+        "text_alignment": "center",
+        "cycle_speed": 8,
+        "accent_background": "#000000",
+        "text_color": "#ffffff",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)",
+        "enable_custom_margin": false,
+        "margin_bottom": 8
+      }
+    },
+    "ed024444-f169-4ccb-a07e-42dbc87686ba": {
+      "type": "image-with-text",
+      "blocks": {
+        "5c2a9485-289d-404d-9ecf-fe9faf973572": {
+          "type": "item",
+          "settings": {
+            "show_video": true,
+            "video_link": "https://cdn.shopify.com/videos/c/o/v/567988048e05400cb4b4f2721f318efb.mp4",
+            "tab_label": "Item",
+            "subheading": "",
+            "title": "AFFORDABILITY MEETS DURABILITY.",
+            "content": "<p><strong>To her surprise, the </strong><a href=\"/products/carbinox-ivy\" title=\"Carbinox Ivy\"><strong>Carbinox Ivy </strong></a><strong>was different. “The moment I put it on, I knew it was different. It felt right,” Britney shares. The watch’s sleek design paired with its robust build was a game-changer.</strong></p>",
+            "button_text": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "5c2a9485-289d-404d-9ecf-fe9faf973572"
+      ],
+      "custom_css": [
+        "h3 {font-size: 22px;}",
+        "div {margin-top: -10px; margin-bottom: px; margin-left: -1px;"
+      ],
+      "settings": {
+        "section_id": "",
+        "reveal_on_scroll": false,
+        "background_type": "full_width",
+        "background_overlap": "both",
+        "image_position": "left",
+        "text_alignment": "left",
+        "cycle_speed": 8,
+        "accent_background": "#000000",
+        "text_color": "#ffffff",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)",
+        "enable_custom_margin": false,
+        "margin_bottom": 8
+      }
+    },
+    "839fd82c-76c9-428e-b797-fa0d7826bdc9": {
+      "type": "image-with-text",
+      "blocks": {
+        "8a3a4481-7526-4006-bd0e-847dcba676a8": {
+          "type": "item",
+          "settings": {
+            "show_video": false,
+            "video_link": "",
+            "image": "shopify://shop_images/Diseno_sin_titulo-203-min.png",
+            "tab_label": "Item",
+            "subheading": "GET 45-DAY RISK FREE GUARANTEE. JUST SEND IT BACK FOR A FULL REFUND!",
+            "title": "CARBINOX ivy",
+            "content": "<h5>🏋🏻‍♀️ #1 MOST DURABLE AND AFFORDABLE SMARTWATCH FOR INTENSE WORKOUTS AND OUTDOOR ACTIVITIES.<br/>🪨 FULL RESISTANCE AGAINST SCRATCHES, DROPS, IMPACTS, AND MORE!<br/>🔋 14 DAYS OF BATTERY PER CHARGING CYCLE, GUARANTEED.</h5>",
+            "button_text": "CHECK AVAILABILITY",
+            "button_link": "shopify://products/carbinox-ivy"
+          }
+        }
+      },
+      "block_order": [
+        "8a3a4481-7526-4006-bd0e-847dcba676a8"
+      ],
+      "custom_css": [
+        "H2 {font-size: 10px; text-align: center;}",
+        "h3 {font-size: 22px;}"
+      ],
+      "settings": {
+        "section_id": "",
+        "reveal_on_scroll": false,
+        "background_type": "full_width",
+        "background_overlap": "both",
+        "image_position": "left",
+        "text_alignment": "left",
+        "cycle_speed": 8,
+        "accent_background": "#000000",
+        "text_color": "#ffffff",
+        "button_background": "#922ade",
+        "button_text_color": "#ffffff",
+        "enable_custom_margin": false,
+        "margin_bottom": 0
+      }
+    },
+    "252fa37a-3b88-4313-945b-e3399a579ae4": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--14803068158055__252fa37a-3b88-4313-945b-e3399a579ae4-item-1": {
+          "type": "item",
+          "settings": {
+            "show_video": false,
+            "video_link": "",
+            "image": "shopify://shop_images/COPY_AND_PASTE_THE_CODE_XMAS15_AT_CHECKOUT_TO_CLAIM_THESE_BENEFITS-2_902cdc85-406c-4991-80a8-a807660b1e60.png",
+            "tab_label": "Item",
+            "subheading": "🚚 ATTENTION: TO GUARANTEE A SUCCESSFUL DELIVERY BEFORE CHRISTMAS EVE, PLEASE PLACE YOUR ORDER AS SOON AS POSSIBLE.",
+            "title": "",
+            "content": "",
+            "button_text": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--14803068158055__252fa37a-3b88-4313-945b-e3399a579ae4-item-1"
+      ],
+      "disabled": true,
+      "custom_css": [
+        "H2 {font-size: 18px; letter-spacing: -1px;}"
+      ],
+      "settings": {
+        "section_id": "",
+        "reveal_on_scroll": false,
+        "background_type": "full_width",
+        "background_overlap": "both",
+        "image_position": "left",
+        "text_alignment": "center",
+        "cycle_speed": 8,
+        "accent_background": "#000000",
+        "text_color": "#ffffff",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)",
+        "enable_custom_margin": false,
+        "margin_bottom": 0
+      }
+    },
+    "395ce688-336f-44ef-acb0-285cbb18283e": {
+      "type": "image-with-text",
+      "blocks": {
+        "9e88972d-bd39-46d7-9756-4091f3b1053e": {
+          "type": "item",
+          "settings": {
+            "show_video": false,
+            "video_link": "",
+            "image": "shopify://shop_images/Diseno_sin_titulo-177-min.png",
+            "tab_label": "Item",
+            "subheading": "",
+            "title": "BUILT FOR THE REAL WORLD, AND NOT FOR THE AVERAGE GEEK.",
+            "content": "<p><strong>Contrary to her past experiences, the </strong><a href=\"/products/carbinox-ivy\" title=\"Carbinox Ivy\"><strong>Carbinox Ivy endured everything - from kettlebell swings to rock climbing. Not a scratch, not a dent, always standing up against any challenge. <br/><br/>Moreover, </strong><span style=\"text-decoration:underline\"><strong>the proactive customer service of Carbinox ensured she was always covered with even 45-day risk free guarantee.</strong></span></a></p>",
+            "button_text": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "9e88972d-bd39-46d7-9756-4091f3b1053e"
+      ],
+      "custom_css": [
+        "h3 {font-size: 22px;}"
+      ],
+      "settings": {
+        "section_id": "",
+        "reveal_on_scroll": false,
+        "background_type": "full_width",
+        "background_overlap": "image",
+        "image_position": "left",
+        "text_alignment": "left",
+        "cycle_speed": 8,
+        "accent_background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)",
+        "enable_custom_margin": false,
+        "margin_bottom": 0
+      }
+    },
+    "88ff4d4b-8261-483a-a1c3-e49b1fc136bf": {
+      "type": "rich-text",
+      "custom_css": [
+        "H2 {font-size: 18px; color: #ffc200;}",
+        "H3 {font-size: 18px;}",
+        "div {padding: 3px; background: black;}"
+      ],
+      "settings": {
+        "section_id": "",
+        "subheading": "★★★★★",
+        "title": "“If I wanted all the functions available in this smartwatch, I’d have to wear five from other brands at the same time”.",
+        "content": "<h5>Taylor S. ✅ Verified Purchase</h5>",
+        "button_text": "",
+        "button_link": "",
+        "background_type": "full_width",
+        "text_width": "medium",
+        "text_position": "left",
+        "text_alignment": "left",
+        "background": "#000000",
+        "text_color": "#ffffff",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "ca678887-4559-430f-8070-8a44bc49198b": {
+      "type": "image-with-text",
+      "blocks": {
+        "235bf461-82a2-438c-893d-5e546295a3bf": {
+          "type": "item",
+          "settings": {
+            "show_video": false,
+            "video_link": "",
+            "image": "shopify://shop_images/2-min-14.png",
+            "tab_label": "Item",
+            "subheading": "",
+            "title": "A BATTERY THAT WORKED AS HARD AS SHE.",
+            "content": "<p><a href=\"/products/carbinox-ivy\" title=\"Carbinox Ivy\"><strong>The Carbinox Ivy </strong></a><strong>became Britney's go-to, primarily for its impressive battery life. Gone were the days of the dreaded mid-day power downs.</strong></p><p><strong>With this on her wrist, the watch </strong><span style=\"text-decoration:underline\"><strong>powered through for almost 14 days within a single charge.</strong></span></p>",
+            "button_text": "CHECK AVAILABILITY",
+            "button_link": "shopify://products/carbinox-ivy"
+          }
+        }
+      },
+      "block_order": [
+        "235bf461-82a2-438c-893d-5e546295a3bf"
+      ],
+      "custom_css": [
+        "h3 {font-size: 22px;}"
+      ],
+      "settings": {
+        "section_id": "",
+        "reveal_on_scroll": false,
+        "background_type": "full_width",
+        "background_overlap": "image",
+        "image_position": "left",
+        "text_alignment": "left",
+        "cycle_speed": 8,
+        "accent_background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "#922ade",
+        "button_text_color": "#ffffff",
+        "enable_custom_margin": false,
+        "margin_bottom": 0
+      }
+    },
+    "22e4dbef-d669-4244-a8f2-642cd85fcb24": {
+      "type": "image-with-text",
+      "blocks": {
+        "3c0d053a-e583-4011-a885-24b3ff3c85ed": {
+          "type": "item",
+          "settings": {
+            "show_video": false,
+            "video_link": "",
+            "image": "shopify://shop_images/Diseno_sin_titulo-178-min.png",
+            "tab_label": "Item",
+            "subheading": "",
+            "title": "AFFORDABLE AS HEEEEEEEELL.",
+            "content": "<p><strong>With a price tag that didn’t break the bank, Britney found the perfect balance between quality and affordability with the </strong><a href=\"/products/carbinox-ivy\" title=\"Carbinox Ivy\"><strong>Carbinox Ivy.</strong></a></p><p><strong>“IT’S NOT JUST A SMARTWATCH FOR THE ELITE; IT’S FOR ALL OF US,” SHE STATES PROUDLY.</strong></p>",
+            "button_text": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "3c0d053a-e583-4011-a885-24b3ff3c85ed"
+      ],
+      "custom_css": [
+        "h3 {font-size: 22px;}"
+      ],
+      "settings": {
+        "section_id": "",
+        "reveal_on_scroll": false,
+        "background_type": "full_width",
+        "background_overlap": "image",
+        "image_position": "left",
+        "text_alignment": "left",
+        "cycle_speed": 8,
+        "accent_background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)",
+        "enable_custom_margin": false,
+        "margin_bottom": 0
+      }
+    },
+    "5f33831d-8f21-4c56-b868-a4d71ded4c81": {
+      "type": "image-with-text",
+      "blocks": {
+        "c9033a6e-214f-4388-a33b-ec3f96ee67a3": {
+          "type": "item",
+          "settings": {
+            "show_video": false,
+            "video_link": "",
+            "image": "shopify://shop_images/3-min_237dd373-dd12-4f7c-9e02-7c55efea7e6a.png",
+            "tab_label": "Item",
+            "subheading": "",
+            "title": "FULL OF GAME CHANGING FEATURES.",
+            "content": "<p><a href=\"/products/carbinox-ivy\" title=\"Carbinox Ivy\"><strong>The Carbinox</strong></a><strong> Ivy excelled in tracking accuracy and offered a range of features tailored for fitness enthusiasts. Sports modes, health tracking, sleeping cycle, breathing reminder, and a lot more that you wouldn't believe it fit inside this tiny watch.</strong></p>",
+            "button_text": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "c9033a6e-214f-4388-a33b-ec3f96ee67a3"
+      ],
+      "custom_css": [
+        "h3 {font-size: 22px;}"
+      ],
+      "settings": {
+        "section_id": "",
+        "reveal_on_scroll": false,
+        "background_type": "full_width",
+        "background_overlap": "image",
+        "image_position": "left",
+        "text_alignment": "left",
+        "cycle_speed": 8,
+        "accent_background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)",
+        "enable_custom_margin": false,
+        "margin_bottom": 0
+      }
+    },
+    "ee0a3c92-435d-4a8d-8e00-3f1233b4ed50": {
+      "type": "rich-text",
+      "custom_css": [
+        "H2 {font-size: 18px; color: #ffc200;}",
+        "H3 {font-size: 18px;}",
+        "div {padding: 3px; background: black;}"
+      ],
+      "settings": {
+        "section_id": "",
+        "subheading": "★★★★★",
+        "title": "\"THE WORLD IS NOT MADE OUT OF PILLOWS, IT'S ROUGH OUT HERE AN NOW I HAVE A SMART WATCH THAT'S JUST AS TOUGH AS MY WORLD”",
+        "content": "<h5>Casey L. ✅ Verified Purchase</h5>",
+        "button_text": "",
+        "button_link": "",
+        "background_type": "full_width",
+        "text_width": "medium",
+        "text_position": "left",
+        "text_alignment": "left",
+        "background": "#000000",
+        "text_color": "#ffffff",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "9ca068f1-9703-4fac-a26d-35ad307a7c12": {
+      "type": "gallery",
+      "blocks": {
+        "template--14805580120167__9ca068f1-9703-4fac-a26d-35ad307a7c12-image-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/ezgif-1-f038522770-min.gif",
+            "caption": ""
+          }
+        },
+        "template--14805580120167__9ca068f1-9703-4fac-a26d-35ad307a7c12-image-2": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/2-min-11.png",
+            "caption": ""
+          }
+        },
+        "template--14805580120167__9ca068f1-9703-4fac-a26d-35ad307a7c12-image-3": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/1-min-11.png",
+            "caption": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--14805580120167__9ca068f1-9703-4fac-a26d-35ad307a7c12-image-1",
+        "template--14805580120167__9ca068f1-9703-4fac-a26d-35ad307a7c12-image-2",
+        "template--14805580120167__9ca068f1-9703-4fac-a26d-35ad307a7c12-image-3"
+      ],
+      "custom_css": [
+        "H3 {font-size: 22px;}"
+      ],
+      "settings": {
+        "subheading": "",
+        "title": "👉🏻 THAT'S WHY BRItney AND 200,000 MORE PEOPLE SWITCHED OVER TO CARBINOX!",
+        "show_arrows": true,
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "59646e7b-73e5-41a4-98ee-931708ff0ded": {
+      "type": "image-with-text",
+      "blocks": {
+        "fdd2315a-fae6-4041-95b1-e4cb726b360a": {
+          "type": "item",
+          "settings": {
+            "show_video": false,
+            "video_link": "",
+            "image": "shopify://shop_images/Diseno_sin_titulo-203-min_d2e7a80b-3fa1-4d16-ad2f-5e1e6ca68c1e.png",
+            "tab_label": "Item",
+            "subheading": "GET 45-DAY RISK FREE GUARANTEE. JUST SEND IT BACK FOR A FULL REFUND!",
+            "title": "CARBINOX IVY",
+            "content": "<h5>🏋🏻‍♀️ #1 MOST DURABLE AND AFFORDABLE SMARTWATCH FOR INTENSE WORKOUTS AND OUTDOOR ACTIVITIES.<br/>🪨 FULL RESISTANCE AGAINST SCRATCHES, DROPS, IMPACTS, AND MORE!<br/>🔋 14 DAYS OF BATTERY PER CHARGING CYCLE, GUARANTEED.</h5>",
+            "button_text": "CHECK AVAILABILITY",
+            "button_link": "shopify://products/carbinox-ivy"
+          }
+        }
+      },
+      "block_order": [
+        "fdd2315a-fae6-4041-95b1-e4cb726b360a"
+      ],
+      "custom_css": [
+        "H2 {font-size: 10px; text-align: center;}",
+        "h3 {font-size: 22px;}"
+      ],
+      "settings": {
+        "section_id": "",
+        "reveal_on_scroll": false,
+        "background_type": "full_width",
+        "background_overlap": "both",
+        "image_position": "left",
+        "text_alignment": "left",
+        "cycle_speed": 8,
+        "accent_background": "#000000",
+        "text_color": "#ffffff",
+        "button_background": "#922ade",
+        "button_text_color": "#ffffff",
+        "enable_custom_margin": false,
+        "margin_bottom": 0
+      }
+    },
+    "cbfddd14-68e4-4889-b1ca-00caf12bdcac": {
+      "type": "product-sticky-form",
+      "custom_css": [
+        "div {font-size: 20px;}"
+      ],
+      "settings": {
+        "product": "carbinox-vesta-black",
+        "btn_label": "CHECK AVAILABILITY AND OFFERS",
+        "btn_bg_color": "#922ade",
+        "btn_label_color": "#ffffff"
+      }
+    },
+    "1701811034a46a1a46": {
+      "type": "apps",
+      "settings": {
+        "include_horizontal_margins": true,
+        "include_vertical_margins": true
+      }
+    }
+  },
+  "order": [
+    "8d5248e8-84fc-4dbf-b95d-e1e337c74106",
+    "9c58ebda-9463-4e49-aca3-be201311e1c2",
+    "main",
+    "d6fca1b9-edb4-42c8-9ee7-ddd89a063d89",
+    "ae0d0d05-b27c-4c56-b039-66464cc69948",
+    "ce8f96f6-63a7-48e2-8d9f-91e515f32d3b",
+    "01fa6cd5-dd1a-4a21-8a1d-3bfb7192a746",
+    "f3d526ef-cc1d-49cc-b412-1f4f5babe7af",
+    "1034ff40-84c6-4460-83e4-9e15d2f5d397",
+    "55e65fb5-d422-4957-b512-21f5068a90aa",
+    "1f4d029d-91c1-4aa3-850c-eae0913b707d",
+    "d38477ff-c0eb-4dd0-a3e9-fd19f21edb29",
+    "ed024444-f169-4ccb-a07e-42dbc87686ba",
+    "839fd82c-76c9-428e-b797-fa0d7826bdc9",
+    "252fa37a-3b88-4313-945b-e3399a579ae4",
+    "395ce688-336f-44ef-acb0-285cbb18283e",
+    "88ff4d4b-8261-483a-a1c3-e49b1fc136bf",
+    "ca678887-4559-430f-8070-8a44bc49198b",
+    "22e4dbef-d669-4244-a8f2-642cd85fcb24",
+    "5f33831d-8f21-4c56-b868-a4d71ded4c81",
+    "ee0a3c92-435d-4a8d-8e00-3f1233b4ed50",
+    "9ca068f1-9703-4fac-a26d-35ad307a7c12",
+    "59646e7b-73e5-41a4-98ee-931708ff0ded",
+    "cbfddd14-68e4-4889-b1ca-00caf12bdcac",
+    "1701811034a46a1a46"
+  ]
+}

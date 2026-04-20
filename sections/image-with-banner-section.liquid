@@ -1,0 +1,77 @@
+ 
+ <!-- -->
+	<section class="ridge-hiro"> 
+		<div class="ridge-hiro-main">
+			<div class="ridge-hiro-text">
+				<div class="ridge-hiro-text-main">
+				<div class="ridge-rating">
+					 <ul>
+					 	<li><i class="fa-solid fa-star"></i></li>
+					 	<li><i class="fa-solid fa-star"></i></li>
+					 	<li><i class="fa-solid fa-star"></i></li>
+					 	<li><i class="fa-solid fa-star"></i></li>
+					 	<li><i class="fa-solid fa-star"></i></li>
+					 </ul>
+					 {{ section.settings.ridge-rating-para1 }}
+				</div>
+				<h1>{{ section.settings.ridge-rating-heading1 }}</h1>
+				{{ section.settings.ridge-rating-para2 }}
+				<div class="ridge-hiro-button">
+					<a class="ridge-button" href="{{ section.settings.ridge-rating-buttonlink }}">{{ section.settings.ridge-rating-buttontext }}</a>
+				</div>
+			</div>
+		</div>
+			<div class="ridge-hiro-img">
+			{{ section.settings.ridge-rating-image | img_url: 'master' | img_tag }}
+			</div>
+		</div>
+	</section>
+ 
+
+
+
+
+{% schema %}
+  {
+    "name": "Image With Banner",
+    "settings": [
+      	{
+      "type": "richtext",
+      "id": "ridge-rating-para1",
+      "label": "Reviews Rating"
+    },
+      	{
+      "type": "text",
+      "id": "ridge-rating-heading1",
+      "label": "Heading"
+    },
+      	{
+      "type": "richtext",
+      "id": "ridge-rating-para2",
+      "label": "Description"
+    },
+      {
+      "type": "url",
+      "id": "ridge-rating-bottonlink",
+      "label": "Button Link"
+    },
+      {
+      "type": "text",
+      "id": "ridge-rating-buttontext",
+      "label": "Button Text"
+    },
+       {
+           "type": "image_picker",
+           "id": "ridge-rating-image",
+           "label": "Image"
+         }
+    ],
+    "presets" : [
+{
+  "name" : "image-with-banner",
+  "category" : "image-with-banner"
+
+  }
+]
+  }
+{% endschema %}

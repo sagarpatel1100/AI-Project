@@ -1,0 +1,32 @@
+{% liquid
+    assign s = section.settings
+    assign title = s.title
+    assign img = s.img | img_url: 'master'
+%}
+<div class="collectio-top">
+    <img src="{{img}}" class="collection-top-img" alt="img">
+    <div class="collection-text">
+        <h1 class="collection-top-title heading h2">{{title}}</h1>
+    </div>
+</div>
+
+{% schema %}
+    {
+        "name" : "Collection top",
+        "settings" : [
+            {
+                "type" : "image_picker",
+                "id": "img",
+                "label": "Image"
+            },
+            {
+                "type" : "textarea",
+                "id": "title",
+                "label": "Title"
+            }
+        ],
+        "presets": [{
+            "name" : "Collection top"
+        }]
+    }
+{% endschema %}

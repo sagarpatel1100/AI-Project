@@ -1,0 +1,883 @@
+{% liquid
+  assign heading_line_1 = section.settings.heading_line_1
+  assign heading_highlight = section.settings.heading_highlight
+  assign description = section.settings.description
+
+  assign section_bg_color = section.settings.section_bg_color
+  assign heading_color = section.settings.heading_color
+  assign highlight_color = section.settings.highlight_color
+  assign description_color = section.settings.description_color
+
+  assign cards_wrapper_bg_start = section.settings.cards_wrapper_bg_start
+  assign cards_wrapper_bg_end = section.settings.cards_wrapper_bg_end
+
+  assign content_max_width = section.settings.content_max_width
+  
+
+  assign section_padding_top = section.settings.section_padding_top
+  assign section_padding_bottom = section.settings.section_padding_bottom
+  assign section_padding_horizontal = section.settings.section_padding_horizontal
+
+  assign section_padding_top_mobile = section.settings.section_padding_top_mobile
+  assign section_padding_bottom_mobile = section.settings.section_padding_bottom_mobile
+  assign section_padding_horizontal_mobile = section.settings.section_padding_horizontal_mobile
+
+  assign heading_size_desktop = section.settings.heading_size_desktop
+  assign heading_size_mobile = section.settings.heading_size_mobile
+  assign description_size_desktop = section.settings.description_size_desktop
+  assign description_size_mobile = section.settings.description_size_mobile
+
+  assign heading_gap_desktop = section.settings.heading_gap_desktop
+  assign heading_gap_mobile = section.settings.heading_gap_mobile
+  assign cards_gap_desktop = section.settings.cards_gap_desktop
+  assign cards_gap_mobile = section.settings.cards_gap_mobile
+
+  assign card_width_desktop = section.settings.card_width_desktop
+  assign card_width_mobile = section.settings.card_width_mobile
+  assign card_radius = section.settings.card_radius
+  assign card_padding_top = section.settings.card_padding_top
+  assign card_padding_right = section.settings.card_padding_right
+  assign card_padding_bottom = section.settings.card_padding_bottom
+  assign card_padding_left = section.settings.card_padding_left
+
+  assign card_padding_top_mobile = section.settings.card_padding_top_mobile
+  assign card_padding_right_mobile = section.settings.card_padding_right_mobile
+  assign card_padding_bottom_mobile = section.settings.card_padding_bottom_mobile
+  assign card_padding_left_mobile = section.settings.card_padding_left_mobile
+
+  assign image_width_desktop = section.settings.image_width_desktop
+  assign image_height_desktop = section.settings.image_height_desktop
+  assign image_width_mobile = section.settings.image_width_mobile
+  assign image_height_mobile = section.settings.image_height_mobile
+
+  assign title_size_desktop = section.settings.title_size_desktop
+  assign title_size_mobile = section.settings.title_size_mobile
+  assign price_size_desktop = section.settings.price_size_desktop
+  assign price_size_mobile = section.settings.price_size_mobile
+  assign suffix_size_desktop = section.settings.suffix_size_desktop
+  assign suffix_size_mobile = section.settings.suffix_size_mobile
+  assign card_description_size_desktop = section.settings.card_description_size_desktop
+  assign card_description_size_mobile = section.settings.card_description_size_mobile
+
+  assign badge_font_size = section.settings.badge_font_size
+  assign badge_font_size_mobile = section.settings.badge_font_size_mobile
+  assign badge_padding_vertical = section.settings.badge_padding_vertical
+  assign badge_padding_horizontal = section.settings.badge_padding_horizontal
+  assign badge_rotation = section.settings.badge_rotation
+
+  assign has_intro = false
+  if heading_line_1 != blank or heading_highlight != blank or description != blank
+    assign has_intro = true
+  endif
+%}
+
+{{ 'section-trade-in-watch-worth.css' | asset_url | stylesheet_tag }}
+
+<section
+  id="trade-in-watch-worth-{{ section.id }}"
+  class="trade-in-watch-worth"
+  style="
+    --trade-in-watch-worth-bg: {{ section_bg_color }};
+    --trade-in-watch-worth-heading-color: {{ heading_color }};
+    --trade-in-watch-worth-highlight-color: {{ highlight_color }};
+    --trade-in-watch-worth-description-color: {{ description_color }};
+    --trade-in-watch-worth-cards-bg-start: {{ cards_wrapper_bg_start }};
+    --trade-in-watch-worth-cards-bg-end: {{ cards_wrapper_bg_end }};
+
+    --trade-in-watch-worth-content-max-width: {{ content_max_width }}px;
+
+    --trade-in-watch-worth-padding-top: {{ section_padding_top }}px;
+    --trade-in-watch-worth-padding-bottom: {{ section_padding_bottom }}px;
+    --trade-in-watch-worth-padding-horizontal: {{ section_padding_horizontal }}px;
+
+    --trade-in-watch-worth-padding-top-mobile: {{ section_padding_top_mobile }}px;
+    --trade-in-watch-worth-padding-bottom-mobile: {{ section_padding_bottom_mobile }}px;
+    --trade-in-watch-worth-padding-horizontal-mobile: {{ section_padding_horizontal_mobile }}px;
+
+    --trade-in-watch-worth-heading-size-desktop: {{ heading_size_desktop }}px;
+    --trade-in-watch-worth-heading-size-mobile: {{ heading_size_mobile }}px;
+    --trade-in-watch-worth-description-size-desktop: {{ description_size_desktop }}px;
+    --trade-in-watch-worth-description-size-mobile: {{ description_size_mobile }}px;
+
+    --trade-in-watch-worth-heading-gap-desktop: {{ heading_gap_desktop }}px;
+    --trade-in-watch-worth-heading-gap-mobile: {{ heading_gap_mobile }}px;
+    --trade-in-watch-worth-cards-gap-desktop: {{ cards_gap_desktop }}px;
+    --trade-in-watch-worth-cards-gap-mobile: {{ cards_gap_mobile }}px;
+
+    --trade-in-watch-worth-card-width-desktop: {{ card_width_desktop }}px;
+    --trade-in-watch-worth-card-width-mobile: {{ card_width_mobile }}px;
+    --trade-in-watch-worth-card-radius: {{ card_radius }}px;
+
+    --trade-in-watch-worth-card-padding-top: {{ card_padding_top }}px;
+    --trade-in-watch-worth-card-padding-right: {{ card_padding_right }}px;
+    --trade-in-watch-worth-card-padding-bottom: {{ card_padding_bottom }}px;
+    --trade-in-watch-worth-card-padding-left: {{ card_padding_left }}px;
+
+    --trade-in-watch-worth-card-padding-top-mobile: {{ card_padding_top_mobile }}px;
+    --trade-in-watch-worth-card-padding-right-mobile: {{ card_padding_right_mobile }}px;
+    --trade-in-watch-worth-card-padding-bottom-mobile: {{ card_padding_bottom_mobile }}px;
+    --trade-in-watch-worth-card-padding-left-mobile: {{ card_padding_left_mobile }}px;
+
+    --trade-in-watch-worth-image-width-desktop: {{ image_width_desktop }}px;
+    --trade-in-watch-worth-image-height-desktop: {{ image_height_desktop }}px;
+    --trade-in-watch-worth-image-width-mobile: {{ image_width_mobile }}px;
+    --trade-in-watch-worth-image-height-mobile: {{ image_height_mobile }}px;
+
+    --trade-in-watch-worth-title-size-desktop: {{ title_size_desktop }}px;
+    --trade-in-watch-worth-title-size-mobile: {{ title_size_mobile }}px;
+    --trade-in-watch-worth-price-size-desktop: {{ price_size_desktop }}px;
+    --trade-in-watch-worth-price-size-mobile: {{ price_size_mobile }}px;
+    --trade-in-watch-worth-suffix-size-desktop: {{ suffix_size_desktop }}px;
+    --trade-in-watch-worth-suffix-size-mobile: {{ suffix_size_mobile }}px;
+    --trade-in-watch-worth-card-description-size-desktop: {{ card_description_size_desktop }}px;
+    --trade-in-watch-worth-card-description-size-mobile: {{ card_description_size_mobile }}px;
+
+    --trade-in-watch-worth-badge-font-size: {{ badge_font_size }}px;
+    --trade-in-watch-worth-badge-font-size-mobile: {{ badge_font_size_mobile }}px;
+    --trade-in-watch-worth-badge-padding-vertical: {{ badge_padding_vertical }}px;
+    --trade-in-watch-worth-badge-padding-horizontal: {{ badge_padding_horizontal }}px;
+    --trade-in-watch-worth-badge-rotation: {{ badge_rotation }}deg;
+  "
+>
+  <div class="trade-in-watch-worth__inner">
+    <div class="trade-in-watch-worth__container">
+      {% if has_intro %}
+        <div class="trade-in-watch-worth__intro">
+          {% if heading_line_1 != blank or heading_highlight != blank %}
+            <h2 class="trade-in-watch-worth__heading">
+              {% if heading_line_1 != blank %}
+                <span class="trade-in-watch-worth__heading-text">{{ heading_line_1 }}</span>
+              {% endif %}
+              {% if heading_highlight != blank %}
+                <span class="trade-in-watch-worth__heading-text trade-in-watch-worth__heading-text--highlight">{{ heading_highlight }}</span>
+              {% endif %}
+            </h2>
+          {% endif %}
+
+          {% if description != blank %}
+            <div class="trade-in-watch-worth__description rte">
+              {{ description }}
+            </div>
+          {% endif %}
+        </div>
+      {% endif %}
+
+      {% if section.blocks.size > 0 %}
+        <div class="trade-in-watch-worth__cards">
+          {% for block in section.blocks %}
+            {% liquid
+              assign card_image = block.settings.card_image
+              assign card_title = block.settings.card_title
+              assign card_price = block.settings.card_price
+              assign card_suffix = block.settings.card_suffix
+              assign card_description = block.settings.card_description
+              assign featured_badge_text = block.settings.featured_badge_text
+              assign enable_featured = block.settings.enable_featured
+
+              assign card_bg_color = block.settings.card_bg_color
+              assign card_border_color = block.settings.card_border_color
+              assign featured_border_color = block.settings.featured_border_color
+              assign title_color = block.settings.title_color
+              assign price_color = block.settings.price_color
+              assign suffix_color = block.settings.suffix_color
+              assign card_description_color = block.settings.card_description_color
+              assign badge_bg_color = block.settings.badge_bg_color
+              assign badge_text_color = block.settings.badge_text_color
+            %}
+
+            <div
+              class="trade-in-watch-worth__card{% if enable_featured %} trade-in-watch-worth__card--featured{% endif %}"
+              style="
+                --trade-in-watch-worth-card-bg: {{ card_bg_color }};
+                --trade-in-watch-worth-card-border: {{ card_border_color }};
+                --trade-in-watch-worth-card-featured-border: {{ featured_border_color }};
+                --trade-in-watch-worth-card-title-color: {{ title_color }};
+                --trade-in-watch-worth-card-price-color: {{ price_color }};
+                --trade-in-watch-worth-card-suffix-color: {{ suffix_color }};
+                --trade-in-watch-worth-card-description-color: {{ card_description_color }};
+                --trade-in-watch-worth-badge-bg: {{ badge_bg_color }};
+                --trade-in-watch-worth-badge-text: {{ badge_text_color }};
+              "
+              {{ block.shopify_attributes }}
+            >
+              {% if enable_featured and featured_badge_text != blank %}
+                <div class="trade-in-watch-worth__badge">
+                  {{ featured_badge_text }}
+                </div>
+              {% endif %}
+
+              {% if card_image != blank %}
+                <div class="trade-in-watch-worth__card-image-wrap">
+                  {{
+                    card_image
+                    | image_url: width: 500
+                    | image_tag:
+                      loading: 'lazy',
+                      class: 'trade-in-watch-worth__card-image',
+                      alt: card_title
+                  }}
+                </div>
+              {% endif %}
+
+              <div class="trade-in-watch-worth__card-content">
+                {% if card_title != blank %}
+                  <h3 class="trade-in-watch-worth__card-title">
+                    {{ card_title }}
+                  </h3>
+                {% endif %}
+
+                {% if card_price != blank or card_suffix != blank %}
+                  <div class="trade-in-watch-worth__card-price-row">
+                    {% if card_price != blank %}
+                      <span class="trade-in-watch-worth__card-price">
+                        {{ card_price }}
+                      </span>
+                    {% endif %}
+
+                    {% if card_suffix != blank %}
+                      <span class="trade-in-watch-worth__card-suffix">
+                        {{ card_suffix }}
+                      </span>
+                    {% endif %}
+                  </div>
+                {% endif %}
+
+                {% if card_description != blank %}
+                  <div class="trade-in-watch-worth__card-description rte">
+                    {{ card_description }}
+                  </div>
+                {% endif %}
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+      {% endif %}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Trade In Watch Worth",
+  "tag": "section",
+  "class": "section-trade-in-watch-worth",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading_line_1",
+      "label": "Heading line 1 (36px desktop / 30px mobile)",
+      "default": "WHAT'S YOUR WATCH"
+    },
+    {
+      "type": "text",
+      "id": "heading_highlight",
+      "label": "Heading highlight (36px desktop / 30px mobile)",
+      "default": "WORTH?"
+    },
+    {
+      "type": "richtext",
+      "id": "description",
+      "label": "Description (16px)",
+      "default": "<p>Every Carbinox has value no matter the condition.</p>"
+    },
+
+    {
+      "type": "header",
+      "content": "Section colors"
+    },
+    {
+      "type": "color",
+      "id": "section_bg_color",
+      "label": "Section background color (#000000)",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "heading_color",
+      "label": "Heading color (#FFFFFF)",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "color",
+      "id": "highlight_color",
+      "label": "Heading highlight color (#FFC200)",
+      "default": "#FFC200"
+    },
+    {
+      "type": "color",
+      "id": "description_color",
+      "label": "Description color (#FFFFFF)",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "color",
+      "id": "cards_wrapper_bg_start",
+      "label": "Cards wrapper gradient start (#000000)",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "cards_wrapper_bg_end",
+      "label": "Cards wrapper gradient end (#111111)",
+      "default": "#111111"
+    },
+
+    {
+      "type": "header",
+      "content": "Desktop layout"
+    },
+    {
+      "type": "range",
+      "id": "content_max_width",
+      "label": "Content max width desktop (1440px)",
+      "min": 900,
+      "max": 1600,
+      "step": 20,
+      "default": 1440
+    },
+    {
+      "type": "range",
+      "id": "section_padding_top",
+      "label": "Top padding desktop (60px)",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "default": 60
+    },
+    {
+      "type": "range",
+      "id": "section_padding_bottom",
+      "label": "Bottom padding desktop (60px)",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "default": 60
+    },
+    {
+      "type": "range",
+      "id": "section_padding_horizontal",
+      "label": "Horizontal padding desktop (100px)",
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "default": 100
+    },
+    {
+      "type": "range",
+      "id": "heading_gap_desktop",
+      "label": "Intro gap desktop (10px)",
+      "min": 0,
+      "max": 40,
+      "step": 2,
+      "default": 10
+    },
+    {
+      "type": "range",
+      "id": "cards_gap_desktop",
+      "label": "Cards gap desktop (30px)",
+      "min": 0,
+      "max": 60,
+      "step": 2,
+      "default": 30
+    },
+    {
+      "type": "range",
+      "id": "card_width_desktop",
+      "label": "Card width desktop (310px)",
+      "min": 240,
+      "max": 420,
+      "step": 2,
+      "default": 310
+    },
+
+    {
+      "type": "header",
+      "content": "Mobile layout"
+    },  
+    {
+      "type": "range",
+      "id": "section_padding_top_mobile",
+      "label": "Top padding mobile (30px)",
+      "min": 0,
+      "max": 120,
+      "step": 2,
+      "default": 30
+    },
+    {
+      "type": "range",
+      "id": "section_padding_bottom_mobile",
+      "label": "Bottom padding mobile (30px)",
+      "min": 0,
+      "max": 120,
+      "step": 2,
+      "default": 30
+    },
+    {
+      "type": "range",
+      "id": "section_padding_horizontal_mobile",
+      "label": "Horizontal padding mobile (40px)",
+      "min": 0,
+      "max": 80,
+      "step": 2,
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "heading_gap_mobile",
+      "label": "Intro gap mobile (10px)",
+      "min": 0,
+      "max": 40,
+      "step": 2,
+      "default": 10
+    },
+    {
+      "type": "range",
+      "id": "cards_gap_mobile",
+      "label": "Cards gap mobile (20px)",
+      "min": 0,
+      "max": 40,
+      "step": 2,
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "card_width_mobile",
+      "label": "Card width mobile (310px)",
+      "min": 240,
+      "max": 360,
+      "step": 2,
+      "default": 310
+    },
+
+    {
+      "type": "header",
+      "content": "Card layout"
+    },
+    {
+      "type": "range",
+      "id": "card_radius",
+      "label": "Card radius (15px)",
+      "min": 0,
+      "max": 40,
+      "step": 1,
+      "default": 15
+    },
+    {
+      "type": "range",
+      "id": "card_padding_top",
+      "label": "Card top padding desktop (200px)",
+      "min": 80,
+      "max": 260,
+      "step": 2,
+      "default": 200
+    },
+    {
+      "type": "range",
+      "id": "card_padding_right",
+      "label": "Card right padding desktop (40px)",
+      "min": 0,
+      "max": 80,
+      "step": 2,
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "card_padding_bottom",
+      "label": "Card bottom padding desktop (20px)",
+      "min": 0,
+      "max": 80,
+      "step": 2,
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "card_padding_left",
+      "label": "Card left padding desktop (40px)",
+      "min": 0,
+      "max": 80,
+      "step": 2,
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "card_padding_top_mobile",
+      "label": "Card top padding mobile (180px)",
+      "min": 80,
+      "max": 240,
+      "step": 2,
+      "default": 180
+    },
+    {
+      "type": "range",
+      "id": "card_padding_right_mobile",
+      "label": "Card right padding mobile (32px)",
+      "min": 0,
+      "max": 80,
+      "step": 2,
+      "default": 32
+    },
+    {
+      "type": "range",
+      "id": "card_padding_bottom_mobile",
+      "label": "Card bottom padding mobile (20px)",
+      "min": 0,
+      "max": 80,
+      "step": 2,
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "card_padding_left_mobile",
+      "label": "Card left padding mobile (32px)",
+      "min": 0,
+      "max": 80,
+      "step": 2,
+      "default": 32
+    },
+
+    {
+      "type": "header",
+      "content": "Image sizes"
+    },
+    {
+      "type": "range",
+      "id": "image_width_desktop",
+      "label": "Image width desktop (190px)",
+      "min": 120,
+      "max": 260,
+      "step": 2,
+      "default": 190
+    },
+    {
+      "type": "range",
+      "id": "image_height_desktop",
+      "label": "Image height desktop (190px)",
+      "min": 120,
+      "max": 260,
+      "step": 2,
+      "default": 190
+    },
+    {
+      "type": "range",
+      "id": "image_width_mobile",
+      "label": "Image width mobile (160px)",
+      "min": 100,
+      "max": 220,
+      "step": 2,
+      "default": 160
+    },
+    {
+      "type": "range",
+      "id": "image_height_mobile",
+      "label": "Image height mobile (160px)",
+      "min": 100,
+      "max": 220,
+      "step": 2,
+      "default": 160
+    },
+
+    {
+      "type": "header",
+      "content": "Typography"
+    },
+    {
+      "type": "range",
+      "id": "heading_size_desktop",
+      "label": "Heading font size desktop (36px)",
+      "min": 20,
+      "max": 60,
+      "step": 1,
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "heading_size_mobile",
+      "label": "Heading font size mobile (30px)",
+      "min": 18,
+      "max": 48,
+      "step": 1,
+      "default": 30
+    },
+    {
+      "type": "range",
+      "id": "description_size_desktop",
+      "label": "Description font size desktop (16px)",
+      "min": 12,
+      "max": 28,
+      "step": 1,
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "description_size_mobile",
+      "label": "Description font size mobile (16px)",
+      "min": 12,
+      "max": 24,
+      "step": 1,
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "title_size_desktop",
+      "label": "Card title size desktop (20px)",
+      "min": 12,
+      "max": 32,
+      "step": 1,
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "title_size_mobile",
+      "label": "Card title size mobile (20px)",
+      "min": 12,
+      "max": 28,
+      "step": 1,
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "price_size_desktop",
+      "label": "Price size desktop (30px)",
+      "min": 16,
+      "max": 44,
+      "step": 1,
+      "default": 30
+    },
+    {
+      "type": "range",
+      "id": "price_size_mobile",
+      "label": "Price size mobile (30px)",
+      "min": 16,
+      "max": 40,
+      "step": 1,
+      "default": 30
+    },
+    {
+      "type": "range",
+      "id": "suffix_size_desktop",
+      "label": "Suffix size desktop (20px)",
+      "min": 12,
+      "max": 30,
+      "step": 1,
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "suffix_size_mobile",
+      "label": "Suffix size mobile (20px)",
+      "min": 12,
+      "max": 28,
+      "step": 1,
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "card_description_size_desktop",
+      "label": "Card description size desktop (14px)",
+      "min": 10,
+      "max": 22,
+      "step": 1,
+      "default": 14
+    },
+    {
+      "type": "range",
+      "id": "card_description_size_mobile",
+      "label": "Card description size mobile (14px)",
+      "min": 10,
+      "max": 22,
+      "step": 1,
+      "default": 14
+    },
+
+    {
+      "type": "header",
+      "content": "Featured badge"
+    },
+    {
+      "type": "range",
+      "id": "badge_font_size",
+      "label": "Badge font size desktop (14px)",
+      "min": 10,
+      "max": 24,
+      "step": 1,
+      "default": 14
+    },
+    {
+      "type": "range",
+      "id": "badge_font_size_mobile",
+      "label": "Badge font size mobile (12px)",
+      "min": 10,
+      "max": 20,
+      "step": 1,
+      "default": 12
+    },
+    {
+      "type": "range",
+      "id": "badge_padding_vertical",
+      "label": "Badge vertical padding (5px)",
+      "min": 0,
+      "max": 20,
+      "step": 1,
+      "default": 5
+    },
+    {
+      "type": "range",
+      "id": "badge_padding_horizontal",
+      "label": "Badge horizontal padding (30px)",
+      "min": 0,
+      "max": 60,
+      "step": 1,
+      "default": 30
+    },
+    {
+      "type": "range",
+      "id": "badge_rotation",
+      "label": "Badge rotation (45deg)",
+      "min": 45,
+      "max": 90,
+      "step": 1,
+      "default": 45
+    }
+  ],
+  "blocks": [
+    {
+      "type": "card",
+      "name": "Worth card",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "card_image",
+          "label": "Card image"
+        },
+        {
+          "type": "text",
+          "id": "card_title",
+          "label": "Card title",
+          "default": "LIKE NEW ✨"
+        },
+        {
+          "type": "text",
+          "id": "card_price",
+          "label": "Card price",
+          "default": "$100"
+        },
+        {
+          "type": "text",
+          "id": "card_suffix",
+          "label": "Card suffix",
+          "default": "CREDIT"
+        },
+        {
+          "type": "richtext",
+          "id": "card_description",
+          "label": "Card description",
+          "default": "<p>Minimal wear. Screen intact. Fully functional. Looks close to how it came out of the box.</p>"
+        },
+        {
+          "type": "checkbox",
+          "id": "enable_featured",
+          "label": "Enable featured badge",
+          "default": false
+        },
+        {
+          "type": "text",
+          "id": "featured_badge_text",
+          "label": "Featured badge text",
+          "default": "BEST VALUE"
+        },
+        {
+          "type": "header",
+          "content": "Card colors"
+        },
+        {
+          "type": "color",
+          "id": "card_bg_color",
+          "label": "Card background (#1A1A1A)",
+          "default": "#1A1A1A"
+        },
+        {
+          "type": "color",
+          "id": "card_border_color",
+          "label": "Card border (#FFFFFF 10%)",
+          "default": "#2B2B2B"
+        },
+        {
+          "type": "color",
+          "id": "featured_border_color",
+          "label": "Featured border (#FFC200)",
+          "default": "#FFC200"
+        },
+        {
+          "type": "color",
+          "id": "title_color",
+          "label": "Title color (#FFFFFF)",
+          "default": "#FFFFFF"
+        },
+        {
+          "type": "color",
+          "id": "price_color",
+          "label": "Price color (#FFC200)",
+          "default": "#FFC200"
+        },
+        {
+          "type": "color",
+          "id": "suffix_color",
+          "label": "Suffix color (#FFFFFF)",
+          "default": "#FFFFFF"
+        },
+        {
+          "type": "color",
+          "id": "card_description_color",
+          "label": "Description color (#FFFFFF)",
+          "default": "#FFFFFF"
+        },
+        {
+          "type": "color",
+          "id": "badge_bg_color",
+          "label": "Badge background (#FFC200)",
+          "default": "#FFC200"
+        },
+        {
+          "type": "color",
+          "id": "badge_text_color",
+          "label": "Badge text color (#000000)",
+          "default": "#000000"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Trade In Watch Worth",
+      "blocks": [
+        {
+          "type": "card",
+          "settings": {
+            "card_title": "LIKE NEW ✨",
+            "card_price": "$100",
+            "card_suffix": "CREDIT"
+          }
+        },
+        {
+          "type": "card",
+          "settings": {
+            "card_title": "WORKING ⚡",
+            "card_price": "$75",
+            "card_suffix": "CREDIT",
+            "enable_featured": true,
+            "featured_badge_text": "BEST VALUE"
+          }
+        },
+        {
+          "type": "card",
+          "settings": {
+            "card_title": "NON-WORKING 🔧",
+            "card_price": "$50",
+            "card_suffix": "CREDIT"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

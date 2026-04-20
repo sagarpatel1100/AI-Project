@@ -1,0 +1,167 @@
+<style>
+  .testimonials-section-{{ section.id }} {
+    background-color: {{ section.settings.bg_color }};
+    color: {{ section.settings.text_color }};
+    font-family: 'Poppins', sans-serif;
+    padding: 60px 20px;
+  }
+
+  .testimonials-container-{{ section.id }} {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    max-width: 1140px;
+    margin: 0 auto;
+  }
+
+  .testimonial-item-{{ section.id }} {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .stars-{{ section.id }} {
+    color: #FFD700;
+    font-size: 0px;
+    display: inline-block;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .testimonial-text-{{ section.id }} {
+    font-size: 18px;
+    line-height: 120%;
+    margin: 0px;
+
+  }
+
+  .testimonial-author-{{ section.id }} {
+    font-weight: 600;
+    font-size: 18px;
+    margin: 0px;
+  }
+
+  @media (max-width: 768px) {
+    .testimonials-section-{{ section.id }} {
+        padding: 30px;
+    }
+    
+    .testimonials-container-{{ section.id }} {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      padding: 0px;
+    }
+
+    .testimonial-item-{{ section.id }} {
+      text-align: left;
+    }
+
+    /* Alternar alineaciones izquierda/derecha en móvil */
+    .testimonials-container-{{ section.id }} .testimonial-item-{{ section.id }}:nth-child(2n) {
+      text-align: right;
+    }
+
+    .testimonial-text-{{ section.id }} {
+      font-size: 16px;
+    }
+    .testimonial-author-{{ section.id }} {
+      font-size: 15px;
+    }
+
+    .stars-{{ section.id }} {
+      display: inline-block;
+    }
+
+    .testimonials-container-{{ section.id }} .testimonial-item-{{ section.id }}:nth-child(2n) .stars-{{ section.id }} {
+      float: right;
+    }
+  }
+</style>
+
+
+<section class="testimonials-section-{{ section.id }}">
+  <div class="testimonials-container-{{ section.id }}">
+    {% for block in section.blocks %}
+      <div class="testimonial-item-{{ section.id }}">
+        <div class="stars-{{ section.id }}"><svg width="124" height="24" viewBox="0 0 124 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M12 0.44085L15.264 9.32085H23.712L16.632 14.6249L20.04 23.5769L12 17.5529L3.96 23.5769L7.368 14.6249L0.288 9.32085H8.712L12 0.44085ZM37 0.44085L40.264 9.32085H48.712L41.632 14.6249L45.04 23.5769L37 17.5529L28.96 23.5769L32.368 14.6249L25.288 9.32085H33.712L37 0.44085ZM62 0.44085L65.264 9.32085H73.712L66.632 14.6249L70.04 23.5769L62 17.5529L53.96 23.5769L57.368 14.6249L50.288 9.32085H58.712L62 0.44085ZM87 0.44085L90.264 9.32085H98.712L91.632 14.6249L95.04 23.5769L87 17.5529L78.96 23.5769L82.368 14.6249L75.288 9.32085H83.712L87 0.44085ZM112 0.44085L115.264 9.32085H123.712L116.632 14.6249L120.04 23.5769L112 17.5529L103.96 23.5769L107.368 14.6249L100.288 9.32085H108.712L112 0.44085Z" fill="#FFC200"/>
+</svg>
+</div>
+        <p class="testimonial-text-{{ section.id }}">“{{ block.settings.text }}”</p>
+        <p class="testimonial-author-{{ section.id }}">{{ block.settings.author }}</p>
+      </div>
+    {% endfor %}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Testimonials Section",
+  "settings": [
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Background color",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text color",
+      "default": "#FFFFFF"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "testimonial",
+      "name": "Testimonial",
+      "settings": [
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Testimonial text",
+          "default": "I DROP IT, KICK IT, GET IT COVERED IN MUD—AND IT STILL LIGHTS UP LIKE NEW. NEVER LEAVING MY SIDE ON THE JOB."
+        },
+        {
+          "type": "text",
+          "id": "author",
+          "label": "Author",
+          "default": "Mike T., Construction Foreman, Ohio"
+        }
+      ]
+    }
+  ],
+  "max_blocks": 6,
+  "presets": [
+    {
+      "name": "Testimonials Section",
+      "category": "Text",
+      "blocks": [
+        {
+          "type": "testimonial",
+          "settings": {
+            "text": "I DROP IT, KICK IT, GET IT COVERED IN MUD—AND IT STILL LIGHTS UP LIKE NEW. NEVER LEAVING MY SIDE ON THE JOB.",
+            "author": "Mike T., Construction Foreman, Ohio"
+          }
+        },
+        {
+          "type": "testimonial",
+          "settings": {
+            "text": "SMALL ENOUGH TO FIT IN MY POCKET, BUT THIS THING BLINDS THE ROOM. I’VE NEVER TRUSTED A FLASHLIGHT LIKE THIS BEFORE.",
+            "author": "Carlos R., Mechanic, California"
+          }
+        },
+        {
+          "type": "testimonial",
+          "settings": {
+            "text": "NEVER LEAVE HOME WITHOUT IT. THE BLASTBEAM LIGHTS UP MY ENTIRE WORKSPACE IN SECONDS AND SURVIVES EVERYTHING I THROW AT IT.",
+            "author": "Travis S., Mechanic, Ohio"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

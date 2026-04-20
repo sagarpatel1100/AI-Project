@@ -1,0 +1,654 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "rich_text_8NgTVz": {
+      "type": "rich-text",
+      "disabled": true,
+      "name": "Rich text",
+      "settings": {
+        "section_id": "",
+        "subheading": "👷🏼‍♂️ IT'S SIMPLE: YOU WORK A LOT AND YOU DESERVE TO SAVE BIG ON YOUR FIRST DURABLE SMARTWATCH!",
+        "title": "",
+        "content": "<h3>UNLOCK $50 OFF, $100 OFF AND $150 OFF WITH OUR BUNDLE PACKS!</h3>",
+        "button_text": "",
+        "button_link": "",
+        "background_type": "full_width",
+        "text_width": "fill",
+        "text_position": "center",
+        "text_alignment": "center",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "liquid_A8phzp": {
+          "type": "liquid",
+          "name": "TrustPilot - Read Reviews - Tolstoy Styles",
+          "settings": {
+            "liquid": "<script>\n  function moveTrustBox() {\n    const widget = document.getElementById('review-box-container');\n    const titleEl = document.querySelector('.product-meta__title');\n    if (!widget) {\n      console.warn('Trustpilot widget not found.');\n      return;\n    }\n    if (!titleEl || !titleEl.parentNode) {\n      console.warn('Product title element not found or has no parent.');\n      return;\n    }\n    // Move the TrustBox into its final position\n    titleEl.parentNode.insertBefore(widget, titleEl);\n  }\n  function observeForTitle() {\n    const observer = new MutationObserver((mutations, obs) => {\n      if (document.querySelector('.product-meta__title')) {\n        moveTrustBox();\n        obs.disconnect();\n      }\n    });\n    observer.observe(document.body, { childList: true, subtree: true });\n  }\n  document.addEventListener('DOMContentLoaded', () => {\n    // 1. Move now if title already exists\n    moveTrustBox();\n    // 2. Watch for late-loaded titles\n    observeForTitle();\n    // 3. Once moved, load the Trustpilot script\n    const script = document.createElement('script');\n    script.src = 'https://widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js';\n    script.async = true;\n    document.body.appendChild(script);\n const elementToMove = document.getElementById(\"shopify-block-AUVZGeFZJcXBoQ29sT__tolstoy_shoppable_video_quiz_carousel_block_erLTME\");\n    const targetElement = document.getElementById(\"shopify-section-template--24748880494964__e9dc35e4-0664-46cf-ad4f-0d4aa37441e3\");\n    if (elementToMove && targetElement && targetElement.parentNode) {\n      targetElement.parentNode.insertBefore(elementToMove, targetElement);\n    }\n  });\n</script>\n<style>\n@media (max-width: 768px) {\n.product--thumbnails-bottom {\nmargin-top: 0px !important;\n}\n#trust-pilot-pdp {\nleft: -12px !important;\n}\nh1.product-meta__title.heading.h3 {\nfont-size: 22px !important;\n}\n}\n  .tolstoy-video-carousel-container {\nmargin-top: 20px;\n}\nh1.product-meta__title.heading.h3 {\n    margin-top: 0 !important;\nfont-weight: 700 !important;\n}\n._carouselVideoContainer_1cxil_16 {\ngap: 0px !important;\n}\n@media (max-width: 1024px) {\n  .tolstoy-carousel-container {\n    margin-top: 0px;\n  }\n}\n@media (max-width: 600px) {\n\n  .tolstoy-carousel-container {\n    margin: -30px 0px 0px 24px;\n  }\n  .tolstoy-carousel-arrow-button {\n    display: none;\n  }\n}\n@media (min-width: 1024px) {\n  .tolstoy-carousel-container {\n    max-width: 48% !important;\n    margin-top: -80px;\n    margin-left: auto;\n    margin-right: 0px;\n  }\n.block-swatch__item.pack-item {\n  padding-right: 30px !important;\n  padding-left: 30px !important;\n}\n  .tolstoy-video-carousel-container {\n    max-width: 90% !important;\n  }\n}\n@media (min-width: 1500px) {\n  .tolstoy-video-carousel-container {\n    max-width: 690px !important;\n    padding-left: 15px;\n  }\n}\n.product__media-item {\nmargin-left: 1px;\n}\n@media (max-width: 768px){\n\n#shopify-section-template--25675562418548__image_with_text_zbdBqG {\n  background-image: url('https://cdn.shopify.com/s/files/1/0049/0533/6935/files/mobile-smart-features.webp?v=1760543785');\n  background-size: cover;\n  background-position: center;\n  background-repeat: no-repeat;\n  aspect-ratio: 390 / 322;\n  width: 100%;\n}\n.product__media-nav  {\nmargin-top: 10px !important;\n}\n    .product__media-list-wrapper .product__media-item {\n        padding: 0px !important;\n    }\n.product__media-nav__arrows .product__media-prev-next {\ntop: 36% !important;\n}\n.product__thumbnail-list {\nmax-height: 84px;\n}\n#shopify-section-template--25675562418548__image_with_text_zbdBqG .image-with-text__wrapper {\ndisplay: none !important;\n}\n}\n\n.read-reviews-trustpilot {\ndisplay: none !important;\n}\n#review-box-container {\nmargin-bottom: 5px !important;\n}\n\n\n.product-form__variants {\nmargin-top: 0px !important;\nmargin-bottom: 0px !important;\n}\n\n.product-meta {\nmargin-bottom: 0px !important;\n}\n</style>"
+          }
+        },
+        "liquid_9giWJk": {
+          "type": "liquid",
+          "name": " Header Banner",
+          "disabled": true,
+          "settings": {
+            "liquid": "<div id=\"promo-banner\">\n  <img\n    src=\"https://cdn.shopify.com/s/files/1/0049/0533/6935/files/mobile-banner_offer_4.webp?v=1757534958\"\n    alt=\"Promo banner\"\n    class=\"banner-mobile\"\n  />\n  <img\n    src=\"https://cdn.shopify.com/s/files/1/0049/0533/6935/files/new-banner-blaze.png?v=1757534573\"\n    alt=\"Promo banner\"\n    class=\"banner-desktop\"\n    loading=\"lazy\"\n  />\n</div>\n\n<script>\n  document.addEventListener(\"DOMContentLoaded\", function () {\n    const mainElement = document.getElementById(\"main\");\n    const bannerContainer = document.getElementById(\"promo-banner\");\n\n    if (!mainElement || !bannerContainer) {\n      console.error(\"main or banner container not found\");\n      return;\n    }\n\n    mainElement.insertBefore(bannerContainer, mainElement.firstChild);\n  });\n</script>\n\n<style>\n  #promo-banner img {\n    width: 100%;\n    background: transparent;\n  }\n\n  .banner-mobile {\n    display: none;\n  }\n\n  .banner-desktop {\n    display: block;\n    margin: auto;\n    margin-top: 5px;\n    max-width: 920px;\n  }\n\n  @media screen and (min-width: 1200px) {\n    .banner-desktop {\n      margin-top: 170px;\n    }\n  }\n @media screen and (min-width: 1240px) {\n    .banner-desktop {\n      margin-top: 120px;\n    }\n  }\n  @media screen and (min-width: 1385px) {\n    .banner-desktop {\n      margin-top: 87px;\n    }\n  }\n\n  @media screen and (max-width: 768px) {\n    .banner-mobile {\n      display: block;\n      padding-top: 10px;\n      margin-bottom: -25px;\n    }\n\n    .banner-desktop {\n      display: none;\n    }\n  }\n</style>"
+          }
+        },
+        "liquid_h7XXDD": {
+          "type": "liquid",
+          "disabled": true,
+          "settings": {
+            "liquid": "<style>\n@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');\n\n.discount-custom-badge{\nfont-family: 'Poppins', sans-serif;\n}\n</style>\n\n<script>\ndocument.addEventListener('DOMContentLoaded', function() {\n  const swatchContainers = document.querySelectorAll('.block-swatch');\n\n  swatchContainers.forEach(container => {\n    const label = container.querySelector('.block-swatch__item');\n    if (label && label.textContent.includes('Round')) {\n      // Crear el badge\n      const badge = document.createElement('div');\nbadge.classList.add(\"discount-custom-badge\");\n      badge.textContent = '$10 OFF + FREE GIFT';\n      badge.style.backgroundColor = '#e70000';\n badge.style.display = 'flex';\n badge.style.alignItems= 'center';\n badge.style.alignSelf = 'center';\n      badge.style.color = '#fff';\nbadge.style.fontFamily = 'Poppins';\nbadge.style.fontWeight = \"600\";\nbadge.style.fontSize = \"11px\";\n      badge.style.width = 'max-content';\n      badge.style.padding = '2px 4px';\n      badge.style.position = 'absolute';\n      badge.style.top = '-8px'; /* Ajusta según sea necesario para la superposición */\n      badge.style.left = '50%'; /* Ajusta según sea necesario para la posición horizontal */\n badge.style.transform = 'translateX(-50%)'; \n      badge.style.zIndex = '1'; /* Asegura que esté por encima del label */\n      badge.style.textAlign = 'center';\n       badge.style.paddingTop = '4px';\nbadge.style.borderRadius = '5px'; /* Opcional: para esquinas redondeadas */\n      \n\n      // Hacer el contenedor position: relative para posicionar el badge absolutamente dentro\n      \ncontainer.style.position = 'relative';\n\n      // Insertar el badge antes del label\n\n      container.appendChild(badge);\n    }\n\nif (label && (label.textContent.includes('Round') || label.textContent.includes('Square') )){\ncontainer.style.marginTop = \"10px\";\n\n}\n  });\n});\n</script>"
+          }
+        },
+        "liquid_bQmFjW": {
+          "type": "liquid",
+          "name": "Shop Payments badge - Edge Copy",
+          "settings": {
+            "liquid": "{% render 'payments-badge-pdp' product: product %}\n\n<style>\nproduct-payment-terms {\ndisplay: none;\n}\n.product-meta__label-list span{\npadding: 0px 10px !important;\n}\nh1.product-meta__title.heading.h3 {\nmargin-bottom: 7px !important;\n}\n@media (min-width: 768px) {\n.jdgm-preview-badge {\nmargin: -8px 0px -6px;\n}\n.product-guarantee-banner {\nmargin-top: 15px;\n}\n\n}\n@media (max-width: 768px) {\n.payments-badge-pdp {\nmargin: 5px 0px 8px 0px !important;\n}\n.product__info .product-meta {\npadding-bottom: 0px;\n}\n}\n</style>\n<script>\ndocument.addEventListener(\"DOMContentLoaded\", () => {\n\n  function cleanUnlocked() {\n    const labels = document.querySelectorAll(\".label.label--highlight\");\n\n    labels.forEach(label => {\n      const original = label.textContent.trim();\n\n      // Si contiene \"UNLOCKED!\" → limpiarlo\n      if (original.toUpperCase().includes(\"UNLOCKED\")) {\n        const cleaned = original.replace(/UNLOCKED!?/i, \"\").trim();\n        label.textContent = cleaned;\n      }\n    });\n  }\n\n  // Por si el elemento aparece tarde (App, AJAX, etc.)\n  const observer = new MutationObserver(cleanUnlocked);\n  observer.observe(document.body, { childList: true, subtree: true });\n\n  cleanUnlocked();\n});\n</script>\n\n<script>\ndocument.addEventListener(\"DOMContentLoaded\", () => {\n\n  let observer; // referencia para poder desconectarlo temporalmente\n\n  function applyLockedText() {\n    const targets = document.querySelectorAll(\n      \"#AddToCart .loader-button__text, #StickyAddToCart .loader-button__text\"\n    );\n\n    if (!targets.length) return;\n\n    // detener observer antes de editar el DOM\n    if (observer) observer.disconnect();\n\n    targets.forEach(el => {\n      el.textContent = \"ADD TO CART WITH SAVINGS ➔\";\n      el.dataset.locked = \"true\";\n    });\n\n    // reactivar observer después del cambio\n    startObserver();\n  }\n\n  function startObserver() {\n    observer = new MutationObserver(() => {\n      // Shopify a veces elimina y re-crea el nodo → lo buscamos siempre\n      applyLockedText();\n    });\n\n    observer.observe(document.body, {\n      childList: true,\n      subtree: true\n    });\n  }\n\n  // Aplicar una vez al cargar\n  applyLockedText();\n\n});\n</script>\n\n{% comment %}\n<script>\ndocument.addEventListener(\"DOMContentLoaded\", () => {\n\n  const target = document.querySelector(\".product-meta__price-list-container\");\n  if (!target) return;\n\n  // Guardar snapshot original\n  const originalHTML = target.innerHTML;\n\n  // Observer para evitar cambios cuando Shopify actualiza las variantes\n  const observer = new MutationObserver(() => {\n    // Si el contenido difiere, lo restauramos\n    if (target.innerHTML !== originalHTML) {\n      target.innerHTML = originalHTML;\n    }\n  });\n\n  observer.observe(target, { childList: true, subtree: true });\n\n});\n</script>\n{% endcomment %}"
+          }
+        },
+        "list_icons_pdp_8DDjnH": {
+          "type": "list-icons-pdp",
+          "settings": {
+            "title-icon-1": "FIRST CARBINOX SMARTWATCH FULLY MADE OF STAINLESS STEEL:",
+            "subtitle-icon-1": "Shock-resistant shell engineered for concrete, heat, dust, and impact.",
+            "title-icon-2": "BATTERY LIFE TAKEN TO THE NEXT LEVEL:",
+            "subtitle-icon-2": "500mAh Cobalt battery for 15+ days of use within a single charge.",
+            "title-icon-3": "20+ NEW DURABILITY TESTS PASSED:",
+            "subtitle-icon-3": "10X tougher and resistant than any other Carbinox model ever built."
+          }
+        },
+        "77b0126f-d176-4e47-b6f3-d2424b9b32ea": {
+          "type": "variant_picker",
+          "settings": {
+            "hide_sold_out_variants": false,
+            "selector_mode": "block",
+            "color_mode": "block",
+            "size_chart_page": ""
+          }
+        },
+        "liquid_TzRyPU": {
+          "type": "liquid",
+          "name": "Freegifts",
+          "disabled": true,
+          "settings": {
+            "liquid": "<div id=\"free-gifts-banner\" class=\"free-gifts\">\n  {% if settings.promo-on %}\n    <p style=\"line-height: 120%; background: #FFFFFF; padding: 0px 4px; border-radius: 2px; margin: 0px auto 12px !important; max-width: fit-content; color: #000000 !important;\" class=\"free-gifts__header\">ORDER BY <span id=\"today-date\"></span> FOR FREE GIFTS:</p>\n  {% else %}\n    <p style=\"line-height: 120%; background: #FFFFFF; padding: 0px 4px; border-radius: 2px; margin: 0px auto 12px !important; max-width: fit-content; color: #000000 !important;\" class=\"free-gifts__header\">ORDER BY <span id=\"today-date\"></span> FOR FREE GIFTS:</p>\n  {% endif %}\n  \n  <div class=\"free-gifts__items\">\n    <div class=\"gift-item\">\n      <div class=\"gift-badge\">FREE <span class=\"gift-price\">$14.95</span></div>\n      <img src=\"https://cdn.shopify.com/s/files/1/0049/0533/6935/files/Component_1.png?v=1771376753\" alt=\"Metal band\">\n      <p>\n        {% if settings.new-gift == true %}\n        <span style=\"color: #D80027; font-weight: 600; margin-right: 3px;\">3X </span>\n        {% endif %}\n        Tempered Pack\n        </p>\n        {% if settings.new-gift == true %}\n        <p style=\"color: #000000; font-size: 8px; margin: 0px; margin-top: -12px; opacity: .6;\">\n          (6 screen protectors)\n        </p>\n        {% endif %}\n    </div>\n    <div class=\"gift-item\">\n      <div class=\"gift-badge\">FREE <span class=\"gift-price\">$14.95</span></div>\n      <img src=\"https://cdn.shopify.com/s/files/1/0049/0533/6935/files/gift-2_601e3cd6-2654-4219-9078-5cbf565fe27b.png?v=1770838340\" alt=\"Limited Edition Straps\">\n      \n      <p>\n      {% if settings.new-gift == true %}\n      <span style=\"color: #D80027; font-weight: 600; margin-right: 3px;\">3X </span>\n      {% endif %}\n        USB Charger</p>\n    </div>\n    <div class=\"gift-item\">\n      <div class=\"gift-badge\">FREE</div>\n      <img src=\"https://cdn.shopify.com/s/files/1/0049/0533/6935/files/gift-3.webp?v=1770837490\" alt=\"Tempered Glass Pack\">\n      <p>Mystery Gift</p>\n    </div>\n  </div>\n</div>\n\n\n<style>\n/* Hide default promo banner */\n\n\n#promo-banner {\n  display: none !important;\n}\n\n.guarantee-banner {\n  background: #f9f9f9 !important;\n}\n\n.free-gifts {\n  padding: 12px 15px;\n  background: #fff;\n  color: #000;\n  text-align: center;\n  border-radius: 5px;\n  border: 1px solid #F2F2F2;\n  margin: 0px auto;\n  max-width: 100%;\n}\n\n.gift-price {\n  font-weight: 500;\n  text-decoration: line-through;\n}\n\n.free-gifts__header {\n  font-size: 18px;\n  font-weight: bold;\n  margin-bottom: 18px;\n  line-height: 2;\n}\n\np.free-gifts__header {\n  color: #000000 !important;\n}\n\n.free-gifts__items {\n  display: flex;\n  gap: 14px;\n  justify-content: center;\n  flex-wrap: nowrap;\n  align-items: flex-start;\nmargin-top: 15px;\n}\n\n.gift-item {\n  padding: 0px;\n  min-width: 0;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  gap: 0px;\n  position: relative;\n}\n\n.gift-badge {\n  background: #06B036;\n  color: #fff;\n  font-weight: bold;\n  padding: 0px 4px;\n  border-radius: 4px;\n  font-size: 9px;\n  position: absolute;\n  top: -8px;\n  left: 50%;\n  transform: translateX(-50%);\n  white-space: nowrap;\n  z-index: 1;\n}\n{% if settings.promo-on %}\n.gift-badge {\n  background: #06B036;\n}\n{% endif %}\n\n.gift-item img {\n  width: 100%;\n  height: 80px;\n  object-fit: contain;\n  display: block;\n}\n\n.gift-item p {\n  font-size: 12px;\n  margin: 0;\n  font-weight: 400;\n  line-height: 1.2;\n  min-height: 30px;\n  display: flex;\n  align-items: center;\n  text-align: center;\n}\n\n.product-meta {\n  margin-top: 0px;\n  padding-bottom: 0px;\n  border: 0px;\n}\n\n.template-product .product-form__variants div.product-form__option-info {\n  justify-content: flex-start !important;\n}\n\ndiv.product-form__option-info {\n  justify-content: left !important;\n}\n\n/* Mobile styles */\n@media (max-width: 768px) {\n  .payments-badge-pdp {\n    margin-top: 5px;\n  }\n  .product-form__payment-container {\n    margin-bottom: 10px;\nmargin-top: 4px;\n  }\n  .product-form__variants{\n    margin-bottom: -10px;\n    margin-top: 15px;\n  }\n  .free-gifts {\n    padding: 10px 12px;\n  }\n  \n  .free-gifts__header {\n    font-size: 16px;\n    margin-bottom: 14px;\n  }\n  \n  .gift-item img {\n    height: 80px;\n  }\n  \n  .gift-item p {\n    font-size: 11px;\n    min-height: 26px;\n  }\n  \n  .gift-badge {\n    font-size: 8px !important;\n    padding: 1px 3px;\n  }\n  \n\n  .free-gifts__items {\n    gap: 5px;\n  }\n}\n\n/* Desktop - mantener compacto */\n.shipping_polices_par {\nmargin-top: 10px;\n}\n@media (min-width: 769px) {\n.shipping_polices_par {\n}\n.payments-badge-pdp {\n  margin-top: 5px;\n}\n\n  .free-gifts {\n    max-width: 500px !important;\n    padding: 12px 20px;\n  }\n  \n  .free-gifts__header {\n    font-size: 20px;\n    margin-bottom: 20px;\n  }\n  \n  .gift-item img {\n    height: 80px;\nwidth: 100px;\n  }\n  \n  .gift-item p {\n    font-size: 13px;\n  }\n}\n</style>\n<script>\n  document.addEventListener(\"DOMContentLoaded\", function () {\n    // Generate dynamic date + 2 days for urgency\n    const dateEl = document.getElementById(\"today-date\");\n    if (dateEl) {\n      const today = new Date();\n      // Add 2 days to current date\n      today.setDate(today.getDate() );\n      const options = { month: \"long\", day: \"2-digit\" };\n      dateEl.textContent = today.toLocaleDateString(\"en-US\", options).toUpperCase();\n    }\n    \n    // Move banner to top of main element\n    const mainElement = document.getElementById(\"main\");\n    const bannerContainer = document.getElementById(\"free-gifts-banner\");\n    \n    if (!mainElement || !bannerContainer) {\n      console.error(\"main or free-gifts-banner container not found\");\n      return;\n    }\n    {% comment %}\nmainElement.insertBefore(bannerContainer, mainElement.firstChild);\n{% endcomment %}\n  });\n\n</script>"
+          }
+        },
+        "liquid_UwKrnt": {
+          "type": "liquid",
+          "name": "Buy Box Variants OG",
+          "disabled": true,
+          "settings": {
+            "liquid": "<div class=\"pack-list ultimate-pack\">\n <ul>\n      <li>\n        <div class=\"pack-li-content\">\n          <p class=\"name-variant-selected\"><span class=\"icon\"></span>1 Carbinox Edge</p>\n          <p class=\"price-li\">$209.95</p>\n        </div>\n      </li>\n          <li>\n        <div class=\"pack-li-content\">\n          <p><span class=\"icon\"></span>Tempered Glass Pack </p>\n          <p class=\"price-li\">$14.95</p>\n        </div>\n      </li>\n          <li>\n        <div class=\"pack-li-content\">\n          <p><span class=\"icon\"></span>1 USB Charging Cord</p>\n          <p class=\"price-li\">$14.95</p>\n        </div>\n      </li>\n       <li>\n        <div class=\"pack-li-content\">\n          <p><span class=\"icon\"></span>1 Blastbeam</p>\n          <p class=\"price-li\">$19.95</p>\n        </div>\n      </li>\n          <li>\n        <div class=\"pack-li-content\">\n          <p><span class=\"icon\"></span>1 Black Metal Band</p>\n          <p class=\"price-li\">$29.95</p>\n        </div>\n      </li>\n          <li>\n        <div class=\"pack-li-content\">\n          <p><span class=\"icon\"></span>6 Limited Edition Straps</p>\n          <p class=\"price-li\">$69.95</p>\n        </div>\n      </li>\n      <li>\n        <div class=\"pack-li-content\">\n          <p><span class=\"icon\"></span>1 Mystery Gift</p>\n          <p class=\"price-li\">FREE</p>\n        </div>\n      </li>\n    </ul>\n    <div class=\"footer-pack-list\">\n      <p>Total</p>\n      <p>$229.95 <span class=\"compare-price-li\">$389.95</span></p>\n    </div>\n      \n</div>\n <div class=\"pack-list starter-pack\">\n    <ul>\n      <li>\n        <div class=\"pack-li-content\">\n          <p class=\"name-variant-selected\"><span class=\"icon\"></span>1 Carbinox Edge</p>\n          <p class=\"price-li\">$209.95</p>\n        </div>\n      </li>\n      <li>\n        <div class=\"pack-li-content\">\n          <p><span class=\"icon\"></span>1 Mystery Gift</p>\n          <p class=\"price-li\">FREE</p>\n        </div>\n      </li>\n    </ul>\n    <div class=\"footer-pack-list\">\n      <p>Total</p>\n      <p>$169.95 <span class=\"compare-price-li\">$209.95</span></p>\n    </div>\n      \n\n  </div>\n<div class=\"pack-list double-pack\">\n <ul>\n            <li>\n        <div class=\"pack-li-content\">\n          <p class=\"name-variant-selected\"><span class=\"icon\"></span>1 Carbinox Edge</p>\n          <p class=\"price-li\">$209.95</p>\n        </div>\n      </li>\n      <li>\n        <div class=\"pack-li-content\">\n          <p><span class=\"icon\"></span>Tempered Glass Pack </p>\n          <p class=\"price-li\">$14.95</p>\n        </div>\n      </li>\n          <li>\n        <div class=\"pack-li-content\">\n          <p><span class=\"icon\"></span>1 USB Charging Cord</p>\n          <p class=\"price-li\">$14.95</p>\n        </div>\n      </li>\n          <li>\n        <div class=\"pack-li-content\">\n          <p><span class=\"icon\"></span>1 Blastbeam</p>\n          <p class=\"price-li\">$19.95</p>\n        </div>\n      </li>\n      <li>\n        <div class=\"pack-li-content\">\n          <p><span class=\"icon\"></span>1 Mystery Gift</p>\n          <p class=\"price-li\">FREE</p>\n        </div>\n      </li>\n    </ul>\n    <div class=\"footer-pack-list\">\n      <p>Total</p>\n      <p>$209.95 <span class=\"compare-price-li\">$309.95</span></p>\n    </div>\n      \n        </div>\n\n\n\n\n\n<script>\n  document.addEventListener(\"DOMContentLoaded\", function () {\n  // Procesar opciones\n  const optionContainers = document.querySelectorAll(\".product-form__option-info\");\n\n  optionContainers.forEach((container, index) => {\n    const labelEl = container.querySelector(\".product-form__option-name\");\n    const valueEl = container.querySelector(\".product-form__option-value\");\n\n    if (labelEl && valueEl) {\n      labelEl.textContent = labelEl.textContent.replace(/^\\s*[\\d#*️⃣️]+/g, '').trim();\n      if (index === 1) {\n        valueEl.textContent = \"Ultimate Pack ($100 OFF)\";\n      }\n      valueEl.style.fontWeight = \"500\";\n    }\n  });\n\n  const swatchLabels = document.querySelectorAll(\"label.block-swatch__item\");\n\n  swatchLabels.forEach((label) => {\n    const text = label.textContent;\n\n    if (text.includes(\"Starter\")) {\n      label.setAttribute(\"data-pack\", \"starter-pack\");\n    }\n\n    if (text.includes(\"Ulti\")) {\n      label.setAttribute(\"data-pack\", \"ultimate-pack\");\n      label.textContent = \"Ultimate Pack\";\n    }\n\n    if (text.includes(\"Lite\")) {\n      label.setAttribute(\"data-pack\", \"double-pack\");\n    }\n\n    if (text.includes(\"Pack\")) {\n      const badge = document.createElement(\"span\");\n      badge.classList.add(\"save-badge\");\n      badge.textContent = text.includes(\"Lite Pack\") ? \"($100 OFF)\" :\n                          text.includes(\"Starter\") ? \"($50 OFF)\" : \"($150 OFF)\";\n\n      label.classList.add(\"pack-item\");\n      label.appendChild(badge);\n\n      if (text.includes(\"Ultimate Pack\")) {\n        const bestValueBadge = document.createElement(\"span\");\n        bestValueBadge.classList.add(\"best-value-badge\");\n        bestValueBadge.appendChild(document.createTextNode(\"MOST POPULAR 🔥\"));\n        label.appendChild(bestValueBadge);\n      }\n    }\n  });\n\nfunction detectWatchTypeAndUpdateText() {\n  const selectedRadio = document.querySelector('.block-swatch__radio:checked');\n  if (!selectedRadio) return;\n\n  const typeValue = selectedRadio.value.trim();\n  const formattedText =\n    typeValue.includes(\"Type S\")\n      ? '1 Carbinox Blaze Type S'\n      : typeValue.includes(\"Type R\")\n      ? '1 Carbinox Blaze Type R'\n      : '1 Carbinox Blaze';\n\n  // Modificar solo en packs visibles que NO sean double-pack\n  const visiblePackLists = document.querySelectorAll('.pack-list');\n  visiblePackLists.forEach(pack => {\n    if (pack.style.display === \"block\" && !pack.classList.contains(\"double-pack\")) {\n      const lis = pack.querySelectorAll('ul li .pack-li-content p:first-child');\n      lis.forEach(p => {\n        if (p.textContent.trim().startsWith(\"1 Carbinox Blaze\")) {\n          p.innerHTML = `<span class=\"icon\"></span>${formattedText}`;\n        }\n      });\n    }\n  });\n}\n\n  // Mostrar pack correspondiente y actualizar textos según tipo\n  function updatePackVisibility(selectedPack) {\n    const packs = document.querySelectorAll(\".pack-list\");\n    packs.forEach((pack) => {\n      if (pack.classList.contains(selectedPack)) {\n        pack.style.display = \"block\";\n      } else {\n        pack.style.display = \"none\";\n      }\n    });\n\n    // 👇 Muy importante: actualizar tipo de reloj solo después de mostrar\n    detectWatchTypeAndUpdateText();\n  }\n\n  // Detectar clic en swatches\n  const swatches = document.querySelectorAll(\"label.block-swatch__item[data-pack]\");\n  swatches.forEach((swatch) => {\n    swatch.addEventListener(\"click\", () => {\n      const selected = swatch.getAttribute(\"data-pack\");\n      updatePackVisibility(selected);\n    });\n  });\n// Escuchar cambios en el tipo de reloj (Type S / Type R)\ndocument.querySelectorAll('.block-swatch__radio').forEach(radio => {\n  radio.addEventListener('change', () => {\n    detectWatchTypeAndUpdateText();\n  });\n});\n  // Al seleccionar por primera vez\n  const firstSwatch = document.querySelector(\"label.block-swatch__item[data-pack]\");\n  if (firstSwatch) {\n    const firstRadio = firstSwatch.previousElementSibling;\n    if (firstRadio && firstRadio.type === 'radio') {\n      firstRadio.checked = true;\n      const selected = firstSwatch.getAttribute(\"data-pack\");\n      updatePackVisibility(selected);\n    }\n  }\n\n   const variantRadios = document.querySelectorAll(\n    '.block-swatch__radio[name=\"option1\"]'\n  );\n\n});\n</script>\n\n<style>\n.block-swatch{\nwidth: 100%;\n}\n.block-swatch:has(.pack-item) {\n  width: auto !important;\n}\n.block-swatch__item{\nfont-weight: 400 !important;\nwidth: 100%!important;\nfont-size: 14px !important;\npadding: 10px !important;\nposition: relative;\nbackground-color: #F9F9F9 !important;\nborder: 1px solid #D4D4D4;\nborder-radius: 4px !important;\ndisplay: flex;\nflex-direction: column;\njustify-content: center;\nalign-items: center;\nline-height: 1.2 !important;\n}\n.block-swatch-list{\nflex-wrap: unset !important;\ngap: 8px;\njustify-content: center;\n}\n.block-swatch__item:after {border-radius: 4px !important;\n}\n.block-swatch__radio:checked + label {\nfont-weight: 500 !important;\n}\n.block-swatch__radio:checked + .block-swatch__item[data-pack] {\n  background-color: #FFF8E3 !important;\nborder-radius: 4px !important;\n}\n\n.block-swatch__item[data-pack]::after {\n  box-shadow: 0 0 0 1px #ffc200 inset, 0 0 0 1px #ffc200;\nborder-radius: 4px !important;\n\n}\n.save-badge{\nfont-size: 10px;\npadding: 2px 6px;\n}\n\n .best-value-badge {\n    position: absolute;\n    top: -17px;\n    left: 50%;\n    transform: translateX(-50%);\n    background-color: #ffc200;\n    color: black;\n    font-weight: 600;\n    font-size: 10px;\n    padding: 2px 6px;\n    border-radius: 4px 4px 0px 0px;\n    z-index: 1;\nwidth: max-content;\n  }\n  .type-s-image,\n  .type-r-image,\n  .starter-image,\n  .ultimate-image,\n  .double-image {\n    width: 64px;\n    height: 64px;\n    object-fit: contain;\n    margin: auto;\n    display: inline-block;\n    vertical-align: middle;\n  }\n\n.pack-list p{\nmargin: 0px;\n}\n.pack-list ul {\n  list-style: none;\n  padding: 0;\n  margin: 0;\nfont-size: 14px;\n}\n\n.pack-list li {\n  display: flex;\n  align-items: center;\n  gap: 5px;\njustify-content: space-between;\n  margin-bottom: 2px;\n  font-family: sans-serif;\n  font-size: 14px;\nwidth: 100%;\nborder-bottom: 0.5px solid #D4D4D4;\n}\n\n.pack-list .icon {\n  width: 16px;\n  height: 16px;\nmargin-right: 4px;\n  display: inline-block;\n  background-image: url(\"data:image/svg+xml;utf8,<svg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M14.6667 7.99999C14.6667 11.682 11.682 14.6667 8.00001 14.6667C4.31801 14.6667 1.33334 11.682 1.33334 7.99999C1.33334 4.31799 4.31801 1.33333 8.00001 1.33333C11.682 1.33333 14.6667 4.31799 14.6667 7.99999Z' fill='%23FFC200'/><path d='M10.6867 5.97956C10.7803 6.07331 10.8329 6.20039 10.8329 6.33289C10.8329 6.46539 10.7803 6.59247 10.6867 6.68622L7.35334 10.0196C7.25959 10.1132 7.13251 10.1658 7.00001 10.1658C6.86751 10.1658 6.74043 10.1132 6.64668 10.0196L5.31334 8.68622C5.26422 8.64045 5.22482 8.58525 5.19749 8.52391C5.17016 8.46258 5.15547 8.39637 5.15428 8.32924C5.1531 8.2621 5.16545 8.19542 5.1906 8.13316C5.21574 8.0709 5.25317 8.01434 5.30065 7.96686C5.34813 7.91938 5.40469 7.88195 5.46695 7.85681C5.5292 7.83166 5.59589 7.81931 5.66303 7.82049C5.73016 7.82168 5.79637 7.83637 5.8577 7.8637C5.91904 7.89103 5.97424 7.93043 6.02001 7.97955L7.00001 8.95955L8.49001 7.46955L9.98001 5.97956C10.0738 5.88592 10.2008 5.83333 10.3333 5.83333C10.4658 5.83333 10.5929 5.88592 10.6867 5.97956Z' fill='black'/></svg>\");\n  background-repeat: no-repeat;\n  background-size: contain;\n}\n\n.pack-list {\n  display: none;\nmargin-bottom: 0px;\n}\n\n.pack-list p, .pack-list span{\n  font-family: 'Poppins', sans-serif;\n  font-size: 14px;\n}\n.footer-pack-list {\n  padding: 10px 0px 0px 20px;\n  display: flex;\n  justify-content: space-between;\n}\n.footer-pack-list p {\n   font-weight: 600;\nmargin: 0px;\n}\n.compare-price-li {\n  color: #5B5B5B;\n  text-decoration: line-through;\nmargin-left: 1px;\n}\n.congrats-p {\nwidth: 100%;\ndisplay: flex;\nalign-items: center;\ngap: 4px;\nfont-size:14px;\n  color: black;\n  font-weight: 550;\npadding-left: 20px;\nbackground: #F3FFE8;\nborder: 0.5px solid #95C122;\nborder-radius: 5px;\npadding: 10px;\nmargin-top: 10px !important;\n}\n\n.congrats-saving {\n    background: #95C122;\n    color: #fff;\n    border-radius: 3px;\n    padding: 0px 4px;\n}\n\n.pack-li-content{\nwidth: 100%;\npadding: 10px 0px !important;\ndisplay: flex;\njustify-content: space-between;\n}\n.price-li{\nfont-weight: 600;\n}\n\n.block-swatch__radio + .block-swatch__item[data-pack] {\nmargin-top: 15px;\nheight: -webkit-fill-available;\nmax-height: 100px;\n}\n\n@media (max-width: 768px) {\n.block-swatch__radio + .block-swatch__item[data-pack] {\nmax-height: 65px;\n}\n.product-form__option-info {\njustify-content: flex-start !important;\n}\n    .congrats-p {\n        font-size: 12px !important;\n    }\n    .congrats-saving {\n        font-size: 12px !important;\n    }\n}\n</style>"
+          }
+        },
+        "liquid_MHcTwY": {
+          "type": "liquid",
+          "name": "congrats",
+          "settings": {
+            "liquid": "{% if product.id == 14892022759796 %}\n{% if product.compare_at_price > product.price %}\n\n  {% assign savings = product.compare_at_price | minus: product.price %}\n\n<div>\n<div class=\"pack-list starter-pack\"> \n      <p class=\"congrats-p\">\n<img alt=\"save money\" width=\"22\" height=\"22\" src=\"https://cdn.shopify.com/s/files/1/0049/0533/6935/files/icon-congrats.png?v=1755265589\"/>\nCongrats! You're saving <span class=\"congrats-saving\">{{ savings | money}}</span>TODAY!</p>\n\n  </div>\n\n</div>\n\n<style>\n.block-swatch{\nwidth: 100%;\n}\n.block-swatch:has(.pack-item) {\n  width: auto !important;\n}\n.block-swatch__item{\nfont-weight: 400 !important;\nwidth: 100%!important;\nfont-size: 14px !important;\npadding: 10px !important;\nposition: relative;\nbackground-color: #F9F9F9 !important;\nborder: 1px solid #D4D4D4;\nborder-radius: 4px !important;\ndisplay: flex;\nflex-direction: column;\njustify-content: center;\nalign-items: center;\nline-height: 1.2 !important;\n}\n.block-swatch-list{\nflex-wrap: unset !important;\ngap: 8px;\njustify-content: center;\nmax-width: 100%;\n}\n.block-swatch__item:after {border-radius: 4px !important;\n}\n.block-swatch__radio:checked + label {\nfont-weight: 500 !important;\n}\n.block-swatch__radio:checked + .block-swatch__item[data-pack] {\n  background-color: #F3FFE8 !important;\nborder-radius: 4px !important;\n}\n\n.block-swatch__item[data-pack]::after {\n  box-shadow: 0 0 0 1px #95C122 inset, 0 0 0 1px #95C122;\nborder-radius: 4px !important;\n\n}\n.save-badge{\nfont-size: 10px;\npadding: 2px 6px;\n}\n\n .best-value-badge {\n    position: absolute;\n    top: -17px;\n    left: 50%;\n    transform: translateX(-50%);\n    background-color: #95C122;\n    color: white;\n    font-weight: 600;\n    font-size: 10px;\n    padding: 2px 6px;\n    border-radius: 4px 4px 0px 0px;\n    z-index: 1;\nwidth: max-content;\n  }\n  .type-s-image,\n  .type-r-image,\n  .starter-image,\n  .ultimate-image,\n  .double-image {\n    width: 64px;\n    height: 64px;\n    object-fit: contain;\n    margin: auto;\n    display: inline-block;\n    vertical-align: middle;\n  }\n.pack-list {\n  margin-top: -3px;\nmargin-bottom: 0px;\n}\n.pack-list p{\nmargin: 0px;\n}\n.pack-list ul {\n  list-style: none;\n  padding: 0;\n  margin: 0;\nfont-size: 14px;\n}\n\n.pack-list li {\n  display: flex;\n  align-items: center;\n  gap: 5px;\njustify-content: space-between;\n  margin-bottom: 2px;\n  font-family: sans-serif;\n  font-size: 14px;\nwidth: 100%;\nborder-bottom: 0.5px solid #D4D4D4;\n}\n\n.pack-list .icon {\n  width: 16px;\n  height: 16px;\nmargin-right: 4px;\n  display: inline-block;\n  background-image: url('data:image/svg+xml;utf8,<svg width=\"16\" height=\"17\" viewBox=\"0 0 16 17\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M14.6673 8.50016C14.6673 12.1822 11.6827 15.1668 8.00065 15.1668C4.31865 15.1668 1.33398 12.1822 1.33398 8.50016C1.33398 4.81816 4.31865 1.8335 8.00065 1.8335C11.6827 1.8335 14.6673 4.81816 14.6673 8.50016Z\" fill=\"%2395C122\"/><path d=\"M10.6868 6.47972C10.7804 6.57347 10.833 6.70056 10.833 6.83306C10.833 6.96556 10.7804 7.09264 10.6868 7.18639L7.35344 10.5197C7.25969 10.6134 7.1326 10.6659 7.0001 10.6659C6.8676 10.6659 6.74052 10.6134 6.64677 10.5197L5.31344 9.18639C5.26431 9.14061 5.22491 9.08541 5.19758 9.02408C5.17025 8.96275 5.15556 8.89654 5.15437 8.8294C5.15319 8.76227 5.16554 8.69558 5.19069 8.63332C5.21583 8.57107 5.25326 8.51451 5.30074 8.46703C5.34822 8.41955 5.40478 8.38212 5.46704 8.35697C5.5293 8.33183 5.59598 8.31948 5.66312 8.32066C5.73025 8.32185 5.79646 8.33654 5.85779 8.36387C5.91913 8.3912 5.97433 8.4306 6.0201 8.47972L7.0001 9.45972L8.4901 7.96972L9.9801 6.47972C10.0739 6.38609 10.2009 6.3335 10.3334 6.3335C10.4659 6.3335 10.593 6.38609 10.6868 6.47972Z\" fill=\"black\"/></svg>');\n  background-repeat: no-repeat;\n  background-size: contain;\n}\n\n\n.pack-list p, .pack-list span{\n  font-family: 'Poppins', sans-serif;\n  font-size: 14px;\n}\n.footer-pack-list {\n  padding: 10px 0px 0px 20px;\n  display: flex;\n  justify-content: space-between;\n}\n.footer-pack-list p {\n   font-weight: 600;\nmargin: 0px;\n}\n.compare-price-li {\n  color: #5B5B5B;\n  text-decoration: line-through;\nmargin-left: 1px;\n}\n.congrats-p {\nwidth: 100%;\ndisplay: flex;\nalign-items: center;\ngap: 4px;\nfont-size:14px;\n  color: black;\n  font-weight: 550;\npadding-left: 20px;\nbackground: #F3FFE8;\nborder: 0.5px solid #95C122;\nborder-radius: 5px;\npadding: 10px;\n}\np.congrats-p {\n  margin-top: 0px !important;\n  margin-bottom: 0px !important;\n  justify-content: center;\n}\n.congrats-saving {\n    background: #06B036;\n    color: #fff;\n    border-radius: 3px;\n    padding: 0px 4px;\n}\n\n.pack-li-content{\nwidth: 100%;\npadding: 10px 0px !important;\ndisplay: flex;\njustify-content: space-between;\n}\n.price-li{\nfont-weight: 600;\n}\n\n.block-swatch__radio + .block-swatch__item[data-pack] {\nmargin-top: 15px;\n}\n\n@media (max-width: 768px) {\n.product-form__option-info {\njustify-content: center;\n}\n.pack-list {\n  margin-top: 5px;\nmargin-bottom: 5px;\n}\n    .congrats-p {\n        font-size: 12px !important;\n    }\n    .congrats-saving {\n        font-size: 12px !important;\n    }\n}\n@media (min-width: 768px) {\np.congrats-p {\n  margin-bottom: 0px !important;\n}\n.product-form__buy-buttons {\nmargin-bottom: -20px !important;\n}\n}\n</style>\n{% endif %}\n{% endif %}"
+          }
+        },
+        "liquid_XjaDXk": {
+          "type": "liquid",
+          "name": "3 GIFT BANNER OFFER",
+          "settings": {
+            "liquid": "<div id=\"free-gifts-banner\" class=\"free-gifts\">\n  {% if settings.promo-on %}\n    <p style=\"line-height: 120%; background: #FFFFFF; padding: 0px 4px; border-radius: 2px; margin: 0px auto 12px !important; max-width: fit-content; color: #000000 !important;\" class=\"free-gifts__header\">ORDER BY <span id=\"today-date\"></span> FOR FREE GIFTS:</p>\n  {% else %}\n    <p style=\"line-height: 120%; background: #FFFFFF; padding: 0px 4px; border-radius: 2px; margin: 0px auto 12px !important; max-width: fit-content; color: #000000 !important;\" class=\"free-gifts__header\">ORDER BY <span id=\"today-date\"></span> FOR FREE GIFTS:</p>\n  {% endif %}\n  \n  <div class=\"free-gifts__items\">\n    <div class=\"gift-item\">\n      <div class=\"gift-badge\">FREE <span class=\"gift-price\">$44.85</span></div>\n      <div style=\"position: relative; overflow: visible;\">\n        <img class=\"main-image__gift\" src=\"https://cdn.shopify.com/s/files/1/0049/0533/6935/files/Component_1.png?v=1771376753\" alt=\"Metal band\">\n        {% if settings.new-gift == true %}\n        <img width=\"100\" height=\"100\" class=\"sticker-img\" src=\"https://cdn.shopify.com/s/files/1/0049/0533/6935/files/sticker-x3.png?v=1774882774\" alt=\"sticker x3\">\n        {% endif %}\n      </div>\n      <p>\n        {% if settings.new-gift == true %}\n        <span style=\"color: #D80027; font-weight: 600; margin-right: 3px;\">3X </span>\n        {% endif %}\n        Tempered Pack\n        </p>\n        {% if settings.new-gift == true %}\n        <p style=\"color: #000000; font-size: 8px; margin: 0px; margin-top: -12px; opacity: .6;\">\n          (6 screen protectors)\n        </p>\n        {% endif %}\n    </div>\n    <div class=\"gift-item\">\n      <div class=\"gift-badge\">FREE <span class=\"gift-price\">$44.85</span></div>\n      <div style=\"position: relative; overflow: visible;\">\n        <img class=\"main-image__gift\" src=\"https://cdn.shopify.com/s/files/1/0049/0533/6935/files/gift-2_601e3cd6-2654-4219-9078-5cbf565fe27b.png?v=1770838340\" alt=\"Limited Edition Straps\">\n        {% if settings.new-gift == true %}\n        <img width=\"100\" height=\"100\" class=\"sticker-img\" src=\"https://cdn.shopify.com/s/files/1/0049/0533/6935/files/sticker-x3.png?v=1774882774\" alt=\"sticker x3\">\n        {% endif %}\n      </div>\n      \n      <p>\n      {% if settings.new-gift == true %}\n      <span style=\"color: #D80027; font-weight: 600; margin-right: 3px;\">3X </span>\n      {% endif %}\n        USB Charger</p>\n    </div>\n    <div class=\"gift-item\">\n      <div class=\"gift-badge\">FREE</div>\n      <div style=\"position: relative; overflow: visible;\">\n        <img class=\"main-image__gift\" src=\"https://cdn.shopify.com/s/files/1/0049/0533/6935/files/gift-3.webp?v=1770837490\" alt=\"Tempered Glass Pack\">\n\n      </div>\n      <p>Mystery Gift</p>\n    </div>\n  </div>\n</div>\n\n\n<style>\n/* Hide default promo banner */\n\n\n#promo-banner {\n  display: none !important;\n}\n\n.guarantee-banner {\n  background: #f9f9f9 !important;\n}\n\n.free-gifts {\n  padding: 12px 15px;\n  background: #fff;\n  color: #000;\n  text-align: center;\n  border-radius: 5px;\n  border: 1px solid #F2F2F2;\n  margin: 0px auto;\n  max-width: 100%;\n}\n\n.gift-price {\n  font-weight: 500;\n  text-decoration: line-through;\n}\n.sticker-img{\n  position: absolute;\n  bottom: -3px;\n  right: -5px;\n  width: 25px;\n  height: 25px;\n}\n.free-gifts__header {\n  font-size: 18px;\n  font-weight: bold;\n  margin-bottom: 18px;\n  line-height: 2;\n}\n\np.free-gifts__header {\n  color: #000000 !important;\n}\n\n.free-gifts__items {\n  display: grid;\n  gap: 18px;\ngrid-template-columns: 1fr 1fr 1fr;\n  justify-content: center;\n  flex-wrap: nowrap;\n  align-items: flex-start;\nmargin-top: 15px;\n}\n\n.gift-item {\n  padding: 0px;\n  min-width: 0;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  gap: 0px;\n  position: relative;\n}\n\n.gift-badge {\n  background: #06B036;\n  color: #fff;\n  font-weight: bold;\n  padding: 0px 4px;\n  border-radius: 4px;\n  font-size: 9px;\n  position: absolute;\n  top: -8px;\n  left: 50%;\n  transform: translateX(-50%);\n  white-space: nowrap;\n  z-index: 1;\n}\n{% if settings.promo-on %}\n.gift-badge {\n  background: #06B036;\n}\n{% endif %}\n\n.gift-item .main-image__gift {\n  flex: 0 0 1;\n  height: auto;\n  display: block;\n}\n\n.gift-item p {\n  font-size: 12px;\n  margin: 0;\n  font-weight: 400;\n  line-height: 1.2;\n  min-height: 30px;\n  display: flex;\n  align-items: center;\n  text-align: center;\n}\n\n.product-meta {\n  margin-top: 0px;\n  padding-bottom: 0px;\n  border: 0px;\n}\n\n.template-product .product-form__variants div.product-form__option-info {\n  justify-content: flex-start !important;\n}\n\ndiv.product-form__option-info {\n  justify-content: left !important;\n}\n\n/* Mobile styles */\n@media (max-width: 768px) {\n  .payments-badge-pdp {\n    margin-top: 5px;\n  }\n  .product-form__payment-container {\n    margin-bottom: 10px;\nmargin-top: 4px;\n  }\n  .product-form__variants{\n    margin-bottom: -10px;\n    margin-top: 15px;\n  }\n  .free-gifts {\n    padding: 10px 12px;\n  }\n  \n  .free-gifts__header {\n    font-size: 16px;\n    margin-bottom: 14px;\n  }\n \n  .gift-item p {\n    font-size: 10px;\n    min-height: 26px;\n  }\n  \n  .gift-badge {\n    font-size: 8px !important;\n    padding: 1px 3px;\n  }\n  \n\n  .free-gifts__items {\n    gap: 8px;\n  }\n\n  .sticker-img{\n    bottom: 0px;\n    right: -5px;\n    width: 20px;\n    height: 20px;\n  }\n}\n\n/* Desktop - mantener compacto */\n.shipping_polices_par {\nmargin-top: 10px;\n}\n@media (min-width: 769px) {\n.shipping_polices_par {\n}\n.payments-badge-pdp {\n  margin-top: 5px;\n}\n\n  .free-gifts {\n    max-width: 500px !important;\n    padding: 12px 20px;\n  }\n  \n  .free-gifts__header {\n    font-size: 20px;\n    margin-bottom: 20px;\n  }\n \n  \n  .gift-item p {\n    font-size: 13px;\n  }\n}\n</style>\n<script>\n  document.addEventListener(\"DOMContentLoaded\", function () {\n    // Generate dynamic date + 2 days for urgency\n    const dateEl = document.getElementById(\"today-date\");\n    if (dateEl) {\n      const today = new Date();\n      // Add 2 days to current date\n      today.setDate(today.getDate() );\n      const options = { month: \"long\", day: \"2-digit\" };\n      dateEl.textContent = today.toLocaleDateString(\"en-US\", options).toUpperCase();\n    }\n    \n    // Move banner to top of main element\n    const mainElement = document.getElementById(\"main\");\n    const bannerContainer = document.getElementById(\"free-gifts-banner\");\n    \n    if (!mainElement || !bannerContainer) {\n      console.error(\"main or free-gifts-banner container not found\");\n      return;\n    }\n    {% comment %}\nmainElement.insertBefore(bannerContainer, mainElement.firstChild);\n{% endcomment %}\n  });\n\n</script>"
+          }
+        },
+        "liquid_7CAREr": {
+          "type": "liquid",
+          "name": "Free gifts",
+          "disabled": true,
+          "settings": {
+            "liquid": "{% if product.id == 14892022759796 %}\n<div class=\"gifts-watch\">\n<p class=\"order-by-today\">\n  ORDER BY JANUARY 15 FOR FREE GIFTS:\n</p>\n<img\nalt=\"order-by-today\" src=\"data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==\" class=\"lazyload\" data-src=\"https://cdn.shopify.com/s/files/1/0049/0533/6935/files/Frame_1984078347.webp?v=1768502692\"\n/>\n</div>\n\n<style>\n.order-by-today {\ntext-align:center;\nmargin: 0;\nfont-size: 15px;\nfont-weight: bold;\n}\n.gifts-watch {\nborder: 1px solid #F2F2F2;\nborder-radius: 5px;\nbackground: #FFFFFF;\npadding: 15px 0px 10px;\ndisplay: flex;\nflex-direction: column;\nalign-items: center;\njustify-content: center;\ngap: 10px;  \nbox-shadow: \n    0 5px 4px rgba(0, 0, 0, 0.2);\n\n}\n@media (min-width: 500px){\n.gifts-watch img {\nmax-width: 400px;\nmargin: auto;\n}\n.gifts-watch {\nmargin: -18px 0px -5px;\n}\n}\n</style>\n\n<script>\ndocument.addEventListener(\"DOMContentLoaded\", () => {\n  const el = document.querySelector(\".order-by-today\");\n  if (!el) return;\n\n  const today = new Date();\n\n  const month = today.toLocaleString(\"en-US\", { month: \"long\" }).toUpperCase();\n  const day = today.getDate();\n\n  el.textContent = `ORDER BY ${month} ${day} FOR FREE GIFTS:`;\n});\n</script>\n{% endif %}"
+          }
+        },
+        "aa8adaeb-d404-4d2d-9f7b-7c87d4a68e8f": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_payment_button": false,
+            "atc_button_background": "#ffc200",
+            "atc_button_text_color": "#000000",
+            "buy_now_button_background": "rgba(0,0,0,0)",
+            "buy_now_button_text_color": "rgba(0,0,0,0)"
+          }
+        },
+        "liquid_9FYWef": {
+          "type": "liquid",
+          "name": "Badge Estimated",
+          "settings": {
+            "liquid": "<div class=\"variant-delivery-estimated\">\n<p>\n<span>Edge Phantom is selling fast! ⚡\n</span><br>\nExpect delivery in 10–15 business days.\n</p>\n</div>\n\n<style>\n.variant-delivery-estimated {\nbackground: #F3FFE8;\npadding: 2px 4px;\nmax-width: 278px;\nmargin: 15px auto 0px;\n}\n.variant-delivery-estimated p {\nmargin: 0px;\nfont-size: 12px;\nline-height: 120%;\ntext-align: center;\n}\n.variant-delivery-estimated span {\nfont-weight: 600;\ntext-transform: uppercase;\n}\n\n.product-guarantee-banner {\nmargin-top: 0px;\n}\n@media (max-width: 768px) {\n.product-guarantee-banner {\nmargin-top: -10px;\n}\n.variant-delivery-estimated {\nmargin: -5px auto 15px;\n}\n}\n</style>\n\n<script>\ndocument.addEventListener(\"DOMContentLoaded\", function() {\n  const checkReady = setInterval(() => {\n    const radios = document.querySelectorAll(\".block-swatch__radio\");\n    const banner = document.querySelector(\".variant-delivery-estimated\");\n\n    if (!radios.length || !banner) return;\n    clearInterval(checkReady);\n\n    function updateBanner() {\n      const selected = document.querySelector(\".block-swatch__radio:checked\");\n      const isArmorSilver = selected && selected.value === \"Phantom Black\";\n      banner.style.display = isArmorSilver ? \"\" : \"none\";\n    }\n\n    radios.forEach(radio => radio.addEventListener(\"change\", updateBanner));\n    updateBanner();\n  }, 500);\n});\n</script>"
+          }
+        },
+        "liquid_cfng9G": {
+          "type": "liquid",
+          "disabled": true,
+          "settings": {
+            "liquid": "<script>\ndocument.addEventListener(\"DOMContentLoaded\", () => {\n  setTimeout(() => {\n    const host = document.querySelector(\"shopify-payment-terms\");\n    if (!host) {\n      console.log(\"⚠️ No se encontró el elemento <shopify-payment-terms>\");\n      return;\n    }\n\n    const shadow = host.shadowRoot;\n    if (!shadow) {\n      console.log(\"⚠️ No se pudo acceder al shadowRoot (puede ser closed)\");\n      return;\n    }\n\n    const el = shadow.querySelector(\"#shopify-installments-content\");\n    if (!el) {\n      console.log(\"⚠️ #shopify-installments-content no encontrado dentro del shadowRoot\");\n      return;\n    }\n\n    const amountEl = el.querySelector(\".font-bold\");\n    const shopPayEl = el.querySelector(\"svg\")?.closest(\"div\");\n\n    if (amountEl && shopPayEl) {\n      const amount = amountEl.textContent.trim();\n      const shopPayHTML = shopPayEl.outerHTML;\n\n      el.innerHTML = `\n        Pay only <strong>${amount}</strong> today.\n        Split the cost with 4 easy, interest-free payments using ${shopPayHTML}.\n        No stress. No extra fees.\n      `;\n\n      console.log(\"✅ Texto reemplazado correctamente dentro del shadowRoot.\");\n    } else {\n      console.log(\"⚠️ No se encontraron los elementos internos dentro del shadowRoot.\");\n    }\n  }, 2000);\n});\n</script>"
+          }
+        },
+        "guarantee_banner_EUidYn": {
+          "type": "guarantee_banner",
+          "settings": {
+            "badge": "shopify://shop_images/3-min_2_440x_png.png",
+            "title_start": "NO B.S. LIFETIME WARRANTY:",
+            "title_highlight": "BREAK IT. WE'LL REPLACE IT.",
+            "description": "<b>If your watch ever fails, we'll send you a new one FOR FREE. No questions asked.</b>"
+          }
+        },
+        "new_guarantee_banner_MKimng": {
+          "type": "new-guarantee_banner",
+          "disabled": true,
+          "settings": {}
+        },
+        "liquid_xj9xMB": {
+          "type": "liquid",
+          "name": "Videos",
+          "settings": {
+            "liquid": "<div class=\"video-carousel-pdp\">\n  <button class=\"carousel-arrow left\" aria-label=\"Previous\">\n    <svg width=\"10\" height=\"18\" viewBox=\"0 0 10 18\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M7.797 16.664.648 9.204A1.071 1.071 0 0 1 .375 8.5c0-.195.078-.43.234-.625L7.758.415a.932.932 0 0 1 1.328-.04c.39.352.39.938.039 1.328L2.602 8.5l6.562 6.875a.932.932 0 0 1-.039 1.328.932.932 0 0 1-1.328-.039Z\" fill=\"#090A0B\"></path></svg>\n  </button>\n\n  <div class=\"carousel-track\">\n    <!-- Slide 1 -->\n    <div class=\"carousel-slide\">\n      <div class=\"video-wrapper\">\n        <video\n          src=\"https://cdn.shopify.com/videos/c/o/v/90253d62cac9461184fe7abb381406e2.mp4\"\n          poster=\"https://cdn.shopify.com/s/files/1/0049/0533/6935/files/Video_1.webp?v=1770749403\"\n          playsinline\n          controlsList=\"nodownload noremoteplayback noplaybackrate nopictureinpicture\"\n          preload=\"auto\">\n        </video>\n        <div class=\"play-button\">\n          <svg class=\"\" xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\"><path d=\"M4 3.532c0-1.554 1.696-2.514 3.029-1.715l14.113 8.468c1.294.777 1.294 2.653 0 3.43L7.029 22.183c-1.333.8-3.029-.16-3.029-1.715V3.532Z\" fill=\"#FFFFFF\"></path></svg>\n        </div>\n      </div>\n    </div>\n\n    <!-- Slide 2 -->\n    <div class=\"carousel-slide\">\n      <div class=\"video-wrapper\">\n        <video\n          src=\"https://cdn.shopify.com/videos/c/o/v/a80caa8e72c24883957011a91dbc1f90.mp4\"\n          poster=\"https://cdn.shopify.com/s/files/1/0049/0533/6935/files/Video_2.webp?v=1770749403\"\n          playsinline\n          controlsList=\"nodownload noremoteplayback noplaybackrate nopictureinpicture\"\n          preload=\"auto\">\n        </video>\n        <div class=\"play-button\">\n          <svg class=\"\" xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\"><path d=\"M4 3.532c0-1.554 1.696-2.514 3.029-1.715l14.113 8.468c1.294.777 1.294 2.653 0 3.43L7.029 22.183c-1.333.8-3.029-.16-3.029-1.715V3.532Z\" fill=\"#FFFFFF\"></path></svg>\n        </div>\n      </div>\n    </div>\n\n    <!-- Slide 3 -->\n    <div class=\"carousel-slide\">\n      <div class=\"video-wrapper\">\n        <video\n          src=\"https://cdn.shopify.com/videos/c/o/v/0a209e51c510427fb8831a69ff858f90.mp4\"\n          poster=\"https://cdn.shopify.com/s/files/1/0049/0533/6935/files/Video_3.webp?v=1770749403\"\n          playsinline\n          controlsList=\"nodownload noremoteplayback noplaybackrate nopictureinpicture\"\n          preload=\"auto\">\n        </video>\n        <div class=\"play-button\">\n          <svg class=\"\" xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\"><path d=\"M4 3.532c0-1.554 1.696-2.514 3.029-1.715l14.113 8.468c1.294.777 1.294 2.653 0 3.43L7.029 22.183c-1.333.8-3.029-.16-3.029-1.715V3.532Z\" fill=\"#FFFFFF\"></path></svg>\n        </div>\n      </div>\n    </div>\n\n    <!-- Slide 4 -->\n    <div class=\"carousel-slide\">\n      <div class=\"video-wrapper\">\n        <video\n          src=\"https://cdn.shopify.com/videos/c/o/v/7655f5e3f95642748a06844697efc691.mp4\"\n          poster=\"https://cdn.shopify.com/s/files/1/0049/0533/6935/files/Video_4.webp?v=1770749403\"\n          playsinline\n          controlsList=\"nodownload noremoteplayback noplaybackrate nopictureinpicture\"\n          preload=\"auto\">\n        </video>\n        <div class=\"play-button\">\n          <svg class=\"\" xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\"><path d=\"M4 3.532c0-1.554 1.696-2.514 3.029-1.715l14.113 8.468c1.294.777 1.294 2.653 0 3.43L7.029 22.183c-1.333.8-3.029-.16-3.029-1.715V3.532Z\" fill=\"#FFFFFF\"></path></svg>\n        </div>\n      </div>\n    </div>\n\n    <!-- Slide 5 -->\n    <div class=\"carousel-slide\">\n      <div class=\"video-wrapper\">\n        <video\n          src=\"https://cdn.shopify.com/videos/c/o/v/14400d82126046e2b3d6ebf667f81220.mp4\"\n          poster=\"https://cdn.shopify.com/s/files/1/0049/0533/6935/files/Video_5.webp?v=1770749403\"\n          playsinline\n          controlsList=\"nodownload noremoteplayback noplaybackrate nopictureinpicture\"\n          preload=\"auto\">\n        </video>\n        <div class=\"play-button\">\n          <svg class=\"\" xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\"><path d=\"M4 3.532c0-1.554 1.696-2.514 3.029-1.715l14.113 8.468c1.294.777 1.294 2.653 0 3.43L7.029 22.183c-1.333.8-3.029-.16-3.029-1.715V3.532Z\" fill=\"#FFFFFF\"></path></svg>\n        </div>\n      </div>\n    </div>\n\n   <!-- Slide 6 -->\n    <div class=\"carousel-slide\">\n      <div class=\"video-wrapper\">\n        <video\n          src=\"https://cdn.shopify.com/videos/c/o/v/ed29ae6e90c443cdacc6a9f60cbe1c98.mp4\"\n          poster=\"https://cdn.shopify.com/s/files/1/0049/0533/6935/files/Video_6.webp?v=1770749403\"\n          playsinline\n          controlsList=\"nodownload noremoteplayback noplaybackrate nopictureinpicture\"\n          preload=\"auto\">\n        </video>\n        <div class=\"play-button\">\n          <svg class=\"\" xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\"><path d=\"M4 3.532c0-1.554 1.696-2.514 3.029-1.715l14.113 8.468c1.294.777 1.294 2.653 0 3.43L7.029 22.183c-1.333.8-3.029-.16-3.029-1.715V3.532Z\" fill=\"#FFFFFF\"></path></svg>\n        </div>\n      </div>\n    </div>\n\n\n  </div>\n\n  <button class=\"carousel-arrow right\" aria-label=\"Next\">\n    <svg width=\"10\" height=\"18\" viewBox=\"0 0 10 18\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M7.797 16.664.648 9.204A1.071 1.071 0 0 1 .375 8.5c0-.195.078-.43.234-.625L7.758.415a.932.932 0 0 1 1.328-.04c.39.352.39.938.039 1.328L2.602 8.5l6.562 6.875a.932.932 0 0 1-.039 1.328.932.932 0 0 1-1.328-.039Z\" fill=\"#090A0B\"></path></svg>\n  </button>\n</div>\n\n<style>\n.video-carousel-pdp {\n  position: relative;\n  width: 100%;\nmax-width: calc(var(--grid-column-width) * 8 + var(--grid-gap) * 7);\n  overflow: hidden;\n}\n\n.video-carousel-pdp .carousel-track {\n  display: flex;\n  gap: 6px;\n  overflow-x: auto;\n  scroll-behavior: smooth;\n  margin: 0px 30px;\n   scrollbar-width: none; /* Firefox */\n  -ms-overflow-style: none; /* IE y Edge antiguos */\n}\n\n.video-carousel-pdp .carousel-slide {\n  flex: 0 0 auto;\n  width: 200px;\n}\n\n.video-carousel-pdp .video-wrapper {\n  position: relative;\n  aspect-ratio: 9 / 16;\n  background: #000;\n  border-radius: 2px;\n  overflow: hidden;\n}\n.video-wrapper video::-webkit-media-controls-picture-in-picture-button {\n  display: none;\n}\n\n\n.video-carousel-pdp video {\n  width: 100%;\n  height: 100%;\n  object-fit: cover;\n  display: block;\n}\n\n.video-carousel-pdp .play-button {\n\n    position: absolute;\n    top: 50%;\n    left: 50%;\n    transform: translate(-50%, -50%);\n    font-size: 26px !important;\n    padding: 5px 18px;\n    padding-top: 10px;\n    color: white;\n    background: transparent;\n    border: 2px solid white;\n    border-radius: 50%;\n    cursor: pointer;\n}\n\n.video-carousel-pdp .carousel-arrow {\n  position: absolute;\n  top: 50%;\n  transform: translateY(-50%);\n  background: white;\n  border: none;\n  color: black;\n  cursor: pointer;\n  width: 30px;\n  height: 30px;\n  z-index: 10;\n  border-radius: 999px;\n}\n\n.video-carousel-pdp .carousel-arrow.left {\n  left: 0px;\n}\n\n.video-carousel-pdp .carousel-arrow.right {\n  right: 0px;\n  transform: scaleX(-1);\n}\n\n.video-carousel-pdp .carousel-arrow.left svg {\n  position: relative;\n  right: -5px;\n}\n\n.video-carousel-pdp .carousel-arrow.right svg {\n  position: relative;\n  left: 5px;\n}\n@media (max-width: 1000px) {\n.video-carousel-pdp {\nmax-width: calc(100vw - 48px);\n}\n}\n@media (max-width: 768px) {\n  .video-carousel-pdp .carousel-slide {\n    width: 150px;\n  }\n  .video-carousel-pdp .carousel-arrow{\n    display: none;\n  }\n  .video-carousel-pdp .carousel-track {\n  margin: 0px;\n}\n}\n</style>\n\n<script>\ndocument.addEventListener(\"DOMContentLoaded\", function() {\n  const carousel = document.querySelector(\".video-carousel-pdp\");\n  const track = carousel.querySelector(\".carousel-track\");\n  const leftBtn = carousel.querySelector(\".carousel-arrow.left\");\n  const rightBtn = carousel.querySelector(\".carousel-arrow.right\");\n\n  leftBtn.addEventListener(\"click\", () => {\n    track.scrollBy({ left: -200, behavior: \"smooth\" });\n  });\n\n  rightBtn.addEventListener(\"click\", () => {\n    track.scrollBy({ left: 200, behavior: \"smooth\" });\n  });\n\n  carousel.querySelectorAll(\".video-wrapper\").forEach(wrapper => {\n    const video = wrapper.querySelector(\"video\");\n    const playBtn = wrapper.querySelector(\".play-button\");\n    video.disablePictureInPicture = true;\n\n    playBtn.addEventListener(\"click\", () => {\n      if (video.paused) {\n        video.play();\n        playBtn.style.display = \"none\";\n        video.setAttribute(\"controls\", \"controls\"); // Muestra controles\n    } else {\n        video.pause();\n        playBtn.style.display = \"block\";\n        video.removeAttribute(\"controls\", \"controls\"); // Muestra controles\n      }\n    });\n\n    video.addEventListener(\"ended\", () => {\n      playBtn.style.display = \"block\";\n    });\n  });\n});\n</script>"
+          }
+        },
+        "liquid_KVrTQ6": {
+          "type": "liquid",
+          "name": "Slider reviews pdp",
+          "disabled": true,
+          "settings": {
+            "liquid": "<div class=\"slider-reviews-pdp__container\">\n{% render 'slider-reviews-pdp', product: product %}\n</div>"
+          }
+        },
+        "4ac75f75-351e-49cb-9367-33b5cfe6a9bd": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/3-min_2.png",
+            "image_alignment": "center",
+            "image_width": 440
+          }
+        }
+      },
+      "block_order": [
+        "liquid_A8phzp",
+        "liquid_9giWJk",
+        "liquid_h7XXDD",
+        "liquid_bQmFjW",
+        "list_icons_pdp_8DDjnH",
+        "77b0126f-d176-4e47-b6f3-d2424b9b32ea",
+        "liquid_TzRyPU",
+        "liquid_UwKrnt",
+        "liquid_MHcTwY",
+        "liquid_XjaDXk",
+        "liquid_7CAREr",
+        "aa8adaeb-d404-4d2d-9f7b-7c87d4a68e8f",
+        "liquid_9FYWef",
+        "liquid_cfng9G",
+        "guarantee_banner_EUidYn",
+        "new_guarantee_banner_MKimng",
+        "liquid_xj9xMB",
+        "liquid_KVrTQ6",
+        "4ac75f75-351e-49cb-9367-33b5cfe6a9bd"
+      ],
+      "custom_css": [
+        "@media (min-width: 768px) {.product {margin-top: 20px; }}",
+        "button {padding: 4px; font-size: 16px;}",
+        "h5 {font-size: 13px; color: #11a603; text-align: center;}",
+        "div {font-size: 14px;}",
+        "h4 {font-size: 12px; letter-spacing: -0.3px; text-align: center;}",
+        ".price--highlight {font-size: 20px;}",
+        ".label--highlight {font-size: 13px;}",
+        "@media (max-width: 768px) {.reviews-slider-template--25675562418548__main {margin-bottom: 10px; }}",
+        ".delivery-time {display: none;}"
+      ],
+      "settings": {
+        "delivery_time": "",
+        "show_vendor": false,
+        "show_sku": false,
+        "show_taxes_included": false,
+        "show_product_rating": false,
+        "show_sticky_add_to_cart": true,
+        "show_payment_methods": false,
+        "show_share_buttons": false,
+        "help_page": "",
+        "enable_video_autoplay": true,
+        "enable_video_looping": true,
+        "enable_image_zoom": false,
+        "show_thumbnails_on_mobile": true,
+        "desktop_thumbnails_position": "bottom",
+        "transition_effect": "slide"
+      }
+    },
+    "product_item_nDWeCY": {
+      "type": "product-item",
+      "blocks": {
+        "product_items_QF4B8t": {
+          "type": "Product-items",
+          "settings": {
+            "image1": "shopify://shop_images/Sin_titulo_1000_x_500_px_-min.png",
+            "heading": "",
+            "para": ""
+          }
+        }
+      },
+      "block_order": [
+        "product_items_QF4B8t"
+      ],
+      "disabled": true,
+      "custom_css": [
+        ".ridge-step-item-img {display: flex; justify-content: center; margin-top: -20px;}",
+        "@media (min-width: 768px) {.ridge-step-item-img {margin-top: -80px; }}"
+      ],
+      "settings": {}
+    },
+    "custom_html_JahtRf": {
+      "type": "custom-html",
+      "name": "Custom HTML",
+      "settings": {
+        "subheading": "",
+        "title": "",
+        "html": "<div class=\"image-icons__container\">\n<img class=\"desktop\" src=\"https://cdn.shopify.com/s/files/1/0049/0533/6935/files/icons-edge.webp?v=1770309246\">\n<img class=\"mobile\" src=\"https://cdn.shopify.com/s/files/1/0049/0533/6935/files/icons-edge-mobile.webp?v=1770309245\">\n\n</div>\n\n<style>\n.container.vertical-breather {\npadding: 0px;\n}\n.image-icons__container {\nbackground: black;\n}\n.image-icons__container img{\nmax-width: 1440px;\nmargin: auto;\nwidth: 100%;\n}\n.desktop {\ndisplay: none;\n}\n\n@media (min-width: 768px) {\n.desktop {\ndisplay: block;\n}\n.mobile {\ndisplay: none;\n}\n}\n\n</style>",
+        "add_vertical_spacing": false,
+        "background_type": "full_width",
+        "background": "#000000",
+        "text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "carbinox_edge_0_wCjpH3": {
+      "type": "carbinox-edge-0",
+      "name": "Carbinox Edge 0",
+      "settings": {}
+    },
+    "carbinox_edge_1_7iF3Ny": {
+      "type": "carbinox-edge-1",
+      "name": "Carbinox Edge 1",
+      "settings": {}
+    },
+    "carbinox_edge_2_JRermU": {
+      "type": "carbinox-edge-2",
+      "name": "Carbinox Edge 2",
+      "settings": {}
+    },
+    "carbinox_edge_3_X8LAfW": {
+      "type": "carbinox-edge-3",
+      "name": "Carbinox Edge 3",
+      "settings": {}
+    },
+    "carbinox_edge_5_TNWxLi": {
+      "type": "carbinox-edge-5",
+      "disabled": true,
+      "name": "Carbinox Edge 5",
+      "settings": {}
+    },
+    "carbinox_edge_6_dhjxqK": {
+      "type": "carbinox-edge-6",
+      "name": "Carbinox Edge 6",
+      "settings": {}
+    },
+    "carbinox_edge_4_zhU479": {
+      "type": "carbinox-edge-4",
+      "name": "Carbinox Edge 4",
+      "settings": {}
+    },
+    "b97def7a-4167-4995-aeed-ca9dcdcf40b5": {
+      "type": "image-with-text",
+      "blocks": {
+        "46276caf-7bec-4dc3-babb-e90e3753b5ab": {
+          "type": "item",
+          "settings": {
+            "show_video": false,
+            "video_link": "",
+            "image": "shopify://shop_images/3-min_6_381e6dbc-2788-4cb0-a5b5-604cca6fdba4.png",
+            "tab_label": "Item",
+            "subheading": "The data you need to stay on top of your game.",
+            "title": "Superior Accuracy WITH Smarter Sensors.",
+            "content": "",
+            "button_text": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "46276caf-7bec-4dc3-babb-e90e3753b5ab"
+      ],
+      "disabled": true,
+      "custom_css": [
+        "h3 {font-size: 20px; color: #ffc200;}",
+        "H4 {font-size: 18px; text-align: left; letter-spacing: -0.7px; margin-top: -20px;}"
+      ],
+      "settings": {
+        "section_id": "",
+        "reveal_on_scroll": false,
+        "background_type": "full_width",
+        "background_overlap": "both",
+        "image_position": "right",
+        "text_alignment": "center",
+        "cycle_speed": 8,
+        "accent_background": "#000000",
+        "text_color": "#ffffff",
+        "button_background": "#292323",
+        "button_text_color": "#5a5353",
+        "enable_custom_margin": false,
+        "margin_bottom": 0
+      }
+    },
+    "reviews_pdp_custom_EQKwQ9": {
+      "type": "reviews-pdp-custom",
+      "blocks": {
+        "testimonial_hRaRUz": {
+          "type": "testimonial",
+          "settings": {
+            "text": "12-hour shifts, water rescues, extreme heat — this watch takes it all. Battery lasts two weeks. Gps is dead-on. Worth every penny.",
+            "author": "Marcus T., Firefighter/EMT | Phoenix, AZ"
+          }
+        },
+        "testimonial_CDMmx3": {
+          "type": "testimonial",
+          "settings": {
+            "text": "Destroyed 3 smartwatches in 2 years. This one survived sparks, concrete dust, and a falling wrench. Still works like day one. Finally.",
+            "author": "Jake M., Welder | Houston, TX"
+          }
+        },
+        "testimonial_fnMrEE": {
+          "type": "testimonial",
+          "settings": {
+            "text": "Grease-covered hands. Answer calls from my wrist. Screen still new after 6 months. Toughest watch ever.",
+            "author": "David R., Diesel Mechanic | Oklahoma City, OK"
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_hRaRUz",
+        "testimonial_CDMmx3",
+        "testimonial_fnMrEE"
+      ],
+      "name": "Testimonials Section",
+      "settings": {
+        "bg_color": "#161616",
+        "text_color": "#ffffff"
+      }
+    },
+    "instant_f_qsl5v_ii_zqoj_lz9_f_QjJ3aq": {
+      "type": "instant-fQsl5vIIZqojLZ9F",
+      "name": "Still skeptical",
+      "settings": {
+        "text_UNqsO6pQ2AodLuje": "<p>Still Skeptical?</p>",
+        "text_jBpvFjCHIzwVj8vg": "<p>Protected for Life. No Fine Print.</p>",
+        "text_9JiklYXCQhdQcv7g": "<p>Take the Carbinox Edge for a test run, if you don’t love it, <strong>return it within 45 days, no questions asked.</strong></p>",
+        "text_ECg5P6sURkzl3Psl": "<p>Unlimited Replacements</p>",
+        "text_NXjNgHYzPwmCDGzd": "<p>for an entire Year.</p>",
+        "text_VdJYYkELN6DmlQ5a": "<p>You’re fully covered for 365 full days against any internal or external defects, no questions asked.</p>",
+        "text_5KaWEgatKjHDHcgA": "<p><strong>NO B.S. LIFETIME WARRANTY:</strong></p>",
+        "text_H5Y30nQIWOzVq258": "<p><strong>BREAK IT. WE'LL REPLACE IT.</strong></p>",
+        "text_YWg8AScJ8ZjIlms0": "<p>If your watch ever fails, we'll send you a new one FOR FREE. No questions asked.</p>",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "carbinox_edge_7_CiFwyh": {
+      "type": "carbinox-edge-7",
+      "name": "Carbinox Edge 7",
+      "settings": {}
+    },
+    "166007646669623aaa": {
+      "type": "faq",
+      "blocks": {
+        "9e45f6ba-ce45-4182-ab2f-4f8bcd8f6681": {
+          "type": "question",
+          "settings": {
+            "title": "CAN I ANSWER AND MAKE PHONE CALLS DIRECTLY FROM THE WATCH?",
+            "answer": "<p>Yes. The Carbinox Edge includes a built-in speaker and microphone, allowing you to make and receive calls straight from your wrist when connected to your smartphone via Bluetooth. Perfect for hands-free communication on the job or on the move.</p>"
+          }
+        },
+        "1660076465f1e811f4-4": {
+          "type": "question",
+          "settings": {
+            "title": "DOES THE CARBINOX EDGE SUPPORT VOICE-ACTIVATED TEXTING?",
+            "answer": "<p>Absolutely. With our upgraded AI voice assistant, you can send and receive SMS messages using voice commands — no typing needed, even with gloves on.</p>"
+          }
+        },
+        "b94b4ba9-d47e-4003-8a27-597acb9b7952": {
+          "type": "question",
+          "settings": {
+            "title": "IS THE WATCH WATERPROOF AND DUSTPROOF?",
+            "answer": "<p>Yes — the Edge is rated 5ATM and IP69K waterproof, plus it’s dustproof, shockproof, and built to take on mud, oil, water, and extreme conditions. You can wear it confidently while swimming, on job sites, or in the rain.</p>"
+          }
+        },
+        "91345035-5b96-4951-8a1e-d62883b97573": {
+          "type": "question",
+          "settings": {
+            "title": "HOW LONG DOES THE BATTERY LAST?",
+            "answer": "<p>The Carbinox Edge features a 500mAh pure cobalt battery with up to 14 days of battery life per charge, depending on usage. That means less charging and more doing.</p>"
+          }
+        },
+        "question_BWzhqx": {
+          "type": "question",
+          "settings": {
+            "title": "IS MY SMARTPHONE COMPATIBLE WITH THE CARBINOX EDGE?",
+            "answer": "<p>Yes. The Edge syncs with both iOS and Android smartphones using the Carbinox MAX app. You’ll get full functionality including calls, messages, health tracking, and more.</p>"
+          }
+        },
+        "question_tY9TMH": {
+          "type": "question",
+          "settings": {
+            "title": "WILL THE CARBINOX EDGE FIT MY WRIST?",
+            "answer": "<p>Yes. It comes with a universal 22mm strap and fits most wrist sizes from 150mm to 240mm. It also includes a removable strap system, so you can customize it however you want.</p>"
+          }
+        },
+        "question_EjQURq": {
+          "type": "question",
+          "settings": {
+            "title": "WHAT KIND OF JOBS AND ENVIRONMENTS IS THIS WATCH BUILT FOR?",
+            "answer": "<p>The Carbinox Edge was built for hard workers: construction crews, mechanics, truckers, ranchers, firefighters, and outdoorsmen. It’s made to survive dirt, dust, drops, impact, and extreme heat/cold — and still keep ticking.</p>"
+          }
+        },
+        "question_7UfMXf": {
+          "type": "question",
+          "settings": {
+            "title": "HOW LONG DOES IT TAKE TO CHARGE?",
+            "answer": "<p>It takes approximately 2 hours to fully charge using the included USB cable. You’ll get up to 2 weeks of power per charge.</p>"
+          }
+        },
+        "question_dhdAHM": {
+          "type": "question",
+          "settings": {
+            "title": "WHAT DOES THE LIFETIME WARRANTY ACTUALLY COVER?",
+            "answer": "<p>Everything. If anything ever happens to your Carbinox Edge — damage, failure, wear, or tear — we’ll replace it at no cost, no questions asked. It’s part of our promise to back every hardworking man who puts our gear to the test.</p>"
+          }
+        },
+        "question_U4WVJk": {
+          "type": "question",
+          "settings": {
+            "title": "CAN I INSTALL THIRD-PARTY APPS LIKE SPOTIFY OR WHATSAPP?",
+            "answer": "<p>No, the Carbinox Edge uses a closed system with pre-installed apps only. This ensures better performance, battery efficiency, and long-term reliability. Third-party apps such as Spotify or WhatsApp are not supported.</p>"
+          }
+        },
+        "question_wdHLnX": {
+          "type": "question",
+          "settings": {
+            "title": "CAN I REPLY TO WHATSAPP OR SOCIAL MEDIA MESSAGES FROM THE WATCH?",
+            "answer": "<p>The Edge allows you to view notifications from messaging and social media platforms (e.g., WhatsApp, Facebook, Instagram). However, replying directly from the watch is not available at this time, aside from limited voice-to-text responses on Android via the Carbinox Max app.</p>"
+          }
+        },
+        "question_w3bHXr": {
+          "type": "question",
+          "settings": {
+            "title": "DOES THE GPS WORK INDEPENDENTLY, OR DOES IT NEED MY PHONE?",
+            "answer": "<p>The Carbinox Edge features dual-band GNSS, allowing it to provide standalone GPS tracking without requiring a phone connection. This is especially useful for outdoor activities where phone signal may be weak or unavailable.</p>"
+          }
+        },
+        "question_Vr3BGi": {
+          "type": "question",
+          "settings": {
+            "title": "WILL THE HEALTH SENSORS WORK IF I HAVE TATTOOS ON MY WRIST?",
+            "answer": "<p>In some cases, tattoos may interfere with the accuracy of optical sensors such as heart rate or blood oxygen monitors. This is a common limitation across all smartwatch brands, not specific to Carbinox.</p>"
+          }
+        },
+        "question_3jwK3H": {
+          "type": "question",
+          "settings": {
+            "title": "CAN I USE THE WATCH WITHOUT A SMARTPHONE OR APP?",
+            "answer": "<p>Basic features like time, step tracking, and alarms will function without the app. However, for full access to GPS sync, watch face customization, health monitoring, and smart notifications, the Carbinox Max app is required.</p>"
+          }
+        },
+        "question_7bzh9w": {
+          "type": "question",
+          "settings": {
+            "title": "DOES THE EDGE SUPPORT WIRELESS CHARGING?",
+            "answer": "<p>No, the Carbinox Edge uses a magnetic USB charging cable (included with your order). Wireless charging is not currently supported.</p>"
+          }
+        },
+        "question_igc9jA": {
+          "type": "question",
+          "settings": {
+            "title": "IS THE WATCH COMPATIBLE WITH RCS (GOOGLE MESSAGES)?",
+            "answer": "<p>The Edge supports standard SMS notifications. However, RCS messages may not appear on the watch due to how Android handles RCS protocols. For optimal performance, switching to SMS-only mode is recommended.</p>"
+          }
+        },
+        "question_RHHRkU": {
+          "type": "question",
+          "settings": {
+            "title": "CAN I CHANGE THE TEMPERATURE UNITS FROM CELSIUS TO FAHRENHEIT?",
+            "answer": "<p>Yes. In the Carbinox Max app, you can easily toggle between Celsius and Fahrenheit in the “Unit Settings” section.</p>"
+          }
+        },
+        "question_d6E6Gh": {
+          "type": "question",
+          "settings": {
+            "title": "DOES THE CARBINOX EDGE HAVE A BUILT-IN CAMERA?",
+            "answer": "<p>No, the Edge does not include a camera. The focus of the device is on durability, reliability, and essential smart features tailored to performance — not entertainment.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "9e45f6ba-ce45-4182-ab2f-4f8bcd8f6681",
+        "1660076465f1e811f4-4",
+        "b94b4ba9-d47e-4003-8a27-597acb9b7952",
+        "91345035-5b96-4951-8a1e-d62883b97573",
+        "question_BWzhqx",
+        "question_tY9TMH",
+        "question_EjQURq",
+        "question_7UfMXf",
+        "question_dhdAHM",
+        "question_U4WVJk",
+        "question_wdHLnX",
+        "question_w3bHXr",
+        "question_Vr3BGi",
+        "question_3jwK3H",
+        "question_7bzh9w",
+        "question_igc9jA",
+        "question_RHHRkU",
+        "question_d6E6Gh"
+      ],
+      "custom_css": [
+        ".faq__wrapper {max-width: 724px !important; margin: auto;}"
+      ],
+      "settings": {
+        "show_navigation": false,
+        "title": "Frequently asked questions",
+        "content": "",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "17297101183d2e6360": {
+      "type": "apps",
+      "custom_css": [
+        "@media (max-width: 1024px) {.tolstoy-carousel-container {margin-top: 0px; }}",
+        "@media (max-width: 600px) {.tolstoy-carousel-container {margin: -30px 0px 0px 24px; } .tolstoy-carousel-arrow-button {display: none; }}",
+        "@media (min-width: 1024px) {.tolstoy-carousel-container {max-width: 48% !important; margin-top: -80px; margin-left: auto; margin-right: 0px; } .tolstoy-video-carousel-container {max-width: 90% !important; }}",
+        "@media (min-width: 1500px) {.tolstoy-video-carousel-container {max-width: 690px !important; padding-left: 15px; }}"
+      ],
+      "settings": {
+        "include_horizontal_margins": true,
+        "include_vertical_margins": true
+      }
+    },
+    "product-content": {
+      "type": "product-content",
+      "blocks": {
+        "description": {
+          "type": "description",
+          "disabled": true,
+          "settings": {}
+        },
+        "bc751217-69a0-4865-b75f-a3750a2b9c28": {
+          "type": "content",
+          "disabled": true,
+          "settings": {
+            "title": "x-ranger SPECIFICATIONS:",
+            "content": "<h6><strong>- Full Metal Bezel and Body<br/>- Waterproof Technology<br/>- 70 SPORTS MODES<br/>- 410mAh of battery<br/>- 14 days of battery within one charge<br/>- 1.43’’ AMOLED Display<br/>- Heart Rate Sensor: VP60<br/>- Pedometer Sensor: STK8325<br/>- OXYGEN TRACKING<br/>- STEPS COUNTER<br/>- SLEEP MODE<br/>- Scratch-proof tempered glass<br/>- Microphone & Speaker INTEGRATED<br/>- social media notifications<br/>- alarm<br/>- Calendar<br/>- Weather tracking<br/>- CARBINOX APP<br/>- COMPATIBLE WITH ANDROID AND IOS<br/>- Diameter: 44mm<br/>- Weight: 100 gR</strong></h6>",
+            "page": ""
+          }
+        },
+        "c6ed9da0-bdf5-43a3-8685-71d9c9d6fcf6": {
+          "type": "content",
+          "settings": {
+            "title": "Package includes:",
+            "content": "<h6>1x carbinox x-ranger<br/>1x usb charging cable<br/>1x Instructions Manual<br/>1x Free Gift 🎁</h6>",
+            "page": ""
+          }
+        },
+        "3429e515-9812-4e6e-8dcb-71d5cf1a780b": {
+          "type": "content",
+          "settings": {
+            "title": "GUARANTEES:",
+            "content": "<h6>THE CARBINOX X-RANGER COMES WITH A 45-DAY RISK FREE GUARANTEE. FAST RETURNS OR REPLACEMENTS AT NO COST. WE'VE GOT YOU COVERED.</h6>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "description",
+        "bc751217-69a0-4865-b75f-a3750a2b9c28",
+        "c6ed9da0-bdf5-43a3-8685-71d9c9d6fcf6",
+        "3429e515-9812-4e6e-8dcb-71d5cf1a780b"
+      ],
+      "disabled": true,
+      "custom_css": [],
+      "settings": {}
+    },
+    "1766789599d870fd15": {
+      "type": "apps",
+      "settings": {
+        "include_horizontal_margins": true,
+        "include_vertical_margins": true
+      }
+    }
+  },
+  "order": [
+    "rich_text_8NgTVz",
+    "main",
+    "product_item_nDWeCY",
+    "custom_html_JahtRf",
+    "carbinox_edge_0_wCjpH3",
+    "carbinox_edge_1_7iF3Ny",
+    "carbinox_edge_2_JRermU",
+    "carbinox_edge_3_X8LAfW",
+    "carbinox_edge_5_TNWxLi",
+    "carbinox_edge_6_dhjxqK",
+    "carbinox_edge_4_zhU479",
+    "b97def7a-4167-4995-aeed-ca9dcdcf40b5",
+    "reviews_pdp_custom_EQKwQ9",
+    "instant_f_qsl5v_ii_zqoj_lz9_f_QjJ3aq",
+    "carbinox_edge_7_CiFwyh",
+    "166007646669623aaa",
+    "17297101183d2e6360",
+    "product-content",
+    "1766789599d870fd15"
+  ]
+}

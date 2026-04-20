@@ -1,0 +1,79 @@
+<div class="feature-list">
+  <div class="feature-item">
+    <img src="https://cdn.shopify.com/s/files/1/0049/0533/6935/files/Group_97.png?v=1756826165" alt="icon" class="feature-icon" />
+    <div class="feature-text">
+      <div class="feature-title">{{ block.settings.title-icon-1 }}</div>
+      <div class="feature-subtitle">
+        {{ block.settings.subtitle-icon-1 }}
+      </div>
+    </div>
+  </div>
+
+  <div class="feature-item">
+    <img src="https://cdn.shopify.com/s/files/1/0049/0533/6935/files/Group_97.png?v=1756826165" alt="icon" class="feature-icon" />
+    <div class="feature-text">
+      <div class="feature-title">{{ block.settings.title-icon-2 }}</div>
+      <div class="feature-subtitle">
+        {{ block.settings.subtitle-icon-2 }}
+      </div>
+    </div>
+  </div>
+
+  <div class="feature-item">
+    <img src="https://cdn.shopify.com/s/files/1/0049/0533/6935/files/Group_97.png?v=1756826165" alt="icon" class="feature-icon" />
+    <div class="feature-text">
+      <div class="feature-title">{{ block.settings.title-icon-3 }}</div>
+      <div class="feature-subtitle">
+        {{ block.settings.subtitle-icon-3 }}
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+.feature-list {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.feature-item {
+  display: flex;
+  align-items: flex-start;
+}
+
+.feature-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  margin-top: 2px;
+}
+
+.feature-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.feature-title {
+  font-size: 14px !important;
+  font-weight: 600;
+  margin-bottom: 2px;
+  line-height: 120%;
+}
+
+.feature-subtitle {
+  font-size: 14px !important;
+  font-weight: 400;
+  line-height: 120%;
+}
+
+@media (min-width: 768px) {
+  .feature-title, .feature-subtitle {
+  font-size: 16px !important;
+}
+.feature-list {
+  gap: 10px;
+}
+
+}
+</style>

@@ -1,0 +1,169 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "rich_text_QXdFb3": {
+      "type": "rich-text",
+      "settings": {
+        "section_id": "",
+        "subheading": "ONLY FOR CARBINOX EPC MEMBERS!",
+        "title": "PLEASE READ CAREFULLY:",
+        "content": "<p><strong>Each item on this page is $25.00. At checkout, use the discount code \"</strong><span style=\"text-decoration:underline\"><strong>ACCESSORYEPC</strong></span><strong>\" to unlock the 100% OFF. Ensure you use the same email address from your membership purchase to activate the code.</strong></p>",
+        "button_text": "",
+        "button_link": "",
+        "background_type": "full_width",
+        "text_width": "fill",
+        "text_position": "center",
+        "text_alignment": "center",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "68cbfea4-6b54-4a02-af3c-8ca80e924f69": {
+          "type": "description",
+          "settings": {}
+        },
+        "aeb8ebf7-0071-475a-b587-0ad05d895fab": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "link": "",
+            "text": "",
+            "stretch": true,
+            "background": "rgba(0,0,0,0)",
+            "text_color": "rgba(0,0,0,0)"
+          }
+        },
+        "77b0126f-d176-4e47-b6f3-d2424b9b32ea": {
+          "type": "variant_picker",
+          "settings": {
+            "hide_sold_out_variants": false,
+            "selector_mode": "dropdown",
+            "color_mode": "variant_image",
+            "size_chart_page": ""
+          }
+        },
+        "aa8adaeb-d404-4d2d-9f7b-7c87d4a68e8f": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_payment_button": true,
+            "atc_button_background": "#0023ff",
+            "atc_button_text_color": "#f9f9f9",
+            "buy_now_button_background": "rgba(0,0,0,0)",
+            "buy_now_button_text_color": "rgba(0,0,0,0)"
+          }
+        },
+        "54d2e274-c4e9-4efe-b6da-5bfe93a94d13": {
+          "type": "social_share_icons",
+          "disabled": true,
+          "settings": {
+            "icon_1": "shopify://shop_images/1_e9a71822-007d-44ff-8d36-cd9d1d56a572.png",
+            "icon_text_1": "<p><strong>45-DAY RISK FREE GUARANTEE, NO QUESTIONS ASKED!</strong></p>",
+            "icon_2": "shopify://shop_images/2_488612df-9e8b-4df8-ad46-4984a06f6a06.png",
+            "icon_text_2": "<p><strong>UNLOCK A COMPLIMENTARY GIFT VALUED AT $30!</strong></p>",
+            "icon_3": "shopify://shop_images/3_35fa32d6-9ea8-4d3e-a58e-e4347fe98115.png",
+            "icon_text_3": "<p><strong>300,000+ SUCCESSFUL DELIVERIES!</strong></p>"
+          }
+        },
+        "4405410f-d098-41a4-9d3e-7f9d8e5edf7d": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/LIFETIME_WARRANTY_1.png",
+            "image_alignment": "center",
+            "image_width": 340
+          }
+        }
+      },
+      "block_order": [
+        "68cbfea4-6b54-4a02-af3c-8ca80e924f69",
+        "aeb8ebf7-0071-475a-b587-0ad05d895fab",
+        "77b0126f-d176-4e47-b6f3-d2424b9b32ea",
+        "aa8adaeb-d404-4d2d-9f7b-7c87d4a68e8f",
+        "54d2e274-c4e9-4efe-b6da-5bfe93a94d13",
+        "4405410f-d098-41a4-9d3e-7f9d8e5edf7d"
+      ],
+      "custom_css": [],
+      "settings": {
+        "delivery_time": "<p>🏅 THIS PRODUCT IS EXCLUSIVE FOR CARBINOX ELITE PRIVATE CLUB MEMBERS</p>",
+        "show_vendor": false,
+        "show_sku": false,
+        "show_taxes_included": false,
+        "show_product_rating": false,
+        "show_sticky_add_to_cart": true,
+        "show_payment_methods": false,
+        "show_share_buttons": false,
+        "help_page": "",
+        "enable_video_autoplay": true,
+        "enable_video_looping": false,
+        "enable_image_zoom": false,
+        "show_thumbnails_on_mobile": false,
+        "desktop_thumbnails_position": "bottom",
+        "transition_effect": "slide"
+      }
+    },
+    "product-content": {
+      "type": "product-content",
+      "disabled": true,
+      "settings": {}
+    },
+    "d0e939a6-ef01-41b2-a26c-43be8b1503b8": {
+      "type": "product-reviews",
+      "disabled": true,
+      "settings": {}
+    },
+    "bd6b6952-806f-42b1-988d-6344239a7046": {
+      "type": "custom-liquid",
+      "settings": {
+        "subheading": "",
+        "title": "",
+        "liquid": "<script type=\"text/javascript\">\nvar _learnq = _learnq || [];\n  var classname = document.getElementsByClassName(\"product-form__add-button button button--secondary button--full\");\nvar addToCart = function() {\n_learnq.push(['track', 'Added to Cart', item]);\n}; for (var i = 0; i < classname.length; i++) {\nclassname[i].addEventListener('click', addToCart, false);\n}\n</script>",
+        "add_vertical_spacing": false,
+        "background_type": "full_width",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "rich_text_iCgL8e": {
+      "type": "rich-text",
+      "custom_css": [
+        "div {margin-top: -15px;}"
+      ],
+      "settings": {
+        "section_id": "",
+        "subheading": "",
+        "title": "PLEASE NOTE:",
+        "content": "<p><strong>You can include up to one (1) accessory per order. You can place up to three (3) orders per month. <br/><br/>We only ship the original band that comes with your smartwatch OR a black band that fits your current smartwatch.</strong></p>",
+        "button_text": "",
+        "button_link": "",
+        "background_type": "full_width",
+        "text_width": "medium",
+        "text_position": "center",
+        "text_alignment": "center",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    }
+  },
+  "order": [
+    "rich_text_QXdFb3",
+    "main",
+    "product-content",
+    "d0e939a6-ef01-41b2-a26c-43be8b1503b8",
+    "bd6b6952-806f-42b1-988d-6344239a7046",
+    "rich_text_iCgL8e"
+  ]
+}

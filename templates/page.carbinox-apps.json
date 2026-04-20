@@ -1,0 +1,1179 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "product_item_NHcV6M": {
+      "type": "product-item",
+      "blocks": {
+        "product_items_r3gxAr": {
+          "type": "Product-items",
+          "settings": {
+            "image1": "shopify://shop_images/LIFETIME_WARRANTY_300_000_CUSTOMERS_FREE_3-5_DAY_SHIPPING_1_-min.png",
+            "heading": "",
+            "para": ""
+          }
+        }
+      },
+      "block_order": [
+        "product_items_r3gxAr"
+      ],
+      "settings": {}
+    },
+    "rich_text_9B9kpj": {
+      "type": "rich-text",
+      "disabled": true,
+      "custom_css": [
+        "h3 {font-size: 23px;}"
+      ],
+      "settings": {
+        "section_id": "",
+        "subheading": "YES, BLACK FRIDAY IS HERE FOR 60 MINUTES.",
+        "title": "GET 50% OFF ONLY FOR THE NEXT 60 MINUTES WITH CODE \"BLACK50\" 🚨",
+        "content": "<p><strong>*WE'RE CLOSING THIS PAGE!</strong></p>",
+        "button_text": "",
+        "button_link": "",
+        "background_type": "full_width",
+        "text_width": "fill",
+        "text_position": "center",
+        "text_alignment": "center",
+        "background": "#de0000",
+        "text_color": "#ffffff",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "sl_timer_bar_1_1_XyyzHB": {
+      "type": "sl-timer-bar-1-1",
+      "settings": {
+        "devices": "all",
+        "sticky_on_scroll": false,
+        "headline_text": "IT'S OVER! WE'RE REMOVING THE 50% OFF CODE \"BLACK50\" IN:",
+        "strikethrough_text": "",
+        "message_link": "",
+        "link_style": "arrow",
+        "use_caps": true,
+        "message_icon": "icon-name",
+        "offer_countdown_date": "2024-11-30",
+        "offer_countdown_time": "11:59 PM -04:00",
+        "pattern_select": "110d5020-2c4a-47b6-94c8-74c9b3d3b8d9",
+        "bar_height": "large",
+        "text_size": "large",
+        "font_style": "title",
+        "timer_size": "large",
+        "timer_font_style": "heading",
+        "label_font_style": "heading",
+        "border_type": "brand_style",
+        "mobile_bar_height": "match_desktop",
+        "mobile_text_size": "large",
+        "background_color": "#de0000",
+        "text_color": "#ffffff",
+        "border_color": "#ffffff",
+        "custom_timer_color": "#ffffff"
+      }
+    },
+    "slideshow_rQDYrz": {
+      "type": "slideshow",
+      "blocks": {
+        "image_t6BY44": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/Diseno_sin_titulo_16_-min_b2d0b009-49d4-4f60-9dbd-0c96ffdc12b2.jpg",
+            "mobile_image": "shopify://shop_images/Anadir_un_subtitulo_2_-min.png",
+            "text_position": "middle_center",
+            "subheading": "",
+            "title": "",
+            "button_1_text": "",
+            "button_1_link": "",
+            "button_2_text": "",
+            "button_2_link": "",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "image_t6BY44"
+      ],
+      "settings": {
+        "section_height": "auto",
+        "transition_type": "fade",
+        "autoplay": false,
+        "cycle_speed": 5,
+        "background": "rgba(0,0,0,0)"
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "show_title": true,
+        "page_width": "medium"
+      }
+    },
+    "image_with_text_bapa3y": {
+      "type": "image-with-text",
+      "blocks": {
+        "item_XThUJB": {
+          "type": "item",
+          "settings": {
+            "show_video": false,
+            "video_link": "",
+            "image": "shopify://shop_images/6-min_5.png",
+            "tab_label": "Item",
+            "subheading": "",
+            "title": "WE'LL REMOVING These SPECIAL PACKS AT MIDNIGHT. DON'T REGRET LATER!",
+            "content": "<h4><strong>🎁 GIFTING SEASON IS GETTING CLOSER:</strong> <br/>Don't regret paying in full in XMAS. Take advantage of our deals and solve 2, 3 and even 4 gifts at once!</h4><h4>📉 THESE ARE OUR BOTTOM PRICES: <br/>Don't expect a better deal than this. It's your ONLY OPPORTUNITY TO SAVE and get CRAZY DEALS on Carbinox.<br/></h4><h4>🎖️ LIFETIME WARRANTY AND 45-DAY MONEY BACK GUARANTEE: <br/>Enjoy free replacements if something happens, as well as risk-free trial to test our watches.</h4><h4></h4>",
+            "button_text": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "item_XThUJB"
+      ],
+      "custom_css": [
+        "h3 {font-size: 22px; background-color: #de0000; padding-block: 6px;}",
+        "h2 {font-size: 13px;}",
+        "h4 {font-size: 14px; text-align: left;}",
+        "div {background-color: black;}"
+      ],
+      "settings": {
+        "section_id": "",
+        "reveal_on_scroll": false,
+        "background_type": "full_width",
+        "background_overlap": "text",
+        "image_position": "left",
+        "text_alignment": "center",
+        "cycle_speed": 8,
+        "accent_background": "#000000",
+        "text_color": "#ffffff",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)",
+        "enable_custom_margin": false,
+        "margin_bottom": 0
+      }
+    },
+    "rich_text_jCDCaT": {
+      "type": "rich-text",
+      "custom_css": [
+        "div {margin-block: -5px;}"
+      ],
+      "settings": {
+        "section_id": "",
+        "subheading": "",
+        "title": "GET NOW BEFORE THEY RUN OUT OF STOCK!",
+        "content": "",
+        "button_text": "",
+        "button_link": "",
+        "background_type": "full_width",
+        "text_width": "medium",
+        "text_position": "center",
+        "text_alignment": "center",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "featured_product_9kjjWy": {
+      "type": "featured-product",
+      "blocks": {
+        "variant_picker_GQqeCj": {
+          "type": "variant_picker",
+          "settings": {
+            "hide_sold_out_variants": false,
+            "selector_mode": "block",
+            "color_mode": "color",
+            "size_chart_page": ""
+          }
+        },
+        "quantity_selector_cPt6X8": {
+          "type": "quantity_selector",
+          "disabled": true,
+          "settings": {}
+        },
+        "text_rnq4XC": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<h5><strong>🥇AMERICA'S TOP RATED SMARTWATCH FOR BLUE COLLAR WORKERS, TRUCK DRIVERS, MANAGERS, OPERATORS AND MECHANICS.<br/><br/>🇺🇸 U.S MIL-STD </strong>CERTIFIED & IP69K WATERPROOF. FULLY RESISTANT AGAINST <strong>HARD IMPACTS, SCRATCHES, DENTS, AND OTHER ROUGH TESTS OR ENVIRONMENTS!<br/><br/>🔋 14-DAY BATTERY LIFE ON A SINGLE 90-MINUTE CHARGE, PLUS BLUETOOTH CALLING TECHNOLOGY.</strong></h5>"
+          }
+        },
+        "social_share_icons_jfg6kK": {
+          "type": "social_share_icons",
+          "settings": {
+            "icon_1": "shopify://shop_images/Diseno_sin_titulo_-_2024-11-07T181009.445.png",
+            "icon_text_1": "<p>U.S MIL-STD 810H CERTIFIED</p>",
+            "icon_2": "shopify://shop_images/2_e3698ff8-966b-493e-aa75-0881daa5f95e.png",
+            "icon_text_2": "<p>DESIGNED AND BUILT FOR AMERICA</p>",
+            "icon_3": "shopify://shop_images/3_fd5dc79c-8064-4d08-9c53-a1102be5bd8f.png",
+            "icon_text_3": "<p>IP69K WATERPROOF RATING</p>"
+          }
+        },
+        "buy_buttons_KgKVMW": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_payment_button": false,
+            "atc_button_background": "#000000",
+            "atc_button_text_color": "#ffffff",
+            "buy_now_button_background": "rgba(0,0,0,0)",
+            "buy_now_button_text_color": "rgba(0,0,0,0)"
+          }
+        },
+        "text_rCxjXQ": {
+          "type": "text",
+          "settings": {
+            "text": "<h5><strong>🟢 SHIPS FROM MIAMI, FL IN LESS THAN 4 HOURS!</strong></h5>"
+          }
+        },
+        "image_hVgaFK": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/3-min_2.png",
+            "image_alignment": "center",
+            "image_width": 440
+          }
+        }
+      },
+      "block_order": [
+        "variant_picker_GQqeCj",
+        "quantity_selector_cPt6X8",
+        "text_rnq4XC",
+        "social_share_icons_jfg6kK",
+        "buy_buttons_KgKVMW",
+        "text_rCxjXQ",
+        "image_hVgaFK"
+      ],
+      "custom_css": [
+        "h3 {font-size: 20px; background-color: red; color: white; padding: 7px; margin: 1px;}",
+        "h4 {font-size: 15px; letter-spacing: -0.5px; text-align: center;}",
+        "h2 {font-size: 18px; letter-spacing: -0.3px;}",
+        "h5 {font-size: 13px; color: #11a603; text-align: center;}",
+        ".price--large {font-size: 23px; color: #e70000;}"
+      ],
+      "settings": {
+        "product": "🎁-gift-pack-for-carbinox-blaze-type-r-type-s",
+        "subheading": "",
+        "title": "🚨 GET 50% OFF ON THIS WITH CODE \"BLACK50\" FOR THE NEXT 60 MINUTES!",
+        "show_vendor": false,
+        "show_sku": false,
+        "show_taxes_included": false,
+        "show_product_rating": false,
+        "show_share_buttons": false,
+        "help_page": "",
+        "enable_video_autoplay": false,
+        "enable_video_looping": false,
+        "enable_image_zoom": false,
+        "show_thumbnails_on_mobile": false,
+        "desktop_thumbnails_position": "bottom",
+        "transition_effect": "fade",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "section_id": ""
+      }
+    },
+    "featured_product_WymLA6": {
+      "type": "featured-product",
+      "blocks": {
+        "variant_picker_yLqQqT": {
+          "type": "variant_picker",
+          "settings": {
+            "hide_sold_out_variants": false,
+            "selector_mode": "block",
+            "color_mode": "color",
+            "size_chart_page": ""
+          }
+        },
+        "quantity_selector_xQFWRT": {
+          "type": "quantity_selector",
+          "disabled": true,
+          "settings": {}
+        },
+        "text_LDN6tJ": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<h5><strong>🥇AMERICA'S TOP RATED SMARTWATCH FOR BLUE COLLAR WORKERS, TRUCK DRIVERS, MANAGERS, OPERATORS AND MECHANICS.<br/><br/>🇺🇸 U.S MIL-STD </strong>CERTIFIED & IP69K WATERPROOF. FULLY RESISTANT AGAINST <strong>HARD IMPACTS, SCRATCHES, DENTS, AND OTHER ROUGH TESTS OR ENVIRONMENTS!<br/><br/>🔋 14-DAY BATTERY LIFE ON A SINGLE 90-MINUTE CHARGE, PLUS BLUETOOTH CALLING TECHNOLOGY.</strong></h5>"
+          }
+        },
+        "social_share_icons_WXz69y": {
+          "type": "social_share_icons",
+          "settings": {
+            "icon_1": "shopify://shop_images/Diseno_sin_titulo_-_2024-11-07T181009.445.png",
+            "icon_text_1": "<p>U.S MIL-STD 810H CERTIFIED</p>",
+            "icon_2": "shopify://shop_images/2_e3698ff8-966b-493e-aa75-0881daa5f95e.png",
+            "icon_text_2": "<p>DESIGNED AND BUILT FOR AMERICA</p>",
+            "icon_3": "shopify://shop_images/3_fd5dc79c-8064-4d08-9c53-a1102be5bd8f.png",
+            "icon_text_3": "<p>IP69K WATERPROOF RATING</p>"
+          }
+        },
+        "buy_buttons_aeWTVp": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_payment_button": false,
+            "atc_button_background": "#000000",
+            "atc_button_text_color": "#ffffff",
+            "buy_now_button_background": "rgba(0,0,0,0)",
+            "buy_now_button_text_color": "rgba(0,0,0,0)"
+          }
+        },
+        "text_MirkY3": {
+          "type": "text",
+          "settings": {
+            "text": "<h5><strong>🟢 SHIPS FROM MIAMI, FL IN LESS THAN 4 HOURS!</strong></h5>"
+          }
+        },
+        "image_gYGdFy": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/3-min_2.png",
+            "image_alignment": "center",
+            "image_width": 440
+          }
+        }
+      },
+      "block_order": [
+        "variant_picker_yLqQqT",
+        "quantity_selector_xQFWRT",
+        "text_LDN6tJ",
+        "social_share_icons_WXz69y",
+        "buy_buttons_aeWTVp",
+        "text_MirkY3",
+        "image_gYGdFy"
+      ],
+      "custom_css": [
+        "h3 {font-size: 20px; background-color: red; color: white; padding: 7px; margin: 1px;}",
+        "h4 {font-size: 15px; letter-spacing: -0.5px; text-align: center;}",
+        "h2 {font-size: 18px; letter-spacing: -0.3px;}",
+        "h5 {font-size: 13px; color: #11a603; text-align: center;}",
+        ".price--large {font-size: 23px; color: #e70000;}"
+      ],
+      "settings": {
+        "product": "🎁-gift-pack-for-carbinox-blaze-type-r",
+        "subheading": "",
+        "title": "🚨 GET 50% OFF ON THIS WITH CODE \"BLACK50\" FOR THE NEXT 60 MINUTES!",
+        "show_vendor": false,
+        "show_sku": false,
+        "show_taxes_included": false,
+        "show_product_rating": false,
+        "show_share_buttons": false,
+        "help_page": "",
+        "enable_video_autoplay": false,
+        "enable_video_looping": false,
+        "enable_image_zoom": false,
+        "show_thumbnails_on_mobile": false,
+        "desktop_thumbnails_position": "bottom",
+        "transition_effect": "fade",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "section_id": ""
+      }
+    },
+    "featured_product_4grkJp": {
+      "type": "featured-product",
+      "blocks": {
+        "variant_picker_hANb9p": {
+          "type": "variant_picker",
+          "settings": {
+            "hide_sold_out_variants": false,
+            "selector_mode": "block",
+            "color_mode": "color",
+            "size_chart_page": ""
+          }
+        },
+        "quantity_selector_gBzFTN": {
+          "type": "quantity_selector",
+          "disabled": true,
+          "settings": {}
+        },
+        "text_NFBKq6": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<h5><strong>🥇AMERICA'S TOP RATED SMARTWATCH FOR BLUE COLLAR WORKERS, TRUCK DRIVERS, MANAGERS, OPERATORS AND MECHANICS.<br/><br/>🇺🇸 U.S MIL-STD </strong>CERTIFIED & IP69K WATERPROOF. FULLY RESISTANT AGAINST <strong>HARD IMPACTS, SCRATCHES, DENTS, AND OTHER ROUGH TESTS OR ENVIRONMENTS!<br/><br/>🔋 14-DAY BATTERY LIFE ON A SINGLE 90-MINUTE CHARGE, PLUS BLUETOOTH CALLING TECHNOLOGY.</strong></h5>"
+          }
+        },
+        "social_share_icons_4Meq4x": {
+          "type": "social_share_icons",
+          "settings": {
+            "icon_1": "shopify://shop_images/Diseno_sin_titulo_-_2024-11-07T181009.445.png",
+            "icon_text_1": "<p>U.S MIL-STD 810H CERTIFIED</p>",
+            "icon_2": "shopify://shop_images/2_e3698ff8-966b-493e-aa75-0881daa5f95e.png",
+            "icon_text_2": "<p>DESIGNED AND BUILT FOR AMERICA</p>",
+            "icon_3": "shopify://shop_images/3_fd5dc79c-8064-4d08-9c53-a1102be5bd8f.png",
+            "icon_text_3": "<p>IP69K WATERPROOF RATING</p>"
+          }
+        },
+        "buy_buttons_TAafdC": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_payment_button": false,
+            "atc_button_background": "#000000",
+            "atc_button_text_color": "#ffffff",
+            "buy_now_button_background": "rgba(0,0,0,0)",
+            "buy_now_button_text_color": "rgba(0,0,0,0)"
+          }
+        },
+        "text_VRgnkM": {
+          "type": "text",
+          "settings": {
+            "text": "<h5><strong>🟢 SHIPS FROM MIAMI, FL IN LESS THAN 4 HOURS!</strong></h5>"
+          }
+        },
+        "image_ijDKNc": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/3-min_2.png",
+            "image_alignment": "center",
+            "image_width": 440
+          }
+        }
+      },
+      "block_order": [
+        "variant_picker_hANb9p",
+        "quantity_selector_gBzFTN",
+        "text_NFBKq6",
+        "social_share_icons_4Meq4x",
+        "buy_buttons_TAafdC",
+        "text_VRgnkM",
+        "image_ijDKNc"
+      ],
+      "custom_css": [
+        "h3 {font-size: 20px; background-color: red; color: white; padding: 7px; margin: 1px;}",
+        "h4 {font-size: 15px; letter-spacing: -0.5px; text-align: center;}",
+        "h2 {font-size: 18px; letter-spacing: -0.3px;}",
+        "h5 {font-size: 13px; color: #11a603; text-align: center;}",
+        ".price--large {font-size: 23px; color: #e70000;}"
+      ],
+      "settings": {
+        "product": "🎁-gift-pack-for-carbinox-blaze-type-s",
+        "subheading": "",
+        "title": "🚨 GET 50% OFF ON THIS WITH CODE \"BLACK50\" FOR THE NEXT 60 MINUTES!",
+        "show_vendor": false,
+        "show_sku": false,
+        "show_taxes_included": false,
+        "show_product_rating": false,
+        "show_share_buttons": false,
+        "help_page": "",
+        "enable_video_autoplay": false,
+        "enable_video_looping": false,
+        "enable_image_zoom": false,
+        "show_thumbnails_on_mobile": false,
+        "desktop_thumbnails_position": "bottom",
+        "transition_effect": "fade",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "section_id": ""
+      }
+    },
+    "featured_product_rDmPK9": {
+      "type": "featured-product",
+      "blocks": {
+        "variant_picker_exdaXD": {
+          "type": "variant_picker",
+          "settings": {
+            "hide_sold_out_variants": false,
+            "selector_mode": "block",
+            "color_mode": "color",
+            "size_chart_page": ""
+          }
+        },
+        "quantity_selector_J9qt8i": {
+          "type": "quantity_selector",
+          "disabled": true,
+          "settings": {}
+        },
+        "text_9MaXJC": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<h5><strong>🥇AMERICA'S TOP RATED SMARTWATCH FOR BLUE COLLAR WORKERS, TRUCK DRIVERS, MANAGERS, OPERATORS AND MECHANICS.<br/><br/>🇺🇸 U.S MIL-STD </strong>CERTIFIED & IP69K WATERPROOF. FULLY RESISTANT AGAINST <strong>HARD IMPACTS, SCRATCHES, DENTS, AND OTHER ROUGH TESTS OR ENVIRONMENTS!<br/><br/>🔋 14-DAY BATTERY LIFE ON A SINGLE 90-MINUTE CHARGE, PLUS BLUETOOTH CALLING TECHNOLOGY.</strong></h5>"
+          }
+        },
+        "social_share_icons_FQP4ca": {
+          "type": "social_share_icons",
+          "settings": {
+            "icon_1": "shopify://shop_images/Diseno_sin_titulo_-_2024-11-07T181009.445.png",
+            "icon_text_1": "<p>U.S MIL-STD 810H CERTIFIED</p>",
+            "icon_2": "shopify://shop_images/2_e3698ff8-966b-493e-aa75-0881daa5f95e.png",
+            "icon_text_2": "<p>DESIGNED AND BUILT FOR AMERICA</p>",
+            "icon_3": "shopify://shop_images/3_fd5dc79c-8064-4d08-9c53-a1102be5bd8f.png",
+            "icon_text_3": "<p>IP69K WATERPROOF RATING</p>"
+          }
+        },
+        "buy_buttons_678VA9": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_payment_button": false,
+            "atc_button_background": "#000000",
+            "atc_button_text_color": "#ffffff",
+            "buy_now_button_background": "rgba(0,0,0,0)",
+            "buy_now_button_text_color": "rgba(0,0,0,0)"
+          }
+        },
+        "text_pJ9hkr": {
+          "type": "text",
+          "settings": {
+            "text": "<h5><strong>🟢 SHIPS FROM MIAMI, FL IN LESS THAN 4 HOURS!</strong></h5>"
+          }
+        },
+        "image_wTnfCk": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/3-min_2.png",
+            "image_alignment": "center",
+            "image_width": 440
+          }
+        }
+      },
+      "block_order": [
+        "variant_picker_exdaXD",
+        "quantity_selector_J9qt8i",
+        "text_9MaXJC",
+        "social_share_icons_FQP4ca",
+        "buy_buttons_678VA9",
+        "text_pJ9hkr",
+        "image_wTnfCk"
+      ],
+      "custom_css": [
+        "h3 {font-size: 20px; background-color: red; color: white; padding: 7px; margin: 1px;}",
+        "h4 {font-size: 15px; letter-spacing: -0.5px; text-align: center;}",
+        "h2 {font-size: 18px; letter-spacing: -0.3px;}",
+        "h5 {font-size: 13px; color: #11a603; text-align: center;}",
+        ".price--large {font-size: 23px; color: #e70000;}"
+      ],
+      "settings": {
+        "product": "🎁-gift-pack-for-carbinox-vortex",
+        "subheading": "",
+        "title": "🚨 GET 50% OFF ON THIS WITH CODE \"BLACK50\" FOR THE NEXT 60 MINUTES!",
+        "show_vendor": false,
+        "show_sku": false,
+        "show_taxes_included": false,
+        "show_product_rating": false,
+        "show_share_buttons": false,
+        "help_page": "",
+        "enable_video_autoplay": false,
+        "enable_video_looping": false,
+        "enable_image_zoom": false,
+        "show_thumbnails_on_mobile": false,
+        "desktop_thumbnails_position": "bottom",
+        "transition_effect": "fade",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "section_id": ""
+      }
+    },
+    "featured_product_8QErtx": {
+      "type": "featured-product",
+      "blocks": {
+        "variant_picker_aT3dLz": {
+          "type": "variant_picker",
+          "settings": {
+            "hide_sold_out_variants": false,
+            "selector_mode": "block",
+            "color_mode": "color",
+            "size_chart_page": ""
+          }
+        },
+        "quantity_selector_hdBpJa": {
+          "type": "quantity_selector",
+          "disabled": true,
+          "settings": {}
+        },
+        "text_DCLRPm": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<h5><strong>🥇AMERICA'S TOP RATED SMARTWATCH FOR BLUE COLLAR WORKERS, TRUCK DRIVERS, MANAGERS, OPERATORS AND MECHANICS.<br/><br/>🇺🇸 U.S MIL-STD </strong>CERTIFIED & IP69K WATERPROOF. FULLY RESISTANT AGAINST <strong>HARD IMPACTS, SCRATCHES, DENTS, AND OTHER ROUGH TESTS OR ENVIRONMENTS!<br/><br/>🔋 14-DAY BATTERY LIFE ON A SINGLE 90-MINUTE CHARGE, PLUS BLUETOOTH CALLING TECHNOLOGY.</strong></h5>"
+          }
+        },
+        "social_share_icons_RaYVBP": {
+          "type": "social_share_icons",
+          "settings": {
+            "icon_1": "shopify://shop_images/Diseno_sin_titulo_-_2024-11-07T181009.445.png",
+            "icon_text_1": "<p>U.S MIL-STD 810H CERTIFIED</p>",
+            "icon_2": "shopify://shop_images/2_e3698ff8-966b-493e-aa75-0881daa5f95e.png",
+            "icon_text_2": "<p>DESIGNED AND BUILT FOR AMERICA</p>",
+            "icon_3": "shopify://shop_images/3_fd5dc79c-8064-4d08-9c53-a1102be5bd8f.png",
+            "icon_text_3": "<p>IP69K WATERPROOF RATING</p>"
+          }
+        },
+        "buy_buttons_j777pe": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_payment_button": false,
+            "atc_button_background": "#000000",
+            "atc_button_text_color": "#ffffff",
+            "buy_now_button_background": "rgba(0,0,0,0)",
+            "buy_now_button_text_color": "rgba(0,0,0,0)"
+          }
+        },
+        "text_qnDqwQ": {
+          "type": "text",
+          "settings": {
+            "text": "<h5><strong>🟢 SHIPS FROM MIAMI, FL IN LESS THAN 4 HOURS!</strong></h5>"
+          }
+        },
+        "image_Rb3bEj": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/3-min_2.png",
+            "image_alignment": "center",
+            "image_width": 440
+          }
+        }
+      },
+      "block_order": [
+        "variant_picker_aT3dLz",
+        "quantity_selector_hdBpJa",
+        "text_DCLRPm",
+        "social_share_icons_RaYVBP",
+        "buy_buttons_j777pe",
+        "text_qnDqwQ",
+        "image_Rb3bEj"
+      ],
+      "custom_css": [
+        "h3 {font-size: 20px; background-color: red; color: white; padding: 7px; margin: 1px;}",
+        "h4 {font-size: 15px; letter-spacing: -0.5px; text-align: center;}",
+        "h2 {font-size: 18px; letter-spacing: -0.3px;}",
+        "h5 {font-size: 13px; color: #11a603; text-align: center;}",
+        ".price--large {font-size: 23px; color: #e70000;}"
+      ],
+      "settings": {
+        "product": "🎁-accessories-pack-for-carbinox-blaze-type-r",
+        "subheading": "",
+        "title": "🚨 GET 50% OFF ON THIS WITH CODE \"BLACK50\" FOR THE NEXT 60 MINUTES!",
+        "show_vendor": false,
+        "show_sku": false,
+        "show_taxes_included": false,
+        "show_product_rating": false,
+        "show_share_buttons": false,
+        "help_page": "",
+        "enable_video_autoplay": false,
+        "enable_video_looping": false,
+        "enable_image_zoom": false,
+        "show_thumbnails_on_mobile": false,
+        "desktop_thumbnails_position": "bottom",
+        "transition_effect": "fade",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "section_id": ""
+      }
+    },
+    "featured_product_Aij89c": {
+      "type": "featured-product",
+      "blocks": {
+        "variant_picker_PfhyCj": {
+          "type": "variant_picker",
+          "settings": {
+            "hide_sold_out_variants": false,
+            "selector_mode": "block",
+            "color_mode": "color",
+            "size_chart_page": ""
+          }
+        },
+        "quantity_selector_RDbjbN": {
+          "type": "quantity_selector",
+          "disabled": true,
+          "settings": {}
+        },
+        "text_aK47MH": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<h5><strong>🥇AMERICA'S TOP RATED SMARTWATCH FOR BLUE COLLAR WORKERS, TRUCK DRIVERS, MANAGERS, OPERATORS AND MECHANICS.<br/><br/>🇺🇸 U.S MIL-STD </strong>CERTIFIED & IP69K WATERPROOF. FULLY RESISTANT AGAINST <strong>HARD IMPACTS, SCRATCHES, DENTS, AND OTHER ROUGH TESTS OR ENVIRONMENTS!<br/><br/>🔋 14-DAY BATTERY LIFE ON A SINGLE 90-MINUTE CHARGE, PLUS BLUETOOTH CALLING TECHNOLOGY.</strong></h5>"
+          }
+        },
+        "social_share_icons_gpdtpG": {
+          "type": "social_share_icons",
+          "settings": {
+            "icon_1": "shopify://shop_images/Diseno_sin_titulo_-_2024-11-07T181009.445.png",
+            "icon_text_1": "<p>U.S MIL-STD 810H CERTIFIED</p>",
+            "icon_2": "shopify://shop_images/2_e3698ff8-966b-493e-aa75-0881daa5f95e.png",
+            "icon_text_2": "<p>DESIGNED AND BUILT FOR AMERICA</p>",
+            "icon_3": "shopify://shop_images/3_fd5dc79c-8064-4d08-9c53-a1102be5bd8f.png",
+            "icon_text_3": "<p>IP69K WATERPROOF RATING</p>"
+          }
+        },
+        "buy_buttons_wtEedy": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_payment_button": false,
+            "atc_button_background": "#000000",
+            "atc_button_text_color": "#ffffff",
+            "buy_now_button_background": "rgba(0,0,0,0)",
+            "buy_now_button_text_color": "rgba(0,0,0,0)"
+          }
+        },
+        "text_x6UzYU": {
+          "type": "text",
+          "settings": {
+            "text": "<h5><strong>🟢 SHIPS FROM MIAMI, FL IN LESS THAN 4 HOURS!</strong></h5>"
+          }
+        },
+        "image_BU8kgr": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/3-min_2.png",
+            "image_alignment": "center",
+            "image_width": 440
+          }
+        }
+      },
+      "block_order": [
+        "variant_picker_PfhyCj",
+        "quantity_selector_RDbjbN",
+        "text_aK47MH",
+        "social_share_icons_gpdtpG",
+        "buy_buttons_wtEedy",
+        "text_x6UzYU",
+        "image_BU8kgr"
+      ],
+      "custom_css": [
+        "h3 {font-size: 20px; background-color: red; color: white; padding: 7px; margin: 1px;}",
+        "h4 {font-size: 15px; letter-spacing: -0.5px; text-align: center;}",
+        "h2 {font-size: 18px; letter-spacing: -0.3px;}",
+        "h5 {font-size: 13px; color: #11a603; text-align: center;}",
+        ".price--large {font-size: 23px; color: #e70000;}"
+      ],
+      "settings": {
+        "product": "🎁-accessories-pack-for-carbinox-blaze-type-s",
+        "subheading": "",
+        "title": "🚨 GET 50% OFF ON THIS WITH CODE \"BLACK50\" FOR THE NEXT 60 MINUTES!",
+        "show_vendor": false,
+        "show_sku": false,
+        "show_taxes_included": false,
+        "show_product_rating": false,
+        "show_share_buttons": false,
+        "help_page": "",
+        "enable_video_autoplay": false,
+        "enable_video_looping": false,
+        "enable_image_zoom": false,
+        "show_thumbnails_on_mobile": false,
+        "desktop_thumbnails_position": "bottom",
+        "transition_effect": "fade",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "section_id": ""
+      }
+    },
+    "featured_product_RDXGnt": {
+      "type": "featured-product",
+      "blocks": {
+        "variant_picker_jTNeMK": {
+          "type": "variant_picker",
+          "settings": {
+            "hide_sold_out_variants": false,
+            "selector_mode": "block",
+            "color_mode": "color",
+            "size_chart_page": ""
+          }
+        },
+        "quantity_selector_7KUNhN": {
+          "type": "quantity_selector",
+          "disabled": true,
+          "settings": {}
+        },
+        "text_6NLgYa": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<h5><strong>🥇AMERICA'S TOP RATED SMARTWATCH FOR BLUE COLLAR WORKERS, TRUCK DRIVERS, MANAGERS, OPERATORS AND MECHANICS.<br/><br/>🇺🇸 U.S MIL-STD </strong>CERTIFIED & IP69K WATERPROOF. FULLY RESISTANT AGAINST <strong>HARD IMPACTS, SCRATCHES, DENTS, AND OTHER ROUGH TESTS OR ENVIRONMENTS!<br/><br/>🔋 14-DAY BATTERY LIFE ON A SINGLE 90-MINUTE CHARGE, PLUS BLUETOOTH CALLING TECHNOLOGY.</strong></h5>"
+          }
+        },
+        "social_share_icons_kWgGjP": {
+          "type": "social_share_icons",
+          "settings": {
+            "icon_1": "shopify://shop_images/Diseno_sin_titulo_-_2024-11-07T181009.445.png",
+            "icon_text_1": "<p>U.S MIL-STD 810H CERTIFIED</p>",
+            "icon_2": "shopify://shop_images/2_e3698ff8-966b-493e-aa75-0881daa5f95e.png",
+            "icon_text_2": "<p>DESIGNED AND BUILT FOR AMERICA</p>",
+            "icon_3": "shopify://shop_images/3_fd5dc79c-8064-4d08-9c53-a1102be5bd8f.png",
+            "icon_text_3": "<p>IP69K WATERPROOF RATING</p>"
+          }
+        },
+        "buy_buttons_Ub9Fex": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_payment_button": false,
+            "atc_button_background": "#000000",
+            "atc_button_text_color": "#ffffff",
+            "buy_now_button_background": "rgba(0,0,0,0)",
+            "buy_now_button_text_color": "rgba(0,0,0,0)"
+          }
+        },
+        "text_xkpddp": {
+          "type": "text",
+          "settings": {
+            "text": "<h5><strong>🟢 SHIPS FROM MIAMI, FL IN LESS THAN 4 HOURS!</strong></h5>"
+          }
+        },
+        "image_n4QypJ": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/3-min_2.png",
+            "image_alignment": "center",
+            "image_width": 440
+          }
+        }
+      },
+      "block_order": [
+        "variant_picker_jTNeMK",
+        "quantity_selector_7KUNhN",
+        "text_6NLgYa",
+        "social_share_icons_kWgGjP",
+        "buy_buttons_Ub9Fex",
+        "text_xkpddp",
+        "image_n4QypJ"
+      ],
+      "custom_css": [
+        "h3 {font-size: 20px; background-color: red; color: white; padding: 7px; margin: 1px;}",
+        "h4 {font-size: 15px; letter-spacing: -0.5px; text-align: center;}",
+        "h2 {font-size: 18px; letter-spacing: -0.3px;}",
+        "h5 {font-size: 13px; color: #11a603; text-align: center;}",
+        ".price--large {font-size: 23px; color: #e70000;}"
+      ],
+      "settings": {
+        "product": "🎁-accessories-pack-for-carbinox-vortex",
+        "subheading": "",
+        "title": "🚨 GET 50% OFF ON THIS WITH CODE \"BLACK50\" FOR THE NEXT 60 MINUTES!",
+        "show_vendor": false,
+        "show_sku": false,
+        "show_taxes_included": false,
+        "show_product_rating": false,
+        "show_share_buttons": false,
+        "help_page": "",
+        "enable_video_autoplay": false,
+        "enable_video_looping": false,
+        "enable_image_zoom": false,
+        "show_thumbnails_on_mobile": false,
+        "desktop_thumbnails_position": "bottom",
+        "transition_effect": "fade",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "section_id": ""
+      }
+    },
+    "featured_product_Yjd3XT": {
+      "type": "featured-product",
+      "blocks": {
+        "variant_picker_b9i4yp": {
+          "type": "variant_picker",
+          "settings": {
+            "hide_sold_out_variants": false,
+            "selector_mode": "block",
+            "color_mode": "color",
+            "size_chart_page": ""
+          }
+        },
+        "quantity_selector_mdALJN": {
+          "type": "quantity_selector",
+          "disabled": true,
+          "settings": {}
+        },
+        "text_rafXyx": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<h5><strong>🥇AMERICA'S TOP RATED SMARTWATCH FOR BLUE COLLAR WORKERS, TRUCK DRIVERS, MANAGERS, OPERATORS AND MECHANICS.<br/><br/>🇺🇸 U.S MIL-STD </strong>CERTIFIED & IP69K WATERPROOF. FULLY RESISTANT AGAINST <strong>HARD IMPACTS, SCRATCHES, DENTS, AND OTHER ROUGH TESTS OR ENVIRONMENTS!<br/><br/>🔋 14-DAY BATTERY LIFE ON A SINGLE 90-MINUTE CHARGE, PLUS BLUETOOTH CALLING TECHNOLOGY.</strong></h5>"
+          }
+        },
+        "social_share_icons_TGpdbE": {
+          "type": "social_share_icons",
+          "settings": {
+            "icon_1": "shopify://shop_images/Diseno_sin_titulo_-_2024-11-07T181009.445.png",
+            "icon_text_1": "<p>U.S MIL-STD 810H CERTIFIED</p>",
+            "icon_2": "shopify://shop_images/2_e3698ff8-966b-493e-aa75-0881daa5f95e.png",
+            "icon_text_2": "<p>DESIGNED AND BUILT FOR AMERICA</p>",
+            "icon_3": "shopify://shop_images/3_fd5dc79c-8064-4d08-9c53-a1102be5bd8f.png",
+            "icon_text_3": "<p>IP69K WATERPROOF RATING</p>"
+          }
+        },
+        "buy_buttons_rL7GDR": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_payment_button": false,
+            "atc_button_background": "#000000",
+            "atc_button_text_color": "#ffffff",
+            "buy_now_button_background": "rgba(0,0,0,0)",
+            "buy_now_button_text_color": "rgba(0,0,0,0)"
+          }
+        },
+        "text_FdRj4q": {
+          "type": "text",
+          "settings": {
+            "text": "<h5><strong>🟢 SHIPS FROM MIAMI, FL IN LESS THAN 4 HOURS!</strong></h5>"
+          }
+        },
+        "image_pc47tL": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/3-min_2.png",
+            "image_alignment": "center",
+            "image_width": 440
+          }
+        }
+      },
+      "block_order": [
+        "variant_picker_b9i4yp",
+        "quantity_selector_mdALJN",
+        "text_rafXyx",
+        "social_share_icons_TGpdbE",
+        "buy_buttons_rL7GDR",
+        "text_FdRj4q",
+        "image_pc47tL"
+      ],
+      "custom_css": [
+        "h3 {font-size: 20px; background-color: red; color: white; padding: 7px; margin: 1px;}",
+        "h4 {font-size: 15px; letter-spacing: -0.5px; text-align: center;}",
+        "h2 {font-size: 18px; letter-spacing: -0.3px;}",
+        "h5 {font-size: 13px; color: #11a603; text-align: center;}",
+        ".price--large {font-size: 23px; color: #e70000;}"
+      ],
+      "settings": {
+        "product": "🎁-2x-gift-pack-for-carbinox-vortex",
+        "subheading": "",
+        "title": "🚨 GET 50% OFF ON THIS WITH CODE \"BLACK50\" FOR THE NEXT 60 MINUTES!",
+        "show_vendor": false,
+        "show_sku": false,
+        "show_taxes_included": false,
+        "show_product_rating": false,
+        "show_share_buttons": false,
+        "help_page": "",
+        "enable_video_autoplay": false,
+        "enable_video_looping": false,
+        "enable_image_zoom": false,
+        "show_thumbnails_on_mobile": false,
+        "desktop_thumbnails_position": "bottom",
+        "transition_effect": "fade",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "section_id": ""
+      }
+    },
+    "featured_product_kxFqKw": {
+      "type": "featured-product",
+      "blocks": {
+        "variant_picker_BpiWAd": {
+          "type": "variant_picker",
+          "settings": {
+            "hide_sold_out_variants": false,
+            "selector_mode": "block",
+            "color_mode": "color",
+            "size_chart_page": ""
+          }
+        },
+        "quantity_selector_96TaFV": {
+          "type": "quantity_selector",
+          "disabled": true,
+          "settings": {}
+        },
+        "text_RjEPkt": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<h5><strong>🥇AMERICA'S TOP RATED SMARTWATCH FOR BLUE COLLAR WORKERS, TRUCK DRIVERS, MANAGERS, OPERATORS AND MECHANICS.<br/><br/>🇺🇸 U.S MIL-STD </strong>CERTIFIED & IP69K WATERPROOF. FULLY RESISTANT AGAINST <strong>HARD IMPACTS, SCRATCHES, DENTS, AND OTHER ROUGH TESTS OR ENVIRONMENTS!<br/><br/>🔋 14-DAY BATTERY LIFE ON A SINGLE 90-MINUTE CHARGE, PLUS BLUETOOTH CALLING TECHNOLOGY.</strong></h5>"
+          }
+        },
+        "social_share_icons_jUrXHJ": {
+          "type": "social_share_icons",
+          "settings": {
+            "icon_1": "shopify://shop_images/Diseno_sin_titulo_-_2024-11-07T181009.445.png",
+            "icon_text_1": "<p>U.S MIL-STD 810H CERTIFIED</p>",
+            "icon_2": "shopify://shop_images/2_e3698ff8-966b-493e-aa75-0881daa5f95e.png",
+            "icon_text_2": "<p>DESIGNED AND BUILT FOR AMERICA</p>",
+            "icon_3": "shopify://shop_images/3_fd5dc79c-8064-4d08-9c53-a1102be5bd8f.png",
+            "icon_text_3": "<p>IP69K WATERPROOF RATING</p>"
+          }
+        },
+        "buy_buttons_pgWhdW": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_payment_button": false,
+            "atc_button_background": "#000000",
+            "atc_button_text_color": "#ffffff",
+            "buy_now_button_background": "rgba(0,0,0,0)",
+            "buy_now_button_text_color": "rgba(0,0,0,0)"
+          }
+        },
+        "text_JrmanE": {
+          "type": "text",
+          "settings": {
+            "text": "<h5><strong>🟢 SHIPS FROM MIAMI, FL IN LESS THAN 4 HOURS!</strong></h5>"
+          }
+        },
+        "image_PHYVTG": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/3-min_2.png",
+            "image_alignment": "center",
+            "image_width": 440
+          }
+        }
+      },
+      "block_order": [
+        "variant_picker_BpiWAd",
+        "quantity_selector_96TaFV",
+        "text_RjEPkt",
+        "social_share_icons_jUrXHJ",
+        "buy_buttons_pgWhdW",
+        "text_JrmanE",
+        "image_PHYVTG"
+      ],
+      "custom_css": [
+        "h3 {font-size: 20px; background-color: red; color: white; padding: 7px; margin: 1px;}",
+        "h4 {font-size: 15px; letter-spacing: -0.5px; text-align: center;}",
+        "h2 {font-size: 18px; letter-spacing: -0.3px;}",
+        "h5 {font-size: 13px; color: #11a603; text-align: center;}",
+        ".price--large {font-size: 23px; color: #e70000;}"
+      ],
+      "settings": {
+        "product": "🎁-carbinox-ultimate-gift-pack",
+        "subheading": "",
+        "title": "🚨 GET 50% OFF ON THIS WITH CODE \"BLACK50\" FOR THE NEXT 60 MINUTES!",
+        "show_vendor": false,
+        "show_sku": false,
+        "show_taxes_included": false,
+        "show_product_rating": false,
+        "show_share_buttons": false,
+        "help_page": "",
+        "enable_video_autoplay": false,
+        "enable_video_looping": false,
+        "enable_image_zoom": false,
+        "show_thumbnails_on_mobile": false,
+        "desktop_thumbnails_position": "bottom",
+        "transition_effect": "fade",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "section_id": ""
+      }
+    },
+    "featured_product_X8aGcy": {
+      "type": "featured-product",
+      "blocks": {
+        "variant_picker_YBC8Tt": {
+          "type": "variant_picker",
+          "settings": {
+            "hide_sold_out_variants": false,
+            "selector_mode": "block",
+            "color_mode": "color",
+            "size_chart_page": ""
+          }
+        },
+        "quantity_selector_KgmcdV": {
+          "type": "quantity_selector",
+          "disabled": true,
+          "settings": {}
+        },
+        "text_m4KzhM": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<h5><strong>🥇AMERICA'S TOP RATED SMARTWATCH FOR BLUE COLLAR WORKERS, TRUCK DRIVERS, MANAGERS, OPERATORS AND MECHANICS.<br/><br/>🇺🇸 U.S MIL-STD </strong>CERTIFIED & IP69K WATERPROOF. FULLY RESISTANT AGAINST <strong>HARD IMPACTS, SCRATCHES, DENTS, AND OTHER ROUGH TESTS OR ENVIRONMENTS!<br/><br/>🔋 14-DAY BATTERY LIFE ON A SINGLE 90-MINUTE CHARGE, PLUS BLUETOOTH CALLING TECHNOLOGY.</strong></h5>"
+          }
+        },
+        "social_share_icons_JahRmc": {
+          "type": "social_share_icons",
+          "settings": {
+            "icon_1": "shopify://shop_images/Diseno_sin_titulo_-_2024-11-07T181009.445.png",
+            "icon_text_1": "<p>U.S MIL-STD 810H CERTIFIED</p>",
+            "icon_2": "shopify://shop_images/2_e3698ff8-966b-493e-aa75-0881daa5f95e.png",
+            "icon_text_2": "<p>DESIGNED AND BUILT FOR AMERICA</p>",
+            "icon_3": "shopify://shop_images/3_fd5dc79c-8064-4d08-9c53-a1102be5bd8f.png",
+            "icon_text_3": "<p>IP69K WATERPROOF RATING</p>"
+          }
+        },
+        "buy_buttons_yhrenh": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_payment_button": false,
+            "atc_button_background": "#000000",
+            "atc_button_text_color": "#ffffff",
+            "buy_now_button_background": "rgba(0,0,0,0)",
+            "buy_now_button_text_color": "rgba(0,0,0,0)"
+          }
+        },
+        "text_aWyX8q": {
+          "type": "text",
+          "settings": {
+            "text": "<h5><strong>🟢 SHIPS FROM MIAMI, FL IN LESS THAN 4 HOURS!</strong></h5>"
+          }
+        },
+        "image_ekaMaX": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/3-min_2.png",
+            "image_alignment": "center",
+            "image_width": 440
+          }
+        }
+      },
+      "block_order": [
+        "variant_picker_YBC8Tt",
+        "quantity_selector_KgmcdV",
+        "text_m4KzhM",
+        "social_share_icons_JahRmc",
+        "buy_buttons_yhrenh",
+        "text_aWyX8q",
+        "image_ekaMaX"
+      ],
+      "custom_css": [
+        "h3 {font-size: 20px; background-color: red; color: white; padding: 7px; margin: 1px;}",
+        "h4 {font-size: 15px; letter-spacing: -0.5px; text-align: center;}",
+        "h2 {font-size: 18px; letter-spacing: -0.3px;}",
+        "h5 {font-size: 13px; color: #11a603; text-align: center;}",
+        ".price--large {font-size: 23px; color: #e70000;}"
+      ],
+      "settings": {
+        "product": "🎁-carbinox-special-tri-pack",
+        "subheading": "",
+        "title": "🚨 GET 50% OFF ON THIS WITH CODE \"BLACK50\" FOR THE NEXT 60 MINUTES!",
+        "show_vendor": false,
+        "show_sku": false,
+        "show_taxes_included": false,
+        "show_product_rating": false,
+        "show_share_buttons": false,
+        "help_page": "",
+        "enable_video_autoplay": false,
+        "enable_video_looping": false,
+        "enable_image_zoom": false,
+        "show_thumbnails_on_mobile": false,
+        "desktop_thumbnails_position": "bottom",
+        "transition_effect": "fade",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "section_id": ""
+      }
+    }
+  },
+  "order": [
+    "product_item_NHcV6M",
+    "rich_text_9B9kpj",
+    "sl_timer_bar_1_1_XyyzHB",
+    "slideshow_rQDYrz",
+    "main",
+    "image_with_text_bapa3y",
+    "rich_text_jCDCaT",
+    "featured_product_9kjjWy",
+    "featured_product_WymLA6",
+    "featured_product_4grkJp",
+    "featured_product_rDmPK9",
+    "featured_product_8QErtx",
+    "featured_product_Aij89c",
+    "featured_product_RDXGnt",
+    "featured_product_Yjd3XT",
+    "featured_product_kxFqKw",
+    "featured_product_X8aGcy"
+  ]
+}

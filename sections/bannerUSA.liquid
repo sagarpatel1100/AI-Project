@@ -1,0 +1,66 @@
+{% schema %}
+{
+  "name": "Banner Memorial Day",
+  "tag": "section",
+  "class": "banner-memorial-day",
+  "settings": [],
+  "presets": [
+    {
+      "name": "Banner Memorial Day"
+    }
+  ]
+}
+{% endschema %}
+
+{% stylesheet %}
+<style>
+  .banner-memorial {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .banner-memorial__image {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  /* Oculta ambas por defecto */
+  .banner-desktop,
+  .banner-mobile {
+    display: none;
+  }
+
+  /* Muestra solo en desktop (≥768px) */
+  @media (min-width: 768px) {
+    .banner-desktop {
+      display: block;
+    }
+  }
+
+  /* Muestra solo en mobile (<768px) */
+  @media (max-width: 767px) {
+    .banner-mobile {
+      display: block;
+    }
+  }
+  .shopify-section--header {
+  height: 100% !important;
+}
+</style>
+{% endstylesheet %}
+
+<section class="banner-memorial">
+  <img
+    class="banner-memorial__image banner-desktop"
+    src="https://cdn.shopify.com/s/files/1/0049/0533/6935/files/memorial-day-desktop.png?v=1747943555"
+    alt="Banner Memorial Day Desktop"
+    loading="lazy"
+  >
+  <img
+    class="banner-memorial__image banner-mobile"
+    src="https://cdn.shopify.com/s/files/1/0049/0533/6935/files/carbinox-memorial-day_1.png?v=1747926207"
+    alt="Banner Memorial Day Mobile"
+    loading="lazy"
+  >
+</section>

@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Outfit:wght@100..900&display=swap");
+
+.footer {
+  display: none !important;
+}
+
+.footer-adventorial__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.footer-adventorial__logo-wrapper {
+  margin-bottom: 30px;
+}
+
+.footer-adventorial__logo {
+  max-width: 229px;
+  width: 100%;
+  height: auto;
+}
+
+.footer-adventorial__links {
+  display: flex;
+  justify-content: center;
+  gap: 28px;
+  margin-bottom: 25px;
+  flex-wrap: wrap;
+}
+
+.footer-adventorial__link {
+  color: #ffffff;
+  font-size: 14px;
+  font-family: "Outfit";
+  border-bottom: 1px solid transparent;
+  transition: 0.25s ease;
+  text-decoration: underline;
+  text-decoration-color: #ffffff;
+}
+
+.footer-adventorial__copyright {
+  font-size: 14px;
+  font-family: "Outfit";
+  height: 31px;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  border-top: 1px solid #ffffff33;
+}
+
+@media (max-width: 768px) {
+  .footer-adventorial__logo {
+    max-width: 229px;
+  }
+
+  .footer-adventorial__links {
+    gap: 20px;
+  }
+}

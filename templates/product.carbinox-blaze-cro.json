@@ -1,0 +1,1030 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "sl_timer_bar_1_1_BHWMrU": {
+      "type": "sl-timer-bar-1-1",
+      "disabled": true,
+      "custom_css": [],
+      "settings": {
+        "devices": "all",
+        "sticky_on_scroll": true,
+        "headline_text": "🎄 32% OFF HAS BEEN AUTOMATICALLY APPLIED. THIS CODE EXPIRES IN:",
+        "strikethrough_text": "",
+        "message_link": "",
+        "link_style": "arrow",
+        "use_caps": true,
+        "message_icon": "icon-name",
+        "offer_countdown_date": "2024-12-24",
+        "offer_countdown_time": "11:59 PM -04:00",
+        "pattern_select": "110d5020-2c4a-47b6-94c8-74c9b3d3b8d9",
+        "bar_height": "medium",
+        "text_size": "medium",
+        "font_style": "title",
+        "timer_size": "large",
+        "timer_font_style": "heading",
+        "label_font_style": "heading",
+        "border_type": "brand_style",
+        "mobile_bar_height": "match_desktop",
+        "mobile_text_size": "match_desktop",
+        "background_color": "#f9f9f9",
+        "text_color": "#000000",
+        "border_color": "rgba(0,0,0,0)",
+        "custom_timer_color": "#000000"
+      }
+    },
+    "rich_text_3d3TnK": {
+      "type": "rich-text",
+      "disabled": true,
+      "custom_css": [
+        "h3 {font-size: 21px;}",
+        "div {margin-block: -6px;}"
+      ],
+      "settings": {
+        "section_id": "",
+        "subheading": "available for the next 24 hours only ⏰",
+        "title": "JUST FOR A LIMITED TIME: BUY A SMARTWATCH AND GET $100 IN FREE STRAPS!",
+        "content": "",
+        "button_text": "",
+        "button_link": "",
+        "background_type": "full_width",
+        "text_width": "fill",
+        "text_position": "center",
+        "text_alignment": "center",
+        "background": "#f9f9f9",
+        "text_color": "#000000",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "e9dc35e4-0664-46cf-ad4f-0d4aa37441e3": {
+      "type": "rich-text",
+      "disabled": true,
+      "custom_css": [
+        "h3 {font-size: 24px;}",
+        "p {font-size: 17px; letter-spacing: -0.5px;}"
+      ],
+      "settings": {
+        "section_id": "",
+        "subheading": "",
+        "title": "BUNDLE PACKS INFORMATION:",
+        "content": "<p><strong>🏅 ULTIMATE PACK <br/>($150 IN FREE PRODUCTS💰)</strong><br/>Includes one (1) Carbinox Blaze Type R or Type S, Tempered Glass Pack, USB Charging Cord and Black Metal Band + 6 Limited Edition Straps.<strong><br/><br/>STARTER PACK:</strong><br/>Includes one (1) Carbinox Blaze Type R or Type S.</p>",
+        "button_text": "",
+        "button_link": "",
+        "background_type": "full_width",
+        "text_width": "fill",
+        "text_position": "center",
+        "text_alignment": "center",
+        "background": "#f9f9f9",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "94157900-ca99-4d79-b443-7f058350974e": {
+          "type": "text",
+          "settings": {
+            "text": "<h4>⌚️ <strong>BUILT WITH ZINC ALLOY, TITANIUM AND ALUMINUM TO PROVIDE RESISTANCE AGAINST HARD IMPACTS, SCRATCHES, DROPS, EXTREME TEMPERATURES, MUD, AND EXTREME WORK ENVIRONMENTS.</strong><br/></h4>"
+          }
+        },
+        "77b0126f-d176-4e47-b6f3-d2424b9b32ea": {
+          "type": "variant_picker",
+          "settings": {
+            "hide_sold_out_variants": false,
+            "selector_mode": "block",
+            "color_mode": "block",
+            "size_chart_page": ""
+          }
+        },
+        "54d2e274-c4e9-4efe-b6da-5bfe93a94d13": {
+          "type": "social_share_icons",
+          "settings": {
+            "icon_1": "shopify://shop_images/Diseno_sin_titulo_-_2024-11-07T181009.445.png",
+            "icon_text_1": "<p>U.S MIL-STD 810H CERTIFIED</p>",
+            "icon_2": "shopify://shop_images/2_e3698ff8-966b-493e-aa75-0881daa5f95e.png",
+            "icon_text_2": "<p>DESIGNED AND BUILT FOR AMERICA</p>",
+            "icon_3": "shopify://shop_images/3_fd5dc79c-8064-4d08-9c53-a1102be5bd8f.png",
+            "icon_text_3": "<p>IP69K WATERPROOF RATING</p>"
+          }
+        },
+        "aa8adaeb-d404-4d2d-9f7b-7c87d4a68e8f": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_payment_button": false,
+            "atc_button_background": "#ffc200",
+            "atc_button_text_color": "#000000",
+            "buy_now_button_background": "rgba(0,0,0,0)",
+            "buy_now_button_text_color": "rgba(0,0,0,0)"
+          }
+        },
+        "4ac75f75-351e-49cb-9367-33b5cfe6a9bd": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/3-min_2.png",
+            "image_alignment": "center",
+            "image_width": 440
+          }
+        },
+        "guarantee_banner_aECnXW": {
+          "type": "guarantee_banner",
+          "settings": {
+            "badge": "shopify://shop_images/3-min_2_440x_png.png",
+            "title_start": "UNLIMITED REPLACEMENTS",
+            "title_highlight": "FOR AN ENTIRE YEAR.",
+            "description": "You’re fully covered for 365 full days against any internal or external defects, no questions asked."
+          }
+        }
+      },
+      "block_order": [
+        "94157900-ca99-4d79-b443-7f058350974e",
+        "77b0126f-d176-4e47-b6f3-d2424b9b32ea",
+        "54d2e274-c4e9-4efe-b6da-5bfe93a94d13",
+        "aa8adaeb-d404-4d2d-9f7b-7c87d4a68e8f",
+        "4ac75f75-351e-49cb-9367-33b5cfe6a9bd",
+        "guarantee_banner_aECnXW"
+      ],
+      "custom_css": [
+        "button {padding: 4px; font-size: 16px;}",
+        "h5 {font-size: 13px; color: #11a603; text-align: center;}",
+        "div {font-size: 14px;}",
+        "h4 {font-size: 12px; letter-spacing: -0.3px; text-align: center;}",
+        ".price--highlight {font-size: 20px;}",
+        ".label--highlight {font-size: 13px;}"
+      ],
+      "settings": {
+        "delivery_time": "",
+        "show_vendor": false,
+        "show_sku": false,
+        "show_taxes_included": false,
+        "show_product_rating": false,
+        "show_sticky_add_to_cart": true,
+        "show_payment_methods": false,
+        "show_share_buttons": false,
+        "help_page": "",
+        "enable_video_autoplay": false,
+        "enable_video_looping": false,
+        "enable_image_zoom": false,
+        "show_thumbnails_on_mobile": true,
+        "desktop_thumbnails_position": "bottom",
+        "transition_effect": "slide"
+      }
+    },
+    "c4d5d849-903b-4f94-a366-9dd19f7a438e": {
+      "type": "image-with-text",
+      "blocks": {
+        "35be12bc-6d06-4cc0-94ac-25211273e8e5": {
+          "type": "item",
+          "settings": {
+            "show_video": false,
+            "video_link": "",
+            "image": "shopify://shop_images/ezgif-2-8392fdab4c-min.gif",
+            "tab_label": "Item",
+            "subheading": "top rated durable smartwatch since 2021",
+            "title": "BACKED BY 350,000+ HARD WORKERS ACROSS AMERICA 🇺🇸",
+            "content": "<p><strong>Your job isn’t for the faint of heart, and neither is your gear. We’ve designed the Carbinox Blaze to stand up to everything a rough environment throws at it.</strong></p>",
+            "button_text": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "35be12bc-6d06-4cc0-94ac-25211273e8e5"
+      ],
+      "custom_css": [
+        "h2 {font-size: 12px;}",
+        "h3 {font-size: 22px; color: #ffc200;}",
+        "h5 {font-size: 16px; letter-spacing: -0.7px; line-height: 20px;}"
+      ],
+      "settings": {
+        "section_id": "",
+        "reveal_on_scroll": false,
+        "background_type": "full_width",
+        "background_overlap": "both",
+        "image_position": "right",
+        "text_alignment": "center",
+        "cycle_speed": 8,
+        "accent_background": "#000000",
+        "text_color": "#ffffff",
+        "button_background": "#292323",
+        "button_text_color": "#5a5353",
+        "enable_custom_margin": false,
+        "margin_bottom": 0
+      }
+    },
+    "7093bb3e-6e7a-4e7c-b3dd-09080160deb5": {
+      "type": "rich-text",
+      "custom_css": [
+        "h2 {color: #ffc200; font-size: 24px;}",
+        "h3 {font-size: 16px;"
+      ],
+      "settings": {
+        "section_id": "",
+        "subheading": "★★★★★",
+        "title": "\"I’ve put this Blaze through hell and back, and it’s still ticking. It’s the toughest watch I’ve ever owned.\"",
+        "content": "<p><strong>John D., Welder, Texas</strong></p>",
+        "button_text": "",
+        "button_link": "",
+        "background_type": "full_width",
+        "text_width": "fill",
+        "text_position": "center",
+        "text_alignment": "center",
+        "background": "#eeeeee",
+        "text_color": "#000000",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "product-content": {
+      "type": "product-content",
+      "blocks": {
+        "description": {
+          "type": "description",
+          "disabled": true,
+          "settings": {}
+        },
+        "bc751217-69a0-4865-b75f-a3750a2b9c28": {
+          "type": "content",
+          "disabled": true,
+          "settings": {
+            "title": "x-ranger SPECIFICATIONS:",
+            "content": "<h6><strong>- Full Metal Bezel and Body<br/>- Waterproof Technology<br/>- 70 SPORTS MODES<br/>- 410mAh of battery<br/>- 14 days of battery within one charge<br/>- 1.43’’ AMOLED Display<br/>- Heart Rate Sensor: VP60<br/>- Pedometer Sensor: STK8325<br/>- OXYGEN TRACKING<br/>- STEPS COUNTER<br/>- SLEEP MODE<br/>- Scratch-proof tempered glass<br/>- Microphone & Speaker INTEGRATED<br/>- social media notifications<br/>- alarm<br/>- Calendar<br/>- Weather tracking<br/>- CARBINOX APP<br/>- COMPATIBLE WITH ANDROID AND IOS<br/>- Diameter: 44mm<br/>- Weight: 100 gR</strong></h6>",
+            "page": ""
+          }
+        },
+        "c6ed9da0-bdf5-43a3-8685-71d9c9d6fcf6": {
+          "type": "content",
+          "settings": {
+            "title": "Package includes:",
+            "content": "<h6>1x carbinox x-ranger<br/>1x usb charging cable<br/>1x Instructions Manual<br/>1x Free Gift 🎁</h6>",
+            "page": ""
+          }
+        },
+        "3429e515-9812-4e6e-8dcb-71d5cf1a780b": {
+          "type": "content",
+          "settings": {
+            "title": "GUARANTEES:",
+            "content": "<h6>THE CARBINOX X-RANGER COMES WITH A 45-DAY RISK FREE GUARANTEE. FAST RETURNS OR REPLACEMENTS AT NO COST. WE'VE GOT YOU COVERED.</h6>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "description",
+        "bc751217-69a0-4865-b75f-a3750a2b9c28",
+        "c6ed9da0-bdf5-43a3-8685-71d9c9d6fcf6",
+        "3429e515-9812-4e6e-8dcb-71d5cf1a780b"
+      ],
+      "disabled": true,
+      "custom_css": [],
+      "settings": {}
+    },
+    "3afaf0dd-bef3-46c5-9f9d-42e70684a19b": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--14658305654887__3afaf0dd-bef3-46c5-9f9d-42e70684a19b-item-1": {
+          "type": "item",
+          "settings": {
+            "show_video": true,
+            "video_link": "https://cdn.shopify.com/videos/c/o/v/019df4d5563e41988c6aec9ef668123d.mp4",
+            "tab_label": "Item",
+            "subheading": "",
+            "title": "BUILT TOUGHER, MADE SMARTER. GET READY TO UNLEASH THE ULTIMATE HARD WORKING BEAST.",
+            "content": "<p><strong>The most advanced and rugged smartwatch we've ever created is here. With cutting-edge technology and indestructible design, your ultimate companion for the most challenging environments is finally here... in two different designs.</strong></p><p><strong>Introducing the Carbinox Blaze Type R and Type S: Built to exceed every expectation.</strong></p>",
+            "button_text": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--14658305654887__3afaf0dd-bef3-46c5-9f9d-42e70684a19b-item-1"
+      ],
+      "custom_css": [
+        "div {background-color: #000000;}",
+        "h3 {color: #ffc200; font-size: 22px; letter-spacing: -1px;}",
+        "h5 {font-size: 20px; letter-spacing: -1px; color: #ffc200; line-height: 25px;}"
+      ],
+      "settings": {
+        "section_id": "",
+        "reveal_on_scroll": false,
+        "background_type": "full_width",
+        "background_overlap": "text",
+        "image_position": "left",
+        "text_alignment": "center",
+        "cycle_speed": 8,
+        "accent_background": "#454545",
+        "text_color": "#ffffff",
+        "button_background": "#292323",
+        "button_text_color": "#5a5353",
+        "enable_custom_margin": false,
+        "margin_bottom": 0
+      }
+    },
+    "3a5567fb-8e7e-4cb3-bb8e-f2c156493a67": {
+      "type": "image-with-text",
+      "blocks": {
+        "7f6a9c5e-0fe0-4000-bbab-c0217fa108eb": {
+          "type": "item",
+          "settings": {
+            "show_video": false,
+            "video_link": "",
+            "image": "shopify://shop_images/4-min_b58a17ba-181f-44b0-ac11-09e68ab2b29c.jpg",
+            "tab_label": "Item",
+            "subheading": "",
+            "title": "UNMATCHED VERSATILITY, SELECT A BLAZE FOR EVERY EXPERIENCE.",
+            "content": "<p><strong>For the first time ever, we're presenting two different designs: ROUND OR SQUARE. <br/><br/>Tailor your needs and taste without compromising the rugged durability and reliability that represents our company. Whatever your day has prepared, stay connected effectively.</strong></p>",
+            "button_text": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "7f6a9c5e-0fe0-4000-bbab-c0217fa108eb"
+      ],
+      "custom_css": [
+        "h3 {font-size: 22px; color: #ffc200;}",
+        "H4 {font-size: 18px; text-align: left; letter-spacing: -0.7px; margin-top: -20px;}"
+      ],
+      "settings": {
+        "section_id": "",
+        "reveal_on_scroll": false,
+        "background_type": "full_width",
+        "background_overlap": "both",
+        "image_position": "right",
+        "text_alignment": "center",
+        "cycle_speed": 8,
+        "accent_background": "#000000",
+        "text_color": "#ffffff",
+        "button_background": "#292323",
+        "button_text_color": "#5a5353",
+        "enable_custom_margin": false,
+        "margin_bottom": 0
+      }
+    },
+    "ff560379-7d10-4627-a4dc-278938136553": {
+      "type": "image-with-text",
+      "blocks": {
+        "1ae59a29-eaeb-4fc2-8215-438e69660792": {
+          "type": "item",
+          "settings": {
+            "show_video": false,
+            "video_link": "",
+            "image": "shopify://shop_images/3-min_5113e297-b189-4eee-a8db-e2e3c5e16464.jpg",
+            "tab_label": "Item",
+            "subheading": "",
+            "title": "Durability Like Never Before: The Toughest SMARTWATCH YET.",
+            "content": "<p><strong>Crafted with a premium zinc alloy body and a third-generation Gorilla Glass screen, the Carbinox Blaze stands as the toughest smartwatch we've ever engineered. <br/><br/>The thicker, </strong><span style=\"text-decoration:underline\"><strong>more resistant straps</strong></span><strong> ensure that no matter how intense your day gets, your Blaze will be right there with you, taking the hits and pushing through.<br/><br/></strong></p>",
+            "button_text": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "1ae59a29-eaeb-4fc2-8215-438e69660792"
+      ],
+      "custom_css": [
+        "h3 {font-size: 22px; color: #ffc200;}",
+        "H4 {font-size: 18px; text-align: left; letter-spacing: -0.7px; margin-top: -20px;}"
+      ],
+      "settings": {
+        "section_id": "",
+        "reveal_on_scroll": false,
+        "background_type": "full_width",
+        "background_overlap": "both",
+        "image_position": "left",
+        "text_alignment": "center",
+        "cycle_speed": 8,
+        "accent_background": "#000000",
+        "text_color": "#ffffff",
+        "button_background": "#292323",
+        "button_text_color": "#5a5353",
+        "enable_custom_margin": false,
+        "margin_bottom": 0
+      }
+    },
+    "84dd6a94-028e-44de-a5af-eed905356deb": {
+      "type": "image-with-text",
+      "blocks": {
+        "2666836f-fdb5-4031-a67a-23cba73c2c91": {
+          "type": "item",
+          "settings": {
+            "show_video": false,
+            "video_link": "",
+            "image": "shopify://shop_images/Please_send_a_text_message_to_John_saying_See_you_later_at_the_ranch_1_-min.png",
+            "tab_label": "Item",
+            "subheading": "",
+            "title": "AI Voice Assistant at Your Command, ready to reply and send messages.",
+            "content": "<p><strong>The Carbinox Blaze takes convenience to the next level with its built-in AI voice assistant. Seamlessly paired with your smartphone, you can send and reply to SMS messages using simple voice commands—no need to stop what you’re doing. Whether you're on the job or on the go, the AI assistant keeps you connected, hands-free.</strong></p>",
+            "button_text": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "2666836f-fdb5-4031-a67a-23cba73c2c91"
+      ],
+      "custom_css": [
+        "h3 {font-size: 22px; color: #ffc200;}",
+        "H4 {font-size: 18px; text-align: left; letter-spacing: -0.7px; margin-top: -20px;}"
+      ],
+      "settings": {
+        "section_id": "",
+        "reveal_on_scroll": false,
+        "background_type": "full_width",
+        "background_overlap": "both",
+        "image_position": "right",
+        "text_alignment": "center",
+        "cycle_speed": 8,
+        "accent_background": "#000000",
+        "text_color": "#ffffff",
+        "button_background": "#292323",
+        "button_text_color": "#5a5353",
+        "enable_custom_margin": false,
+        "margin_bottom": 0
+      }
+    },
+    "image_with_text_GYT8DM": {
+      "type": "image-with-text",
+      "blocks": {
+        "item_pXydhJ": {
+          "type": "item",
+          "settings": {
+            "show_video": false,
+            "video_link": "",
+            "image": "shopify://shop_images/1-min_8.png",
+            "tab_label": "Item",
+            "subheading": "",
+            "title": "Navigate Your World: Introducing GPS with Unmatched Precision 📍",
+            "content": "<p><strong>The Carbinox Blaze is our first smartwatch equipped with state-of-the-art GPS technology. Whether you’re navigating a job site or exploring off the beaten path, it will keep you on track with reliable, accurate positioning.<br/><br/>This feature can be easily enjoyed by selecting any of the sports modes on your smartwatch.</strong></p>",
+            "button_text": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "item_pXydhJ"
+      ],
+      "settings": {
+        "section_id": "",
+        "reveal_on_scroll": false,
+        "background_type": "full_width",
+        "background_overlap": "both",
+        "image_position": "right",
+        "text_alignment": "center",
+        "cycle_speed": 8,
+        "accent_background": "#000000",
+        "text_color": "#ffffff",
+        "button_background": "#292323",
+        "button_text_color": "#5a5353",
+        "enable_custom_margin": false,
+        "margin_bottom": 0
+      }
+    },
+    "cfffb33b-6a18-484b-af56-b40301e1f632": {
+      "type": "image-with-text",
+      "blocks": {
+        "242aee7e-1d8a-4b2f-8680-f43ccf662d4d": {
+          "type": "item",
+          "settings": {
+            "show_video": false,
+            "video_link": "",
+            "image": "shopify://shop_images/2-min_6.png",
+            "tab_label": "Item",
+            "subheading": "every situation. is now within your control.",
+            "title": "Be Ready for Anything: Altimeter, Barometer, and compass.",
+            "content": "",
+            "button_text": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "242aee7e-1d8a-4b2f-8680-f43ccf662d4d"
+      ],
+      "custom_css": [
+        "h3 {font-size: 20px; color: #ffc200;}",
+        "H4 {font-size: 18px; text-align: left; letter-spacing: -0.7px; margin-top: -20px;}"
+      ],
+      "settings": {
+        "section_id": "",
+        "reveal_on_scroll": false,
+        "background_type": "full_width",
+        "background_overlap": "both",
+        "image_position": "left",
+        "text_alignment": "center",
+        "cycle_speed": 8,
+        "accent_background": "#000000",
+        "text_color": "#ffffff",
+        "button_background": "#292323",
+        "button_text_color": "#5a5353",
+        "enable_custom_margin": false,
+        "margin_bottom": 0
+      }
+    },
+    "b97def7a-4167-4995-aeed-ca9dcdcf40b5": {
+      "type": "image-with-text",
+      "blocks": {
+        "46276caf-7bec-4dc3-babb-e90e3753b5ab": {
+          "type": "item",
+          "settings": {
+            "show_video": false,
+            "video_link": "",
+            "image": "shopify://shop_images/3-min_6_381e6dbc-2788-4cb0-a5b5-604cca6fdba4.png",
+            "tab_label": "Item",
+            "subheading": "The data you need to stay on top of your game.",
+            "title": "Superior Accuracy WITH Smarter Sensors.",
+            "content": "",
+            "button_text": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "46276caf-7bec-4dc3-babb-e90e3753b5ab"
+      ],
+      "disabled": true,
+      "custom_css": [
+        "h3 {font-size: 20px; color: #ffc200;}",
+        "H4 {font-size: 18px; text-align: left; letter-spacing: -0.7px; margin-top: -20px;}"
+      ],
+      "settings": {
+        "section_id": "",
+        "reveal_on_scroll": false,
+        "background_type": "full_width",
+        "background_overlap": "both",
+        "image_position": "right",
+        "text_alignment": "center",
+        "cycle_speed": 8,
+        "accent_background": "#000000",
+        "text_color": "#ffffff",
+        "button_background": "#292323",
+        "button_text_color": "#5a5353",
+        "enable_custom_margin": false,
+        "margin_bottom": 0
+      }
+    },
+    "8512ccfe-ca7f-4b2f-a0e2-70f92c988a05": {
+      "type": "image-with-text",
+      "blocks": {
+        "5c633d77-bb3b-4ca1-a3f8-7faae8f6d9a3": {
+          "type": "item",
+          "settings": {
+            "show_video": false,
+            "video_link": "",
+            "image": "shopify://shop_images/7-min_2_daf3d103-3915-4c8e-9a2a-0248dc9a6ef0.png",
+            "tab_label": "Item",
+            "subheading": "is not just a tool, it's an extension of your personality.",
+            "title": "More Modes, More You: 170+ Sports Modes and New Watch Faces INTEGRATED.",
+            "content": "",
+            "button_text": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "5c633d77-bb3b-4ca1-a3f8-7faae8f6d9a3"
+      ],
+      "custom_css": [
+        "h3 {font-size: 20px; color: #ffc200;}",
+        "H4 {font-size: 18px; text-align: left; letter-spacing: -0.7px; margin-top: -20px;}"
+      ],
+      "settings": {
+        "section_id": "",
+        "reveal_on_scroll": false,
+        "background_type": "full_width",
+        "background_overlap": "both",
+        "image_position": "left",
+        "text_alignment": "center",
+        "cycle_speed": 8,
+        "accent_background": "#000000",
+        "text_color": "#ffffff",
+        "button_background": "#292323",
+        "button_text_color": "#5a5353",
+        "enable_custom_margin": false,
+        "margin_bottom": 0
+      }
+    },
+    "8677f37a-5180-4ed3-8ef5-57b6acaae572": {
+      "type": "image-with-text",
+      "blocks": {
+        "91e8bfbe-7016-4d65-ab32-face8d5ba002": {
+          "type": "item",
+          "settings": {
+            "show_video": false,
+            "video_link": "",
+            "image": "shopify://shop_images/CARBINOX_PRO-min_cf4030d8-79a9-49e2-9609-486f401bbac3.png",
+            "tab_label": "Item",
+            "subheading": "",
+            "title": "",
+            "content": "",
+            "button_text": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "91e8bfbe-7016-4d65-ab32-face8d5ba002"
+      ],
+      "custom_css": [
+        "h3 {font-size: 18px; text-align: center;}"
+      ],
+      "settings": {
+        "section_id": "",
+        "reveal_on_scroll": false,
+        "background_type": "full_width",
+        "background_overlap": "both",
+        "image_position": "left",
+        "text_alignment": "center",
+        "cycle_speed": 8,
+        "accent_background": "#000000",
+        "text_color": "#ffffff",
+        "button_background": "#292323",
+        "button_text_color": "#5a5353",
+        "enable_custom_margin": false,
+        "margin_bottom": 0
+      }
+    },
+    "image_with_text_zbdBqG": {
+      "type": "image-with-text",
+      "blocks": {
+        "item_7UgUPD": {
+          "type": "item",
+          "settings": {
+            "show_video": false,
+            "video_link": "",
+            "image": "shopify://shop_images/VOICE_CONTROL-min.png",
+            "tab_label": "Item",
+            "subheading": "",
+            "title": "⬆ SMART FEATURES ⬆",
+            "content": "",
+            "button_text": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "item_7UgUPD"
+      ],
+      "settings": {
+        "section_id": "",
+        "reveal_on_scroll": false,
+        "background_type": "full_width",
+        "background_overlap": "both",
+        "image_position": "left",
+        "text_alignment": "center",
+        "cycle_speed": 8,
+        "accent_background": "#000000",
+        "text_color": "#ffc200",
+        "button_background": "#292323",
+        "button_text_color": "#5a5353",
+        "enable_custom_margin": false,
+        "margin_bottom": 0
+      }
+    },
+    "rich_text_cxKrM8": {
+      "type": "rich-text",
+      "custom_css": [
+        "h2 {color: #ffc200; font-size: 24px;}",
+        "h3 {font-size: 16px;"
+      ],
+      "settings": {
+        "section_id": "",
+        "subheading": "★★★★★",
+        "title": "\"I’ve banged it on metal, been through all kinds of weather, and this thing just keeps going. Battery life is solid, and the GPS is a lifesaver when I’m navigating off the beaten path. \"",
+        "content": "<p><strong>Mike S.,Truck Driver, Texas</strong></p>",
+        "button_text": "",
+        "button_link": "",
+        "background_type": "full_width",
+        "text_width": "fill",
+        "text_position": "left",
+        "text_alignment": "left",
+        "background": "#000000",
+        "text_color": "#ffffff",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "rich_text_VU6KWF": {
+      "type": "rich-text",
+      "custom_css": [
+        "h2 {color: #ffc200; font-size: 24px;}",
+        "h3 {font-size: 16px;"
+      ],
+      "settings": {
+        "section_id": "",
+        "subheading": "★★★★★",
+        "title": "\"This GPS is a game-changer. Out on the ranch, I know exactly where I am, no matter what.\"",
+        "content": "<p><strong>Mike R., Rancher, Montana</strong></p>",
+        "button_text": "",
+        "button_link": "",
+        "background_type": "full_width",
+        "text_width": "fill",
+        "text_position": "center",
+        "text_alignment": "right",
+        "background": "#000000",
+        "text_color": "#ffffff",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "2b1cb403-5565-464f-97a6-c15e724dad1a": {
+      "type": "rich-text",
+      "custom_css": [
+        "h2 {color: #ffc200; font-size: 24px;}",
+        "h3 {font-size: 16px;"
+      ],
+      "settings": {
+        "section_id": "",
+        "subheading": "★★★★★",
+        "title": "\"It’s a solid watch, and it handles everything I throw at it—dust, water, you name it. Couldn’t ask for more.\"",
+        "content": "<p><strong>Travis S., Construction Worker, Alabama</strong></p>",
+        "button_text": "",
+        "button_link": "",
+        "background_type": "full_width",
+        "text_width": "fill",
+        "text_position": "center",
+        "text_alignment": "left",
+        "background": "#121212",
+        "text_color": "#ffffff",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "a82c5f6c-8f61-455c-8e88-fefb5e155ec4": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--14658305654887__a82c5f6c-8f61-455c-8e88-fefb5e155ec4-item-1": {
+          "type": "item",
+          "settings": {
+            "show_video": false,
+            "video_link": "",
+            "image": "shopify://shop_images/1_286_800_x_1200_px_-min.png",
+            "tab_label": "",
+            "subheading": "",
+            "title": "🎖️ ABOUT OUR LIFETIME WARRANTY:",
+            "content": "<p><strong>We are a company that stands behind their products. We're so confident your smartwatch will provide durability to your life, that you're covered for life. If anything happens, we'll replace it for free. No questions asked.</strong></p>",
+            "button_text": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--14658305654887__a82c5f6c-8f61-455c-8e88-fefb5e155ec4-item-1"
+      ],
+      "custom_css": [
+        "h3 {font-size: 22px;}",
+        "h5 {color: #ffc200;}",
+        "h2 {font-size: 13px;}"
+      ],
+      "settings": {
+        "section_id": "",
+        "reveal_on_scroll": false,
+        "background_type": "full_width",
+        "background_overlap": "both",
+        "image_position": "left",
+        "text_alignment": "center",
+        "cycle_speed": 8,
+        "accent_background": "#000000",
+        "text_color": "#ffffff",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)",
+        "enable_custom_margin": false,
+        "margin_bottom": 0
+      }
+    },
+    "af3b67a6-d614-4707-afda-9d7b66d3addc": {
+      "type": "image-with-text",
+      "blocks": {
+        "b9ba9caa-760c-4a47-a67d-b350595291be": {
+          "type": "item",
+          "settings": {
+            "show_video": false,
+            "video_link": "",
+            "image": "shopify://shop_images/4-min_5.png",
+            "tab_label": "TYPE R",
+            "subheading": "",
+            "title": "CARBINOX BLAZE [TYPE R]",
+            "content": "<p><strong>Dimensions and Measurement.</strong></p>",
+            "button_text": "",
+            "button_link": ""
+          }
+        },
+        "item_pkRNfL": {
+          "type": "item",
+          "settings": {
+            "show_video": false,
+            "video_link": "",
+            "image": "shopify://shop_images/5-min_5.png",
+            "tab_label": "TYPE S",
+            "subheading": "",
+            "title": "CARBINOX BLAZE [TYPE S]",
+            "content": "<p><strong>Dimensions and Measurement.</strong></p>",
+            "button_text": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "b9ba9caa-760c-4a47-a67d-b350595291be",
+        "item_pkRNfL"
+      ],
+      "custom_css": [
+        "div {margin-block: -1px;}"
+      ],
+      "settings": {
+        "section_id": "",
+        "reveal_on_scroll": false,
+        "background_type": "full_width",
+        "background_overlap": "both",
+        "image_position": "left",
+        "text_alignment": "center",
+        "cycle_speed": 20,
+        "accent_background": "#000000",
+        "text_color": "#ffffff",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)",
+        "enable_custom_margin": false,
+        "margin_bottom": 0
+      }
+    },
+    "59ab30f9-1c7c-4bf9-8217-9f0f095a6238": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--14658305654887__59ab30f9-1c7c-4bf9-8217-9f0f095a6238-item-1": {
+          "type": "item",
+          "settings": {
+            "show_video": false,
+            "video_link": "",
+            "image": "shopify://shop_images/8-min_1.png",
+            "tab_label": "Item",
+            "subheading": "",
+            "title": "PAIR YOUR SMARTWATCH WITH YOUR PHONE THROUGH THE CARBINOX PRO APP.",
+            "content": "",
+            "button_text": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--14658305654887__59ab30f9-1c7c-4bf9-8217-9f0f095a6238-item-1"
+      ],
+      "custom_css": [
+        "h3 {font-size: 22px;}"
+      ],
+      "settings": {
+        "section_id": "",
+        "reveal_on_scroll": false,
+        "background_type": "full_width",
+        "background_overlap": "both",
+        "image_position": "right",
+        "text_alignment": "center",
+        "cycle_speed": 8,
+        "accent_background": "#000000",
+        "text_color": "#ffffff",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)",
+        "enable_custom_margin": false,
+        "margin_bottom": 0
+      }
+    },
+    "166007646669623aaa": {
+      "type": "faq",
+      "blocks": {
+        "1660076465f1e811f4-0": {
+          "type": "category",
+          "disabled": true,
+          "settings": {
+            "title": "Shipping"
+          }
+        },
+        "1660076465f1e811f4-1": {
+          "type": "question",
+          "disabled": true,
+          "settings": {
+            "title": "Are these smartwatches indestructible?",
+            "answer": "<p>We guarantee you'll receive the stronger smartwatch you've ever had. However,don't submit it to abuse tests such as as throwing it from a 30th floor or test it with a saw to see if it holds up (This is a true story 🥴)</p>"
+          }
+        },
+        "1660076465f1e811f4-2": {
+          "type": "question",
+          "settings": {
+            "title": "CAN I ANSWER AND MAKE CALLS WITH THE CARBINOX BLAZE?",
+            "answer": "<p>Yes, you can answer and dial calls with your Carbinox Blaze. Just pair it with your phone and make sure Bluetooth is on.</p>"
+          }
+        },
+        "7c26ebf9-9f0f-4f89-a025-4868a8e8855f": {
+          "type": "question",
+          "settings": {
+            "title": "HOW DOES THE GPS WORK?",
+            "answer": "<p>To ensure accurate tracking of your activities, the GPS functionality on the Carbinox Blaze works in conjunction with the Carbinox Pro App. When you select any sport mode on your smartwatch, the device relies on your smartphone’s GPS for precise location data. This allows the smartwatch to accurately track your movements, speed, and distance during outdoor activities.</p>"
+          }
+        },
+        "9e45f6ba-ce45-4182-ab2f-4f8bcd8f6681": {
+          "type": "question",
+          "settings": {
+            "title": "HOW DOES THE AI ASSISTANT WORKS TO SEND TEXT MESSAGES?",
+            "answer": "<p><strong>Access the Voice Assistant:</strong> Simply navigate to the voice assistant feature on your Carbinox Blaze smartwatch by selecting it from the main menu.</p><p><strong>Activate Voice Commands:</strong> Once in the voice assistant menu, tap the screen to speak.</p><p><strong>Send a Text Message:</strong> After activating the assistant, you can send a text message by saying the command, for example, “<strong>Send a text message to [name] saying [message].</strong>”</p><p><strong>Message Sent:</strong> The AI assistant will instantly pair with your smartphone and send the message as instructed.<br/><br/><strong>You can also make calls with the AI voice assistant. Just follow the same steps as the ones to send a message but instead, say \"Call [name]\".</strong></p><p><strong>Important Disclaimer:</strong><br/>While the AI voice assistant is highly responsive, it is also very sensitive. This means that in some cases, the message <strong>may not be delivered exactly as you intended.</strong> Always double-check your command to ensure it’s understood correctly. We recommend speaking clearly and confirming any important messages.</p>"
+          }
+        },
+        "1660076465f1e811f4-4": {
+          "type": "question",
+          "settings": {
+            "title": "ARE THE CARBINOX BLAZE WATCHES WATERPROOF?",
+            "answer": "<p>Yes, the Carbinox Vortex is fully Waterproof with IP69K and 5ATM technology.</p>"
+          }
+        },
+        "b94b4ba9-d47e-4003-8a27-597acb9b7952": {
+          "type": "question",
+          "settings": {
+            "title": "IS MY SMARTPHONE COMPATIBLE WITH THE CARBINOX BLAZE WATCHES?",
+            "answer": "<p>Yes. The Carbinox Blaze watches work with any Apple or Android device through the <strong>CARBINOX PRO APP.</strong></p>"
+          }
+        },
+        "91345035-5b96-4951-8a1e-d62883b97573": {
+          "type": "question",
+          "settings": {
+            "title": "WILL THE CARBINOX BLAZE FIT MY WRIST?",
+            "answer": "<p>Yes, all of our smartwatches come with adjustable bands that can fit any wrist.</p>"
+          }
+        },
+        "b1b69a37-56f7-497e-b973-6abbf1bb8a51": {
+          "type": "question",
+          "settings": {
+            "title": "DO YOU OFFER GUARANTEES?",
+            "answer": "<p>Of course! All of our smartwatches are covered with 45-Day Risk Free Trial, and Lifetime Warranty in case they don't fit your needs or if you face any software or internal issues. If this happens, we'll provide you a replacement at no cost.</p>"
+          }
+        },
+        "08cad6de-133a-438f-9a28-8990559de84f": {
+          "type": "question",
+          "settings": {
+            "title": "HOW LONG DO THE CARBINOX BLAZE TAKE TO FULLY CHARGE?",
+            "answer": "<p>The Carbinox Blaze will be fully charged after approximately 90 minutes and lasts up to 14 days within a single cycle.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "1660076465f1e811f4-0",
+        "1660076465f1e811f4-1",
+        "1660076465f1e811f4-2",
+        "7c26ebf9-9f0f-4f89-a025-4868a8e8855f",
+        "9e45f6ba-ce45-4182-ab2f-4f8bcd8f6681",
+        "1660076465f1e811f4-4",
+        "b94b4ba9-d47e-4003-8a27-597acb9b7952",
+        "91345035-5b96-4951-8a1e-d62883b97573",
+        "b1b69a37-56f7-497e-b973-6abbf1bb8a51",
+        "08cad6de-133a-438f-9a28-8990559de84f"
+      ],
+      "settings": {
+        "show_navigation": false,
+        "title": "Frequently asked questions",
+        "content": "",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "17297101183d2e6360": {
+      "type": "apps",
+      "settings": {
+        "include_horizontal_margins": true,
+        "include_vertical_margins": true
+      }
+    }
+  },
+  "order": [
+    "sl_timer_bar_1_1_BHWMrU",
+    "rich_text_3d3TnK",
+    "e9dc35e4-0664-46cf-ad4f-0d4aa37441e3",
+    "main",
+    "c4d5d849-903b-4f94-a366-9dd19f7a438e",
+    "7093bb3e-6e7a-4e7c-b3dd-09080160deb5",
+    "product-content",
+    "3afaf0dd-bef3-46c5-9f9d-42e70684a19b",
+    "3a5567fb-8e7e-4cb3-bb8e-f2c156493a67",
+    "ff560379-7d10-4627-a4dc-278938136553",
+    "84dd6a94-028e-44de-a5af-eed905356deb",
+    "image_with_text_GYT8DM",
+    "cfffb33b-6a18-484b-af56-b40301e1f632",
+    "b97def7a-4167-4995-aeed-ca9dcdcf40b5",
+    "8512ccfe-ca7f-4b2f-a0e2-70f92c988a05",
+    "8677f37a-5180-4ed3-8ef5-57b6acaae572",
+    "image_with_text_zbdBqG",
+    "rich_text_cxKrM8",
+    "rich_text_VU6KWF",
+    "2b1cb403-5565-464f-97a6-c15e724dad1a",
+    "a82c5f6c-8f61-455c-8e88-fefb5e155ec4",
+    "af3b67a6-d614-4707-afda-9d7b66d3addc",
+    "59ab30f9-1c7c-4bf9-8217-9f0f095a6238",
+    "166007646669623aaa",
+    "17297101183d2e6360"
+  ]
+}
